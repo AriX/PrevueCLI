@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import PrevueFramework
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,6 +16,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let alert = NSAlert()
+        alert.messageText = TestClass.potato
+        alert.runModal()
         // Insert code here to initialize your application
     }
 

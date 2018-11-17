@@ -10,15 +10,37 @@
 		02A6FCBC21A0AA8E00323C8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCBB21A0AA8E00323C8F /* AppDelegate.swift */; };
 		02A6FCBE21A0AA8E00323C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A6FCBD21A0AA8E00323C8F /* Assets.xcassets */; };
 		02A6FCC121A0AA8E00323C8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A6FCBF21A0AA8E00323C8F /* MainMenu.xib */; };
+		02A6FCDD21A0ABB900323C8F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
+		02A6FCE221A0ABCF00323C8F /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE121A0ABCF00323C8F /* TestClass.swift */; };
+		02A6FCE421A0AC1A00323C8F /* libPrevueFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A6FCCD21A0AB0D00323C8F /* libPrevueFramework.a */; };
+		02A6FCE521A0AE6400323C8F /* libPrevueFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A6FCCD21A0AB0D00323C8F /* libPrevueFramework.a */; };
+		02A6FCE721A0B81C00323C8F /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE621A0B81C00323C8F /* Machine.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		02A6FCD821A0ABB900323C8F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		02A6FCB821A0AA8E00323C8F /* PrevuePackage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrevuePackage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02A6FCB821A0AA8E00323C8F /* PrevueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrevueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A6FCBB21A0AA8E00323C8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02A6FCBD21A0AA8E00323C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02A6FCC021A0AA8E00323C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		02A6FCC221A0AA8E00323C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02A6FCC321A0AA8E00323C8F /* PrevuePackage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrevuePackage.entitlements; sourceTree = "<group>"; };
+		02A6FCCD21A0AB0D00323C8F /* libPrevueFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPrevueFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		02A6FCDA21A0ABB900323C8F /* PrevueCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrevueCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		02A6FCDC21A0ABB900323C8F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		02A6FCE121A0ABCF00323C8F /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
+		02A6FCE621A0B81C00323C8F /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +48,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A6FCE421A0AC1A00323C8F /* libPrevueFramework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02A6FCCB21A0AB0D00323C8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02A6FCD721A0ABB900323C8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A6FCE521A0AE6400323C8F /* libPrevueFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,20 +73,25 @@
 		02A6FCAF21A0AA8D00323C8F = {
 			isa = PBXGroup;
 			children = (
-				02A6FCBA21A0AA8E00323C8F /* PrevuePackage */,
+				02A6FCBA21A0AA8E00323C8F /* PrevueApp */,
+				02A6FCCE21A0AB0E00323C8F /* PrevueFramework */,
+				02A6FCDB21A0ABB900323C8F /* PrevueCLI */,
 				02A6FCB921A0AA8E00323C8F /* Products */,
+				02A6FCE321A0AC1A00323C8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		02A6FCB921A0AA8E00323C8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02A6FCB821A0AA8E00323C8F /* PrevuePackage.app */,
+				02A6FCB821A0AA8E00323C8F /* PrevueApp.app */,
+				02A6FCCD21A0AB0D00323C8F /* libPrevueFramework.a */,
+				02A6FCDA21A0ABB900323C8F /* PrevueCLI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02A6FCBA21A0AA8E00323C8F /* PrevuePackage */ = {
+		02A6FCBA21A0AA8E00323C8F /* PrevueApp */ = {
 			isa = PBXGroup;
 			children = (
 				02A6FCBB21A0AA8E00323C8F /* AppDelegate.swift */,
@@ -57,15 +100,49 @@
 				02A6FCC221A0AA8E00323C8F /* Info.plist */,
 				02A6FCC321A0AA8E00323C8F /* PrevuePackage.entitlements */,
 			);
-			path = PrevuePackage;
+			path = PrevueApp;
+			sourceTree = "<group>";
+		};
+		02A6FCCE21A0AB0E00323C8F /* PrevueFramework */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FCE121A0ABCF00323C8F /* TestClass.swift */,
+				02A6FCE621A0B81C00323C8F /* Machine.swift */,
+			);
+			path = PrevueFramework;
+			sourceTree = "<group>";
+		};
+		02A6FCDB21A0ABB900323C8F /* PrevueCLI */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FCDC21A0ABB900323C8F /* main.swift */,
+			);
+			path = PrevueCLI;
+			sourceTree = "<group>";
+		};
+		02A6FCE321A0AC1A00323C8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		02A6FCC921A0AB0D00323C8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		02A6FCB721A0AA8D00323C8F /* PrevuePackage */ = {
+		02A6FCB721A0AA8D00323C8F /* PrevueApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02A6FCC621A0AA8E00323C8F /* Build configuration list for PBXNativeTarget "PrevuePackage" */;
+			buildConfigurationList = 02A6FCC621A0AA8E00323C8F /* Build configuration list for PBXNativeTarget "PrevueApp" */;
 			buildPhases = (
 				02A6FCB421A0AA8D00323C8F /* Sources */,
 				02A6FCB521A0AA8D00323C8F /* Frameworks */,
@@ -75,10 +152,44 @@
 			);
 			dependencies = (
 			);
-			name = PrevuePackage;
+			name = PrevueApp;
 			productName = PrevuePackage;
-			productReference = 02A6FCB821A0AA8E00323C8F /* PrevuePackage.app */;
+			productReference = 02A6FCB821A0AA8E00323C8F /* PrevueApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		02A6FCCC21A0AB0D00323C8F /* PrevueFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02A6FCD321A0AB0E00323C8F /* Build configuration list for PBXNativeTarget "PrevueFramework" */;
+			buildPhases = (
+				02A6FCC921A0AB0D00323C8F /* Headers */,
+				02A6FCCA21A0AB0D00323C8F /* Sources */,
+				02A6FCCB21A0AB0D00323C8F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrevueFramework;
+			productName = PrevueFramework;
+			productReference = 02A6FCCD21A0AB0D00323C8F /* libPrevueFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		02A6FCD921A0ABB900323C8F /* PrevueCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02A6FCDE21A0ABB900323C8F /* Build configuration list for PBXNativeTarget "PrevueCLI" */;
+			buildPhases = (
+				02A6FCD621A0ABB900323C8F /* Sources */,
+				02A6FCD721A0ABB900323C8F /* Frameworks */,
+				02A6FCD821A0ABB900323C8F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrevueCLI;
+			productName = PrevueCLI;
+			productReference = 02A6FCDA21A0ABB900323C8F /* PrevueCLI */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +202,13 @@
 				ORGANIZATIONNAME = Vertex;
 				TargetAttributes = {
 					02A6FCB721A0AA8D00323C8F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					02A6FCCC21A0AB0D00323C8F = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					02A6FCD921A0ABB900323C8F = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -108,7 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02A6FCB721A0AA8D00323C8F /* PrevuePackage */,
+				02A6FCB721A0AA8D00323C8F /* PrevueApp */,
+				02A6FCCC21A0AB0D00323C8F /* PrevueFramework */,
+				02A6FCD921A0ABB900323C8F /* PrevueCLI */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +251,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				02A6FCBC21A0AA8E00323C8F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02A6FCCA21A0AB0D00323C8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A6FCE221A0ABCF00323C8F /* TestClass.swift in Sources */,
+				02A6FCE721A0B81C00323C8F /* Machine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02A6FCD621A0ABB900323C8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A6FCDD21A0ABB900323C8F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,16 +404,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PrevuePackage/PrevuePackage.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PrevueApp/PrevuePackage.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4TT9H7XWFJ;
-				INFOPLIST_FILE = PrevuePackage/Info.plist;
+				INFOPLIST_FILE = PrevueApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ariweinstein.PrevuePackage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ariweinstein.PrevueApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -286,17 +424,81 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PrevuePackage/PrevuePackage.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PrevueApp/PrevuePackage.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4TT9H7XWFJ;
-				INFOPLIST_FILE = PrevuePackage/Info.plist;
+				INFOPLIST_FILE = PrevueApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ariweinstein.PrevuePackage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ariweinstein.PrevueApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		02A6FCD421A0AB0E00323C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4TT9H7XWFJ;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		02A6FCD521A0AB0E00323C8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4TT9H7XWFJ;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		02A6FCDF21A0ABB900323C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		02A6FCE021A0ABB900323C8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -313,11 +515,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02A6FCC621A0AA8E00323C8F /* Build configuration list for PBXNativeTarget "PrevuePackage" */ = {
+		02A6FCC621A0AA8E00323C8F /* Build configuration list for PBXNativeTarget "PrevueApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02A6FCC721A0AA8E00323C8F /* Debug */,
 				02A6FCC821A0AA8E00323C8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02A6FCD321A0AB0E00323C8F /* Build configuration list for PBXNativeTarget "PrevueFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02A6FCD421A0AB0E00323C8F /* Debug */,
+				02A6FCD521A0AB0E00323C8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02A6FCDE21A0ABB900323C8F /* Build configuration list for PBXNativeTarget "PrevueCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02A6FCDF21A0ABB900323C8F /* Debug */,
+				02A6FCE021A0ABB900323C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
