@@ -1,0 +1,9 @@
+CC=gcc -I /opt/local/include/mysql5
+
+sender: sender.o
+	$(CC) sender.o -lmysql -g -o $@
+	rm -f *.o
+
+clean:
+	rm -f a.out core *.o sender
+

@@ -15,6 +15,7 @@
 		02A6FCE421A0AC1A00323C8F /* libPrevueFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A6FCCD21A0AB0D00323C8F /* libPrevueFramework.a */; };
 		02A6FCE521A0AE6400323C8F /* libPrevueFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A6FCCD21A0AB0D00323C8F /* libPrevueFramework.a */; };
 		02A6FCE721A0B81C00323C8F /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE621A0B81C00323C8F /* Machine.swift */; };
+		02A6FCE921A0BAB800323C8F /* UVSGMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE821A0BAB800323C8F /* UVSGMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		02A6FCDC21A0ABB900323C8F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		02A6FCE121A0ABCF00323C8F /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
 		02A6FCE621A0B81C00323C8F /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
+		02A6FCE821A0BAB800323C8F /* UVSGMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				02A6FCE121A0ABCF00323C8F /* TestClass.swift */,
 				02A6FCE621A0B81C00323C8F /* Machine.swift */,
+				02A6FCE821A0BAB800323C8F /* UVSGMessage.swift */,
 			);
 			path = PrevueFramework;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				02A6FCE221A0ABCF00323C8F /* TestClass.swift in Sources */,
 				02A6FCE721A0B81C00323C8F /* Machine.swift in Sources */,
+				02A6FCE921A0BAB800323C8F /* UVSGMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

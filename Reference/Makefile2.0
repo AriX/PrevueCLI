@@ -1,0 +1,9 @@
+CC=gcc
+
+sender: sender.o
+	$(CC) sender.o -o $@
+	rm -f *.o
+
+clean:
+	rm -f a.out core *.o sender
+
