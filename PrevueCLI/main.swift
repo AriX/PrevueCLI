@@ -8,4 +8,4 @@
 
 import PrevueFramework
 
-print(TestClass.potato)
+let command = BoxOnCommand(selectCode: "soup")
