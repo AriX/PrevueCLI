@@ -7,7 +7,13 @@
 //
 
 extension BoxOnCommand: UVSGEncodableDataCommand {
-    var payload: [Byte] {
-        return Array(self.selectCode.utf8) // check if stringis null-terminated
+    public var payload: Bytes {
+        return self.selectCode.uvsgBytes()
+    }
+}
+
+extension TitleCommand: UVSGEncodableDataCommand {
+    public var payload: Bytes {
+        return self.title.uvsgBytes()
     }
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0270E6D621A0DB4A003C98EF /* UVSGChecksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D521A0DB4A003C98EF /* UVSGChecksum.swift */; };
 		0270E6D821A0DED7003C98EF /* CommandModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D721A0DED7003C98EF /* CommandModes.swift */; };
 		0270E6DA21A0DF35003C98EF /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D921A0DF35003C98EF /* Commands.swift */; };
 		0270E6DC21A0E017003C98EF /* CommandEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6DB21A0E017003C98EF /* CommandEncoding.swift */; };
@@ -35,7 +34,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0270E6D521A0DB4A003C98EF /* UVSGChecksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGChecksum.swift; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
 		0270E6D921A0DF35003C98EF /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
 		0270E6DB21A0E017003C98EF /* CommandEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandEncoding.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				0270E6D921A0DF35003C98EF /* Commands.swift */,
 				0270E6DB21A0E017003C98EF /* CommandEncoding.swift */,
 				02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */,
-				0270E6D521A0DB4A003C98EF /* UVSGChecksum.swift */,
 			);
 			path = PrevueFramework;
 			sourceTree = "<group>";
@@ -277,7 +274,6 @@
 				0270E6DA21A0DF35003C98EF /* Commands.swift in Sources */,
 				02A6FCE221A0ABCF00323C8F /* TestClass.swift in Sources */,
 				0270E6DC21A0E017003C98EF /* CommandEncoding.swift in Sources */,
-				0270E6D621A0DB4A003C98EF /* UVSGChecksum.swift in Sources */,
 				02A6FCE721A0B81C00323C8F /* Machine.swift in Sources */,
 				02A6FCE921A0BAB800323C8F /* UVSGEncoding.swift in Sources */,
 			);

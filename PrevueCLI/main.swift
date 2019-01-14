@@ -8,4 +8,6 @@
 
 import PrevueFramework
 
-let command = BoxOnCommand(selectCode: "soup")
+let command = TitleCommand(title: "        Electronic Program Guide")
+let data = command.encodeWithChecksum()
+print(data.hexEncodedString())

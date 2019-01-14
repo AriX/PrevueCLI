@@ -8,7 +8,10 @@
 
 import Foundation
 
-typealias Byte = UInt8
+// MARK: Types
+
+public typealias Byte = UInt8
+public typealias Bytes = [Byte]
 
 extension DataCommandMode {
     func asByte() -> Byte {
@@ -22,6 +25,36 @@ extension DataCommandMode {
     }
 }
 
+// MARK: Checksums
+
+protocol UVSGChecksummable {
+    var checksum: Byte { get }
+}
+
+extension Array: UVSGChecksummable where Element == Byte {
+    var checksum: Byte {
+        var checksum = UInt8(0)
+        for byte in self {
+            checksum ^= byte
+        }
+        
+        return checksum
+    }
+}
+
+public protocol UVSGEncodable {
+    func encode() -> Bytes
+    func encodeWithChecksum() -> Bytes
+}
+
+extension UVSGEncodable {
+    public func encodeWithChecksum() -> Bytes {
+        let encoded = encode()
+        return (encoded + [encoded.checksum])
+    }
+}
+
+
 //struct UVSGDataCommand: UVSGPackable {
 //    let startBytes: [Byte] = [0x55, 0xAA]
 //    var commandMode: CommandMode
@@ -32,22 +65,32 @@ extension DataCommandMode {
 //    }
 //}
 
+// MARK: Commands
 
-protocol UVSGEncodableDataCommand: UVSGEncodable {
+public protocol UVSGEncodableDataCommand: UVSGEncodable {
     var commandMode: DataCommandMode { get }
-    var payload: [Byte] { get }
+    var payload: Bytes { get }
 }
 
 extension UVSGEncodableDataCommand {
-    func encode() -> [Byte] {
-        let startBytes: [Byte] = [0x55, 0xAA]
+    public func encode() -> Bytes {
+        let startBytes: Bytes = [0x55, 0xAA]
         return (startBytes + [commandMode.asByte()] + payload)
     }
 }
 
-//struct UVSGOnCommand: UVSGDataCommand {
-//    let commandMode: DataCommandMode = .boxOn
-//    var payload: [Byte] {
-//        return []
-//    }
-//}
+// MARK: Strings
+
+extension String {
+    public func uvsgBytes() -> Bytes {
+        return (Array(self.utf8) + [0x00])
+    }
+}
+
+// MARK: Debugging
+
+extension Array where Element == Byte {
+    public func hexEncodedString() -> String {
+        return map { String(format: "%02hhX ", $0) }.joined()
+    }
+}
