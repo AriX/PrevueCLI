@@ -11,7 +11,7 @@ struct TitleCommand: DataCommand {
     var title: String
 }
 
-extension TitleCommand: UVSGEncodableDataCommand {
+extension TitleCommand {
     var payload: Bytes {
         return self.title.uvsgBytes()
     }

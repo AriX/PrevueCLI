@@ -19,19 +19,19 @@ struct ResetCommand: DataCommand {
     let commandMode = DataCommandMode.reset
 }
 
-extension BoxOnCommand: UVSGEncodableDataCommand {
+extension BoxOnCommand {
     var payload: Bytes {
         return self.selectCode.uvsgBytes()
     }
 }
 
-extension BoxOffCommand: UVSGEncodableDataCommand {
+extension BoxOffCommand {
     var payload: Bytes {
         return [0xBB, 0x00]
     }
 }
 
-extension ResetCommand: UVSGEncodableDataCommand {
+extension ResetCommand {
     var payload: Bytes {
         return []
     }

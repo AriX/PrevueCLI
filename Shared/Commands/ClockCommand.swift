@@ -28,7 +28,7 @@ struct ClockCommand: DataCommand {
     let daylightSavingsTime: Bool
 }
 
-extension ClockCommand: UVSGEncodableDataCommand {
+extension ClockCommand {
     var payload: Bytes {
         // To be tested
         // I think the last byte is always 0 and is unused, but should be confirmed in disassembly

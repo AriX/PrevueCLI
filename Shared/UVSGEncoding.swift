@@ -44,16 +44,12 @@ extension UVSGEncodable {
 
 // MARK: Commands
 
-protocol DataCommand {
-    var commandMode: DataCommandMode { get }
-}
-
-protocol UVSGEncodableDataCommand: UVSGEncodable {
+protocol DataCommand: UVSGEncodable {
     var commandMode: DataCommandMode { get }
     var payload: Bytes { get }
 }
 
-extension UVSGEncodableDataCommand {
+extension DataCommand {
     func encode() -> Bytes {
         let startBytes: Bytes = [0x55, 0xAA]
         return (startBytes + [commandMode.asByte()] + payload)

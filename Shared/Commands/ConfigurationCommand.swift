@@ -13,6 +13,8 @@
 //       F    B    I    2    3    6    8    N              6    Y    Y    N    N    N    N    N    N    X    X
 //       MODE BCK  FWD  SSPD #AD1 #AD2 LINE UNK  UNKA UNKA TZ   DST  CONT TEXT UNK2 UNK3 UNK4 UNK5 GRPH VIN  UNK6 END  CHECKSUM
 
+// YAML codeable?
+
 struct ConfigurationCommand: DataCommand {
     let commandMode = DataCommandMode.configuration
     let timeslotsBack: UInt8 // BCK: Number of half hour blocks away to start at (default 0 on Atari (should confirm), 1 on Amiga, must be 0 or 1 on Amiga)
@@ -35,7 +37,7 @@ struct ConfigurationCommand: DataCommand {
     let unknown6: UInt8 // Unknown value (default 0x00 on Amiga, values L or X observed in UVSG test files?)
 }
 
-extension ConfigurationCommand: UVSGEncodableDataCommand {
+extension ConfigurationCommand {
     var payload: Bytes {
         return [
             timeslotsBack.byteByRepresentingNumberAsASCIILetter(),
