@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import PrevueFramework
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {

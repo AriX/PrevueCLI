@@ -10,20 +10,8 @@ import Foundation
 
 // MARK: Types
 
-public typealias Byte = UInt8
-public typealias Bytes = [Byte]
-
-extension DataCommandMode {
-    func asByte() -> Byte {
-        let unicodeScalars = self.rawValue.unicodeScalars
-        assert(unicodeScalars.count == 1, "Command mode must be a single character")
-        
-        let firstValue: UInt32 = unicodeScalars.first!.value
-        assert(firstValue <= 255, "Command mode must be a single byte")
-        
-        return Byte(firstValue)
-    }
-}
+typealias Byte = UInt8
+typealias Bytes = [Byte]
 
 // MARK: Checksums
 
@@ -42,55 +30,74 @@ extension Array: UVSGChecksummable where Element == Byte {
     }
 }
 
-public protocol UVSGEncodable {
+protocol UVSGEncodable {
     func encode() -> Bytes
     func encodeWithChecksum() -> Bytes
 }
 
 extension UVSGEncodable {
-    public func encodeWithChecksum() -> Bytes {
+    func encodeWithChecksum() -> Bytes {
         let encoded = encode()
         return (encoded + [encoded.checksum])
     }
 }
 
-
-//struct UVSGDataCommand: UVSGPackable {
-//    let startBytes: [Byte] = [0x55, 0xAA]
-//    var commandMode: CommandMode
-//    var payload: [Byte]
-//
-//    func pack() -> [Byte] {
-//        return (startBytes + [commandMode.asByte()] + payload)
-//    }
-//}
-
 // MARK: Commands
 
-public protocol UVSGEncodableDataCommand: UVSGEncodable {
+protocol DataCommand {
+    var commandMode: DataCommandMode { get }
+}
+
+protocol UVSGEncodableDataCommand: UVSGEncodable {
     var commandMode: DataCommandMode { get }
     var payload: Bytes { get }
 }
 
 extension UVSGEncodableDataCommand {
-    public func encode() -> Bytes {
+    func encode() -> Bytes {
         let startBytes: Bytes = [0x55, 0xAA]
         return (startBytes + [commandMode.asByte()] + payload)
     }
 }
 
-// MARK: Strings
+// MARK: Type conversion
+
+// TODO: Make a protocol for this
+
+extension Character {
+    func asByte() -> Byte {
+        let unicodeScalars = self.unicodeScalars
+        assert(unicodeScalars.count == 1, "Character must be a single unicode scalar")
+        
+        let firstValue: UInt32 = unicodeScalars.first!.value
+        assert(firstValue <= 255, "Character must be a single byte")
+        
+        return Byte(firstValue)
+    }
+}
+
+extension DataCommandMode {
+    func asByte() -> Byte {
+        return self.rawValue.asByte()
+    }
+}
 
 extension String {
-    public func uvsgBytes() -> Bytes {
+    func uvsgBytes() -> Bytes {
         return (Array(self.utf8) + [0x00])
+    }
+}
+
+extension Bool {
+    func asByte() -> Byte {
+        return (self ? Byte(1) : Byte(0))
     }
 }
 
 // MARK: Debugging
 
 extension Array where Element == Byte {
-    public func hexEncodedString() -> String {
+    func hexEncodedString() -> String {
         return map { String(format: "%02hhX ", $0) }.joined()
     }
 }

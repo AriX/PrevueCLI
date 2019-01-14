@@ -8,7 +8,7 @@
 
 // This is a subset of the command modes discussed here: http://prevueguide.com/wiki/UVSG_Satellite_Data#Command_Modes
 
-public enum DataCommandMode: Character {
+enum DataCommandMode: Character {
     case boxOn = "A"
     case channel = "C"
     case newChannel = "c"

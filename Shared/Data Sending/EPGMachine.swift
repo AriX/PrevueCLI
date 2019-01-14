@@ -6,9 +6,8 @@
 //  Copyright © 2018 Vertex. All rights reserved.
 //
 
-struct Machine {
+struct EPGMachine {
     var selectCode: String
-    var listenerIPAddress: String?
-    var listenerPort: Int?
+    var dataDestination: DataDestination?
     var guideTitle: String?
 }
