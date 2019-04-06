@@ -33,6 +33,6 @@ extension BoxOffCommand {
 
 extension ResetCommand {
     var payload: Bytes {
-        return []
+        return [0x00]
     }
 }

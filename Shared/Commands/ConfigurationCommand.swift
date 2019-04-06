@@ -64,32 +64,3 @@ extension ConfigurationCommand {
         ]
     }
 }
-
-extension UInt16 {
-    func bytesBySeparatingIntoHighAndLowBits() -> Bytes {
-        return [UInt8(self >> 8), UInt8(self & 0xFF)]
-    }
-    
-    func bytesBySeparatingIntoASCIIDigits() -> Bytes {
-        let string = String(format: "%02d", self)
-        return Array(string.utf8)
-    }
-}
-
-extension UInt8 {
-    func byteByRepresentingNumberAsASCIILetter() -> Byte {
-        let A = Byte(0x41) // refactor with char?
-        return (A + self)
-    }
-    
-    func byteByRepresentingNumberAsASCIIDigit() -> Byte {
-        let zero = Byte(0x30)
-        return (zero + self)
-    }
-}
-
-extension Bool {
-    func byteByRepresentingAsASCIILetter() -> Byte {
-        return (self ? Byte(0x59) : Byte(0x4E))
-    }
-}
