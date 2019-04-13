@@ -35,6 +35,12 @@
 		02A6FD0C225850A300323C8F /* ByteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0A225850A300323C8F /* ByteTypes.swift */; };
 		02A6FD0E225887A800323C8F /* ConfigDatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */; };
 		02A6FD0F225887A800323C8F /* ConfigDatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */; };
+		02A6FD1122596C0000323C8F /* ChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD1022596C0000323C8F /* ChannelsCommand.swift */; };
+		02A6FD122259706500323C8F /* ChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD1022596C0000323C8F /* ChannelsCommand.swift */; };
+		02A6FD14225973EA00323C8F /* ProgramCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD13225973EA00323C8F /* ProgramCommand.swift */; };
+		02A6FD15225973EE00323C8F /* ProgramCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD13225973EA00323C8F /* ProgramCommand.swift */; };
+		02A6FD172259875800323C8F /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
+		02A6FD18225988DB00323C8F /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +76,9 @@
 		02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationCommand.swift; sourceTree = "<group>"; };
 		02A6FD0A225850A300323C8F /* ByteTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteTypes.swift; sourceTree = "<group>"; };
 		02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDatCommand.swift; sourceTree = "<group>"; };
+		02A6FD1022596C0000323C8F /* ChannelsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsCommand.swift; sourceTree = "<group>"; };
+		02A6FD13225973EA00323C8F /* ProgramCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCommand.swift; sourceTree = "<group>"; };
+		02A6FD162259875800323C8F /* ChannelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +169,9 @@
 				0270E6D921A0DF35003C98EF /* DownloadCommand.swift */,
 				02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */,
 				02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */,
+				02A6FD162259875800323C8F /* ChannelTypes.swift */,
+				02A6FD1022596C0000323C8F /* ChannelsCommand.swift */,
+				02A6FD13225973EA00323C8F /* ProgramCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -258,12 +270,15 @@
 				02A6FCF221A136A600323C8F /* CommandModes.swift in Sources */,
 				02A6FD0E225887A800323C8F /* ConfigDatCommand.swift in Sources */,
 				02A6FCFA21A13DFE00323C8F /* DataDestination.swift in Sources */,
+				02A6FD14225973EA00323C8F /* ProgramCommand.swift in Sources */,
 				02A6FCF521A136A600323C8F /* UVSGEncoding.swift in Sources */,
 				02A6FCBC21A0AA8E00323C8F /* AppDelegate.swift in Sources */,
 				02A6FD0521A2642300323C8F /* ClockCommand.swift in Sources */,
+				02A6FD1122596C0000323C8F /* ChannelsCommand.swift in Sources */,
 				02A6FD0221A263F600323C8F /* BoxCommands.swift in Sources */,
 				02A6FCF321A136A600323C8F /* DownloadCommand.swift in Sources */,
 				02A6FD0821A264BB00323C8F /* ConfigurationCommand.swift in Sources */,
+				02A6FD172259875800323C8F /* ChannelTypes.swift in Sources */,
 				02A6FCFF21A263D300323C8F /* TitleCommand.swift in Sources */,
 				02A6FCF721A13BC800323C8F /* FSUAEDataDestination.swift in Sources */,
 				02A6FCF121A136A600323C8F /* EPGMachine.swift in Sources */,
@@ -278,12 +293,15 @@
 				02A6FCEC21A1367500323C8F /* CommandModes.swift in Sources */,
 				02A6FD0F225887A800323C8F /* ConfigDatCommand.swift in Sources */,
 				02A6FCFB21A13DFE00323C8F /* DataDestination.swift in Sources */,
+				02A6FD15225973EE00323C8F /* ProgramCommand.swift in Sources */,
+				02A6FD122259706500323C8F /* ChannelsCommand.swift in Sources */,
 				02A6FCEF21A1367500323C8F /* UVSGEncoding.swift in Sources */,
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
 				02A6FD0621A2642300323C8F /* ClockCommand.swift in Sources */,
 				02A6FD0321A263F600323C8F /* BoxCommands.swift in Sources */,
 				02A6FCED21A1367500323C8F /* DownloadCommand.swift in Sources */,
 				02A6FD0921A264BB00323C8F /* ConfigurationCommand.swift in Sources */,
+				02A6FD18225988DB00323C8F /* ChannelTypes.swift in Sources */,
 				02A6FD0021A263D300323C8F /* TitleCommand.swift in Sources */,
 				02A6FCF821A13BC800323C8F /* FSUAEDataDestination.swift in Sources */,
 				02A6FCEB21A1367500323C8F /* EPGMachine.swift in Sources */,

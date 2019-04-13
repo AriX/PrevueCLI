@@ -39,6 +39,9 @@ extension String {
     func uvsgBytes() -> Bytes {
         return (Array(self.utf8) + [0x00])
     }
+    func asBytes() -> Bytes {
+        return Array(self.utf8)
+    }
 }
 
 extension Bool {

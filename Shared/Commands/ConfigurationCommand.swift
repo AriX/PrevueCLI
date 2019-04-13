@@ -19,7 +19,7 @@ struct ConfigurationCommand: DataCommand {
     let commandMode = DataCommandMode.configuration
     let timeslotsBack: UInt8 // BCK: Number of half hour blocks away to start at (default 0 on Atari (should confirm), 1 on Amiga, must be 0 or 1 on Amiga)
     let timeslotsForward: UInt8 // FWD: Number of half hour blocks away to end at (default 6 on Atari (should confirm), 4 on Amiga, must be 1-8 on Amiga)
-    let scrollSpeed: UInt8 // SSPD: Scroll speed (1-7)
+    let scrollSpeed: UInt8 // SSPD: Scroll speed (1-7) (default 3 on Amiga)
     let maxAdCount: UInt16 // #AD: Maximum number of ads to allow (default 36 on Amiga)
     let maxAdLines: UInt8 // LINE: The max # of lines allowed in an ad (default 6 on Amiga, max value 6)
     let unknown: Bool // Unknown value (default N on Amiga, should reverse serial parsing routine to see what it does, used in parseCtrlCmd)
@@ -28,13 +28,13 @@ struct ConfigurationCommand: DataCommand {
     let observesDaylightSavingsTime: Bool // DST: ? (default N on Amiga)
     let cont: Bool // CONT: Unknown value, keyboard related (default Y on Amiga)
     let keyboardActive: Bool // TEXT: allow local ads editing (default N, switches between N/R/L/S in diagnostic mode on Amiga, Y/N on Atari)
-    let unknown2: Bool
-    let unknown3: Bool
-    let unknown4: Bool
-    let unknown5: Bool
+    let unknown2: Bool // Default N
+    let unknown3: Bool // Default N
+    let unknown4: Bool // Default Y
+    let unknown5: Byte // Default A
     let grph: UInt8 // GRPH: Unknown effect (default N on Amiga, possible values include N/E/L)
-    let videoInput: UInt8 // VIN: Unknown, perhpas related to local video ads (default N on Amiga, appears to accept values X/L/N)
-    let unknown6: UInt8 // Unknown value (default 0x00 on Amiga, values L or X observed in UVSG test files?)
+    let videoInsertion: UInt8 // VIN: Unknown, perhpas related to local video ads (default N on Amiga, appears to accept values X/L/N)
+    let unknown6: UInt8 // Unknown value (default 0x00 on Amiga, values L or X observed in UVSG test files?) - seems to set some type of time offest (when 'X', timeslot is labeled 6:28 instead of 6:30)
 }
 
 extension ConfigurationCommand {
@@ -56,9 +56,9 @@ extension ConfigurationCommand {
             unknown2.byteByRepresentingAsASCIILetter(),
             unknown3.byteByRepresentingAsASCIILetter(),
             unknown4.byteByRepresentingAsASCIILetter(),
-            unknown5.byteByRepresentingAsASCIILetter(),
+            unknown5,
             grph,
-            videoInput,
+            videoInsertion,
             unknown6,
             0x00
         ]
