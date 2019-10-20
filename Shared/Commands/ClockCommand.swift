@@ -53,6 +53,7 @@ extension ClockCommand {
     var payload: Bytes {
         // To be tested
         // I think the last byte is always 0 and is unused, but should be confirmed in disassembly
+        // Last bit goes to 1 to reset Julian day
         return [dayOfWeek.rawValue, month, day, year, hour, minute, second, daylightSavingsTime.asByte(), 0x00]
     }
 }

@@ -8,15 +8,17 @@
 
 struct ProgramCommand: DataCommand {
     let commandMode = DataCommandMode.program
-    let timeslot: UInt8
-    let day: JulianDay
-    let sourceIdentifier: String // Channel source
-    let flags: ProgramFlags
-    let programName: String
+    let program: Program
+}
+
+extension Program {
+    var payload: Bytes {
+        return [timeslot, day.dayOfYear] + sourceIdentifier.asBytes() + [0x12] + [flags.rawValue] + programName.asBytes() + [0x00]
+    }
 }
 
 extension ProgramCommand {
     var payload: Bytes {
-        return [timeslot, day.dayOfYear] + sourceIdentifier.asBytes() + [0x12] + [flags.rawValue] + programName.asBytes() + [0x00]
+        return program.payload
     }
 }

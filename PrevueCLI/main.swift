@@ -8,7 +8,7 @@
 
 import Foundation
 
-let destination = FSUAEDataDestination(host: "127.0.0.1", port: 5542)
+let destination = SerialPortDataDestination(path: "/dev/cu.usbserial")//FSUAEDataDestination(host: "127.0.0.1", port: 5542)
 destination.openConnection()
 
 destination.send(BoxOnCommand(selectCode: "*"))
@@ -30,24 +30,30 @@ destination.send(BoxOnCommand(selectCode: "*"))
 //destination.send(ConfigDatCommand(clockCmd: 2).encodeWithChecksum())
 
 // Channel & programs test
-// TODO: Get listings from a data source
 
-let date = Date(timeIntervalSinceNow: 86400*153)
-let julianDay = JulianDay(with: date)
+let date = Date()
+let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear - 1)
 
 destination.send(ClockCommand(with: date)!)
 
-let channels = [Channel(flags: .none, sourceIdentifier: "TBS", channelNumber: "2", callLetters: "TBS"), Channel(flags: .none, sourceIdentifier: "KYW", channelNumber: "3", callLetters: "KYW")]
-let channelCommand = ChannelsCommand(day: julianDay, channels: channels)
+let channelsFile = URL(fileURLWithPath: "/Users/Ari/Desktop/Prevue Technical/Sample Listings/channels.csv")
+let programsFile = URL(fileURLWithPath: "/Users/Ari/Desktop/Prevue Technical/Sample Listings/programs.csv")
+let listingSource = SampleDataListingSource(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: julianDay)!
+//
+//let channels = [Channel(flags: .none, sourceIdentifier: "TBS", channelNumber: "2", callLetters: "TBS"), Channel(flags: .none, sourceIdentifier: "KYW", channelNumber: "3", callLetters: "KYW")]
+let channelCommand = ChannelsCommand(day: julianDay, channels: listingSource.channels)
 destination.send(channelCommand)
 
-let programCommands: [ProgramCommand] = stride(from: 0, to: 47, by: 1).map { (index) in
-    ProgramCommand(timeslot: index, day: julianDay, sourceIdentifier: "KYW", flags: .none, programName: "Eyewitness @ \(index) \(julianDay.dayOfYear)")
+//let programs: [Program] = stride(from: 0, to: 47, by: 1).map { (index) in
+//    Program(timeslot: index, day: julianDay, sourceIdentifier: "KYW", flags: .none, programName: "Eyewitness @ \(index) \(julianDay.dayOfYear)")
+//}
+let programCommands: [ProgramCommand] = listingSource.programs.map { (program) in
+    ProgramCommand(program: program)
 }
 destination.send(programCommands)
 
 // Clock test
-//destination.send(ClockCommand(dayOfWeek: .Friday, month: 3, day: 4, year: 119, hour: 07, minute: 00, second: 00, daylightSavingsTime: true))
+//destination.send(ClockCommand(dayOfWeek: .Friday, month: 2, day: 4, year: 119, hour: 07, minute: 00, second: 00, daylightSavingsTime: true))
 //destination.send(ClockCommand(with: Date())!)
 
 destination.send(BoxOffCommand())

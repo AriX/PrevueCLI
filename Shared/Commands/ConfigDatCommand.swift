@@ -18,7 +18,7 @@ struct ConfigDatCommand: DataCommand {
     let SBS: UInt8 = 1 // SBS Default 3
     let unknown5: UInt16 = 08 // Default 24
     let unknown6: UInt16 = 08 // Default 24
-    let unknown7: Byte = 0x47 // G Default G
+    let unknown7: Byte = 0x47 // Display format. G for grid, or S for scroll. Default G.
     let unknown8: Byte = 0x4E // N Default N
     let unknown9: Byte = 0x41 // A Default A
     let unknown10: Byte = 0x45 // E Default E

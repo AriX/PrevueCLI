@@ -12,13 +12,6 @@ struct ChannelsCommand: DataCommand {
     let channels: [Channel]
 }
 
-struct Channel {
-    let flags: ChannelFlags
-    let sourceIdentifier: String // Limited to 6 characters
-    let channelNumber: String
-    let callLetters: String // Limited to 5 characters on EPG Jr., 6 on Amiga
-}
-
 extension ChannelsCommand {
     var payload: Bytes {
         let encodedChannels = channels.reduce([]) { encodedChannels, channel in

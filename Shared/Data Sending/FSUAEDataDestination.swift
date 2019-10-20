@@ -34,6 +34,12 @@ class FSUAEDataDestination: NetworkDataDestination {
         
         connection.send(content: Data(bytes), completion: .contentProcessed({ (error) in
             print("Sent packet with error \(String(describing: error))")
+            
+            // ???
+            // old comment: 240 bytes per second, 1000 miliseconds in a second, but we need to go slower because of UDP
+            let timeToSend = (Double(bytes.count)/1.5/240.0)*1000.0*1000
+            usleep(UInt32(timeToSend))
+            
             semaphore.signal()
         }))
         // TODO: rate limiting

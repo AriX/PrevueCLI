@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0220A64D2274EB580058C20D /* SerialPortDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */; };
 		0270E6DE21A0E388003C98EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
 		02A6FCBC21A0AA8E00323C8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCBB21A0AA8E00323C8F /* AppDelegate.swift */; };
 		02A6FCBE21A0AA8E00323C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A6FCBD21A0AA8E00323C8F /* Assets.xcassets */; };
@@ -41,6 +42,10 @@
 		02A6FD15225973EE00323C8F /* ProgramCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD13225973EA00323C8F /* ProgramCommand.swift */; };
 		02A6FD172259875800323C8F /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
 		02A6FD18225988DB00323C8F /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
+		02A6FD712268231900323C8F /* ListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD702268231900323C8F /* ListingsSource.swift */; };
+		02A6FD722268231B00323C8F /* ListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD702268231900323C8F /* ListingsSource.swift */; };
+		02A6FD742268233700323C8F /* SampleDataListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* SampleDataListingsSource.swift */; };
+		02A6FD752268233900323C8F /* SampleDataListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* SampleDataListingsSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
 		0270E6D921A0DF35003C98EF /* DownloadCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCommand.swift; sourceTree = "<group>"; };
 		02A6FCB821A0AA8E00323C8F /* PrevueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrevueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +85,8 @@
 		02A6FD1022596C0000323C8F /* ChannelsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsCommand.swift; sourceTree = "<group>"; };
 		02A6FD13225973EA00323C8F /* ProgramCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCommand.swift; sourceTree = "<group>"; };
 		02A6FD162259875800323C8F /* ChannelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTypes.swift; sourceTree = "<group>"; };
+		02A6FD702268231900323C8F /* ListingsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsSource.swift; sourceTree = "<group>"; };
+		02A6FD732268233700323C8F /* SampleDataListingsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataListingsSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		02A6FCCE21A0AB0E00323C8F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				02A6FD6F2268230D00323C8F /* Listings Sources */,
 				02A6FCFC21A13E9E00323C8F /* Data Sending */,
 				02A6FCFD21A13EBD00323C8F /* Commands */,
 				02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */,
@@ -155,6 +164,7 @@
 				02A6FCE621A0B81C00323C8F /* EPGMachine.swift */,
 				02A6FCF921A13DFE00323C8F /* DataDestination.swift */,
 				02A6FCF621A13BC800323C8F /* FSUAEDataDestination.swift */,
+				0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */,
 			);
 			path = "Data Sending";
 			sourceTree = "<group>";
@@ -174,6 +184,15 @@
 				02A6FD13225973EA00323C8F /* ProgramCommand.swift */,
 			);
 			path = Commands;
+			sourceTree = "<group>";
+		};
+		02A6FD6F2268230D00323C8F /* Listings Sources */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FD702268231900323C8F /* ListingsSource.swift */,
+				02A6FD732268233700323C8F /* SampleDataListingsSource.swift */,
+			);
+			path = "Listings Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,10 +294,12 @@
 				02A6FCBC21A0AA8E00323C8F /* AppDelegate.swift in Sources */,
 				02A6FD0521A2642300323C8F /* ClockCommand.swift in Sources */,
 				02A6FD1122596C0000323C8F /* ChannelsCommand.swift in Sources */,
+				02A6FD712268231900323C8F /* ListingsSource.swift in Sources */,
 				02A6FD0221A263F600323C8F /* BoxCommands.swift in Sources */,
 				02A6FCF321A136A600323C8F /* DownloadCommand.swift in Sources */,
 				02A6FD0821A264BB00323C8F /* ConfigurationCommand.swift in Sources */,
 				02A6FD172259875800323C8F /* ChannelTypes.swift in Sources */,
+				02A6FD742268233700323C8F /* SampleDataListingsSource.swift in Sources */,
 				02A6FCFF21A263D300323C8F /* TitleCommand.swift in Sources */,
 				02A6FCF721A13BC800323C8F /* FSUAEDataDestination.swift in Sources */,
 				02A6FCF121A136A600323C8F /* EPGMachine.swift in Sources */,
@@ -298,10 +319,13 @@
 				02A6FCEF21A1367500323C8F /* UVSGEncoding.swift in Sources */,
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
 				02A6FD0621A2642300323C8F /* ClockCommand.swift in Sources */,
+				02A6FD722268231B00323C8F /* ListingsSource.swift in Sources */,
 				02A6FD0321A263F600323C8F /* BoxCommands.swift in Sources */,
 				02A6FCED21A1367500323C8F /* DownloadCommand.swift in Sources */,
 				02A6FD0921A264BB00323C8F /* ConfigurationCommand.swift in Sources */,
 				02A6FD18225988DB00323C8F /* ChannelTypes.swift in Sources */,
+				02A6FD752268233900323C8F /* SampleDataListingsSource.swift in Sources */,
+				0220A64D2274EB580058C20D /* SerialPortDataDestination.swift in Sources */,
 				02A6FD0021A263D300323C8F /* TitleCommand.swift in Sources */,
 				02A6FCF821A13BC800323C8F /* FSUAEDataDestination.swift in Sources */,
 				02A6FCEB21A1367500323C8F /* EPGMachine.swift in Sources */,

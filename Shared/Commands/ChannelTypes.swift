@@ -8,6 +8,21 @@
 
 import Foundation
 
+struct Channel {
+    let flags: ChannelFlags
+    let sourceIdentifier: String // Limited to 6 characters
+    let channelNumber: String
+    let callLetters: String // Limited to 5 characters on EPG Jr., 6 on Amiga
+}
+
+struct Program {
+    let timeslot: UInt8
+    let day: JulianDay
+    let sourceIdentifier: String // Channel source
+    let flags: ProgramFlags
+    let programName: String
+}
+
 struct JulianDay {
     let dayOfYear: UInt8
 }
