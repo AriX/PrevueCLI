@@ -27,4 +27,24 @@ enum DataCommandMode: Character {
     case title = "T"
     case saveData = "%"
     case boxOff = "\u{BB}"
+    
+    // Debug commands
+    case debugAddCTRLByte = "G"
+}
+
+enum ControlCommandMode: Byte {
+    case action = 0x01 // CTRL-A - "Promo Action Command"
+    case setDefaultBrushes = 0x02 // CTRL-B - "Set Default Brushes"
+    case defaultGraphic = 0x03 // CTRL-C  - "Default Graphic Command"
+    case defaultPromoSide = 0x04 // CTRL-D - "Default Promo Side Command"
+    case eventType = 0x05 // CTRL-E - "Event Type Command"
+    case startGridScroll = 0x07 // CTRL-G - "Grid Scrolling Start Command"
+    case clock = 0x0B // CTRL-K (only in newer software)
+    case actionLocalAvails = 0x0C // CTRL-L - "Local Avail or Tagged Promo"
+    case setGenlockFadeLevel = 0x0F // CTRL-O - "Set Genlock Fade Level"
+    case pauseGridScroll = 0x10 // CTRL-P - "Grid Scrolling Pause Command"
+    case titleStrings = 0x11 // CTRL-Q - "Title Strings Command"
+    case videoVue = 0x13 // CTRL-S - "Video View Command" (only in older software)
+    case unknownT = 0x14 // CTRL-T (only in newer software)
+    case videoInsertion = 0x16 // CTRL-V - "Video Insertion or Configurable Local Avail"
 }

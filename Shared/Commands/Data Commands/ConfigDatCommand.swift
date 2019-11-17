@@ -112,7 +112,7 @@ extension ConfigDatCommand {
             unknown39,
             unknown40,
             unknown41,
-            clockCmd.byteByRepresentingNumberAsASCIIDigit()
+//            clockCmd.byteByRepresentingNumberAsASCIIDigit()
         ]
         
         let unknownByte = Byte(0x00) // Unknown! What does this mean? Perhaps unused.

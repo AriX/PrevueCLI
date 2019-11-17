@@ -8,10 +8,40 @@
 
 import Foundation
 
-let destination = SerialPortDataDestination(path: "/dev/cu.usbserial")//FSUAEDataDestination(host: "127.0.0.1", port: 5542)
+let destination = FSUAEDataDestination(host: "127.0.0.1", port: 5542)
 destination.openConnection()
 
 destination.send(BoxOnCommand(selectCode: "*"))
+
+extension Data {
+    struct HexEncodingOptions: OptionSet {
+        let rawValue: Int
+        static let upperCase = HexEncodingOptions(rawValue: 1 << 0)
+    }
+    
+    func hexEncodedString(options: HexEncodingOptions = []) -> String {
+        let format = options.contains(.upperCase) ? "%02hhX" : "%02hhx"
+        return map { String(format: format, $0) }.joined()
+    }
+}
+
+let promoTitleCommand = PromoTitleCommand(leftTitle: "Action News", rightTitle: "Action News")
+let actionCommand = ActionCommand(value: .quarterScreenPreview("WPVI", "WCAU"))
+let actionCommand2 = ActionCommand(value: .quarterScreenTrigger(.null, .null))
+let eventCommand = EventCommand(leftEvent: .titleLookup, rightEvent: .titleLookup)
+
+for byte in promoTitleCommand.encodeWithChecksum() {
+    destination.sendDebugCTRLByte(byte: byte)
+}
+for byte in eventCommand.encodeWithChecksum() {
+    destination.sendDebugCTRLByte(byte: byte)
+}
+for byte in actionCommand.encodeWithChecksum() {
+    destination.sendDebugCTRLByte(byte: byte)
+}
+//for byte in actionCommand2.encodeWithChecksum() {
+//    destination.sendDebugCTRLByte(byte: byte)
+//}
 
 // Configuration test
 //let command2 = ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, unknown: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00)

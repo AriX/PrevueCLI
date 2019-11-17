@@ -8,9 +8,11 @@
 
 import Foundation
 
+typealias SourceIdentifier = String // Limited to 6 characters
+
 struct Channel {
     let flags: ChannelFlags
-    let sourceIdentifier: String // Limited to 6 characters
+    let sourceIdentifier: SourceIdentifier
     let channelNumber: String
     let callLetters: String // Limited to 5 characters on EPG Jr., 6 on Amiga
 }
@@ -18,7 +20,7 @@ struct Channel {
 struct Program {
     let timeslot: UInt8
     let day: JulianDay
-    let sourceIdentifier: String // Channel source
+    let sourceIdentifier: SourceIdentifier // Channel source
     let flags: ProgramFlags
     let programName: String
 }

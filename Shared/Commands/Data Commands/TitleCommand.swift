@@ -13,6 +13,6 @@ struct TitleCommand: DataCommand {
 
 extension TitleCommand {
     var payload: Bytes {
-        return self.title.uvsgBytes()
+        return title.uvsgBytes()
     }
 }

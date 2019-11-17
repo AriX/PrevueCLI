@@ -50,3 +50,20 @@ extension DataCommand {
         return (startBytes + [commandMode.asByte()] + payload)
     }
 }
+
+protocol ControlCommand: UVSGEncodable {
+    var commandMode: ControlCommandMode { get }
+    var payload: Bytes { get }
+}
+
+extension ControlCommand {
+    func encode() -> Bytes {
+        return ([commandMode.rawValue] + payload)
+    }
+}
+
+extension ControlCommand {
+    static func leftRightStringAsBytes(leftString: String, rightString: String) -> Bytes {
+        return (leftString.asBytes() + [Byte(0x12)] + rightString.asBytes() + [Byte(0x0D)])
+    }
+}

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02193164237B90890076A810 /* ActionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193163237B90890076A810 /* ActionCommand.swift */; };
+		02193166237BAD310076A810 /* PromoTitleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193165237BAD310076A810 /* PromoTitleCommand.swift */; };
+		02193168237BAFB30076A810 /* EventCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193167237BAFB30076A810 /* EventCommand.swift */; };
 		0220A64D2274EB580058C20D /* SerialPortDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */; };
+		025C0D9323714C5900489835 /* DataSending+AriDebugCTRL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */; };
 		0270E6DE21A0E388003C98EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
 		02A6FCBC21A0AA8E00323C8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCBB21A0AA8E00323C8F /* AppDelegate.swift */; };
 		02A6FCBE21A0AA8E00323C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A6FCBD21A0AA8E00323C8F /* Assets.xcassets */; };
@@ -61,7 +65,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02193163237B90890076A810 /* ActionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCommand.swift; sourceTree = "<group>"; };
+		02193165237BAD310076A810 /* PromoTitleCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTitleCommand.swift; sourceTree = "<group>"; };
+		02193167237BAFB30076A810 /* EventCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommand.swift; sourceTree = "<group>"; };
 		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
+		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
 		0270E6D921A0DF35003C98EF /* DownloadCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCommand.swift; sourceTree = "<group>"; };
 		02A6FCB821A0AA8E00323C8F /* PrevueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrevueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +115,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02193161237B90620076A810 /* Data Commands */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FCFE21A263D300323C8F /* TitleCommand.swift */,
+				02A6FD0121A263F600323C8F /* BoxCommands.swift */,
+				02A6FD0421A2642300323C8F /* ClockCommand.swift */,
+				0270E6D921A0DF35003C98EF /* DownloadCommand.swift */,
+				02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */,
+				02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */,
+				02A6FD162259875800323C8F /* ChannelTypes.swift */,
+				02A6FD1022596C0000323C8F /* ChannelsCommand.swift */,
+				02A6FD13225973EA00323C8F /* ProgramCommand.swift */,
+			);
+			path = "Data Commands";
+			sourceTree = "<group>";
+		};
+		02193162237B90700076A810 /* Control Commands */ = {
+			isa = PBXGroup;
+			children = (
+				02193163237B90890076A810 /* ActionCommand.swift */,
+				02193165237BAD310076A810 /* PromoTitleCommand.swift */,
+				02193167237BAFB30076A810 /* EventCommand.swift */,
+			);
+			path = "Control Commands";
+			sourceTree = "<group>";
+		};
 		02A6FCAF21A0AA8D00323C8F = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +199,7 @@
 				02A6FCF921A13DFE00323C8F /* DataDestination.swift */,
 				02A6FCF621A13BC800323C8F /* FSUAEDataDestination.swift */,
 				0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */,
+				025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */,
 			);
 			path = "Data Sending";
 			sourceTree = "<group>";
@@ -173,15 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				0270E6D721A0DED7003C98EF /* CommandModes.swift */,
-				02A6FCFE21A263D300323C8F /* TitleCommand.swift */,
-				02A6FD0121A263F600323C8F /* BoxCommands.swift */,
-				02A6FD0421A2642300323C8F /* ClockCommand.swift */,
-				0270E6D921A0DF35003C98EF /* DownloadCommand.swift */,
-				02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */,
-				02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */,
-				02A6FD162259875800323C8F /* ChannelTypes.swift */,
-				02A6FD1022596C0000323C8F /* ChannelsCommand.swift */,
-				02A6FD13225973EA00323C8F /* ProgramCommand.swift */,
+				02193161237B90620076A810 /* Data Commands */,
+				02193162237B90700076A810 /* Control Commands */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -317,11 +345,15 @@
 				02A6FD15225973EE00323C8F /* ProgramCommand.swift in Sources */,
 				02A6FD122259706500323C8F /* ChannelsCommand.swift in Sources */,
 				02A6FCEF21A1367500323C8F /* UVSGEncoding.swift in Sources */,
+				025C0D9323714C5900489835 /* DataSending+AriDebugCTRL.swift in Sources */,
+				02193164237B90890076A810 /* ActionCommand.swift in Sources */,
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
 				02A6FD0621A2642300323C8F /* ClockCommand.swift in Sources */,
+				02193166237BAD310076A810 /* PromoTitleCommand.swift in Sources */,
 				02A6FD722268231B00323C8F /* ListingsSource.swift in Sources */,
 				02A6FD0321A263F600323C8F /* BoxCommands.swift in Sources */,
 				02A6FCED21A1367500323C8F /* DownloadCommand.swift in Sources */,
+				02193168237BAFB30076A810 /* EventCommand.swift in Sources */,
 				02A6FD0921A264BB00323C8F /* ConfigurationCommand.swift in Sources */,
 				02A6FD18225988DB00323C8F /* ChannelTypes.swift in Sources */,
 				02A6FD752268233900323C8F /* SampleDataListingsSource.swift in Sources */,

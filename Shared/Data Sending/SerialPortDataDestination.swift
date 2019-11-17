@@ -65,4 +65,65 @@ class SerialPortDataDestination: DataDestination {
         print("Sending \(bytes.hexEncodedString())to \(self)")
         write(handle, buffer.baseAddress, size)
     }
+//    func sendCTRL(_ bytes: Bytes) {
+//        guard let handle = handle else {
+//            print("[SerialPortDataDestination] Tried to send bytes with no open handle")
+//            return
+//        }
+//
+//        let size = bytes.count
+//        let buffer = UnsafeMutableRawBufferPointer.allocate(byteCount: size, alignment: 1)
+//        defer {
+//            buffer.deallocate()
+//        }
+//
+//        buffer.copyBytes(from: bytes)
+//
+//        print("Sending \(bytes.hexEncodedString())to \(self)")
+//        write(handle, buffer.baseAddress, size)
+//    }
+    var delay: useconds_t = 830
+    func setRTS(_ up: Bool) {
+        guard let handle = handle else {
+            print("[SerialPortDataDestination] Tried to set RTS with no open handle")
+            return
+        }
+        
+        var status: Int32 = 0
+        let statusPointer = UnsafeMutableRawPointer(&status)
+        
+        _ = ioctl(handle, TIOCMGET, statusPointer);
+        
+        if up {
+            status |= TIOCM_RTS;
+        } else {
+            status &= ~TIOCM_RTS;
+        }
+        print("Setting status to \(status)")
+        
+        _ = ioctl(handle, TIOCMSET, statusPointer);
+        
+        usleep(delay);
+    }
+    func sendCTRLGroup(_ r: Bool, _ s: Bool) {
+        for _ in 1...4 {
+            setRTS(r);
+        }
+        for _ in 1...4 {
+            setRTS(s);
+        }
+    }
+    func sendCTRLByte(byt: Byte) {
+        setRTS(true); setRTS(true); setRTS(true);
+        sendCTRLGroup(true, !((byt&1)>0)); // start
+        sendCTRLGroup(!((byt&1)>0), !((byt&2)>0)); // data
+        sendCTRLGroup(!((byt&2)>0), !((byt&4)>0)); // data
+        sendCTRLGroup(!((byt&4)>0), !((byt&8)>0)); // data
+        sendCTRLGroup(!((byt&8)>0), !((byt&16)>0)); // data
+        sendCTRLGroup(!((byt&16)>0), !((byt&32)>0)); // data
+        sendCTRLGroup(!((byt&32)>0), !((byt&64)>0)); // data
+        sendCTRLGroup(!((byt&64)>0), !((byt&128)>0)); // data
+        sendCTRLGroup(!((byt&128)>0), false); // data
+        sendCTRLGroup(false, false); // stop
+    }
 }
