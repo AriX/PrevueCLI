@@ -7,49 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02193164237B90890076A810 /* ActionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193163237B90890076A810 /* ActionCommand.swift */; };
-		02193166237BAD310076A810 /* PromoTitleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193165237BAD310076A810 /* PromoTitleCommand.swift */; };
-		02193168237BAFB30076A810 /* EventCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193167237BAFB30076A810 /* EventCommand.swift */; };
-		0220A64D2274EB580058C20D /* SerialPortDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */; };
-		025C0D9323714C5900489835 /* DataSending+AriDebugCTRL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */; };
+		021931E1238123710076A810 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021931DD238106400076A810 /* DataController.swift */; };
+		021931E2238123710076A810 /* ListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD702268231900323C8F /* ListingsSource.swift */; };
+		021931E3238123710076A810 /* SampleDataListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* SampleDataListingsSource.swift */; };
+		021931E4238123710076A810 /* EPGMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE621A0B81C00323C8F /* EPGMachine.swift */; };
+		021931E5238123710076A810 /* DataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF921A13DFE00323C8F /* DataDestination.swift */; };
+		021931E6238123710076A810 /* FSUAEDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF621A13BC800323C8F /* FSUAEDataDestination.swift */; };
+		021931E7238123710076A810 /* SerialPortDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */; };
+		021931E8238123710076A810 /* DataSending+AriDebugCTRL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */; };
+		021931E9238123710076A810 /* CommandModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D721A0DED7003C98EF /* CommandModes.swift */; };
+		021931EA238123710076A810 /* TitleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCFE21A263D300323C8F /* TitleCommand.swift */; };
+		021931EB238123710076A810 /* BoxCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0121A263F600323C8F /* BoxCommands.swift */; };
+		021931EC238123710076A810 /* ClockCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0421A2642300323C8F /* ClockCommand.swift */; };
+		021931ED238123710076A810 /* DownloadCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D921A0DF35003C98EF /* DownloadCommand.swift */; };
+		021931EE238123710076A810 /* ConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */; };
+		021931EF238123710076A810 /* ConfigDatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */; };
+		021931F0238123710076A810 /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
+		021931F1238123710076A810 /* ChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD1022596C0000323C8F /* ChannelsCommand.swift */; };
+		021931F2238123710076A810 /* ProgramCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD13225973EA00323C8F /* ProgramCommand.swift */; };
+		021931F3238123710076A810 /* ActionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193163237B90890076A810 /* ActionCommand.swift */; };
+		021931F4238123710076A810 /* PromoTitleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193165237BAD310076A810 /* PromoTitleCommand.swift */; };
+		021931F5238123710076A810 /* EventCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193167237BAFB30076A810 /* EventCommand.swift */; };
+		021931F6238123710076A810 /* UVSGEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */; };
+		021931F7238123710076A810 /* ByteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0A225850A300323C8F /* ByteTypes.swift */; };
 		0270E6DE21A0E388003C98EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
-		02A6FCBC21A0AA8E00323C8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCBB21A0AA8E00323C8F /* AppDelegate.swift */; };
-		02A6FCBE21A0AA8E00323C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A6FCBD21A0AA8E00323C8F /* Assets.xcassets */; };
-		02A6FCC121A0AA8E00323C8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A6FCBF21A0AA8E00323C8F /* MainMenu.xib */; };
-		02A6FCEB21A1367500323C8F /* EPGMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE621A0B81C00323C8F /* EPGMachine.swift */; };
-		02A6FCEC21A1367500323C8F /* CommandModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D721A0DED7003C98EF /* CommandModes.swift */; };
-		02A6FCED21A1367500323C8F /* DownloadCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D921A0DF35003C98EF /* DownloadCommand.swift */; };
-		02A6FCEF21A1367500323C8F /* UVSGEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */; };
-		02A6FCF121A136A600323C8F /* EPGMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE621A0B81C00323C8F /* EPGMachine.swift */; };
-		02A6FCF221A136A600323C8F /* CommandModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D721A0DED7003C98EF /* CommandModes.swift */; };
-		02A6FCF321A136A600323C8F /* DownloadCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270E6D921A0DF35003C98EF /* DownloadCommand.swift */; };
-		02A6FCF521A136A600323C8F /* UVSGEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */; };
-		02A6FCF721A13BC800323C8F /* FSUAEDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF621A13BC800323C8F /* FSUAEDataDestination.swift */; };
-		02A6FCF821A13BC800323C8F /* FSUAEDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF621A13BC800323C8F /* FSUAEDataDestination.swift */; };
-		02A6FCFA21A13DFE00323C8F /* DataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF921A13DFE00323C8F /* DataDestination.swift */; };
-		02A6FCFB21A13DFE00323C8F /* DataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF921A13DFE00323C8F /* DataDestination.swift */; };
-		02A6FCFF21A263D300323C8F /* TitleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCFE21A263D300323C8F /* TitleCommand.swift */; };
-		02A6FD0021A263D300323C8F /* TitleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCFE21A263D300323C8F /* TitleCommand.swift */; };
-		02A6FD0221A263F600323C8F /* BoxCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0121A263F600323C8F /* BoxCommands.swift */; };
-		02A6FD0321A263F600323C8F /* BoxCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0121A263F600323C8F /* BoxCommands.swift */; };
-		02A6FD0521A2642300323C8F /* ClockCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0421A2642300323C8F /* ClockCommand.swift */; };
-		02A6FD0621A2642300323C8F /* ClockCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0421A2642300323C8F /* ClockCommand.swift */; };
-		02A6FD0821A264BB00323C8F /* ConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */; };
-		02A6FD0921A264BB00323C8F /* ConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */; };
-		02A6FD0B225850A300323C8F /* ByteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0A225850A300323C8F /* ByteTypes.swift */; };
-		02A6FD0C225850A300323C8F /* ByteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0A225850A300323C8F /* ByteTypes.swift */; };
-		02A6FD0E225887A800323C8F /* ConfigDatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */; };
-		02A6FD0F225887A800323C8F /* ConfigDatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */; };
-		02A6FD1122596C0000323C8F /* ChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD1022596C0000323C8F /* ChannelsCommand.swift */; };
-		02A6FD122259706500323C8F /* ChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD1022596C0000323C8F /* ChannelsCommand.swift */; };
-		02A6FD14225973EA00323C8F /* ProgramCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD13225973EA00323C8F /* ProgramCommand.swift */; };
-		02A6FD15225973EE00323C8F /* ProgramCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD13225973EA00323C8F /* ProgramCommand.swift */; };
-		02A6FD172259875800323C8F /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
-		02A6FD18225988DB00323C8F /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
-		02A6FD712268231900323C8F /* ListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD702268231900323C8F /* ListingsSource.swift */; };
-		02A6FD722268231B00323C8F /* ListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD702268231900323C8F /* ListingsSource.swift */; };
-		02A6FD742268233700323C8F /* SampleDataListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* SampleDataListingsSource.swift */; };
-		02A6FD752268233900323C8F /* SampleDataListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* SampleDataListingsSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,16 +49,11 @@
 		02193163237B90890076A810 /* ActionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCommand.swift; sourceTree = "<group>"; };
 		02193165237BAD310076A810 /* PromoTitleCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTitleCommand.swift; sourceTree = "<group>"; };
 		02193167237BAFB30076A810 /* EventCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommand.swift; sourceTree = "<group>"; };
+		021931DD238106400076A810 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
 		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
 		0270E6D921A0DF35003C98EF /* DownloadCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCommand.swift; sourceTree = "<group>"; };
-		02A6FCB821A0AA8E00323C8F /* PrevueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrevueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		02A6FCBB21A0AA8E00323C8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02A6FCBD21A0AA8E00323C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		02A6FCC021A0AA8E00323C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		02A6FCC221A0AA8E00323C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02A6FCC321A0AA8E00323C8F /* PrevuePackage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrevuePackage.entitlements; sourceTree = "<group>"; };
 		02A6FCDA21A0ABB900323C8F /* PrevueCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrevueCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A6FCDC21A0ABB900323C8F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		02A6FCE621A0B81C00323C8F /* EPGMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGMachine.swift; sourceTree = "<group>"; };
@@ -98,13 +74,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02A6FCB521A0AA8D00323C8F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		02A6FCD721A0ABB900323C8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,11 +110,39 @@
 			path = "Control Commands";
 			sourceTree = "<group>";
 		};
+		021931A5238103BB0076A810 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				021931DC2381063A0076A810 /* Controller */,
+				02A6FD6F2268230D00323C8F /* Listings Sources */,
+				02A6FCFC21A13E9E00323C8F /* Data Sending */,
+				02A6FCFD21A13EBD00323C8F /* Commands */,
+				021931DA238105AA0076A810 /* Types */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		021931DA238105AA0076A810 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */,
+				02A6FD0A225850A300323C8F /* ByteTypes.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		021931DC2381063A0076A810 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				021931DD238106400076A810 /* DataController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		02A6FCAF21A0AA8D00323C8F = {
 			isa = PBXGroup;
 			children = (
-				02A6FCBA21A0AA8E00323C8F /* PrevueApp */,
-				02A6FCCE21A0AB0E00323C8F /* Shared */,
+				021931A5238103BB0076A810 /* Shared */,
 				02A6FCDB21A0ABB900323C8F /* PrevueCLI */,
 				02A6FCB921A0AA8E00323C8F /* Products */,
 			);
@@ -154,34 +151,9 @@
 		02A6FCB921A0AA8E00323C8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02A6FCB821A0AA8E00323C8F /* PrevueApp.app */,
 				02A6FCDA21A0ABB900323C8F /* PrevueCLI */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		02A6FCBA21A0AA8E00323C8F /* PrevueApp */ = {
-			isa = PBXGroup;
-			children = (
-				02A6FCBB21A0AA8E00323C8F /* AppDelegate.swift */,
-				02A6FCBD21A0AA8E00323C8F /* Assets.xcassets */,
-				02A6FCBF21A0AA8E00323C8F /* MainMenu.xib */,
-				02A6FCC221A0AA8E00323C8F /* Info.plist */,
-				02A6FCC321A0AA8E00323C8F /* PrevuePackage.entitlements */,
-			);
-			path = PrevueApp;
-			sourceTree = "<group>";
-		};
-		02A6FCCE21A0AB0E00323C8F /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				02A6FD6F2268230D00323C8F /* Listings Sources */,
-				02A6FCFC21A13E9E00323C8F /* Data Sending */,
-				02A6FCFD21A13EBD00323C8F /* Commands */,
-				02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */,
-				02A6FD0A225850A300323C8F /* ByteTypes.swift */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		02A6FCDB21A0ABB900323C8F /* PrevueCLI */ = {
@@ -226,23 +198,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02A6FCB721A0AA8D00323C8F /* PrevueApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 02A6FCC621A0AA8E00323C8F /* Build configuration list for PBXNativeTarget "PrevueApp" */;
-			buildPhases = (
-				02A6FCB421A0AA8D00323C8F /* Sources */,
-				02A6FCB521A0AA8D00323C8F /* Frameworks */,
-				02A6FCB621A0AA8D00323C8F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PrevueApp;
-			productName = PrevuePackage;
-			productReference = 02A6FCB821A0AA8E00323C8F /* PrevueApp.app */;
-			productType = "com.apple.product-type.application";
-		};
 		02A6FCD921A0ABB900323C8F /* PrevueCLI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02A6FCDE21A0ABB900323C8F /* Build configuration list for PBXNativeTarget "PrevueCLI" */;
@@ -270,9 +225,6 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Vertex;
 				TargetAttributes = {
-					02A6FCB721A0AA8D00323C8F = {
-						CreatedOnToolsVersion = 10.1;
-					};
 					02A6FCD921A0ABB900323C8F = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -291,92 +243,44 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02A6FCB721A0AA8D00323C8F /* PrevueApp */,
 				02A6FCD921A0ABB900323C8F /* PrevueCLI */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		02A6FCB621A0AA8D00323C8F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02A6FCBE21A0AA8E00323C8F /* Assets.xcassets in Resources */,
-				02A6FCC121A0AA8E00323C8F /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		02A6FCB421A0AA8D00323C8F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02A6FCF221A136A600323C8F /* CommandModes.swift in Sources */,
-				02A6FD0E225887A800323C8F /* ConfigDatCommand.swift in Sources */,
-				02A6FCFA21A13DFE00323C8F /* DataDestination.swift in Sources */,
-				02A6FD14225973EA00323C8F /* ProgramCommand.swift in Sources */,
-				02A6FCF521A136A600323C8F /* UVSGEncoding.swift in Sources */,
-				02A6FCBC21A0AA8E00323C8F /* AppDelegate.swift in Sources */,
-				02A6FD0521A2642300323C8F /* ClockCommand.swift in Sources */,
-				02A6FD1122596C0000323C8F /* ChannelsCommand.swift in Sources */,
-				02A6FD712268231900323C8F /* ListingsSource.swift in Sources */,
-				02A6FD0221A263F600323C8F /* BoxCommands.swift in Sources */,
-				02A6FCF321A136A600323C8F /* DownloadCommand.swift in Sources */,
-				02A6FD0821A264BB00323C8F /* ConfigurationCommand.swift in Sources */,
-				02A6FD172259875800323C8F /* ChannelTypes.swift in Sources */,
-				02A6FD742268233700323C8F /* SampleDataListingsSource.swift in Sources */,
-				02A6FCFF21A263D300323C8F /* TitleCommand.swift in Sources */,
-				02A6FCF721A13BC800323C8F /* FSUAEDataDestination.swift in Sources */,
-				02A6FCF121A136A600323C8F /* EPGMachine.swift in Sources */,
-				02A6FD0B225850A300323C8F /* ByteTypes.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		02A6FCD621A0ABB900323C8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A6FCEC21A1367500323C8F /* CommandModes.swift in Sources */,
-				02A6FD0F225887A800323C8F /* ConfigDatCommand.swift in Sources */,
-				02A6FCFB21A13DFE00323C8F /* DataDestination.swift in Sources */,
-				02A6FD15225973EE00323C8F /* ProgramCommand.swift in Sources */,
-				02A6FD122259706500323C8F /* ChannelsCommand.swift in Sources */,
-				02A6FCEF21A1367500323C8F /* UVSGEncoding.swift in Sources */,
-				025C0D9323714C5900489835 /* DataSending+AriDebugCTRL.swift in Sources */,
-				02193164237B90890076A810 /* ActionCommand.swift in Sources */,
+				021931E4238123710076A810 /* EPGMachine.swift in Sources */,
+				021931F0238123710076A810 /* ChannelTypes.swift in Sources */,
+				021931EB238123710076A810 /* BoxCommands.swift in Sources */,
+				021931E9238123710076A810 /* CommandModes.swift in Sources */,
+				021931EA238123710076A810 /* TitleCommand.swift in Sources */,
+				021931F7238123710076A810 /* ByteTypes.swift in Sources */,
+				021931ED238123710076A810 /* DownloadCommand.swift in Sources */,
+				021931E7238123710076A810 /* SerialPortDataDestination.swift in Sources */,
+				021931F3238123710076A810 /* ActionCommand.swift in Sources */,
+				021931F6238123710076A810 /* UVSGEncoding.swift in Sources */,
+				021931E2238123710076A810 /* ListingsSource.swift in Sources */,
+				021931F4238123710076A810 /* PromoTitleCommand.swift in Sources */,
+				021931E1238123710076A810 /* DataController.swift in Sources */,
+				021931EC238123710076A810 /* ClockCommand.swift in Sources */,
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
-				02A6FD0621A2642300323C8F /* ClockCommand.swift in Sources */,
-				02193166237BAD310076A810 /* PromoTitleCommand.swift in Sources */,
-				02A6FD722268231B00323C8F /* ListingsSource.swift in Sources */,
-				02A6FD0321A263F600323C8F /* BoxCommands.swift in Sources */,
-				02A6FCED21A1367500323C8F /* DownloadCommand.swift in Sources */,
-				02193168237BAFB30076A810 /* EventCommand.swift in Sources */,
-				02A6FD0921A264BB00323C8F /* ConfigurationCommand.swift in Sources */,
-				02A6FD18225988DB00323C8F /* ChannelTypes.swift in Sources */,
-				02A6FD752268233900323C8F /* SampleDataListingsSource.swift in Sources */,
-				0220A64D2274EB580058C20D /* SerialPortDataDestination.swift in Sources */,
-				02A6FD0021A263D300323C8F /* TitleCommand.swift in Sources */,
-				02A6FCF821A13BC800323C8F /* FSUAEDataDestination.swift in Sources */,
-				02A6FCEB21A1367500323C8F /* EPGMachine.swift in Sources */,
-				02A6FD0C225850A300323C8F /* ByteTypes.swift in Sources */,
+				021931F5238123710076A810 /* EventCommand.swift in Sources */,
+				021931E8238123710076A810 /* DataSending+AriDebugCTRL.swift in Sources */,
+				021931EE238123710076A810 /* ConfigurationCommand.swift in Sources */,
+				021931E6238123710076A810 /* FSUAEDataDestination.swift in Sources */,
+				021931E3238123710076A810 /* SampleDataListingsSource.swift in Sources */,
+				021931E5238123710076A810 /* DataDestination.swift in Sources */,
+				021931F1238123710076A810 /* ChannelsCommand.swift in Sources */,
+				021931F2238123710076A810 /* ProgramCommand.swift in Sources */,
+				021931EF238123710076A810 /* ConfigDatCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		02A6FCBF21A0AA8E00323C8F /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02A6FCC021A0AA8E00323C8F /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		02A6FCC421A0AA8E00323C8F /* Debug */ = {
@@ -494,46 +398,6 @@
 			};
 			name = Release;
 		};
-		02A6FCC721A0AA8E00323C8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PrevueApp/PrevuePackage.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4TT9H7XWFJ;
-				INFOPLIST_FILE = PrevueApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ariweinstein.PrevueApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		02A6FCC821A0AA8E00323C8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PrevueApp/PrevuePackage.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4TT9H7XWFJ;
-				INFOPLIST_FILE = PrevueApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ariweinstein.PrevueApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 		02A6FCDF21A0ABB900323C8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -566,15 +430,6 @@
 			buildConfigurations = (
 				02A6FCC421A0AA8E00323C8F /* Debug */,
 				02A6FCC521A0AA8E00323C8F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		02A6FCC621A0AA8E00323C8F /* Build configuration list for PBXNativeTarget "PrevueApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				02A6FCC721A0AA8E00323C8F /* Debug */,
-				02A6FCC821A0AA8E00323C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -22,13 +22,13 @@ class FSUAEDataDestination: NetworkDataDestination {
     func closeConnection() {
         connection = nil
     }
-    override func send(_ bytes: Bytes) {
+    override func send(data bytes: Bytes) {
         guard let connection = connection else {
             print("[FSUAEDataDestination] Tried to send bytes with no open connection")
             return
         }
         
-        super.send(bytes)
+        super.send(data: bytes)
         
         let semaphore = DispatchSemaphore(value: 0)
         
@@ -45,5 +45,11 @@ class FSUAEDataDestination: NetworkDataDestination {
         // TODO: rate limiting
         
         semaphore.wait()
+    }
+    
+    override func send(control bytes: Bytes) {
+        for byte in bytes {
+            sendDebugCTRLByte(byte: byte)
+        }
     }
 }

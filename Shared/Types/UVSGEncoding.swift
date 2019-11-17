@@ -8,6 +8,8 @@
 
 import Foundation
 
+// TODO: Reconsider this hierarchy so encoding details don't have to be made public
+
 // MARK: Checksums
 
 protocol UVSGChecksummable {

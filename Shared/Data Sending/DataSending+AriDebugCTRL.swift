@@ -8,7 +8,7 @@
 
 extension DataDestination {
     func sendDebugCTRLByte(byte: Byte) {
-        send(AddDebugCTRLByteCommand(byte: byte))
+        send(data: AddDebugCTRLByteCommand(byte: byte))
     }
 }
 

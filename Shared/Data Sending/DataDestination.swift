@@ -12,7 +12,8 @@ import Network
  A protocol describing an object which can receive data.
  */
 protocol DataDestination {
-    func send(_ bytes: Bytes)
+    func send(data bytes: Bytes)
+    func send(control bytes: Bytes)
 }
 
 /**
@@ -20,13 +21,16 @@ protocol DataDestination {
  */
 // TODO: Should there instead be a single protocol for converting things into bytes, and this takes those?
 extension DataDestination {
-    func send(_ command: UVSGEncodable) {
-        send(command.encodeWithChecksum())
+    func send(data command: UVSGEncodable) {
+        send(data: command.encodeWithChecksum())
     }
-    func send(_ commands: [UVSGEncodable]) {
+    func send(data commands: [UVSGEncodable]) {
         for command in commands {
-            send(command)
+            send(data: command)
         }
+    }
+    func send(control command: UVSGEncodable) {
+        send(control: command.encodeWithChecksum())
     }
 }
 
@@ -39,16 +43,26 @@ class NetworkDataDestination: DataDestination {
         self.port = port
     }
     
-    func send(_ bytes: Bytes) {
+    func send(data bytes: Bytes) {
         print("Sending \(bytes.hexEncodedString())to \(self)")
+    }
+    
+    func send(control bytes: Bytes) {
+        // Unimplemented
     }
 }
 
 class ClassicListenerDataDestination: NetworkDataDestination {
-    override func send(_ bytes: Bytes) {
+    override func send(data bytes: Bytes) {
         // Unimplemented
         
-        super.send(bytes)
+        super.send(data: bytes)
+    }
+    
+    override func send(control bytes: Bytes) {
+        // Unimplemented
+        
+        super.send(control: bytes)
     }
 }
 

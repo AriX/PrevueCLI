@@ -48,7 +48,7 @@ class SerialPortDataDestination: DataDestination {
         }
         handle = nil
     }
-    func send(_ bytes: Bytes) {
+    func send(data bytes: Bytes) {
         guard let handle = handle else {
             print("[SerialPortDataDestination] Tried to send bytes with no open handle")
             return
@@ -65,23 +65,6 @@ class SerialPortDataDestination: DataDestination {
         print("Sending \(bytes.hexEncodedString())to \(self)")
         write(handle, buffer.baseAddress, size)
     }
-//    func sendCTRL(_ bytes: Bytes) {
-//        guard let handle = handle else {
-//            print("[SerialPortDataDestination] Tried to send bytes with no open handle")
-//            return
-//        }
-//
-//        let size = bytes.count
-//        let buffer = UnsafeMutableRawBufferPointer.allocate(byteCount: size, alignment: 1)
-//        defer {
-//            buffer.deallocate()
-//        }
-//
-//        buffer.copyBytes(from: bytes)
-//
-//        print("Sending \(bytes.hexEncodedString())to \(self)")
-//        write(handle, buffer.baseAddress, size)
-//    }
     var delay: useconds_t = 830
     func setRTS(_ up: Bool) {
         guard let handle = handle else {
@@ -125,5 +108,10 @@ class SerialPortDataDestination: DataDestination {
         sendCTRLGroup(!((byt&64)>0), !((byt&128)>0)); // data
         sendCTRLGroup(!((byt&128)>0), false); // data
         sendCTRLGroup(false, false); // stop
+    }
+    func send(control bytes: Bytes) {
+        for byte in bytes {
+            sendCTRLByte(byt: byte)
+        }
     }
 }

@@ -11,7 +11,7 @@ import Foundation
 let destination = FSUAEDataDestination(host: "127.0.0.1", port: 5542)
 destination.openConnection()
 
-destination.send(BoxOnCommand(selectCode: "*"))
+destination.send(data: BoxOnCommand(selectCode: "*"))
 
 extension Data {
     struct HexEncodingOptions: OptionSet {
@@ -64,7 +64,7 @@ for byte in actionCommand.encodeWithChecksum() {
 let date = Date()
 let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear - 1)
 
-destination.send(ClockCommand(with: date)!)
+destination.send(data: ClockCommand(with: date)!)
 
 let channelsFile = URL(fileURLWithPath: "/Users/Ari/Desktop/Prevue Technical/Sample Listings/channels.csv")
 let programsFile = URL(fileURLWithPath: "/Users/Ari/Desktop/Prevue Technical/Sample Listings/programs.csv")
@@ -72,7 +72,7 @@ let listingSource = SampleDataListingSource(channelsCSVFile: channelsFile, progr
 //
 //let channels = [Channel(flags: .none, sourceIdentifier: "TBS", channelNumber: "2", callLetters: "TBS"), Channel(flags: .none, sourceIdentifier: "KYW", channelNumber: "3", callLetters: "KYW")]
 let channelCommand = ChannelsCommand(day: julianDay, channels: listingSource.channels)
-destination.send(channelCommand)
+destination.send(data: channelCommand)
 
 //let programs: [Program] = stride(from: 0, to: 47, by: 1).map { (index) in
 //    Program(timeslot: index, day: julianDay, sourceIdentifier: "KYW", flags: .none, programName: "Eyewitness @ \(index) \(julianDay.dayOfYear)")
@@ -80,12 +80,12 @@ destination.send(channelCommand)
 let programCommands: [ProgramCommand] = listingSource.programs.map { (program) in
     ProgramCommand(program: program)
 }
-destination.send(programCommands)
+destination.send(data: programCommands)
 
 // Clock test
 //destination.send(ClockCommand(dayOfWeek: .Friday, month: 2, day: 4, year: 119, hour: 07, minute: 00, second: 00, daylightSavingsTime: true))
 //destination.send(ClockCommand(with: Date())!)
 
-destination.send(BoxOffCommand())
+destination.send(data: BoxOffCommand())
 
 destination.closeConnection()
