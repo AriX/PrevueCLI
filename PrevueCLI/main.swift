@@ -49,20 +49,20 @@ for byte in actionCommand.encodeWithChecksum() {
 
 // Download test
 //var bytes: Bytes = []
-//for _ in stride(from: 0, to: 256, by: 1) {
-//    bytes.append(0x30)
+//stride(from: 0, to: 32536, by: 1).map { index in
+//    let sixteenBitIndex = UInt16(index)
+//    bytes.append(contentsOf: sixteenBitIndex.bytesBySeparatingIntoHighAndLowBits())
 //}
-//let downloadCommands = DownloadCommand.commandsToTransferFile(filePath: "DF0:saladworks2.fun", contents: bytes)
-//destination.send(downloadCommands)
-//destination.send(BoxOffCommand())
 
 // Config.dat test
-//destination.send(ConfigDatCommand(clockCmd: 2).encodeWithChecksum())
+//destination.send(data: ConfigDatCommand(clockCmd: 2).encodeWithChecksum())
 
 // Channel & programs test
 
+//exit(0)
+
 let date = Date()
-let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear - 1)
+let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear/* - 1*/)
 
 destination.send(data: ClockCommand(with: date)!)
 

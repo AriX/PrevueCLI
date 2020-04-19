@@ -37,10 +37,10 @@ extension DownloadCommand {
         let packets = contents.splitIntoChunks(chunkSize: maxPacketSize)
         
         let startCommand = DownloadCommand(message: .start(filePath: filePath))
-        let packetCommands = packets.enumerated().map { index, packet in
-            return DownloadCommand(message: .data(packetNumber: UInt8(index), byteCount: UInt8(packet.count), data: packet))
+        let packetCommands = packets.enumerated().map { (index, packet) in
+            return DownloadCommand(message: .data(packetNumber: UInt8(index % 256), byteCount: UInt8(packet.count), data: packet))
         }
-        let endCommand = DownloadCommand(message: .end(packetCount: UInt8(packets.count)))
+        let endCommand = DownloadCommand(message: .end(packetCount: UInt8(packets.count % 256)))
         return [startCommand] + packetCommands + [endCommand]
     }
 }

@@ -25,8 +25,11 @@ extension DataDestination {
         send(data: command.encodeWithChecksum())
     }
     func send(data commands: [UVSGEncodable]) {
+        var i = 0
         for command in commands {
+            print("Sending \(i) of \(commands.count)")
             send(data: command)
+            i += 1
         }
     }
     func send(control command: UVSGEncodable) {
