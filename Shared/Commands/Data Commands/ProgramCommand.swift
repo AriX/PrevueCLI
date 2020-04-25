@@ -13,7 +13,7 @@ struct ProgramCommand: DataCommand {
 
 extension Program {
     var payload: Bytes {
-        return [timeslot, day.dayOfYear] + sourceIdentifier.asBytes() + [0x12] + [flags.rawValue] + programName.asBytes() + [0x00]
+        return Array([[timeslot, day.dayOfYear], sourceIdentifier.asBytes(), [0x12], [flags.rawValue], programName.asBytes(), [0x00]].joined())
     }
 }
 

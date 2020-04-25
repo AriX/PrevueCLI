@@ -32,9 +32,9 @@ struct ClockCommand: DataCommand {
 
 extension ClockCommand {
     init?(with date: Date) {
-        guard let calendar =  NSCalendar(identifier: .gregorian) else { return nil }
+        let calendar =  NSCalendar.current
         let daylightSavingsTime = calendar.timeZone.isDaylightSavingTime(for: date)
-        let components = calendar.components([.year, .month, .day, .hour, .minute, .second, .weekday], from: date)
+        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second, .weekday], from: date)
         
         guard let weekday = components.weekday,
             let month = components.month,

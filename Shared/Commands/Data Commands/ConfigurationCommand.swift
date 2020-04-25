@@ -17,8 +17,8 @@
 
 struct ConfigurationCommand: DataCommand {
     let commandMode = DataCommandMode.configuration
-    let timeslotsBack: UInt8 // BCK: Number of half hour blocks away to start at (default 0 on Atari (should confirm), 1 on Amiga, must be 0 or 1 on Amiga)
-    let timeslotsForward: UInt8 // FWD: Number of half hour blocks away to end at (default 6 on Atari (should confirm), 4 on Amiga, must be 1-8 on Amiga)
+    let timeslotsBack: UInt8 // Backward display window (BCK): Number of half hour blocks away to start at (default A on Atari (should confirm), B on Amiga, must be A or B on Amiga)
+    let timeslotsForward: UInt8 // Forward display window (FWD): Number of half hour blocks away to end at (default 6 on Atari (should confirm), 4 on Amiga, must be 1-8 on Amiga)
     let scrollSpeed: UInt8 // SSPD: Scroll speed (1-7) (default 3 on Amiga)
     let maxAdCount: UInt16 // #AD: Maximum number of ads to allow (default 36 on Amiga)
     let maxAdLines: UInt8 // LINE: The max # of lines allowed in an ad (default 6 on Amiga, max value 6)

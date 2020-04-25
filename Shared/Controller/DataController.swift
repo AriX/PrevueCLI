@@ -18,7 +18,7 @@ class DataController {
     }
     
     convenience init() {
-        let destination = FSUAEDataDestination(host: "127.0.0.1", port: 5542)
+        let destination = TCPDataDestination(host: "127.0.0.1", port: 5542)
         destination.openConnection()
         destination.send(data: BoxOnCommand(selectCode: "*"))
         self.init(dataDestinations: [destination])

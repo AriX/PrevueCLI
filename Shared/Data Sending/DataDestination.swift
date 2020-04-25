@@ -6,7 +6,7 @@
 //  Copyright © 2018 Vertex. All rights reserved.
 //
 
-import Network
+import Foundation
 
 /**
  A protocol describing an object which can receive data.
@@ -39,15 +39,15 @@ extension DataDestination {
 
 class NetworkDataDestination: DataDestination {
     var host: String
-    var port: UInt16
+    var port: Int32
     
-    init(host: String, port: UInt16) {
+    init(host: String, port: Int32) {
         self.host = host
         self.port = port
     }
     
     func send(data bytes: Bytes) {
-        print("Sending \(bytes.hexEncodedString())to \(self)")
+        print("Sending \(bytes.count) \(bytes.count == 1 ? "byte" : "bytes"): \(bytes.hexEncodedString())to \(self)")
     }
     
     func send(control bytes: Bytes) {
@@ -55,17 +55,25 @@ class NetworkDataDestination: DataDestination {
     }
 }
 
-class ClassicListenerDataDestination: NetworkDataDestination {
-    override func send(data bytes: Bytes) {
-        // Unimplemented
-        
-        super.send(data: bytes)
+#if os(Windows)
+import WinSDK
+#endif
+
+extension DataDestination {
+    // Call this after sending data to rate limit sending to a particular baud rate
+    func limitSendingRate(byteCount: Int, baudRate: Int) {
+        // e.g. for 2400 baud, assume we're sending 240 bytes per second, with 1,000 miliseconds in a second
+        // For unknown reasons, this seems to be too fast (for the Atari emulator) until I apply a factor of 4 or 5
+        let timeToWait = (Double(byteCount) * 10.0) * (1 / Double(baudRate)) * 1000.0 * 4.5
+        sleep(miliseconds: timeToWait)
     }
     
-    override func send(control bytes: Bytes) {
-        // Unimplemented
-        
-        super.send(control: bytes)
+    func sleep(miliseconds: Double) {
+        #if os(Windows)
+        Sleep(UInt32(miliseconds))
+        #else
+        let microseconds = miliseconds * 1000.0
+        usleep(UInt32(microseconds))
+        #endif
     }
 }
-

@@ -8,6 +8,7 @@
 
 import Foundation
 
+#if !os(Windows)
 class SerialPortDataDestination: DataDestination {
     let path: String
     let baudRate: speed_t
@@ -118,3 +119,4 @@ class SerialPortDataDestination: DataDestination {
         }
     }
 }
+#endif

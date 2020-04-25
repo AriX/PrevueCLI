@@ -23,6 +23,6 @@ extension ChannelsCommand {
 
 extension Channel {
     func encode() -> Bytes {
-        return [0x12, flags.rawValue] + sourceIdentifier.asBytes() + [0x11] + channelNumber.asBytes() + [0x01] + callLetters.asBytes()
+        return Array([[0x12, flags.rawValue], sourceIdentifier.asBytes(), [0x11], channelNumber.asBytes(), [0x01], callLetters.asBytes()].joined())
     }
 }

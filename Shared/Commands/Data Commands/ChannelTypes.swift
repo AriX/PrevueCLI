@@ -59,8 +59,8 @@ struct ProgramFlags: OptionSet {
 
 extension JulianDay {
     init(with date: Date) {
-        let calendar = NSCalendar(identifier: .gregorian)!
-        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)
+        let calendar = NSCalendar.current
+        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)!
         let julianDay = UInt8(dayOfYear % 256)
         
         self.init(dayOfYear: julianDay)

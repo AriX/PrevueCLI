@@ -6,8 +6,6 @@
 //  Copyright © 2018 Vertex. All rights reserved.
 //
 
-import Foundation
-
 // TODO: Reconsider this hierarchy so encoding details don't have to be made public
 
 // MARK: Checksums
