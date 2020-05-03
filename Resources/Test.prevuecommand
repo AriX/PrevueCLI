@@ -1,0 +1,31 @@
+destinations:
+- TCPDataDestination: {host: "127.0.0.1", port: 5541}
+commands:
+# Tell all boxes to start listening
+- BoxOnCommand: {selectCode: "*"}
+
+# Send the current time
+- ClockCommand: {}
+
+# Send a title
+- TitleCommand: {centeredTitle: "Electronic Program Guide"}
+
+# Send a configuration
+- ConfigurationCommand: {timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 6, observesDaylightSavingsTime: true, cont: true, keyboardActive: true, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00}
+
+# Send sample listings data from the included .csv files
+- ListingsCommand: {channelsFile: "Sample Listings/channels.csv", programsFile: "Sample Listings/programs.csv", forAtari: true}
+
+# Other command examples:
+#- ClockCommand: {dayOfWeek: "Friday", month: 2, day: 4, year: 119, hour: 07, minute: 00, second: 00, daylightSavingsTime: True}
+#- TitleCommand: {title: "Non-Centered Title"}
+#- ResetCommand: {}
+#- ChannelsCommand: {day: {dayOfYear: 123}, channels: [{flags: 1, sourceIdentifier: WPVI, channelNumber: '6', callLetters: 6ABC}]}
+#- ProgramCommand: {program: {day: {dayOfYear: 123}, timeslot: 1, sourceIdentifier: WPVI, flags: 1, programName: "Action News"}}
+
+# Tell boxes to stop listening
+- BoxOffCommand: {}
+
+# TODO: Clean up ConfigurationCommand
+# TODO: Support DownloadCommand
+# TODO: Support ConfigDatCommand

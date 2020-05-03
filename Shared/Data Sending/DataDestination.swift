@@ -11,9 +11,12 @@ import Foundation
 /**
  A protocol describing an object which can receive data.
  */
-protocol DataDestination {
+protocol DataDestination: Codable {
     func send(data bytes: Bytes)
     func send(control bytes: Bytes)
+    
+    func openConnection()
+    func closeConnection()
 }
 
 /**
@@ -51,6 +54,14 @@ class NetworkDataDestination: DataDestination {
     }
     
     func send(control bytes: Bytes) {
+        // Unimplemented
+    }
+    
+    func openConnection() {
+        // Unimplemented
+    }
+    
+    func closeConnection() {
         // Unimplemented
     }
 }

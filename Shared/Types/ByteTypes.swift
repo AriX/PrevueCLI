@@ -31,7 +31,7 @@ extension Character {
 
 extension DataCommandMode {
     func asByte() -> Byte {
-        return self.rawValue.asByte()
+        return Array(self.rawValue)[0].asByte()
     }
 }
 

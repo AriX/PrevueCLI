@@ -13,17 +13,15 @@
 //       F    B    I    2    3    6    8    N              6    Y    Y    N    N    N    N    N    N    X    X
 //       MODE BCK  FWD  SSPD #AD1 #AD2 LINE UNK  UNKA UNKA TZ   DST  CONT TEXT UNK2 UNK3 UNK4 UNK5 GRPH VIN  UNK6 END  CHECKSUM
 
-// YAML codeable?
-
 struct ConfigurationCommand: DataCommand {
     let commandMode = DataCommandMode.configuration
-    let timeslotsBack: UInt8 // Backward display window (BCK): Number of half hour blocks away to start at (default A on Atari (should confirm), B on Amiga, must be A or B on Amiga)
-    let timeslotsForward: UInt8 // Forward display window (FWD): Number of half hour blocks away to end at (default 6 on Atari (should confirm), 4 on Amiga, must be 1-8 on Amiga)
-    let scrollSpeed: UInt8 // SSPD: Scroll speed (1-7) (default 3 on Amiga)
-    let maxAdCount: UInt16 // #AD: Maximum number of ads to allow (default 36 on Amiga)
+    let timeslotsBack: UInt8 // Backward timeslot display window (BCK): Number of half hour blocks away to start at (default 0 (A) on Atari, B on Amiga, must be A or B on Amiga)
+    let timeslotsForward: UInt8 // Forward timeslot display window (FWD): Number of half hour blocks away to end at (default 6 on Atari, E (4) on Amiga, must be 1-8 on Amiga; 'A'=>0, 'E'=>4, 'I'=>7)
+    let scrollSpeed: UInt8 // SSPD: Scroll speed (1-8 on Amiga; 1-7 on Atari) (default 3 on Amiga, 4 on Atari)
+    let maxAdCount: UInt16 // #AD: Maximum number of ads to allow (default 6 on Atari, 36 on Amiga)
     let maxAdLines: UInt8 // LINE: The max # of lines allowed in an ad (default 6 on Amiga, max value 6)
-    let unknown: Bool // Unknown value (default N on Amiga, should reverse serial parsing routine to see what it does, used in parseCtrlCmd)
-    let unknownAdSetting: UInt16 // Unknown value, something related to how frequently local ads are displayed in the scroll (default 0002 on Atari (should confirm), 0101 on Amiga)
+    let crawlOrIgnoreNationalAds: Bool // On EPG: CRAWL setting (Y/N); on Prevue: IGNORE_NAT_ADS setting (Y/N), defines wheter or not to ignore national ads (default N)
+    let unknownAdSetting: UInt16 // Unknown value, something related to how frequently local ads are displayed in the scroll (default 0002 on Atari (should investigate), 0101 on Amiga)
     let timezone: UInt8 // Timezone offset from GMT (default 6, meaning -6) (possible to support positive offsets?) (default 6 on Amiga)
     let observesDaylightSavingsTime: Bool // DST: ? (default N on Amiga)
     let cont: Bool // CONT: Unknown value, keyboard related (default Y on Amiga)
@@ -46,7 +44,7 @@ extension ConfigurationCommand {
             maxAdCount.bytesBySeparatingIntoASCIIDigits()[0],
             maxAdCount.bytesBySeparatingIntoASCIIDigits()[1],
             maxAdLines.byteByRepresentingNumberAsASCIIDigit(),
-            unknown.byteByRepresentingAsASCIILetter(),
+            crawlOrIgnoreNationalAds.byteByRepresentingAsASCIILetter(),
             unknownAdSetting.bytesBySeparatingIntoHighAndLowBits()[0],
             unknownAdSetting.bytesBySeparatingIntoHighAndLowBits()[1],
             timezone.byteByRepresentingNumberAsASCIIDigit(),

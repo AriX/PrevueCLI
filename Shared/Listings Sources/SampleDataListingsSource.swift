@@ -12,13 +12,13 @@ class SampleDataListingSource: ListingsSource {
     let channels: [Channel]
     let programs: [Program]
     
-    init?(channelsCSVFile: URL, programsCSVFile: URL, day: JulianDay) {
+    init?(channelsCSVFile: URL, programsCSVFile: URL, day: JulianDay, forAtari: Bool = false) {
         do {
-            let sampleChannels = try SampleDataChannel.load(from: channelsCSVFile)
+            let sampleChannels = try SampleDataChannel.load(from: channelsCSVFile, forAtari: forAtari)
             self.channels = sampleChannels.map({ (sampleChannel) -> Channel in
                 sampleChannel.channel
             })
-            let samplePrograms = try SampleDataProgram.load(from: programsCSVFile)
+            let samplePrograms = try SampleDataProgram.load(from: programsCSVFile, forAtari: forAtari)
             self.programs = samplePrograms.map({ (sampleProgram) -> Program in
                 sampleProgram.program(with: day)
             })
@@ -30,7 +30,7 @@ class SampleDataListingSource: ListingsSource {
 }
 
 protocol CSVLoadable {
-    static func load(from csvFileURL: URL) throws -> [Self]
+    static func load(from csvFileURL: URL, forAtari: Bool) throws -> [Self]
 }
 
 struct SampleDataChannel: CSVLoadable {
@@ -42,9 +42,9 @@ struct SampleDataChannel: CSVLoadable {
     let persistantNumber: String
     let flag: String
     
-    static func load(from csvFileURL: URL) throws -> [SampleDataChannel] {
+    static func load(from csvFileURL: URL, forAtari: Bool) throws -> [SampleDataChannel] {
         let rows: [[String]] = try loadRows(from: csvFileURL)
-        return rows.compactMap({ (row) -> SampleDataChannel? in
+        var sampleChannels = rows.compactMap({ (row) -> SampleDataChannel? in
             if row.count < 7 {
                 return nil
             }
@@ -64,6 +64,18 @@ struct SampleDataChannel: CSVLoadable {
         }).sorted(by: { (one, two) -> Bool in
             return Double(one.number)! < Double(two.number)!
         })
+        
+        if forAtari {
+            // Atari can't handle channel names longer than 5 characters, and seems to choke when channel numbers contain '.', so let's skip those channels
+            sampleChannels.removeAll {
+                $0.number.contains(".") || $0.internalName.count > 5 || $0.channelName.count > 5
+            }
+            
+            // Limit Atari channel lineup to the first 48 channels
+            sampleChannels = Array(sampleChannels[..<48])
+        }
+        
+        return sampleChannels
     }
     
     var channel: Channel {
@@ -77,9 +89,9 @@ struct SampleDataProgram: CSVLoadable {
     let title: String
     let day: String
     
-    static func load(from csvFileURL: URL) throws -> [SampleDataProgram] {
+    static func load(from csvFileURL: URL, forAtari: Bool) throws -> [SampleDataProgram] {
         let rows: [[String]] = try loadRows(from: csvFileURL)
-        return rows.compactMap({ (row) -> SampleDataProgram? in
+        var samplePrograms = rows.compactMap({ (row) -> SampleDataProgram? in
             if row.count < 3 {
                 return nil
             }
@@ -98,12 +110,27 @@ struct SampleDataProgram: CSVLoadable {
             
             return SampleDataProgram(tsdaychannel: tsdaychannel, title: title, day: day)
         })
+
+        if forAtari {
+            // Atari can't handle channel names longer than 5 characters, so let's skip those programs
+            samplePrograms.removeAll {
+                let (_, channelIdentifier) = $0.parseTimeslotChannelString
+                return channelIdentifier.count > 5
+            }
+        }
+        
+        return samplePrograms
     }
     
-    func program(with julianDay: JulianDay) -> Program {
+    var parseTimeslotChannelString: (timeslotString: String, channelIdentifier: String) {
         let timeslotChannel = tsdaychannel.components(separatedBy: day)
         let timeslotString = timeslotChannel.first!
         let channelIdentifier = timeslotChannel.last!
+        return (timeslotString, channelIdentifier)
+    }
+    
+    func program(with julianDay: JulianDay) -> Program {
+        let (timeslotString, channelIdentifier) = parseTimeslotChannelString
         
         // Ignore the sample day and use the julianDay that was passed in, instead
         return Program(timeslot: UInt8(timeslotString)!, day: julianDay, sourceIdentifier: channelIdentifier, flags: .none, programName: title)

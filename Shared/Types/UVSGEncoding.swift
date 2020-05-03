@@ -39,7 +39,7 @@ extension UVSGEncodable {
 
 // MARK: Commands
 
-protocol DataCommand: UVSGEncodable {
+protocol DataCommand: UVSGEncodable, Codable, CommandContainer {
     var commandMode: DataCommandMode { get }
     var payload: Bytes { get }
 }
@@ -65,5 +65,17 @@ extension ControlCommand {
 extension ControlCommand {
     static func leftRightStringAsBytes(leftString: String, rightString: String) -> Bytes {
         return (leftString.asBytes() + [Byte(0x12)] + rightString.asBytes() + [Byte(0x0D)])
+    }
+}
+
+// MARK: Command containers
+
+protocol CommandContainer {
+    var commands: [DataCommand] { get }
+}
+
+extension DataCommand {
+    var commands: [DataCommand] {
+        return [self]
     }
 }

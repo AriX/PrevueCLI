@@ -12,7 +12,7 @@ import UVSGSerialData
 class TCPDataDestination: NetworkDataDestination {
     var sender: OpaquePointer?
     
-    func openConnection() {
+    override func openConnection() {
         if sender == nil {
             sender = host.withCString { UVSGSerialDataSenderCreate($0, port) }
             if sender == nil {
@@ -21,11 +21,15 @@ class TCPDataDestination: NetworkDataDestination {
         }
     }
     
-    func closeConnection() {
+    override func closeConnection() {
         if sender != nil {
             UVSGSerialDataSenderFree(sender)
             sender = nil
         }
+    }
+    
+    deinit {
+        closeConnection()
     }
     
     override func send(data bytes: Bytes) {

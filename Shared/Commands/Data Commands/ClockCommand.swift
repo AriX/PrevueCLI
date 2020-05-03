@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DayOfWeek: UInt8 {
+enum DayOfWeek: UInt8, CaseIterable {
     case Sunday = 0
     case Monday = 1
     case Tuesday = 2
@@ -55,5 +55,24 @@ extension ClockCommand {
         // I think the last byte is always 0 and is unused, but should be confirmed in disassembly
         // Last bit goes to 1 to reset Julian day
         return [dayOfWeek.rawValue, month, day, year, hour, minute, second, daylightSavingsTime.asByte(), 0x00]
+    }
+}
+
+// For readability, encode DayOfWeek as a string (e.g. "Friday") instead of an integer
+extension DayOfWeek: Codable {
+    init(from decoder: Decoder) throws {
+        let stringValue = try decoder.singleValueContainer().decode(String.self)
+        guard let matchingDay = DayOfWeek.allCases.first(where: { $0.stringValue == stringValue }) else {
+            throw DecodingError.typeMismatch(DayOfWeek.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Invalid day of week specified"))
+        }
+        
+        self = matchingDay
+    }
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(self.stringValue)
+    }
+    var stringValue: String {
+        String(describing: self)
     }
 }

@@ -8,10 +8,58 @@
 
 import Foundation
 
+let commands = [
+    CLI.Command(name: "send", usage: " <.prevuecommand file>: Sends the commands in the specified .prevuecommand file", minimumArgumentCount: 1, handler: { (arguments) in
+        do {
+            let filePath = arguments[0]
+            let scriptText = try String(contentsOfFile: filePath)
+
+            // Change the current working directory to the directory containing the .prevuecommand file (in order to resolve relative paths referenced in the file)
+            let fileURL = URL(fileURLWithPath: filePath)
+            let containingDirectory = fileURL.deletingLastPathComponent()
+            FileManager.default.changeCurrentDirectoryPath(containingDirectory.path)
+
+            let decoder = YAMLDecoder()
+            let commandFile = try decoder.decode(PrevueCommandFile.self, from: scriptText)
+            commandFile.sendAllCommands()
+        } catch {
+            print("PrevueCLI: An error occurred: \(error)")
+        }
+    }),
+    CLI.Command(name: "printJulianDay", usage: ": Prints today's Julian day (0-255)", minimumArgumentCount: 0, handler: { (arguments) in
+        let julianDay = JulianDay(with: Date())
+        print("Julian day: \(julianDay.dayOfYear)")
+    }),
+//    CLI.Command(name: "repl", usage: ": Opens a REPL interface, where you can type in commands to be sent interactively", handler: { (arguments) in
+//
+//    })
+]
+
+let usagePreamble = """
+PrevueCLI
+A tool for emulating Prevue Guide and friends
+Copyright 2020 Ari Weinstein
+
+Usage:
+"""
+
+let cli = CLI(commands: commands, usagePreamble: usagePreamble)
+cli.runCommand(for: CommandLine.arguments)
+
+// TODO: Add documentation for PrevueCommand format
+
+exit(0)
+
 let destination = TCPDataDestination(host: "127.0.0.1", port: 5541)//SerialPortDataDestination(path: "/dev/cu.Repleo-PL2303-00001014", baudRate: 2400) //TCPDataDestination(host: "127.0.0.1", port: 5542)
 destination.openConnection()
 
+// For Atari Sio2pc adapter
+//let destination = SerialPortDataDestination(path: "/dev/cu.Repleo-PL2303-00001014", baudRate: 2400)
+//destination.setRTS(false)
+
 destination.send(data: BoxOnCommand(selectCode: "*"))
+
+destination.send(data: TitleCommand(centeredTitle: "2020 ATARI EPG Test"))
 
 extension Data {
     struct HexEncodingOptions: OptionSet {
@@ -55,7 +103,7 @@ let eventCommand = EventCommand(leftEvent: .titleLookup, rightEvent: .titleLooku
 //}
 
 // Configuration test
-let command2 = ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, unknown: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00)
+let command2 = ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00)
 //destination.send(data: command2)
 
 // Download test
@@ -82,10 +130,10 @@ let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear/* - 1*/)
 
 destination.send(data: ClockCommand(with: date)!)
 
-let channelsFile = URL(fileURLWithPath: "/Users/Ari/Desktop/Prevue Technical/Sample Listings/channels.csv")
-let programsFile = URL(fileURLWithPath: "/Users/Ari/Desktop/Prevue Technical/Sample Listings/programs.csv")
-let listingSource = SampleDataListingSource(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: julianDay)!
-//
+let channelsFile = URL(fileURLWithPath: "/Users/Ari/dev/PrevuePackage/Resources/Sample Listings/channels.csv")
+let programsFile = URL(fileURLWithPath: "/Users/Ari/dev/PrevuePackage/Resources/Sample Listings/programs.csv")
+let listingSource = SampleDataListingSource(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: julianDay, forAtari: true)!
+
 //let channels = [Channel(flags: .none, sourceIdentifier: "TBS", channelNumber: "2", callLetters: "TBS"), Channel(flags: .none, sourceIdentifier: "KYW", channelNumber: "3", callLetters: "KYW")]
 let channelCommand = ChannelsCommand(day: julianDay, channels: listingSource.channels)
 destination.send(data: channelCommand)

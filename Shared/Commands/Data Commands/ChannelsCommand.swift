@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vertex. All rights reserved.
 //
 
-struct ChannelsCommand: DataCommand {
+struct ChannelsCommand: DataCommand, Codable {
     let commandMode = DataCommandMode.channel
     let day: JulianDay
     let channels: [Channel]

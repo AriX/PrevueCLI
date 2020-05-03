@@ -30,7 +30,31 @@
 		021931F5238123710076A810 /* EventCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193167237BAFB30076A810 /* EventCommand.swift */; };
 		021931F6238123710076A810 /* UVSGEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */; };
 		021931F7238123710076A810 /* ByteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0A225850A300323C8F /* ByteTypes.swift */; };
-		02193F08244FFA6D0093D586 /* UVSGSerialData.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F06244FFA6D0093D586 /* UVSGSerialData.c */; };
+		02193F5E2454B2360093D586 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F412454B2060093D586 /* Mark.swift */; };
+		02193F5F2454B2360093D586 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F422454B2060093D586 /* Decoder.swift */; };
+		02193F602454B2360093D586 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F432454B2060093D586 /* Constructor.swift */; };
+		02193F612454B2360093D586 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F442454B2060093D586 /* Resolver.swift */; };
+		02193F622454B2360093D586 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F452454B2060093D586 /* Encoder.swift */; };
+		02193F632454B2360093D586 /* Node.Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F462454B2060093D586 /* Node.Mapping.swift */; };
+		02193F642454B2360093D586 /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F472454B2060093D586 /* String+Yams.swift */; };
+		02193F652454B2360093D586 /* Node.Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F482454B2060093D586 /* Node.Sequence.swift */; };
+		02193F672454B2360093D586 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F4A2454B2060093D586 /* Parser.swift */; };
+		02193F682454B2360093D586 /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F4B2454B2060093D586 /* Node.Scalar.swift */; };
+		02193F692454B2360093D586 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F4D2454B2060093D586 /* Tag.swift */; };
+		02193F6A2454B2360093D586 /* YamlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F4E2454B2060093D586 /* YamlError.swift */; };
+		02193F6B2454B2360093D586 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F4F2454B2060093D586 /* Emitter.swift */; };
+		02193F6C2454B2360093D586 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F502454B2060093D586 /* Node.swift */; };
+		02193F6D2454B2360093D586 /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F512454B2060093D586 /* Representer.swift */; };
+		02193F722454B2E50093D586 /* UVSGSerialData.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F6F2454B2DC0093D586 /* UVSGSerialData.c */; };
+		02193F732454B2F70093D586 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F572454B2060093D586 /* scanner.c */; };
+		02193F742454B2F70093D586 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F592454B2060093D586 /* api.c */; };
+		02193F752454B2F70093D586 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F5A2454B2060093D586 /* writer.c */; };
+		02193F762454B2F70093D586 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F5B2454B2060093D586 /* reader.c */; };
+		02193F772454B2F70093D586 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F5C2454B2060093D586 /* emitter.c */; };
+		02193F782454B2F70093D586 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F5D2454B2060093D586 /* parser.c */; };
+		02193F7C2459069F0093D586 /* CLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F7B2459069F0093D586 /* CLI.swift */; };
+		026A9412245E30F70057E012 /* FileMetaCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A9411245E30F70057E012 /* FileMetaCommands.swift */; };
+		026A9414245E31180057E012 /* PrevueCommandFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A9413245E31180057E012 /* PrevueCommandFile.swift */; };
 		0270E6DE21A0E388003C98EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,11 +75,40 @@
 		02193165237BAD310076A810 /* PromoTitleCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTitleCommand.swift; sourceTree = "<group>"; };
 		02193167237BAFB30076A810 /* EventCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommand.swift; sourceTree = "<group>"; };
 		021931DD238106400076A810 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		02193F06244FFA6D0093D586 /* UVSGSerialData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UVSGSerialData.c; sourceTree = "<group>"; };
-		02193F07244FFA6D0093D586 /* UVSGSerialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSGSerialData.h; sourceTree = "<group>"; };
-		02193F09244FFA720093D586 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		02193F3F2454B1F50093D586 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		02193F412454B2060093D586 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		02193F422454B2060093D586 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		02193F432454B2060093D586 /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
+		02193F442454B2060093D586 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		02193F452454B2060093D586 /* Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		02193F462454B2060093D586 /* Node.Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.Mapping.swift; sourceTree = "<group>"; };
+		02193F472454B2060093D586 /* String+Yams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Yams.swift"; sourceTree = "<group>"; };
+		02193F482454B2060093D586 /* Node.Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.Sequence.swift; sourceTree = "<group>"; };
+		02193F4A2454B2060093D586 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		02193F4B2454B2060093D586 /* Node.Scalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.Scalar.swift; sourceTree = "<group>"; };
+		02193F4D2454B2060093D586 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		02193F4E2454B2060093D586 /* YamlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamlError.swift; sourceTree = "<group>"; };
+		02193F4F2454B2060093D586 /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
+		02193F502454B2060093D586 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		02193F512454B2060093D586 /* Representer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representer.swift; sourceTree = "<group>"; };
+		02193F542454B2060093D586 /* CYaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYaml.h; sourceTree = "<group>"; };
+		02193F552454B2060093D586 /* yaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yaml.h; sourceTree = "<group>"; };
+		02193F572454B2060093D586 /* scanner.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
+		02193F582454B2060093D586 /* yaml_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yaml_private.h; sourceTree = "<group>"; };
+		02193F592454B2060093D586 /* api.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = api.c; sourceTree = "<group>"; };
+		02193F5A2454B2060093D586 /* writer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
+		02193F5B2454B2060093D586 /* reader.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reader.c; sourceTree = "<group>"; };
+		02193F5C2454B2060093D586 /* emitter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = emitter.c; sourceTree = "<group>"; };
+		02193F5D2454B2060093D586 /* parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		02193F6F2454B2DC0093D586 /* UVSGSerialData.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UVSGSerialData.c; sourceTree = "<group>"; };
+		02193F702454B2DC0093D586 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		02193F712454B2DC0093D586 /* UVSGSerialData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSGSerialData.h; sourceTree = "<group>"; };
+		02193F7B2459069F0093D586 /* CLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLI.swift; sourceTree = "<group>"; };
 		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
 		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
+		026A9410245E1F1E0057E012 /* Test.prevuecommand */ = {isa = PBXFileReference; lastKnownFileType = file; name = Test.prevuecommand; path = Resources/Test.prevuecommand; sourceTree = SOURCE_ROOT; };
+		026A9411245E30F70057E012 /* FileMetaCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMetaCommands.swift; sourceTree = "<group>"; };
+		026A9413245E31180057E012 /* PrevueCommandFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrevueCommandFile.swift; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
 		0270E6D921A0DF35003C98EF /* DownloadCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCommand.swift; sourceTree = "<group>"; };
 		02A6FCDA21A0ABB900323C8F /* PrevueCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrevueCLI; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,11 +170,11 @@
 		021931A5238103BB0076A810 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				02193F05244FFA5E0093D586 /* UVSGSerialData */,
 				021931DC2381063A0076A810 /* Controller */,
 				02A6FD6F2268230D00323C8F /* Listings Sources */,
 				02A6FCFC21A13E9E00323C8F /* Data Sending */,
 				02A6FCFD21A13EBD00323C8F /* Commands */,
+				026A940F245E1D850057E012 /* Command Files */,
 				021931DA238105AA0076A810 /* Types */,
 			);
 			path = Shared;
@@ -144,19 +197,105 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		02193F05244FFA5E0093D586 /* UVSGSerialData */ = {
+		02193F3D2454B1CA0093D586 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				02193F07244FFA6D0093D586 /* UVSGSerialData.h */,
-				02193F06244FFA6D0093D586 /* UVSGSerialData.c */,
-				02193F09244FFA720093D586 /* module.map */,
+				02193F6E2454B2DC0093D586 /* UVSGSerialData */,
+				02193F3E2454B1E10093D586 /* Yams */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		02193F3E2454B1E10093D586 /* Yams */ = {
+			isa = PBXGroup;
+			children = (
+				02193F522454B2060093D586 /* CYaml */,
+				02193F402454B2060093D586 /* Swift */,
+				02193F3F2454B1F50093D586 /* module.map */,
+			);
+			path = Yams;
+			sourceTree = "<group>";
+		};
+		02193F402454B2060093D586 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				02193F412454B2060093D586 /* Mark.swift */,
+				02193F422454B2060093D586 /* Decoder.swift */,
+				02193F432454B2060093D586 /* Constructor.swift */,
+				02193F442454B2060093D586 /* Resolver.swift */,
+				02193F452454B2060093D586 /* Encoder.swift */,
+				02193F462454B2060093D586 /* Node.Mapping.swift */,
+				02193F472454B2060093D586 /* String+Yams.swift */,
+				02193F482454B2060093D586 /* Node.Sequence.swift */,
+				02193F4A2454B2060093D586 /* Parser.swift */,
+				02193F4B2454B2060093D586 /* Node.Scalar.swift */,
+				02193F4D2454B2060093D586 /* Tag.swift */,
+				02193F4E2454B2060093D586 /* YamlError.swift */,
+				02193F4F2454B2060093D586 /* Emitter.swift */,
+				02193F502454B2060093D586 /* Node.swift */,
+				02193F512454B2060093D586 /* Representer.swift */,
+			);
+			name = Swift;
+			path = Yams/Sources/Yams;
+			sourceTree = "<group>";
+		};
+		02193F522454B2060093D586 /* CYaml */ = {
+			isa = PBXGroup;
+			children = (
+				02193F532454B2060093D586 /* include */,
+				02193F562454B2060093D586 /* src */,
+			);
+			name = CYaml;
+			path = Yams/Sources/CYaml;
+			sourceTree = "<group>";
+		};
+		02193F532454B2060093D586 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				02193F542454B2060093D586 /* CYaml.h */,
+				02193F552454B2060093D586 /* yaml.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		02193F562454B2060093D586 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				02193F572454B2060093D586 /* scanner.c */,
+				02193F582454B2060093D586 /* yaml_private.h */,
+				02193F592454B2060093D586 /* api.c */,
+				02193F5A2454B2060093D586 /* writer.c */,
+				02193F5B2454B2060093D586 /* reader.c */,
+				02193F5C2454B2060093D586 /* emitter.c */,
+				02193F5D2454B2060093D586 /* parser.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		02193F6E2454B2DC0093D586 /* UVSGSerialData */ = {
+			isa = PBXGroup;
+			children = (
+				02193F702454B2DC0093D586 /* module.map */,
+				02193F6F2454B2DC0093D586 /* UVSGSerialData.c */,
+				02193F712454B2DC0093D586 /* UVSGSerialData.h */,
 			);
 			path = UVSGSerialData;
+			sourceTree = "<group>";
+		};
+		026A940F245E1D850057E012 /* Command Files */ = {
+			isa = PBXGroup;
+			children = (
+				026A9413245E31180057E012 /* PrevueCommandFile.swift */,
+				026A9411245E30F70057E012 /* FileMetaCommands.swift */,
+				026A9410245E1F1E0057E012 /* Test.prevuecommand */,
+			);
+			path = "Command Files";
 			sourceTree = "<group>";
 		};
 		02A6FCAF21A0AA8D00323C8F = {
 			isa = PBXGroup;
 			children = (
+				02193F3D2454B1CA0093D586 /* Modules */,
 				021931A5238103BB0076A810 /* Shared */,
 				02A6FCDB21A0ABB900323C8F /* PrevueCLI */,
 				02A6FCB921A0AA8E00323C8F /* Products */,
@@ -174,6 +313,7 @@
 		02A6FCDB21A0ABB900323C8F /* PrevueCLI */ = {
 			isa = PBXGroup;
 			children = (
+				02193F7B2459069F0093D586 /* CLI.swift */,
 				02A6FCDC21A0ABB900323C8F /* main.swift */,
 			);
 			path = PrevueCLI;
@@ -269,28 +409,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02193F742454B2F70093D586 /* api.c in Sources */,
 				021931E4238123710076A810 /* EPGMachine.swift in Sources */,
+				02193F642454B2360093D586 /* String+Yams.swift in Sources */,
+				02193F7C2459069F0093D586 /* CLI.swift in Sources */,
+				026A9414245E31180057E012 /* PrevueCommandFile.swift in Sources */,
 				021931F0238123710076A810 /* ChannelTypes.swift in Sources */,
 				021931EB238123710076A810 /* BoxCommands.swift in Sources */,
 				021931E9238123710076A810 /* CommandModes.swift in Sources */,
+				02193F652454B2360093D586 /* Node.Sequence.swift in Sources */,
+				02193F6A2454B2360093D586 /* YamlError.swift in Sources */,
 				021931EA238123710076A810 /* TitleCommand.swift in Sources */,
 				021931F7238123710076A810 /* ByteTypes.swift in Sources */,
-				02193F08244FFA6D0093D586 /* UVSGSerialData.c in Sources */,
+				02193F602454B2360093D586 /* Constructor.swift in Sources */,
+				02193F682454B2360093D586 /* Node.Scalar.swift in Sources */,
+				02193F752454B2F70093D586 /* writer.c in Sources */,
 				021931ED238123710076A810 /* DownloadCommand.swift in Sources */,
 				021931E7238123710076A810 /* SerialPortDataDestination.swift in Sources */,
 				021931F3238123710076A810 /* ActionCommand.swift in Sources */,
 				021931F6238123710076A810 /* UVSGEncoding.swift in Sources */,
+				02193F5E2454B2360093D586 /* Mark.swift in Sources */,
+				02193F6B2454B2360093D586 /* Emitter.swift in Sources */,
+				02193F632454B2360093D586 /* Node.Mapping.swift in Sources */,
 				021931E2238123710076A810 /* ListingsSource.swift in Sources */,
+				02193F782454B2F70093D586 /* parser.c in Sources */,
 				021931F4238123710076A810 /* PromoTitleCommand.swift in Sources */,
+				02193F612454B2360093D586 /* Resolver.swift in Sources */,
 				021931E1238123710076A810 /* DataController.swift in Sources */,
 				021931EC238123710076A810 /* ClockCommand.swift in Sources */,
+				02193F6D2454B2360093D586 /* Representer.swift in Sources */,
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
+				02193F5F2454B2360093D586 /* Decoder.swift in Sources */,
 				021931F5238123710076A810 /* EventCommand.swift in Sources */,
+				02193F772454B2F70093D586 /* emitter.c in Sources */,
 				021931E8238123710076A810 /* DataSending+AriDebugCTRL.swift in Sources */,
+				02193F622454B2360093D586 /* Encoder.swift in Sources */,
+				02193F732454B2F70093D586 /* scanner.c in Sources */,
 				021931EE238123710076A810 /* ConfigurationCommand.swift in Sources */,
+				02193F692454B2360093D586 /* Tag.swift in Sources */,
+				02193F6C2454B2360093D586 /* Node.swift in Sources */,
 				021931E6238123710076A810 /* TCPDataDestination.swift in Sources */,
 				021931E3238123710076A810 /* SampleDataListingsSource.swift in Sources */,
+				02193F722454B2E50093D586 /* UVSGSerialData.c in Sources */,
+				02193F762454B2F70093D586 /* reader.c in Sources */,
 				021931E5238123710076A810 /* DataDestination.swift in Sources */,
+				02193F672454B2360093D586 /* Parser.swift in Sources */,
+				026A9412245E30F70057E012 /* FileMetaCommands.swift in Sources */,
 				021931F1238123710076A810 /* ChannelsCommand.swift in Sources */,
 				021931F2238123710076A810 /* ProgramCommand.swift in Sources */,
 				021931EF238123710076A810 /* ConfigDatCommand.swift in Sources */,
@@ -358,6 +522,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -412,6 +577,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -429,9 +595,9 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_INCLUDE_PATHS = Shared/;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_INCLUDE_PATHS = Modules/;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -449,8 +615,8 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_INCLUDE_PATHS = Shared/;
-				SWIFT_VERSION = 4.2;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_INCLUDE_PATHS = Modules/;
 			};
 			name = Release;
 		};

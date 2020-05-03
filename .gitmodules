@@ -1,0 +1,3 @@
+[submodule "Modules/Yams/Yams"]
+	path = Modules/Yams/Yams
+	url = https://github.com/jpsim/Yams.git

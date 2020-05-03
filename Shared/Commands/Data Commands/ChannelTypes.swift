@@ -10,14 +10,14 @@ import Foundation
 
 typealias SourceIdentifier = String // Limited to 6 characters
 
-struct Channel {
+struct Channel: Codable {
     let flags: ChannelFlags
     let sourceIdentifier: SourceIdentifier
     let channelNumber: String
     let callLetters: String // Limited to 5 characters on EPG Jr., 6 on Amiga
 }
 
-struct Program {
+struct Program: Codable {
     let timeslot: UInt8
     let day: JulianDay
     let sourceIdentifier: SourceIdentifier // Channel source
@@ -25,12 +25,12 @@ struct Program {
     let programName: String
 }
 
-struct JulianDay {
+struct JulianDay: Codable {
     let dayOfYear: UInt8
 }
 
 // These flags are possibly incomplete or incorrect; should be confirmed in Amiga disassembly.
-struct ChannelFlags: OptionSet {
+struct ChannelFlags: OptionSet, Codable {
     let rawValue: UInt8
     
     static let none = ChannelFlags(rawValue: 0x01)
@@ -44,7 +44,7 @@ struct ChannelFlags: OptionSet {
 }
 
 // These flags are possibly incomplete or incorrect; should be confirmed in Amiga disassembly.
-struct ProgramFlags: OptionSet {
+struct ProgramFlags: OptionSet, Codable {
     let rawValue: UInt8
     
     static let none = ProgramFlags(rawValue: 0x01)

@@ -1,6 +1,6 @@
 //
-//  UVSGCommandMode.swift
-//  PrevueFramework
+//  CommandModes.swift
+//  PrevuePackage
 //
 //  Created by Ari on 11/17/18.
 //  Copyright © 2018 Vertex. All rights reserved.
@@ -8,7 +8,7 @@
 
 // This is a subset of the command modes discussed here: http://prevueguide.com/wiki/UVSG_Satellite_Data#Command_Modes
 
-enum DataCommandMode: Character {
+enum DataCommandMode: String, Codable {
     case boxOn = "A"
     case channel = "C"
     case newChannel = "c"

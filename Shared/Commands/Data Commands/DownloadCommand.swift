@@ -10,10 +10,21 @@
 
 struct DownloadCommand: DataCommand {
     let commandMode = DataCommandMode.download
-    enum Message {
+    enum Message: Codable {
         case start(filePath: String)
         case data(packetNumber: UInt8, byteCount: UInt8, data: Bytes)
         case end(packetCount: UInt8)
+        
+        // nothing
+        public init(from decoder: Decoder) throws {
+            self = .start(filePath: "")
+            let context = DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Decoding DownloadCommand not yet supported")
+            throw DecodingError.dataCorrupted(context)
+        }
+        func encode(to encoder: Encoder) throws {
+            let context = EncodingError.Context(codingPath: encoder.codingPath, debugDescription: "Encoding DownloadCommand not yet supported")
+            throw EncodingError.invalidValue(self, context)
+        }
     }
     let message: Message
 }

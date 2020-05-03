@@ -12,6 +12,18 @@ struct TitleCommand: DataCommand {
 }
 
 extension TitleCommand {
+    init(centeredTitle: String) {
+        let characterLimit = 40
+        let spacesToAdd = (characterLimit - centeredTitle.count) / 2
+        
+        let space = " "
+        let spaces = String(repeating: space, count: spacesToAdd)
+        
+        self.init(title: spaces + centeredTitle)
+    }
+}
+
+extension TitleCommand {
     var payload: Bytes {
         return title.uvsgBytes()
     }
