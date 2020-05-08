@@ -20,7 +20,7 @@ extension PrevueCommandFile {
         let BoxOnCommand: BoxOnCommand?
         let BoxOffCommand: BoxOffCommand?
         let ResetCommand: ResetCommand?
-        let TitleCommand: FileTitleCommand?
+        let TitleCommand: TitleCommand?
         let ClockCommand: FileClockCommand?
         let DownloadCommand: DownloadCommand?
         let ConfigurationCommand: ConfigurationCommand?

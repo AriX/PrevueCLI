@@ -59,7 +59,7 @@ destination.openConnection()
 
 destination.send(data: BoxOnCommand(selectCode: "*"))
 
-destination.send(data: TitleCommand(centeredTitle: "2020 ATARI EPG Test"))
+destination.send(data: TitleCommand(alignment: .center, title: "2020 ATARI EPG Test"))
 
 extension Data {
     struct HexEncodingOptions: OptionSet {

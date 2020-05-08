@@ -68,6 +68,34 @@ extension ControlCommand {
     }
 }
 
+// MARK: Common types
+
+enum TextAlignmentControlCharacter: Byte, CaseIterable {
+    case center = 0x18
+    case left = 0x19
+    case right = 0x1A
+}
+
+// Encode TextAlignmentControlCharacter as a string (e.g. "center") instead of an integer
+extension TextAlignmentControlCharacter: Codable {
+    init(from decoder: Decoder) throws {
+        let stringValue = try decoder.singleValueContainer().decode(String.self)
+        guard let matchingCase = Self.allCases.first(where: { $0.stringValue == stringValue }) else {
+            throw DecodingError.typeMismatch(Self.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Invalid text alignment specified"))
+        }
+        
+        self = matchingCase
+    }
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(self.stringValue)
+    }
+    var stringValue: String {
+        String(describing: self)
+    }
+}
+
+
 // MARK: Command containers
 
 protocol CommandContainer {

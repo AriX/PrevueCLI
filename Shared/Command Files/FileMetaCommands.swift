@@ -10,19 +10,6 @@ import Foundation
 
 // MARK: Commands
 
-class FileTitleCommand: FileMetaCommand<TitleCommand, FileTitleCommand.CustomKeys> {
-    enum CustomKeys: CodingKey {
-        case centeredTitle
-    }
-    
-    override class func customCommandsFrom(container: KeyedDecodingContainer<CustomKeys>) throws -> [DataCommand] {
-        let centeredTitle = try container.decode(String.self, forKey: .centeredTitle)
-        let command = TitleCommand(centeredTitle: centeredTitle)
-        
-        return [command]
-    }
-}
-
 class FileClockCommand: FileMetaCommand<ClockCommand, FileClockCommand.CustomKeys> {
     enum CustomKeys: CodingKey {
     }
