@@ -24,9 +24,9 @@ class DataController {
         self.init(dataDestinations: [destination])
     }
     
-    func send(control command: UVSGEncodable) {
+    func send(control command: UVSGCommand) {
         for dataDestination in dataDestinations {
-            dataDestination.send(control: command.encodeWithChecksum())
+            dataDestination.send(control: command.encodedWithChecksum)
         }
     }
     

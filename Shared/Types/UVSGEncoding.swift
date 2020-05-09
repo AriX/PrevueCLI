@@ -6,9 +6,39 @@
 //  Copyright © 2018 Vertex. All rights reserved.
 //
 
-// TODO: Reconsider this hierarchy so encoding details don't have to be made public
+protocol UVSGEncodable {
+    var payload: Bytes { get }
+}
 
-// MARK: Checksums
+// MARK: Commands
+
+protocol UVSGCommand: UVSGEncodable {
+    var encoded: Bytes { get }
+    var encodedWithChecksum: Bytes { get }
+}
+
+protocol DataCommand: UVSGCommand, Codable, CommandContainer {
+    var commandMode: DataCommandMode { get }
+}
+
+extension DataCommand {
+    var encoded: Bytes {
+        let startBytes: Bytes = [0x55, 0xAA]
+        return (startBytes + [commandMode.asByte()] + payload)
+    }
+}
+
+protocol ControlCommand: UVSGCommand {
+    var commandMode: ControlCommandMode { get }
+}
+
+extension ControlCommand {
+    var encoded: Bytes {
+        return ([commandMode.rawValue] + payload)
+    }
+}
+
+// MARK: Checksumming
 
 protocol UVSGChecksummable {
     var checksum: Byte { get }
@@ -25,40 +55,35 @@ extension Array: UVSGChecksummable where Element == Byte {
     }
 }
 
-protocol UVSGEncodable {
-    func encode() -> Bytes
-    func encodeWithChecksum() -> Bytes
-}
-
-extension UVSGEncodable {
-    func encodeWithChecksum() -> Bytes {
-        let encoded = encode()
+extension UVSGCommand {
+    var encodedWithChecksum: Bytes {
+        let encoded = self.encoded
         return (encoded + [encoded.checksum])
     }
 }
 
-// MARK: Commands
+// MARK: Common types
 
-protocol DataCommand: UVSGEncodable, Codable, CommandContainer {
-    var commandMode: DataCommandMode { get }
-    var payload: Bytes { get }
+enum TextAlignmentControlCharacter: Byte {
+    case center = 0x18 // ^X
+    case left = 0x19 // ^Y
+    case right = 0x1A // ^Z
+    case crawl = 0x0B // ^K, for local ads on EPG only
 }
 
-extension DataCommand {
-    func encode() -> Bytes {
-        let startBytes: Bytes = [0x55, 0xAA]
-        return (startBytes + [commandMode.asByte()] + payload)
+extension TextAlignmentControlCharacter: UVSGEncodable {
+    var payload: Bytes {
+        return [rawValue]
     }
 }
 
-protocol ControlCommand: UVSGEncodable {
-    var commandMode: ControlCommandMode { get }
-    var payload: Bytes { get }
-}
-
-extension ControlCommand {
-    func encode() -> Bytes {
-        return ([commandMode.rawValue] + payload)
+// Encode TextAlignmentControlCharacter as a string (e.g. "center") instead of as its byte value
+extension TextAlignmentControlCharacter: EnumCodableAsCaseName {
+    init(from decoder: Decoder) throws {
+        try self.init(asNameFrom: decoder)
+    }
+    func encode(to encoder: Encoder) throws {
+        try encode(asNameTo: encoder)
     }
 }
 
@@ -67,34 +92,6 @@ extension ControlCommand {
         return (leftString.asBytes() + [Byte(0x12)] + rightString.asBytes() + [Byte(0x0D)])
     }
 }
-
-// MARK: Common types
-
-enum TextAlignmentControlCharacter: Byte, CaseIterable {
-    case center = 0x18
-    case left = 0x19
-    case right = 0x1A
-}
-
-// Encode TextAlignmentControlCharacter as a string (e.g. "center") instead of an integer
-extension TextAlignmentControlCharacter: Codable {
-    init(from decoder: Decoder) throws {
-        let stringValue = try decoder.singleValueContainer().decode(String.self)
-        guard let matchingCase = Self.allCases.first(where: { $0.stringValue == stringValue }) else {
-            throw DecodingError.typeMismatch(Self.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Invalid text alignment specified"))
-        }
-        
-        self = matchingCase
-    }
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encode(self.stringValue)
-    }
-    var stringValue: String {
-        String(describing: self)
-    }
-}
-
 
 // MARK: Command containers
 

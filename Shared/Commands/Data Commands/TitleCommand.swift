@@ -13,12 +13,7 @@ struct TitleCommand: DataCommand {
 }
 
 extension TitleCommand {
-    var textAlignmentBytes: Bytes {
-        guard let alignment = alignment else { return [] }
-        return [alignment.rawValue]
-    }
-    
     var payload: Bytes {
-        return textAlignmentBytes + title.uvsgBytes()
+        return alignment.payload + title.asNullTerminatedBytes()
     }
 }

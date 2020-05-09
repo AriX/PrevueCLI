@@ -36,7 +36,7 @@ extension DataCommandMode {
 }
 
 extension String {
-    func uvsgBytes() -> Bytes {
+    func asNullTerminatedBytes() -> Bytes {
         return (Array(self.utf8) + [0x00])
     }
     func asBytes() -> Bytes {

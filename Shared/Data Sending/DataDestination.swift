@@ -20,14 +20,14 @@ protocol DataDestination: Codable {
 }
 
 /**
- Support sending UVSGEncodable commands to a data destination.
+ Support sending UVSGCommand commands to a data destination.
  */
 // TODO: Should there instead be a single protocol for converting things into bytes, and this takes those?
 extension DataDestination {
-    func send(data command: UVSGEncodable) {
-        send(data: command.encodeWithChecksum())
+    func send(data command: UVSGCommand) {
+        send(data: command.encodedWithChecksum)
     }
-    func send(data commands: [UVSGEncodable]) {
+    func send(data commands: [UVSGCommand]) {
         var i = 0
         for command in commands {
             print("Sending \(i) of \(commands.count)")
@@ -35,8 +35,8 @@ extension DataDestination {
             i += 1
         }
     }
-    func send(control command: UVSGEncodable) {
-        send(control: command.encodeWithChecksum())
+    func send(control command: UVSGCommand) {
+        send(control: command.encodedWithChecksum)
     }
 }
 

@@ -23,6 +23,9 @@ extension PrevueCommandFile {
         let TitleCommand: TitleCommand?
         let ClockCommand: FileClockCommand?
         let DownloadCommand: DownloadCommand?
+        let LocalAdResetCommand: LocalAdResetCommand?
+        let LocalAdCommand: LocalAdCommand?
+        let ColorLocalAdCommand: ColorLocalAdCommand?
         let ConfigurationCommand: ConfigurationCommand?
         let ConfigDatCommand: ConfigDatCommand?
         let ChannelsCommand: ChannelsCommand?

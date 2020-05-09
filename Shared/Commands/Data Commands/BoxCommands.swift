@@ -21,7 +21,7 @@ struct ResetCommand: DataCommand {
 
 extension BoxOnCommand {
     var payload: Bytes {
-        return self.selectCode.uvsgBytes()
+        return self.selectCode.asNullTerminatedBytes()
     }
 }
 

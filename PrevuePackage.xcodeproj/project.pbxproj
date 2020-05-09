@@ -30,6 +30,7 @@
 		021931F5238123710076A810 /* EventCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193167237BAFB30076A810 /* EventCommand.swift */; };
 		021931F6238123710076A810 /* UVSGEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */; };
 		021931F7238123710076A810 /* ByteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0A225850A300323C8F /* ByteTypes.swift */; };
+		0219326623827AC20076A810 /* LocalAdCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219326523827AC10076A810 /* LocalAdCommand.swift */; };
 		02193F5E2454B2360093D586 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F412454B2060093D586 /* Mark.swift */; };
 		02193F5F2454B2360093D586 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F422454B2060093D586 /* Decoder.swift */; };
 		02193F602454B2360093D586 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F432454B2060093D586 /* Constructor.swift */; };
@@ -55,6 +56,7 @@
 		02193F7C2459069F0093D586 /* CLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F7B2459069F0093D586 /* CLI.swift */; };
 		026A9412245E30F70057E012 /* FileMetaCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A9411245E30F70057E012 /* FileMetaCommands.swift */; };
 		026A9414245E31180057E012 /* PrevueCommandFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A9413245E31180057E012 /* PrevueCommandFile.swift */; };
+		026A952D24666D6D0057E012 /* TypeConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A952C24666D6D0057E012 /* TypeConvenience.swift */; };
 		0270E6DE21A0E388003C98EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,7 @@
 		02193165237BAD310076A810 /* PromoTitleCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTitleCommand.swift; sourceTree = "<group>"; };
 		02193167237BAFB30076A810 /* EventCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommand.swift; sourceTree = "<group>"; };
 		021931DD238106400076A810 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		0219326523827AC10076A810 /* LocalAdCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAdCommand.swift; sourceTree = "<group>"; };
 		02193F3F2454B1F50093D586 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		02193F412454B2060093D586 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
 		02193F422454B2060093D586 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
@@ -106,9 +109,10 @@
 		02193F7B2459069F0093D586 /* CLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLI.swift; sourceTree = "<group>"; };
 		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
 		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
-		026A9410245E1F1E0057E012 /* Test.prevuecommand */ = {isa = PBXFileReference; lastKnownFileType = file; name = Test.prevuecommand; path = Resources/Test.prevuecommand; sourceTree = SOURCE_ROOT; };
+		026A9410245E1F1E0057E012 /* Test.prevuecommand */ = {isa = PBXFileReference; lastKnownFileType = text; name = Test.prevuecommand; path = Resources/Test.prevuecommand; sourceTree = SOURCE_ROOT; };
 		026A9411245E30F70057E012 /* FileMetaCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMetaCommands.swift; sourceTree = "<group>"; };
 		026A9413245E31180057E012 /* PrevueCommandFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrevueCommandFile.swift; sourceTree = "<group>"; };
+		026A952C24666D6D0057E012 /* TypeConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConvenience.swift; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
 		0270E6D921A0DF35003C98EF /* DownloadCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCommand.swift; sourceTree = "<group>"; };
 		02A6FCDA21A0ABB900323C8F /* PrevueCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrevueCLI; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +156,7 @@
 				02A6FD0D225887A800323C8F /* ConfigDatCommand.swift */,
 				02A6FD162259875800323C8F /* ChannelTypes.swift */,
 				02A6FD1022596C0000323C8F /* ChannelsCommand.swift */,
+				0219326523827AC10076A810 /* LocalAdCommand.swift */,
 				02A6FD13225973EA00323C8F /* ProgramCommand.swift */,
 			);
 			path = "Data Commands";
@@ -185,6 +190,7 @@
 			children = (
 				02A6FCE821A0BAB800323C8F /* UVSGEncoding.swift */,
 				02A6FD0A225850A300323C8F /* ByteTypes.swift */,
+				026A952C24666D6D0057E012 /* TypeConvenience.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -439,6 +445,8 @@
 				021931EC238123710076A810 /* ClockCommand.swift in Sources */,
 				02193F6D2454B2360093D586 /* Representer.swift in Sources */,
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
+				0219326623827AC20076A810 /* LocalAdCommand.swift in Sources */,
+				026A952D24666D6D0057E012 /* TypeConvenience.swift in Sources */,
 				02193F5F2454B2360093D586 /* Decoder.swift in Sources */,
 				021931F5238123710076A810 /* EventCommand.swift in Sources */,
 				02193F772454B2F70093D586 /* emitter.c in Sources */,

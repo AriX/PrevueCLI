@@ -11,6 +11,12 @@
  */
 
 struct ConfigDatCommand: DataCommand {
+    enum TextAdFlag: String {
+        case none = "N"
+        case local = "L"
+        case remote = "R"
+        case satellite = "S"
+    }
     let commandMode = DataCommandMode.configDat
     let unknown1: UInt8 = 2 // Default 2
     let unknown2: Byte = 0x43 // C Default C
@@ -50,12 +56,12 @@ struct ConfigDatCommand: DataCommand {
     let unknown34: Byte = 0x43 // C ??
     let unknown35: Byte = 0x8E // ?? Default 0x8E.
     let unknown36: UInt8 = 8 // 8 Default 8.
-    let unknown37: Byte = 0x4E // N Default N.
+    let textAdFlag: TextAdFlag // Text ad/keyboard setting, N/R/L/S. Default N.
     let unknown38: Byte = 0x4E // N Default N.
     let unknown39: Byte = 0x4E // N Default N.
     let unknown40: Byte = 0x4E // N Default Y.
     let unknown41: Byte = 0x4E // N - something related to CTRL? Default N.
-    let clockCmd: UInt8 // Clock command. If 1, the 'K' clock command doesn't work. If 2, it does. Default 1.
+//    let clockCmd: UInt8 // Clock command. If 1, the 'K' clock command doesn't work. If 2, it does. Default 1.
 }
 
 extension ConfigDatCommand {
@@ -107,7 +113,7 @@ extension ConfigDatCommand {
             unknown34,
             unknown35,
             unknown36.byteByRepresentingNumberAsASCIIDigit(),
-            unknown37,
+            textAdFlag.rawValue.asBytes().first!,
             unknown38,
             unknown39,
             unknown40,
@@ -119,5 +125,15 @@ extension ConfigDatCommand {
         let configLength = UInt16(configDatBytes.count) + 1 // Unsure why, but it expects 1 more than the config length
         let configLengthBytes = configLength.bytesBySeparatingIntoHighAndLowBits()
         return [unknownByte, configLengthBytes[0], configLengthBytes[1]] + configDatBytes
+    }
+}
+
+// Encode TextAdFlag as a string (e.g. "local") instead of as its number value
+extension ConfigDatCommand.TextAdFlag: EnumCodableAsCaseName {
+    init(from decoder: Decoder) throws {
+        try self.init(asNameFrom: decoder)
+    }
+    func encode(to encoder: Encoder) throws {
+        try encode(asNameTo: encoder)
     }
 }

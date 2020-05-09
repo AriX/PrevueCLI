@@ -9,6 +9,7 @@
 import Foundation
 
 typealias SourceIdentifier = String // Limited to 6 characters
+typealias Timeslot = UInt8 // 1 to 48
 
 struct Channel: Codable {
     let flags: ChannelFlags
@@ -18,7 +19,7 @@ struct Channel: Codable {
 }
 
 struct Program: Codable {
-    let timeslot: UInt8
+    let timeslot: Timeslot
     let day: JulianDay
     let sourceIdentifier: SourceIdentifier // Channel source
     let flags: ProgramFlags

@@ -78,16 +78,16 @@ let actionCommand = ActionCommand(value: .quarterScreenPreview("WPVI", "WCAU"))
 let actionCommand2 = ActionCommand(value: .quarterScreenTrigger(.null, .null))
 let eventCommand = EventCommand(leftEvent: .titleLookup, rightEvent: .titleLookup)
 
-//for byte in promoTitleCommand.encodeWithChecksum() {
+//for byte in promoTitleCommand.encodedWithChecksum {
 //    destination.sendDebugCTRLByte(byte: byte)
 //}
-//for byte in eventCommand.encodeWithChecksum() {
+//for byte in eventCommand.encodedWithChecksum {
 //    destination.sendDebugCTRLByte(byte: byte)
 //}
-//for byte in actionCommand.encodeWithChecksum() {
+//for byte in actionCommand.encodedWithChecksum {
 //    destination.sendDebugCTRLByte(byte: byte)
 //}
-//for byte in actionCommand2.encodeWithChecksum() {
+//for byte in actionCommand2.encodedWithChecksum {
 //    destination.sendDebugCTRLByte(byte: byte)
 //}
 
@@ -119,7 +119,7 @@ let command2 = ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrol
 //destination.send(data: ResetCommand())
 
 // Config.dat test
-//destination.send(data: ConfigDatCommand(clockCmd: 2).encodeWithChecksum())
+//destination.send(data: ConfigDatCommand(textAdFlag: .remote, clockCmd: 2).encodedWithChecksum)
 
 // Channel & programs test
 

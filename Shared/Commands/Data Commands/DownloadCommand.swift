@@ -33,7 +33,7 @@ extension DownloadCommand {
     var payload: Bytes {
         switch message {
         case .start(let filePath):
-            return filePath.uvsgBytes()
+            return filePath.asNullTerminatedBytes()
         case .data(let packetNumber, let byteCount, let data):
             return [packetNumber] + [byteCount] + data
         case .end(let packetCount):
