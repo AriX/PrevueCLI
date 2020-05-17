@@ -1,4 +1,0 @@
-module CYaml {
-    header "Yams/Sources/CYaml/include/yaml.h"
-    export *
-}

@@ -4,6 +4,10 @@ export SDKROOT=/c/Library/Developer/Platforms/Windows.platform/Developer/SDKs/Wi
 export SWIFTFLAGS="-sdk $SDKROOT -I $SDKROOT/usr/lib/swift -L $SDKROOT/usr/lib/swift/windows"
 export PATH="$PATH:/c/Library/Developer/Toolchains/unknown-Asserts-development.xctoolchain/usr/bin"
 
-clang -c Shared/UVSGSerialData/UVSGSerialData.c
+mkdir -p build
+cd build
 
-swiftc $SWIFTFLAGS -IShared/ Shared/*/*.swift Shared/Commands/*/*.swift PrevueCLI/main.swift UVSGSerialData.o -o prevue
+clang -c ../Modules/UVSGSerialData/UVSGSerialData.c
+clang -c -I../Modules/Yams/Yams/Sources/CYaml/include/ ../Modules/Yams/Yams/Sources/CYaml/src/*.c
+
+swiftc $SWIFTFLAGS -DSWIFT_PACKAGE -I../Modules/ -I../Modules/Yams/Yams/Sources/CYaml/include/ ../Shared/*/*.swift ../Shared/Commands/*/*.swift ../PrevueCLI/*.swift *.o ../Modules/Yams/Yams/Sources/Yams/*.swift -o PrevueCLI.exe

@@ -608,7 +608,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_INCLUDE_PATHS = Modules/;
+				SWIFT_INCLUDE_PATHS = "Modules/ Modules/Yams/Yams/Sources/CYaml/include/";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -628,7 +628,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_INCLUDE_PATHS = Modules/;
+				SWIFT_INCLUDE_PATHS = "Modules/ Modules/Yams/Yams/Sources/CYaml/include/";
 			};
 			name = Release;
 		};

@@ -34,9 +34,11 @@ extension PrevueCommandFile {
         let ListingsCommand: FileListingsCommand?
     }
     
-    class SerializedDestination: Codable, PropertiesGettableByType {
+    struct SerializedDestination: Codable, PropertiesGettableByType {
         let TCPDataDestination: TCPDataDestination?
+        #if !os(Windows)
         let SerialPortDataDestination: SerialPortDataDestination?
+        #endif
     }
     
     init(from decoder: Decoder) throws {
