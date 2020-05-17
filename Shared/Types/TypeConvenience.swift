@@ -18,7 +18,7 @@ extension Optional: UVSGEncodable where Wrapped: UVSGEncodable {
 }
 
 // Protocol to allow enums to be coded using the name of their cases rather than their values
-protocol EnumCodableAsCaseName: Codable, CaseIterable {
+protocol EnumCodableAsCaseName: Codable, CaseIterable, UVSGDocumentableEnum {
     init(asNameFrom decoder: Decoder) throws
     func encode(asNameTo encoder: Encoder) throws
 }
@@ -38,5 +38,8 @@ extension EnumCodableAsCaseName {
     }
     var stringValue: String {
         String(describing: self)
+    }
+    var allCaseNames: [String] {
+        Self.allCases.map { $0.stringValue }
     }
 }

@@ -16,12 +16,13 @@ struct PrevueCommandFile: Codable {
 // MARK: Encoding/decoding
 
 extension PrevueCommandFile {
-    class SerializedCommand: Decodable, PropertiesGettableByType {
+    struct SerializedCommand: Decodable, PropertiesGettableByType {
         let BoxOnCommand: BoxOnCommand?
         let BoxOffCommand: BoxOffCommand?
         let ResetCommand: ResetCommand?
         let TitleCommand: TitleCommand?
-        let ClockCommand: FileClockCommand?
+        let ClockCommand: ClockCommand?
+        let CurrentClockCommand: FileCurrentClockCommand?
         let DownloadCommand: DownloadCommand?
         let LocalAdResetCommand: LocalAdResetCommand?
         let LocalAdCommand: LocalAdCommand?
@@ -111,14 +112,29 @@ protocol PropertiesGettableByType {
 
 extension PropertiesGettableByType {
     func propertyValue<T>(of type: T.Type) -> T? {
+        return propertyValues(of: type).first
+    }
+    func propertyValues<T>(of type: T.Type) -> [T] {
         let mirror = Mirror(reflecting: self)
-        for child in mirror.children {
-            if case Optional<Any>.some(let unwrappedValue) = child.value,
+        return mirror.children.compactMap {
+            if case Optional<Any>.some(let unwrappedValue) = $0.value,
                 let typedValue = unwrappedValue as? T {
                 return typedValue
             }
+            
+            return nil
         }
-        
+    }
+}
+
+struct DynamicKey: CodingKey {
+    var stringValue: String
+    init(stringValue: String) {
+        self.stringValue = stringValue
+    }
+    
+    var intValue: Int? = nil
+    init?(intValue: Int) {
         return nil
     }
 }

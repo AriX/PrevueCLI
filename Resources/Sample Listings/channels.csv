@@ -35,7 +35,7 @@ number,channelname,internalname,grabber,persistantgrabber,persistantnumber,flag
 17,WPHL,WPHL,ComcastPhiladelphiaDigital,NULL,0,01
 55,WFMZ,WFMZ,ComcastPhiladelphiaDigital,NULL,0,01
 41,APL,APL,ComcastPhiladelphiaDigital,NULL,0,01
-33,NIK,NIK,ComcastPhiladelphiaDigital,NULL,0,01
+33,NICK,NIK,ComcastPhiladelphiaDigital,NULL,0,01
 42,BET,BET,ComcastPhiladelphiaDigital,NULL,0,01
 6,WPVI,WPVI,ComcastPhiladelphiaDigital,NULL,0,01
 57.1,CW57,WPSG1,PhiladelphiaOTA,NULL,0,01

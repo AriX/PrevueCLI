@@ -26,7 +26,7 @@ struct Program: Codable {
     let programName: String
 }
 
-struct JulianDay: Codable {
+struct JulianDay: Codable, UVSGDocumentable {
     let dayOfYear: UInt8
 }
 

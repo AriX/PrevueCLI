@@ -21,7 +21,7 @@ extension ChannelsCommand {
     }
 }
 
-extension Channel {
+extension Channel: UVSGEncodable {
     var payload: Bytes {
         return Array([[0x12, flags.rawValue], sourceIdentifier.asBytes(), [0x11], channelNumber.asBytes(), [0x01], callLetters.asBytes()].joined())
     }

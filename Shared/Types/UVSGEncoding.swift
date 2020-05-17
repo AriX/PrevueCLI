@@ -6,7 +6,7 @@
 //  Copyright © 2018 Vertex. All rights reserved.
 //
 
-protocol UVSGEncodable {
+protocol UVSGEncodable: UVSGDocumentable {
     var payload: Bytes { get }
 }
 
@@ -63,29 +63,6 @@ extension UVSGCommand {
 }
 
 // MARK: Common types
-
-enum TextAlignmentControlCharacter: Byte {
-    case center = 0x18 // ^X
-    case left = 0x19 // ^Y
-    case right = 0x1A // ^Z
-    case crawl = 0x0B // ^K, for local ads on EPG only
-}
-
-extension TextAlignmentControlCharacter: UVSGEncodable {
-    var payload: Bytes {
-        return [rawValue]
-    }
-}
-
-// Encode TextAlignmentControlCharacter as a string (e.g. "center") instead of as its byte value
-extension TextAlignmentControlCharacter: EnumCodableAsCaseName {
-    init(from decoder: Decoder) throws {
-        try self.init(asNameFrom: decoder)
-    }
-    func encode(to encoder: Encoder) throws {
-        try encode(asNameTo: encoder)
-    }
-}
 
 extension ControlCommand {
     static func leftRightStringAsBytes(leftString: String, rightString: String) -> Bytes {

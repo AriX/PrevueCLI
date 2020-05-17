@@ -25,7 +25,10 @@ protocol DataDestination: Codable {
 // TODO: Should there instead be a single protocol for converting things into bytes, and this takes those?
 extension DataDestination {
     func send(data command: UVSGCommand) {
-        send(data: command.encodedWithChecksum)
+        let commandType = type(of: command)
+        let bytes = command.encodedWithChecksum
+        print("Sending \(commandType) in \(bytes.count) \(bytes.count == 1 ? "byte" : "bytes"): \(bytes.hexEncodedString())")
+        send(data: bytes)
     }
     func send(data commands: [UVSGCommand]) {
         var i = 0
@@ -50,7 +53,6 @@ class NetworkDataDestination: DataDestination {
     }
     
     func send(data bytes: Bytes) {
-        print("Sending \(bytes.count) \(bytes.count == 1 ? "byte" : "bytes"): \(bytes.hexEncodedString())to \(self)")
     }
     
     func send(control bytes: Bytes) {

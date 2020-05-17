@@ -1,44 +1,52 @@
+## Data Destinations: define where to send data
 destinations:
 - TCPDataDestination: {host: "127.0.0.1", port: 5541}
+
+# Serial port data destination is currently supported on Mac only:
+# - SerialPortDataDestination: {path: "/dev/cu.usbserial", baudRate: 2400}
+
+## Commands: define what to send
 commands:
 # Tell all boxes to start listening
 - BoxOnCommand: {selectCode: "*"}
 
 # Send the current time
-- ClockCommand: {}
+- CurrentClockCommand: {}
 
 # Send a title
 - TitleCommand: {alignment: "center", title: "Electronic Program Guide"}
 
 # Send a configuration
 - ConfigurationCommand: {timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 6, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00}
-- ConfigDatCommand: {textAdFlag: satellite}
+
+# Send New Look configuration (change 'grid' to 'scroll' to get the list format)
+- ConfigDatCommand: {displayFormat: grid, textAdFlag: satellite}
 
 # Reset local ads
 - LocalAdResetCommand: {}
 # One-line ad
-- LocalAdCommand: {adNumber: 1, content: [{text: "BEFORE YOU VIEW, PREVUE!"}]}
-# Two-line ad
-- LocalAdCommand: {adNumber: 2, content: [{text: "PREVUE GUIDE"}, {text: "WE ARE WHAT'S ON", alignment: center}]}
-# Ad with custom text alignments
+- LocalAdCommand: {adNumber: 1, content: [{text: "        BEFORE YOU VIEW, PREVUE!"}]}
+# Two-line centered ad
+- LocalAdCommand: {adNumber: 2, content: [{text: "PREVUE GUIDE", alignment: center}, {text: "WE ARE WHAT'S ON", alignment: center}]}
+# Multi-line ad with custom text alignments
 - LocalAdCommand: {adNumber: 3, content: [{text: "LEFT-ALIGNED AD LINE", alignment: left}, {text: "CENTER-ALIGNED AD LINE", alignment: center}, {text: "RIGHT-ALIGNED AD LINE", alignment: right}]}
 # Ad with timeslot constraints (e.g. only shown at night, timeslots 24-48)
-- LocalAdCommand: {adNumber: 4, content: [{text: "TARGET YOUR AUDIENCE WITH CABLE"}, {text: "TELEVISION. CALL COMCAST NOW AT", alignment: center}, {text: "215-639-2330", alignment: center}], timePeriod: {beginning: 24, ending: 48}}
-# Color ad
-- ColorLocalAdCommand: {adNumber: 5, content: [{text: "Prevue ", color: {background: grey, foreground: yellow}}, {text: "First!", color: {background: lightBlue, foreground: red}}]}
+- LocalAdCommand: {adNumber: 4, content: [{text: "TARGET YOUR AUDIENCE WITH CABLE", alignment: center}, {text: "TELEVISION. CALL COMCAST NOW AT", alignment: center}, {text: "215-639-2330", alignment: center}], timePeriod: {beginning: 24, ending: 48}}
+# Color text ad
+- ColorLocalAdCommand: {adNumber: 5, content: [{text: "Alawys think "}, {text: "Prevue ", color: {background: grey, foreground: yellow}}, {text: "first!", color: {background: lightBlue, foreground: red}}]}
 
 # Send sample listings data from the included .csv files
-- ListingsCommand: {channelsFile: "Sample Listings/channels.csv", programsFile: "Sample Listings/programs.csv", forAtari: true}
+- ListingsCommand: {channelsFilePath: "Sample Listings/channels.csv", programsFilePath: "Sample Listings/programs.csv", forAtari: true}
 
 # Other command examples:
-#- ClockCommand: {dayOfWeek: 5, month: 2, day: 4, year: 119, hour: 07, minute: 00, second: 00, daylightSavingsTime: True}
+#- ClockCommand: {dayOfWeek: 5, month: 2, day: 4, year: 120, hour: 07, minute: 00, second: 00, daylightSavingsTime: True}
 #- ResetCommand: {}
-#- ChannelsCommand: {day: {dayOfYear: 123}, channels: [{flags: 1, sourceIdentifier: WPVI, channelNumber: '6', callLetters: 6ABC}]}
-#- ProgramCommand: {program: {day: {dayOfYear: 123}, timeslot: 1, sourceIdentifier: WPVI, flags: 1, programName: "Action News"}}
+#- ChannelsCommand: {day: {dayOfYear: 138}, channels: [{flags: 1, sourceIdentifier: WPVI, channelNumber: '6', callLetters: 6ABC}]}
+#- ProgramCommand: {program: {day: {dayOfYear: 138}, timeslot: 1, sourceIdentifier: WPVI, flags: 1, programName: "Action News"}}
 
 # Tell boxes to stop listening
 - BoxOffCommand: {}
 
 # TODO: Clean up ConfigurationCommand
+# TODO: Fully support ConfigDatCommand
 # TODO: Support DownloadCommand
-# TODO: Support ConfigDatCommand

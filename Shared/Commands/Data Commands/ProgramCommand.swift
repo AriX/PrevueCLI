@@ -11,7 +11,7 @@ struct ProgramCommand: DataCommand {
     let program: Program
 }
 
-extension Program {
+extension Program: UVSGEncodable {
     var payload: Bytes {
         return Array([[timeslot, day.dayOfYear], sourceIdentifier.asBytes(), [0x12], [flags.rawValue], programName.asBytes(), [0x00]].joined())
     }

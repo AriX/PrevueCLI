@@ -11,6 +11,10 @@
  */
 
 struct ConfigDatCommand: DataCommand {
+    enum DisplayFormat: String {
+        case grid = "G"
+        case scroll = "S"
+    }
     enum TextAdFlag: String {
         case none = "N"
         case local = "L"
@@ -24,7 +28,7 @@ struct ConfigDatCommand: DataCommand {
     let SBS: UInt8 = 1 // SBS Default 3
     let unknown5: UInt16 = 08 // Default 24
     let unknown6: UInt16 = 08 // Default 24
-    let unknown7: Byte = 0x47 // Display format. G for grid, or S for scroll. Default G.
+    let displayFormat: DisplayFormat // Display format. G for grid, or S for scroll. Default G.
     let unknown8: Byte = 0x4E // N Default N
     let unknown9: Byte = 0x41 // A Default A
     let unknown10: Byte = 0x45 // E Default E
@@ -75,7 +79,7 @@ extension ConfigDatCommand {
             unknown5.bytesBySeparatingIntoASCIIDigits()[1],
             unknown6.bytesBySeparatingIntoASCIIDigits()[0],
             unknown6.bytesBySeparatingIntoASCIIDigits()[1],
-            unknown7,
+            displayFormat.rawValue.asBytes().first!,
             unknown8,
             unknown9,
             unknown10,
@@ -128,6 +132,16 @@ extension ConfigDatCommand {
     }
 }
 
+// Encode DisplayFormat as a string (e.g. "grid") instead of as its number value
+extension ConfigDatCommand.DisplayFormat: EnumCodableAsCaseName {
+    init(from decoder: Decoder) throws {
+        try self.init(asNameFrom: decoder)
+    }
+    func encode(to encoder: Encoder) throws {
+        try encode(asNameTo: encoder)
+    }
+}
+
 // Encode TextAdFlag as a string (e.g. "local") instead of as its number value
 extension ConfigDatCommand.TextAdFlag: EnumCodableAsCaseName {
     init(from decoder: Decoder) throws {
@@ -135,5 +149,12 @@ extension ConfigDatCommand.TextAdFlag: EnumCodableAsCaseName {
     }
     func encode(to encoder: Encoder) throws {
         try encode(asNameTo: encoder)
+    }
+}
+
+// TODO: Remove once this command is fully modeled
+extension ConfigDatCommand: UVSGDocumentable {
+    var documentedType: UVSGDocumentedType {
+        return .dictionary([("displayFormat", DisplayFormat.grid.documentedType), ("textAdFlag", TextAdFlag.satellite.documentedType)])
     }
 }

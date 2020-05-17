@@ -14,6 +14,12 @@ struct LocalAd: Codable {
     let timePeriod: TimePeriod?
 
     struct Content: Codable {
+        enum Alignment: Byte {
+            case center = 0x18 // ^X
+            case left = 0x19 // ^Y
+            case right = 0x1A // ^Z
+            case crawl = 0x0B // ^K, for local ads on EPG only
+        }
         struct TextColor: Codable {
             enum Color: Byte {
                 case transparent = 0x30
@@ -28,7 +34,7 @@ struct LocalAd: Codable {
             let background: Color
             let foreground: Color
         }
-        let alignment: TextAlignmentControlCharacter?
+        let alignment: Alignment?
         let color: TextColor? // Supported on Amiga only
         let text: String
     }
@@ -65,9 +71,15 @@ extension LocalAd: UVSGEncodable {
     }
 }
 
-extension LocalAd.Content {
+extension LocalAd.Content: UVSGEncodable {
     var payload: Bytes {
         return alignment.payload + color.payload + text.asBytes()
+    }
+}
+
+extension LocalAd.Content.Alignment: UVSGEncodable {
+    var payload: Bytes {
+        return [rawValue]
     }
 }
 
@@ -98,11 +110,23 @@ extension LocalAdCommand {
     var payload: Bytes {
         ad.payload
     }
+    
+    var documentedType: UVSGDocumentedType {
+        get {
+            ad.documentedType
+        }
+    }
 }
 
 extension ColorLocalAdCommand {
     var payload: Bytes {
         ad.payload
+    }
+    
+    var documentedType: UVSGDocumentedType {
+        get {
+            ad.documentedType
+        }
     }
 }
 
@@ -132,8 +156,18 @@ extension ColorLocalAdCommand: Codable {
     }
 }
 
+// Encode Alignment as a string (e.g. "center") instead of as its byte value
+extension LocalAd.Content.Alignment: UVSGDocumentableEnum, EnumCodableAsCaseName {
+    init(from decoder: Decoder) throws {
+        try self.init(asNameFrom: decoder)
+    }
+    func encode(to encoder: Encoder) throws {
+        try encode(asNameTo: encoder)
+    }
+}
+
 // Encode Color as a string (e.g. "red") instead of as its number value
-extension LocalAd.Content.TextColor.Color: EnumCodableAsCaseName {
+extension LocalAd.Content.TextColor.Color: EnumCodableAsCaseName, UVSGDocumentableEnum {
     init(from decoder: Decoder) throws {
         try self.init(asNameFrom: decoder)
     }
