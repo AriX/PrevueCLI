@@ -28,7 +28,7 @@ extension PrevueCommandFile {
         let LocalAdCommand: LocalAdCommand?
         let ColorLocalAdCommand: ColorLocalAdCommand?
         let ConfigurationCommand: ConfigurationCommand?
-        let ConfigDatCommand: ConfigDatCommand?
+        let NewLookConfigurationCommand: NewLookConfigurationCommand?
         let ChannelsCommand: ChannelsCommand?
         let ProgramCommand: ProgramCommand?
         let ListingsCommand: FileListingsCommand?

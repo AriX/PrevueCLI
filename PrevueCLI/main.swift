@@ -42,7 +42,7 @@ let commands = [
             LocalAdCommand: LocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: nil, color: nil, text: "")], timePeriod: .init(beginning: 0, ending: 0))),
             ColorLocalAdCommand: ColorLocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: .center, color: .init(background: .red, foreground: .red), text: "")], timePeriod: .init(beginning: 0, ending: 0))),
             ConfigurationCommand: ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00),
-            ConfigDatCommand: ConfigDatCommand(displayFormat: .grid, textAdFlag: .none),
+            NewLookConfigurationCommand: NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .none),
             ChannelsCommand: ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Channel(flags: [.none], sourceIdentifier: "", channelNumber: "", callLetters: "")]),
             ProgramCommand: ProgramCommand(program: Program(timeslot: 0, day: JulianDay(dayOfYear: 0), sourceIdentifier: "", flags: [], programName: "")),
             ListingsCommand: FileListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false)
@@ -141,7 +141,7 @@ let command2 = ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrol
 //destination.send(data: ResetCommand())
 
 // Config.dat test
-//destination.send(data: ConfigDatCommand(textAdFlag: .remote, clockCmd: 2).encodedWithChecksum)
+//destination.send(data: NewLookConfigurationCommand(textAdFlag: .remote, clockCmd: 2).encodedWithChecksum)
 
 // Channel & programs test
 

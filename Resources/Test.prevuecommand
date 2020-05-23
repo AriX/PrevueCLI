@@ -20,7 +20,7 @@ commands:
 - ConfigurationCommand: {timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 6, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00}
 
 # Send New Look configuration (change 'grid' to 'scroll' to get the list format)
-- ConfigDatCommand: {displayFormat: grid, textAdFlag: satellite}
+- NewLookConfigurationCommand: {displayFormat: grid, textAdFlag: satellite}
 
 # Reset local ads
 - LocalAdResetCommand: {}
@@ -48,5 +48,5 @@ commands:
 - BoxOffCommand: {}
 
 # TODO: Clean up ConfigurationCommand
-# TODO: Fully support ConfigDatCommand
+# TODO: Fully support NewLookConfigurationCommand
 # TODO: Support DownloadCommand

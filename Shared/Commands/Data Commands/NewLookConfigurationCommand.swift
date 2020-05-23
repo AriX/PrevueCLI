@@ -1,5 +1,5 @@
 //
-//  ConfigDatCommand.swift
+//  NewLookConfigurationCommand.swift
 //  PrevuePackage
 //
 //  Created by Ari on 4/6/19.
@@ -10,7 +10,7 @@
  config.dat format string from ESQ: %01ld%01lc%01ld%01ld%02ld%02ld%01lc%01lc%01lc%01lc%01ld%01ld%01lc%01lc%01lc%01lc%01lc%01lc%01c%02ld%02ld%01lc%01lc%01lc%02ld%02ld%02ld%03ld%01ld%2.2s%01lc%01lc%01lc%01c%01c%01d%01c%01c%01c%01c%01c%01c
  */
 
-struct ConfigDatCommand: DataCommand {
+struct NewLookConfigurationCommand: DataCommand {
     enum DisplayFormat: String {
         case grid = "G"
         case scroll = "S"
@@ -68,7 +68,7 @@ struct ConfigDatCommand: DataCommand {
 //    let clockCmd: UInt8 // Clock command. If 1, the 'K' clock command doesn't work. If 2, it does. Default 1.
 }
 
-extension ConfigDatCommand {
+extension NewLookConfigurationCommand {
     var payload: Bytes {
         let configDatBytes = [
             unknown1.byteByRepresentingNumberAsASCIIDigit(),
@@ -133,7 +133,7 @@ extension ConfigDatCommand {
 }
 
 // Encode DisplayFormat as a string (e.g. "grid") instead of as its number value
-extension ConfigDatCommand.DisplayFormat: EnumCodableAsCaseName {
+extension NewLookConfigurationCommand.DisplayFormat: EnumCodableAsCaseName {
     init(from decoder: Decoder) throws {
         try self.init(asNameFrom: decoder)
     }
@@ -143,7 +143,7 @@ extension ConfigDatCommand.DisplayFormat: EnumCodableAsCaseName {
 }
 
 // Encode TextAdFlag as a string (e.g. "local") instead of as its number value
-extension ConfigDatCommand.TextAdFlag: EnumCodableAsCaseName {
+extension NewLookConfigurationCommand.TextAdFlag: EnumCodableAsCaseName {
     init(from decoder: Decoder) throws {
         try self.init(asNameFrom: decoder)
     }
@@ -153,7 +153,7 @@ extension ConfigDatCommand.TextAdFlag: EnumCodableAsCaseName {
 }
 
 // TODO: Remove once this command is fully modeled
-extension ConfigDatCommand: UVSGDocumentable {
+extension NewLookConfigurationCommand: UVSGDocumentable {
     var documentedType: UVSGDocumentedType {
         return .dictionary([("displayFormat", DisplayFormat.grid.documentedType), ("textAdFlag", TextAdFlag.satellite.documentedType)])
     }
