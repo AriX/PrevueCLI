@@ -13,14 +13,14 @@ mkdir -p build
 cd build
 
 # Build Yams
-cmake -G Ninja -B Yams -D BUILD_SHARED_LIBS=YES -D BUILD_TESTING=NO -D CMAKE_BUILD_TYPE=Release -D CMAKE_Swift_FLAGS="$SWIFTFLAGS" -D CMAKE_C_FLAGS="-DWIN32" ../Modules/Yams/Yams
+cmake -G Ninja -B Yams -D BUILD_SHARED_LIBS=YES -D BUILD_TESTING=NO -D CMAKE_BUILD_TYPE=Release -D CMAKE_Swift_FLAGS="$SWIFTFLAGS" -D CMAKE_C_FLAGS="-DWIN32" ../Modules/Yams
 cmake --build Yams
 
 # Build UVSGSerialData
 clang -c ../Modules/UVSGSerialData/UVSGSerialData.c
 
 # Build the Swift code
-swiftc $SWIFTFLAGS -I../Modules/ -I../Modules/Yams/Yams/Sources/CYaml/include/ -IYams/swift -LYams/lib ../Shared/*/*.swift ../Shared/Commands/*/*.swift ../PrevueCLI/*.swift *.o -o PrevueCLI.exe
+swiftc $SWIFTFLAGS -I../Modules/ -I../Modules/Yams/Sources/CYaml/include/ -IYams/swift -LYams/lib ../Shared/*/*.swift ../Shared/Commands/*/*.swift ../PrevueCLI/*.swift *.o -o PrevueCLI.exe
 
 # Make the Windows distribution directory
 mkdir -p windows-distribution

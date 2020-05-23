@@ -79,7 +79,6 @@
 		02193167237BAFB30076A810 /* EventCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommand.swift; sourceTree = "<group>"; };
 		021931DD238106400076A810 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0219326523827AC10076A810 /* LocalAdCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAdCommand.swift; sourceTree = "<group>"; };
-		02193F3F2454B1F50093D586 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		02193F412454B2060093D586 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
 		02193F422454B2060093D586 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		02193F432454B2060093D586 /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
@@ -220,7 +219,6 @@
 			children = (
 				02193F522454B2060093D586 /* CYaml */,
 				02193F402454B2060093D586 /* Swift */,
-				02193F3F2454B1F50093D586 /* module.map */,
 			);
 			path = Yams;
 			sourceTree = "<group>";
@@ -245,7 +243,7 @@
 				02193F512454B2060093D586 /* Representer.swift */,
 			);
 			name = Swift;
-			path = Yams/Sources/Yams;
+			path = Sources/Yams;
 			sourceTree = "<group>";
 		};
 		02193F522454B2060093D586 /* CYaml */ = {
@@ -255,7 +253,7 @@
 				02193F562454B2060093D586 /* src */,
 			);
 			name = CYaml;
-			path = Yams/Sources/CYaml;
+			path = Sources/CYaml;
 			sourceTree = "<group>";
 		};
 		02193F532454B2060093D586 /* include */ = {
@@ -608,7 +606,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_INCLUDE_PATHS = "Modules/ Modules/Yams/Yams/Sources/CYaml/include/";
+				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -628,7 +626,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_INCLUDE_PATHS = "Modules/ Modules/Yams/Yams/Sources/CYaml/include/";
+				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/";
 			};
 			name = Release;
 		};
