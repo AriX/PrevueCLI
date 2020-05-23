@@ -7,6 +7,9 @@
 //
 
 import Foundation
+#if os(Windows)
+import Yams
+#endif
 
 let commands = [
     CLI.Command(name: "send", usage: " <.prevuecommand file>: Sends the commands in the specified .prevuecommand file", minimumArgumentCount: 1, handler: { (arguments) in
@@ -66,8 +69,6 @@ Usage:
 
 let cli = CLI(commands: commands, usagePreamble: usagePreamble)
 cli.runCommand(for: CommandLine.arguments)
-
-// TODO: Add documentation for PrevueCommand format
 
 exit(0)
 
