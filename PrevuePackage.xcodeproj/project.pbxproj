@@ -109,10 +109,10 @@
 		02193F7B2459069F0093D586 /* CLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLI.swift; sourceTree = "<group>"; };
 		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
 		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
-		026A9410245E1F1E0057E012 /* Test.prevuecommand */ = {isa = PBXFileReference; lastKnownFileType = text; name = Test.prevuecommand; path = Resources/Test.prevuecommand; sourceTree = SOURCE_ROOT; };
 		026A9411245E30F70057E012 /* FileMetaCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMetaCommands.swift; sourceTree = "<group>"; };
 		026A9413245E31180057E012 /* PrevueCommandFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrevueCommandFile.swift; sourceTree = "<group>"; };
 		026A952C24666D6D0057E012 /* TypeConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConvenience.swift; sourceTree = "<group>"; };
+		026F628D248C6D6200E78F2C /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
 		0270E6D921A0DF35003C98EF /* DownloadCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCommand.swift; sourceTree = "<group>"; };
 		02A6FCDA21A0ABB900323C8F /* PrevueCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrevueCLI; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,7 +294,6 @@
 			children = (
 				026A9413245E31180057E012 /* PrevueCommandFile.swift */,
 				026A9411245E30F70057E012 /* FileMetaCommands.swift */,
-				026A9410245E1F1E0057E012 /* Test.prevuecommand */,
 			);
 			path = "Command Files";
 			sourceTree = "<group>";
@@ -305,6 +304,7 @@
 				02193F3D2454B1CA0093D586 /* Modules */,
 				021931A5238103BB0076A810 /* Shared */,
 				02A6FCDB21A0ABB900323C8F /* PrevueCLI */,
+				026F628D248C6D6200E78F2C /* Resources */,
 				02A6FCB921A0AA8E00323C8F /* Products */,
 			);
 			sourceTree = "<group>";

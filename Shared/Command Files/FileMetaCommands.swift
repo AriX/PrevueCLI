@@ -10,14 +10,14 @@ import Foundation
 
 // MARK: Commands
 
-struct FileCurrentClockCommand: FileMetaCommand {
+struct CurrentClockCommand: FileMetaCommand {
     var commands: [DataCommand] {
         let command = ClockCommand(with: Date())!
         return [command]
     }
 }
 
-struct FileListingsCommand: FileMetaCommand {
+struct ListingsCommand: FileMetaCommand {
     let channelsFilePath: String
     let programsFilePath: String
     let forAtari: Bool
@@ -39,6 +39,17 @@ struct FileListingsCommand: FileMetaCommand {
         }
         
         return [channelCommand] + programCommands
+    }
+}
+
+struct TransferFileCommand: FileMetaCommand {
+    let localFilePath: String
+    let remoteFilePath: String
+    
+    var commands: [DataCommand] {
+        let fileData = try! Data(contentsOf: URL(fileURLWithPath: localFilePath))
+        let fileBytes = [UInt8](fileData)
+        return DownloadCommand.commandsToTransferFile(filePath: remoteFilePath, contents: fileBytes)
     }
 }
 

@@ -22,8 +22,9 @@ extension PrevueCommandFile {
         let ResetCommand: ResetCommand?
         let TitleCommand: TitleCommand?
         let ClockCommand: ClockCommand?
-        let CurrentClockCommand: FileCurrentClockCommand?
+        let CurrentClockCommand: CurrentClockCommand?
         let DownloadCommand: DownloadCommand?
+        let TransferFileCommand: TransferFileCommand?
         let LocalAdResetCommand: LocalAdResetCommand?
         let LocalAdCommand: LocalAdCommand?
         let ColorLocalAdCommand: ColorLocalAdCommand?
@@ -31,7 +32,7 @@ extension PrevueCommandFile {
         let NewLookConfigurationCommand: NewLookConfigurationCommand?
         let ChannelsCommand: ChannelsCommand?
         let ProgramCommand: ProgramCommand?
-        let ListingsCommand: FileListingsCommand?
+        let ListingsCommand: ListingsCommand?
     }
     
     struct SerializedDestination: Codable, PropertiesGettableByType {
@@ -94,10 +95,8 @@ extension PrevueCommandFile {
         }
 
         for commandContainer in commandContainers {
-            for command in commandContainer.commands {
-                for destination in destinations {
-                    destination.send(data: command)
-                }
+            for destination in destinations {
+                destination.send(data: commandContainer.commands)
             }
         }
 

@@ -63,13 +63,14 @@ class SerialPortDataDestination: DataDestination {
         
         buffer.copyBytes(from: bytes)
         
-        print("Sending \(bytes.hexEncodedString())to \(self)")
         write(handle, buffer.baseAddress, size)
         
-        let timeToSend = (Double(bytes.count)/1.5)*1000.0*2
-        usleep(UInt32(timeToSend))
+//        let timeToSend = (Double(bytes.count)/1.5)*1000.0*2
+//        usleep(UInt32(timeToSend))
+        // TODO: Is this potentially unnecessarily slow?
+        limitSendingRate(byteCount: bytes.count, baudRate: Int(baudRate))
     }
-    var delay: useconds_t = 830
+    let delay: useconds_t = 830
     func setRTS(_ up: Bool) {
         guard let handle = handle else {
             print("[SerialPortDataDestination] Tried to set RTS with no open handle")

@@ -49,4 +49,3 @@ commands:
 
 # TODO: Clean up ConfigurationCommand
 # TODO: Fully support NewLookConfigurationCommand
-# TODO: Support DownloadCommand

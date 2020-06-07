@@ -1,0 +1,17 @@
+destinations:
+- TCPDataDestination: {host: "127.0.0.1", port: 5542}
+#- SerialPortDataDestination: {path: "/dev/cu.usbserial", baudRate: 2400}
+
+commands:
+# Tell all boxes to start listening
+- BoxOnCommand: {selectCode: "*"}
+
+- TransferFileCommand: {localFilePath: "/tmp/test", remoteFilePath: "DF0:test"}
+
+# Granular download commands
+#- DownloadCommand: {start: {filePath: "DF0:aab"}}
+#- DownloadCommand: {packet: {index: 0, byteCount: 2, data: [0x55, 0xAA]}}
+#- DownloadCommand: {end: {packetCount: 1}}
+
+# Tell boxes to stop listening
+- BoxOffCommand: {}

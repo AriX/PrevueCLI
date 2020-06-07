@@ -36,8 +36,9 @@ let commands = [
             ResetCommand: ResetCommand(),
             TitleCommand: TitleCommand(alignment: .center, title: ""),
             ClockCommand: ClockCommand(with: Date())!,
-            CurrentClockCommand: FileCurrentClockCommand(),
-            DownloadCommand: nil,// TODO
+            CurrentClockCommand: CurrentClockCommand(),
+            DownloadCommand: nil, // TODO: Support UVSGDocumentableEnum for DownloadCommand
+            TransferFileCommand: TransferFileCommand(localFilePath: "", remoteFilePath: ""),
             LocalAdResetCommand: LocalAdResetCommand(),
             LocalAdCommand: LocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: nil, color: nil, text: "")], timePeriod: .init(beginning: 0, ending: 0))),
             ColorLocalAdCommand: ColorLocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: .center, color: .init(background: .red, foreground: .red), text: "")], timePeriod: .init(beginning: 0, ending: 0))),
@@ -45,7 +46,7 @@ let commands = [
             NewLookConfigurationCommand: NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .none),
             ChannelsCommand: ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Channel(flags: [.none], sourceIdentifier: "", channelNumber: "", callLetters: "")]),
             ProgramCommand: ProgramCommand(program: Program(timeslot: 0, day: JulianDay(dayOfYear: 0), sourceIdentifier: "", flags: [], programName: "")),
-            ListingsCommand: FileListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false)
+            ListingsCommand: ListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false)
         )
         let documentation = allPossibleSerializedCommands.documentedType.description
         print("Supported commands:\n\(documentation)")
@@ -127,18 +128,6 @@ let eventCommand = EventCommand(leftEvent: .titleLookup, rightEvent: .titleLooku
 // Configuration test
 let command2 = ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00)
 //destination.send(data: command2)
-
-// Download test
-//var bytes: Bytes = []
-//stride(from: 0, to: 32536, by: 1).map { index in
-//    let sixteenBitIndex = UInt16(index)
-//    bytes.append(contentsOf: sixteenBitIndex.bytesBySeparatingIntoHighAndLowBits())
-//}
-//let fileData = try Data(contentsOf: URL(fileURLWithPath: "/Users/Ari/Desktop/Prevue Technical/Amiga Resources/Work/ESQ7803/esq"))
-//let fileBytes = [UInt8](fileData)
-//let downloadCommands = DownloadCommand.commandsToTransferFile(filePath: "DF0:ESQ", contents: fileBytes)
-//destination.send(data: downloadCommands)
-//destination.send(data: ResetCommand())
 
 // Config.dat test
 //destination.send(data: NewLookConfigurationCommand(textAdFlag: .remote, clockCmd: 2).encodedWithChecksum)

@@ -33,7 +33,9 @@ extension DataDestination {
     func send(data commands: [UVSGCommand]) {
         var i = 0
         for command in commands {
-            print("Sending \(i) of \(commands.count)")
+            if commands.count > 1 {
+                print("Sending \(i) of \(commands.count)")
+            }
             send(data: command)
             i += 1
         }
