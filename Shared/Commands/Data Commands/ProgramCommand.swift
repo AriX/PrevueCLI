@@ -8,17 +8,18 @@
 
 struct ProgramCommand: DataCommand {
     let commandMode = DataCommandMode.program
+    let day: JulianDay
     let program: Program
 }
 
 extension Program: UVSGEncodable {
     var payload: Bytes {
-        return Array([[timeslot, day.dayOfYear], sourceIdentifier.asBytes(), [0x12], [flags.rawValue], programName.asBytes(), [0x00]].joined())
+        return Array([sourceIdentifier.asBytes(), [0x12], [flags.rawValue], programName.asBytes(), [0x00]].joined())
     }
 }
 
 extension ProgramCommand {
     var payload: Bytes {
-        return program.payload
+        return [program.timeslot, day.dayOfYear] + program.payload
     }
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		021931E1238123710076A810 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021931DD238106400076A810 /* DataController.swift */; };
 		021931E2238123710076A810 /* ListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD702268231900323C8F /* ListingsSource.swift */; };
-		021931E3238123710076A810 /* SampleDataListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* SampleDataListingsSource.swift */; };
+		021931E3238123710076A810 /* CSVListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* CSVListingsSource.swift */; };
 		021931E4238123710076A810 /* EPGMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCE621A0B81C00323C8F /* EPGMachine.swift */; };
 		021931E5238123710076A810 /* DataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF921A13DFE00323C8F /* DataDestination.swift */; };
 		021931E6238123710076A810 /* TCPDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF621A13BC800323C8F /* TCPDataDestination.swift */; };
@@ -58,6 +58,13 @@
 		026A9414245E31180057E012 /* PrevueCommandFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A9413245E31180057E012 /* PrevueCommandFile.swift */; };
 		026A952D24666D6D0057E012 /* TypeConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A952C24666D6D0057E012 /* TypeConvenience.swift */; };
 		0270E6DE21A0E388003C98EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
+		02B1939824A71B2B00041C8B /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939024A71B2100041C8B /* CSVError.swift */; };
+		02B1939B24A71B2B00041C8B /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939324A71B2100041C8B /* Legacy.swift */; };
+		02B1939C24A71B2B00041C8B /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939424A71B2100041C8B /* UnicodeIterator.swift */; };
+		02B1939D24A71B2B00041C8B /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939524A71B2100041C8B /* Endian.swift */; };
+		02B1939E24A71B2B00041C8B /* CSVRowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939624A71B2100041C8B /* CSVRowDecoder.swift */; };
+		02B1939F24A71B2B00041C8B /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939724A71B2100041C8B /* CSVReader.swift */; };
+		02B193A024A71B4C00041C8B /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939224A71B2100041C8B /* BinaryReader.swift */; };
 		02D2BC16246FD0CE008CD801 /* UVSGDocumentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */; };
 /* End PBXBuildFile section */
 
@@ -131,7 +138,14 @@
 		02A6FD13225973EA00323C8F /* ProgramCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCommand.swift; sourceTree = "<group>"; };
 		02A6FD162259875800323C8F /* ChannelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTypes.swift; sourceTree = "<group>"; };
 		02A6FD702268231900323C8F /* ListingsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsSource.swift; sourceTree = "<group>"; };
-		02A6FD732268233700323C8F /* SampleDataListingsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataListingsSource.swift; sourceTree = "<group>"; };
+		02A6FD732268233700323C8F /* CSVListingsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVListingsSource.swift; sourceTree = "<group>"; };
+		02B1939024A71B2100041C8B /* CSVError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVError.swift; sourceTree = "<group>"; };
+		02B1939224A71B2100041C8B /* BinaryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryReader.swift; sourceTree = "<group>"; };
+		02B1939324A71B2100041C8B /* Legacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy.swift; sourceTree = "<group>"; };
+		02B1939424A71B2100041C8B /* UnicodeIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeIterator.swift; sourceTree = "<group>"; };
+		02B1939524A71B2100041C8B /* Endian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endian.swift; sourceTree = "<group>"; };
+		02B1939624A71B2100041C8B /* CSVRowDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVRowDecoder.swift; sourceTree = "<group>"; };
+		02B1939724A71B2100041C8B /* CSVReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReader.swift; sourceTree = "<group>"; };
 		02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGDocumentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				02193F6E2454B2DC0093D586 /* UVSGSerialData */,
+				02B1938F24A71B2100041C8B /* CSV */,
 				02193F3E2454B1E10093D586 /* Yams */,
 			);
 			path = Modules;
@@ -352,9 +367,24 @@
 			isa = PBXGroup;
 			children = (
 				02A6FD702268231900323C8F /* ListingsSource.swift */,
-				02A6FD732268233700323C8F /* SampleDataListingsSource.swift */,
+				02A6FD732268233700323C8F /* CSVListingsSource.swift */,
 			);
 			path = "Listings Sources";
+			sourceTree = "<group>";
+		};
+		02B1938F24A71B2100041C8B /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				02B1939024A71B2100041C8B /* CSVError.swift */,
+				02B1939224A71B2100041C8B /* BinaryReader.swift */,
+				02B1939324A71B2100041C8B /* Legacy.swift */,
+				02B1939424A71B2100041C8B /* UnicodeIterator.swift */,
+				02B1939524A71B2100041C8B /* Endian.swift */,
+				02B1939624A71B2100041C8B /* CSVRowDecoder.swift */,
+				02B1939724A71B2100041C8B /* CSVReader.swift */,
+			);
+			name = CSV;
+			path = CSV.swift/Sources/CSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,8 +448,10 @@
 			files = (
 				02193F742454B2F70093D586 /* api.c in Sources */,
 				021931E4238123710076A810 /* EPGMachine.swift in Sources */,
+				02B193A024A71B4C00041C8B /* BinaryReader.swift in Sources */,
 				02193F642454B2360093D586 /* String+Yams.swift in Sources */,
 				02193F7C2459069F0093D586 /* CLI.swift in Sources */,
+				02B1939B24A71B2B00041C8B /* Legacy.swift in Sources */,
 				026A9414245E31180057E012 /* PrevueCommandFile.swift in Sources */,
 				021931F0238123710076A810 /* ChannelTypes.swift in Sources */,
 				021931EB238123710076A810 /* BoxCommands.swift in Sources */,
@@ -430,10 +462,15 @@
 				021931F7238123710076A810 /* ByteTypes.swift in Sources */,
 				02193F602454B2360093D586 /* Constructor.swift in Sources */,
 				02193F682454B2360093D586 /* Node.Scalar.swift in Sources */,
+				02B1939C24A71B2B00041C8B /* UnicodeIterator.swift in Sources */,
 				02193F752454B2F70093D586 /* writer.c in Sources */,
+				02B1939F24A71B2B00041C8B /* CSVReader.swift in Sources */,
 				021931ED238123710076A810 /* DownloadCommand.swift in Sources */,
 				021931E7238123710076A810 /* SerialPortDataDestination.swift in Sources */,
+				02B1939824A71B2B00041C8B /* CSVError.swift in Sources */,
+				02B1939D24A71B2B00041C8B /* Endian.swift in Sources */,
 				021931F3238123710076A810 /* ActionCommand.swift in Sources */,
+				02B1939E24A71B2B00041C8B /* CSVRowDecoder.swift in Sources */,
 				021931F6238123710076A810 /* UVSGEncoding.swift in Sources */,
 				02193F5E2454B2360093D586 /* Mark.swift in Sources */,
 				02193F6B2454B2360093D586 /* Emitter.swift in Sources */,
@@ -459,7 +496,7 @@
 				02193F692454B2360093D586 /* Tag.swift in Sources */,
 				02193F6C2454B2360093D586 /* Node.swift in Sources */,
 				021931E6238123710076A810 /* TCPDataDestination.swift in Sources */,
-				021931E3238123710076A810 /* SampleDataListingsSource.swift in Sources */,
+				021931E3238123710076A810 /* CSVListingsSource.swift in Sources */,
 				02193F722454B2E50093D586 /* UVSGSerialData.c in Sources */,
 				02193F762454B2F70093D586 /* reader.c in Sources */,
 				021931E5238123710076A810 /* DataDestination.swift in Sources */,

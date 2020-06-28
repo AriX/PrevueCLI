@@ -44,8 +44,8 @@ let commands = [
             ColorLocalAdCommand: ColorLocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: .center, color: .init(background: .red, foreground: .red), text: "")], timePeriod: .init(beginning: 0, ending: 0))),
             ConfigurationCommand: ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00),
             NewLookConfigurationCommand: NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .none),
-            ChannelsCommand: ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Channel(flags: [.none], sourceIdentifier: "", channelNumber: "", callLetters: "")]),
-            ProgramCommand: ProgramCommand(program: Program(timeslot: 0, day: JulianDay(dayOfYear: 0), sourceIdentifier: "", flags: [], programName: "")),
+            ChannelsCommand: ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Channel(sourceIdentifier: "", channelNumber: "", callLetters: "", flags: [])]),
+            ProgramCommand: ProgramCommand(day: JulianDay(dayOfYear: 0), program: Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
             ListingsCommand: ListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false)
         )
         let documentation = allPossibleSerializedCommands.documentedType.description
@@ -125,42 +125,5 @@ let eventCommand = EventCommand(leftEvent: .titleLookup, rightEvent: .titleLooku
 //    }
 //}
 
-// Configuration test
-let command2 = ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00)
-//destination.send(data: command2)
-
-// Config.dat test
-//destination.send(data: NewLookConfigurationCommand(textAdFlag: .remote, clockCmd: 2).encodedWithChecksum)
-
-// Channel & programs test
-
-//exit(0)
-
-let date = Date()
-let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear/* - 1*/)
-
-destination.send(data: ClockCommand(with: date)!)
-
-let channelsFilePath = URL(fileURLWithPath: "/Users/Ari/dev/PrevuePackage/Resources/Sample Listings/channels.csv")
-let programsFilePath = URL(fileURLWithPath: "/Users/Ari/dev/PrevuePackage/Resources/Sample Listings/programs.csv")
-let listingSource = SampleDataListingSource(channelsCSVFile: channelsFilePath, programsCSVFile: programsFilePath, day: julianDay, forAtari: true)!
-
-//let channels = [Channel(flags: .none, sourceIdentifier: "TBS", channelNumber: "2", callLetters: "TBS"), Channel(flags: .none, sourceIdentifier: "KYW", channelNumber: "3", callLetters: "KYW")]
-let channelCommand = ChannelsCommand(day: julianDay, channels: listingSource.channels)
-destination.send(data: channelCommand)
-
-//let programs: [Program] = stride(from: 0, to: 47, by: 1).map { (index) in
-//    Program(timeslot: index, day: julianDay, sourceIdentifier: "KYW", flags: .none, programName: "Eyewitness @ \(index) \(julianDay.dayOfYear)")
-//}
-let programCommands: [ProgramCommand] = listingSource.programs.map { (program) in
-    ProgramCommand(program: program)
-}
-destination.send(data: programCommands)
-
-// Clock test
-//destination.send(ClockCommand(dayOfWeek: .Friday, month: 2, day: 4, year: 119, hour: 07, minute: 00, second: 00, daylightSavingsTime: true))
-//destination.send(ClockCommand(with: Date())!)
-
-destination.send(data: BoxOffCommand())
 
 destination.closeConnection()

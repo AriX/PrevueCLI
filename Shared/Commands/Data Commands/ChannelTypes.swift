@@ -12,50 +12,55 @@ typealias SourceIdentifier = String // Limited to 6 characters
 typealias Timeslot = UInt8 // 1 to 48
 
 struct Channel: Codable {
-    let flags: ChannelFlags
     let sourceIdentifier: SourceIdentifier
     let channelNumber: String
     let callLetters: String // Limited to 5 characters on EPG Jr., 6 on Amiga
+    let flags: ChannelAttributes
 }
 
 struct Program: Codable {
     let timeslot: Timeslot
-    let day: JulianDay
     let sourceIdentifier: SourceIdentifier // Channel source
-    let flags: ProgramFlags
     let programName: String
+    let flags: ProgramAttributes
 }
 
 struct JulianDay: Codable, UVSGDocumentable {
     let dayOfYear: UInt8
 }
 
-// These flags are possibly incomplete or incorrect; should be confirmed in Amiga disassembly.
-struct ChannelFlags: OptionSet, Codable {
+struct ChannelAttributes: OptionSetCodableAsOptionNames {
     let rawValue: UInt8
     
-    static let none = ChannelFlags(rawValue: 0x01)
-    static let hiliteSrc = ChannelFlags(rawValue: 0x02)
-    static let sumbySrc = ChannelFlags(rawValue: 0x04)
-    static let videoTagDisable = ChannelFlags(rawValue: 0x08)
-    static let cafPPVSrc = ChannelFlags(rawValue: 0x10)
-    static let ditto = ChannelFlags(rawValue: 0x20)
-    static let altHiliteSrc = ChannelFlags(rawValue: 0x40)
-    static let stereo = ChannelFlags(rawValue: 0x80)
+    static let none = ChannelAttributes(rawValue: 0x01) // No attribute (prevents sending NULL)
+    static let hiliteSrc = ChannelAttributes(rawValue: 0x02) // Red highlight in grid
+    static let sumbySrc = ChannelAttributes(rawValue: 0x04) // Summary-by-source (SBS) enabled
+    static let videoTagDisable = ChannelAttributes(rawValue: 0x08) // Promotional tagging disabled
+    static let cafPPVSrc = ChannelAttributes(rawValue: 0x10) // PPV source
+    static let ditto = ChannelAttributes(rawValue: 0x20) // Ditto enabled
+    static let althiliteSrc = ChannelAttributes(rawValue: 0x40) // Lt. blue highlight in grid
+    static let stereo = ChannelAttributes(rawValue: 0x80) // Stereo source
+    
+    enum Options: CaseIterable {
+        case none, hiliteSrc, sumbySrc, videoTagDisable, cafPPVSrc, ditto, althiliteSrc, stereo
+    }
 }
 
-// These flags are possibly incomplete or incorrect; should be confirmed in Amiga disassembly.
-struct ProgramFlags: OptionSet, Codable {
+struct ProgramAttributes: OptionSetCodableAsOptionNames {
     let rawValue: UInt8
     
-    static let none = ProgramFlags(rawValue: 0x01)
-    static let movie = ProgramFlags(rawValue: 0x02)
-    static let altHiliteProg = ProgramFlags(rawValue: 0x04)
-    static let tagProg = ProgramFlags(rawValue: 0x08)
-    static let sportsProg = ProgramFlags(rawValue: 0x10)
-    static let dViewUsed = ProgramFlags(rawValue: 0x20)
-    static let repeatProg = ProgramFlags(rawValue: 0x40)
-    static let prevDaysData = ProgramFlags(rawValue: 0x80)
+    static let none = ProgramAttributes(rawValue: 0x01) // No attribute, always set
+    static let movie = ProgramAttributes(rawValue: 0x02) // Movie
+    static let altHiliteProg = ProgramAttributes(rawValue: 0x04) // Alternate highlight
+    static let tagProg = ProgramAttributes(rawValue: 0x08) // Tag program
+    static let sportsProg = ProgramAttributes(rawValue: 0x10) // Sports program
+    static let dViewUsed = ProgramAttributes(rawValue: 0x20) // Not used?
+    static let repeatProg = ProgramAttributes(rawValue: 0x40) // Repeat program ("this attribute is stored, but not used for anything")
+    static let prevDaysData = ProgramAttributes(rawValue: 0x80) // Previous day's data ("this attribute is only used internally by the CG software and is therefore an implementation detail")
+    
+    enum Options: CaseIterable {
+        case none, movie, altHiliteProg, tagProg, sportsProg, dViewUsed, repeatProg, prevDaysData
+    }
 }
 
 extension JulianDay {
@@ -71,5 +76,23 @@ extension JulianDay {
         get {
             return JulianDay(with: Date())
         }
+    }
+}
+
+extension ChannelAttributes {
+    init(from decoder: Decoder) throws {
+        try self.init(asNamesFrom: decoder)
+    }
+    func encode(to encoder: Encoder) throws {
+        try encode(asNamesTo: encoder)
+    }
+}
+
+extension ProgramAttributes {
+    init(from decoder: Decoder) throws {
+        try self.init(asNamesFrom: decoder)
+    }
+    func encode(to encoder: Encoder) throws {
+        try encode(asNamesTo: encoder)
     }
 }

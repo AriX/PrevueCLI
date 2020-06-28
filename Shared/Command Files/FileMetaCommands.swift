@@ -28,14 +28,17 @@ struct ListingsCommand: FileMetaCommand {
         let date = Date()
         let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear/* - 1*/)
         
-        guard let listingSource = SampleDataListingSource(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: julianDay, forAtari: forAtari) else {
-            print("Error loading listings from SampleDataListingSource")
+        var listingSource: CSVListingsSource
+        do {
+            listingSource = try CSVListingsSource(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: julianDay, forAtari: forAtari)
+        } catch {
+            print("Error loading listings from CSVListingsSource: \(error)")
             return []
         }
         
         let channelCommand = ChannelsCommand(day: julianDay, channels: listingSource.channels)
         let programCommands: [ProgramCommand] = listingSource.programs.map { (program) in
-            ProgramCommand(program: program)
+            ProgramCommand(day: julianDay, program: program)
         }
         
         return [channelCommand] + programCommands

@@ -8,14 +8,16 @@
 
 import Foundation
 
-// TODO: Support option sets
-
 protocol UVSGDocumentable {
     var documentedType: UVSGDocumentedType { get }
 }
 
 protocol UVSGDocumentableEnum: UVSGDocumentable {
-    var allCaseNames: [String] { get }
+    static var allCaseNames: [String] { get }
+}
+
+protocol UVSGDocumentableOptionSet: UVSGDocumentable {
+    static var allOptionNames: [String] { get }
 }
 
 indirect enum UVSGDocumentedType: CustomStringConvertible {
@@ -23,6 +25,7 @@ indirect enum UVSGDocumentedType: CustomStringConvertible {
     case scalar(String)
     case optional(UVSGDocumentedType)
     case `enum`(UVSGDocumentableEnum)
+    case optionSet(UVSGDocumentableOptionSet)
     case array(UVSGDocumentedType)
     case dictionary([(String, UVSGDocumentedType)])
     
@@ -34,6 +37,7 @@ indirect enum UVSGDocumentedType: CustomStringConvertible {
         // The following implementation is a total spitball and could probably be improved significantly
         var strings: [String] = []
         var needNewline = needsNewline
+        var isArray = array
         switch self {
         case .none:
             return ""
@@ -44,7 +48,10 @@ indirect enum UVSGDocumentedType: CustomStringConvertible {
         case .array(let documentedType):
             return documentedType.description(at: level, array: true)
         case .enum(let documentableEnum):
-            strings = [documentableEnum.allCaseNames.joined(separator: ", ")]
+            strings = [type(of: documentableEnum).allCaseNames.joined(separator: ", ")]
+        case .optionSet(let documentableOptionSet):
+            isArray = true
+            strings = [type(of: documentableOptionSet).allOptionNames.joined(separator: ", ")]
         case .dictionary(let types):
             needNewline = true
             strings = types.compactMap { (arg0) -> String? in
@@ -67,6 +74,9 @@ indirect enum UVSGDocumentedType: CustomStringConvertible {
                     }
                 case .enum(_):
                     return "\(serializationKey): \(documentedType.description(at: newLevel, needsNewline: true))"
+                case .optionSet(_):
+                    // Present an option set as an arry
+                    return "\(serializationKey): \(documentedType.description(at: newLevel, array: true, needsNewline: true))"
                 }
             }
         }
@@ -75,7 +85,7 @@ indirect enum UVSGDocumentedType: CustomStringConvertible {
             let spacing = String(repeating: "    ", count: level)
             return "\(spacing)\($0)"
         }.joined(separator: "\n")
-        let optionalText = (optional ? "(optional)" : (array ? "(array)" : ""))
+        let optionalText = (optional ? "(optional)" : (isArray ? "(array)" : ""))
         let newlineText = needNewline ? "\n" : ""
         return "\(optionalText)\(newlineText)\(spacedContent)"
     }
@@ -112,6 +122,12 @@ extension UVSGDocumentable {
 extension UVSGDocumentableEnum {
     var documentedType: UVSGDocumentedType {
         return .enum(self)
+    }
+}
+
+extension UVSGDocumentableOptionSet {
+    var documentedType: UVSGDocumentedType {
+        return .optionSet(self)
     }
 }
 

@@ -41,8 +41,8 @@ commands:
 # Other command examples:
 #- ClockCommand: {dayOfWeek: 5, month: 2, day: 4, year: 120, hour: 07, minute: 00, second: 00, daylightSavingsTime: True}
 #- ResetCommand: {}
-#- ChannelsCommand: {day: {dayOfYear: 138}, channels: [{flags: 1, sourceIdentifier: WPVI, channelNumber: '6', callLetters: 6ABC}]}
-#- ProgramCommand: {program: {day: {dayOfYear: 138}, timeslot: 1, sourceIdentifier: WPVI, flags: 1, programName: "Action News"}}
+#- ChannelsCommand: {day: {dayOfYear: 138}, channels: [{sourceIdentifier: WPVI, channelNumber: '6', callLetters: 6ABC, flags: [hiliteSrc]}]}
+#- ProgramCommand: {day: {dayOfYear: 138}, program: {timeslot: 1, sourceIdentifier: WPVI, programName: "Action News", flags: [none]}}
 
 # Tell boxes to stop listening
 - BoxOffCommand: {}
