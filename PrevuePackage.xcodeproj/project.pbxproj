@@ -65,6 +65,7 @@
 		02B1939E24A71B2B00041C8B /* CSVRowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939624A71B2100041C8B /* CSVRowDecoder.swift */; };
 		02B1939F24A71B2B00041C8B /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939724A71B2100041C8B /* CSVReader.swift */; };
 		02B193A024A71B4C00041C8B /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939224A71B2100041C8B /* BinaryReader.swift */; };
+		02B193A424AEFBF200041C8B /* TulsaTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B193A324AEFBF200041C8B /* TulsaTime.swift */; };
 		02D2BC16246FD0CE008CD801 /* UVSGDocumentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +147,7 @@
 		02B1939524A71B2100041C8B /* Endian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endian.swift; sourceTree = "<group>"; };
 		02B1939624A71B2100041C8B /* CSVRowDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVRowDecoder.swift; sourceTree = "<group>"; };
 		02B1939724A71B2100041C8B /* CSVReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReader.swift; sourceTree = "<group>"; };
+		02B193A324AEFBF200041C8B /* TulsaTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TulsaTime.swift; sourceTree = "<group>"; };
 		02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGDocumentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,14 +167,12 @@
 			children = (
 				02A6FCFE21A263D300323C8F /* TitleCommand.swift */,
 				02A6FD0121A263F600323C8F /* BoxCommands.swift */,
-				02A6FD0421A2642300323C8F /* ClockCommand.swift */,
 				0270E6D921A0DF35003C98EF /* DownloadCommand.swift */,
 				02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */,
 				02A6FD0D225887A800323C8F /* NewLookConfigurationCommand.swift */,
-				02A6FD162259875800323C8F /* ChannelTypes.swift */,
-				02A6FD1022596C0000323C8F /* ChannelsCommand.swift */,
 				0219326523827AC10076A810 /* LocalAdCommand.swift */,
-				02A6FD13225973EA00323C8F /* ProgramCommand.swift */,
+				02B193A224AEFBE600041C8B /* Clock */,
+				02B193A124AEFBD300041C8B /* Listings */,
 			);
 			path = "Data Commands";
 			sourceTree = "<group>";
@@ -387,6 +387,25 @@
 			path = CSV.swift/Sources/CSV;
 			sourceTree = "<group>";
 		};
+		02B193A124AEFBD300041C8B /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FD162259875800323C8F /* ChannelTypes.swift */,
+				02A6FD1022596C0000323C8F /* ChannelsCommand.swift */,
+				02A6FD13225973EA00323C8F /* ProgramCommand.swift */,
+			);
+			name = Listings;
+			sourceTree = "<group>";
+		};
+		02B193A224AEFBE600041C8B /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FD0421A2642300323C8F /* ClockCommand.swift */,
+				02B193A324AEFBF200041C8B /* TulsaTime.swift */,
+			);
+			name = Clock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +479,7 @@
 				02193F6A2454B2360093D586 /* YamlError.swift in Sources */,
 				021931EA238123710076A810 /* TitleCommand.swift in Sources */,
 				021931F7238123710076A810 /* ByteTypes.swift in Sources */,
+				02B193A424AEFBF200041C8B /* TulsaTime.swift in Sources */,
 				02193F602454B2360093D586 /* Constructor.swift in Sources */,
 				02193F682454B2360093D586 /* Node.Scalar.swift in Sources */,
 				02B1939C24A71B2B00041C8B /* UnicodeIterator.swift in Sources */,

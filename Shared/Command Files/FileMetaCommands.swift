@@ -12,7 +12,7 @@ import Foundation
 
 struct CurrentClockCommand: FileMetaCommand {
     var commands: [DataCommand] {
-        let command = ClockCommand(with: Date())!
+        let command = ClockCommand.currentTulsaTime!
         return [command]
     }
 }
@@ -26,7 +26,8 @@ struct ListingsCommand: FileMetaCommand {
         let channelsFile = URL(fileURLWithPath: channelsFilePath)
         let programsFile = URL(fileURLWithPath: programsFilePath)
         let date = Date()
-        let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear/* - 1*/)
+        
+        let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear)
         
         var listingSource: CSVListingsSource
         do {

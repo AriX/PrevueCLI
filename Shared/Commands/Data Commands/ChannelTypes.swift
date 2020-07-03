@@ -73,9 +73,7 @@ extension JulianDay {
     }
     
     static var now: JulianDay {
-        get {
-            return JulianDay(with: Date())
-        }
+        return JulianDay(with: Date())
     }
 }
 
