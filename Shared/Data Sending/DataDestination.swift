@@ -24,13 +24,18 @@ protocol DataDestination: Codable {
  */
 // TODO: Should there instead be a single protocol for converting things into bytes, and this takes those?
 extension DataDestination {
-    func send(data command: UVSGCommand) {
-        let commandType = type(of: command)
-        let bytes = command.encodedWithChecksum
-        print("Sending \(commandType) in \(bytes.count) \(bytes.count == 1 ? "byte" : "bytes"): \(bytes.hexEncodedString())")
-        send(data: bytes)
+    func send(data command: SatelliteCommand) {
+        do {
+            let bytes = try BinaryEncoder.encode(SerializedCommand(command: command))
+            
+            let commandType = type(of: command)
+            print("Sending \(commandType) in \(bytes.count) \(bytes.count == 1 ? "byte" : "bytes"): \(bytes.hexEncodedString())")
+            send(data: bytes)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
-    func send(data commands: [UVSGCommand]) {
+    func send(data commands: [SatelliteCommand]) {
         var i = 0
         for command in commands {
             if commands.count > 1 {
@@ -40,8 +45,13 @@ extension DataDestination {
             i += 1
         }
     }
-    func send(control command: UVSGCommand) {
-        send(control: command.encodedWithChecksum)
+    func send(control command: ControlCommand) {
+        do {
+            let encodedCommand = try BinaryEncoder.encode(SerializedCommand(command: command))
+            send(control: encodedCommand)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
 }
 

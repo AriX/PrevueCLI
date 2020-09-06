@@ -1,59 +1,32 @@
 //
-//  TypeConvenience.swift
+//  BinaryCodableOptionSet.swift
 //  PrevueCLI
 //
-//  Created by Ari on 5/8/20.
+//  Created by Ari on 7/4/20.
 //  Copyright © 2020 Vertex. All rights reserved.
 //
 
-// Allow optional UVSGEncodable values to implement UVSGEncodable, by returning an empty payload
-extension Optional: UVSGEncodable where Wrapped: UVSGEncodable {
-    var payload: Bytes {
-        if let self = self {
-            return self.payload
-        } else {
-            return []
-        }
-    }
-}
-
-// Protocol to allow enums to be coded using the name of their cases rather than their values
-protocol EnumCodableAsCaseName: Codable, CaseIterable, UVSGDocumentableEnum {
-    init(asNameFrom decoder: Decoder) throws
-    func encode(asNameTo encoder: Encoder) throws
-}
-
-// Protocol to allow option sets to be coded using the name of their options rather than the raw value
-protocol OptionSetCodableAsOptionNames: OptionSet, Codable, UVSGDocumentableOptionSet where RawValue: BinaryInteger {
-    init(asNamesFrom decoder: Decoder) throws
-    func encode(asNamesTo encoder: Encoder) throws
-    
+// Protocol that allows an OptionSet to be coded as its raw value with BinaryCodable, and as an option name with Codable
+protocol BinaryCodableOptionSet: OptionSet, BinaryCodable, UVSGDocumentableOptionSet where RawValue: BinaryInteger & Codable {
     associatedtype Options: CaseIterable
 }
 
-extension EnumCodableAsCaseName {
-    init(asNameFrom decoder: Decoder) throws {
-        let stringValue = try decoder.singleValueContainer().decode(String.self)
-        guard let matchingCase = Self.allCases.first(where: { $0.stringValue == stringValue }) else {
-            throw DecodingError.typeMismatch(Self.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Invalid enum case specified"))
-        }
-        
-        self = matchingCase
+// MARK: BinaryCodable
+
+extension BinaryCodableOptionSet {
+    init(fromBinary decoder: BinaryDecoder) throws {
+        let rawValue = try decoder.decode(RawValue.self)
+        self.init(rawValue: rawValue)
     }
-    func encode(asNameTo encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encode(self.stringValue)
-    }
-    var stringValue: String {
-        String(describing: self)
-    }
-    static var allCaseNames: [String] {
-        allCases.map { $0.stringValue }
+    func binaryEncode(to encoder: BinaryEncoder) throws {
+        try encoder.encode(rawValue)
     }
 }
 
-extension OptionSetCodableAsOptionNames {
-    init(asNamesFrom decoder: Decoder) throws {
+// MARK: Codable
+
+extension BinaryCodableOptionSet {
+    init(from decoder: Decoder) throws {
         var optionNames: [String] = []
         if decoder.userInfo[.csvCoding] as? Bool == true {
             // For CSV decoding, treat flags as a set of option names separated by '|'
@@ -76,7 +49,7 @@ extension OptionSetCodableAsOptionNames {
         
         self.init(rawValue: RawValue(rawValue))
     }
-    func encode(asNamesTo encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         let numberOfBits = MemoryLayout<RawValue>.size
         let allOptionNames = Self.allOptionNames
         var optionNames: [String] = []
@@ -99,6 +72,11 @@ extension OptionSetCodableAsOptionNames {
             try container.encode(optionNames)
         }
     }
+}
+
+// MARK: UVSGDocumentableOptionSet
+
+extension BinaryCodableOptionSet {
     static var allOptionNames: [String] {
         Options.allCases.map { String(describing: $0) }
     }

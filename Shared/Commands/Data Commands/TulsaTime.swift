@@ -31,4 +31,11 @@ extension Date {
          let delta = TimeInterval(to.secondsFromGMT(for: self) - from.secondsFromGMT(for: self))
          return addingTimeInterval(delta)
     }
+    static var currentTulsaDate: Date? {
+        let currentTimeZone = TimeZone.current
+        guard let tulsaTimeZone = TimeZone.tulsa else { return nil }
+        
+        let currentDate = Date()
+        return currentDate.convertTimeZone(from: currentTimeZone, to: tulsaTimeZone)
+    }
 }

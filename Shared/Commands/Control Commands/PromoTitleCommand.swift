@@ -16,6 +16,16 @@ struct PromoTitleCommand: ControlCommand {
 
 extension PromoTitleCommand {
     var payload: Bytes {
-        return PromoTitleCommand.leftRightStringAsBytes(leftString: leftTitle, rightString: rightTitle)
+        return Bytes.leftRightStringAsBytes(leftString: leftTitle, rightString: rightTitle)
+    }
+    func binaryEncode(to encoder: BinaryEncoder) throws {
+        encoder += payload
+    }
+    func encode(to encoder: Encoder) throws {
+        // TODO
+    }
+    init(from decoder: Decoder) throws {
+        // TODO
+        fatalError("Unimplemented")
     }
 }

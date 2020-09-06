@@ -5,6 +5,8 @@ import CoreFoundation
 /// A protocol for types which can be encoded to binary.
 public protocol BinaryEncodable: Encodable {
     func binaryEncode(to encoder: BinaryEncoder) throws
+    static var headerBytes: [UInt8] { get }
+    var footerBytes: [UInt8] { get }
 }
 
 /// Provide a default implementation which calls through to `Encodable`. This
@@ -12,13 +14,15 @@ public protocol BinaryEncodable: Encodable {
 /// compiler.
 public extension BinaryEncodable {
     func binaryEncode(to encoder: BinaryEncoder) throws {
+        encoder += Self.headerBytes
         try self.encode(to: encoder)
+        encoder += footerBytes
     }
 }
 
 /// The actual binary encoder class.
 public class BinaryEncoder {
-    fileprivate var data: [UInt8] = []
+    var data: [UInt8] = []
     
     public init() {}
 }
@@ -90,6 +94,22 @@ public extension BinaryEncoder {
         var target = of
         withUnsafeBytes(of: &target) {
             data.append(contentsOf: $0)
+        }
+    }
+    
+    static func += (left: BinaryEncoder, right: [BytesType]) {
+        for bytes in right {
+            left.data.append(contentsOf: bytes.bytes)
+        }
+    }
+    
+    static func += (left: BinaryEncoder, right: Byte) {
+        left.data.append(right)
+    }
+    
+    func encode(_ encodable: Encodable...) throws {
+        for encodable in encodable {
+            try encode(encodable)
         }
     }
 }
@@ -164,4 +184,9 @@ extension BinaryEncoder: Encoder {
             try encoder.encode(value)
         }
     }
+}
+
+public extension BinaryEncodable {
+    static var headerBytes: [UInt8] { return [] }
+    var footerBytes: [UInt8] { return [] }
 }

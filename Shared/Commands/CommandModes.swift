@@ -8,7 +8,7 @@
 
 // This is a subset of the command modes discussed here: http://prevueguide.com/wiki/UVSG_Satellite_Data#Command_Modes
 
-enum DataCommandMode: String, Codable {
+enum DataCommandMode: ASCIICharacter, BinaryCodableEnum {
     case boxOn = "A"
     case channel = "C"
     case newChannel = "c"
@@ -33,7 +33,7 @@ enum DataCommandMode: String, Codable {
     case debugAddCTRLByte = "G"
 }
 
-enum ControlCommandMode: Byte {
+enum ControlCommandMode: Byte, BinaryCodableEnum {
     case action = 0x01 // CTRL-A - "Promo Action Command"
     case setDefaultBrushes = 0x02 // CTRL-B - "Set Default Brushes"
     case defaultGraphic = 0x03 // CTRL-C  - "Default Graphic Command"

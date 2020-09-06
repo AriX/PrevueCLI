@@ -6,22 +6,22 @@
 //  Copyright © 2019 Vertex. All rights reserved.
 //
 
-// MARK: Local ad structure
+// MARK: - Local ad structure
 
-struct LocalAd: Codable {
+struct LocalAd: BinaryCodableStruct, Equatable {
     let adNumber: UInt8
     let content: [Content]
     let timePeriod: TimePeriod?
 
-    struct Content: Codable {
-        enum Alignment: Byte {
+    struct Content: BinaryCodableStruct, Equatable {
+        enum Alignment: Byte, BinaryCodableEnum {
             case center = 0x18 // ^X
             case left = 0x19 // ^Y
             case right = 0x1A // ^Z
             case crawl = 0x0B // ^K, for local ads on EPG only
         }
-        struct TextColor: Codable {
-            enum Color: Byte {
+        struct TextColor: BinaryCodableStruct, Equatable {
+            enum Color: Byte, BinaryCodableEnum {
                 case transparent = 0x30
                 case white = 0x31
                 case black = 0x32
@@ -38,140 +38,175 @@ struct LocalAd: Codable {
         let color: TextColor? // Supported on Amiga only
         let text: String
     }
-    struct TimePeriod: Codable {
+    struct TimePeriod: BinaryCodableStruct, Equatable {
         let beginning: Timeslot
         let ending: Timeslot
     }
 }
 
-// MARK: Local ad commands
+// MARK: - Local ad commands
 
-struct LocalAdResetCommand: DataCommand {
-    let commandMode = DataCommandMode.localAd
+enum LocalAdCommand: DataCommand, Equatable {
+    static let commandMode = DataCommandMode.localAd
+    case reset
+    case ad(LocalAd)
 }
 
-struct LocalAdCommand: DataCommand {
-    let commandMode = DataCommandMode.localAd
+struct ColorLocalAdCommand: DataCommand, Equatable {
+    static let commandMode = DataCommandMode.colorLocalAd
     let ad: LocalAd
 }
 
-struct ColorLocalAdCommand: DataCommand {
-    let commandMode = DataCommandMode.colorLocalAd
-    let ad: LocalAd
-}
+// MARK: - Local ad encoding
 
-// MARK: Local ad encoding
-
-extension LocalAd: UVSGEncodable {
-    var payload: Bytes {
-        let encodedContents = content.reduce([]) {
-            return $0 + $1.payload
-        }
-        return [adNumber] + encodedContents + timePeriod.payload + [0x00]
+extension LocalAd {
+    static let terminator: Byte = 0x00
+    
+    init(fromBinary decoder: BinaryDecoder) throws {
+        adNumber = try decoder.decode(UInt8.self)
+        
+        // Decode contents until we see a terminator or time period marker
+        var contents: [Content] = []
+        repeat {
+            let content = try decoder.decode(Content.self)
+            contents.append(content)
+        } while decoder.nextByte != LocalAd.terminator && decoder.nextByte != LocalAd.TimePeriod.marker
+        
+        content = contents
+        timePeriod = try TimePeriod(ifPresentFromBinary: decoder)
     }
 }
 
-extension LocalAd.Content: UVSGEncodable {
-    var payload: Bytes {
-        return alignment.payload + color.payload + text.asBytes()
+extension LocalAd.Content {
+    func binaryEncode(to encoder: BinaryEncoder) throws {
+        try encoder.encode(alignment, color, text.asBytes())
+    }
+    init(fromBinary decoder: BinaryDecoder) throws {
+        alignment = try Alignment(ifPresentFromBinary: decoder)
+        color = try TextColor(ifPresentFromBinary: decoder)
+        
+        // Read text until a terminator, time period marker, color marker, or alignment byte
+        text = try decoder.readString(until: { $0 == LocalAd.terminator || $0 == LocalAd.TimePeriod.marker || $0 == TextColor.marker || Alignment(rawValue: $0) != nil }, consumingFinalByte: false)
     }
 }
 
-extension LocalAd.Content.Alignment: UVSGEncodable {
-    var payload: Bytes {
-        return [rawValue]
+extension LocalAd.Content.TextColor: MarkerBinaryCodable {
+    static let marker: Byte = 0x03 // CTRL-C, for color
+}
+
+extension LocalAd.TimePeriod: MarkerBinaryCodable {
+    static let marker: Byte = 0x14 // CTRL-T, for time
+}
+
+protocol MarkerBinaryCodable: BinaryCodable {
+    static var marker: Byte { get }
+}
+
+extension MarkerBinaryCodable {
+    static var headerBytes: Bytes { return [marker] }
+    init?(ifPresentFromBinary decoder: BinaryDecoder) throws {
+        guard decoder.nextByte == Self.marker else { return nil }
+        try self.init(fromBinary: decoder)
     }
 }
 
-extension LocalAd.Content.TextColor: UVSGEncodable {
-    var payload: Bytes {
-        let flag: Byte = 0x03 // CTRL-C, for color
-        return [flag, background.rawValue, foreground.rawValue]
-    }
-}
-
-extension LocalAd.TimePeriod: UVSGEncodable {
-    var payload: Bytes {
-        let flag: Byte = 0x14 // CTRL-T, for time
-        return [flag, beginning, ending]
-    }
-}
-
-// MARK: Local ad command encoding
-
-extension LocalAdResetCommand {
-    var payload: Bytes {
-        let flag: Byte = 0x92 // Special value 0x92 means reset all local ads
-        return [flag, 0x00]
-    }
-}
+// MARK: - Local ad command encoding
 
 extension LocalAdCommand {
-    var payload: Bytes {
-        ad.payload
+    static let resetMarker: Byte = 0x92 // Special value 0x92 means reset all local ads
+    
+    init(fromBinary decoder: BinaryDecoder) throws {
+        if decoder.nextByte == LocalAdCommand.resetMarker {
+            self = .reset
+            decoder.cursor += 1
+        } else {
+            let ad = try decoder.decode(LocalAd.self)
+            self = .ad(ad)
+        }
+        
+        decoder.cursor += footerBytes.count
+    }
+    func binaryEncode(to encoder: BinaryEncoder) throws {
+        switch self {
+        case .reset:
+            encoder += LocalAdCommand.resetMarker
+        case .ad(let ad):
+            try encoder.encode(ad)
+        }
+        
+        encoder += footerBytes
+    }
+    var footerBytes: Bytes {
+        return [LocalAd.terminator]
+    }
+}
+
+extension ColorLocalAdCommand {
+    var footerBytes: Bytes {
+        return [LocalAd.terminator]
+    }
+}
+
+// MARK: - Codable
+
+// Encode/decode local ad commands as the ad structure
+
+extension LocalAdCommand {
+    enum CodingKeys: String, CodingKey {
+        case reset
     }
     
-    var documentedType: UVSGDocumentedType {
-        get {
-            ad.documentedType
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        if container.allKeys.contains(.reset) {
+            self = .reset
+        } else {
+            let ad = try decoder.singleValueContainer().decode(LocalAd.self)
+            self = .ad(ad)
+        }
+    }
+    func encode(to encoder: Encoder) throws {
+        switch self {
+        case .reset:
+            var container = encoder.container(keyedBy: CodingKeys.self)
+            try container.encode(true, forKey: .reset)
+        case .ad(let ad):
+            var container = encoder.singleValueContainer()
+            try container.encode(ad)
         }
     }
 }
 
 extension ColorLocalAdCommand {
-    var payload: Bytes {
-        ad.payload
+    init(from decoder: Decoder) throws {
+        let ad = try decoder.singleValueContainer().decode(LocalAd.self)
+        self.init(ad: ad)
     }
-    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(ad)
+    }
+}
+
+extension LocalAdCommand {
     var documentedType: UVSGDocumentedType {
         get {
-            ad.documentedType
+            // Hack. TODO: Better represent nested enums.
+            let documentedType = LocalAd(adNumber: 0, content: [.init(alignment: .center, color: nil, text: "")], timePeriod: .init(beginning: 0, ending: 0)).documentedType
+            guard case var UVSGDocumentedType.dictionary(documentedDictionary) = documentedType else { fatalError("documentedType for LocalAd must be dictionary") }
+
+            // Add the "reset" case
+            documentedDictionary.insert(("reset", UVSGDocumentedType.optional(UVSGDocumentedType.scalar("Bool"))), at: 0)
+            
+            return .dictionary(documentedDictionary)
         }
     }
 }
 
-// MARK: Codable support
-
-// Encode/decode local ad commands as the ad structure
-
-extension LocalAdCommand: Codable {
-    init(from decoder: Decoder) throws {
-        let ad = try decoder.singleValueContainer().decode(LocalAd.self)
-        self.init(ad: ad)
-    }
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encode(ad)
-    }
-}
-
-extension ColorLocalAdCommand: Codable {
-    init(from decoder: Decoder) throws {
-        let ad = try decoder.singleValueContainer().decode(LocalAd.self)
-        self.init(ad: ad)
-    }
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encode(ad)
-    }
-}
-
-// Encode Alignment as a string (e.g. "center") instead of as its byte value
-extension LocalAd.Content.Alignment: UVSGDocumentableEnum, EnumCodableAsCaseName {
-    init(from decoder: Decoder) throws {
-        try self.init(asNameFrom: decoder)
-    }
-    func encode(to encoder: Encoder) throws {
-        try encode(asNameTo: encoder)
-    }
-}
-
-// Encode Color as a string (e.g. "red") instead of as its number value
-extension LocalAd.Content.TextColor.Color: EnumCodableAsCaseName, UVSGDocumentableEnum {
-    init(from decoder: Decoder) throws {
-        try self.init(asNameFrom: decoder)
-    }
-    func encode(to encoder: Encoder) throws {
-        try encode(asNameTo: encoder)
+extension ColorLocalAdCommand {
+    var documentedType: UVSGDocumentedType {
+        get {
+            ad.documentedType
+        }
     }
 }

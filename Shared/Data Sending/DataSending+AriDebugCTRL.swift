@@ -14,12 +14,6 @@ extension DataDestination {
 
 // Uses the fake "mode G" I added to ESQ
 struct AddDebugCTRLByteCommand: DataCommand {
-    let commandMode = DataCommandMode.debugAddCTRLByte
-    var byte: Byte
-}
-
-extension AddDebugCTRLByteCommand {
-    var payload: Bytes {
-        return [byte]
-    }
+    static let commandMode = DataCommandMode.debugAddCTRLByte
+    let byte: Byte
 }

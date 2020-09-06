@@ -1,5 +1,5 @@
 //
-//  FileMetaCommands.swift
+//  MetaCommands.swift
 //  PrevueCLI
 //
 //  Created by Ari on 5/2/20.
@@ -8,16 +8,16 @@
 
 import Foundation
 
-// MARK: Commands
+// MARK: Metacommands
 
-struct CurrentClockCommand: FileMetaCommand {
+struct CurrentClockCommand: MetaCommand {
     var commands: [DataCommand] {
         let command = ClockCommand.currentTulsaTime!
         return [command]
     }
 }
 
-struct ListingsCommand: FileMetaCommand {
+struct ListingsCommand: MetaCommand {
     let channelsFilePath: String
     let programsFilePath: String
     let forAtari: Bool
@@ -46,7 +46,7 @@ struct ListingsCommand: FileMetaCommand {
     }
 }
 
-struct TransferFileCommand: FileMetaCommand {
+struct TransferFileCommand: MetaCommand {
     let localFilePath: String
     let remoteFilePath: String
     
@@ -57,12 +57,9 @@ struct TransferFileCommand: FileMetaCommand {
     }
 }
 
-// MARK: Support
+// MARK: Convenience
 
-protocol FileMetaCommand: CommandContainer, UVSGDocumentable, Codable, CustomStringConvertible {
-}
-
-extension FileMetaCommand {
+extension MetaCommand {
     var description: String {
         return "\(type(of: self)): \(commands)"
     }

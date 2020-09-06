@@ -10,31 +10,12 @@ import Foundation
 
 struct PrevueCommandFile: Codable {
     let destinations: [DataDestination]
-    let commandContainers: [CommandContainer]
+    let commands: [Command]
 }
 
 // MARK: Encoding/decoding
 
 extension PrevueCommandFile {
-    struct SerializedCommand: Decodable, PropertiesGettableByType {
-        let BoxOnCommand: BoxOnCommand?
-        let BoxOffCommand: BoxOffCommand?
-        let ResetCommand: ResetCommand?
-        let TitleCommand: TitleCommand?
-        let ClockCommand: ClockCommand?
-        let CurrentClockCommand: CurrentClockCommand?
-        let DownloadCommand: DownloadCommand?
-        let TransferFileCommand: TransferFileCommand?
-        let LocalAdResetCommand: LocalAdResetCommand?
-        let LocalAdCommand: LocalAdCommand?
-        let ColorLocalAdCommand: ColorLocalAdCommand?
-        let ConfigurationCommand: ConfigurationCommand?
-        let NewLookConfigurationCommand: NewLookConfigurationCommand?
-        let ChannelsCommand: ChannelsCommand?
-        let ProgramCommand: ProgramCommand?
-        let ListingsCommand: ListingsCommand?
-    }
-    
     struct SerializedDestination: Codable, PropertiesGettableByType {
         let TCPDataDestination: TCPDataDestination?
         #if !os(Windows)
@@ -47,9 +28,7 @@ extension PrevueCommandFile {
         
         // Decode commands
         let serializedCommands = try container.decode([SerializedCommand].self, forKey: .commands)
-        commandContainers = serializedCommands.compactMap {
-            return $0.propertyValue(of: CommandContainer.self)
-        }
+        commands = serializedCommands.compactMap { $0.command }
         
         // Decode destinations
         let serializedDestinations = try container.decode([SerializedDestination].self, forKey: .destinations)
@@ -62,24 +41,18 @@ extension PrevueCommandFile {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         // Encode commands
-        var serializedCommands = container.nestedUnkeyedContainer(forKey: .commands)
-        for commandContainer in commandContainers {
-            for command in commandContainer.commands {
-                var serializedContainer = serializedCommands.nestedContainer(keyedBy: DynamicKey.self)
-                let serializedCommandKey = DynamicKey(stringValue: "\(type(of: commandContainer))")
-                try command.encode(to: serializedContainer.superEncoder(forKey: serializedCommandKey))
-            }
-        }
+        let serializedCommands = commands.map { SerializedCommand(command: $0) }
+        try container.encode(serializedCommands, forKey: .commands)
         
         // Encode destinations
-        var serializedDestinations = container.nestedUnkeyedContainer(forKey: .destinations)
+        var destinationsContainer = container.nestedUnkeyedContainer(forKey: .destinations)
         for destination in destinations {
-            var serializedContainer = serializedDestinations.nestedContainer(keyedBy: DynamicKey.self)
+            var serializedContainer = destinationsContainer.nestedContainer(keyedBy: DynamicKey.self)
             let serializedDestinationKey = DynamicKey(stringValue: "\(type(of: destination))")
             try destination.encode(to: serializedContainer.superEncoder(forKey: serializedDestinationKey))
         }
     }
-
+    
     enum CodingKeys: CodingKey {
         case destinations
         case commands
@@ -93,15 +66,44 @@ extension PrevueCommandFile {
         for destination in destinations {
             destination.openConnection()
         }
-
-        for commandContainer in commandContainers {
-            for destination in destinations {
-                destination.send(data: commandContainer.commands)
+        
+        for command in commands {
+            for satelliteCommand in command.satelliteCommands {
+                for destination in destinations {
+                    destination.send(data: satelliteCommand)
+                }
             }
         }
-
+        
         for destination in destinations {
             destination.closeConnection()
+        }
+    }
+}
+
+// MARK: Reading/writing as files
+
+extension PrevueCommandFile {
+    init(contentsOfFile filePath: String) throws {
+        let commandFileText = try String(contentsOfFile: filePath)
+        
+        // Change the current working directory to the directory containing the .prevuecommand file (in order to resolve relative paths referenced in the file)
+        let fileURL = URL(fileURLWithPath: filePath)
+        let containingDirectory = fileURL.deletingLastPathComponent()
+        FileManager.default.changeCurrentDirectoryPath(containingDirectory.path)
+
+        let decoder = YAMLDecoder()
+        self = try decoder.decode(PrevueCommandFile.self, from: commandFileText)
+    }
+    
+    func write(toFile: String) throws {
+        let encoder = YAMLEncoder()
+        let commandFileText = try encoder.encode(self)
+        if toFile == "-" {
+            print("\(commandFileText)")
+        } else {
+            try commandFileText.write(toFile: toFile, atomically: true, encoding: .utf8)
+            print("Writing:\n\(commandFileText)")
         }
     }
 }

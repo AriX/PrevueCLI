@@ -15,40 +15,47 @@ let commands = [
     CLI.Command(name: "send", usage: " <.prevuecommand file>: Sends the commands in the specified .prevuecommand file", minimumArgumentCount: 1, handler: { (arguments) in
         do {
             let filePath = arguments[0]
-            let scriptText = try String(contentsOfFile: filePath)
-
-            // Change the current working directory to the directory containing the .prevuecommand file (in order to resolve relative paths referenced in the file)
-            let fileURL = URL(fileURLWithPath: filePath)
-            let containingDirectory = fileURL.deletingLastPathComponent()
-            FileManager.default.changeCurrentDirectoryPath(containingDirectory.path)
-
-            let decoder = YAMLDecoder()
-            let commandFile = try decoder.decode(PrevueCommandFile.self, from: scriptText)
+            let commandFile = try PrevueCommandFile(contentsOfFile: filePath)
+            print(commandFile)
             commandFile.sendAllCommands()
         } catch {
             print("PrevueCLI: An error occurred: \(error)")
         }
     }),
+    CLI.Command(name: "convertCommandFileToBinary", usage: " <.prevuecommand file> <binary commands file>: Converts the commands in the specified .prevuecommand file to their satellite data representation", minimumArgumentCount: 2, handler: { (arguments) in
+        do {
+            let filePath = arguments[0]
+            let commandFile = try PrevueCommandFile(contentsOfFile: filePath)
+            
+            let serializedCommands = commandFile.commands.map { SerializedCommand(command: $0) }
+            let bytes = try BinaryEncoder.encode(serializedCommands)
+            print("Writing: \(bytes.hexEncodedString())")
+
+            let data = Data(bytes)
+            let outputURL = URL(fileURLWithPath: arguments[1])
+            try data.write(to: outputURL)
+
+        } catch {
+            print("PrevueCLI: An error occurred: \(error)")
+        }
+    }),
+    CLI.Command(name: "convertBinaryToCommandFile", usage: " <binary commands file> <.prevuecommand file>: Converts commands in satellite data format to a .prevuecommand file", minimumArgumentCount: 2, handler: { (arguments) in
+        do {
+            let fileURL = URL(fileURLWithPath: arguments[0])
+            let data = try Data(contentsOf: fileURL)
+            let bytes = [UInt8](data)
+
+            let serializedCommands = try BinaryDecoder.decode([SerializedCommand].self, data: bytes)
+            let commands = serializedCommands.map { $0.command }
+            let commandFile = PrevueCommandFile(destinations: [], commands: commands)
+            try commandFile.write(toFile: arguments[1])
+
+        } catch {
+            print("PrevueCLI: An error occurred: \(error)")
+        }
+    }),
     CLI.Command(name: "printCommandSchema", usage: ": Prints all of the supported commands and their syntax details", minimumArgumentCount: 0, handler: { (arguments) in
-        let allPossibleSerializedCommands = PrevueCommandFile.SerializedCommand(
-            BoxOnCommand: BoxOnCommand(selectCode: ""),
-            BoxOffCommand: BoxOffCommand(),
-            ResetCommand: ResetCommand(),
-            TitleCommand: TitleCommand(alignment: .center, title: ""),
-            ClockCommand: ClockCommand(with: Date())!,
-            CurrentClockCommand: CurrentClockCommand(),
-            DownloadCommand: nil, // TODO: Support UVSGDocumentableEnum for DownloadCommand
-            TransferFileCommand: TransferFileCommand(localFilePath: "", remoteFilePath: ""),
-            LocalAdResetCommand: LocalAdResetCommand(),
-            LocalAdCommand: LocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: nil, color: nil, text: "")], timePeriod: .init(beginning: 0, ending: 0))),
-            ColorLocalAdCommand: ColorLocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: .center, color: .init(background: .red, foreground: .red), text: "")], timePeriod: .init(beginning: 0, ending: 0))),
-            ConfigurationCommand: ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00),
-            NewLookConfigurationCommand: NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .none),
-            ChannelsCommand: ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Channel(sourceIdentifier: "", channelNumber: "", callLetters: "", flags: [])]),
-            ProgramCommand: ProgramCommand(day: JulianDay(dayOfYear: 0), program: Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
-            ListingsCommand: ListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false)
-        )
-        let documentation = allPossibleSerializedCommands.documentedType.description
+        let documentation = SerializedCommand.commandDocumentation.description
         print("Supported commands:\n\(documentation)")
     }),
     CLI.Command(name: "printJulianDay", usage: ": Prints today's Julian day (0-255)", minimumArgumentCount: 0, handler: { (arguments) in
@@ -72,17 +79,13 @@ let cli = CLI(commands: commands, usagePreamble: usagePreamble)
 cli.runCommand(for: CommandLine.arguments)
 
 exit(0)
-
-let destination = TCPDataDestination(host: "127.0.0.1", port: 5541)//SerialPortDataDestination(path: "/dev/cu.Repleo-PL2303-00001014", baudRate: 2400) //TCPDataDestination(host: "127.0.0.1", port: 5542)
+/*
+let destination = SerialPortDataDestination(path: "/dev/cu.usbserial-1440", baudRate: 2400) //TCPDataDestination(host: "127.0.0.1", port: 5542)
 destination.openConnection()
 
 // For Atari Sio2pc adapter
 //let destination = SerialPortDataDestination(path: "/dev/cu.Repleo-PL2303-00001014", baudRate: 2400)
 //destination.setRTS(false)
-
-destination.send(data: BoxOnCommand(selectCode: "*"))
-
-destination.send(data: TitleCommand(alignment: .center, title: "2020 ATARI EPG Test"))
 
 extension Data {
     struct HexEncodingOptions: OptionSet {
@@ -96,34 +99,39 @@ extension Data {
     }
 }
 
-let promoTitleCommand = PromoTitleCommand(leftTitle: "Action News", rightTitle: "Action News")
-let actionCommand = ActionCommand(value: .quarterScreenPreview("WPVI", "WCAU"))
-let actionCommand2 = ActionCommand(value: .quarterScreenTrigger(.null, .null))
-let eventCommand = EventCommand(leftEvent: .titleLookup, rightEvent: .titleLookup)
+//let promoTitleCommand = PromoTitleCommand(leftTitle: "Action News", rightTitle: "Action News")
+//let actionCommand = ActionCommand(value: .quarterScreenPreview("WPVI", "WCAU"))
+//let actionCommand2 = ActionCommand(value: .quarterScreenTrigger(.null, .null))
+//let eventCommand = EventCommand(leftEvent: .titleLookup, rightEvent: .titleLookup)
+//
+//destination.send(control: promoTitleCommand.encodedWithChecksum)
+//destination.send(control: eventCommand.encodedWithChecksum)
+//destination.send(control: actionCommand.encodedWithChecksum)
+//destination.send(control: actionCommand2.encodedWithChecksum)
 
-//for byte in promoTitleCommand.encodedWithChecksum {
-//    destination.sendDebugCTRLByte(byte: byte)
-//}
-//for byte in eventCommand.encodedWithChecksum {
-//    destination.sendDebugCTRLByte(byte: byte)
-//}
-//for byte in actionCommand.encodedWithChecksum {
-//    destination.sendDebugCTRLByte(byte: byte)
-//}
-//for byte in actionCommand2.encodedWithChecksum {
-//    destination.sendDebugCTRLByte(byte: byte)
-//}
 
-//for _ in 1...100 {
-////    destination.delay += 1
-//    print("trying delay \(destination.delay)")
+SerialPortDataDestination.delay = 930
+let time = CFAbsoluteTimeGetCurrent()
+destination.send(control: ActionCommand(value: .localAdOrHalfScreenNationalAd).encodedWithChecksum)
+destination.send(control: ActionCommand(value: .localAdOrHalfScreenNationalAd).encodedWithChecksum)
+destination.send(control: ActionCommand(value: .localAdOrHalfScreenNationalAd).encodedWithChecksum)
+destination.send(control: ActionCommand(value: .localAdOrHalfScreenNationalAd).encodedWithChecksum)
+print("FINISH: \(CFAbsoluteTimeGetCurrent() - time)")
+destination.startTimer()
+
+//for _ in 1...10 {
+//    SerialPortDataDestination.delay += 1
+//    print("trying delay \(SerialPortDataDestination.delay)")
 //    let cmd: [Byte] = [0x05, 0x01, 0x01, 0x0D]
 ////    let cmd: [Byte] = [0x03, 0x0D]
 //    let checksumCmd = cmd + [cmd.checksum]
-//    for byte in checksumCmd {
-//        destination.sendCTRLByte(byt: byte)
-//    }
+//    destination.send(control: checksumCmd)
+////    for byte in checksumCmd {
+////        destination.sendCTRLByte(byt: byte)
+////    }
 //}
 
+sleep(5)
 
 destination.closeConnection()
+*/

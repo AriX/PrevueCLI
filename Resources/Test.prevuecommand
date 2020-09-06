@@ -23,7 +23,7 @@ commands:
 - NewLookConfigurationCommand: {displayFormat: grid, textAdFlag: satellite}
 
 # Reset local ads
-- LocalAdResetCommand: {}
+- LocalAdCommand: {reset: true}
 # One-line ad
 - LocalAdCommand: {adNumber: 1, content: [{text: "        BEFORE YOU VIEW, PREVUE!"}]}
 # Two-line centered ad
@@ -33,7 +33,7 @@ commands:
 # Ad with timeslot constraints (e.g. only shown at night, timeslots 24-48)
 - LocalAdCommand: {adNumber: 4, content: [{text: "TARGET YOUR AUDIENCE WITH CABLE", alignment: center}, {text: "TELEVISION. CALL COMCAST NOW AT", alignment: center}, {text: "215-639-2330", alignment: center}], timePeriod: {beginning: 24, ending: 48}}
 # Color text ad
-- ColorLocalAdCommand: {adNumber: 5, content: [{text: "Alawys think "}, {text: "Prevue ", color: {background: grey, foreground: yellow}}, {text: "first!", color: {background: lightBlue, foreground: red}}]}
+- ColorLocalAdCommand: {adNumber: 5, content: [{text: "Always think "}, {text: "Prevue ", color: {background: grey, foreground: yellow}}, {text: "first!", color: {background: lightBlue, foreground: red}}]}
 
 # Send sample listings data from the included .csv files
 - ListingsCommand: {channelsFilePath: "Sample Listings/channels.csv", programsFilePath: "Sample Listings/programs.csv", forAtari: true}

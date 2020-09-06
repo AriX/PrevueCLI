@@ -11,25 +11,25 @@ import Foundation
 typealias SourceIdentifier = String // Limited to 6 characters
 typealias Timeslot = UInt8 // 1 to 48
 
-struct Channel: Codable {
+struct Channel: Codable, UVSGDocumentable, Equatable {
     let sourceIdentifier: SourceIdentifier
     let channelNumber: String
     let callLetters: String // Limited to 5 characters on EPG Jr., 6 on Amiga
     let flags: ChannelAttributes
 }
 
-struct Program: Codable {
+struct Program: Codable, UVSGDocumentable, Equatable {
     let timeslot: Timeslot
     let sourceIdentifier: SourceIdentifier // Channel source
     let programName: String
     let flags: ProgramAttributes
 }
 
-struct JulianDay: Codable, UVSGDocumentable {
+struct JulianDay: BinaryCodableStruct, Equatable {
     let dayOfYear: UInt8
 }
 
-struct ChannelAttributes: OptionSetCodableAsOptionNames {
+struct ChannelAttributes: BinaryCodableOptionSet {
     let rawValue: UInt8
     
     static let none = ChannelAttributes(rawValue: 0x01) // No attribute (prevents sending NULL)
@@ -46,7 +46,7 @@ struct ChannelAttributes: OptionSetCodableAsOptionNames {
     }
 }
 
-struct ProgramAttributes: OptionSetCodableAsOptionNames {
+struct ProgramAttributes: BinaryCodableOptionSet {
     let rawValue: UInt8
     
     static let none = ProgramAttributes(rawValue: 0x01) // No attribute, always set
@@ -74,23 +74,5 @@ extension JulianDay {
     
     static var now: JulianDay {
         return JulianDay(with: Date())
-    }
-}
-
-extension ChannelAttributes {
-    init(from decoder: Decoder) throws {
-        try self.init(asNamesFrom: decoder)
-    }
-    func encode(to encoder: Encoder) throws {
-        try encode(asNamesTo: encoder)
-    }
-}
-
-extension ProgramAttributes {
-    init(from decoder: Decoder) throws {
-        try self.init(asNamesFrom: decoder)
-    }
-    func encode(to encoder: Encoder) throws {
-        try encode(asNamesTo: encoder)
     }
 }

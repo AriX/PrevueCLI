@@ -104,14 +104,6 @@ extension UVSGDocumentable {
                 let typeOfValue = type(of: value)
                 if typeOfValue is DataCommandMode.Type { continue }
                 
-                let shouldSkipOptional = Self.self is PrevueCommandFile.SerializedCommand.Type
-                if shouldSkipOptional {
-                    if case Optional<Any>.some(let unwrappedValue) = value,
-                        let typedValue = unwrappedValue as? UVSGDocumentable {
-                        introspectableValue = typedValue
-                    }
-                }
-                
                 types.append((label, introspectableValue?.documentedType ?? UVSGDocumentedType.scalar("\(typeOfValue)")))
             }
             return .dictionary(types)
@@ -149,7 +141,4 @@ extension Optional: UVSGDocumentable where Wrapped: UVSGDocumentable {
             }
         }
     }
-}
-
-extension PrevueCommandFile.SerializedCommand: UVSGDocumentable {
 }

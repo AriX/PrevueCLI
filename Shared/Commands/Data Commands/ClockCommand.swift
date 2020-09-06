@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DayOfWeek: UInt8, Codable {
+enum DayOfWeek: UInt8, BinaryCodable {
     case Sunday = 0
     case Monday = 1
     case Tuesday = 2
@@ -18,8 +18,8 @@ enum DayOfWeek: UInt8, Codable {
     case Saturday = 6
 }
 
-struct ClockCommand: DataCommand {
-    let commandMode = DataCommandMode.clock
+struct ClockCommand: DataCommand, Equatable {
+    static let commandMode = DataCommandMode.clock
     let dayOfWeek: DayOfWeek
     let month: UInt8 // Zero-indexed month
     let day: UInt8 // Zero-indexed day
@@ -49,11 +49,11 @@ extension ClockCommand {
     }
 }
 
+// MARK: Encoding
+
 extension ClockCommand {
-    var payload: Bytes {
-        // To be tested
-        // I think the last byte is always 0 and is unused, but should be confirmed in disassembly
-        // Last bit goes to 1 to reset Julian day
-        return [dayOfWeek.rawValue, month, day, year, hour, minute, second, daylightSavingsTime.asByte(), 0x00]
+    var footerBytes: Bytes {
+        // Encode terminator byte
+        return [0x00]
     }
 }

@@ -6,33 +6,29 @@
 //  Copyright © 2018 Vertex. All rights reserved.
 //
 
-struct BoxOnCommand: DataCommand {
-    let commandMode = DataCommandMode.boxOn
-    var selectCode: String
+struct BoxOnCommand: DataCommand, Equatable {
+    static let commandMode = DataCommandMode.boxOn
+    let selectCode: String
 }
 
-struct BoxOffCommand: DataCommand {
-    let commandMode = DataCommandMode.boxOff
+struct BoxOffCommand: DataCommand, Equatable {
+    static let commandMode = DataCommandMode.boxOff
 }
 
-struct ResetCommand: DataCommand {
-    let commandMode = DataCommandMode.reset
+struct ResetCommand: DataCommand, Equatable {
+    static let commandMode = DataCommandMode.reset
 }
 
-extension BoxOnCommand {
-    var payload: Bytes {
-        return self.selectCode.asNullTerminatedBytes()
-    }
-}
+// MARK: Encoding
 
 extension BoxOffCommand {
-    var payload: Bytes {
+    var footerBytes: Bytes {
         return [0xBB, 0x00]
     }
 }
 
 extension ResetCommand {
-    var payload: Bytes {
+    var footerBytes: Bytes {
         return [0x00]
     }
 }

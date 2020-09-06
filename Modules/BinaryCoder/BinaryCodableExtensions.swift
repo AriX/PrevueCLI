@@ -2,45 +2,64 @@
 
 import Foundation
 
-
-extension Array: BinaryCodable {
+extension Array: BinaryEncodable where Element: BinaryEncodable {
     public func binaryEncode(to encoder: BinaryEncoder) throws {
-        guard Element.self is Encodable.Type else {
-            throw BinaryEncoder.Error.typeNotConformingToEncodable(Element.self)
-        }
-        
-        try encoder.encode(self.count)
         for element in self {
-            try (element as! Encodable).encode(to: encoder)
-        }
-    }
-    
-    public init(fromBinary decoder: BinaryDecoder) throws {
-        guard let binaryElement = Element.self as? Decodable.Type else {
-            throw BinaryDecoder.Error.typeNotConformingToDecodable(Element.self)
-        }
-        
-        let count = try decoder.decode(Int.self)
-        self.init()
-        self.reserveCapacity(count)
-        for _ in 0 ..< count {
-            let decoded = try binaryElement.init(from: decoder)
-            self.append(decoded as! Element)
+            try element.binaryEncode(to: encoder)
         }
     }
 }
 
+extension Array: BinaryDecodable, CodingPathIntrospectable where Element: BinaryDecodable {
+    public init(fromBinary decoder: BinaryDecoder) throws {
+        self.init()
+        do {
+            while !decoder.isAtEnd() {
+                let decoded = try Element.init(fromBinary: decoder)
+                append(decoded)
+            }
+        } catch BinaryDecoder.Error.expectedEndOfData {
+            // Do nothing, we hit end of data expectedly
+        }
+    }
+}
+
+// Read/write strings as null-terminated UTF-8
 extension String: BinaryCodable {
     public func binaryEncode(to encoder: BinaryEncoder) throws {
-        try Array(self.utf8).binaryEncode(to: encoder)
+        for element in utf8 {
+            try element.encode(to: encoder)
+        }
+        
+        // Encode null terminator
+        try Byte(0x00).encode(to: encoder)
     }
     
     public init(fromBinary decoder: BinaryDecoder) throws {
-        let utf8: [UInt8] = try Array(fromBinary: decoder)
-        if let str = String(bytes: utf8, encoding: .utf8) {
-            self = str
+        var nextByte: Byte?
+        var bytes: [Byte] = []
+        while nextByte == nil || nextByte != 0x00 {
+            if let nextByte = nextByte {
+                bytes.append(nextByte)
+            }
+            nextByte = try decoder.decode(Byte.self)
+        }
+        
+        if let string = String(bytes: bytes, encoding: .utf8) {
+            self = string
         } else {
-            throw BinaryDecoder.Error.invalidUTF8(utf8)
+            throw BinaryDecoder.Error.invalidUTF8(bytes)
+        }
+    }
+}
+
+extension Optional: BinaryEncodable where Wrapped: BinaryEncodable {
+    public func binaryEncode(to encoder: BinaryEncoder) throws {
+        switch self {
+        case .some(let encodable):
+            try encodable.binaryEncode(to: encoder)
+        case .none:
+            break
         }
     }
 }

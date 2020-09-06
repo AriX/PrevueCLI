@@ -49,6 +49,16 @@ struct EventCommand: ControlCommand {
 
 extension EventCommand {
     var payload: Bytes {
-        return ([leftEvent.rawValue.asByte()] + [rightEvent.rawValue.asByte()] + [Byte(0x0D)])
+        return ([leftEvent.rawValue.asByte] + [rightEvent.rawValue.asByte] + [Byte(0x0D)])
+    }
+    func binaryEncode(to encoder: BinaryEncoder) throws {
+        encoder += payload
+    }
+    func encode(to encoder: Encoder) throws {
+        // TODO
+    }
+    init(from decoder: Decoder) throws {
+        // TODO
+        fatalError("Unimplemented")
     }
 }
