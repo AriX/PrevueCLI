@@ -1,40 +1,3261 @@
 timeslot,sourceIdentifier,programName,flags
-1,WPVI,Who Wants to Be a Millionaire,none
-3,WPVI,Scrubs,none
-36,WPVI,ABC World News With Diane Sawyer,none
-39,WPVI,The Middle,none
-38,WPVI,Wheel of Fortune,none
-37,WPVI,Jeopardy!,none
-34,WPVI,Action News 5:30 PM,none
-35,WPVI,Action News 6:00 PM,none
-33,WPVI,Action News 5:00 PM,none
-29,WPVI,Katie,none
-31,WPVI,Action News at 4pm,none
-27,WPVI,General Hospital,none
-24,WPVI,Who Wants to Be a Millionaire,none
-25,WPVI,The Chew,none
-23,WPVI,Action News,none
-21,WPVI,The View,none
-19,WPVI,Rachael Ray,none
-17,WPVI,Live! With Kelly and Michael,none
-13,WPVI,Good Morning America,none
-11,WPVI,Action News,none
-10,WPVI,Action News,none
-9,WPVI,Action News,none
-7,WPVI,America This Morning,none
-8,WPVI,Action News,none
-1,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-20,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-23,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-25,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-28,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-30,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-32,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-35,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-36,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-38,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-40,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-42,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-44,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-45,PRE001,"Before You View, Prevue!",movie|altHiliteProg
-47,PRE001,"Before You View, Prevue!",movie|altHiliteProg
+0,TBS000,The Fresh Prince of Bel-Air | \{91},none
+1,TBS000,The Fresh Prince of Bel-Air | \{91},none
+2,TBS000,Tyler Perry's Meet the Browns,none
+3,TBS000,According to Jim | \{91},none
+4,TBS000,"Yes, Dear | \{91}",none
+5,TBS000,Everybody Loves Raymond | \{91},none
+6,TBS000,Family Guy | \{91},none
+7,TBS000,Lopez Tonight,none
+8,TBS000,"Yes, Dear | \{91}",none
+9,TBS000,Tyler Perry's House of Payne |,none
+10,TBS000,Everybody Loves Raymond | \{91},none
+11,TBS000,Everybody Loves Raymond | \{91},none
+12,TBS000,My Name Is Earl | \{91},none
+13,TBS000,Sex and the City | \{91},none
+14,TBS000,Sex and the City | \{91},none
+15,TBS000,An American Werewolf in Paris |,none
+16,TBS000,Lopez Tonight,none
+17,TBS000,Family Guy | \{91},none
+18,TBS000,According to Jim | \{91},none
+19,TBS000,The Office | \{91},none
+20,TBS000,The Office | \{91},none
+21,TBS000,The Office | \{91},none
+22,TBS000,The Office | \{91},none
+23,TBS000,American Dad | \{91},none
+24,TBS000,Married ... With Children | \{91},none
+25,TBS000,Saved by the Bell | \{91},none
+26,TBS000,Saved by the Bell | \{91},none
+27,TBS000,Saved by the Bell | \{91},none
+28,TBS000,Married ... With Children | \{91},none
+29,TBS000,Married ... With Children | \{91},none
+30,TBS000,Scary Movie 4 |,none
+31,TBS000,The Steve Harvey Show | \{91},none
+32,TBS000,The Steve Harvey Show | \{91},none
+33,TBS000,Married ... With Children | \{91},none
+34,TBS000,Saved by the Bell | \{91},none
+35,TBS000,The Fresh Prince of Bel-Air | \{91},none
+36,TBS000,The King of Queens | \{91},none
+37,TBS000,The King of Queens | \{91},none
+38,TBS000,Seinfeld | \{91},none
+39,TBS000,Seinfeld | \{91},none
+40,TBS000,Everybody Loves Raymond | \{91},none
+41,TBS000,Friends | \{91},none
+42,TBS000,Tyler Perry's House of Payne |,none
+43,TBS000,The Office | \{91},none
+44,TBS000,Friends | \{91},none
+45,TBS000,My Name Is Earl | \{91},none
+0,KYW000,CBS Evening News With Katie Couric | \{91},none
+1,KYW000,Entertainment Tonight | \{91},none
+2,KYW000,The Insider | \{91},none
+3,KYW000,NCIS | \{91},none
+4,KYW000,Eyewitness News at 6 | \{91},none
+5,KYW000,Married ... With Children | \{91},none
+6,KYW000,College Football |,none
+7,KYW000,Eyewitness News at 4 | \{91},none
+8,KYW000,NFL Postgame |,none
+9,KYW000,Dr. Phil | \{91},none
+10,KYW000,Rules of Engagement | \{91},none
+11,KYW000,NCIS: Los Angeles | \{91},none
+12,KYW000,The Office | \{91},none
+13,KYW000,Inside Edition |,none
+14,KYW000,My Name Is Earl | \{91},none
+15,KYW000,Paid Programming,none
+16,KYW000,Late Show With David Letterman | \{91},none
+17,KYW000,Friends | \{91},none
+18,KYW000,The King of Queens | \{91},none
+19,KYW000,CBS News: Election Coverage | \{91},none
+20,KYW000,Seinfeld | \{91},none
+21,KYW000,Eyewitness News at 11 | \{91},none
+22,KYW000,The Doctors |,none
+23,KYW000,College Football Special |,none
+24,KYW000,Lopez Tonight,none
+25,KYW000,The Early Show | \{91},none
+26,KYW000,Tyler Perry's House of Payne |,none
+27,KYW000,Eyewitness News at 8am | \{91},none
+28,KYW000,Eyewitness News at 6 | \{91},none
+29,KYW000,Eyewitness News at 5:30 | \{91},none
+30,KYW000,The Fresh Prince of Bel-Air | \{91},none
+31,KYW000,CBS Morning News | \{91},none
+32,KYW000,Eyewitness News at 4:30am | \{91},none
+33,KYW000,Eyewitness News at 5 | \{91},none
+34,KYW000,Everybody Loves Raymond | \{91},none
+35,KYW000,The Dr. Oz Show | \{91},none
+36,KYW000,The Young and the Restless | \{91},none
+37,KYW000,NFL Football |,none
+38,KYW000,The Bold and the Beautiful | \{91},none
+39,KYW000,The Talk | \{91},none
+40,KYW000,Talk Philly | \{91},none
+41,KYW000,"Sabrina, the Animated Series | \{91}",none
+42,KYW000,Busytown Mysteries | \{91},none
+43,KYW000,Let's Make a Deal | \{91},none
+44,KYW000,Face the Nation | \{91},none
+45,KYW000,The Price Is Right | \{91},none
+46,KYW000,Up to the Minute \{91},none
+0,CNN000,CBS Morning News | \{91},none
+1,CNN000,"John King, USA",none
+2,CNN000,Cover Story,none
+3,CNN000,Parker Spitzer,none
+4,CNN000,CNN Newsroom,none
+5,CNN000,Eyewitness News at 5:30 | \{91},none
+6,CNN000,The Early Show | \{91},none
+7,CNN000,CNN Newsroom,none
+8,CNN000,Eyewitness News at 8am | \{91},none
+9,CNN000,The Situation Room With Wolf Blitzer,none
+10,CNN000,The Dr. Oz Show | \{91},none
+11,CNN000,Larry King Live |,none
+12,CNN000,Let's Make a Deal | \{91},none
+13,CNN000,Anderson Cooper 360 |,none
+14,CNN000,The Price Is Right | \{91},none
+15,CNN000,Anderson Cooper 360 |,none
+16,CNN000,Larry King Live,none
+17,CNN000,"Sabrina, the Animated Series | \{91}",none
+18,CNN000,NFL Football |,none
+19,CNN000,Anderson Cooper 360 |,none
+20,CNN000,The Talk | \{91},none
+21,CNN000,State of the Union With Candy Crowley,none
+22,CNN000,CNN Newsroom,none
+23,CNN000,College Football Special |,none
+24,CNN000,Eyewitness News at 4 | \{91},none
+25,CNN000,NFL Postgame |,none
+26,CNN000,"Sanjay Gupta, MD",none
+27,CNN000,CNN Sunday Morning,none
+28,CNN000,American Morning |,none
+29,CNN000,Married ... With Children | \{91},none
+30,CNN000,Entertainment Tonight | \{91},none
+31,CNN000,Parker Spitzer,none
+32,CNN000,NCIS | \{91},none
+33,CNN000,Anderson Cooper 360 |,none
+34,CNN000,NCIS: Los Angeles | \{91},none
+35,CNN000,CNN Newsroom,none
+36,CNN000,CBS News: Election Coverage | \{91},none
+37,CNN000,CNN Newsroom,none
+38,CNN000,Eyewitness News at 11 | \{91},none
+39,CNN000,CNN Newsroom,none
+40,CNN000,State of the Union With Candy Crowley,none
+41,CNN000,Friends | \{91},none
+42,CNN000,Your Bottom Line,none
+43,CNN000,Fareed Zakaria GPS,none
+44,CNN000,Paid Programming,none
+45,CNN000,CNN Newsroom,none
+46,CNN000,Larry King Live,none
+0,USA000,NCIS | \{91},none
+1,USA000,Parker Spitzer,none
+2,USA000,NCIS | \{91},none
+3,USA000,Anderson Cooper 360 |,none
+4,USA000,Married ... With Children | \{91},none
+5,USA000,Law & Order: Special Victims Unit | \{91},none
+6,USA000,Law & Order: Criminal Intent | \{91},none
+7,USA000,NFL Postgame |,none
+8,USA000,Law & Order: Criminal Intent | \{91},none
+9,USA000,CNN Sunday Morning,none
+10,USA000,NCIS | \{91},none
+11,USA000,CNN Newsroom,none
+12,USA000,Law & Order: Special Victims Unit | \{91},none
+13,USA000,Fareed Zakaria GPS,none
+14,USA000,Law & Order: Special Victims Unit | \{91},none
+15,USA000,Tristan & Isolde |,none
+16,USA000,Friends | \{91},none
+17,USA000,Ocean's Thirteen |,none
+18,USA000,NCIS | \{91},none
+19,USA000,CNN Newsroom,none
+20,USA000,NCIS | \{91},none
+21,USA000,CNN Newsroom,none
+22,USA000,Becker | \{91},none
+23,USA000,College Football Special |,none
+24,USA000,Wings | \{91},none
+25,USA000,"Walker, Texas Ranger | \{91}",none
+26,USA000,Creflo Dollar,none
+27,USA000,"Walker, Texas Ranger | \{91}",none
+28,USA000,The NBC Primetime Preview Show | \{91},none
+29,USA000,Get Rich Now!,none
+30,USA000,Wings | \{91},none
+31,USA000,Law & Order: Special Victims Unit | \{91},none
+32,USA000,Kill Germs with Steam,none
+33,USA000,Paid Programming,none
+34,USA000,Law & Order: Special Victims Unit | \{91},none
+35,USA000,Joel Osteen |,none
+36,USA000,Arthur Hailey's Detective |,none
+37,USA000,Anderson Cooper 360 |,none
+38,USA000,Law & Order: Special Victims Unit | \{91},none
+39,USA000,State of the Union With Candy Crowley,none
+40,USA000,"Walker, Texas Ranger | \{91}",none
+41,USA000,"Sabrina, the Animated Series | \{91}",none
+42,USA000,Wings | \{91},none
+43,USA000,JAG | \{91},none
+44,USA000,JAG | \{91},none
+45,USA000,Anderson Cooper 360 |,none
+46,USA000,7 Seconds |,none
+0,WPVI00,ABC World News With Diane Sawyer |,none
+1,WPVI00,Jeopardy! |,none
+2,WPVI00,Wheel of Fortune |,none
+3,WPVI00,Dancing With the Stars | \{91},none
+4,WPVI00,Action News 6:00 PM | \{91},none
+5,WPVI00,Action News 5:30 PM | \{91},none
+6,WPVI00,College Football,none
+7,WPVI00,The Oprah Winfrey Show |,none
+8,WPVI00,Jack Hanna's Animal Adventures | \{91},none
+9,WPVI00,Action News 5:00 PM | \{91},none
+10,WPVI00,Better With You | \{91},none
+11,WPVI00,Desperate Housewives | \{91},none
+12,WPVI00,JAG | \{91},none
+13,WPVI00,The Oprah Winfrey Show |,none
+14,WPVI00,Anderson Cooper 360 |,none
+15,WPVI00,ABC World News Now |,none
+16,WPVI00,Jimmy Kimmel Live | \{91},none
+17,WPVI00,Action News | \{91},none
+18,WPVI00,Vote 2010 | \{91},none
+19,WPVI00,Castle | \{91},none
+20,WPVI00,State of the Union With Candy Crowley,none
+21,WPVI00,Nightline |,none
+22,WPVI00,General Hospital | \{91},none
+23,WPVI00,Motion \{91},none
+24,WPVI00,NFL Postgame |,none
+25,WPVI00,Good Morning America |,none
+26,WPVI00,CNN Sunday Morning,none
+27,WPVI00,Good Morning America |,none
+28,WPVI00,Action News | \{91},none
+29,WPVI00,Action News | \{91},none
+30,WPVI00,ABC World News Now |,none
+31,WPVI00,America This Morning |,none
+32,WPVI00,Action News | \{91},none
+33,WPVI00,Action News | \{91},none
+34,WPVI00,CNN Newsroom,none
+35,WPVI00,Live With Regis and Kelly | \{91},none
+36,WPVI00,Action News | \{91},none
+37,WPVI00,Who Wants to Be a Millionaire | \{91},none
+38,WPVI00,All My Children | \{91},none
+39,WPVI00,Motion \{91},none
+40,WPVI00,Action News | \{91},none
+41,WPVI00,The View | \{91},none
+42,WPVI00,The Replacements | \{91},none
+43,WPVI00,Rachael Ray | \{91},none
+44,WPVI00,This Week With Christiane Amanpour |,none
+45,WPVI00,One Life to Live | \{91},none
+46,WPVI00,25/8 The Eagles Players Show,none
+0,ESPN00,Pardon the Interruption | \{91},none
+1,ESPN00,SportsCenter |,none
+2,ESPN00,Baseball Tonight |,none
+3,ESPN00,E:60,none
+4,ESPN00,Around the Horn | \{91},none
+5,ESPN00,Jim Rome Is Burning |,none
+6,ESPN00,SportsCenter |,none
+7,ESPN00,Outside the Lines First Report |,none
+8,ESPN00,College Football Live |,none
+9,ESPN00,NFL Live |,none
+10,ESPN00,College Football,none
+11,ESPN00,NFL Football,none
+12,ESPN00,NFL PrimeTime |,none
+13,ESPN00,SportsCenter |,none
+14,ESPN00,SportsCenter |,none
+15,ESPN00,SportsCenter |,none
+16,ESPN00,Baseball Tonight |,none
+17,ESPN00,NFL Live |,none
+18,ESPN00,NBA Basketball,none
+19,ESPN00,SportsCenter |,none
+20,ESPN00,SportsCenter |,none
+21,ESPN00,NFL PrimeTime |,none
+22,ESPN00,Motion \{91},none
+23,ESPN00,SportsCenter |,none
+24,ESPN00,College Football Final |,none
+25,ESPN00,SportsCenter |,none
+26,ESPN00,SportsCenter |,none
+27,ESPN00,SportsCenter |,none
+28,ESPN00,SportsCenter |,none
+29,ESPN00,College Football,none
+30,ESPN00,SportsCenter |,none
+31,ESPN00,NFL Matchup |,none
+32,ESPN00,Nightline |,none
+33,ESPN00,SportsCenter |,none
+34,ESPN00,SportsCenter |,none
+35,ESPN00,ABC World News Now |,none
+36,ESPN00,Action News | \{91},none
+37,ESPN00,SportsCenter |,none
+38,ESPN00,SportsCenter |,none
+39,ESPN00,Castle | \{91},none
+40,ESPN00,SportsCenter |,none
+41,ESPN00,Sports Reporters |,none
+42,ESPN00,Desperate Housewives | \{91},none
+43,ESPN00,SportsCenter |,none
+44,ESPN00,30 for 30,none
+45,ESPN00,30 for 30,none
+46,ESPN00,2010 World Series of Poker,none
+47,ESPN00,2010 World Series of Poker,none
+0,CNPH00,College Football,none
+1,CNPH00,Boxing: Mosley vs. Mora - Coming Soon 9/18/10,none
+2,CNPH00,SportsCenter |,none
+3,CNPH00,SportsCenter |,none
+4,CNPH00,ABC World News Now |,none
+5,CNPH00,SportsCenter |,none
+6,CNPH00,College Football,none
+7,CNPH00,College Football,none
+8,CNPH00,SportsCenter |,none
+9,CNPH00,SportsCenter |,none
+10,CNPH00,SportsCenter |,none
+11,CNPH00,Action News | \{91},none
+12,CNPH00,SportsCenter |,none
+13,CNPH00,Free Money,none
+14,CNPH00,Millionaire's Secrets,none
+15,CNPH00,Paid Programming,none
+16,CNPH00,Your Baby Can Read,none
+17,CNPH00,SportsCenter |,none
+18,CNPH00,Desperate Housewives | \{91},none
+19,CNPH00,SportsCenter |,none
+20,CNPH00,MLB Baseball,none
+21,CNPH00,SportsCenter |,none
+22,CNPH00,Sports Reporters |,none
+23,CNPH00,College Football Final |,none
+24,CNPH00,SportsCenter |,none
+25,CNPH00,Paid Programming,none
+26,CNPH00,Paid Programming,none
+27,CNPH00,Paid Programming,none
+28,CNPH00,Paid Programming,none
+29,CNPH00,Guthy-Renker,none
+30,CNPH00,Paid Programming,none
+31,CNPH00,Paid Programming,none
+32,CNPH00,Paid Programming,none
+33,CNPH00,Paid Programming,none
+34,CNPH00,Your Baby Can Read,none
+35,CNPH00,Paid Programming,none
+36,CNPH00,Paid Programming,none
+37,CNPH00,SportsCenter |,none
+38,CNPH00,SportsCenter |,none
+39,CNPH00,NFL PrimeTime |,none
+40,CNPH00,Motion \{91},none
+41,CNPH00,Free Grill!,none
+42,CNPH00,College Football,none
+43,CNPH00,Paid Programming,none
+44,CNPH00,Paid Programming,none
+45,CNPH00,Paid Programming,none
+46,CNPH00,Paid Programming,none
+47,CNPH00,"6 Week Body Makeover Eat More, Exercise Less & Lose Weight Every Week",none
+0,CSNPHL,Eagles Postgame,none
+1,CSNPHL,Penn State Football Story \{91},none
+2,CSNPHL,Paid Programming,none
+3,CSNPHL,Your Baby Can Read,none
+4,CSNPHL,Paid Programming,none
+5,CSNPHL,SportsNite | \{91},none
+6,CSNPHL,Guthy-Renker,none
+7,CSNPHL,Free Grill!,none
+8,CSNPHL,Eagles Postgame,none
+9,CSNPHL,Paid Programming,none
+10,CSNPHL,Paid Programming,none
+11,CSNPHL,World Poker Tour: Season 8,none
+12,CSNPHL,SportsCenter |,none
+13,CSNPHL,SportsRISE,none
+14,CSNPHL,MLB Baseball,none
+15,CSNPHL,SportsRISE,none
+16,CSNPHL,College Football,none
+17,CSNPHL,Halls of Fame,none
+18,CSNPHL,Eagles Postgame,none
+19,CSNPHL,SportsNite | \{91},none
+20,CSNPHL,College Football,none
+21,CSNPHL,Red Bull Flugtag: On the Wings of Glory,none
+22,CSNPHL,Penn State Football Story \{91},none
+23,CSNPHL,Healing Foods,none
+24,CSNPHL,College Football Final |,none
+25,CSNPHL,Paid Programming,none
+26,CSNPHL,SportsRISE,none
+27,CSNPHL,SportsCenter |,none
+28,CSNPHL,SportsRISE,none
+29,CSNPHL,Paid Programming,none
+30,CSNPHL,Inside Golf,none
+31,CSNPHL,Boxing: Mosley vs. Mora - Coming Soon 9/18/10,none
+32,CSNPHL,Paid Programming,none
+33,CSNPHL,Paid Programming,none
+34,CSNPHL,Paid Programming,none
+35,CSNPHL,Action News | \{91},none
+36,CSNPHL,SportsRISE,none
+37,CSNPHL,SportsCenter |,none
+38,CSNPHL,Paid Programming,none
+39,CSNPHL,Paid Programming,none
+40,CSNPHL,Boxing,none
+41,CSNPHL,Eagles Pregame,none
+42,CSNPHL,New Jersey Angler,none
+43,CSNPHL,Free Money,none
+44,CSNPHL,Inside Golf,none
+45,CSNPHL,Paid Programming,none
+46,CSNPHL,Paid Programming,none
+47,CSNPHL,College Football,none
+0,WCAU00,Extra | \{91},none
+1,WCAU00,NBC Nightly News | \{91},none
+2,WCAU00,Access Hollywood |,none
+3,WCAU00,The Biggest Loser | \{91},none
+4,WCAU00,Monsters vs. Aliens: Mutant Pumpkins From Outer Space | \{91},none
+5,WCAU00,NBC 10 News at 6 |,none
+6,WCAU00,Paid Programming,none
+7,WCAU00,College Football | \{91},none
+8,WCAU00,NBC 10 News at 4 |,none
+9,WCAU00,SportsCenter |,none
+10,WCAU00,NBC 10 News at 5 |,none
+11,WCAU00,Decision 2010 | \{91},none
+12,WCAU00,Outsourced | \{91},none
+13,WCAU00,Last Call With Carson Daly | \{91},none
+14,WCAU00,Paid Programming,none
+15,WCAU00,Poker After Dark |,none
+16,WCAU00,Dateline NBC | \{91},none
+17,WCAU00,Free Money,none
+18,WCAU00,The Tonight Show With Jay Leno | \{91},none
+19,WCAU00,Law & Order: Special Victims Unit | \{91},none
+20,WCAU00,Paid Programming,none
+21,WCAU00,NBC 10 News at 11 |,none
+22,WCAU00,Sports Final |,none
+23,WCAU00,The Ellen DeGeneres Show | \{91},none
+24,WCAU00,College Football | \{91},none
+25,WCAU00,Free Grill!,none
+26,WCAU00,Today | \{91},none
+27,WCAU00,Paid Programming,none
+28,WCAU00,Today | \{91},none
+29,WCAU00,NBC 10 News Today at 6:00 AM |,none
+30,WCAU00,NBC 10 News Today at 5:30 AM |,none
+31,WCAU00,Extra | \{91},none
+32,WCAU00,Access Hollywood |,none
+33,WCAU00,Early Today |,none
+34,WCAU00,NBC 10 News Today at 5:00 AM |,none
+35,WCAU00,NBC 10 News Today Weekend |,none
+36,WCAU00,NBC 10 News Today Weekend |,none
+37,WCAU00,Hispanics Today | \{91},none
+38,WCAU00,Days of our Lives | \{91},none
+39,WCAU00,House Smarts |,none
+40,WCAU00,The Nate Berkus Show |,none
+41,WCAU00,The Real Housewives of Atlanta,none
+42,WCAU00,NBC 10 Live at Issue |,none
+43,WCAU00,Pearlie | \{91},none
+44,WCAU00,The Chris Matthews Show |,none
+45,WCAU00,Meet the Press |,none
+46,WCAU00,The 10! Show |,none
+47,WCAU00,The Tonight Show With Jay Leno | \{91},none
+0,QVC000,Tacori IV: Diamonique Jewelry,none
+1,QVC000,Extra | \{91},none
+2,QVC000,Early Today |,none
+3,QVC000,Christmas Shoppe,none
+4,QVC000,NBC 10 News Today Weekend |,none
+5,QVC000,NFL Shop,none
+6,QVC000,Gourmet Holiday,none
+7,QVC000,Free Grill!,none
+8,QVC000,Jill's Beauty Gift Favorites,none
+9,QVC000,Paid Programming,none
+10,QVC000,Philosophy: Beauty,none
+11,QVC000,Philosophy: Beauty,none
+12,QVC000,Hispanics Today | \{91},none
+13,QVC000,Gourmet Holiday,none
+14,QVC000,Meet the Press |,none
+15,QVC000,Tacori IV: Diamonique Jewelry,none
+16,QVC000,The Tonight Show With Jay Leno | \{91},none
+17,QVC000,Pearlie | \{91},none
+18,QVC000,Cooking for a Crowd,none
+19,QVC000,Tuesday Night Gifts,none
+20,QVC000,House Smarts |,none
+21,QVC000,Philosophy: Beauty,none
+22,QVC000,The Real Housewives of Atlanta,none
+23,QVC000,Girlfriend Getaways,none
+24,QVC000,The Ellen DeGeneres Show | \{91},none
+25,QVC000,College Football | \{91},none
+26,QVC000,QVC This Morning,none
+27,QVC000,SportsCenter |,none
+28,QVC000,Tacori IV: Diamonique Jewelry,none
+29,QVC000,Royal Palace Handmade Rugs,none
+30,QVC000,NBC 10 News at 6 |,none
+31,QVC000,NBC Nightly News | \{91},none
+32,QVC000,Diamonique 'Til Dawn,none
+33,QVC000,The Biggest Loser | \{91},none
+34,QVC000,Bethlehem Lights Seasonal Lighting,none
+35,QVC000,Decision 2010 | \{91},none
+36,QVC000,Carolyn's Gift List,none
+37,QVC000,Law & Order: Special Victims Unit | \{91},none
+38,QVC000,Philosophy: Beauty,none
+39,QVC000,NBC 10 News at 11 |,none
+40,QVC000,Santa's Toy Shop,none
+41,QVC000,Q Check,none
+42,QVC000,Free Money,none
+43,QVC000,Last Call With Carson Daly | \{91},none
+44,QVC000,Kitchen Unlimited with Carolyn,none
+45,QVC000,Poker After Dark |,none
+46,QVC000,Denim & Co.,none
+47,QVC000,Great Gifts,none
+0,WHYY00,Nightly Business Report | \{91},none
+1,WHYY00,NBC Nightly News | \{91},none
+2,WHYY00,Rachel's Favorite Food at Home | \{91},none
+3,WHYY00,NOVA | \{91},none
+4,WHYY00,On Canvas,none
+5,WHYY00,PBS NewsHour | \{91},none
+6,WHYY00,BBC World News |,none
+7,WHYY00,Martha Speaks | \{91},none
+8,WHYY00,WordGirl | \{91},none
+9,WHYY00,Clifford the Big Red Dog | \{91},none
+10,WHYY00,The Electric Company | \{91},none
+11,WHYY00,Independent Lens |,none
+12,WHYY00,Aretha Franklin Presents: Soul Rewind (My Music) | \{91},none
+13,WHYY00,To Be Announced,none
+14,WHYY00,Poker After Dark |,none
+15,WHYY00,To Be Announced,none
+16,WHYY00,Rock and Roll Hall of Fame Live,none
+17,WHYY00,Sun Studio Sessions | \{91},none
+18,WHYY00,Charlie Rose | \{91},none
+19,WHYY00,Election Coverage,none
+20,WHYY00,Before There Were Parks: Yellowstone and Glacier Through Native Eyes | \{91},none
+21,WHYY00,Newsline | \{91},none
+22,WHYY00,Tavis Smiley | \{91},none
+23,WHYY00,Curious George | \{91},none
+24,WHYY00,Cat in the Hat Knows a Lot About That! | \{91},none
+25,WHYY00,Bob the Builder | \{91},none
+26,WHYY00,Arthur | \{91},none
+27,WHYY00,Martha Speaks | \{91},none
+28,WHYY00,Curious George | \{91},none
+29,WHYY00,Sesame Street | \{91},none
+30,WHYY00,Rick Steves' European Treats,none
+31,WHYY00,Hallelujah Broadway | \{91},none
+32,WHYY00,To Be Announced,none
+33,WHYY00,Video Games Live | \{91},none
+34,WHYY00,To Be Announced,none
+35,WHYY00,Cat in the Hat Knows a Lot About That! | \{91},none
+36,WHYY00,Super Why! | \{91},none
+37,WHYY00,Barney & Friends | \{91},none
+38,WHYY00,Caillou | \{91},none
+39,WHYY00,Sid the Science Kid | \{91},none
+40,WHYY00,Dinosaur Train | \{91},none
+41,WHYY00,Super Why! | \{91},none
+42,WHYY00,WordWorld | \{91},none
+43,WHYY00,Dinosaur Train | \{91},none
+44,WHYY00,Sesame Street | \{91},none
+45,WHYY00,Celtic Thunder: It's Entertainment,none
+46,WHYY00,Sid the Science Kid | \{91},none
+47,WHYY00,To Be Announced,none
+0,MTV000,World of Jenks \{91},none
+1,MTV000,Parental Control | \{91},none
+2,MTV000,World of Jenks \{91},none
+3,MTV000,Teen Mom | \{91},none
+4,MTV000,World of Jenks \{91},none
+5,MTV000,Parental Control | \{91},none
+6,MTV000,Parental Control | \{91},none
+7,MTV000,World of Jenks \{91},none
+8,MTV000,Made | \{91},none
+9,MTV000,Martha Speaks | \{91},none
+10,MTV000,Parental Control | \{91},none
+11,MTV000,Teen Mom | \{91},none
+12,MTV000,Rob Dyrdek's Fantasy Factory | \{91},none
+13,MTV000,World of Jenks \{91},none
+14,MTV000,World of Jenks \{91},none
+15,MTV000,World of Jenks \{91},none
+16,MTV000,That '70s Show | \{91},none
+17,MTV000,Rob Dyrdek's Fantasy Factory | \{91},none
+18,MTV000,Teen Mom | \{91},none
+19,MTV000,Teen Mom | \{91},none
+20,MTV000,World of Jenks \{91},none
+21,MTV000,If You Really Knew Me | \{91},none
+22,MTV000,Rob Dyrdek's Fantasy Factory | \{91},none
+23,MTV000,Made \{91},none
+24,MTV000,World of Jenks \{91},none
+25,MTV000,Parental Control | \{91},none
+26,MTV000,AMTV \{91},none
+27,MTV000,Parental Control | \{91},none
+28,MTV000,AMTV: 10 on Top Countdown \{91},none
+29,MTV000,AMTV: Morning Hot Mix \{91},none
+30,MTV000,That '70s Show | \{91},none
+31,MTV000,NBC Nightly News | \{91},none
+32,MTV000,The Diary of Jay-Z: Water for Life \{91},none
+33,MTV000,Parental Control | \{91},none
+34,MTV000,P. Diddy's Starmaker \{91},none
+35,MTV000,The City | \{91},none
+36,MTV000,The Hills | \{91},none
+37,MTV000,The Hills \{91},none
+38,MTV000,The Hills \{91},none
+39,MTV000,The Hills | \{91},none
+40,MTV000,Teen Mom | \{91},none
+41,MTV000,The Hills \{91},none
+42,MTV000,The Hills \{91},none
+43,MTV000,The Hills | \{91},none
+44,MTV000,The Hills | \{91},none
+45,MTV000,The Hills \{91},none
+46,MTV000,The Hills \{91},none
+47,MTV000,AMTV \{91},none
+0,WTXF00,The Simpsons | \{91},none
+1,WTXF00,Fox 29 News at 6PM,none
+2,WTXF00,The Simpsons | \{91},none
+3,WTXF00,The Simpsons | \{91},none
+4,WTXF00,Family Guy | \{91},none
+5,WTXF00,That '70s Show | \{91},none
+6,WTXF00,PokerStars.net Million Dollar Challenge | \{91},none
+7,WTXF00,This Week in Baseball | \{91},none
+8,WTXF00,Fox NFL Postgame | \{91},none
+9,WTXF00,Eagles Postgame Report,none
+10,WTXF00,AMTV: 10 on Top Countdown \{91},none
+11,WTXF00,Family Guy | \{91},none
+12,WTXF00,Family Guy | \{91},none
+13,WTXF00,RECLAIM with Argireline by Victoria Principal,none
+14,WTXF00,Paid Programming,none
+15,WTXF00,AntiAging Fountain of Youth,none
+16,WTXF00,Paid Programming,none
+17,WTXF00,Jack Van Impe Presents |,none
+18,WTXF00,Brothers | \{91},none
+19,WTXF00,Fox 29 News at 10,none
+20,WTXF00,The Hills | \{91},none
+21,WTXF00,Seinfeld | \{91},none
+22,WTXF00,TMZ | \{91},none
+23,WTXF00,Fox Fall Preview 2010,none
+24,WTXF00,Made \{91},none
+25,WTXF00,Paid Programming,none
+26,WTXF00,In Touch With Dr. Charles Stanley |,none
+27,WTXF00,Cindy Crawford's Meaningful Beauty,none
+28,WTXF00,Wild About Animals |,none
+29,WTXF00,Natural alternative for joint health,none
+30,WTXF00,Overcoming Anxiety,none
+31,WTXF00,Paid Programming,none
+32,WTXF00,Judge Joe Brown | \{91},none
+33,WTXF00,Judge Joe Brown | \{91},none
+34,WTXF00,Paid Programming,none
+35,WTXF00,Zumba Body Transformation System,none
+36,WTXF00,FOX News Sunday With Chris Wallace | \{91},none
+37,WTXF00,Teen Kids News | \{91},none
+38,WTXF00,NFL Football | \{91},none
+39,WTXF00,If You Really Knew Me | \{91},none
+40,WTXF00,House | \{91},none
+41,WTXF00,Fox NFL Sunday | \{91},none
+42,WTXF00,Cook Healthy & Delicious Food Like a Master Chef!,none
+43,WTXF00,Animal Atlas | \{91},none
+44,WTXF00,The Real Score,none
+45,WTXF00,Weekend Marketplace |,none
+46,WTXF00,Eagles Game Day Live,none
+47,WTXF00,Kardashians' Secret to Perfect Skin,none
+0,WPSG00,The New Adventures of Old Christine | \{91},none
+1,WPSG00,How I Met Your Mother | \{91},none
+2,WPSG00,How I Met Your Mother | \{91},none
+3,WPSG00,The New Adventures of Old Christine | \{91},none
+4,WPSG00,The New Adventures of Old Christine | \{91},none
+5,WPSG00,Everybody Loves Raymond | \{91},none
+6,WPSG00,My Name Is Earl | \{91},none
+7,WPSG00,My Name Is Earl | \{91},none
+8,WPSG00,My Name Is Earl | \{91},none
+9,WPSG00,Everybody Loves Raymond | \{91},none
+10,WPSG00,Gossip Girl | \{91},none
+11,WPSG00,Teen Kids News | \{91},none
+12,WPSG00,The Office | \{91},none
+13,WPSG00,That '70s Show | \{91},none
+14,WPSG00,Bosley: Hair Loss Answers,none
+15,WPSG00,Paid Programming,none
+16,WPSG00,The Hills | \{91},none
+17,WPSG00,Law & Order: Special Victims Unit | \{91},none
+18,WPSG00,Eyewitness News on the CW Philly | \{91},none
+19,WPSG00,The Office | \{91},none
+20,WPSG00,The King of Queens | \{91},none
+21,WPSG00,The King of Queens | \{91},none
+22,WPSG00,The Tyra Show | \{91},none
+23,WPSG00,My Name Is Earl | \{91},none
+24,WPSG00,Eyewitness News This Morning | \{91},none
+25,WPSG00,Paid Programming,none
+26,WPSG00,OmniReliant Dual Saw,none
+27,WPSG00,Eyewitness News This Morning | \{91},none
+28,WPSG00,Know Your Heritage: Hispanic College Quiz Show |,none
+29,WPSG00,Dr. Phil | \{91},none
+30,WPSG00,Paid Programming,none
+31,WPSG00,Paid Programming,none
+32,WPSG00,The American Athlete |,none
+33,WPSG00,George Lopez | \{91},none
+34,WPSG00,The Doctors |,none
+35,WPSG00,The 700 Club |,none
+36,WPSG00,WHADDYADO |,none
+37,WPSG00,Bosley: Hair Loss Answers,none
+38,WPSG00,Judge Mathis | \{91},none
+39,WPSG00,no!no! Hair Removal System,none
+40,WPSG00,The People's Court |,none
+41,WPSG00,Judge Jeanine Pirro |,none
+42,WPSG00,My Name Is Earl | \{91},none
+43,WPSG00,The People's Court |,none
+44,WPSG00,Paid Programming,none
+45,WPSG00,Made in Hollywood: Teen Edition | \{91},none
+46,WPSG00,Judge Mathis | \{91},none
+47,WPSG00,90210 | \{91},none
+0,WPHL00,Two and a Half Men | \{91},none
+1,WPHL00,Two and a Half Men | \{91},none
+2,WPHL00,Family Guy | \{91},none
+3,WPHL00,Law & Order: Criminal Intent | \{91},none
+4,WPHL00,Family Guy | \{91},none
+5,WPHL00,My Wife and Kids | \{91},none
+6,WPHL00,Tyler Perry's House of Payne |,none
+7,WPHL00,Paid Programming,none
+8,WPHL00,Judge Karen's Court |,none
+9,WPHL00,Tyler Perry's Meet the Browns,none
+10,WPHL00,Tyler Perry's House of Payne |,none
+11,WPHL00,Law & Order: Criminal Intent | \{91},none
+12,WPHL00,Tyler Perry's House of Payne |,none
+13,WPHL00,According to Jim | \{91},none
+14,WPHL00,Are You Smarter Than a 5th Grader?,none
+15,WPHL00,Paid Programming,none
+16,WPHL00,Free Money,none
+17,WPHL00,Friends | \{91},none
+18,WPHL00,Curb Your Enthusiasm | \{91},none
+19,WPHL00,myphl 17 News at Ten |,none
+20,WPHL00,Friends | \{91},none
+21,WPHL00,Family Guy | \{91},none
+22,WPHL00,Entourage | \{91},none
+23,WPHL00,Maury |,none
+24,WPHL00,My Name Is Earl | \{91},none
+25,WPHL00,Free Money,none
+26,WPHL00,Better Philly,none
+27,WPHL00,Paid Programming,none
+28,WPHL00,The Steve Wilkos Show | \{91},none
+29,WPHL00,Paid Programming,none
+30,WPHL00,Paid Programming,none
+31,WPHL00,Sexy Faces Breakthrough Scientific Procedure,none
+32,WPHL00,Paid Programming,none
+33,WPHL00,Back Pain Relief in Just 12 Minutes a Day! By Capital Brands,none
+34,WPHL00,Paid Programming,none
+35,WPHL00,The Young Icons |,none
+36,WPHL00,Cheaters | \{91},none
+37,WPHL00,The Charlie Manuel Show,none
+38,WPHL00,Jerry Springer | \{91},none
+39,WPHL00,MLB Baseball,none
+40,WPHL00,The Steve Wilkos Show | \{91},none
+41,WPHL00,Maury |,none
+42,WPHL00,Cindy Crawford's Meaningful Beauty,none
+43,WPHL00,Cheaters | \{91},none
+44,WPHL00,Maury |,none
+45,WPHL00,Pets.TV | \{91},none
+46,WPHL00,Jerry Springer | \{91},none
+47,WPHL00,Paid Programming,none
+0,WMCNDT,Paid Programming,none
+1,WMCNDT,Millionaire's Secrets,none
+2,WMCNDT,Paid Programming,none
+3,WMCNDT,Paid Programming,none
+4,WMCNDT,Paid Programming,none
+5,WMCNDT,Paid Programming,none
+6,WMCNDT,Paid Programming,none
+7,WMCNDT,Paid Programming,none
+8,WMCNDT,Paid Programming,none
+9,WMCNDT,Paid Programming,none
+10,WMCNDT,Paid Programming,none
+11,WMCNDT,Paid Programming,none
+12,WMCNDT,Painless Hair Removal,none
+13,WMCNDT,Paid Programming,none
+14,WMCNDT,Paid Programming,none
+15,WMCNDT,Paid Programming,none
+16,WMCNDT,Paid Programming,none
+17,WMCNDT,Dance Connection Old School,none
+18,WMCNDT,Paid Programming,none
+19,WMCNDT,Free Money,none
+20,WMCNDT,Paid Programming,none
+21,WMCNDT,Paid Programming,none
+22,WMCNDT,Paid Programming,none
+23,WMCNDT,Paid Programming,none
+24,WMCNDT,Paid Programming,none
+25,WMCNDT,Paid Programming,none
+26,WMCNDT,Paid Programming,none
+27,WMCNDT,Paid Programming,none
+28,WMCNDT,Paid Programming,none
+29,WMCNDT,Paid Programming,none
+30,WMCNDT,Paid Programming,none
+31,WMCNDT,Paid Programming,none
+32,WMCNDT,Paid Programming,none
+33,WMCNDT,Paid Programming,none
+34,WMCNDT,Paid Programming,none
+35,WMCNDT,Paid Programming,none
+36,WMCNDT,Paid Programming,none
+37,WMCNDT,Paid Programming,none
+38,WMCNDT,Paid Programming,none
+39,WMCNDT,Paid Programming,none
+40,WMCNDT,Paid Programming,none
+41,WMCNDT,Paid Programming,none
+42,WMCNDT,Paid Programming,none
+43,WMCNDT,Paid Programming,none
+44,WMCNDT,Paid Programming,none
+45,WMCNDT,Paid Programming,none
+46,WMCNDT,Paid Programming,none
+47,WMCNDT,Paid Programming,none
+0,DSC000,Dirty Jobs | \{91},none
+1,DSC000,Cash Cab: After Dark | \{91},none
+2,DSC000,How It's Made | \{91},none
+3,DSC000,The Nitty Gritty | \{91},none
+4,DSC000,Paid Programming,none
+5,DSC000,Cash Cab: After Dark | \{91},none
+6,DSC000,Cash Cab | \{91},none
+7,DSC000,Paid Programming,none
+8,DSC000,American Chopper | \{91},none
+9,DSC000,Paid Programming,none
+10,DSC000,Cash Cab: After Dark | \{91},none
+11,DSC000,Dirty Jobs | \{91},none
+12,DSC000,Paid Programming,none
+13,DSC000,Auction Kings | \{91},none
+14,DSC000,I Escaped: Real Prison Breaks | \{91},none
+15,DSC000,Overhaulin' | \{91},none
+16,DSC000,Paid Programming,none
+17,DSC000,Paid Programming,none
+18,DSC000,Dirty Jobs | \{91},none
+19,DSC000,Auction Kings | \{91},none
+20,DSC000,Auction Kings | \{91},none
+21,DSC000,The Nitty Gritty | \{91},none
+22,DSC000,Paid Programming,none
+23,DSC000,American Chopper | \{91},none
+24,DSC000,Paid Programming,none
+25,DSC000,Paid Programming | \{91},none
+26,DSC000,Paid Programming | \{91},none
+27,DSC000,Life Today With James Robison | \{91},none
+28,DSC000,Joyce Meyer: Enjoying Everyday Life | \{91},none
+29,DSC000,Paid Programming | \{91},none
+30,DSC000,Paid Programming | \{91},none
+31,DSC000,Paid Programming | \{91},none
+32,DSC000,Paid Programming | \{91},none
+33,DSC000,Paid Programming | \{91},none
+34,DSC000,Paid Programming | \{91},none
+35,DSC000,Paid Programming | \{91},none
+36,DSC000,A Haunting | \{91},none
+37,DSC000,Free Money,none
+38,DSC000,American Chopper | \{91},none
+39,DSC000,Paid Programming,none
+40,DSC000,American Chopper | \{91},none
+41,DSC000,Biker Build-Off | \{91},none
+42,DSC000,How It's Made | \{91},none
+43,DSC000,Paid Programming,none
+44,DSC000,A Haunting | \{91},none
+45,DSC000,Paid Programming,none
+46,DSC000,A Haunting | \{91},none
+47,DSC000,Paid Programming | \{91},none
+0,TLC000,Cake Boss | \{91},none
+1,TLC000,Cake Boss | \{91},none
+2,TLC000,Cake Boss | \{91},none
+3,TLC000,Hoarding: Buried Alive | \{91},none
+4,TLC000,Cake Boss | \{91},none
+5,TLC000,Cake Boss | \{91},none
+6,TLC000,Cake Boss | \{91},none
+7,TLC000,Cake Boss | \{91},none
+8,TLC000,Cake Boss | \{91},none
+9,TLC000,Cake Boss | \{91},none
+10,TLC000,Paid Programming | \{91},none
+11,TLC000,Hoarding: Buried Alive | \{91},none
+12,TLC000,Paid Programming,none
+13,TLC000,Freaky Eaters | \{91},none
+14,TLC000,Say Yes to the Dress | \{91},none
+15,TLC000,Paid Programming | \{91},none
+16,TLC000,Hoarding: Buried Alive | \{91},none
+17,TLC000,Biker Build-Off | \{91},none
+18,TLC000,Free Money,none
+19,TLC000,Freaky Eaters | \{91},none
+20,TLC000,Freaky Eaters | \{91},none
+21,TLC000,Hoarding: Buried Alive | \{91},none
+22,TLC000,Cake Boss | \{91},none
+23,TLC000,Cake Boss | \{91},none
+24,TLC000,Shark Press & Refresh | \{91},none
+25,TLC000,Paid Programming | \{91},none
+26,TLC000,Paid Programming | \{91},none
+27,TLC000,Paid Programming | \{91},none
+28,TLC000,Food Lovers Fat Loss - Eat All Your Favorite Foods & Still Lose Weight | \{91},none
+29,TLC000,Get Ripped in 90 Days | \{91},none
+30,TLC000,Paid Programming | \{91},none
+31,TLC000,Paid Programming | \{91},none
+32,TLC000,Curl Confidence | \{91},none
+33,TLC000,Kill 99 Percent of H1N1 Germs | \{91},none
+34,TLC000,Paid Programming | \{91},none
+35,TLC000,Four Weddings | \{91},none
+36,TLC000,Say Yes to the Dress: Atlanta | \{91},none
+37,TLC000,Four Weddings | \{91},none
+38,TLC000,The Nitty Gritty | \{91},none
+39,TLC000,Cake Boss | \{91},none
+40,TLC000,Say Yes to the Dress: Atlanta | \{91},none
+41,TLC000,Paid Programming,none
+42,TLC000,Auction Kings | \{91},none
+43,TLC000,Four Weddings | \{91},none
+44,TLC000,Overhaulin' | \{91},none
+45,TLC000,Sexy Abs | \{91},none
+46,TLC000,Four Weddings | \{91},none
+47,TLC000,48 Hours: Hard Evidence | \{91},none
+0,BET000,The Game | \{91},none
+1,BET000,The Game | \{91},none
+2,BET000,The Game | \{91},none
+3,BET000,The Game | \{91},none
+4,BET000,The Game | \{91},none
+5,BET000,The Game | \{91},none
+6,BET000,The Game | \{91},none
+7,BET000,The Game | \{91},none
+8,BET000,The Game | \{91},none
+9,BET000,The Game | \{91},none
+10,BET000,The Game | \{91},none
+11,BET000,The Game | \{91},none
+12,BET000,The Game | \{91},none
+13,BET000,The Game | \{91},none
+14,BET000,Trey Songz: My Moment |,none
+15,BET000,Changing Lanes |,none
+16,BET000,Trey Songz: My Moment |,none
+17,BET000,BET Hip-Hop Awards 2009 |,none
+18,BET000,The Wendy Williams Show | \{91},none
+19,BET000,The Game | \{91},none
+20,BET000,The Game | \{91},none
+21,BET000,The Mo'Nique Show |,none
+22,BET000,Trey Songz: My Moment |,none
+23,BET000,The Game | \{91},none
+24,BET000,The Game | \{91},none
+25,BET000,Cake Boss | \{91},none
+26,BET000,Cake Boss | \{91},none
+27,BET000,In Touch,none
+28,BET000,The Wendy Williams Show | \{91},none
+29,BET000,BET Inspiration,none
+30,BET000,BET Inspiration,none
+31,BET000,Trey Songz: My Moment |,none
+32,BET000,BET Inspiration,none
+33,BET000,Paid Programming,none
+34,BET000,BET's Weekend Inspiration,none
+35,BET000,Trey Songz: My Moment |,none
+36,BET000,The Mo'Nique Show |,none
+37,BET000,The Game | \{91},none
+38,BET000,The Game | \{91},none
+39,BET000,The Game | \{91},none
+40,BET000,The Game | \{91},none
+41,BET000,The Game | \{91},none
+42,BET000,The Game | \{91},none
+43,BET000,City Guys | \{91},none
+44,BET000,The Game | \{91},none
+45,BET000,The Game | \{91},none
+46,BET000,The Game | \{91},none
+47,BET000,Changing Lanes |,none
+0,E00000,BET Inspiration,none
+1,E00000,Trey Songz: My Moment |,none
+2,E00000,Paid Programming,none
+3,E00000,Bridget Jones's Diary,none
+4,E00000,Trey Songz: My Moment |,none
+5,E00000,Coyote Ugly,none
+6,E00000,Keeping Up With the Kardashians,none
+7,E00000,Cake Boss | \{91},none
+8,E00000,Keeping Up With the Kardashians,none
+9,E00000,Keeping Up With the Kardashians,none
+10,E00000,Keeping Up With the Kardashians,none
+11,E00000,The Mo'Nique Show |,none
+12,E00000,The Game | \{91},none
+13,E00000,Keeping Up With the Kardashians,none
+14,E00000,Kendra,none
+15,E00000,Kendra,none
+16,E00000,Chelsea Lately,none
+17,E00000,Fashion Police,none
+18,E00000,Fashion Police,none
+19,E00000,Kendra,none
+20,E00000,The Game | \{91},none
+21,E00000,The Soup,none
+22,E00000,Chelsea Lately,none
+23,E00000,The Game | \{91},none
+24,E00000,The Game | \{91},none
+25,E00000,Heidi Klum's In An Instant,none
+26,E00000,The Game | \{91},none
+27,E00000,The Game | \{91},none
+28,E00000,The Game | \{91},none
+29,E00000,Say Goodbye to Bad Hair Days with WEN by Chaz Dean,none
+30,E00000,Kardashians' Secret to Perfect Skin,none
+31,E00000,E! News,none
+32,E00000,Leeza Gibbons' Good-For-Your-Skin Sheer Cover Mineral Makeup!,none
+33,E00000,Paid Programming,none
+34,E00000,Sexy Celebrity Secrets,none
+35,E00000,Chelsea Lately,none
+36,E00000,E! News,none
+37,E00000,The Game | \{91},none
+38,E00000,E! Investigates: Curse of the Lottery 2,none
+39,E00000,The Mo'Nique Show |,none
+40,E00000,Too Young to Kill: 15 Shocking Crimes,none
+41,E00000,E! Investigates: When Husbands Murder,none
+42,E00000,The Spin Crowd,none
+43,E00000,The Daily 10 Weekend,none
+44,E00000,The Game | \{91},none
+45,E00000,Fashion Police,none
+46,E00000,The Soup,none
+47,E00000,30 Most Outrageous Celebrity Feuds,none
+0,WNJS00,Colameco's Food Show | \{91},none
+1,WNJS00,BBC World News | \{91},none
+2,WNJS00,NJN News | \{91},none
+3,WNJS00,Antiques Roadshow | \{91},none
+4,WNJS00,Ask This Old House | \{91},none
+5,WNJS00,NJN News | \{91},none
+6,WNJS00,Fetch! With Ruff Ruffman | \{91},none
+7,WNJS00,Cat in the Hat Knows a Lot About That! | \{91},none
+8,WNJS00,Martha Speaks | \{91},none
+9,WNJS00,Arthur | \{91},none
+10,WNJS00,Cyberchase | \{91},none
+11,WNJS00,Rick Steves' Europe | \{91},none
+12,WNJS00,Burt Wolf: Travels & Traditions |,none
+13,WNJS00,Antiques Roadshow | \{91},none
+14,WNJS00,The Best of the Jack Benny Show |,none
+15,WNJS00,America's Heartland | \{91},none
+16,WNJS00,Nick Stellino's Family Kitchen | \{91},none
+17,WNJS00,Keeping Up Appearances |,none
+18,WNJS00,That Uncertain Feeling \{91},none
+19,WNJS00,Globe Trekker | \{91},none
+20,WNJS00,"Yes, Prime Minister",none
+21,WNJS00,NJN News | \{91},none
+22,WNJS00,Due Process |,none
+23,WNJS00,Super Why! | \{91},none
+24,WNJS00,Between the Lions | \{91},none
+25,WNJS00,NJN News | \{91},none
+26,WNJS00,Curious George | \{91},none
+27,WNJS00,Cat in the Hat Knows a Lot About That! | \{91},none
+28,WNJS00,Super Why! | \{91},none
+29,WNJS00,Tavis Smiley | \{91},none
+30,WNJS00,A Place of Our Own | \{91},none
+31,WNJS00,Southern Accents | \{91},none
+32,WNJS00,Bake Decorate Celebrate! |,none
+33,WNJS00,New York Wine & Table | \{91},none
+34,WNJS00,GED Connection |,none
+35,WNJS00,Dinosaur Train | \{91},none
+36,WNJS00,Sesame Street | \{91},none
+37,WNJS00,Ciao Italia | \{91},none
+38,WNJS00,Primal Grill With Steven Raichlen | \{91},none
+39,WNJS00,Christina Cooks | \{91},none
+40,WNJS00,Smart Travels: Pacific Rim With Rudy Maxa | \{91},none
+41,WNJS00,Curious George | \{91},none
+42,WNJS00,Dinosaur Train | \{91},none
+43,WNJS00,Due Process | \{91},none
+44,WNJS00,WordWorld | \{91},none
+45,WNJS00,Barney & Friends | \{91},none
+46,WNJS00,Clifford the Big Red Dog | \{91},none
+47,WNJS00,Barbecue University With Steven Raichlen | \{91},none
+0,AETV00,The First 48 |,none
+1,AETV00,Paranormal State |,none
+2,AETV00,Paranormal State |,none
+3,AETV00,Billy the Exterminator |,none
+4,AETV00,Billy the Exterminator |,none
+5,AETV00,The First 48 |,none
+6,AETV00,Paranormal State |,none
+7,AETV00,My Ghost Story |,none
+8,AETV00,CSI: Miami | \{91},none
+9,AETV00,Paranormal State |,none
+10,AETV00,CSI: Miami | \{91},none
+11,AETV00,Billy the Exterminator |,none
+12,AETV00,Billy the Exterminator |,none
+13,AETV00,Hoarders |,none
+14,AETV00,Barney & Friends | \{91},none
+15,AETV00,Hoarders |,none
+16,AETV00,Barbecue University With Steven Raichlen | \{91},none
+17,AETV00,Due Process | \{91},none
+18,AETV00,Intervention |,none
+19,AETV00,Parking Wars |,none
+20,AETV00,Parking Wars |,none
+21,AETV00,Parking Wars |,none
+22,AETV00,Parking Wars |,none
+23,AETV00,The Sopranos | \{91},none
+24,AETV00,Gene Simmons Family Jewels |,none
+25,AETV00,Paid Programming,none
+26,AETV00,Gene Simmons Family Jewels |,none
+27,AETV00,Gene Simmons Family Jewels |,none
+28,AETV00,Gene Simmons Family Jewels |,none
+29,AETV00,Paid Programming,none
+30,AETV00,Paid Programming,none
+31,AETV00,BBC World News | \{91},none
+32,AETV00,Paid Programming,none
+33,AETV00,Paid Programming,none
+34,AETV00,Paid Programming,none
+35,AETV00,Gene Simmons Family Jewels |,none
+36,AETV00,The Sopranos | \{91},none
+37,AETV00,Billy the Exterminator |,none
+38,AETV00,The First 48 |,none
+39,AETV00,Billy the Exterminator |,none
+40,AETV00,Gene Simmons Family Jewels |,none
+41,AETV00,The First 48 |,none
+42,AETV00,Heat |,none
+43,AETV00,Sell This House! |,none
+44,AETV00,CSI: Miami | \{91},none
+45,AETV00,Sell This House! |,none
+46,AETV00,CSI: Miami | \{91},none
+47,AETV00,Intervention |,none
+0,VH1000,Paid Programming,none
+1,VH1000,Real Chance of Love | \{91},none
+2,VH1000,Real Chance of Love | \{91},none
+3,VH1000,Paid Programming,none
+4,VH1000,Gene Simmons Family Jewels |,none
+5,VH1000,Paid Programming,none
+6,VH1000,Real Chance of Love | \{91},none
+7,VH1000,Real Chance of Love | \{91},none
+8,VH1000,Gene Simmons Family Jewels |,none
+9,VH1000,Real Chance of Love | \{91},none
+10,VH1000,Gene Simmons Family Jewels |,none
+11,VH1000,ATL \{91},none
+12,VH1000,Billy the Exterminator |,none
+13,VH1000,Famous Crime Scene \{91},none
+14,VH1000,The New Virginity \{91},none
+15,VH1000,CSI: Miami | \{91},none
+16,VH1000,Unplugged \{91},none
+17,VH1000,Plastic Surgery Obsession \{91},none
+18,VH1000,Heat |,none
+19,VH1000,The First 48 |,none
+20,VH1000,Billy the Exterminator |,none
+21,VH1000,Gene Simmons Family Jewels |,none
+22,VH1000,NWA: The World's Most Dangerous Group | \{91},none
+23,VH1000,Gene Simmons Family Jewels |,none
+24,VH1000,Real Chance of Love | \{91},none
+25,VH1000,My Ghost Story |,none
+26,VH1000,CSI: Miami | \{91},none
+27,VH1000,Paranormal State |,none
+28,VH1000,CSI: Miami | \{91},none
+29,VH1000,Jump Start \{91},none
+30,VH1000,The Short List \{91},none
+31,VH1000,Paranormal State |,none
+32,VH1000,Paranormal State |,none
+33,VH1000,Billy the Exterminator |,none
+34,VH1000,Billy the Exterminator |,none
+35,VH1000,Billy the Exterminator |,none
+36,VH1000,Top 20 Countdown \{91},none
+37,VH1000,Real Chance of Love | \{91},none
+38,VH1000,Parking Wars |,none
+39,VH1000,Real Chance of Love | \{91},none
+40,VH1000,Parking Wars |,none
+41,VH1000,Intervention |,none
+42,VH1000,Real Chance of Love | \{91},none
+43,VH1000,Hoarders |,none
+44,VH1000,Barney & Friends | \{91},none
+45,VH1000,Hoarders |,none
+46,VH1000,Barbecue University With Steven Raichlen | \{91},none
+47,VH1000,Top 20 Countdown \{91},none
+0,LIFE00,Deadly Honeymoon |,none
+1,LIFE00,Paranormal State |,none
+2,LIFE00,Billy the Exterminator |,none
+3,LIFE00,Billy the Exterminator |,none
+4,LIFE00,Billy the Exterminator |,none
+5,LIFE00,The Short List \{91},none
+6,LIFE00,Jump Start \{91},none
+7,LIFE00,My Ghost Story |,none
+8,LIFE00,CSI: Miami | \{91},none
+9,LIFE00,Paranormal State |,none
+10,LIFE00,CSI: Miami | \{91},none
+11,LIFE00,The 19th Wife |,none
+12,LIFE00,Real Chance of Love | \{91},none
+13,LIFE00,How I Met Your Mother | \{91},none
+14,LIFE00,Medium | \{91},none
+15,LIFE00,Barbecue University With Steven Raichlen | \{91},none
+16,LIFE00,Paid Programming,none
+17,LIFE00,On the Road With Austin & Santino |,none
+18,LIFE00,Real Chance of Love | \{91},none
+19,LIFE00,Parking Wars |,none
+20,LIFE00,Real Chance of Love | \{91},none
+21,LIFE00,Project Runway |,none
+22,LIFE00,Intervention |,none
+23,LIFE00,Ann Rule's Everything She Ever Wanted |,none
+24,LIFE00,Gene Simmons Family Jewels |,none
+25,LIFE00,Zumba Sexy Body Transformation System,none
+26,LIFE00,Paid Programming,none
+27,LIFE00,InStyler - Amazing New Rotating Hot Iron,none
+28,LIFE00,Paid Programming,none
+29,LIFE00,Paid Programming,none
+30,LIFE00,Paid Programming,none
+31,LIFE00,Zumba Sexy Body Transformation System,none
+32,LIFE00,Shark Press & Refresh,none
+33,LIFE00,InStyler - Amazing New Rotating Hot Iron,none
+34,LIFE00,Paid Programming,none
+35,LIFE00,Zumba Sexy Body Transformation System,none
+36,LIFE00,Sexy Gorgeous Legs,none
+37,LIFE00,The First 48 |,none
+38,LIFE00,"Live Once, Die Twice |",none
+39,LIFE00,Gene Simmons Family Jewels |,none
+40,LIFE00,NWA: The World's Most Dangerous Group | \{91},none
+41,LIFE00,Heat |,none
+42,LIFE00,Plastic Surgery Obsession \{91},none
+43,LIFE00,Free Money ''They'' Don't Want You to Know About,none
+44,LIFE00,NO NEED TO DIET! This Is a Must See!,none
+45,LIFE00,Leeza Gibbons' Good-For-Your-Skin Sheer Cover Mineral Makeup!,none
+46,LIFE00,Dark Beauty |,none
+47,LIFE00,Disney Storybook Vacations,none
+0,HLN000,Issues With Jane Velez-Mitchell,none
+1,HLN000,Zumba Sexy Body Transformation System,none
+2,HLN000,InStyler - Amazing New Rotating Hot Iron,none
+3,HLN000,Nancy Grace,none
+4,HLN000,Zumba Sexy Body Transformation System,none
+5,HLN000,Prime News |,none
+6,HLN000,Paid Programming,none
+7,HLN000,Zumba Sexy Body Transformation System,none
+8,HLN000,Clark Howard,none
+9,HLN000,InStyler - Amazing New Rotating Hot Iron,none
+10,HLN000,Showbiz Tonight,none
+11,HLN000,The Joy Behar Show,none
+12,HLN000,The First 48 |,none
+13,HLN000,Nancy Grace,none
+14,HLN000,Leeza Gibbons' Good-For-Your-Skin Sheer Cover Mineral Makeup!,none
+15,HLN000,Showbiz Tonight,none
+16,HLN000,Disney Storybook Vacations,none
+17,HLN000,Free Money ''They'' Don't Want You to Know About,none
+18,HLN000,The Joy Behar Show,none
+19,HLN000,Nancy Grace,none
+20,HLN000,Gene Simmons Family Jewels |,none
+21,HLN000,Showbiz Tonight,none
+22,HLN000,Heat |,none
+23,HLN000,Gene Simmons Family Jewels |,none
+24,HLN000,Ann Rule's Everything She Ever Wanted |,none
+25,HLN000,My Ghost Story |,none
+26,HLN000,HLN News,none
+27,HLN000,Paranormal State |,none
+28,HLN000,CSI: Miami | \{91},none
+29,HLN000,Morning Express With Robin Meade,none
+30,HLN000,The Short List \{91},none
+31,HLN000,Paranormal State |,none
+32,HLN000,Issues With Jane Velez-Mitchell,none
+33,HLN000,Billy the Exterminator |,none
+34,HLN000,The Joy Behar Show,none
+35,HLN000,The 19th Wife |,none
+36,HLN000,Real Chance of Love | \{91},none
+37,HLN000,Parking Wars |,none
+38,HLN000,HLN News,none
+39,HLN000,Project Runway |,none
+40,HLN000,Intervention |,none
+41,HLN000,HLN News,none
+42,HLN000,On the Road With Austin & Santino |,none
+43,HLN000,How I Met Your Mother | \{91},none
+44,HLN000,Morning Express,none
+45,HLN000,Barbecue University With Steven Raichlen | \{91},none
+46,HLN000,Showbiz Tonight,none
+47,HLN000,Nancy Grace,none
+0,HSN000,Silver and Exotics,none
+1,HSN000,Heat Surge Portable Fireplace,none
+2,HSN000,no! no! Professional Hair Removal,none
+3,HSN000,Silver Designs by Nicky Butler,none
+4,HSN000,The 19th Wife |,none
+5,HSN000,Jade of Yesteryear,none
+6,HSN000,Morning Express With Robin Meade,none
+7,HSN000,Heat Surge Portable Fireplace,none
+8,HSN000,Laundry Room Solutions,none
+9,HSN000,Paranormal State |,none
+10,HSN000,Silver and Opaques,none
+11,HSN000,Silver and Opaques Featuring Turquoise,none
+12,HSN000,Parking Wars |,none
+13,HSN000,Home Solutions,none
+14,HSN000,no! no! Professional Hair Removal,none
+15,HSN000,Silver Designs by Nicky Butler,none
+16,HSN000,Ingenious Designs,none
+17,HSN000,How I Met Your Mother | \{91},none
+18,HSN000,Hunter,none
+19,HSN000,Samy Salon Collections 9th Anniversary,none
+20,HSN000,Project Runway |,none
+21,HSN000,ProForm Health & Fitness,none
+22,HSN000,Heat Surge Portable Fireplace,none
+23,HSN000,Fall Cooking Featuring Ingrid Hoffmann,none
+24,HSN000,Gene Simmons Family Jewels |,none
+25,HSN000,HSN Today,none
+26,HSN000,HSN Today,none
+27,HSN000,HSN Today,none
+28,HSN000,HSN Today,none
+29,HSN000,HSN Today,none
+30,HSN000,Prime News |,none
+31,HSN000,Zumba Sexy Body Transformation System,none
+32,HSN000,Designer Fashions,none
+33,HSN000,Nancy Grace,none
+34,HSN000,Laundry Room Solutions,none
+35,HSN000,The Joy Behar Show,none
+36,HSN000,Fall Cooking Featuring Ingrid Hoffmann,none
+37,HSN000,no! no! Professional Hair Removal,none
+38,HSN000,Samy Salon Collections 9th Anniversary,none
+39,HSN000,Fusion Beauty,none
+40,HSN000,ProForm Health & Fitness,none
+41,HSN000,Colors of Pearls,none
+42,HSN000,MGSKINLABS by Dr. Michele Green,none
+43,HSN000,no! no! Professional Hair Removal,none
+44,HSN000,Marcasite Jewelry,none
+45,HSN000,Showbiz Tonight,none
+46,HSN000,Silver and Opaques,none
+47,HSN000,Halloween Treats,none
+0,ABCF00,Designer Fashions,none
+1,ABCF00,Zumba Sexy Body Transformation System,none
+2,ABCF00,The Wedding Date |,none
+3,ABCF00,Laundry Room Solutions,none
+4,ABCF00,Where the Heart Is |,none
+5,ABCF00,White Oleander |,none
+6,ABCF00,HSN Today,none
+7,ABCF00,Love & Basketball |,none
+8,ABCF00,HSN Today,none
+9,ABCF00,The Notebook |,none
+10,ABCF00,HSN Today,none
+11,ABCF00,Fall Cooking Featuring Ingrid Hoffmann,none
+12,ABCF00,Miss Congeniality |,none
+13,ABCF00,Zola Levitt Presents |,none
+14,ABCF00,Paid Programming,none
+15,ABCF00,Paid Programming,none
+16,ABCF00,Big Boss Grill,none
+17,ABCF00,Ed Young,none
+18,ABCF00,Joel Osteen |,none
+19,ABCF00,Samy Salon Collections 9th Anniversary,none
+20,ABCF00,Fusion Beauty,none
+21,ABCF00,America's Funniest Home Videos | \{91},none
+22,ABCF00,Colors of Pearls,none
+23,ABCF00,Gene Simmons Family Jewels |,none
+24,ABCF00,Fall Cooking Featuring Ingrid Hoffmann,none
+25,ABCF00,Disney Storybook Vacations,none
+26,ABCF00,Uptown Girls |,none
+27,ABCF00,Paranormal State |,none
+28,ABCF00,Silver and Opaques,none
+29,ABCF00,Paid Programming,none
+30,ABCF00,Paid Programming,none
+31,ABCF00,Paid Programming,none
+32,ABCF00,Paid Programming,none
+33,ABCF00,Paid Programming,none
+34,ABCF00,Paid Programming,none
+35,ABCF00,Silver and Opaques Featuring Turquoise,none
+36,ABCF00,Sixteen Candles |,none
+37,ABCF00,Samy Salon Collections 9th Anniversary,none
+38,ABCF00,Miss Congeniality |,none
+39,ABCF00,ProForm Health & Fitness,none
+40,ABCF00,Blue Crush |,none
+41,ABCF00,Sixteen Candles |,none
+42,ABCF00,How I Met Your Mother | \{91},none
+43,ABCF00,Dirty Dancing |,none
+44,ABCF00,no! no! Professional Hair Removal,none
+45,ABCF00,Silver Designs by Nicky Butler,none
+46,ABCF00,The Wedding Date |,none
+47,ABCF00,Paid Programming,none
+0,NIK000,iCarly | \{91},none
+1,NIK000,iCarly | \{91},none
+2,NIK000,iCarly | \{91},none
+3,NIK000,Fred: The Movie | \{91},none
+4,NIK000,Silver and Opaques Featuring Turquoise,none
+5,NIK000,iCarly | \{91},none
+6,NIK000,SpongeBob SquarePants | \{91},none
+7,NIK000,SpongeBob SquarePants | \{91},none
+8,NIK000,SpongeBob SquarePants | \{91},none
+9,NIK000,SpongeBob SquarePants | \{91},none
+10,NIK000,SpongeBob SquarePants | \{91},none
+11,NIK000,Sixteen Candles |,none
+12,NIK000,Samy Salon Collections 9th Anniversary,none
+13,NIK000,Everybody Hates Chris | \{91},none
+14,NIK000,George Lopez | \{91},none
+15,NIK000,My Wife and Kids | \{91},none
+16,NIK000,My Wife and Kids | \{91},none
+17,NIK000,Everybody Hates Chris | \{91},none
+18,NIK000,Everybody Hates Chris | \{91},none
+19,NIK000,Everybody Hates Chris | \{91},none
+20,NIK000,Everybody Hates Chris | \{91},none
+21,NIK000,Everybody Hates Chris | \{91},none
+22,NIK000,Everybody Hates Chris | \{91},none
+23,NIK000,SpongeBob SquarePants | \{91},none
+24,NIK000,Big Time Rush | \{91},none
+25,NIK000,Family Matters | \{91},none
+26,NIK000,The Adventures of Jimmy Neutron: Boy Genius | \{91},none
+27,NIK000,The Adventures of Jimmy Neutron: Boy Genius | \{91},none
+28,NIK000,SpongeBob SquarePants | \{91},none
+29,NIK000,Family Matters | \{91},none
+30,NIK000,Family Matters | \{91},none
+31,NIK000,Everybody Hates Chris | \{91},none
+32,NIK000,The Nanny | \{91},none
+33,NIK000,The Nanny | \{91},none
+34,NIK000,Family Matters | \{91},none
+35,NIK000,SpongeBob SquarePants | \{91},none
+36,NIK000,SpongeBob SquarePants | \{91},none
+37,NIK000,iCarly | \{91},none
+38,NIK000,Victorious | \{91},none
+39,NIK000,Victorious | \{91},none
+40,NIK000,Big Time Rush | \{91},none
+41,NIK000,iCarly | \{91},none
+42,NIK000,Back at the Barnyard | \{91},none
+43,NIK000,SpongeBob SquarePants | \{91},none
+44,NIK000,Fanboy and Chum Chum | \{91},none
+45,NIK000,Fanboy and Chum Chum | \{91},none
+46,NIK000,The Fairly OddParents | \{91},none
+47,NIK000,Everybody Hates Chris | \{91},none
+0,DISN00,The Suite Life on Deck |,none
+1,DISN00,Hannah Montana | \{91},none
+2,DISN00,The Suite Life on Deck |,none
+3,DISN00,Phineas and Ferb |,none
+4,DISN00,Good Luck Charlie,none
+5,DISN00,Hannah Montana | \{91},none
+6,DISN00,Wizards of Waverly Place,none
+7,DISN00,Family Matters | \{91},none
+8,DISN00,Fish Hooks |,none
+9,DISN00,The Adventures of Jimmy Neutron: Boy Genius | \{91},none
+10,DISN00,Wizards of Waverly Place,none
+11,DISN00,Good Luck Charlie,none
+12,DISN00,Sonny With a Chance,none
+13,DISN00,Sonny With a Chance,none
+14,DISN00,The Suite Life on Deck |,none
+15,DISN00,Phineas and Ferb |,none
+16,DISN00,The Color of Friendship |,none
+17,DISN00,Sonny With a Chance,none
+18,DISN00,Good Luck Charlie,none
+19,DISN00,Wizards of Waverly Place,none
+20,DISN00,Wizards of Waverly Place,none
+21,DISN00,Phineas and Ferb |,none
+22,DISN00,Good Luck Charlie,none
+23,DISN00,WALL-E,none
+24,DISN00,Hannah Montana | \{91},none
+25,DISN00,Imagination Movers,none
+26,DISN00,Dance-A-Lot-Robot,none
+27,DISN00,Special Agent Oso,none
+28,DISN00,Handy Manny's School for Tools,none
+29,DISN00,Tasty Time With ZeFronk,none
+30,DISN00,Jungle Junction,none
+31,DISN00,iCarly | \{91},none
+32,DISN00,Dance-A-Lot-Robot,none
+33,DISN00,Little Einsteins,none
+34,DISN00,Handy Manny's School for Tools,none
+35,DISN00,Mickey Mouse Clubhouse |,none
+36,DISN00,Phineas and Ferb | \{91},none
+37,DISN00,Wizards of Waverly Place,none
+38,DISN00,Good Luck Charlie,none
+39,DISN00,Sonny With a Chance,none
+40,DISN00,Hannah Montana | \{91},none
+41,DISN00,Wizards of Waverly Place | \{91},none
+42,DISN00,The Suite Life on Deck | \{91},none
+43,DISN00,Phineas and Ferb |,none
+44,DISN00,Phineas and Ferb |,none
+45,DISN00,Phineas and Ferb | \{91},none
+46,DISN00,The Suite Life on Deck | \{91},none
+47,DISN00,iCarly | \{91},none
+0,WYBE00,Democracy Now! | \{91},none
+1,WYBE00,Grit TV,none
+2,WYBE00,The New Metropolis | \{91},none
+3,WYBE00,MiND,none
+4,WYBE00,Mickey Mouse Clubhouse |,none
+5,WYBE00,Journal,none
+6,WYBE00,Asia Brief,none
+7,WYBE00,Imagination Movers,none
+8,WYBE00,Dance-A-Lot-Robot,none
+9,WYBE00,Special Agent Oso,none
+10,WYBE00,NTDTV Daily News,none
+11,WYBE00,Philadelphia Stories,none
+12,WYBE00,Wizards of Waverly Place,none
+13,WYBE00,MiND,none
+14,WYBE00,Phineas and Ferb | \{91},none
+15,WYBE00,MiND,none
+16,WYBE00,iCarly | \{91},none
+17,WYBE00,You Are My Destiny,none
+18,WYBE00,Happiness in the Wind,none
+19,WYBE00,Please Marry Me,none
+20,WYBE00,Sonny With a Chance,none
+21,WYBE00,MiND,none
+22,WYBE00,Wizards of Waverly Place | \{91},none
+23,WYBE00,Hannah Montana | \{91},none
+24,WYBE00,WALL-E,none
+25,WYBE00,Family Matters | \{91},none
+26,WYBE00,Fish Hooks |,none
+27,WYBE00,The Adventures of Jimmy Neutron: Boy Genius | \{91},none
+28,WYBE00,Enviropals | \{91},none
+29,WYBE00,Wizards of Waverly Place,none
+30,WYBE00,Hannah Montana | \{91},none
+31,WYBE00,Hannah Montana | \{91},none
+32,WYBE00,The Suite Life on Deck |,none
+33,WYBE00,Phineas and Ferb |,none
+34,WYBE00,Good Luck Charlie,none
+35,WYBE00,Biz Kid$ | \{91},none
+36,WYBE00,MiND,none
+37,WYBE00,Wizards of Waverly Place,none
+38,WYBE00,Philadelphia Stories,none
+39,WYBE00,Phineas and Ferb |,none
+40,WYBE00,MiND,none
+41,WYBE00,Asian Variety Show - Total Request,none
+42,WYBE00,Sonny With a Chance,none
+43,WYBE00,The Science Lab of Grand Hank,none
+44,WYBE00,MiND,none
+45,WYBE00,Phineas and Ferb |,none
+46,WYBE00,Asian Variety Show,none
+47,WYBE00,The Suite Life on Deck |,none
+0,TNT000,Bones | \{91},none
+1,TNT000,Hannah Montana | \{91},none
+2,TNT000,NBA Basketball |,none
+3,TNT000,Bones | \{91},none
+4,TNT000,Biz Kid$ | \{91},none
+5,TNT000,Law & Order | \{91},none
+6,TNT000,Tomorrow Never Dies |,none
+7,TNT000,The Fast and the Furious: Tokyo Drift |,none
+8,TNT000,Law & Order | \{91},none
+9,TNT000,The Adventures of Jimmy Neutron: Boy Genius | \{91},none
+10,TNT000,Law & Order | \{91},none
+11,TNT000,Law & Order | \{91},none
+12,TNT000,Braveheart |,none
+13,TNT000,CSI: NY | \{91},none
+14,TNT000,Bones | \{91},none
+15,TNT000,Rizzoli & Isles |,none
+16,TNT000,Law & Order | \{91},none
+17,TNT000,Runaway Bride |,none
+18,TNT000,CSI: NY | \{91},none
+19,TNT000,Law & Order | \{91},none
+20,TNT000,The World Is Not Enough |,none
+21,TNT000,CSI: NY | \{91},none
+22,TNT000,Bones | \{91},none
+23,TNT000,Cold Case | \{91},none
+24,TNT000,American Gangster |,none
+25,TNT000,Imagination Movers,none
+26,TNT000,Angel | \{91},none
+27,TNT000,Special Agent Oso,none
+28,TNT000,Charmed | \{91},none
+29,TNT000,Angel | \{91},none
+30,TNT000,Bait Car |,none
+31,TNT000,Law & Order | \{91},none
+32,TNT000,NUMB3RS | \{91},none
+33,TNT000,World's Dumbest ... |,none
+34,TNT000,NUMB3RS | \{91},none
+35,TNT000,Philadelphia Stories,none
+36,TNT000,Charmed | \{91},none
+37,TNT000,Spanglish |,none
+38,TNT000,Las Vegas | \{91},none
+39,TNT000,MiND,none
+40,TNT000,The Closer |,none
+41,TNT000,Las Vegas | \{91},none
+42,TNT000,Meet the Parents |,none
+43,TNT000,MiND,none
+44,TNT000,Supernatural | \{91},none
+45,TNT000,MiND,none
+46,TNT000,Supernatural | \{91},none
+47,TNT000,Cold Case | \{91},none
+0,WUVP00,Llena de Amor |,none
+1,WUVP00,Noticiero Univisi\{F3}n |,none
+2,WUVP00,Humor A Quien Humor Merece |,none
+3,WUVP00,Eva Luna |,none
+4,WUVP00,Philadelphia Stories,none
+5,WUVP00,Noticiero 65: Edicion Nocturna,none
+6,WUVP00,Primer Impacto |,none
+7,WUVP00,Cero en Conducta |,none
+8,WUVP00,El Gordo y la Flaca |,none
+9,WUVP00,F\{FA}tbol de la Liga Mexicana |,none
+10,WUVP00,Primer Impacto |,none
+11,WUVP00,Soy Tu Due\{F1}a |,none
+12,WUVP00,F\{FA}tbol |,none
+13,WUVP00,Las Tontas No Van al Cielo |,none
+14,WUVP00,Noticiero Univision: \{DA}ltima Hora |,none
+15,WUVP00,Programa Pagado,none
+16,WUVP00,Programa Pagado,none
+17,WUVP00,MiND,none
+18,WUVP00,La Verdad Oculta |,none
+19,WUVP00,Aqu\{ED} y Ahora |,none
+20,WUVP00,MiND,none
+21,WUVP00,Noticiero 65: Edicion Nocturna,none
+22,WUVP00,Noticiero Univision: \{DA}ltima Hora |,none
+23,WUVP00,Mar de Amor |,none
+24,WUVP00,Primer Impacto: Fin de Semana |,none
+25,WUVP00,Tu Desayuno Alegre: Fin de Semana |,none
+26,WUVP00,\{A1}Despierta Am\{E9}rica! |,none
+27,WUVP00,Crema de Concha de Nacar |,none
+28,WUVP00,Programa Pagado,none
+29,WUVP00,Tu Desayuno Alegre |,none
+30,WUVP00,Noticiero Univision: \{DA}ltima Hora,none
+31,WUVP00,Hannah Montana | \{91},none
+32,WUVP00,El Gordo y la Flaca,none
+33,WUVP00,Bones | \{91},none
+34,WUVP00,Primer Impacto Extra,none
+35,WUVP00,Programa Pagado,none
+36,WUVP00,Zigby |,none
+37,WUVP00,Law & Order | \{91},none
+38,WUVP00,F\{E1}brica de Risas |,none
+39,WUVP00,Vecinos |,none
+40,WUVP00,Atr\{E9}vete a So\{F1}ar |,none
+41,WUVP00,La Fea M\{E1}s Bella |,none
+42,WUVP00,Agenda Washington,none
+43,WUVP00,Pinky Dinky Doo | \{91},none
+44,WUVP00,\{BF}Qui\{E9}n Tiene la Raz\{F3}n? |,none
+45,WUVP00,"Go, Diego, Go! | \{91}",none
+46,WUVP00,Casos de Familia |,none
+47,WUVP00,Cl\{E1}sicos de Casos de Familia,none
+0,TCM000,El Gordo y la Flaca,none
+1,TCM000,Out of the Fog |,none
+2,TCM000,Now Playing,none
+3,TCM000,Penthouse,none
+4,TCM000,Programa Pagado,none
+5,TCM000,Bye Bye Birdie |,none
+6,TCM000,Irma La Douce |,none
+7,TCM000,Gunfight at the O.K. Corral |,none
+8,TCM000,Who Was That Lady?,none
+9,TCM000,Fort Defiance,none
+10,TCM000,The Magnificent Seven |,none
+11,TCM000,Skyscraper Souls,none
+12,TCM000,The Brides of Dracula,none
+13,TCM000,This Is Spinal Tap |,none
+14,TCM000,They Live by Night |,none
+15,TCM000,Ballad of a Soldier,none
+16,TCM000,Psychomania,none
+17,TCM000,Phantom,none
+18,TCM000,Gun Crazy,none
+19,TCM000,To Kill a Mockingbird |,none
+20,TCM000,Vecinos |,none
+21,TCM000,"Dracula, Prince of Darkness",none
+22,TCM000,Touch of Evil |,none
+23,TCM000,Embraceable You,none
+24,TCM000,The Old Man and the Sea,none
+25,TCM000,Pilot No. 5 |,none
+26,TCM000,Scaramouche,none
+27,TCM000,Murder on the Blackboard,none
+28,TCM000,Love Crazy |,none
+29,TCM000,Now Playing,none
+30,TCM000,MGM Parade Show,none
+31,TCM000,Noticiero Univisi\{F3}n |,none
+32,TCM000,Daughters of Satan,none
+33,TCM000,A Farewell to Arms,none
+34,TCM000,The Great Train Robbery |,none
+35,TCM000,Greed,none
+36,TCM000,Kiss Me Kate |,none
+37,TCM000,The Younger Brothers,none
+38,TCM000,Down the Stretch,none
+39,TCM000,The Searchers |,none
+40,TCM000,Pal Joey |,none
+41,TCM000,Wait Until Dark |,none
+42,TCM000,Johnny Guitar |,none
+43,TCM000,Look Back in Anger |,none
+44,TCM000,Easy to Wed |,none
+45,TCM000,Here Come the Marines,none
+46,TCM000,The Eddy Duchin Story,none
+47,TCM000,Boxcar Bertha |,none
+0,WLVT00,Nightly Business Report | \{91},none
+1,WLVT00,Noticiero Univisi\{F3}n |,none
+2,WLVT00,Tempo Public Square,none
+3,WLVT00,Washington Week | \{91},none
+4,WLVT00,Need to Know | \{91},none
+5,WLVT00,PBS NewsHour | \{91},none
+6,WLVT00,Curious George | \{91},none
+7,WLVT00,The Electric Company | \{91},none
+8,WLVT00,Martha Speaks | \{91},none
+9,WLVT00,Arthur | \{91},none
+10,WLVT00,Clifford the Big Red Dog | \{91},none
+11,WLVT00,Antiques Roadshow | \{91},none
+12,WLVT00,Huddle Up,none
+13,WLVT00,Washington Week | \{91},none
+14,WLVT00,Easy Yoga for Arthritis With Peggy Cappy | \{91},none
+15,WLVT00,In Search of Myths and Heroes | \{91},none
+16,WLVT00,Antiques Roadshow | \{91},none
+17,WLVT00,Tavis Smiley | \{91},none
+18,WLVT00,Charlie Rose | \{91},none
+19,WLVT00,Latin Music USA | \{91},none
+20,WLVT00,Visions of Italy: Northern Style | \{91},none
+21,WLVT00,Tempo Extra,none
+22,WLVT00,Charlie Rose | \{91},none
+23,WLVT00,Cyberchase | \{91},none
+24,WLVT00,WordGirl | \{91},none
+25,WLVT00,Arthur | \{91},none
+26,WLVT00,Martha Speaks | \{91},none
+27,WLVT00,Clifford the Big Red Dog | \{91},none
+28,WLVT00,Sesame Street | \{91},none
+29,WLVT00,Fetch! With Ruff Ruffman | \{91},none
+30,WLVT00,Between the Lions | \{91},none
+31,WLVT00,Tavis Smiley | \{91},none
+32,WLVT00,The This Old House Hour | \{91},none
+33,WLVT00,Ask This Old House | \{91},none
+34,WLVT00,Tempo InDepth,none
+35,WLVT00,Trans-Siberian Orchestra: Ghosts of Christmas Eve | \{91},none
+36,WLVT00,Curious George | \{91},none
+37,WLVT00,Cat in the Hat Knows a Lot About That! | \{91},none
+38,WLVT00,Sesame Street |,none
+39,WLVT00,Easy Yoga for Arthritis With Peggy Cappy | \{91},none
+40,WLVT00,WordWorld | \{91},none
+41,WLVT00,Barney & Friends | \{91},none
+42,WLVT00,Caillou | \{91},none
+43,WLVT00,Cat in the Hat Knows a Lot About That! | \{91},none
+44,WLVT00,Super Why! | \{91},none
+45,WLVT00,Dinosaur Train | \{91},none
+46,WLVT00,Sid the Science Kid | \{91},none
+47,WLVT00,Tavis Smiley | \{91},none
+0,COMEDY,Tosh.0 |,none
+1,COMEDY,Scrubs | \{91},none
+2,COMEDY,Tosh.0 |,none
+3,COMEDY,Tosh.0 |,none
+4,COMEDY,Tosh.0 |,none
+5,COMEDY,Scrubs | \{91},none
+6,COMEDY,Tosh.0 |,none
+7,COMEDY,Arthur | \{91},none
+8,COMEDY,National Security |,none
+9,COMEDY,Clifford the Big Red Dog | \{91},none
+10,COMEDY,Comedy Central Presents |,none
+11,COMEDY,Bill Engvall: 15 Degrees Off Cool |,none
+12,COMEDY,Cat in the Hat Knows a Lot About That! | \{91},none
+13,COMEDY,Futurama | \{91},none
+14,COMEDY,Futurama | \{91},none
+15,COMEDY,South Park |,none
+16,COMEDY,Ugly Americans |,none
+17,COMEDY,Futurama | \{91},none
+18,COMEDY,Tosh.0 |,none
+19,COMEDY,Jeff Dunham: Arguing With Myself |,none
+20,COMEDY,Easy Yoga for Arthritis With Peggy Cappy | \{91},none
+21,COMEDY,The Daily Show With Jon Stewart |,none
+22,COMEDY,The Colbert Report |,none
+23,COMEDY,Strange Wilderness |,none
+24,COMEDY,The Colbert Report |,none
+25,COMEDY,Get Ripped in 90 Days,none
+26,COMEDY,Zumba Sexy Body Transformation System,none
+27,COMEDY,Get Better Grades,none
+28,COMEDY,NO NEED TO DIET! This Is a Must See!,none
+29,COMEDY,Paid Programming,none
+30,COMEDY,Paid Programming,none
+31,COMEDY,Charlie Murphy: I Will Not Apologize |,none
+32,COMEDY,Comedy Central Presents |,none
+33,COMEDY,Washington Week | \{91},none
+34,COMEDY,Paid Programming,none
+35,COMEDY,Sexy Abs,none
+36,COMEDY,Stella |,none
+37,COMEDY,Scrubs | \{91},none
+38,COMEDY,Comedy Central Presents |,none
+39,COMEDY,Comedy Central Presents |,none
+40,COMEDY,The Daily Show With Jon Stewart |,none
+41,COMEDY,Scrubs | \{91},none
+42,COMEDY,Scrubs | \{91},none
+43,COMEDY,RENO 911! |,none
+44,COMEDY,The Daily Show With Jon Stewart |,none
+45,COMEDY,The Colbert Report |,none
+46,COMEDY,Beverly Hills Cop III |,none
+47,COMEDY,National Security |,none
+0,APL000,Lost Tapes | \{91},none
+1,APL000,Lost Tapes | \{91},none
+2,APL000,Lost Tapes | \{91},none
+3,APL000,"Weird, True & Freaky | \{91}",none
+4,APL000,"Weird, True & Freaky \{91}",none
+5,APL000,Lost Tapes | \{91},none
+6,APL000,Lost Tapes | \{91},none
+7,APL000,Lost Tapes | \{91},none
+8,APL000,Lost Tapes | \{91},none
+9,APL000,Lost Tapes | \{91},none
+10,APL000,Lost Tapes | \{91},none
+11,APL000,Lost Tapes | \{91},none
+12,APL000,Lost Tapes \{91},none
+13,APL000,"Weird, True & Freaky | \{91}",none
+14,APL000,Lost Tapes | \{91},none
+15,APL000,Pit Boss | \{91},none
+16,APL000,National Security |,none
+17,APL000,Lost Tapes | \{91},none
+18,APL000,Lost Tapes | \{91},none
+19,APL000,Lost Tapes | \{91},none
+20,APL000,Lost Tapes \{91},none
+21,APL000,Lost Tapes | \{91},none
+22,APL000,Lost Tapes \{91},none
+23,APL000,Lost Tapes | \{91},none
+24,APL000,Lost Tapes | \{91},none
+25,APL000,Escape to Chimp Eden | \{91},none
+26,APL000,The Planet's Funniest Animals | \{91},none
+27,APL000,It's Me or the Dog | \{91},none
+28,APL000,Pet Star | \{91},none
+29,APL000,Orangutan Island | \{91},none
+30,APL000,Lost Tapes | \{91},none
+31,APL000,"Weird, True & Freaky | \{91}",none
+32,APL000,I Was Bitten | \{91},none
+33,APL000,Lost Tapes | \{91},none
+34,APL000,River Monsters: Unhooked | \{91},none
+35,APL000,The Planet's Funniest Animals | \{91},none
+36,APL000,It's Me or the Dog | \{91},none
+37,APL000,Jeff Dunham: Arguing With Myself |,none
+38,APL000,Animal Cops Phoenix | \{91},none
+39,APL000,The Daily Show With Jon Stewart |,none
+40,APL000,Lost Tapes | \{91},none
+41,APL000,Animal Cops Phoenix | \{91},none
+42,APL000,Futurama | \{91},none
+43,APL000,It's Me or the Dog | \{91},none
+44,APL000,It's Me or the Dog | \{91},none
+45,APL000,South Park |,none
+46,APL000,Dogs 101 | \{91},none
+47,APL000,Pit Bulls and Parolees | \{91},none
+0,FX0000,When a Stranger Calls,none
+1,FX0000,Forgetting Sarah Marshall,none
+2,FX0000,Forgetting Sarah Marshall,none
+3,FX0000,Two and a Half Men | \{91},none
+4,FX0000,Two and a Half Men | \{91},none
+5,FX0000,Two and a Half Men | \{91},none
+6,FX0000,Two and a Half Men | \{91},none
+7,FX0000,There's Something About Mary,none
+8,FX0000,The Animal,none
+9,FX0000,Malcolm in the Middle | \{91},none
+10,FX0000,John Tucker Must Die,none
+11,FX0000,Two and a Half Men | \{91},none
+12,FX0000,Two and a Half Men | \{91},none
+13,FX0000,Louie,none
+14,FX0000,The Annual PRISM Awards Showcase,none
+15,FX0000,Paid Programming,none
+16,FX0000,Paid Programming,none
+17,FX0000,Two and a Half Men | \{91},none
+18,FX0000,Two and a Half Men | \{91},none
+19,FX0000,Two and a Half Men | \{91},none
+20,FX0000,Two and a Half Men | \{91},none
+21,FX0000,Archer,none
+22,FX0000,Archer,none
+23,FX0000,Two and a Half Men | \{91},none
+24,FX0000,The Bernie Mac Show | \{91},none
+25,FX0000,Paid Programming,none
+26,FX0000,Spin City | \{91},none
+27,FX0000,Maid in Manhattan,none
+28,FX0000,Lost Tapes | \{91},none
+29,FX0000,Shark Press & Refresh,none
+30,FX0000,Kill 99 Percent of H1N1 Germs,none
+31,FX0000,NO NEED TO DIET! This Is a Must See!,none
+32,FX0000,Paid Programming,none
+33,FX0000,Get Your Hair Back and Gain the Confidence You Need to Succeed,none
+34,FX0000,Paid Programming,none
+35,FX0000,Paid Programming,none
+36,FX0000,Lost Tapes \{91},none
+37,FX0000,The Bernie Mac Show | \{91},none
+38,FX0000,Malcolm in the Middle | \{91},none
+39,FX0000,The Animal,none
+40,FX0000,The Bernie Mac Show | \{91},none
+41,FX0000,Made of Honor,none
+42,FX0000,Prom Night,none
+43,FX0000,The Bachelor,none
+44,FX0000,When a Stranger Calls,none
+45,FX0000,White Noise,none
+46,FX0000,National Security |,none
+47,FX0000,28 Weeks Later,none
+0,FNC000,NO NEED TO DIET! This Is a Must See!,none
+1,FNC000,The FOX Report With Shepard Smith |,none
+2,FNC000,Get Your Hair Back and Gain the Confidence You Need to Succeed,none
+3,FNC000,The O'Reilly Factor |,none
+4,FNC000,Special Report With Bret Baier,none
+5,FNC000,Shark Press & Refresh,none
+6,FNC000,Paid Programming,none
+7,FNC000,Your World With Neil Cavuto |,none
+8,FNC000,Maid in Manhattan,none
+9,FNC000,Glenn Beck,none
+10,FNC000,Paid Programming,none
+11,FNC000,Hannity,none
+12,FNC000,The Bachelor,none
+13,FNC000,On the Record With Greta Van Susteren |,none
+14,FNC000,White Noise,none
+15,FNC000,Glenn Beck,none
+16,FNC000,Hannity,none
+17,FNC000,FOX News Watch,none
+18,FNC000,The Bernie Mac Show | \{91},none
+19,FNC000,On the Record With Greta Van Susteren |,none
+20,FNC000,The Animal,none
+21,FNC000,The O'Reilly Factor,none
+22,FNC000,Studio B With Shepard Smith |,none
+23,FNC000,FOX News Watch,none
+24,FNC000,FOX News Watch,none
+25,FNC000,FOX and Friends Sunday,none
+26,FNC000,Malcolm in the Middle | \{91},none
+27,FNC000,John Tucker Must Die,none
+28,FNC000,FOX and Friends,none
+29,FNC000,Two and a Half Men | \{91},none
+30,FNC000,Forgetting Sarah Marshall,none
+31,FNC000,Special Report With Bret Baier,none
+32,FNC000,Two and a Half Men | \{91},none
+33,FNC000,The O'Reilly Factor |,none
+34,FNC000,Two and a Half Men | \{91},none
+35,FNC000,America's Newsroom,none
+36,FNC000,Two and a Half Men | \{91},none
+37,FNC000,America Live,none
+38,FNC000,Archer,none
+39,FNC000,FOX News Sunday With Chris Wallace | \{91},none
+40,FNC000,America's News HQ,none
+41,FNC000,Cashin' In |,none
+42,FNC000,Louie,none
+43,FNC000,America's News HQ,none
+44,FNC000,Cavuto on Business |,none
+45,FNC000,Red Eye,none
+46,FNC000,Happening Now,none
+47,FNC000,28 Weeks Later,none
+0,WGTW00,Bill & Gloria Gaither: Precious Memories |,none
+1,WGTW00,Touch of the Master's Hand,none
+2,WGTW00,The O'Reilly Factor |,none
+3,WGTW00,In Touch With Dr. Charles Stanley |,none
+4,WGTW00,America's Newsroom,none
+5,WGTW00,Forgetting Sarah Marshall,none
+6,WGTW00,Two and a Half Men | \{91},none
+7,WGTW00,Paws & Tales |,none
+8,WGTW00,The Storykeepers |,none
+9,WGTW00,Christian World News |,none
+10,WGTW00,Overcome,none
+11,WGTW00,Hour of Power |,none
+12,WGTW00,America Live,none
+13,WGTW00,Secrets: Kim Clement,none
+14,WGTW00,Changing Your World |,none
+15,WGTW00,Christian Celebrity Showcase |,none
+16,WGTW00,First to Know,none
+17,WGTW00,Joseph Prince: Destined to Reign |,none
+18,WGTW00,Uncorked,none
+19,WGTW00,Billy Graham Classic Crusades,none
+20,WGTW00,FOX News Sunday With Chris Wallace | \{91},none
+21,WGTW00,Drive Thru History |,none
+22,WGTW00,Travel the Road |,none
+23,WGTW00,Nest Family Animated Stories |,none
+24,WGTW00,The Adventures of Carlos Caterpillar |,none
+25,WGTW00,Pahapahooey Island |,none
+26,WGTW00,Faithville |,none
+27,WGTW00,Maralee Dawn & Friends |,none
+28,WGTW00,BJ's Teddy Bear Club |,none
+29,WGTW00,Cherub Wings |,none
+30,WGTW00,Shark Press & Refresh,none
+31,WGTW00,Times 2 Carman,none
+32,WGTW00,Xtreme Life,none
+33,WGTW00,Team Impact,none
+34,WGTW00,Greatest Heroes & Legends of the Bible |,none
+35,WGTW00,Miss Charity's Diner |,none
+36,WGTW00,Sing Along With Gina D | \{91},none
+37,WGTW00,Friends & Heroes |,none
+38,WGTW00,Ishine Knect |,none
+39,WGTW00,Hermie & Friends |,none
+40,WGTW00,Gina D's Kids Club |,none
+41,WGTW00,God Rocks! | \{91},none
+42,WGTW00,Mary Rice Hopkins: Puppets With a Heart |,none
+43,WGTW00,The Dooley and Pals Show | \{91},none
+44,WGTW00,Dr. Wonder's Workshop |,none
+45,WGTW00,Bugtime Adventures |,none
+46,WGTW00,Auto B. Good | \{91},none
+47,WGTW00,Karen Wheaton |,none
+0,WBPH00,Times 2 Carman,none
+1,WBPH00,College Football,none
+2,WBPH00,Team Impact,none
+3,WBPH00,Greatest Heroes & Legends of the Bible |,none
+4,WBPH00,Gaither Homecoming,none
+5,WBPH00,Cherub Wings |,none
+6,WBPH00,Food Lovers Fat Loss - Eat All Your Favorite Foods & Still Lose Weight,none
+7,WBPH00,Worship,none
+8,WBPH00,Maralee Dawn & Friends |,none
+9,WBPH00,In Touch With Dr. Charles Stanley |,none
+10,WBPH00,Miss Charity's Diner |,none
+11,WBPH00,Sing Along With Gina D | \{91},none
+12,WBPH00,Smart Medicine. Clinically Proven Answer to Joint Problems: Supple,none
+13,WBPH00,Paid Programming,none
+14,WBPH00,Paid Programming,none
+15,WBPH00,Your Baby Can Read,none
+16,WBPH00,Paid Programming,none
+17,WBPH00,On Solid Rock,none
+18,WBPH00,Friends & Heroes |,none
+19,WBPH00,Ishine Knect |,none
+20,WBPH00,Wretched,none
+21,WBPH00,Ultimate Choice | \{91},none
+22,WBPH00,Paid Programming,none
+23,WBPH00,Nest Family Animated Stories |,none
+24,WBPH00,Spiritual Outdoors,none
+25,WBPH00,Mustard Pancakes | \{91},none
+26,WBPH00,Dr. Penguin's Magical World,none
+27,WBPH00,Kid Fitness | \{91},none
+28,WBPH00,Fishin' Hawg Country,none
+29,WBPH00,Forgetting Sarah Marshall,none
+30,WBPH00,Paid Programming,none
+31,WBPH00,Paid Programming,none
+32,WBPH00,Paid Programming,none
+33,WBPH00,American Dream/Nightmare,none
+34,WBPH00,Underwater World for Kids,none
+35,WBPH00,Real Life 101 | \{91},none
+36,WBPH00,Paid Programming,none
+37,WBPH00,To Be Announced,none
+38,WBPH00,Drive Thru History |,none
+39,WBPH00,Travel the Road |,none
+40,WBPH00,Paid Programming,none
+41,WBPH00,Paid Programming,none
+42,WBPH00,Ultimate Choice | \{91},none
+43,WBPH00,Paid Programming,none
+44,WBPH00,Sexy Faces Breakthrough Scientific Procedure,none
+45,WBPH00,Natural alternative for joint health,none
+46,WBPH00,"6 Week Body Makeover Eat More, Exercise Less & Lose Weight Every Week",none
+47,WBPH00,"6 Week Body Makeover Eat More, Exercise Less & Lose Weight Every Week",none
+0,EDAC05,Paid Programming,none
+1,EDAC05,Paid Programming,none
+2,EDAC05,American Dream/Nightmare,none
+3,EDAC05,Underwater World for Kids,none
+4,EDAC05,Educational Access,none
+5,EDAC05,Forgetting Sarah Marshall,none
+6,EDAC05,Mustard Pancakes | \{91},none
+7,EDAC05,Dr. Penguin's Magical World,none
+8,EDAC05,Kid Fitness | \{91},none
+9,EDAC05,Fishin' Hawg Country,none
+10,EDAC05,Real Life 101 | \{91},none
+11,EDAC05,Paid Programming,none
+12,EDAC05,Paid Programming,none
+13,EDAC05,Sexy Faces Breakthrough Scientific Procedure,none
+14,EDAC05,Natural alternative for joint health,none
+15,EDAC05,Educational Access,none
+16,EDAC05,Ultimate Choice | \{91},none
+17,EDAC05,Paid Programming,none
+18,EDAC05,To Be Announced,none
+19,EDAC05,Educational Access,none
+20,EDAC05,Travel the Road |,none
+21,EDAC05,Paid Programming,none
+22,EDAC05,Spiritual Outdoors,none
+23,EDAC05,Nest Family Animated Stories |,none
+24,EDAC05,Worship,none
+25,EDAC05,Maralee Dawn & Friends |,none
+26,EDAC05,In Touch With Dr. Charles Stanley |,none
+27,EDAC05,Miss Charity's Diner |,none
+28,EDAC05,Educational Access,none
+29,EDAC05,Cherub Wings |,none
+30,EDAC05,College Football,none
+31,EDAC05,Team Impact,none
+32,EDAC05,Greatest Heroes & Legends of the Bible |,none
+33,EDAC05,Gaither Homecoming,none
+34,EDAC05,Sing Along With Gina D | \{91},none
+35,EDAC05,Smart Medicine. Clinically Proven Answer to Joint Problems: Supple,none
+36,EDAC05,Ishine Knect |,none
+37,EDAC05,Wretched,none
+38,EDAC05,Ultimate Choice | \{91},none
+39,EDAC05,Educational Access,none
+40,EDAC05,Friends & Heroes |,none
+41,EDAC05,On Solid Rock,none
+42,EDAC05,Paid Programming,none
+43,EDAC05,Educational Access,none
+44,EDAC05,Your Baby Can Read,none
+45,EDAC05,Educational Access,none
+46,EDAC05,Paid Programming,none
+47,EDAC05,"6 Week Body Makeover Eat More, Exercise Less & Lose Weight Every Week",none
+0,EDAC05,Team Impact,none
+1,EDAC05,Greatest Heroes & Legends of the Bible |,none
+2,EDAC05,Gaither Homecoming,none
+3,EDAC05,Sing Along With Gina D | \{91},none
+4,EDAC05,Educational Access,none
+5,EDAC05,Cherub Wings |,none
+6,EDAC05,Maralee Dawn & Friends |,none
+7,EDAC05,In Touch With Dr. Charles Stanley |,none
+8,EDAC05,Miss Charity's Diner |,none
+9,EDAC05,Educational Access,none
+10,EDAC05,Smart Medicine. Clinically Proven Answer to Joint Problems: Supple,none
+11,EDAC05,Ishine Knect |,none
+12,EDAC05,Educational Access,none
+13,EDAC05,Your Baby Can Read,none
+14,EDAC05,Educational Access,none
+15,EDAC05,Educational Access,none
+16,EDAC05,Paid Programming,none
+17,EDAC05,On Solid Rock,none
+18,EDAC05,Wretched,none
+19,EDAC05,Educational Access,none
+20,EDAC05,Educational Access,none
+21,EDAC05,Friends & Heroes |,none
+22,EDAC05,Worship,none
+23,EDAC05,Nest Family Animated Stories |,none
+24,EDAC05,Dr. Penguin's Magical World,none
+25,EDAC05,Kid Fitness | \{91},none
+26,EDAC05,Fishin' Hawg Country,none
+27,EDAC05,Real Life 101 | \{91},none
+28,EDAC05,Educational Access,none
+29,EDAC05,Forgetting Sarah Marshall,none
+30,EDAC05,Paid Programming,none
+31,EDAC05,American Dream/Nightmare,none
+32,EDAC05,Underwater World for Kids,none
+33,EDAC05,Educational Access,none
+34,EDAC05,Paid Programming,none
+35,EDAC05,Paid Programming,none
+36,EDAC05,Educational Access,none
+37,EDAC05,Travel the Road |,none
+38,EDAC05,Paid Programming,none
+39,EDAC05,Educational Access,none
+40,EDAC05,To Be Announced,none
+41,EDAC05,Paid Programming,none
+42,EDAC05,Sexy Faces Breakthrough Scientific Procedure,none
+43,EDAC05,Educational Access,none
+44,EDAC05,Educational Access,none
+45,EDAC05,Educational Access,none
+46,EDAC05,Ultimate Choice | \{91},none
+47,EDAC05,"6 Week Body Makeover Eat More, Exercise Less & Lose Weight Every Week",none
+0,EDAC05,American Dream/Nightmare,none
+1,EDAC05,Underwater World for Kids,none
+2,EDAC05,Educational Access,none
+3,EDAC05,Paid Programming,none
+4,EDAC05,Educational Access,none
+5,EDAC05,Forgetting Sarah Marshall,none
+6,EDAC05,Kid Fitness | \{91},none
+7,EDAC05,Fishin' Hawg Country,none
+8,EDAC05,Real Life 101 | \{91},none
+9,EDAC05,Educational Access,none
+10,EDAC05,Paid Programming,none
+11,EDAC05,Educational Access,none
+12,EDAC05,Educational Access,none
+13,EDAC05,Educational Access,none
+14,EDAC05,Educational Access,none
+15,EDAC05,Educational Access,none
+16,EDAC05,Sexy Faces Breakthrough Scientific Procedure,none
+17,EDAC05,Paid Programming,none
+18,EDAC05,Travel the Road |,none
+19,EDAC05,Educational Access,none
+20,EDAC05,Educational Access,none
+21,EDAC05,To Be Announced,none
+22,EDAC05,Dr. Penguin's Magical World,none
+23,EDAC05,Nest Family Animated Stories |,none
+24,EDAC05,In Touch With Dr. Charles Stanley |,none
+25,EDAC05,Miss Charity's Diner |,none
+26,EDAC05,Educational Access,none
+27,EDAC05,Smart Medicine. Clinically Proven Answer to Joint Problems: Supple,none
+28,EDAC05,Educational Access,none
+29,EDAC05,Cherub Wings |,none
+30,EDAC05,Greatest Heroes & Legends of the Bible |,none
+31,EDAC05,Gaither Homecoming,none
+32,EDAC05,Sing Along With Gina D | \{91},none
+33,EDAC05,Educational Access,none
+34,EDAC05,Ishine Knect |,none
+35,EDAC05,Educational Access,none
+36,EDAC05,Educational Access,none
+37,EDAC05,Educational Access,none
+38,EDAC05,Friends & Heroes |,none
+39,EDAC05,Educational Access,none
+40,EDAC05,Wretched,none
+41,EDAC05,On Solid Rock,none
+42,EDAC05,Your Baby Can Read,none
+43,EDAC05,Educational Access,none
+44,EDAC05,Educational Access,none
+45,EDAC05,Educational Access,none
+46,EDAC05,Paid Programming,none
+47,EDAC05,"6 Week Body Makeover Eat More, Exercise Less & Lose Weight Every Week",none
+0,WFMZ00,Get Smart |,none
+1,WFMZ00,Ron Hazelton's HouseCalls | \{91},none
+2,WFMZ00,Judge Judy | \{91},none
+3,WFMZ00,Judge Judy | \{91},none
+4,WFMZ00,Quit Smoking Today,none
+5,WFMZ00,Rotary Club,none
+6,WFMZ00,Live Cameras and Forecast Maps,none
+7,WFMZ00,Paid Programming,none
+8,WFMZ00,Paid Programming,none
+9,WFMZ00,Judge Joe Brown | \{91},none
+10,WFMZ00,Kiss the Bride,none
+11,WFMZ00,Body Gospel: Faith-Based Fitness,none
+12,WFMZ00,Paid Programming,none
+13,WFMZ00,Zumba Body Transformation System,none
+14,WFMZ00,Live Cameras and Forecast Maps,none
+15,WFMZ00,Jack Van Impe Presents |,none
+16,WFMZ00,Paid Programming,none
+17,WFMZ00,Educational Access,none
+18,WFMZ00,Educational Access,none
+19,WFMZ00,Educational Access,none
+20,WFMZ00,Paid Programming,none
+21,WFMZ00,Sexy Faces Breakthrough Scientific Procedure,none
+22,WFMZ00,Paid Programming,none
+23,WFMZ00,Paid Programming,none
+24,WFMZ00,Guthy-Renker,none
+25,WFMZ00,Sports Stars of Tomorrow,none
+26,WFMZ00,Fishin' Hawg Country,none
+27,WFMZ00,Live Cameras and Forecast Maps,none
+28,WFMZ00,Live Cameras and Forecast Maps,none
+29,WFMZ00,The Big Ticket,none
+30,WFMZ00,Paid Programming,none
+31,WFMZ00,Paid Programming,none
+32,WFMZ00,Free Money,none
+33,WFMZ00,Paid Programming,none
+34,WFMZ00,Paid Programming,none
+35,WFMZ00,Suffering Joints?,none
+36,WFMZ00,RECLAIM with Argireline by Victoria Principal,none
+37,WFMZ00,Paid Programming,none
+38,WFMZ00,Paid Programming,none
+39,WFMZ00,Paid Programming,none
+40,WFMZ00,69News Meteorologist Forecast,none
+41,WFMZ00,69News Meteorologist Forecast,none
+42,WFMZ00,69News Meteorologist Forecast,none
+43,WFMZ00,69 News Weekend Edition |,none
+44,WFMZ00,69News Meteorologist Forecast,none
+45,WFMZ00,69 News Weekend Edition |,none
+46,WFMZ00,69News Meteorologist Forecast,none
+47,WFMZ00,69 News Weekend Edition |,none
+0,EDAC05,Live Cameras and Forecast Maps,none
+1,EDAC05,Live Cameras and Forecast Maps,none
+2,EDAC05,The Big Ticket,none
+3,EDAC05,Educational Access,none
+4,EDAC05,Fishin' Hawg Country,none
+5,EDAC05,Sports Stars of Tomorrow,none
+6,EDAC05,Educational Access,none
+7,EDAC05,Educational Access,none
+8,EDAC05,Guthy-Renker,none
+9,EDAC05,Paid Programming,none
+10,EDAC05,Free Money,none
+11,EDAC05,Educational Access,none
+12,EDAC05,Paid Programming,none
+13,EDAC05,Educational Access,none
+14,EDAC05,Paid Programming,none
+15,EDAC05,RECLAIM with Argireline by Victoria Principal,none
+16,EDAC05,Paid Programming,none
+17,EDAC05,Paid Programming,none
+18,EDAC05,Suffering Joints?,none
+19,EDAC05,Sexy Faces Breakthrough Scientific Procedure,none
+20,EDAC05,Paid Programming,none
+21,EDAC05,Educational Access,none
+22,EDAC05,Paid Programming,none
+23,EDAC05,Paid Programming,none
+24,EDAC05,Judge Joe Brown | \{91},none
+25,EDAC05,Rotary Club,none
+26,EDAC05,Quit Smoking Today,none
+27,EDAC05,Ron Hazelton's HouseCalls | \{91},none
+28,EDAC05,Judge Judy | \{91},none
+29,EDAC05,Judge Judy | \{91},none
+30,EDAC05,Kiss the Bride,none
+31,EDAC05,Paid Programming,none
+32,EDAC05,Educational Access,none
+33,EDAC05,Body Gospel: Faith-Based Fitness,none
+34,EDAC05,Educational Access,none
+35,EDAC05,Paid Programming,none
+36,EDAC05,Educational Access,none
+37,EDAC05,Paid Programming,none
+38,EDAC05,Jack Van Impe Presents |,none
+39,EDAC05,Zumba Body Transformation System,none
+40,EDAC05,Educational Access,none
+41,EDAC05,69 News Weekend Edition |,none
+42,EDAC05,69 News Weekend Edition |,none
+43,EDAC05,69News Meteorologist Forecast,none
+44,EDAC05,69News Meteorologist Forecast,none
+45,EDAC05,69News Meteorologist Forecast,none
+46,EDAC05,69News Meteorologist Forecast,none
+47,EDAC05,69 News Weekend Edition |,none
+0,SYFY00,Saw III |,none
+1,SYFY00,Destination Truth | \{91},none
+2,SYFY00,Scare Tactics | \{91},none
+3,SYFY00,WWE Friday Night SmackDown! | \{91},none
+4,SYFY00,Destination Truth | \{91},none
+5,SYFY00,Silent Hill |,none
+6,SYFY00,Wrong Turn 2: Dead End |,none
+7,SYFY00,Destination Truth | \{91},none
+8,SYFY00,Saw III |,none
+9,SYFY00,Destination Truth | \{91},none
+10,SYFY00,Scare Tactics | \{91},none
+11,SYFY00,Destination Truth | \{91},none
+12,SYFY00,Hollywood Treasure,none
+13,SYFY00,Hollywood Treasure,none
+14,SYFY00,The Dunwich Horror |,none
+15,SYFY00,The Midnight Meat Train |,none
+16,SYFY00,Sanctuary | \{91},none
+17,SYFY00,Hollywood Treasure,none
+18,SYFY00,Scare Tactics | \{91},none
+19,SYFY00,Sanctuary | \{91},none
+20,SYFY00,Hollywood Treasure,none
+21,SYFY00,Caprica |,none
+22,SYFY00,Destination Truth | \{91},none
+23,SYFY00,Saw II |,none
+24,SYFY00,Paid Programming,none
+25,SYFY00,Paid Programming,none
+26,SYFY00,Paid Programming,none
+27,SYFY00,Tales From the Darkside |,none
+28,SYFY00,Paid Programming,none
+29,SYFY00,Paid Programming,none
+30,SYFY00,Beowulf |,none
+31,SYFY00,Dracula III: Legacy |,none
+32,SYFY00,Paid Programming,none
+33,SYFY00,Paid Programming,none
+34,SYFY00,Hollywood Treasure,none
+35,SYFY00,Hollywood Treasure,none
+36,SYFY00,The Grudge 3 |,none
+37,SYFY00,Fact or Faked: Paranormal Files |,none
+38,SYFY00,Timber Falls |,none
+39,SYFY00,Destination Truth | \{91},none
+40,SYFY00,Fact or Faked: Paranormal Files |,none
+41,SYFY00,The Cursed |,none
+42,SYFY00,Fact or Faked: Paranormal Files |,none
+43,SYFY00,Children of the Grave |,none
+44,SYFY00,Joy Ride 2: Dead Ahead |,none
+45,SYFY00,Fact or Faked: Paranormal Files |,none
+46,SYFY00,69 News Weekend Edition |,none
+47,SYFY00,100 Feet |,none
+0,ESPN20,Tales From the Darkside |,none
+1,ESPN20,NASCAR Now |,none
+2,ESPN20,Paid Programming,none
+3,ESPN20,SportsNation |,none
+4,ESPN20,SportsNation |,none
+5,ESPN20,The Scott Van Pelt Show |,none
+6,ESPN20,Best of Mike and Mike in the Morning |,none
+7,ESPN20,Saw III |,none
+8,ESPN20,Outside the Lines First Report |,none
+9,ESPN20,Pardon the Interruption | \{91},none
+10,ESPN20,College Football,none
+11,ESPN20,Baseball Tonight |,none
+12,ESPN20,Destination Truth | \{91},none
+13,ESPN20,NFL Films Presents |,none
+14,ESPN20,Fact or Faked: Paranormal Files |,none
+15,ESPN20,MLB Baseball,none
+16,ESPN20,Paid Programming,none
+17,ESPN20,College Football,none
+18,ESPN20,Hollywood Treasure,none
+19,ESPN20,Caprica |,none
+20,ESPN20,Spanish Primera Division Soccer,none
+21,ESPN20,Mike and Mike in the Morning |,none
+22,ESPN20,Pro Hunter Journal |,none
+23,ESPN20,Lessons of the Reel,none
+24,ESPN20,Territories Wild |,none
+25,ESPN20,NFL Matchup |,none
+26,ESPN20,Lessons of the Reel,none
+27,ESPN20,NASCAR Racing,none
+28,ESPN20,Scare Tactics | \{91},none
+29,ESPN20,College Football Final |,none
+30,ESPN20,Redfield's Red Zone |,none
+31,ESPN20,Driven to Hunt |,none
+32,ESPN20,Fantasy Football Now,none
+33,ESPN20,ESPN First Take | \{91},none
+34,ESPN20,Sanctuary | \{91},none
+35,ESPN20,SportsCenter |,none
+36,ESPN20,The Midnight Meat Train |,none
+37,ESPN20,NASCAR Now |,none
+38,ESPN20,Hollywood Treasure,none
+39,ESPN20,ESPN First Take | \{91},none
+40,ESPN20,SportsNation |,none
+41,ESPN20,1st and 10 |,none
+42,ESPN20,2010 World Series of Poker,none
+43,ESPN20,2010 World Series of Poker,none
+44,ESPN20,2010 World Series of Poker,none
+45,ESPN20,2010 World Series of Poker,none
+46,ESPN20,2010 World Series of Poker,none
+47,ESPN20,2010 World Series of Poker,none
+0,WPPX00,Without a Trace | \{91},none
+1,WPPX00,Driven to Hunt |,none
+2,WPPX00,Without a Trace | \{91},none
+3,WPPX00,ESPN First Take | \{91},none
+4,WPPX00,College Football Final |,none
+5,WPPX00,Ghost Whisperer | \{91},none
+6,WPPX00,Ghost Whisperer | \{91},none
+7,WPPX00,My Name Is Earl | \{91},none
+8,WPPX00,Ghost Whisperer | \{91},none
+9,WPPX00,Back to the Future \{91},none
+10,WPPX00,Without a Trace | \{91},none
+11,WPPX00,SportsCenter |,none
+12,WPPX00,Paid Programming \{91},none
+13,WPPX00,Paid Programming \{91},none
+14,WPPX00,Paid Programming \{91},none
+15,WPPX00,Inspiration Ministry Campmeeting \{91},none
+16,WPPX00,Paid Programming \{91},none
+17,WPPX00,Criminal Minds | \{91},none
+18,WPPX00,Criminal Minds | \{91},none
+19,WPPX00,Back to the Future Part III \{91},none
+20,WPPX00,Criminal Minds | \{91},none
+21,WPPX00,ESPN First Take | \{91},none
+22,WPPX00,Knife Show \{91},none
+23,WPPX00,Paid Programming \{91},none
+24,WPPX00,World's Greatest \{91},none
+25,WPPX00,Time of Decision,none
+26,WPPX00,Paid Programming \{91},none
+27,WPPX00,Paid Programming,none
+28,WPPX00,Paid Programming \{91},none
+29,WPPX00,The Scott Van Pelt Show |,none
+30,WPPX00,NASCAR Now |,none
+31,WPPX00,Knife Show \{91},none
+32,WPPX00,SportsNation |,none
+33,WPPX00,Inspiration Ministry Campmeeting \{91},none
+34,WPPX00,Paid Programming \{91},none
+35,WPPX00,International Fellowship of Christians and Jews,none
+36,WPPX00,Bosley: Hair Loss Answers,none
+37,WPPX00,Paid Programming \{91},none
+38,WPPX00,Paid Programming \{91},none
+39,WPPX00,Bosley: Hair Loss Answers,none
+40,WPPX00,Through the Bible With Les Feldick,none
+41,WPPX00,Cindy Crawford's Meaningful Beauty,none
+42,WPPX00,Paid Programming \{91},none
+43,WPPX00,Comfort in Christ With Rev. Ted Bailey,none
+44,WPPX00,Paid Programming \{91},none
+45,WPPX00,Paid Programming \{91},none
+46,WPPX00,1st and 10 |,none
+47,WPPX00,2010 World Series of Poker,none
+0,WWSI00,SportsNation |,none
+1,WWSI00,Knife Show \{91},none
+2,WWSI00,Inspiration Ministry Campmeeting \{91},none
+3,WWSI00,F\{FA}tbol de la Liga Mexicana,none
+4,WWSI00,International Fellowship of Christians and Jews,none
+5,WWSI00,Deep Blue Sea,none
+6,WWSI00,Programa Pagado,none
+7,WWSI00,Jet Li's Fearless,none
+8,WWSI00,Paid Programming \{91},none
+9,WWSI00,Paid Programming,none
+10,WWSI00,Paid Programming \{91},none
+11,WWSI00,Bosley: Hair Loss Answers,none
+12,WWSI00,Paid Programming \{91},none
+13,WWSI00,Universal Church,none
+14,WWSI00,Universal Church,none
+15,WWSI00,Programa Pagado,none
+16,WWSI00,Programa Pagado,none
+17,WWSI00,C\{E1}mara Loca,none
+18,WWSI00,Titulares Telemundo,none
+19,WWSI00,F\{FA}tbol de la Liga Mexicana,none
+20,WWSI00,Bosley: Hair Loss Answers,none
+21,WWSI00,Through the Bible With Les Feldick,none
+22,WWSI00,Cindy Crawford's Meaningful Beauty,none
+23,WWSI00,World's Greatest \{91},none
+24,WWSI00,Persiguiendo Injusticias,none
+25,WWSI00,Programa Pagado,none
+26,WWSI00,En Portada,none
+27,WWSI00,Otro Mundo,none
+28,WWSI00,Babar | \{91},none
+29,WWSI00,Programa Pagado,none
+30,WWSI00,Programa Pagado,none
+31,WWSI00,Programa Pagado,none
+32,WWSI00,Programa Pagado,none
+33,WWSI00,Programa Pagado,none
+34,WWSI00,Programa Pagado,none
+35,WWSI00,Programa Pagado,none
+36,WWSI00,Turbo Dog,none
+37,WWSI00,Back to the Future Part III \{91},none
+38,WWSI00,Descontrol,none
+39,WWSI00,ESPN First Take | \{91},none
+40,WWSI00,Musicalisimo,none
+41,WWSI00,Nitido,none
+42,WWSI00,Invasi\{F3}n Casera,none
+43,WWSI00,Bombon TV Show,none
+44,WWSI00,Universal Church,none
+45,WWSI00,Inspiration Ministry Campmeeting \{91},none
+46,WWSI00,Programa Pagado,none
+47,WWSI00,3-2-1 Penguin,none
+0,GOAC06,Programa Pagado,none
+1,GOAC06,Programa Pagado,none
+2,GOAC06,Programa Pagado,none
+3,GOAC06,Programa Pagado,none
+4,GOAC06,Government Access,none
+5,GOAC06,Programa Pagado,none
+6,GOAC06,Programa Pagado,none
+7,GOAC06,En Portada,none
+8,GOAC06,Otro Mundo,none
+9,GOAC06,Babar | \{91},none
+10,GOAC06,Programa Pagado,none
+11,GOAC06,Turbo Dog,none
+12,GOAC06,Bombon TV Show,none
+13,GOAC06,Universal Church,none
+14,GOAC06,Inspiration Ministry Campmeeting \{91},none
+15,GOAC06,Government Access,none
+16,GOAC06,Invasi\{F3}n Casera,none
+17,GOAC06,Nitido,none
+18,GOAC06,Back to the Future Part III \{91},none
+19,GOAC06,Government Access,none
+20,GOAC06,ESPN First Take | \{91},none
+21,GOAC06,Musicalisimo,none
+22,GOAC06,Persiguiendo Injusticias,none
+23,GOAC06,World's Greatest \{91},none
+24,GOAC06,Jet Li's Fearless,none
+25,GOAC06,Paid Programming \{91},none
+26,GOAC06,Paid Programming,none
+27,GOAC06,Paid Programming \{91},none
+28,GOAC06,Government Access,none
+29,GOAC06,Deep Blue Sea,none
+30,GOAC06,Knife Show \{91},none
+31,GOAC06,Inspiration Ministry Campmeeting \{91},none
+32,GOAC06,F\{FA}tbol de la Liga Mexicana,none
+33,GOAC06,International Fellowship of Christians and Jews,none
+34,GOAC06,Bosley: Hair Loss Answers,none
+35,GOAC06,Paid Programming \{91},none
+36,GOAC06,F\{FA}tbol de la Liga Mexicana,none
+37,GOAC06,Bosley: Hair Loss Answers,none
+38,GOAC06,Through the Bible With Les Feldick,none
+39,GOAC06,Government Access,none
+40,GOAC06,Titulares Telemundo,none
+41,GOAC06,C\{E1}mara Loca,none
+42,GOAC06,Universal Church,none
+43,GOAC06,Government Access,none
+44,GOAC06,Programa Pagado,none
+45,GOAC06,SportsNation |,none
+46,GOAC06,Programa Pagado,none
+47,GOAC06,3-2-1 Penguin,none
+0,GOAC06,Inspiration Ministry Campmeeting \{91},none
+1,GOAC06,F\{FA}tbol de la Liga Mexicana,none
+2,GOAC06,International Fellowship of Christians and Jews,none
+3,GOAC06,Bosley: Hair Loss Answers,none
+4,GOAC06,Government Access,none
+5,GOAC06,Deep Blue Sea,none
+6,GOAC06,Paid Programming \{91},none
+7,GOAC06,Paid Programming,none
+8,GOAC06,Paid Programming \{91},none
+9,GOAC06,Government Access,none
+10,GOAC06,Paid Programming \{91},none
+11,GOAC06,F\{FA}tbol de la Liga Mexicana,none
+12,GOAC06,Government Access,none
+13,GOAC06,Programa Pagado,none
+14,GOAC06,SportsNation |,none
+15,GOAC06,Government Access,none
+16,GOAC06,Universal Church,none
+17,GOAC06,C\{E1}mara Loca,none
+18,GOAC06,Bosley: Hair Loss Answers,none
+19,GOAC06,Government Access,none
+20,GOAC06,Government Access,none
+21,GOAC06,Titulares Telemundo,none
+22,GOAC06,Jet Li's Fearless,none
+23,GOAC06,World's Greatest \{91},none
+24,GOAC06,En Portada,none
+25,GOAC06,Otro Mundo,none
+26,GOAC06,Babar | \{91},none
+27,GOAC06,Programa Pagado,none
+28,GOAC06,Government Access,none
+29,GOAC06,Programa Pagado,none
+30,GOAC06,Programa Pagado,none
+31,GOAC06,Programa Pagado,none
+32,GOAC06,Programa Pagado,none
+33,GOAC06,Government Access,none
+34,GOAC06,Turbo Dog,none
+35,GOAC06,Bombon TV Show,none
+36,GOAC06,Government Access,none
+37,GOAC06,ESPN First Take | \{91},none
+38,GOAC06,Musicalisimo,none
+39,GOAC06,Government Access,none
+40,GOAC06,Back to the Future Part III \{91},none
+41,GOAC06,Nitido,none
+42,GOAC06,Universal Church,none
+43,GOAC06,Government Access,none
+44,GOAC06,Government Access,none
+45,GOAC06,Programa Pagado,none
+46,GOAC06,Invasi\{F3}n Casera,none
+47,GOAC06,3-2-1 Penguin,none
+0,PUAC06,Programa Pagado,none
+1,PUAC06,Programa Pagado,none
+2,PUAC06,Government Access,none
+3,PUAC06,Turbo Dog,none
+4,PUAC06,Public Access,none
+5,PUAC06,Programa Pagado,none
+6,PUAC06,Otro Mundo,none
+7,PUAC06,Babar | \{91},none
+8,PUAC06,Programa Pagado,none
+9,PUAC06,Government Access,none
+10,PUAC06,Bombon TV Show,none
+11,PUAC06,Government Access,none
+12,PUAC06,Government Access,none
+13,PUAC06,Government Access,none
+14,PUAC06,Programa Pagado,none
+15,PUAC06,Public Access,none
+16,PUAC06,Universal Church,none
+17,PUAC06,Nitido,none
+18,PUAC06,ESPN First Take | \{91},none
+19,PUAC06,Public Access,none
+20,PUAC06,Government Access,none
+21,PUAC06,Back to the Future Part III \{91},none
+22,PUAC06,En Portada,none
+23,PUAC06,World's Greatest \{91},none
+24,PUAC06,Paid Programming,none
+25,PUAC06,Paid Programming \{91},none
+26,PUAC06,Government Access,none
+27,PUAC06,Paid Programming \{91},none
+28,PUAC06,Public Access,none
+29,PUAC06,Deep Blue Sea,none
+30,PUAC06,F\{FA}tbol de la Liga Mexicana,none
+31,PUAC06,International Fellowship of Christians and Jews,none
+32,PUAC06,Bosley: Hair Loss Answers,none
+33,PUAC06,Government Access,none
+34,PUAC06,F\{FA}tbol de la Liga Mexicana,none
+35,PUAC06,Government Access,none
+36,PUAC06,Government Access,none
+37,PUAC06,Government Access,none
+38,PUAC06,Titulares Telemundo,none
+39,PUAC06,Public Access,none
+40,PUAC06,Bosley: Hair Loss Answers,none
+41,PUAC06,C\{E1}mara Loca,none
+42,PUAC06,Programa Pagado,none
+43,PUAC06,Public Access,none
+44,PUAC06,Government Access,none
+45,PUAC06,Public Access,none
+46,PUAC06,Universal Church,none
+47,PUAC06,3-2-1 Penguin,none
+0,TVLAND,The Andy Griffith Show |,none
+1,TVLAND,The Andy Griffith Show |,none
+2,TVLAND,The Andy Griffith Show |,none
+3,TVLAND,M*A*S*H |,none
+4,TVLAND,M*A*S*H |,none
+5,TVLAND,The Andy Griffith Show |,none
+6,TVLAND,The Andy Griffith Show |,none
+7,TVLAND,Paid Programming \{91},none
+8,TVLAND,The Andy Griffith Show |,none
+9,TVLAND,The Andy Griffith Show |,none
+10,TVLAND,The Andy Griffith Show |,none
+11,TVLAND,M*A*S*H |,none
+12,TVLAND,M*A*S*H |,none
+13,TVLAND,Roseanne | \{91},none
+14,TVLAND,The Nanny | \{91},none
+15,TVLAND,The Nanny | \{91},none
+16,TVLAND,The Cosby Show | \{91},none
+17,TVLAND,Roseanne | \{91},none
+18,TVLAND,Everybody Loves Raymond | \{91},none
+19,TVLAND,Everybody Loves Raymond | \{91},none
+20,TVLAND,Everybody Loves Raymond | \{91},none
+21,TVLAND,Everybody Loves Raymond | \{91},none
+22,TVLAND,Everybody Loves Raymond | \{91},none
+23,TVLAND,Extreme Makeover: Home Edition | \{91},none
+24,TVLAND,World's Greatest \{91},none
+25,TVLAND,Roseanne | \{91},none
+26,TVLAND,The Nanny | \{91},none
+27,TVLAND,Government Access,none
+28,TVLAND,The Nanny | \{91},none
+29,TVLAND,Roseanne |,none
+30,TVLAND,Three's Company,none
+31,TVLAND,Home Improvement | \{91},none
+32,TVLAND,Home Improvement | \{91},none
+33,TVLAND,Three's Company,none
+34,TVLAND,Three's Company,none
+35,TVLAND,The Nanny | \{91},none
+36,TVLAND,The Nanny | \{91},none
+37,TVLAND,The Nanny | \{91},none
+38,TVLAND,Extreme Makeover: Home Edition | \{91},none
+39,TVLAND,Back to the Future Part III \{91},none
+40,TVLAND,Extreme Makeover: Home Edition | \{91},none
+41,TVLAND,The Nanny | \{91},none
+42,TVLAND,The Nanny | \{91},none
+43,TVLAND,The Nanny | \{91},none
+44,TVLAND,The Nanny | \{91},none
+45,TVLAND,The Nanny | \{91},none
+46,TVLAND,The Nanny | \{91},none
+47,TVLAND,Home Improvement | \{91},none
+0,WTVE00,Frasier | \{91},none
+1,WTVE00,Paid Programming,none
+2,WTVE00,Inside Edition |,none
+3,WTVE00,Operation Smile,none
+4,WTVE00,Paid Programming,none
+5,WTVE00,Richard French News Magazine,none
+6,WTVE00,Inside Edition |,none
+7,WTVE00,Paid Programming,none
+8,WTVE00,Paid Programming,none
+9,WTVE00,Paid Programming,none
+10,WTVE00,Frasier | \{91},none
+11,WTVE00,Hour of Healing,none
+12,WTVE00,Paid Programming,none
+13,WTVE00,Shopping,none
+14,WTVE00,The Nanny | \{91},none
+15,WTVE00,Shopping,none
+16,WTVE00,Home Improvement | \{91},none
+17,WTVE00,The Nanny | \{91},none
+18,WTVE00,Shopping,none
+19,WTVE00,Paid Programming,none
+20,WTVE00,Paid Programming,none
+21,WTVE00,Paid Programming,none
+22,WTVE00,Paid Programming,none
+23,WTVE00,Paid Programming,none
+24,WTVE00,Paid Programming,none
+25,WTVE00,Paid Programming,none
+26,WTVE00,Paid Programming,none
+27,WTVE00,UrbanUnity,none
+28,WTVE00,Paid Programming,none
+29,WTVE00,Paid Programming,none
+30,WTVE00,The Andy Griffith Show |,none
+31,WTVE00,The Andy Griffith Show |,none
+32,WTVE00,Shopping,none
+33,WTVE00,M*A*S*H |,none
+34,WTVE00,Shopping,none
+35,WTVE00,Paid Programming,none
+36,WTVE00,Paid Programming,none
+37,WTVE00,Paid Programming,none
+38,WTVE00,Paid Programming,none
+39,WTVE00,Paid Programming,none
+40,WTVE00,Paid Programming,none
+41,WTVE00,Paid Programming,none
+42,WTVE00,Paid Programming,none
+43,WTVE00,Paid Programming,none
+44,WTVE00,Paid Programming,none
+45,WTVE00,Paid Programming,none
+46,WTVE00,Shepherd's Chapel \{91},none
+47,WTVE00,Shopping,none
+0,VERSUS,Quest for the NASCAR Sprint Cup,none
+1,VERSUS,Whacked Out Sports \{91},none
+2,VERSUS,NASCAR: Next Generation,none
+3,VERSUS,Whacked Out Sports \{91},none
+4,VERSUS,Slap Shot,none
+5,VERSUS,Whacked Out Sports \{91},none
+6,VERSUS,BMX Racing,none
+7,VERSUS,Get Rich Now!,none
+8,VERSUS,Whacked Out Sports \{91},none
+9,VERSUS,Whacked Out Sports \{91},none
+10,VERSUS,Whacked Out Sports \{91},none
+11,VERSUS,Bull Durham,none
+12,VERSUS,Paid Programming,none
+13,VERSUS,Whacked Out Sports \{91},none
+14,VERSUS,The Best and Worst of Tred Barta |,none
+15,VERSUS,The Daily Line,none
+16,VERSUS,Whacked Out Sports \{91},none
+17,VERSUS,Whacked Out Sports \{91},none
+18,VERSUS,Whacked Out Sports \{91},none
+19,VERSUS,Sports Jobs With Junior Seau,none
+20,VERSUS,Sports Jobs With Junior Seau,none
+21,VERSUS,The Daily Line,none
+22,VERSUS,Whacked Out Sports \{91},none
+23,VERSUS,Hank Parker 3-D,none
+24,VERSUS,Millionaire's Secrets,none
+25,VERSUS,Get Rich Now!,none
+26,VERSUS,The Best and Worst of Tred Barta |,none
+27,VERSUS,The Love of the Hunt,none
+28,VERSUS,The Daily Line,none
+29,VERSUS,Get Rich Now!,none
+30,VERSUS,The Buck Stops Here With Mike Hanback,none
+31,VERSUS,Paid Programming,none
+32,VERSUS,Hank Parker 3-D,none
+33,VERSUS,Dangerous Game |,none
+34,VERSUS,The Bucks of Tecomate |,none
+35,VERSUS,Hank Parker 3-D,none
+36,VERSUS,The Art of Making Money by Russ Dalbey,none
+37,VERSUS,Guns & Gear,none
+38,VERSUS,Campbell Outdoor Challenge,none
+39,VERSUS,The Love of the Hunt,none
+40,VERSUS,Fishing With Roland Martin |,none
+41,VERSUS,Get Ripped in 90 Days,none
+42,VERSUS,The Outdoor Guide,none
+43,VERSUS,Latitudes & Attitudes,none
+44,VERSUS,Super Retriever Series,none
+45,VERSUS,Elk Fever,none
+46,VERSUS,Millionaire's Secrets,none
+47,VERSUS,100 Percent Real Hunting TV,none
+0,SPEED0,NASCAR Race Hub,none
+1,SPEED0,Pass Time,none
+2,SPEED0,Dangerous Game |,none
+3,SPEED0,Stealth Rider,none
+4,SPEED0,Stealth Rider,none
+5,SPEED0,Pass Time,none
+6,SPEED0,On the Edge,none
+7,SPEED0,Truck U,none
+8,SPEED0,Barrett-Jackson 2006: The Auctions,none
+9,SPEED0,The Love of the Hunt,none
+10,SPEED0,Monster Jam,none
+11,SPEED0,Pinks - All Out,none
+12,SPEED0,Guns & Gear,none
+13,SPEED0,Intersections,none
+14,SPEED0,Battle of the Supercars,none
+15,SPEED0,NASCAR Race Hub,none
+16,SPEED0,NASCAR Racing,none
+17,SPEED0,Battle of the Supercars,none
+18,SPEED0,Pinks - All Out,none
+19,SPEED0,Intersections,none
+20,SPEED0,Intersections,none
+21,SPEED0,Stealth Rider,none
+22,SPEED0,Stealth Rider,none
+23,SPEED0,Two Guys Garage,none
+24,SPEED0,Chop Cut Rebuild,none
+25,SPEED0,OmniReliant Dual Saw,none
+26,SPEED0,Monster Jam,none
+27,SPEED0,NASCAR Performance,none
+28,SPEED0,Monster Jam,none
+29,SPEED0,Paid Programming,none
+30,SPEED0,Paid Programming,none
+31,SPEED0,Whacked Out Sports \{91},none
+32,SPEED0,MotoGP Racing,none
+33,SPEED0,Car Crazy,none
+34,SPEED0,Free Magic Bullet. Buy the Original Magic Bullet and Get 1 Free,none
+35,SPEED0,SPEED Test Drive,none
+36,SPEED0,Monster Jam,none
+37,SPEED0,NASCAR Racing,none
+38,SPEED0,Truck U,none
+39,SPEED0,Two Guys Garage,none
+40,SPEED0,MotoGP Racing,none
+41,SPEED0,NASCAR Racing,none
+42,SPEED0,Paid Programming,none
+43,SPEED0,NASCAR in a Hurry,none
+44,SPEED0,Race in 60,none
+45,SPEED0,Battle of the Supercars,none
+46,SPEED0,Paid Programming,none
+47,SPEED0,MotoGP Racing,none
+0,BRAVO0,The Real Housewives of Atlanta,none
+1,BRAVO0,Whacked Out Sports \{91},none
+2,BRAVO0,Car Crazy,none
+3,BRAVO0,The Real Housewives of Atlanta,none
+4,BRAVO0,SPEED Test Drive,none
+5,BRAVO0,Top Chef: Just Desserts,none
+6,BRAVO0,Paid Programming,none
+7,BRAVO0,Outsourced | \{91},none
+8,BRAVO0,Top Chef: Just Desserts,none
+9,BRAVO0,NASCAR Performance,none
+10,BRAVO0,Top Chef: Just Desserts,none
+11,BRAVO0,Top Chef: Just Desserts,none
+12,BRAVO0,NASCAR Racing,none
+13,BRAVO0,The Millionaire Matchmaker | \{91},none
+14,BRAVO0,Top Chef: Just Desserts,none
+15,BRAVO0,The Millionaire Matchmaker | \{91},none
+16,BRAVO0,The Rachel Zoe Project |,none
+17,BRAVO0,The Real Housewives of Atlanta,none
+18,BRAVO0,Flipping Out |,none
+19,BRAVO0,Top Chef: Just Desserts,none
+20,BRAVO0,The Real Housewives of D.C.,none
+21,BRAVO0,Top Chef: Just Desserts,none
+22,BRAVO0,Watch What Happens: Live,none
+23,BRAVO0,The Millionaire Matchmaker | \{91},none
+24,BRAVO0,Two Guys Garage,none
+25,BRAVO0,Paid Programming,none
+26,BRAVO0,Paid Programming,none
+27,BRAVO0,Dream Dinners,none
+28,BRAVO0,Work of Art: The Next Great Artist,none
+29,BRAVO0,Get Ripped in 90 Days,none
+30,BRAVO0,Shark Press & Refresh,none
+31,BRAVO0,The Real Housewives of Atlanta,none
+32,BRAVO0,Painless Hair Removal,none
+33,BRAVO0,Kill 99 Percent of H1N1 Germs,none
+34,BRAVO0,Slim in 6,none
+35,BRAVO0,The Ninth Gate |,none
+36,BRAVO0,Work of Art: The Next Great Artist,none
+37,BRAVO0,The Real Housewives of Atlanta,none
+38,BRAVO0,The Millionaire Matchmaker | \{91},none
+39,BRAVO0,The Legend of Zorro,none
+40,BRAVO0,The Millionaire Matchmaker | \{91},none
+41,BRAVO0,Flipping Out |,none
+42,BRAVO0,Battle of the Supercars,none
+43,BRAVO0,The Real Housewives of D.C.,none
+44,BRAVO0,Work of Art: The Next Great Artist,none
+45,BRAVO0,The Millionaire Matchmaker \{91},none
+46,BRAVO0,Flipping Out |,none
+47,BRAVO0,Flipping Out |,none
+0,FOOD00,Challenge,none
+1,FOOD00,Throwdown With Bobby Flay,none
+2,FOOD00,Unwrapped,none
+3,FOOD00,Unwrapped,none
+4,FOOD00,Paula's Best Dishes,none
+5,FOOD00,Down Home With the Neelys,none
+6,FOOD00,Secrets of a Restaurant Chef,none
+7,FOOD00,Cooking for Real,none
+8,FOOD00,Giada at Home,none
+9,FOOD00,Barefoot Contessa,none
+10,FOOD00,America's Best,none
+11,FOOD00,"Diners, Drive-Ins and Dives",none
+12,FOOD00,"Diners, Drive-Ins and Dives",none
+13,FOOD00,"Diners, Drive-Ins and Dives",none
+14,FOOD00,Cupcake Wars,none
+15,FOOD00,Rachael's Vacation,none
+16,FOOD00,"Diners, Drive-Ins and Dives",none
+17,FOOD00,America's Best,none
+18,FOOD00,"Diners, Drive-Ins and Dives",none
+19,FOOD00,"Diners, Drive-Ins and Dives",none
+20,FOOD00,Good Eats,none
+21,FOOD00,Unwrapped,none
+22,FOOD00,Guy's Big Bite,none
+23,FOOD00,Grill It! With Bobby Flay,none
+24,FOOD00,Paid Programming,none
+25,FOOD00,Amazing New Beverage System,none
+26,FOOD00,Paid Programming,none
+27,FOOD00,Sexy Faces Breakthrough Scientific Procedure,none
+28,FOOD00,Bonzai Knives,none
+29,FOOD00,Kill 99 Percent of H1N1 Germs,none
+30,FOOD00,"Diners, Drive-Ins and Dives",none
+31,FOOD00,Paid Programming,none
+32,FOOD00,Paid Programming,none
+33,FOOD00,Paid Programming,none
+34,FOOD00,Cindy Crawford's Meaningful Beauty,none
+35,FOOD00,Mexican Made Easy,none
+36,FOOD00,Down Home With the Neelys,none
+37,FOOD00,Paula's Best Dishes,none
+38,FOOD00,Giada at Home,none
+39,FOOD00,Sandra's Money Saving Meals,none
+40,FOOD00,The Great Food Truck Race,none
+41,FOOD00,Tyler's Ultimate,none
+42,FOOD00,Quick Fix Meals With Robin Miller,none
+43,FOOD00,Cooking for Real,none
+44,FOOD00,Barefoot Contessa,none
+45,FOOD00,"6 Week Body Makeover Eat More, Exercise Less & Lose Weight Every Week",none
+46,FOOD00,30-Minute Meals,none
+47,FOOD00,30-Minute Meals,none
+0,EWTN00,"Sunday Night, Live With Father Benedict Groeschel",none
+1,EWTN00,Crossing the Goal,none
+2,EWTN00,Cardinal Newman: The Littlemore Years,none
+3,EWTN00,Fr. Corapi & the Catechism of the Catholic Church,none
+4,EWTN00,Mexican Made Easy,none
+5,EWTN00,Benediction & Devotion,none
+6,EWTN00,Military Orders and The Crusades,none
+7,EWTN00,The Holy Rosary in Stained Glass,none
+8,EWTN00,The World Over,none
+9,EWTN00,Search and Rescue,none
+10,EWTN00,Biblical Story of The Mass,none
+11,EWTN00,G.K. Chesterton: The Apostle of Common Sense,none
+12,EWTN00,The Holy Rosary With Mother Angelica and the Nuns of Our Lady of the Angels Monastery,none
+13,EWTN00,Litany of the Sacred Heart |,none
+14,EWTN00,Pope Benedict XVI: Journey to England and Scotland,none
+15,EWTN00,Global Showcase,none
+16,EWTN00,Defending Life,none
+17,EWTN00,Cooking for Real,none
+18,EWTN00,Sunday Mass: Our Lady of the Angels |,none
+19,EWTN00,Catholic Compass,none
+20,EWTN00,Sandra's Money Saving Meals,none
+21,EWTN00,Life on the Rock,none
+22,EWTN00,Women of Grace,none
+23,EWTN00,Reflections With Fr. Leo Clifford,none
+24,EWTN00,The Joy of Music With Diane Bish | \{91},none
+25,EWTN00,Forgotten Heritage: Europe and the Eucharist,none
+26,EWTN00,Litany of the Holy Name |,none
+27,EWTN00,Holy Land Rosary,none
+28,EWTN00,Sunday Mass: Our Lady of the Angels |,none
+29,EWTN00,EWTN Original Productions,none
+30,EWTN00,Healing of the Spirit,none
+31,EWTN00,Light of the East,none
+32,EWTN00,Chiara Luce Badano: Life Love Light,none
+33,EWTN00,Super Saints,none
+34,EWTN00,Mission for Truth,none
+35,EWTN00,"Diners, Drive-Ins and Dives",none
+36,EWTN00,Litany of the Sacred Heart |,none
+37,EWTN00,In Step With Newman,none
+38,EWTN00,Litany of the Sacred Heart |,none
+39,EWTN00,In Concert,none
+40,EWTN00,Mass For The Centennial Celebration of Catholic Charities USA,none
+41,EWTN00,Sunday Mass: Our Lady of the Angels |,none
+42,EWTN00,The Holy Rosary With Mother Angelica and the Nuns of OLAM |,none
+43,EWTN00,Bookmark,none
+44,EWTN00,Rome Reports,none
+45,EWTN00,Faith and Culture,none
+46,EWTN00,Angelus with Mother Angelica and the Nuns of Our Lady of Angels Monastery |,none
+47,EWTN00,Angels of God,none
+0,HISTOR,Modern History,none
+1,HISTOR,Pawn Stars |,none
+2,HISTOR,American Restoration,none
+3,HISTOR,Modern Marvels |,none
+4,HISTOR,Pawn Stars |,none
+5,HISTOR,Tech It to the Max,none
+6,HISTOR,Pawn Stars |,none
+7,HISTOR,Pawn Stars |,none
+8,HISTOR,Time Machine |,none
+9,HISTOR,Pawn Stars |,none
+10,HISTOR,Everyday History,none
+11,HISTOR,Swamp People,none
+12,HISTOR,American Restoration,none
+13,HISTOR,American Restoration,none
+14,HISTOR,Faith and Culture,none
+15,HISTOR,Pawn Stars |,none
+16,HISTOR,Angels of God,none
+17,HISTOR,Bookmark,none
+18,HISTOR,Pawn Stars |,none
+19,HISTOR,IRT Deadliest Roads,none
+20,HISTOR,Pawn Stars |,none
+21,HISTOR,Hardcore History |,none
+22,HISTOR,Sunday Mass: Our Lady of the Angels |,none
+23,HISTOR,Swamp People |,none
+24,HISTOR,Pawn Stars |,none
+25,HISTOR,Paid Programming,none
+26,HISTOR,To Be Announced,none
+27,HISTOR,Search and Rescue,none
+28,HISTOR,Time Machine |,none
+29,HISTOR,Paid Programming,none
+30,HISTOR,Paid Programming,none
+31,HISTOR,Crossing the Goal,none
+32,HISTOR,Paid Programming,none
+33,HISTOR,Paid Programming,none
+34,HISTOR,Paid Programming,none
+35,HISTOR,Pawn Stars |,none
+36,HISTOR,MonsterQuest |,none
+37,HISTOR,Pawn Stars |,none
+38,HISTOR,Modern History,none
+39,HISTOR,American Restoration,none
+40,HISTOR,Time Machine |,none
+41,HISTOR,Tech It to the Max,none
+42,HISTOR,Pawn Stars |,none
+43,HISTOR,Pawn Stars |,none
+44,HISTOR,Time Machine |,none
+45,HISTOR,Pawn Stars |,none
+46,HISTOR,Everyday History,none
+47,HISTOR,Ancient Aliens |,none
+0,HGTV00,House Hunters International |,none
+1,HGTV00,Crossing the Goal,none
+2,HGTV00,House Hunters |,none
+3,HGTV00,Divine Design |,none
+4,HGTV00,Sarah's House | \{91},none
+5,HGTV00,Antonio Treatment |,none
+6,HGTV00,Paid Programming,none
+7,HGTV00,Paid Programming,none
+8,HGTV00,Divine Design |,none
+9,HGTV00,Sarah's House | \{91},none
+10,HGTV00,Blank Canvas |,none
+11,HGTV00,Dear Genevieve |,none
+12,HGTV00,Curb Appeal: The Block |,none
+13,HGTV00,Color Splash: Miami |,none
+14,HGTV00,House Hunters International |,none
+15,HGTV00,Income Property | \{91},none
+16,HGTV00,My First Place |,none
+17,HGTV00,Curb Appeal: The Block |,none
+18,HGTV00,Dear Genevieve |,none
+19,HGTV00,Color Splash: Miami |,none
+20,HGTV00,House Hunters |,none
+21,HGTV00,House Hunters International |,none
+22,HGTV00,House Hunters |,none
+23,HGTV00,HGTV Urban Oasis |,none
+24,HGTV00,Design on a Dime |,none
+25,HGTV00,Shark Press & Refresh |,none
+26,HGTV00,Over Your Head |,none
+27,HGTV00,Carter Can |,none
+28,HGTV00,All American Handyman |,none
+29,HGTV00,Paid Programming |,none
+30,HGTV00,Disney Storybook Vacations |,none
+31,HGTV00,Curb Appeal: The Block |,none
+32,HGTV00,Millionaire's Secrets |,none
+33,HGTV00,Alteril |,none
+34,HGTV00,Paid Programming |,none
+35,HGTV00,Swamp People,none
+36,HGTV00,Holmes on Homes |,none
+37,HGTV00,Designed to Sell |,none
+38,HGTV00,The Unsellables | \{91},none
+39,HGTV00,Get It Sold |,none
+40,HGTV00,Curb Appeal: The Block |,none
+41,HGTV00,Designed to Sell |,none
+42,HGTV00,Income Property | \{91},none
+43,HGTV00,Holmes on Homes |,none
+44,HGTV00,Disaster DIY | \{91},none
+45,HGTV00,Professional Grade |,none
+46,HGTV00,House Crashers |,none
+47,HGTV00,Property Virgins | \{91},none
+0,CSPAN0,America & the Courts,none
+1,CSPAN0,American Politics,none
+2,CSPAN0,U.S. Senate Debate,none
+3,CSPAN0,Tonight From Washington,none
+4,CSPAN0,Swamp People,none
+5,CSPAN0,Newsmakers,none
+6,CSPAN0,Paid Programming |,none
+7,CSPAN0,Shark Press & Refresh |,none
+8,CSPAN0,Over Your Head |,none
+9,CSPAN0,Carter Can |,none
+10,CSPAN0,U.S. House of Representatives,none
+11,CSPAN0,International Programming,none
+12,CSPAN0,American Politics,none
+13,CSPAN0,Disaster DIY | \{91},none
+14,CSPAN0,Professional Grade |,none
+15,CSPAN0,Today in Washington,none
+16,CSPAN0,Property Virgins | \{91},none
+17,CSPAN0,American Politics,none
+18,CSPAN0,International Programming,none
+19,CSPAN0,Tonight From Washington,none
+20,CSPAN0,Get It Sold |,none
+21,CSPAN0,Capital News Today,none
+22,CSPAN0,Designed to Sell |,none
+23,CSPAN0,Design on a Dime |,none
+24,CSPAN0,HGTV Urban Oasis |,none
+25,CSPAN0,Paid Programming,none
+26,CSPAN0,Washington Journal,none
+27,CSPAN0,Sarah's House | \{91},none
+28,CSPAN0,Blank Canvas |,none
+29,CSPAN0,Today in Washington,none
+30,CSPAN0,Antonio Treatment |,none
+31,CSPAN0,Crossing the Goal,none
+32,CSPAN0,House Hunters |,none
+33,CSPAN0,Divine Design |,none
+34,CSPAN0,Sarah's House | \{91},none
+35,CSPAN0,Dear Genevieve |,none
+36,CSPAN0,Curb Appeal: The Block |,none
+37,CSPAN0,Color Splash: Miami |,none
+38,CSPAN0,U.S. House of Representatives,none
+39,CSPAN0,House Hunters International |,none
+40,CSPAN0,C-SPAN Weekend,none
+41,CSPAN0,U.S. House of Representatives,none
+42,CSPAN0,Curb Appeal: The Block |,none
+43,CSPAN0,Color Splash: Miami |,none
+44,CSPAN0,U.S. House of Representatives,none
+45,CSPAN0,C-SPAN Weekend,none
+46,CSPAN0,My First Place |,none
+47,CSPAN0,House Hunters International |,none
+0,MSNBC0,Hardball With Chris Matthews |,none
+1,MSNBC0,Divine Design |,none
+2,MSNBC0,Countdown With Keith Olbermann,none
+3,MSNBC0,Dear Genevieve |,none
+4,MSNBC0,Crossing the Goal,none
+5,MSNBC0,The Ed Show,none
+6,MSNBC0,Paid Programming,none
+7,MSNBC0,The Dylan Ratigan Show,none
+8,MSNBC0,Hardball With Chris Matthews |,none
+9,MSNBC0,Today in Washington,none
+10,MSNBC0,The Rachel Maddow Show,none
+11,MSNBC0,Color Splash: Miami |,none
+12,MSNBC0,The Last Word With Lawrence O'Donnell,none
+13,MSNBC0,C-SPAN Weekend,none
+14,MSNBC0,Hardball With Chris Matthews |,none
+15,MSNBC0,House Hunters International |,none
+16,MSNBC0,Color Splash: Miami |,none
+17,MSNBC0,The Rachel Maddow Show,none
+18,MSNBC0,The Last Word With Lawrence O'Donnell,none
+19,MSNBC0,House Hunters International |,none
+20,MSNBC0,Countdown With Keith Olbermann,none
+21,MSNBC0,U.S. House of Representatives,none
+22,MSNBC0,MSNBC News Live,none
+23,MSNBC0,Design on a Dime |,none
+24,MSNBC0,Hardball Weekend,none
+25,MSNBC0,Shark Press & Refresh |,none
+26,MSNBC0,Your Business,none
+27,MSNBC0,MSNBC News Live,none
+28,MSNBC0,Morning Joe,none
+29,MSNBC0,Morning Joe,none
+30,MSNBC0,Way Too Early With Willie Geist,none
+31,MSNBC0,American Politics,none
+32,MSNBC0,Countdown With Keith Olbermann,none
+33,MSNBC0,Tonight From Washington,none
+34,MSNBC0,First Look,none
+35,MSNBC0,The Daily Rundown,none
+36,MSNBC0,Disaster DIY | \{91},none
+37,MSNBC0,Andrea Mitchell Reports,none
+38,MSNBC0,Capital News Today,none
+39,MSNBC0,MSNBC News Live,none
+40,MSNBC0,The Ed Show,none
+41,MSNBC0,MSNBC News Live,none
+42,MSNBC0,MSNBC News Live,none
+43,MSNBC0,Today in Washington,none
+44,MSNBC0,MSNBC News Live,none
+45,MSNBC0,The NBC Primetime Preview Show | \{91},none
+46,MSNBC0,5 Who Cheated Death,none
+47,MSNBC0,5 Animal Attacks,none
+0,CNBC00,American Greed,none
+1,CNBC00,Paid Programming,none
+2,CNBC00,Wall Street Journal Report With Maria Bartiromo |,none
+3,CNBC00,American Greed,none
+4,CNBC00,The Daily Rundown,none
+5,CNBC00,Cindy Crawford's Meaningful Beauty,none
+6,CNBC00,Painless Hair Removal,none
+7,CNBC00,Best Cooking Device!,none
+8,CNBC00,Free Magic Bullet. Buy the Original Magic Bullet and Get 1 Free,none
+9,CNBC00,Millionaire's Secrets,none
+10,CNBC00,Paid Programming,none
+11,CNBC00,The Suze Orman Show |,none
+12,CNBC00,Andrea Mitchell Reports,none
+13,CNBC00,Til Debt Do Us Part | \{91},none
+14,CNBC00,Til Debt Do Us Part | \{91},none
+15,CNBC00,Get Better Grades,none
+16,CNBC00,Youthology 90 Second Wrinkle Removing Eye Serum,none
+17,CNBC00,Today in Washington,none
+18,CNBC00,The Suze Orman Show |,none
+19,CNBC00,Til Debt Do Us Part | \{91},none
+20,CNBC00,Til Debt Do Us Part | \{91},none
+21,CNBC00,CNBC Titans,none
+22,CNBC00,MSNBC News Live,none
+23,CNBC00,Zumba Sexy Body Transformation System,none
+24,CNBC00,Sexy Faces Breakthrough Scientific Procedure,none
+25,CNBC00,Paid Programming,none
+26,CNBC00,Paid Programming,none
+27,CNBC00,Look Young in Seconds With Youthology. It Just Takes 90 Seconds!,none
+28,CNBC00,Zumba Sexy Body Transformation System,none
+29,CNBC00,Options Action,none
+30,CNBC00,The Ed Show,none
+31,CNBC00,Get Sexier in 90 Days!,none
+32,CNBC00,Mad Money,none
+33,CNBC00,Dear Genevieve |,none
+34,CNBC00,The Suze Orman Show |,none
+35,CNBC00,Get Sexier in 90 Days!,none
+36,CNBC00,Sexy Abs,none
+37,CNBC00,Insane Sexy Bodies!,none
+38,CNBC00,Paid Programming,none
+39,CNBC00,Best Cooking Device!,none
+40,CNBC00,Get Sexier in 90 Days!,none
+41,CNBC00,Profit From Real Estate Right Now,none
+42,CNBC00,Painless Hair Removal,none
+43,CNBC00,Sexy Faces Breakthrough Scientific Procedure,none
+44,CNBC00,Paid Programming,none
+45,CNBC00,Perfect Booty!,none
+46,CNBC00,Kill 99 Percent of H1N1 Germs,none
+47,CNBC00,10 Minute Meals!,none
+0,TRUTV0,Cops | \{91},none
+1,TRUTV0,Get Sexier in 90 Days!,none
+2,TRUTV0,Cops | \{91},none
+3,TRUTV0,Operation Repo,none
+4,TRUTV0,Operation Repo,none
+5,TRUTV0,World's Wildest Police Videos | \{91},none
+6,TRUTV0,Hot Pursuit,none
+7,TRUTV0,Masterminds,none
+8,TRUTV0,Hot Pursuit,none
+9,TRUTV0,Hot Pursuit,none
+10,TRUTV0,Hot Pursuit,none
+11,TRUTV0,Operation Repo,none
+12,TRUTV0,Operation Repo,none
+13,TRUTV0,Forensic Files,none
+14,TRUTV0,LA Forensics,none
+15,TRUTV0,Over the Limit,none
+16,TRUTV0,LA Forensics,none
+17,TRUTV0,Forensic Files,none
+18,TRUTV0,Forensic Files,none
+19,TRUTV0,Hardcore Pawn,none
+20,TRUTV0,Hardcore Pawn,none
+21,TRUTV0,Forensic Files,none
+22,TRUTV0,Forensic Files,none
+23,TRUTV0,Masterminds,none
+24,TRUTV0,Zumba Sexy Body Transformation System,none
+25,TRUTV0,Shark Press & Refresh,none
+26,TRUTV0,Steam with the Shark,none
+27,TRUTV0,Paid Programming,none
+28,TRUTV0,Sexy Faces Breakthrough Scientific Procedure,none
+29,TRUTV0,Paid Programming,none
+30,TRUTV0,Paid Programming,none
+31,TRUTV0,Forensic Files,none
+32,TRUTV0,Paid Programming,none
+33,TRUTV0,Paid Programming,none
+34,TRUTV0,Kill 99 Percent of H1N1 Germs,none
+35,TRUTV0,Forensic Files,none
+36,TRUTV0,In Session,none
+37,TRUTV0,Hot Pursuit,none
+38,TRUTV0,Most Daring,none
+39,TRUTV0,Hot Pursuit,none
+40,TRUTV0,Most Daring,none
+41,TRUTV0,Most Daring,none
+42,TRUTV0,Paid Programming,none
+43,TRUTV0,Best Cooking Device!,none
+44,TRUTV0,NO NEED TO DIET! This Is a Must See!,none
+45,TRUTV0,Shark Press & Refresh,none
+46,TRUTV0,Sexy Bodies of 2010,none
+47,TRUTV0,"6 Week Body Makeover Eat More, Exercise Less & Lose Weight Every Week",none
+0,TWC000,When Weather Changed History,none
+1,TWC000,Forensic Files,none
+2,TWC000,Paid Programming,none
+3,TWC000,Storm Riders,none
+4,TWC000,Storm Stories | \{91},none
+5,TWC000,PM Edition |,none
+6,TWC000,Paid Programming,none
+7,TWC000,Storm Stories | \{91},none
+8,TWC000,Cantore Stories |,none
+9,TWC000,SeaTek,none
+10,TWC000,When Nature Strikes Back \{91},none
+11,TWC000,Cantore Stories,none
+12,TWC000,SeaTek,none
+13,TWC000,Storm Riders,none
+14,TWC000,Storm Stories | \{91},none
+15,TWC000,Cantore Stories,none
+16,TWC000,SeaTek,none
+17,TWC000,Best Cooking Device!,none
+18,TWC000,When Weather Changed History,none
+19,TWC000,When Nature Strikes Back | \{91},none
+20,TWC000,Hot Pursuit,none
+21,TWC000,PM Edition |,none
+22,TWC000,Most Daring,none
+23,TWC000,Storm Riders,none
+24,TWC000,Masterminds,none
+25,TWC000,Masterminds,none
+26,TWC000,Weekend View |,none
+27,TWC000,Hot Pursuit,none
+28,TWC000,Hot Pursuit,none
+29,TWC000,Hot Pursuit,none
+30,TWC000,World's Wildest Police Videos | \{91},none
+31,TWC000,Get Sexier in 90 Days!,none
+32,TWC000,Weather Classroom,none
+33,TWC000,Sunrise Weather |,none
+34,TWC000,Weekend View |,none
+35,TWC000,Operation Repo,none
+36,TWC000,Weekend View |,none
+37,TWC000,Hardcore Pawn,none
+38,TWC000,Hardcore Pawn,none
+39,TWC000,Forensic Files,none
+40,TWC000,When Weather Changed History,none
+41,TWC000,Forensic Files,none
+42,TWC000,Forensic Files,none
+43,TWC000,Forensic Files,none
+44,TWC000,LA Forensics,none
+45,TWC000,Over the Limit,none
+46,TWC000,Weekend Now |,none
+47,TWC000,When Nature Strikes Back | \{91},none
+0,GOLF00,Golf Central,none
+1,GOLF00,Playing Lessons From the Pros,none
+2,GOLF00,Inside the PGA Tour,none
+3,GOLF00,Golf's Amazing Videos,none
+4,GOLF00,Golfing World,none
+5,GOLF00,European Tour Weekly,none
+6,GOLF00,Inside the PGA Tour,none
+7,GOLF00,Top 10,none
+8,GOLF00,Top 10,none
+9,GOLF00,Golf's Amazing Videos,none
+10,GOLF00,Top 10,none
+11,GOLF00,Top 10,none
+12,GOLF00,Destination Golf,none
+13,GOLF00,Being John Daly,none
+14,GOLF00,Playing Lessons From the Pros,none
+15,GOLF00,Inside the PGA Tour,none
+16,GOLF00,Golf's Amazing Videos,none
+17,GOLF00,Top 10,none
+18,GOLF00,Golf's Amazing Videos,none
+19,GOLF00,Destination Golf,none
+20,GOLF00,Golf Central,none
+21,GOLF00,Playing Lessons From the Pros,none
+22,GOLF00,Pelz Wedge System,none
+23,GOLF00,Bobby Jones 2010,none
+24,GOLF00,Golf Central,none
+25,GOLF00,Golf Central,none
+26,GOLF00,Golf Central,none
+27,GOLF00,Inside the PGA Tour,none
+28,GOLF00,Golf Central,none
+29,GOLF00,Paid Programming,none
+30,GOLF00,Gary McCord: How to Strike It Like a Tour Player,none
+31,GOLF00,Bonzai Knives,none
+32,GOLF00,$99 Golf Driver with Free 3 Wood,none
+33,GOLF00,Paid Programming,none
+34,GOLF00,Canadian Tour Magazine: Chasing the Dream,none
+35,GOLF00,Johnnie Walker Championship Highlights,none
+36,GOLF00,Donald J. Trump's Fabulous World of Golf,none
+37,GOLF00,Inside the PGA Tour,none
+38,GOLF00,Playing Lessons From the Pros,none
+39,GOLF00,Destination Golf,none
+40,GOLF00,The Haney Project,none
+41,GOLF00,Canadian Tour Magazine: Chasing the Dream,none
+42,GOLF00,Cantore Stories,none
+43,GOLF00,Paid Programming,none
+44,GOLF00,Canadian Tour Magazine: Chasing the Dream,none
+45,GOLF00,Tour Championship Highlights,none
+46,GOLF00,19th Hole,none
+47,GOLF00,19th Hole,none
+0,SPIKET,Inside the PGA Tour,none
+1,SPIKET,Gangland | \{91},none
+2,SPIKET,Paid Programming,none
+3,SPIKET,Gangland | \{91},none
+4,SPIKET,Gangland | \{91},none
+5,SPIKET,Band of Brothers | \{91},none
+6,SPIKET,Gangland | \{91},none
+7,SPIKET,Disorderly Conduct: Video on Patrol | \{91},none
+8,SPIKET,Gangland | \{91},none
+9,SPIKET,Band of Brothers | \{91},none
+10,SPIKET,UFC Unleashed | \{91},none
+11,SPIKET,Canadian Tour Magazine: Chasing the Dream,none
+12,SPIKET,MANswers | \{91},none
+13,SPIKET,Hard to Kill \{91},none
+14,SPIKET,Gangland | \{91},none
+15,SPIKET,Scrappers \{91},none
+16,SPIKET,UFC Unleashed | \{91},none
+17,SPIKET,UFC 119: Preliminaries \{91},none
+18,SPIKET,Gangland | \{91},none
+19,SPIKET,Playing Lessons From the Pros,none
+20,SPIKET,Band of Brothers | \{91},none
+21,SPIKET,Paid Programming \{91},none
+22,SPIKET,Recession Profits \{91},none
+23,SPIKET,UFC 119 Countdown: Mir vs. Cro Cop \{91},none
+24,SPIKET,Look Young in Seconds With Youthology. It Just Takes 90 Seconds! \{91},none
+25,SPIKET,Paid Programming \{91},none
+26,SPIKET,Paid Programming \{91},none
+27,SPIKET,MANswers \{91},none
+28,SPIKET,Paid Programming \{91},none
+29,SPIKET,Paid Programming \{91},none
+30,SPIKET,Your Baby Can Read \{91},none
+31,SPIKET,Sexy Abs \{91},none
+32,SPIKET,Xtreme 4x4 \{91},none
+33,SPIKET,Paid Programming \{91},none
+34,SPIKET,Horsepower TV | \{91},none
+35,SPIKET,Trucks! | \{91},none
+36,SPIKET,MuscleCar | \{91},none
+37,SPIKET,What If? | \{91},none
+38,SPIKET,Conceal & Carry School \{91},none
+39,SPIKET,Practical Tactical \{91},none
+40,SPIKET,Because Lives Depend On It \{91},none
+41,SPIKET,"1,000 Ways to Die \{91}",none
+42,SPIKET,"1,000 Ways to Die \{91}",none
+43,SPIKET,"1,000 Ways to Die \{91}",none
+44,SPIKET,"1,000 Ways to Die \{91}",none
+45,SPIKET,"1,000 Ways to Die \{91}",none
+46,SPIKET,"1,000 Ways to Die \{91}",none
+47,SPIKET,19th Hole,none
+1,PRV001,Prevue First!,none
+1,PRV002,"                Prevue First! (C) 1999 Prevue Networks, Inc.",none

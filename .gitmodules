@@ -3,4 +3,4 @@
 	url = https://github.com/jpsim/Yams.git
 [submodule "Modules/CSV.swift"]
 	path = Modules/CSV.swift
-	url = https://github.com/yaslab/CSV.swift.git
+	url = git@github.com:AriX/CSV.swift.git

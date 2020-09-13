@@ -9,25 +9,25 @@
 struct ChannelsCommand: DataCommand, Codable, Equatable {
     static let commandMode = DataCommandMode.channel
     let day: JulianDay
-    let channels: [Channel]
+    let channels: [Listings.Channel]
 }
 
 // MARK: Binary coding
 
-extension Channel: BinaryCodable {
+extension Listings.Channel: BinaryCodable {
     static let marker: Byte = 0x12
     static let channelNumberMarker: Byte = 0x11
     static let callLettersMarker: Byte = 0x01
 
     init(fromBinary decoder: BinaryDecoder) throws {
-        flags = try decoder.decode(ChannelAttributes.self)
-        sourceIdentifier = try decoder.readString(until: { $0 == Channel.channelNumberMarker})
-        channelNumber = try decoder.readString(until: { $0 == Channel.callLettersMarker})
-        callLetters = try decoder.readString(until: { $0 == Channel.marker || $0 == ChannelsCommand.terminator }, consumingFinalByte: false)
+        flags = try decoder.decode(Attributes.self)
+        sourceIdentifier = try decoder.readString(until: { $0 == Self.channelNumberMarker})
+        channelNumber = try decoder.readString(until: { $0 == Self.callLettersMarker})
+        callLetters = try decoder.readString(until: { $0 == Self.marker || $0 == ChannelsCommand.terminator }, consumingFinalByte: false)
     }
     
     func binaryEncode(to encoder: BinaryEncoder) throws {
-        encoder += [Channel.marker, flags.rawValue, sourceIdentifier.asBytes(), Channel.channelNumberMarker, channelNumber.asBytes(), Channel.callLettersMarker, callLetters.asBytes()]
+        encoder += [Self.marker, flags.rawValue, sourceIdentifier.asBytes(), Self.channelNumberMarker, channelNumber.asBytes(), Self.callLettersMarker, callLetters.asBytes()]
     }
 }
 
@@ -37,10 +37,10 @@ extension ChannelsCommand: BinaryCodable {
     init(fromBinary decoder: BinaryDecoder) throws {
         day = try decoder.decode(JulianDay.self)
         
-        var decodedChannels: [Channel] = []
+        var decodedChannels: [Listings.Channel] = []
         // Check for 0x12, which marks the beginning of another channel block
-        while try decoder.decode(Byte.self) == Channel.marker {
-            let channel = try decoder.decode(Channel.self)
+        while try decoder.decode(Byte.self) == Listings.Channel.marker {
+            let channel = try decoder.decode(Listings.Channel.self)
             decodedChannels.append(channel)
         }
         

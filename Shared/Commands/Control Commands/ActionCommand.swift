@@ -16,12 +16,12 @@ enum ActionCommandTransitionType: Character {
 }
 
 enum ActionCommandValue {
-    case quarterScreenPreview(SourceIdentifier, SourceIdentifier) // ^A1, provide left and right source identifiers
+    case quarterScreenPreview(Listings.SourceIdentifier, Listings.SourceIdentifier) // ^A1, provide left and right source identifiers
     case halfScreenNationalAd // ^A3
-    case halfScreenSourceConstrainedPreview(SourceIdentifier) // ^A4, ^A6
+    case halfScreenSourceConstrainedPreview(Listings.SourceIdentifier) // ^A4, ^A6
     case quarterScreenTrigger(ActionCommandTransitionType, ActionCommandTransitionType) // ^A7, "Two source preview trigger" "Similar to ^A1 but without src. Used for multiple tags" - what is this?
     case halfScreenPromoWithTextOverlay // ^A8 - software says "Got Preview (1/2 Screen)", is this right? what's the format?
-    case localAdOrQuarterScreenPreview(SourceIdentifier, SourceIdentifier) // ^L1, provide left and right source identifiers
+    case localAdOrQuarterScreenPreview(Listings.SourceIdentifier, Listings.SourceIdentifier) // ^L1, provide left and right source identifiers
     case localAdOrHalfScreenNationalAd // ^L3
 }
 

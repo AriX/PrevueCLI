@@ -48,3 +48,9 @@ extension SatelliteCommand {
         }
     }
 }
+
+extension MetaCommand {
+    var description: String {
+        return "\(type(of: self)): \(commands)"
+    }
+}

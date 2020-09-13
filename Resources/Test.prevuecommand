@@ -20,7 +20,7 @@ commands:
 - ConfigurationCommand: {timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 5, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00}
 
 # Send New Look configuration (change 'grid' to 'scroll' to get the list format)
-- NewLookConfigurationCommand: {displayFormat: grid, textAdFlag: satellite}
+# - NewLookConfigurationCommand: {displayFormat: grid, textAdFlag: satellite}
 
 # Reset local ads
 - LocalAdCommand: {reset: true}
@@ -36,7 +36,7 @@ commands:
 - ColorLocalAdCommand: {adNumber: 5, content: [{text: "Always think "}, {text: "Prevue ", color: {background: grey, foreground: yellow}}, {text: "first!", color: {background: lightBlue, foreground: red}}]}
 
 # Send sample listings data from the included .csv files
-- ListingsCommand: {channelsFilePath: "Sample Listings/channels.csv", programsFilePath: "Sample Listings/programs.csv", forAtari: true}
+- ListingsCommand: {channelsFilePath: "Sample Listings/channels.csv", programsFilePath: "Sample Listings/programs.csv", forAtari: false}
 
 # Other command examples:
 #- ClockCommand: {dayOfWeek: 5, month: 2, day: 4, year: 120, hour: 07, minute: 00, second: 00, daylightSavingsTime: True}

@@ -40,7 +40,7 @@ class TCPDataDestination: NetworkDataDestination {
         
         super.send(data: bytes)
         
-        let success = Data(bytes).withUnsafeBytes { UVSGSerialDataSenderSendData(sender, $0, bytes.count) }
+        let success = Data(bytes).withUnsafeBytes { UVSGSerialDataSenderSendData(sender, $0.baseAddress, bytes.count) }
         if !success {
             print("Failed to send packet of size \(bytes.count)")
         }

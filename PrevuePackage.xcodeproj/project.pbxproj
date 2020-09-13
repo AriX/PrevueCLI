@@ -31,6 +31,12 @@
 		02193F772454B2F70093D586 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F5C2454B2060093D586 /* emitter.c */; };
 		02193F782454B2F70093D586 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F5D2454B2060093D586 /* parser.c */; };
 		02193F7C2459069F0093D586 /* CLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F7B2459069F0093D586 /* CLI.swift */; };
+		02678B4F250C073C005D1114 /* pplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 02678B4C250C073B005D1114 /* pplib.c */; };
+		02678B50250C073C005D1114 /* pplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 02678B4C250C073B005D1114 /* pplib.c */; };
+		02678B52250C65A4005D1114 /* PowerPacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02678B51250C65A4005D1114 /* PowerPacker.swift */; };
+		02678B53250C65A4005D1114 /* PowerPacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02678B51250C65A4005D1114 /* PowerPacker.swift */; };
+		02678B55250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */; };
+		02678B56250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */; };
 		0270E6DE21A0E388003C98EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
 		02B1939824A71B2B00041C8B /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939024A71B2100041C8B /* CSVError.swift */; };
 		02B1939B24A71B2B00041C8B /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939324A71B2100041C8B /* Legacy.swift */; };
@@ -101,14 +107,10 @@
 		02B1BD0D24F1FD4500ACF1D7 /* ClockCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0421A2642300323C8F /* ClockCommand.swift */; };
 		02B1BD0E24F1FFF500ACF1D7 /* TulsaTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B193A324AEFBF200041C8B /* TulsaTime.swift */; };
 		02B1BD0F24F1FFF600ACF1D7 /* TulsaTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B193A324AEFBF200041C8B /* TulsaTime.swift */; };
-		02B1BD1024F6382600ACF1D7 /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
-		02B1BD1124F6382700ACF1D7 /* ChannelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* ChannelTypes.swift */; };
+		02B1BD1024F6382600ACF1D7 /* Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* Listings.swift */; };
+		02B1BD1124F6382700ACF1D7 /* Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD162259875800323C8F /* Listings.swift */; };
 		02B1BD1224F6384600ACF1D7 /* BinaryCodableOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B193D624B139C100041C8B /* BinaryCodableOptionSet.swift */; };
 		02B1BD1324F6384600ACF1D7 /* BinaryCodableOptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B193D624B139C100041C8B /* BinaryCodableOptionSet.swift */; };
-		02B1BD1424F6387700ACF1D7 /* CSVListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* CSVListingsSource.swift */; };
-		02B1BD1524F6387700ACF1D7 /* CSVListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD732268233700323C8F /* CSVListingsSource.swift */; };
-		02B1BD1624F6388200ACF1D7 /* ListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD702268231900323C8F /* ListingsSource.swift */; };
-		02B1BD1724F6388200ACF1D7 /* ListingsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD702268231900323C8F /* ListingsSource.swift */; };
 		02B1BD1824F639E000ACF1D7 /* ChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD1022596C0000323C8F /* ChannelsCommand.swift */; };
 		02B1BD1924F639E100ACF1D7 /* ChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD1022596C0000323C8F /* ChannelsCommand.swift */; };
 		02B1BD1A24F8BFEC00ACF1D7 /* ProgramCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD13225973EA00323C8F /* ProgramCommand.swift */; };
@@ -131,8 +133,6 @@
 		02C71BF7250445A900550746 /* TCPDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCF621A13BC800323C8F /* TCPDataDestination.swift */; };
 		02C71BF8250445AB00550746 /* SerialPortDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */; };
 		02C71BF9250445AC00550746 /* SerialPortDataDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */; };
-		02C71BFC250459C100550746 /* MetaCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A9411245E30F70057E012 /* MetaCommands.swift */; };
-		02C71BFD250459C200550746 /* MetaCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A9411245E30F70057E012 /* MetaCommands.swift */; };
 		02C71C0125046A0600550746 /* UVSGDocumentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */; };
 		02C71C0225046A0600550746 /* UVSGDocumentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */; };
 		02C71C072504B2E200550746 /* BinaryCodableStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C062504B2E200550746 /* BinaryCodableStruct.swift */; };
@@ -145,6 +145,16 @@
 		02C71C102504BCB000550746 /* EventCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193167237BAFB30076A810 /* EventCommand.swift */; };
 		02C71C112504CA9E00550746 /* DataSending+AriDebugCTRL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */; };
 		02C71C122504CA9F00550746 /* DataSending+AriDebugCTRL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */; };
+		02C71C142506012800550746 /* CurdayDat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C132506012800550746 /* CurdayDat.swift */; };
+		02C71C162506012D00550746 /* CurdayDat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C132506012800550746 /* CurdayDat.swift */; };
+		02C71C18250AF3E600550746 /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C17250AF3E600550746 /* CSVWriter.swift */; };
+		02C71C19250AF3E900550746 /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C17250AF3E600550746 /* CSVWriter.swift */; };
+		02C71C1B250B08D900550746 /* Listings+CSVCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C1A250B08D800550746 /* Listings+CSVCodable.swift */; };
+		02C71C1D250B376200550746 /* AtariListingsFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C1C250B376200550746 /* AtariListingsFiltering.swift */; };
+		02C71C1F250B3C1100550746 /* ListingsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C1E250B3C1100550746 /* ListingsCommand.swift */; };
+		02C71C20250B3C1100550746 /* ListingsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C1E250B3C1100550746 /* ListingsCommand.swift */; };
+		02C71C23250B3CE600550746 /* TransferFileCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C22250B3CE600550746 /* TransferFileCommand.swift */; };
+		02C71C24250B3CE600550746 /* TransferFileCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C22250B3CE600550746 /* TransferFileCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -190,12 +200,14 @@
 		02193F5C2454B2060093D586 /* emitter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = emitter.c; sourceTree = "<group>"; };
 		02193F5D2454B2060093D586 /* parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
 		02193F6F2454B2DC0093D586 /* UVSGSerialData.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UVSGSerialData.c; sourceTree = "<group>"; };
-		02193F702454B2DC0093D586 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		02193F712454B2DC0093D586 /* UVSGSerialData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSGSerialData.h; sourceTree = "<group>"; };
 		02193F7B2459069F0093D586 /* CLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLI.swift; sourceTree = "<group>"; };
 		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
 		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
-		026A9411245E30F70057E012 /* MetaCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaCommands.swift; sourceTree = "<group>"; };
+		02678B4C250C073B005D1114 /* pplib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pplib.c; sourceTree = "<group>"; };
+		02678B4E250C073B005D1114 /* pplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplib.h; sourceTree = "<group>"; };
+		02678B51250C65A4005D1114 /* PowerPacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPacker.swift; sourceTree = SOURCE_ROOT; };
+		02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacterString.swift; sourceTree = "<group>"; };
 		026A9413245E31180057E012 /* PrevueCommandFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrevueCommandFile.swift; sourceTree = "<group>"; };
 		026F628D248C6D6200E78F2C /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
@@ -214,9 +226,7 @@
 		02A6FD0D225887A800323C8F /* NewLookConfigurationCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLookConfigurationCommand.swift; sourceTree = "<group>"; };
 		02A6FD1022596C0000323C8F /* ChannelsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsCommand.swift; sourceTree = "<group>"; };
 		02A6FD13225973EA00323C8F /* ProgramCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCommand.swift; sourceTree = "<group>"; };
-		02A6FD162259875800323C8F /* ChannelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTypes.swift; sourceTree = "<group>"; };
-		02A6FD702268231900323C8F /* ListingsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsSource.swift; sourceTree = "<group>"; };
-		02A6FD732268233700323C8F /* CSVListingsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVListingsSource.swift; sourceTree = "<group>"; };
+		02A6FD162259875800323C8F /* Listings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listings.swift; sourceTree = "<group>"; };
 		02B1939024A71B2100041C8B /* CSVError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVError.swift; sourceTree = "<group>"; };
 		02B1939224A71B2100041C8B /* BinaryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryReader.swift; sourceTree = "<group>"; };
 		02B1939324A71B2100041C8B /* Legacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy.swift; sourceTree = "<group>"; };
@@ -239,6 +249,12 @@
 		02B1BD1C24F8C2BB00ACF1D7 /* BytesType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytesType.swift; sourceTree = "<group>"; };
 		02C71BE824FD88CD00550746 /* BinaryConvertibleTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConvertibleTypes.swift; sourceTree = "<group>"; };
 		02C71C062504B2E200550746 /* BinaryCodableStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCodableStruct.swift; sourceTree = "<group>"; };
+		02C71C132506012800550746 /* CurdayDat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurdayDat.swift; sourceTree = "<group>"; };
+		02C71C17250AF3E600550746 /* CSVWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVWriter.swift; sourceTree = "<group>"; };
+		02C71C1A250B08D800550746 /* Listings+CSVCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Listings+CSVCodable.swift"; sourceTree = "<group>"; };
+		02C71C1C250B376200550746 /* AtariListingsFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtariListingsFiltering.swift; sourceTree = "<group>"; };
+		02C71C1E250B3C1100550746 /* ListingsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsCommand.swift; sourceTree = "<group>"; };
+		02C71C22250B3CE600550746 /* TransferFileCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFileCommand.swift; sourceTree = "<group>"; };
 		02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGDocumentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -265,10 +281,8 @@
 			children = (
 				02A6FCFE21A263D300323C8F /* TitleCommand.swift */,
 				02A6FD0121A263F600323C8F /* BoxCommands.swift */,
-				0270E6D921A0DF35003C98EF /* DownloadCommand.swift */,
-				02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */,
-				02A6FD0D225887A800323C8F /* NewLookConfigurationCommand.swift */,
 				0219326523827AC10076A810 /* LocalAdCommand.swift */,
+				02C71C21250B3CC300550746 /* Configuration */,
 				02B193A224AEFBE600041C8B /* Clock */,
 				02B193A124AEFBD300041C8B /* Listings */,
 			);
@@ -289,11 +303,11 @@
 			isa = PBXGroup;
 			children = (
 				021931DC2381063A0076A810 /* Controller */,
-				02A6FD6F2268230D00323C8F /* Listings Sources */,
 				02A6FCFC21A13E9E00323C8F /* Data Sending */,
-				02A6FCFD21A13EBD00323C8F /* Commands */,
-				026A940F245E1D850057E012 /* Command Files */,
+				02A6FD6F2268230D00323C8F /* Listings */,
+				026A940F245E1D850057E012 /* Command Types */,
 				021931DA238105AA0076A810 /* Types */,
+				02A6FCFD21A13EBD00323C8F /* Commands */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -301,8 +315,6 @@
 		021931DA238105AA0076A810 /* Types */ = {
 			isa = PBXGroup;
 			children = (
-				02A6FCE821A0BAB800323C8F /* Command.swift */,
-				02B1BCFA24DE7B4100ACF1D7 /* SerializedCommand.swift */,
 				02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */,
 				02A6FD0A225850A300323C8F /* ByteConvenience.swift */,
 				02C71BE824FD88CD00550746 /* BinaryConvertibleTypes.swift */,
@@ -324,6 +336,7 @@
 		02193F3D2454B1CA0093D586 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				02678B4B250C073B005D1114 /* PowerPacker */,
 				02193F6E2454B2DC0093D586 /* UVSGSerialData */,
 				02B193B524AF05F100041C8B /* BinaryCoder */,
 				02B1938F24A71B2100041C8B /* CSV */,
@@ -400,20 +413,30 @@
 		02193F6E2454B2DC0093D586 /* UVSGSerialData */ = {
 			isa = PBXGroup;
 			children = (
-				02193F702454B2DC0093D586 /* module.map */,
 				02193F6F2454B2DC0093D586 /* UVSGSerialData.c */,
 				02193F712454B2DC0093D586 /* UVSGSerialData.h */,
 			);
 			path = UVSGSerialData;
 			sourceTree = "<group>";
 		};
-		026A940F245E1D850057E012 /* Command Files */ = {
+		02678B4B250C073B005D1114 /* PowerPacker */ = {
 			isa = PBXGroup;
 			children = (
-				026A9413245E31180057E012 /* PrevueCommandFile.swift */,
-				026A9411245E30F70057E012 /* MetaCommands.swift */,
+				02678B51250C65A4005D1114 /* PowerPacker.swift */,
+				02678B4C250C073B005D1114 /* pplib.c */,
+				02678B4E250C073B005D1114 /* pplib.h */,
 			);
-			path = "Command Files";
+			path = PowerPacker;
+			sourceTree = "<group>";
+		};
+		026A940F245E1D850057E012 /* Command Types */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FCE821A0BAB800323C8F /* Command.swift */,
+				026A9413245E31180057E012 /* PrevueCommandFile.swift */,
+				02B1BCFA24DE7B4100ACF1D7 /* SerializedCommand.swift */,
+			);
+			path = "Command Types";
 			sourceTree = "<group>";
 		};
 		02A6FCAF21A0AA8D00323C8F = {
@@ -468,13 +491,16 @@
 			path = Commands;
 			sourceTree = "<group>";
 		};
-		02A6FD6F2268230D00323C8F /* Listings Sources */ = {
+		02A6FD6F2268230D00323C8F /* Listings */ = {
 			isa = PBXGroup;
 			children = (
-				02A6FD702268231900323C8F /* ListingsSource.swift */,
-				02A6FD732268233700323C8F /* CSVListingsSource.swift */,
+				02A6FD162259875800323C8F /* Listings.swift */,
+				02C71C1A250B08D800550746 /* Listings+CSVCodable.swift */,
+				02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */,
+				02C71C1C250B376200550746 /* AtariListingsFiltering.swift */,
+				02C71C132506012800550746 /* CurdayDat.swift */,
 			);
-			path = "Listings Sources";
+			path = Listings;
 			sourceTree = "<group>";
 		};
 		02B1938F24A71B2100041C8B /* CSV */ = {
@@ -487,6 +513,7 @@
 				02B1939524A71B2100041C8B /* Endian.swift */,
 				02B1939624A71B2100041C8B /* CSVRowDecoder.swift */,
 				02B1939724A71B2100041C8B /* CSVReader.swift */,
+				02C71C17250AF3E600550746 /* CSVWriter.swift */,
 			);
 			name = CSV;
 			path = CSV.swift/Sources/CSV;
@@ -495,9 +522,9 @@
 		02B193A124AEFBD300041C8B /* Listings */ = {
 			isa = PBXGroup;
 			children = (
-				02A6FD162259875800323C8F /* ChannelTypes.swift */,
 				02A6FD1022596C0000323C8F /* ChannelsCommand.swift */,
 				02A6FD13225973EA00323C8F /* ProgramCommand.swift */,
+				02C71C1E250B3C1100550746 /* ListingsCommand.swift */,
 			);
 			name = Listings;
 			sourceTree = "<group>";
@@ -531,6 +558,17 @@
 				02B1BCCE24DE63F400ACF1D7 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		02C71C21250B3CC300550746 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0270E6D921A0DF35003C98EF /* DownloadCommand.swift */,
+				02C71C22250B3CE600550746 /* TransferFileCommand.swift */,
+				02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */,
+				02A6FD0D225887A800323C8F /* NewLookConfigurationCommand.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -624,11 +662,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				02193F742454B2F70093D586 /* api.c in Sources */,
+				02678B4F250C073C005D1114 /* pplib.c in Sources */,
 				02B193A024A71B4C00041C8B /* BinaryReader.swift in Sources */,
 				02B1BD0E24F1FFF500ACF1D7 /* TulsaTime.swift in Sources */,
-				02B1BD1424F6387700ACF1D7 /* CSVListingsSource.swift in Sources */,
 				02B193D524B1393200041C8B /* BinaryCodableEnum.swift in Sources */,
-				02B1BD1724F6388200ACF1D7 /* ListingsSource.swift in Sources */,
+				02678B52250C65A4005D1114 /* PowerPacker.swift in Sources */,
 				02B1BD1B24F8BFED00ACF1D7 /* ProgramCommand.swift in Sources */,
 				02193F642454B2360093D586 /* String+Yams.swift in Sources */,
 				02C71BE924FD88CD00550746 /* BinaryConvertibleTypes.swift in Sources */,
@@ -646,8 +684,9 @@
 				02193F6A2454B2360093D586 /* YamlError.swift in Sources */,
 				02C71C072504B2E200550746 /* BinaryCodableStruct.swift in Sources */,
 				02B1BD0D24F1FD4500ACF1D7 /* ClockCommand.swift in Sources */,
+				02C71C1D250B376200550746 /* AtariListingsFiltering.swift in Sources */,
 				021931F7238123710076A810 /* ByteConvenience.swift in Sources */,
-				02C71BFC250459C100550746 /* MetaCommands.swift in Sources */,
+				02C71C1F250B3C1100550746 /* ListingsCommand.swift in Sources */,
 				02C71C112504CA9E00550746 /* DataSending+AriDebugCTRL.swift in Sources */,
 				02193F602454B2360093D586 /* Constructor.swift in Sources */,
 				02193F682454B2360093D586 /* Node.Scalar.swift in Sources */,
@@ -663,7 +702,7 @@
 				02B1939E24A71B2B00041C8B /* CSVRowDecoder.swift in Sources */,
 				02193F5E2454B2360093D586 /* Mark.swift in Sources */,
 				02193F6B2454B2360093D586 /* Emitter.swift in Sources */,
-				02B1BD1024F6382600ACF1D7 /* ChannelTypes.swift in Sources */,
+				02B1BD1024F6382600ACF1D7 /* Listings.swift in Sources */,
 				02193F632454B2360093D586 /* Node.Mapping.swift in Sources */,
 				02B1BD1924F639E100ACF1D7 /* ChannelsCommand.swift in Sources */,
 				02B193D024B12D0C00041C8B /* BinaryCodable.swift in Sources */,
@@ -676,9 +715,13 @@
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
 				02B193D124B12D0C00041C8B /* BinaryCodableExtensions.swift in Sources */,
 				02C71C0B2504BC2800550746 /* ActionCommand.swift in Sources */,
+				02C71C18250AF3E600550746 /* CSVWriter.swift in Sources */,
+				02678B55250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */,
+				02C71C142506012800550746 /* CurdayDat.swift in Sources */,
 				02193F5F2454B2360093D586 /* Decoder.swift in Sources */,
 				02193F772454B2F70093D586 /* emitter.c in Sources */,
 				02193F622454B2360093D586 /* Encoder.swift in Sources */,
+				02C71C23250B3CE600550746 /* TransferFileCommand.swift in Sources */,
 				02193F732454B2F70093D586 /* scanner.c in Sources */,
 				02193F692454B2360093D586 /* Tag.swift in Sources */,
 				02B1BD0224E274A600ACF1D7 /* TitleCommand.swift in Sources */,
@@ -686,6 +729,7 @@
 				02193F6C2454B2360093D586 /* Node.swift in Sources */,
 				02193F722454B2E50093D586 /* UVSGSerialData.c in Sources */,
 				02C71BF8250445AB00550746 /* SerialPortDataDestination.swift in Sources */,
+				02C71C1B250B08D900550746 /* Listings+CSVCodable.swift in Sources */,
 				02B1BD1D24F8C2BB00ACF1D7 /* BytesType.swift in Sources */,
 				02C71BF024FDE89C00550746 /* LocalAdCommand.swift in Sources */,
 				02C71BF6250445A800550746 /* TCPDataDestination.swift in Sources */,
@@ -702,14 +746,13 @@
 				02B1BCE124DE647300ACF1D7 /* reader.c in Sources */,
 				02B1BCE924DE647700ACF1D7 /* Node.Mapping.swift in Sources */,
 				02B1BD0F24F1FFF600ACF1D7 /* TulsaTime.swift in Sources */,
-				02B1BD1524F6387700ACF1D7 /* CSVListingsSource.swift in Sources */,
 				02B1BCF024DE647700ACF1D7 /* Emitter.swift in Sources */,
-				02B1BD1624F6388200ACF1D7 /* ListingsSource.swift in Sources */,
 				02B1BD1A24F8BFEC00ACF1D7 /* ProgramCommand.swift in Sources */,
 				02B1BCF124DE647700ACF1D7 /* Node.swift in Sources */,
 				02C71BEA24FD895400550746 /* BinaryConvertibleTypes.swift in Sources */,
 				02C71C0225046A0600550746 /* UVSGDocumentable.swift in Sources */,
 				02B1BCD224DE646000ACF1D7 /* UVSGSerialData.c in Sources */,
+				02678B50250C073C005D1114 /* pplib.c in Sources */,
 				02B1BD0A24E8828C00ACF1D7 /* DownloadCommand.swift in Sources */,
 				02B1BD0924E8735D00ACF1D7 /* CodingPathIntrospectable.swift in Sources */,
 				02B1BCD624DE646500ACF1D7 /* BinaryEncoder.swift in Sources */,
@@ -723,7 +766,6 @@
 				02C71C082504B2E200550746 /* BinaryCodableStruct.swift in Sources */,
 				02B1BD0C24F1FD4400ACF1D7 /* ClockCommand.swift in Sources */,
 				02B1BCE524DE647700ACF1D7 /* Decoder.swift in Sources */,
-				02C71BFD250459C200550746 /* MetaCommands.swift in Sources */,
 				02C71C122504CA9F00550746 /* DataSending+AriDebugCTRL.swift in Sources */,
 				02B1BCE424DE647700ACF1D7 /* Mark.swift in Sources */,
 				02B1BCF924DE654A00ACF1D7 /* CLI.swift in Sources */,
@@ -733,13 +775,14 @@
 				02B1BCEB24DE647700ACF1D7 /* Node.Sequence.swift in Sources */,
 				02B1BCEE24DE647700ACF1D7 /* Tag.swift in Sources */,
 				02B1BCDC24DE646900ACF1D7 /* CSVRowDecoder.swift in Sources */,
+				02C71C24250B3CE600550746 /* TransferFileCommand.swift in Sources */,
 				02C71BF5250445A400550746 /* DataDestination.swift in Sources */,
 				02B1BCE324DE647300ACF1D7 /* parser.c in Sources */,
 				02B1BCDB24DE646900ACF1D7 /* Endian.swift in Sources */,
 				02B1BCF524DE652F00ACF1D7 /* Command.swift in Sources */,
 				02B1BCE024DE647300ACF1D7 /* writer.c in Sources */,
 				02B1BCF224DE647700ACF1D7 /* Representer.swift in Sources */,
-				02B1BD1124F6382700ACF1D7 /* ChannelTypes.swift in Sources */,
+				02B1BD1124F6382700ACF1D7 /* Listings.swift in Sources */,
 				02B1BCF324DE64A000ACF1D7 /* ByteConvenience.swift in Sources */,
 				02B1BD1824F639E000ACF1D7 /* ChannelsCommand.swift in Sources */,
 				02B1BCD724DE646900ACF1D7 /* CSVError.swift in Sources */,
@@ -748,10 +791,14 @@
 				02B1BCDD24DE646900ACF1D7 /* CSVReader.swift in Sources */,
 				02B1BCEC24DE647700ACF1D7 /* Parser.swift in Sources */,
 				02B1BCF724DE654100ACF1D7 /* BoxCommands.swift in Sources */,
+				02C71C20250B3C1100550746 /* ListingsCommand.swift in Sources */,
 				02C71BF32504459F00550746 /* EPGMachine.swift in Sources */,
 				02B1BCD924DE646900ACF1D7 /* Legacy.swift in Sources */,
 				02B1BCEA24DE647700ACF1D7 /* String+Yams.swift in Sources */,
+				02678B56250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */,
 				02C71C0C2504BC2900550746 /* ActionCommand.swift in Sources */,
+				02C71C19250AF3E900550746 /* CSVWriter.swift in Sources */,
+				02C71C162506012D00550746 /* CurdayDat.swift in Sources */,
 				02B1BCD824DE646900ACF1D7 /* BinaryReader.swift in Sources */,
 				02B1BCF624DE653400ACF1D7 /* PrevueCommandFile.swift in Sources */,
 				02B1BCE224DE647300ACF1D7 /* emitter.c in Sources */,
@@ -760,6 +807,7 @@
 				02B1BD0124E274A600ACF1D7 /* TitleCommand.swift in Sources */,
 				02C71BEE24FDA40900550746 /* NewLookConfigurationCommand.swift in Sources */,
 				02B1BCDF24DE647300ACF1D7 /* api.c in Sources */,
+				02678B53250C65A4005D1114 /* PowerPacker.swift in Sources */,
 				02B1BCF824DE654500ACF1D7 /* CommandModes.swift in Sources */,
 				02C71BF9250445AC00550746 /* SerialPortDataDestination.swift in Sources */,
 				02B1BD1E24F8C2BD00ACF1D7 /* BytesType.swift in Sources */,
@@ -908,6 +956,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/ Modules/PowerPacker/";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -927,6 +976,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/ Modules/PowerPacker/";
 			};
 			name = Release;
 		};

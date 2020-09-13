@@ -57,3 +57,12 @@ extension ClockCommand {
         return [0x00]
     }
 }
+
+// MARK: Current clock command
+
+struct CurrentClockCommand: MetaCommand {
+    var commands: [DataCommand] {
+        let command = ClockCommand.currentTulsaTime!
+        return [command]
+    }
+}

@@ -7,7 +7,7 @@
 //
 
 // Protocol that allows an OptionSet to be coded as its raw value with BinaryCodable, and as an option name with Codable
-protocol BinaryCodableOptionSet: OptionSet, BinaryCodable, UVSGDocumentableOptionSet where RawValue: BinaryInteger & Codable {
+protocol BinaryCodableOptionSet: OptionSet, BinaryCodable, UVSGDocumentableOptionSet, CSVCustomFieldValue where RawValue: BinaryInteger & Codable {
     associatedtype Options: CaseIterable
 }
 
@@ -50,7 +50,16 @@ extension BinaryCodableOptionSet {
         self.init(rawValue: RawValue(rawValue))
     }
     func encode(to encoder: Encoder) throws {
-        let numberOfBits = MemoryLayout<RawValue>.size
+        var container = encoder.singleValueContainer()
+        
+        if encoder.userInfo[.csvCoding] as? Bool == true {
+            try container.encode(csvValue)
+        } else {
+            try container.encode(optionNames)
+        }
+    }
+    var optionNames: [String] {
+        let numberOfBits = MemoryLayout<RawValue>.size * 8
         let allOptionNames = Self.allOptionNames
         var optionNames: [String] = []
         
@@ -63,14 +72,10 @@ extension BinaryCodableOptionSet {
             }
         }
         
-        var container = encoder.singleValueContainer()
-        
-        if encoder.userInfo[.csvCoding] as? Bool == true {
-            let optionNamesString = optionNames.joined(separator: "|")
-            try container.encode(optionNamesString)
-        } else {
-            try container.encode(optionNames)
-        }
+        return optionNames
+    }
+    var csvValue: String {
+        return optionNames.joined(separator: "|")
     }
 }
 

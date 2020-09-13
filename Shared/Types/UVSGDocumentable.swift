@@ -100,7 +100,7 @@ extension UVSGDocumentable {
             for (label, value) in mirror.children {
                 guard let label = label else { continue }
                 
-                var introspectableValue = (value as? UVSGDocumentable)
+                let introspectableValue = (value as? UVSGDocumentable)
                 let typeOfValue = type(of: value)
                 if typeOfValue is DataCommandMode.Type { continue }
                 

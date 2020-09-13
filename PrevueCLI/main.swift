@@ -16,7 +16,6 @@ let commands = [
         do {
             let filePath = arguments[0]
             let commandFile = try PrevueCommandFile(contentsOfFile: filePath)
-            print(commandFile)
             commandFile.sendAllCommands()
         } catch {
             print("PrevueCLI: An error occurred: \(error)")
@@ -49,6 +48,25 @@ let commands = [
             let commands = serializedCommands.map { $0.command }
             let commandFile = PrevueCommandFile(destinations: [], commands: commands)
             try commandFile.write(toFile: arguments[1])
+
+        } catch {
+            print("PrevueCLI: An error occurred: \(error)")
+        }
+    }),
+    CLI.Command(name: "parseCurdayDat", usage: " <curday.dat file> <directory to save .csv files>: Converts a curday.dat file to .csv listings files (can unpack PowerPack 2.0 if necessary)", minimumArgumentCount: 2, handler: { (arguments) in
+        do {
+            let fileURL = URL(fileURLWithPath: arguments[0])
+            let data = try Data(contentsOf: fileURL).unpackPowerPacker2Data()
+            let bytes = [UInt8](data)
+            
+            let curdayDat = try BinaryDecoder.decode(CurdayDat.self, data: bytes)
+            
+            let directoryURL = URL(fileURLWithPath: arguments[1])
+            let channelsFileURL = directoryURL.appendingPathComponent("channels.csv", isDirectory: false)
+            let programsFileURL = directoryURL.appendingPathComponent("programs.csv", isDirectory: false)
+            
+            let listings = curdayDat.listings
+            try listings.write(channelsCSVFile: channelsFileURL, programsCSVFile: programsFileURL)
 
         } catch {
             print("PrevueCLI: An error occurred: \(error)")

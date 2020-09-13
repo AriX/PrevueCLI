@@ -76,7 +76,7 @@ extension ASCIICharacter {
 
 // MARK: BinaryConvertible
 
-protocol BinaryConvertible: BinaryCodable, UVSGDocumentable {
+protocol BinaryConvertible: BinaryCodable, UVSGDocumentable, CustomStringConvertible {
     associatedtype UnderlyingType: Codable
     associatedtype BinaryType: BinaryCodable
     
@@ -125,6 +125,11 @@ extension BinaryConvertible {
             return UVSGDocumentedType.scalar(String(describing: UnderlyingType.self))
         }
     }
+    
+    // CustomStringConvertible
+    var description: String {
+        return String(describing: value)
+    }
 }
 
 protocol BinaryConvertibleInteger: BinaryConvertible, ExpressibleByIntegerLiteral where IntegerLiteralType == UnderlyingType {
@@ -136,7 +141,7 @@ extension BinaryConvertibleInteger {
     }
 }
 
-// MARK: Types convertible to/from ASCII
+// MARK: Types convertible to/from ASCII characters
 
 struct ASCIICharacterBool: BinaryConvertible, ExpressibleByBooleanLiteral, Equatable {
     let value: Bool
@@ -205,5 +210,23 @@ struct ASCIIDigitsInt16: BinaryConvertibleInteger, Equatable {
               let digit2 = characters[1].asciiValue else { return nil }
         
         return (UInt16(digit2) + UInt16(digit1) << 8)
+    }
+}
+
+// MARK: Types converting to/from strings
+
+// A type that reads a null-terminated string and converts it to an Int
+struct StringConvertibleInt: BinaryConvertibleInteger, Equatable {
+    let value: Int
+    
+    init(_ value: Int) {
+        self.value = value
+    }
+    init?(binaryValue: String) {
+        guard let value = Int(binaryValue) else { return nil }
+        self.value = value
+    }
+    func asBinaryValue() -> String? {
+        return value.description
     }
 }

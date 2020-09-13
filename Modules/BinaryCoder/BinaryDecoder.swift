@@ -77,6 +77,9 @@ public extension BinaryDecoder {
         
         /// Attempted to decode an `enum` but the encoded data was not a valid enum case.
         case invalidEnumCase(Any)
+        
+        /// Other case in which data was not as expected
+        case malformedData(description: String)
     }
 }
 
@@ -154,12 +157,14 @@ public extension BinaryDecoder {
         repeat {
             let byte = try decode(UInt8.self)
             readBytes.append(byte)
-        } while !test(readBytes.last!)
+        } while !test(readBytes.last!) && cursor < data.count
         
-        readBytes.removeLast()
-        
-        if !consumingFinalByte {
-            cursor -= 1
+        if cursor != data.count {
+            readBytes.removeLast()
+            
+            if !consumingFinalByte {
+                cursor -= 1
+            }
         }
         
         return readBytes
@@ -169,6 +174,20 @@ public extension BinaryDecoder {
         let bytes = try read(until: test, consumingFinalByte: consumingFinalByte)
         guard let string = String(bytes: bytes, encoding: .utf8) else {
             throw BinaryDecoder.Error.invalidUTF8(bytes)
+        }
+        
+        return string
+    }
+    
+    func readString(count: Int) throws -> String {
+        var stringBytes: Bytes = []
+        for byte in try readBytes(count: count) {
+            guard byte != 0x00 else { break }
+            stringBytes.append(byte)
+        }
+        
+        guard let string = String(bytes: stringBytes, encoding: .utf8) else {
+            throw BinaryDecoder.Error.invalidUTF8(stringBytes)
         }
         
         return string

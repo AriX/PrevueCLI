@@ -27,8 +27,8 @@ public struct SerializedCommand {
         ColorLocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: .center, color: .init(background: .red, foreground: .red), text: "")], timePeriod: .init(beginning: 0, ending: 0))),
         ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00),
         NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .satellite),
-        ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Channel(sourceIdentifier: "", channelNumber: "", callLetters: "", flags: [])]),
-        ProgramCommand(day: JulianDay(dayOfYear: 0), program: Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
+        ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Listings.Channel(sourceIdentifier: "", channelNumber: "", callLetters: "", flags: [])]),
+        ProgramCommand(day: JulianDay(dayOfYear: 0), program: Listings.Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
         ListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false),
     ]
 }

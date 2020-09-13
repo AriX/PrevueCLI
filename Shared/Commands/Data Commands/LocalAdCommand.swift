@@ -39,8 +39,8 @@ struct LocalAd: BinaryCodableStruct, Equatable {
         let text: String
     }
     struct TimePeriod: BinaryCodableStruct, Equatable {
-        let beginning: Timeslot
-        let ending: Timeslot
+        let beginning: Listings.Timeslot
+        let ending: Listings.Timeslot
     }
 }
 
