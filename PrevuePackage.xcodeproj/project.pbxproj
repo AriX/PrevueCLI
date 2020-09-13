@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020C6630250DB77B00AACAAB /* CurdayDat+Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C662F250DB77B00AACAAB /* CurdayDat+Listings.swift */; };
+		020C6631250DB77B00AACAAB /* CurdayDat+Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C662F250DB77B00AACAAB /* CurdayDat+Listings.swift */; };
 		021931F7238123710076A810 /* ByteConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0A225850A300323C8F /* ByteConvenience.swift */; };
 		02193F5E2454B2360093D586 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F412454B2060093D586 /* Mark.swift */; };
 		02193F5F2454B2360093D586 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F422454B2060093D586 /* Decoder.swift */; };
@@ -170,6 +172,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		020C662F250DB77B00AACAAB /* CurdayDat+Listings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurdayDat+Listings.swift"; sourceTree = "<group>"; };
 		02193163237B90890076A810 /* ActionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCommand.swift; sourceTree = "<group>"; };
 		02193165237BAD310076A810 /* PromoTitleCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTitleCommand.swift; sourceTree = "<group>"; };
 		02193167237BAFB30076A810 /* EventCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommand.swift; sourceTree = "<group>"; };
@@ -276,6 +279,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020C662D250DB75C00AACAAB /* Satellite */ = {
+			isa = PBXGroup;
+			children = (
+				02A6FD162259875800323C8F /* Listings.swift */,
+				02C71C1A250B08D800550746 /* Listings+CSVCodable.swift */,
+				02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */,
+				02C71C1C250B376200550746 /* AtariListingsFiltering.swift */,
+			);
+			path = Satellite;
+			sourceTree = "<group>";
+		};
+		020C662E250DB76A00AACAAB /* Curday.dat */ = {
+			isa = PBXGroup;
+			children = (
+				02C71C132506012800550746 /* CurdayDat.swift */,
+				020C662F250DB77B00AACAAB /* CurdayDat+Listings.swift */,
+			);
+			path = Curday.dat;
+			sourceTree = "<group>";
+		};
 		02193161237B90620076A810 /* Data Commands */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,11 +517,8 @@
 		02A6FD6F2268230D00323C8F /* Listings */ = {
 			isa = PBXGroup;
 			children = (
-				02A6FD162259875800323C8F /* Listings.swift */,
-				02C71C1A250B08D800550746 /* Listings+CSVCodable.swift */,
-				02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */,
-				02C71C1C250B376200550746 /* AtariListingsFiltering.swift */,
-				02C71C132506012800550746 /* CurdayDat.swift */,
+				020C662D250DB75C00AACAAB /* Satellite */,
+				020C662E250DB76A00AACAAB /* Curday.dat */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -665,6 +685,7 @@
 				02678B4F250C073C005D1114 /* pplib.c in Sources */,
 				02B193A024A71B4C00041C8B /* BinaryReader.swift in Sources */,
 				02B1BD0E24F1FFF500ACF1D7 /* TulsaTime.swift in Sources */,
+				020C6630250DB77B00AACAAB /* CurdayDat+Listings.swift in Sources */,
 				02B193D524B1393200041C8B /* BinaryCodableEnum.swift in Sources */,
 				02678B52250C65A4005D1114 /* PowerPacker.swift in Sources */,
 				02B1BD1B24F8BFED00ACF1D7 /* ProgramCommand.swift in Sources */,
@@ -779,6 +800,7 @@
 				02C71BF5250445A400550746 /* DataDestination.swift in Sources */,
 				02B1BCE324DE647300ACF1D7 /* parser.c in Sources */,
 				02B1BCDB24DE646900ACF1D7 /* Endian.swift in Sources */,
+				020C6631250DB77B00AACAAB /* CurdayDat+Listings.swift in Sources */,
 				02B1BCF524DE652F00ACF1D7 /* Command.swift in Sources */,
 				02B1BCE024DE647300ACF1D7 /* writer.c in Sources */,
 				02B1BCF224DE647700ACF1D7 /* Representer.swift in Sources */,

@@ -56,10 +56,8 @@ let commands = [
     CLI.Command(name: "parseCurdayDat", usage: " <curday.dat file> <directory to save .csv files>: Converts a curday.dat file to .csv listings files (can unpack PowerPack 2.0 if necessary)", minimumArgumentCount: 2, handler: { (arguments) in
         do {
             let fileURL = URL(fileURLWithPath: arguments[0])
-            let data = try Data(contentsOf: fileURL).unpackPowerPacker2Data()
-            let bytes = [UInt8](data)
-            
-            let curdayDat = try BinaryDecoder.decode(CurdayDat.self, data: bytes)
+            let data = try Data(contentsOf: fileURL)
+            let curdayDat = try CurdayDat(with: data)
             
             let directoryURL = URL(fileURLWithPath: arguments[1])
             let channelsFileURL = directoryURL.appendingPathComponent("channels.csv", isDirectory: false)
