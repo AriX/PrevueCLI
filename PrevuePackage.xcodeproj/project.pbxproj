@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020C6629250DB69600AACAAB /* XMLTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C6628250DB69600AACAAB /* XMLTV.swift */; };
+		020C662A250DB69600AACAAB /* XMLTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C6628250DB69600AACAAB /* XMLTV.swift */; };
 		020C6630250DB77B00AACAAB /* CurdayDat+Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C662F250DB77B00AACAAB /* CurdayDat+Listings.swift */; };
 		020C6631250DB77B00AACAAB /* CurdayDat+Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C662F250DB77B00AACAAB /* CurdayDat+Listings.swift */; };
+		02173F84250EE8550078C83B /* Timeslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02173F83250EE8550078C83B /* Timeslot.swift */; };
+		02173F85250EE8550078C83B /* Timeslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02173F83250EE8550078C83B /* Timeslot.swift */; };
 		021931F7238123710076A810 /* ByteConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0A225850A300323C8F /* ByteConvenience.swift */; };
 		02193F5E2454B2360093D586 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F412454B2060093D586 /* Mark.swift */; };
 		02193F5F2454B2360093D586 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F422454B2060093D586 /* Decoder.swift */; };
@@ -40,6 +44,18 @@
 		02678B55250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */; };
 		02678B56250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */; };
 		0270E6DE21A0E388003C98EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FCDC21A0ABB900323C8F /* main.swift */; };
+		027B7C352511F34A0092EE7E /* Listings+CSVCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C1A250B08D800550746 /* Listings+CSVCodable.swift */; };
+		027B7C362511F3770092EE7E /* AtariListingsFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C1C250B376200550746 /* AtariListingsFiltering.swift */; };
+		027B7C3B251FD3E60092EE7E /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B7C3A251FD3E60092EE7E /* Bit.swift */; };
+		027B7C3C251FD3E90092EE7E /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B7C3A251FD3E60092EE7E /* Bit.swift */; };
+		027B7C3E252007260092EE7E /* DSTCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B7C3D252007260092EE7E /* DSTCommand.swift */; };
+		027B7C3F252007260092EE7E /* DSTCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B7C3D252007260092EE7E /* DSTCommand.swift */; };
+		0295611E250DE31900D69952 /* XMLTV+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295611D250DE31900D69952 /* XMLTV+Parsing.swift */; };
+		0295611F250DE31900D69952 /* XMLTV+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295611D250DE31900D69952 /* XMLTV+Parsing.swift */; };
+		02956121250DEC3000D69952 /* XMLTV+Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02956120250DEC3000D69952 /* XMLTV+Listings.swift */; };
+		02956122250DEC3000D69952 /* XMLTV+Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02956120250DEC3000D69952 /* XMLTV+Listings.swift */; };
+		029BA0DC254D2B7000F3EF2E /* String+Latin1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA0DB254D2B7000F3EF2E /* String+Latin1.swift */; };
+		029BA0E0254D3CFB00F3EF2E /* SpecialCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA0DF254D3CFB00F3EF2E /* SpecialCharacter.swift */; };
 		02B1939824A71B2B00041C8B /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939024A71B2100041C8B /* CSVError.swift */; };
 		02B1939B24A71B2B00041C8B /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939324A71B2100041C8B /* Legacy.swift */; };
 		02B1939C24A71B2B00041C8B /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1939424A71B2100041C8B /* UnicodeIterator.swift */; };
@@ -121,8 +137,8 @@
 		02B1BD1E24F8C2BD00ACF1D7 /* BytesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1BD1C24F8C2BB00ACF1D7 /* BytesType.swift */; };
 		02B1BD1F24F8CB4D00ACF1D7 /* ConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */; };
 		02B1BD2024F8CB4E00ACF1D7 /* ConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */; };
-		02C71BE924FD88CD00550746 /* BinaryConvertibleTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71BE824FD88CD00550746 /* BinaryConvertibleTypes.swift */; };
-		02C71BEA24FD895400550746 /* BinaryConvertibleTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71BE824FD88CD00550746 /* BinaryConvertibleTypes.swift */; };
+		02C71BE924FD88CD00550746 /* BinaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71BE824FD88CD00550746 /* BinaryConvertible.swift */; };
+		02C71BEA24FD895400550746 /* BinaryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71BE824FD88CD00550746 /* BinaryConvertible.swift */; };
 		02C71BEE24FDA40900550746 /* NewLookConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0D225887A800323C8F /* NewLookConfigurationCommand.swift */; };
 		02C71BEF24FDA40A00550746 /* NewLookConfigurationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6FD0D225887A800323C8F /* NewLookConfigurationCommand.swift */; };
 		02C71BF024FDE89C00550746 /* LocalAdCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219326523827AC10076A810 /* LocalAdCommand.swift */; };
@@ -157,6 +173,12 @@
 		02C71C20250B3C1100550746 /* ListingsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C1E250B3C1100550746 /* ListingsCommand.swift */; };
 		02C71C23250B3CE600550746 /* TransferFileCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C22250B3CE600550746 /* TransferFileCommand.swift */; };
 		02C71C24250B3CE600550746 /* TransferFileCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C71C22250B3CE600550746 /* TransferFileCommand.swift */; };
+		02CFDFD42520169E004E5EB4 /* JulianDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD32520169E004E5EB4 /* JulianDay.swift */; };
+		02CFDFD52520169E004E5EB4 /* JulianDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD32520169E004E5EB4 /* JulianDay.swift */; };
+		02CFDFD725202490004E5EB4 /* DST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD625202490004E5EB4 /* DST.swift */; };
+		02CFDFD825202490004E5EB4 /* DST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD625202490004E5EB4 /* DST.swift */; };
+		02CFDFDA252044A4004E5EB4 /* CalendarUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */; };
+		02CFDFDB252044A4004E5EB4 /* CalendarUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -172,7 +194,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		020C6628250DB69600AACAAB /* XMLTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLTV.swift; sourceTree = "<group>"; };
 		020C662F250DB77B00AACAAB /* CurdayDat+Listings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurdayDat+Listings.swift"; sourceTree = "<group>"; };
+		02173F83250EE8550078C83B /* Timeslot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeslot.swift; sourceTree = "<group>"; };
 		02193163237B90890076A810 /* ActionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCommand.swift; sourceTree = "<group>"; };
 		02193165237BAD310076A810 /* PromoTitleCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTitleCommand.swift; sourceTree = "<group>"; };
 		02193167237BAFB30076A810 /* EventCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCommand.swift; sourceTree = "<group>"; };
@@ -215,6 +239,12 @@
 		026F628D248C6D6200E78F2C /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		0270E6D721A0DED7003C98EF /* CommandModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModes.swift; sourceTree = "<group>"; };
 		0270E6D921A0DF35003C98EF /* DownloadCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCommand.swift; sourceTree = "<group>"; };
+		027B7C3A251FD3E60092EE7E /* Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
+		027B7C3D252007260092EE7E /* DSTCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSTCommand.swift; sourceTree = "<group>"; };
+		0295611D250DE31900D69952 /* XMLTV+Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XMLTV+Parsing.swift"; sourceTree = "<group>"; };
+		02956120250DEC3000D69952 /* XMLTV+Listings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XMLTV+Listings.swift"; sourceTree = "<group>"; };
+		029BA0DB254D2B7000F3EF2E /* String+Latin1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Latin1.swift"; path = "../Listings/Satellite/String+Latin1.swift"; sourceTree = "<group>"; };
+		029BA0DF254D3CFB00F3EF2E /* SpecialCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacter.swift; sourceTree = "<group>"; };
 		02A6FCDA21A0ABB900323C8F /* PrevueCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrevueCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A6FCDC21A0ABB900323C8F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		02A6FCE621A0B81C00323C8F /* EPGMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGMachine.swift; sourceTree = "<group>"; };
@@ -250,7 +280,7 @@
 		02B1BCFA24DE7B4100ACF1D7 /* SerializedCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializedCommand.swift; sourceTree = "<group>"; };
 		02B1BD0724E8735A00ACF1D7 /* CodingPathIntrospectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPathIntrospectable.swift; sourceTree = "<group>"; };
 		02B1BD1C24F8C2BB00ACF1D7 /* BytesType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytesType.swift; sourceTree = "<group>"; };
-		02C71BE824FD88CD00550746 /* BinaryConvertibleTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConvertibleTypes.swift; sourceTree = "<group>"; };
+		02C71BE824FD88CD00550746 /* BinaryConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConvertible.swift; sourceTree = "<group>"; };
 		02C71C062504B2E200550746 /* BinaryCodableStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCodableStruct.swift; sourceTree = "<group>"; };
 		02C71C132506012800550746 /* CurdayDat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurdayDat.swift; sourceTree = "<group>"; };
 		02C71C17250AF3E600550746 /* CSVWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVWriter.swift; sourceTree = "<group>"; };
@@ -258,6 +288,9 @@
 		02C71C1C250B376200550746 /* AtariListingsFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtariListingsFiltering.swift; sourceTree = "<group>"; };
 		02C71C1E250B3C1100550746 /* ListingsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsCommand.swift; sourceTree = "<group>"; };
 		02C71C22250B3CE600550746 /* TransferFileCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFileCommand.swift; sourceTree = "<group>"; };
+		02CFDFD32520169E004E5EB4 /* JulianDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JulianDay.swift; sourceTree = "<group>"; };
+		02CFDFD625202490004E5EB4 /* DST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DST.swift; sourceTree = "<group>"; };
+		02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUtilities.swift; sourceTree = "<group>"; };
 		02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGDocumentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -282,8 +315,10 @@
 		020C662D250DB75C00AACAAB /* Satellite */ = {
 			isa = PBXGroup;
 			children = (
+				02173F82250EE8350078C83B /* Date & Time */,
 				02A6FD162259875800323C8F /* Listings.swift */,
 				02C71C1A250B08D800550746 /* Listings+CSVCodable.swift */,
+				029BA0DF254D3CFB00F3EF2E /* SpecialCharacter.swift */,
 				02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */,
 				02C71C1C250B376200550746 /* AtariListingsFiltering.swift */,
 			);
@@ -299,14 +334,36 @@
 			path = Curday.dat;
 			sourceTree = "<group>";
 		};
+		020C6632250DB79700AACAAB /* XMLTV */ = {
+			isa = PBXGroup;
+			children = (
+				020C6628250DB69600AACAAB /* XMLTV.swift */,
+				0295611D250DE31900D69952 /* XMLTV+Parsing.swift */,
+				02956120250DEC3000D69952 /* XMLTV+Listings.swift */,
+			);
+			path = XMLTV;
+			sourceTree = "<group>";
+		};
+		02173F82250EE8350078C83B /* Date & Time */ = {
+			isa = PBXGroup;
+			children = (
+				02B193A324AEFBF200041C8B /* TulsaTime.swift */,
+				02173F83250EE8550078C83B /* Timeslot.swift */,
+				02CFDFD32520169E004E5EB4 /* JulianDay.swift */,
+				02CFDFD625202490004E5EB4 /* DST.swift */,
+				02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */,
+			);
+			path = "Date & Time";
+			sourceTree = "<group>";
+		};
 		02193161237B90620076A810 /* Data Commands */ = {
 			isa = PBXGroup;
 			children = (
 				02A6FCFE21A263D300323C8F /* TitleCommand.swift */,
 				02A6FD0121A263F600323C8F /* BoxCommands.swift */,
 				0219326523827AC10076A810 /* LocalAdCommand.swift */,
+				02A6FD0421A2642300323C8F /* ClockCommand.swift */,
 				02C71C21250B3CC300550746 /* Configuration */,
-				02B193A224AEFBE600041C8B /* Clock */,
 				02B193A124AEFBD300041C8B /* Listings */,
 			);
 			path = "Data Commands";
@@ -339,11 +396,13 @@
 			isa = PBXGroup;
 			children = (
 				02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */,
+				027B7C3A251FD3E60092EE7E /* Bit.swift */,
 				02A6FD0A225850A300323C8F /* ByteConvenience.swift */,
-				02C71BE824FD88CD00550746 /* BinaryConvertibleTypes.swift */,
+				02C71BE824FD88CD00550746 /* BinaryConvertible.swift */,
 				02B193D424B1393200041C8B /* BinaryCodableEnum.swift */,
 				02B193D624B139C100041C8B /* BinaryCodableOptionSet.swift */,
 				02C71C062504B2E200550746 /* BinaryCodableStruct.swift */,
+				029BA0DB254D2B7000F3EF2E /* String+Latin1.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -519,6 +578,7 @@
 			children = (
 				020C662D250DB75C00AACAAB /* Satellite */,
 				020C662E250DB76A00AACAAB /* Curday.dat */,
+				020C6632250DB79700AACAAB /* XMLTV */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -547,15 +607,6 @@
 				02C71C1E250B3C1100550746 /* ListingsCommand.swift */,
 			);
 			name = Listings;
-			sourceTree = "<group>";
-		};
-		02B193A224AEFBE600041C8B /* Clock */ = {
-			isa = PBXGroup;
-			children = (
-				02A6FD0421A2642300323C8F /* ClockCommand.swift */,
-				02B193A324AEFBF200041C8B /* TulsaTime.swift */,
-			);
-			name = Clock;
 			sourceTree = "<group>";
 		};
 		02B193B524AF05F100041C8B /* BinaryCoder */ = {
@@ -587,6 +638,7 @@
 				02C71C22250B3CE600550746 /* TransferFileCommand.swift */,
 				02A6FD0721A264BB00323C8F /* ConfigurationCommand.swift */,
 				02A6FD0D225887A800323C8F /* NewLookConfigurationCommand.swift */,
+				027B7C3D252007260092EE7E /* DSTCommand.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -690,9 +742,11 @@
 				02678B52250C65A4005D1114 /* PowerPacker.swift in Sources */,
 				02B1BD1B24F8BFED00ACF1D7 /* ProgramCommand.swift in Sources */,
 				02193F642454B2360093D586 /* String+Yams.swift in Sources */,
-				02C71BE924FD88CD00550746 /* BinaryConvertibleTypes.swift in Sources */,
+				02C71BE924FD88CD00550746 /* BinaryConvertible.swift in Sources */,
 				02C71C0125046A0600550746 /* UVSGDocumentable.swift in Sources */,
 				02193F7C2459069F0093D586 /* CLI.swift in Sources */,
+				0295611E250DE31900D69952 /* XMLTV+Parsing.swift in Sources */,
+				027B7C3E252007260092EE7E /* DSTCommand.swift in Sources */,
 				02B1BD0B24E8828C00ACF1D7 /* DownloadCommand.swift in Sources */,
 				02B1BD0824E8735A00ACF1D7 /* CodingPathIntrospectable.swift in Sources */,
 				02B1939B24A71B2B00041C8B /* Legacy.swift in Sources */,
@@ -706,11 +760,13 @@
 				02C71C072504B2E200550746 /* BinaryCodableStruct.swift in Sources */,
 				02B1BD0D24F1FD4500ACF1D7 /* ClockCommand.swift in Sources */,
 				02C71C1D250B376200550746 /* AtariListingsFiltering.swift in Sources */,
+				02CFDFD725202490004E5EB4 /* DST.swift in Sources */,
 				021931F7238123710076A810 /* ByteConvenience.swift in Sources */,
 				02C71C1F250B3C1100550746 /* ListingsCommand.swift in Sources */,
 				02C71C112504CA9E00550746 /* DataSending+AriDebugCTRL.swift in Sources */,
 				02193F602454B2360093D586 /* Constructor.swift in Sources */,
 				02193F682454B2360093D586 /* Node.Scalar.swift in Sources */,
+				020C6629250DB69600AACAAB /* XMLTV.swift in Sources */,
 				02B1939C24A71B2B00041C8B /* UnicodeIterator.swift in Sources */,
 				02C71C0E2504BC9800550746 /* PromoTitleCommand.swift in Sources */,
 				02B193DC24B997B700041C8B /* BoxCommands.swift in Sources */,
@@ -726,16 +782,21 @@
 				02B1BD1024F6382600ACF1D7 /* Listings.swift in Sources */,
 				02193F632454B2360093D586 /* Node.Mapping.swift in Sources */,
 				02B1BD1924F639E100ACF1D7 /* ChannelsCommand.swift in Sources */,
+				029BA0DC254D2B7000F3EF2E /* String+Latin1.swift in Sources */,
 				02B193D024B12D0C00041C8B /* BinaryCodable.swift in Sources */,
 				02193F782454B2F70093D586 /* parser.c in Sources */,
+				02956121250DEC3000D69952 /* XMLTV+Listings.swift in Sources */,
 				02B193DA24B9937D00041C8B /* PrevueCommandFile.swift in Sources */,
 				02193F612454B2360093D586 /* Resolver.swift in Sources */,
+				027B7C3B251FD3E60092EE7E /* Bit.swift in Sources */,
 				02B193D824B960B400041C8B /* CommandModes.swift in Sources */,
 				02193F6D2454B2360093D586 /* Representer.swift in Sources */,
 				02C71BF22504459E00550746 /* EPGMachine.swift in Sources */,
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
+				029BA0E0254D3CFB00F3EF2E /* SpecialCharacter.swift in Sources */,
 				02B193D124B12D0C00041C8B /* BinaryCodableExtensions.swift in Sources */,
 				02C71C0B2504BC2800550746 /* ActionCommand.swift in Sources */,
+				02173F84250EE8550078C83B /* Timeslot.swift in Sources */,
 				02C71C18250AF3E600550746 /* CSVWriter.swift in Sources */,
 				02678B55250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */,
 				02C71C142506012800550746 /* CurdayDat.swift in Sources */,
@@ -749,8 +810,10 @@
 				02C71BEF24FDA40A00550746 /* NewLookConfigurationCommand.swift in Sources */,
 				02193F6C2454B2360093D586 /* Node.swift in Sources */,
 				02193F722454B2E50093D586 /* UVSGSerialData.c in Sources */,
+				02CFDFD42520169E004E5EB4 /* JulianDay.swift in Sources */,
 				02C71BF8250445AB00550746 /* SerialPortDataDestination.swift in Sources */,
 				02C71C1B250B08D900550746 /* Listings+CSVCodable.swift in Sources */,
+				02CFDFDA252044A4004E5EB4 /* CalendarUtilities.swift in Sources */,
 				02B1BD1D24F8C2BB00ACF1D7 /* BytesType.swift in Sources */,
 				02C71BF024FDE89C00550746 /* LocalAdCommand.swift in Sources */,
 				02C71BF6250445A800550746 /* TCPDataDestination.swift in Sources */,
@@ -770,16 +833,19 @@
 				02B1BCF024DE647700ACF1D7 /* Emitter.swift in Sources */,
 				02B1BD1A24F8BFEC00ACF1D7 /* ProgramCommand.swift in Sources */,
 				02B1BCF124DE647700ACF1D7 /* Node.swift in Sources */,
-				02C71BEA24FD895400550746 /* BinaryConvertibleTypes.swift in Sources */,
+				02C71BEA24FD895400550746 /* BinaryConvertible.swift in Sources */,
 				02C71C0225046A0600550746 /* UVSGDocumentable.swift in Sources */,
 				02B1BCD224DE646000ACF1D7 /* UVSGSerialData.c in Sources */,
+				027B7C362511F3770092EE7E /* AtariListingsFiltering.swift in Sources */,
 				02678B50250C073C005D1114 /* pplib.c in Sources */,
 				02B1BD0A24E8828C00ACF1D7 /* DownloadCommand.swift in Sources */,
 				02B1BD0924E8735D00ACF1D7 /* CodingPathIntrospectable.swift in Sources */,
+				027B7C3F252007260092EE7E /* DSTCommand.swift in Sources */,
 				02B1BCD624DE646500ACF1D7 /* BinaryEncoder.swift in Sources */,
 				02C71C0F2504BCAF00550746 /* EventCommand.swift in Sources */,
 				02B1BD2024F8CB4E00ACF1D7 /* ConfigurationCommand.swift in Sources */,
 				02B1BCE724DE647700ACF1D7 /* Resolver.swift in Sources */,
+				02956122250DEC3000D69952 /* XMLTV+Listings.swift in Sources */,
 				02B1BCD524DE646500ACF1D7 /* BinaryDecoder.swift in Sources */,
 				02B1BCFC24DE7B7E00ACF1D7 /* SerializedCommand.swift in Sources */,
 				02B1BD1224F6384600ACF1D7 /* BinaryCodableOptionSet.swift in Sources */,
@@ -788,7 +854,9 @@
 				02B1BD0C24F1FD4400ACF1D7 /* ClockCommand.swift in Sources */,
 				02B1BCE524DE647700ACF1D7 /* Decoder.swift in Sources */,
 				02C71C122504CA9F00550746 /* DataSending+AriDebugCTRL.swift in Sources */,
+				02CFDFD825202490004E5EB4 /* DST.swift in Sources */,
 				02B1BCE424DE647700ACF1D7 /* Mark.swift in Sources */,
+				020C662A250DB69600AACAAB /* XMLTV.swift in Sources */,
 				02B1BCF924DE654A00ACF1D7 /* CLI.swift in Sources */,
 				02B1BCE824DE647700ACF1D7 /* Encoder.swift in Sources */,
 				02C71C0D2504BC9700550746 /* PromoTitleCommand.swift in Sources */,
@@ -804,6 +872,8 @@
 				02B1BCF524DE652F00ACF1D7 /* Command.swift in Sources */,
 				02B1BCE024DE647300ACF1D7 /* writer.c in Sources */,
 				02B1BCF224DE647700ACF1D7 /* Representer.swift in Sources */,
+				02173F85250EE8550078C83B /* Timeslot.swift in Sources */,
+				0295611F250DE31900D69952 /* XMLTV+Parsing.swift in Sources */,
 				02B1BD1124F6382700ACF1D7 /* Listings.swift in Sources */,
 				02B1BCF324DE64A000ACF1D7 /* ByteConvenience.swift in Sources */,
 				02B1BD1824F639E000ACF1D7 /* ChannelsCommand.swift in Sources */,
@@ -811,12 +881,14 @@
 				02B1BCD324DE646500ACF1D7 /* BinaryCodable.swift in Sources */,
 				02B1BCDE24DE647300ACF1D7 /* scanner.c in Sources */,
 				02B1BCDD24DE646900ACF1D7 /* CSVReader.swift in Sources */,
+				027B7C3C251FD3E90092EE7E /* Bit.swift in Sources */,
 				02B1BCEC24DE647700ACF1D7 /* Parser.swift in Sources */,
 				02B1BCF724DE654100ACF1D7 /* BoxCommands.swift in Sources */,
 				02C71C20250B3C1100550746 /* ListingsCommand.swift in Sources */,
 				02C71BF32504459F00550746 /* EPGMachine.swift in Sources */,
 				02B1BCD924DE646900ACF1D7 /* Legacy.swift in Sources */,
 				02B1BCEA24DE647700ACF1D7 /* String+Yams.swift in Sources */,
+				027B7C352511F34A0092EE7E /* Listings+CSVCodable.swift in Sources */,
 				02678B56250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */,
 				02C71C0C2504BC2900550746 /* ActionCommand.swift in Sources */,
 				02C71C19250AF3E900550746 /* CSVWriter.swift in Sources */,
@@ -830,8 +902,10 @@
 				02C71BEE24FDA40900550746 /* NewLookConfigurationCommand.swift in Sources */,
 				02B1BCDF24DE647300ACF1D7 /* api.c in Sources */,
 				02678B53250C65A4005D1114 /* PowerPacker.swift in Sources */,
+				02CFDFD52520169E004E5EB4 /* JulianDay.swift in Sources */,
 				02B1BCF824DE654500ACF1D7 /* CommandModes.swift in Sources */,
 				02C71BF9250445AC00550746 /* SerialPortDataDestination.swift in Sources */,
+				02CFDFDB252044A4004E5EB4 /* CalendarUtilities.swift in Sources */,
 				02B1BD1E24F8C2BD00ACF1D7 /* BytesType.swift in Sources */,
 				02C71BF124FDE89D00550746 /* LocalAdCommand.swift in Sources */,
 				02C71BF7250445A900550746 /* TCPDataDestination.swift in Sources */,
@@ -901,7 +975,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/";
+				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/ Modules/PowerPacker/";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -957,7 +1031,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/";
+				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/ Modules/PowerPacker/";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
@@ -978,7 +1052,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/ Modules/PowerPacker/";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -998,7 +1071,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_INCLUDE_PATHS = "Modules/UVSGSerialData/ Modules/Yams/Sources/CYaml/include/ Modules/PowerPacker/";
 			};
 			name = Release;
 		};

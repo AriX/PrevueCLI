@@ -32,9 +32,9 @@ struct ClockCommand: DataCommand, Equatable {
 
 extension ClockCommand {
     init?(with date: Date, timeZone: TimeZone = .current) {
-        let calendar =  NSCalendar.current
+        let calendar =  Calendar.current
         let daylightSavingsTime = timeZone.isDaylightSavingTime(for: date)
-        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second, .weekday], from: date)
+        let components = calendar.dateComponents(in: timeZone, from: date)
         
         guard let weekday = components.weekday,
             let month = components.month,
@@ -46,6 +46,10 @@ extension ClockCommand {
             let dayOfWeek = DayOfWeek(rawValue: UInt8(weekday - 1)) else { return nil }
         
         self.init(dayOfWeek: dayOfWeek, month: UInt8(month - 1), day: UInt8(day - 1), year: UInt8(year - 1900), hour: UInt8(hour), minute: UInt8(minute), second: UInt8(second), daylightSavingsTime: daylightSavingsTime)
+    }
+    init?(withJulianDay day: JulianDay, date: Date, timeZone: TimeZone = .current) {
+        guard let julianDate = Calendar.current.date(bySettingJulianDay: day, of: date, timeZone: timeZone) else { return nil }
+        self.init(with: julianDate, timeZone: timeZone)
     }
 }
 
@@ -61,8 +65,15 @@ extension ClockCommand {
 // MARK: Current clock command
 
 struct CurrentClockCommand: MetaCommand {
+    let dayOfYear: Int?
+    
     var commands: [DataCommand] {
-        let command = ClockCommand.currentTulsaTime!
-        return [command]
+        if let dayOfYear = dayOfYear {
+            let command = ClockCommand(withJulianDay: JulianDay(dayOfYear: dayOfYear), date: Date(), timeZone: .tulsa)!
+            return [command]
+        } else {
+            let command = ClockCommand(with: Date(), timeZone: .tulsa)!
+            return [command]
+        }
     }
 }

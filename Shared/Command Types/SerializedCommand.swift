@@ -20,14 +20,16 @@ public struct SerializedCommand {
         ResetCommand(),
         TitleCommand(alignment: .center, title: ""),
         ClockCommand(with: Date())!,
-        CurrentClockCommand(),
+        CurrentClockCommand(dayOfYear: 0),
         DownloadCommand(message: .start(filePath: "")),
         TransferFileCommand(localFilePath: "", remoteFilePath: ""),
+        DSTCommand(mode: .local, start: DSTBoundary(year: 0, dayOfYear: 0, hour: 0, minute: 0), end: DSTBoundary(year: 0, dayOfYear: 0, hour: 0, minute: 0)),
+        CurrentDSTCommand(),
         LocalAdCommand.ad(LocalAd(adNumber: 0, content: [.init(alignment: nil, color: nil, text: "")], timePeriod: .init(beginning: 0, ending: 0))),
         ColorLocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: .center, color: .init(background: .red, foreground: .red), text: "")], timePeriod: .init(beginning: 0, ending: 0))),
         ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00),
         NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .satellite),
-        ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Listings.Channel(sourceIdentifier: "", channelNumber: "", callLetters: "", flags: [])]),
+        ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Listings.Channel(sourceIdentifier: "", channelNumber: "", timeslotMask: TimeslotMask(blackedOutTimeslots: [0]), callLetters: "", flags: [])]),
         ProgramCommand(day: JulianDay(dayOfYear: 0), program: Listings.Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
         ListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false),
     ]
@@ -64,9 +66,10 @@ extension SerializedCommand: BinaryCodable {
     
     public init(fromBinary decoder: BinaryDecoder) throws {
         // Look for 55
-        do {
-            _ = try decoder.read(until: { $0 == 0x55 }, consumingFinalByte: false)
-        } catch BinaryDecoder.Error.prematureEndOfData {
+        _ = try decoder.read(until: { $0 == 0x55 }, consumingFinalByte: false)
+        
+        // Bail if we ran out of data already
+        if decoder.cursor == decoder.data.count {
             throw BinaryDecoder.Error.expectedEndOfData
         }
         

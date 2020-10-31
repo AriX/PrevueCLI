@@ -13,7 +13,9 @@ protocol AtariListingsFiltering {
 extension Listings.Channel: AtariListingsFiltering {
     func makeAtariCompatible(atIndex index: Int) -> Listings.Channel? {
         // Atari can't handle channel names longer than 5 characters, and seems to choke when channel numbers contain '.', so let's skip those channels
-        if channelNumber.contains(".") || callLetters.count > 5 {
+        if let channelNumber = channelNumber, channelNumber.contains(".") {
+            return nil
+        } else if let callLetters = callLetters, callLetters.count > 5 {
             return nil
         }
         

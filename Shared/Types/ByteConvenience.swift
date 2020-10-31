@@ -10,15 +10,7 @@ import Foundation
 
 // MARK: Byte conversion
 
-protocol ByteConvertible {
-    var asByte: Byte { get }
-    init(with byte: Byte) throws
-}
-
-extension Character: ByteConvertible {
-    init(with byte: Byte) {
-        self.init(UnicodeScalar(byte))
-    }
+extension Character {
     var asByte: Byte {
         let unicodeScalars = self.unicodeScalars
         assert(unicodeScalars.count == 1, "Character must be a single unicode scalar")
@@ -33,11 +25,8 @@ extension Character: ByteConvertible {
 // MARK: Type conversion
 
 extension String {
-    func asNullTerminatedBytes() -> Bytes {
-        return (Array(utf8) + [0x00])
-    }
-    func asBytes() -> Bytes {
-        return Array(utf8)
+    var asBytes: Bytes {
+        Array(utf8)
     }
 }
 
@@ -54,7 +43,7 @@ extension Array where Element == Byte {
 
 extension Bytes {
     static func leftRightStringAsBytes(leftString: String, rightString: String) -> Bytes {
-        return (leftString.asBytes() + [Byte(0x12)] + rightString.asBytes() + [Byte(0x0D)])
+        return (leftString.asBytes + [Byte(0x12)] + rightString.asBytes + [Byte(0x0D)])
     }
 }
 

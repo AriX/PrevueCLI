@@ -16,13 +16,10 @@ struct ListingsCommand: MetaCommand {
     var commands: [DataCommand] {
         let channelsFile = URL(fileURLWithPath: channelsFilePath)
         let programsFile = URL(fileURLWithPath: programsFilePath)
-        let date = Date()
-        
-        let julianDay = JulianDay(dayOfYear: JulianDay(with: date).dayOfYear)
         
         var listings: Listings
         do {
-            listings = try Listings(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: julianDay, forAtari: forAtari)
+            listings = try Listings(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: .today, forAtari: forAtari)
         } catch {
             print("Error loading listings from CSVListings: \(error)")
             return []

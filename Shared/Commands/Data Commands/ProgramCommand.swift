@@ -16,7 +16,7 @@ extension ProgramCommand: BinaryCodable {
     static let flagsMarker: Byte = 0x12
     
     init(fromBinary decoder: BinaryDecoder) throws {
-        let timeslot = try decoder.decode(Listings.Timeslot.self)
+        let timeslot = try decoder.decode(Timeslot.self)
         day = try decoder.decode(JulianDay.self)
         let sourceIdentifier = try decoder.readString(until: { $0 == ProgramCommand.flagsMarker})
         let flags = try decoder.decode(Listings.Program.Attributes.self)
@@ -27,6 +27,6 @@ extension ProgramCommand: BinaryCodable {
     }
     
     func binaryEncode(to encoder: BinaryEncoder) throws {
-        encoder += [program.timeslot, day.dayOfYear, program.sourceIdentifier.asBytes(), ProgramCommand.flagsMarker, program.flags.rawValue, program.programName.asBytes]
+        encoder += [program.timeslot, day.asByte, program.sourceIdentifier.asBytes, ProgramCommand.flagsMarker, program.flags.rawValue, program.programName.asBytes]
     }
 }

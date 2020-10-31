@@ -46,7 +46,11 @@ indirect enum UVSGDocumentedType: CustomStringConvertible {
         case .scalar(let typeName):
             strings = [typeName]
         case .array(let documentedType):
-            return documentedType.description(at: level, array: true)
+            if case .scalar = documentedType {
+                return "(array) \(documentedType.description(at: 0))"
+            } else {
+                return documentedType.description(at: level, array: true)
+            }
         case .enum(let documentableEnum):
             strings = [type(of: documentableEnum).allCaseNames.joined(separator: ", ")]
         case .optionSet(let documentableOptionSet):
@@ -65,7 +69,11 @@ indirect enum UVSGDocumentedType: CustomStringConvertible {
                 case .array(_):
                     return "\(serializationKey): \(documentedType.description(at: newLevel))"
                 case .optional(let documentedType):
-                    return "\(serializationKey): \(documentedType.description(at: newLevel, optional: true, needsNewline: true))"
+                    if case .scalar = documentedType {
+                        return "\(serializationKey): (optional) \(documentedType.description(at: 0))"
+                    } else {
+                        return "\(serializationKey): \(documentedType.description(at: newLevel, optional: true, needsNewline: true))"
+                    }
                 case .dictionary(let types):
                     if types.count == 0 {
                         return "\(serializationKey): (no arguments)"
@@ -142,3 +150,16 @@ extension Optional: UVSGDocumentable where Wrapped: UVSGDocumentable {
         }
     }
 }
+
+protocol UVSGDocumentableScalar: UVSGDocumentable {
+}
+
+extension UVSGDocumentableScalar {
+    var documentedType: UVSGDocumentedType {
+        return .scalar("\(type(of: self))")
+    }
+}
+
+extension String: UVSGDocumentableScalar {}
+extension Byte: UVSGDocumentableScalar {}
+extension Int: UVSGDocumentableScalar {}

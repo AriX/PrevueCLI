@@ -11,7 +11,7 @@ import Foundation
 struct SpecialCharacterString: Equatable {
     enum Component: Equatable {
         case string(String)
-        case specialCharacter(Byte)
+        case specialCharacter(SpecialCharacter)
     }
     let components: [Component]
 }
@@ -19,24 +19,27 @@ struct SpecialCharacterString: Equatable {
 extension SpecialCharacterString: BinaryCodable {
     init(with bytes: Bytes) {
         var components: [Component] = []
-        var workingString = ""
+        var workingString: Bytes = []
         
         for byte in bytes {
-            let character = Character(with: byte)
-            if character.isASCII {
-                workingString.append(character)
-            } else {
+            if let specialCharacter = SpecialCharacter(rawValue: byte) {
                 if workingString.count > 0 {
-                    components.append(.string(workingString))
+                    if let string = String(latin1Bytes: workingString) {
+                        components.append(.string(string))
+                    }
+                    workingString.removeAll()
                 }
                 
-                workingString = ""
-                components.append(.specialCharacter(byte))
+                components.append(.specialCharacter(specialCharacter))
+            } else {
+                workingString.append(byte)
             }
         }
         
         if workingString.count > 0 {
-            components.append(.string(workingString))
+            if let string = String(latin1Bytes: workingString) {
+                components.append(.string(string))
+            }
         }
         
         self.components = components
@@ -45,9 +48,10 @@ extension SpecialCharacterString: BinaryCodable {
         let bytes = components.flatMap { (component) -> Bytes in
             switch component {
             case .string(let string):
-                return string.asBytes()
+                // Encode string as Latin1 to preserve special characters on Amiga
+                return string.asLatin1Bytes!
             case .specialCharacter(let specialCharacter):
-                return [specialCharacter]
+                return [specialCharacter.rawValue]
             }
         }
         
@@ -87,7 +91,8 @@ extension SpecialCharacterString: Codable, LosslessStringConvertible, Expressibl
                 
                 // Get the special character inside the escape sequence
                 let specialCharacterString = string[range.upperBound..<sequenceEndRange.lowerBound]
-                if let specialCharacter = Byte(specialCharacterString, radix: 16) {
+                if let specialCharacterByte = Byte(specialCharacterString, radix: 16),
+                   let specialCharacter = SpecialCharacter(rawValue: specialCharacterByte) {
                     components.append(.specialCharacter(specialCharacter))
                 }
                 
@@ -112,7 +117,7 @@ extension SpecialCharacterString: Codable, LosslessStringConvertible, Expressibl
             case .string(let string):
                 return string
             case .specialCharacter(let specialCharacter):
-                return "\\{\(specialCharacter.hexEncodedString())}"
+                return "\\{\(specialCharacter.rawValue.hexEncodedString())}"
             }
         }.joined()
     }

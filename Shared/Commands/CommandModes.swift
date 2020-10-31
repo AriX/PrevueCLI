@@ -14,7 +14,7 @@ enum DataCommandMode: ASCIICharacter, BinaryCodableEnum {
     case newChannel = "c"
     case configuration = "F"
     case configDat = "f"
-    case dst = "g"
+    case daylightSavingsTime = "g"
     case download = "H"
     case ppvOrderInfo = "J"
     case newPPVOverInfo = "j"

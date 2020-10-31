@@ -1,5 +1,5 @@
 //
-//  CurdayDat+LIstings.swift
+//  CurdayDat+Listings.swift
 //  PrevuePackage
 //
 //  Created by Ari on 9/12/20.
@@ -32,19 +32,19 @@ extension CurdayDat {
             programs += channel.listingsPrograms
         }
         
-        let julianDay = JulianDay(convertingToByte: header.julianDayNumber.value)
+        let julianDay = JulianDay(dayOfYear: header.julianDayNumber.value)
         return Listings(julianDay: julianDay, channels: channels, programs: programs)
     }
 }
 
 extension CurdayDat.Channel {
     var listingsChannel:  Listings.Channel {
-        return Listings.Channel(sourceIdentifier: sourceIdentifier, channelNumber: channelNumber, callLetters: callLetters, flags: flags)
+        return Listings.Channel(sourceIdentifier: sourceIdentifier, channelNumber: channelNumber, timeslotMask: nil, callLetters: callLetters, flags: flags)
     }
     
     var listingsPrograms: [Listings.Program] {
         programs.compactMap {
-            let timeslot = Listings.Timeslot($0.timeslot.value)
+            let timeslot = Timeslot($0.timeslot.value)
             if timeslot > 48 {
                 return nil
             }

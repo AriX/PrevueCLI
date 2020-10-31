@@ -27,11 +27,19 @@ extension Listings {
         try Channel.write(channels, to: channelsCSVFile)
         try Program.write(programs, to: programsCSVFile)
     }
+    
+    func write(to directory: URL) throws {
+        let channelsFileURL = directory.appendingPathComponent("channels.csv", isDirectory: false)
+        let programsFileURL = directory.appendingPathComponent("programs.csv", isDirectory: false)
+        try write(channelsCSVFile: channelsFileURL, programsCSVFile: programsFileURL)
+    }
 }
 
 protocol CSVCodable: Decodable {
     static func load(from csvFileURL: URL) throws -> [Self]
     static func write(_ items: [Self], to csvFileURL: URL) throws
+    
+    static var nonNilKeys: [String] { get }
 }
 
 extension CSVCodable {
@@ -40,6 +48,13 @@ extension CSVCodable {
         let reader = try CSVReader(string: csvContents, hasHeaderRow: true)
         let decoder = CSVRowDecoder()
         decoder.userInfo[.csvCoding] = true
+        decoder.nilDecodingStrategy = .custom({ (value, key) -> Bool in
+            if let key = key, nonNilKeys.contains(key) {
+                return false
+            }
+            
+            return value.isEmpty
+        })
         
         var items: [Self] = []
         while reader.next() != nil {
@@ -72,13 +87,27 @@ extension CSVCodable {
             
             let mirror = Mirror(reflecting: item)
             for child in mirror.children {
-                var value = String(describing: child.value)
-                if let customValue = child.value as? CSVCustomFieldValue {
-                    value = customValue.csvValue
+                
+                var value: Any
+                if case Optional<Any>.some(let unwrappedValue) = child.value {
+                    value = unwrappedValue
+                } else if case Optional<Any>.none = child.value {
+                    value = ""
+                } else {
+                    value = child.value
                 }
-                try writer.write(field: value)
+                
+                var stringValue = String(describing: value)
+                if let customValue = value as? CSVCustomFieldValue {
+                    stringValue = customValue.csvValue
+                }
+                try writer.write(field: stringValue)
             }
         }
+    }
+    
+    static var nonNilKeys: [String] {
+        return []
     }
 }
 
@@ -87,7 +116,12 @@ protocol CSVCustomFieldValue {
 }
 
 extension Listings.Channel: CSVCodable {
+    static var nonNilKeys: [String] {
+        // Don't let callLetters be decoded as nil. Decode as empty string instead. Otherwise, the source identifier is used as call letters (which breaks psuedo-channels, like the slogan at the end of the listings).
+        return ["callLetters"]
+    }
 }
+
 extension Listings.Program: CSVCodable {
 }
 

@@ -12,6 +12,7 @@ commands:
 
 # Send the current time
 - CurrentClockCommand: {}
+- CurrentDSTCommand: {}
 
 # Send a title
 - TitleCommand: {alignment: "center", title: "Electronic Program Guide"}

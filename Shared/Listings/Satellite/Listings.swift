@@ -14,12 +14,12 @@ struct Listings {
     let programs: [Program]
     
     typealias SourceIdentifier = String // Limited to 6 characters
-    typealias Timeslot = UInt8 // 1 to 48
 
     struct Channel: Codable, UVSGDocumentable, Equatable {
         let sourceIdentifier: SourceIdentifier
-        let channelNumber: String
-        let callLetters: String // Limited to 5 characters on EPG Jr., 6 on Amiga
+        let channelNumber: String?
+        let timeslotMask: TimeslotMask?
+        let callLetters: String? // Limited to 5 characters on EPG Jr., 7 on Amiga
         let flags: Attributes
         
         struct Attributes: BinaryCodableOptionSet {
@@ -62,25 +62,5 @@ struct Listings {
                 case none, movie, altHiliteProg, tagProg, sportsProg, dViewUsed, repeatProg, prevDaysData
             }
         }
-    }
-}
-
-struct JulianDay: BinaryCodableStruct, Equatable {
-    let dayOfYear: UInt8
-}
-
-extension JulianDay {
-    init(with date: Date) {
-        let calendar = NSCalendar.current
-        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)!
-        self.init(convertingToByte: dayOfYear)
-    }
-    
-    init(convertingToByte day: Int) {
-        dayOfYear = UInt8(day % 256)
-    }
-    
-    static var now: JulianDay {
-        return JulianDay(with: Date())
     }
 }

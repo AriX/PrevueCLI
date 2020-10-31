@@ -1,71 +1,98 @@
-sourceIdentifier,channelNumber,callLetters,flags
-TBS000,   2 ,TBS,none|stereo
-KYW000,   3 ,KYW,none|stereo
-CNN000,   4 ,CNN,none|stereo
-USA000,   5 ,USA,none|stereo
-WPVI00,   6 ,WPVI,none|stereo
-ESPN00,   7 ,ESPN,none|stereo
-CNPH00,   8 ,CNPH,none|stereo
-CSNPHL,   9 ,CSNPHL,none|stereo
-WCAU00,  10 ,WCAU,none|stereo
-QVC000,  11 ,QVC,none|stereo
-WHYY00,  12 ,WHYY,none|stereo
-MTV000,  13 ,MTV,none|stereo
-WTXF00,  15 ,WTXF,none|stereo
-WPSG00,  16 ,WPSG,none|stereo
-WPHL00,  17 ,WPHL,none|stereo
-WMCNDT,  18 ,WMCNDT,none|stereo
-DSC000,  19 ,DSC,none|stereo
-TLC000,  20 ,TLC,none|stereo
-BET000,  21 ,BET,none|stereo
-E00000,  22 ,E,none|stereo
-WNJS00,  23 ,WNJS,none|stereo
-AETV00,  24 ,AETV,none|stereo
-VH1000,  25 ,VH1,none|stereo
-LIFE00,  29 ,LIFE,none|stereo
-HLN000,  30 ,HLN,none|stereo
-HSN000,  31 ,HSN,none|stereo
-ABCF00,  32 ,ABCF,none|stereo
-NIK000,  33 ,NIK,none|stereo
-DISN00,  34 ,DISN,none|stereo
-WYBE00,  35 ,WYBE,none|stereo
-TNT000,  36 ,TNT,none|stereo
-WUVP00,  37 ,WUVP,none|stereo
-TCM000,  38 ,TCM,none|stereo
-WLVT00,  39 ,WLVT,none|stereo
-COMEDY,  40 ,COMEDY,none|stereo
-APL000,  41 ,APL,none|stereo
-FX0000,  45 ,FX,none|stereo
-FNC000,  46 ,FNC,none|stereo
-WGTW00,  48 ,WGTW,none|stereo
-WBPH00,  51 ,WBPH,none|stereo
-EDAC05,  52 ,EDAC05,none|stereo
-EDAC05,  53 ,EDAC05,none|stereo
-EDAC05,  54 ,EDAC05,none|stereo
-WFMZ00,  55 ,WFMZ,none|stereo
-EDAC05,  56 ,EDAC05,none|stereo
-SYFY00,  58 ,SYFY,none|stereo
-ESPN20,  59 ,ESPN2,none|stereo
-WPPX00,  61 ,WPPX,none|stereo
-WWSI00,  62 ,WWSI,none|stereo
-GOAC06,  63 ,GOAC06,none|stereo
-GOAC06,  64 ,GOAC06,none|stereo
-PUAC06,  66 ,PUAC06,none|stereo
-TVLAND,  67 ,TVLAND,none|stereo
-WTVE00,  68 ,WTVE,none|stereo
-VERSUS,  69 ,VERSUS,none|stereo
-SPEED0,  71 ,SPEED,none|stereo
-BRAVO0,  72 ,BRAVO,none|stereo
-FOOD00,  73 ,FOOD,none|stereo
-EWTN00,  75 ,EWTN,none|stereo
-HISTOR,  76 ,HISTOR,none|stereo
-HGTV00,  77 ,HGTV,none|stereo
-CSPAN0,  78 ,CSPAN,none|stereo
-MSNBC0,  79 ,MSNBC,none|stereo
-CNBC00,  80 ,CNBC,none|stereo
-TRUTV0,  81 ,TRUTV,none|stereo
-TWC000,  82 ,TWC,none|stereo
-GOLF00,  84 ,GOLF,none|stereo
-SPIKET,  85 ,SPIKET,none|stereo
-PRV001,  86 ,PREVUE,none|stereo
-PRV002,     ,,althiliteSrc
+sourceIdentifier,channelNumber,timeslotMask,callLetters,flags
+VODDM,1,,VODDM,none
+KTVU,2,,KTVU,none
+KNTV,3,,KNTV,none
+KRON,4,,KRON,none
+KPIX,5,,KPIX,none
+KICU,6,,KICU,none
+KGO,7,,KGO,none
+KTSF,8,,KTSF,none
+KQED,9,,KQED,none
+KQEDDT,10,,KQEDDT2,none
+KBCW,12,,KBCW,none
+KOFY,13,,KOFY,none
+KDTV,14,,KDTV,none
+KKPX,16,,KKPX,none
+KPJKDT,17,,KPJKDT,none
+KSTS,18,,KSTS,none
+KTNC,19,,KTNC,none
+KFSF,20,,KFSF,none
+KCNS,21,,KCNS,none
+CSPAN,22,,CSPAN,none
+CSPAN2,23,,CSPAN2,none
+KNTVDT,24,,KNTVDT5,none
+KTLN,25,,KTLN,none
+GOAC02,26,,GOAC026,none
+LOOR02,27,,LOOR027,none
+GOAC02,28,,GOAC028,none
+EDAC02,29,,EDAC029,none
+EDAC03,30,,EDAC030,none
+LOOR03,31,,LOOR031,none
+KMTP,32,,KMTP,none
+ESPNEW,33,,ESPNEWS,none
+ESPNCL,34,,ESPNCL,none
+ESPN2,35,,ESPN2,none
+ESPN,36,,ESPN,none
+MSNBC,37,,MSNBC,none
+SHOPHQ,38,,SHOPHQ,none
+HSN,39,,HSN,none
+NBCSBA,40,,NBCSBA,none
+GOLF,41,,GOLF,none
+USAP,42,,USAP,none
+MTVP,43,,MTVP,none
+VH1P,44,,VH1P,none
+CMTVP,45,,CMTVP,none
+QVC,46,,QVC,none
+COMEDY,47,,COMEDYP,none
+EP,48,,EP,none
+SYFYP,49,,SYFYP,none
+AMCP,50,,AMCP,none
+TCM,51,,TCM,none
+BRAVOP,52,,BRAVOP,none
+TNTP,53,,TNTP,none
+TBSP,54,,TBSP,none
+FREFRM,55,,FREFRMP,none
+PARP,56,,PARP,none
+FXP,57,,FXP,none
+LIFEP,58,,LIFEP,none
+AETVP,59,,AETVP,none
+DSCP,60,,DSCP,none
+CNN,61,,CNN,none
+HLN,62,,HLN,none
+CNBC,63,,CNBC,none
+FNC,64,,FNC,none
+APLP,65,,APLP,none
+TVLAND,67,,TVLANDP,none
+DISNP,68,,DISNP,none
+TOONP,69,,TOONP,none
+DXDP,70,,DXDP,none
+HISTP,71,,HISTP,none
+TLCP,72,,TLCP,none
+HGTVP,73,,HGTVP,none
+FOODP,74,,FOODP,none
+WEATH,75,,WEATH,none
+BETP,76,,BETP,none
+FS1,77,,FS1,none
+HALLDR,78,,HALLDRS,none
+GALAP,79,,GALAP,none
+EWTN,80,,EWTN,none
+TRUTVP,81,,TRUTVP,none
+NGCP,82,,NGCP,none
+DJCHP,83,,DJCHP,none
+OXYGEN,84,,OXYGENP,none
+IFCP,85,,IFCP,none
+TRAVP,86,,TRAVP,none
+BHER,87,,BHER,none
+FXM,88,,FXM,none
+BLOOM,89,,BLOOM,none
+NBCSBA,90,,NBCSBAP,none
+GSNP,91,,GSNP,none
+MTV2P,92,,MTV2P,none
+WEP,93,,WEP,none
+LMNP,94,,LMNP,none
+HMMP,95,,HMMP,none
+SMITHP,96,,SMITHP,none
+KAXTLD,97,,KAXTLD2,none
+KTLNDT,98,,KTLNDT2,none
+KTVUDT,99,,KTVUDT3,none
+NICJRP,100,,NICJRP,none

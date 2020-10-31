@@ -45,17 +45,17 @@ extension ActionCommand {
         case .quarterScreenPreview(let leftSourceIdentifier, let rightSourceIdentifier): // ^A1
             fallthrough
         case .localAdOrQuarterScreenPreview(let leftSourceIdentifier, let rightSourceIdentifier): // ^L1
-            return ("1".asBytes() + Bytes.leftRightStringAsBytes(leftString: leftSourceIdentifier, rightString: rightSourceIdentifier))
+            return ("1".asBytes + Bytes.leftRightStringAsBytes(leftString: leftSourceIdentifier, rightString: rightSourceIdentifier))
         case .halfScreenNationalAd: // ^A3
             fallthrough
         case .localAdOrHalfScreenNationalAd: // ^L3
-            return ("3".asBytes() + [Byte(0x0D)])
+            return ("3".asBytes + [Byte(0x0D)])
         case .halfScreenSourceConstrainedPreview(let sourceIdentifier): // ^A4
-            return ("4".asBytes() + sourceIdentifier.asBytes() + [Byte(0x0D)])
+            return ("4".asBytes + sourceIdentifier.asBytes + [Byte(0x0D)])
         case .quarterScreenTrigger(let leftTransition, let rightTransition): // ^A7
-            return ("7".asBytes() + [leftTransition.rawValue.asByte] + [rightTransition.rawValue.asByte] + [Byte(0x0D)])
+            return ("7".asBytes + [leftTransition.rawValue.asByte] + [rightTransition.rawValue.asByte] + [Byte(0x0D)])
         case .halfScreenPromoWithTextOverlay: // ^A8
-            return ("8".asBytes() + [Byte(0x0D)]) // Untested, does this work?
+            return ("8".asBytes + [Byte(0x0D)]) // Untested, does this work?
         }
     }
     func binaryEncode(to encoder: BinaryEncoder) throws {

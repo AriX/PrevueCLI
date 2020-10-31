@@ -99,15 +99,51 @@ class CommandSerialization: XCTestCase {
     
     func testChannels() throws {
         let channels = [
-            Channel(sourceIdentifier: "WPVI", channelNumber: "6", callLetters: "6ABC", flags: [.hiliteSrc]),
-            Channel(sourceIdentifier: "SOUP", channelNumber: "7", callLetters: "7SOUP", flags: [.none])
+            Listings.Channel(sourceIdentifier: "WPVI", channelNumber: "6", timeslotMask: nil, callLetters: "6ABC", flags: [.hiliteSrc]),
+            Listings.Channel(sourceIdentifier: "SOUP", channelNumber: "7", timeslotMask: nil, callLetters: "7SOUP", flags: [.none])
         ]
         let command = ChannelsCommand(day: JulianDay(dayOfYear: 138), channels: channels)
         assert(command: command, serializesToAndFrom: "55 AA 43 8A 12 02 57 50 56 49 11 36 01 36 41 42 43 12 01 53 4F 55 50 11 37 01 37 53 4F 55 50 00 6D")
     }
     
+    // Test channels missing a channel number, or call letters, and with timeslot masks
+    func testEdgeCaseChannels() throws {
+        let channels = [
+            Listings.Channel(sourceIdentifier: "HIDECH", channelNumber: nil, timeslotMask: nil, callLetters: "BOOP", flags: [.none]),
+            Listings.Channel(sourceIdentifier: "HIDECL", channelNumber: "700", timeslotMask: nil, callLetters: nil, flags: [.none]),
+            Listings.Channel(sourceIdentifier: "HIDECL", channelNumber: "700", timeslotMask: TimeslotMask(blackedOutTimeslots: []), callLetters: nil, flags: [.none]),
+            Listings.Channel(sourceIdentifier: "HIDECL", channelNumber: "700", timeslotMask: TimeslotMask(blackedOutTimeslots: [1, 17, 42]), callLetters: nil, flags: [.none])
+        ]
+        let command = ChannelsCommand(day: JulianDay(dayOfYear: 138), channels: channels)
+        
+        // Test that encoding & decoding the command results in the same command
+        let encodedCommand = try encodeCommand(command)
+        let decodedCommand = try decodeCommand(encodedCommand, ofType: ChannelsCommand.self)
+        XCTAssertEqual(command, decodedCommand)
+    }
+    
+    func testTimeslotMask() throws {
+        let noBlackoutMask = TimeslotMask(blackedOutTimeslots: [])
+        let noBlackoutMaskEncoded = Bytes([0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF])
+        
+        XCTAssertEqual(noBlackoutMaskEncoded, try BinaryEncoder.encode(noBlackoutMask))
+        XCTAssertEqual(noBlackoutMask, try BinaryDecoder(data: noBlackoutMaskEncoded).decode(TimeslotMask.self))
+        
+        let firstByteBlackoutMask = TimeslotMask(blackedOutTimeslots: [2, 3, 4, 5, 6, 7, 8])
+        let firstByteBlackoutMaskEncoded = Bytes([0x80, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF])
+        
+        XCTAssertEqual(firstByteBlackoutMaskEncoded, try BinaryEncoder.encode(firstByteBlackoutMask))
+        XCTAssertEqual(firstByteBlackoutMask, try BinaryDecoder(data: firstByteBlackoutMaskEncoded).decode(TimeslotMask.self))
+        
+        let lastByteBlackoutMask = TimeslotMask(blackedOutTimeslots: [45, 46, 47, 48])
+        let lastByteBlackoutMaskEncoded = Bytes([0xFF, 0xFF, 0xFF, 0xFF, 0xFF, Byte(0x80 | 0x40 | 0x20 | 0x10)])
+        
+        XCTAssertEqual(lastByteBlackoutMaskEncoded, try BinaryEncoder.encode(lastByteBlackoutMask))
+        XCTAssertEqual(lastByteBlackoutMask, try BinaryDecoder(data: lastByteBlackoutMaskEncoded).decode(TimeslotMask.self))
+    }
+    
     func testPrograms() throws {
-        let command = ProgramCommand(day: JulianDay(dayOfYear: 138), program: Program(timeslot: 1, sourceIdentifier: "WPVI", programName: "Action News", flags: .none))
+        let command = ProgramCommand(day: JulianDay(dayOfYear: 138), program: Listings.Program(timeslot: 1, sourceIdentifier: "WPVI", programName: "Action News", flags: .none))
         assert(command: command, serializesToAndFrom: "55 AA 50 01 8A 57 50 56 49 12 01 41 63 74 69 6F 6E 20 4E 65 77 73 00 1E")
     }
     
@@ -139,6 +175,20 @@ class CommandSerialization: XCTestCase {
 
         let colorCommand = ColorLocalAdCommand(ad: LocalAd(adNumber: 5, content: [LocalAd.Content(alignment: nil, color: nil, text: "Always think "), LocalAd.Content(alignment: nil, color: LocalAd.Content.TextColor(background: .grey, foreground: .yellow), text: "Prevue "), LocalAd.Content(alignment: nil, color: LocalAd.Content.TextColor(background: .lightBlue, foreground: .red), text: "first!")], timePeriod: nil))
         assert(command: colorCommand, serializesToAndFrom: "55 AA 74 05 41 6C 77 61 79 73 20 74 68 69 6E 6B 20 03 36 33 50 72 65 76 75 65 20 03 35 34 66 69 72 73 74 21 00 91 ")
+    }
+    
+    func testLocalDST() throws {
+        let start = DSTBoundary(year: 1996, dayOfYear: 301, hour: 2, minute: 0)
+        let end = DSTBoundary(year: 1997, dayOfYear: 096, hour: 2, minute: 0)
+        let command = DSTCommand(mode: .local, start: start, end: end)
+        assert(command: command, serializesToAndFrom: "55 AA 67 32 32 37 04 31 39 39 36 33 30 31 30 32 3A 30 30 13 31 39 39 37 30 39 36 30 32 3A 30 30 00 B4")
+    }
+    
+    func testGlobalDST() throws {
+        let start = DSTBoundary(year: 1996, dayOfYear: 301, hour: 2, minute: 0)
+        let end = DSTBoundary(year: 1997, dayOfYear: 096, hour: 2, minute: 0)
+        let command = DSTCommand(mode: .global, start: start, end: end)
+        assert(command: command, serializesToAndFrom: "55 AA 67 33 32 37 04 31 39 39 36 33 30 31 30 32 3A 30 30 13 31 39 39 37 30 39 36 30 32 3A 30 30 00 B5")
     }
     
 //    func testYAMLEncoding() throws {

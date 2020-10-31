@@ -17,17 +17,68 @@ struct ChannelsCommand: DataCommand, Codable, Equatable {
 extension Listings.Channel: BinaryCodable {
     static let marker: Byte = 0x12
     static let channelNumberMarker: Byte = 0x11
+    static let timeslotMaskMarker: Byte = 0x14
     static let callLettersMarker: Byte = 0x01
 
     init(fromBinary decoder: BinaryDecoder) throws {
         flags = try decoder.decode(Attributes.self)
-        sourceIdentifier = try decoder.readString(until: { $0 == Self.channelNumberMarker})
-        channelNumber = try decoder.readString(until: { $0 == Self.callLettersMarker})
-        callLetters = try decoder.readString(until: { $0 == Self.marker || $0 == ChannelsCommand.terminator }, consumingFinalByte: false)
+        
+        var markerByte: Byte?
+        var readSourceIdentifier: String?
+        var channelNumber: String?
+        var timeslotMask: TimeslotMask?
+        var callLetters: String?
+        
+        repeat {
+            let chunkEndMarkers = [Self.channelNumberMarker, Self.timeslotMaskMarker, Self.callLettersMarker, Self.marker, ChannelsCommand.terminator]
+            let nextChunk = try decoder.read(until: { chunkEndMarkers.contains($0) }, consumingFinalByte: false)
+            
+            switch markerByte {
+            case nil:
+                readSourceIdentifier = String(decoding: nextChunk, as: Unicode.UTF8.self)
+                break
+            case Self.channelNumberMarker:
+                channelNumber = String(decoding: nextChunk, as: Unicode.UTF8.self)
+                break
+            case Self.timeslotMaskMarker:
+                timeslotMask = try BinaryDecoder(data: nextChunk).decode(TimeslotMask.self)
+                break
+            case Self.callLettersMarker:
+                callLetters = String(decoding: nextChunk, as: Unicode.UTF8.self)
+                break
+            default:
+                break
+            }
+            
+            markerByte = try decoder.decode(Byte.self)
+        } while markerByte != Self.marker && markerByte != ChannelsCommand.terminator
+        
+        decoder.cursor -= 1 // Step back one so we don't consume the next channel/terminator marker
+        
+        guard let sourceIdentifier = readSourceIdentifier else {
+            throw BinaryDecoder.Error.malformedData(description: "Channel is missing source identifier")
+        }
+        
+        self.sourceIdentifier = sourceIdentifier
+        self.channelNumber = channelNumber
+        self.timeslotMask = timeslotMask
+        self.callLetters = callLetters
     }
     
     func binaryEncode(to encoder: BinaryEncoder) throws {
-        encoder += [Self.marker, flags.rawValue, sourceIdentifier.asBytes(), Self.channelNumberMarker, channelNumber.asBytes(), Self.callLettersMarker, callLetters.asBytes()]
+        encoder += [Self.marker, flags.rawValue, sourceIdentifier.asBytes]
+        
+        if let channelNumber = channelNumber {
+            encoder += [Self.channelNumberMarker, channelNumber.asBytes]
+        }
+        
+        if let timeslotMask = timeslotMask {
+            encoder += [Self.timeslotMaskMarker, timeslotMask.asBytes]
+        }
+        
+        if let callLetters = callLetters {
+            encoder += [Self.callLettersMarker, callLetters.asBytes]
+        }
     }
 }
 

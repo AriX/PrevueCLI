@@ -21,6 +21,34 @@ let commands = [
             print("PrevueCLI: An error occurred: \(error)")
         }
     }),
+    CLI.Command(name: "convertCurdayDatToListings", usage: " <curday.dat file> <directory to save .csv listings files>: Converts a curday.dat file to the channels.csv and programs.csv listings format (can unpack PowerPack 2.0 if necessary)", minimumArgumentCount: 2, handler: { (arguments) in
+        do {
+            let fileURL = URL(fileURLWithPath: arguments[0])
+            let data = try Data(contentsOf: fileURL)
+            let curdayDat = try CurdayDat(with: data)
+            let listings = curdayDat.listings
+            
+            let directoryURL = URL(fileURLWithPath: arguments[1])
+            try listings.write(to: directoryURL)
+
+        } catch {
+            print("PrevueCLI: An error occurred: \(error)")
+        }
+    }),
+    CLI.Command(name: "convertXMLTVToListings", usage: " <xmltv file> <directory to save .csv listings files>: Converts an XMLTV file to the channels.csv and programs.csv listings format", minimumArgumentCount: 2, handler: { (arguments) in
+        do {
+            let fileURL = URL(fileURLWithPath: arguments[0])
+            let data = try Data(contentsOf: fileURL, options: .alwaysMapped)
+            let xmltv = try XMLTV(xmlData: data)
+            let listings = xmltv.listings
+            
+            let directoryURL = URL(fileURLWithPath: arguments[1])
+            try listings.write(to: directoryURL)
+            
+        } catch {
+            print("PrevueCLI: An error occurred: \(error)")
+        }
+    }),
     CLI.Command(name: "convertCommandFileToBinary", usage: " <.prevuecommand file> <binary commands file>: Converts the commands in the specified .prevuecommand file to their satellite data representation", minimumArgumentCount: 2, handler: { (arguments) in
         do {
             let filePath = arguments[0]
@@ -53,30 +81,13 @@ let commands = [
             print("PrevueCLI: An error occurred: \(error)")
         }
     }),
-    CLI.Command(name: "parseCurdayDat", usage: " <curday.dat file> <directory to save .csv files>: Converts a curday.dat file to .csv listings files (can unpack PowerPack 2.0 if necessary)", minimumArgumentCount: 2, handler: { (arguments) in
-        do {
-            let fileURL = URL(fileURLWithPath: arguments[0])
-            let data = try Data(contentsOf: fileURL)
-            let curdayDat = try CurdayDat(with: data)
-            
-            let directoryURL = URL(fileURLWithPath: arguments[1])
-            let channelsFileURL = directoryURL.appendingPathComponent("channels.csv", isDirectory: false)
-            let programsFileURL = directoryURL.appendingPathComponent("programs.csv", isDirectory: false)
-            
-            let listings = curdayDat.listings
-            try listings.write(channelsCSVFile: channelsFileURL, programsCSVFile: programsFileURL)
-
-        } catch {
-            print("PrevueCLI: An error occurred: \(error)")
-        }
-    }),
     CLI.Command(name: "printCommandSchema", usage: ": Prints all of the supported commands and their syntax details", minimumArgumentCount: 0, handler: { (arguments) in
         let documentation = SerializedCommand.commandDocumentation.description
         print("Supported commands:\n\(documentation)")
     }),
     CLI.Command(name: "printJulianDay", usage: ": Prints today's Julian day (0-255)", minimumArgumentCount: 0, handler: { (arguments) in
-        let julianDay = JulianDay.now
-        print("Julian day: \(julianDay.dayOfYear)")
+        let julianDay = JulianDay.today
+        print("Julian day: \(julianDay.asByte)")
     }),
 //    CLI.Command(name: "repl", usage: ": Opens a REPL interface, where you can type in commands to be sent interactively", handler: { (arguments) in
 //

@@ -39,8 +39,8 @@ struct LocalAd: BinaryCodableStruct, Equatable {
         let text: String
     }
     struct TimePeriod: BinaryCodableStruct, Equatable {
-        let beginning: Listings.Timeslot
-        let ending: Listings.Timeslot
+        let beginning: Timeslot
+        let ending: Timeslot
     }
 }
 
@@ -79,7 +79,7 @@ extension LocalAd {
 
 extension LocalAd.Content {
     func binaryEncode(to encoder: BinaryEncoder) throws {
-        try encoder.encode(alignment, color, text.asBytes())
+        try encoder.encode(alignment, color, text.asBytes)
     }
     init(fromBinary decoder: BinaryDecoder) throws {
         alignment = try Alignment(ifPresentFromBinary: decoder)
