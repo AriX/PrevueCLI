@@ -3,13 +3,14 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 #ifndef PPLIB_H
 #include "pplib.h"
 #endif
 
 #ifdef USE_PPLOADDATA
+#include <unistd.h>
+
 /* also demonstrates how to use the other functions of pplib by yourself */
 int ppLoadData(char *filename, unsigned char **buffer, unsigned int *buflen,
 	       unsigned char *password)

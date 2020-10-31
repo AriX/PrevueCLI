@@ -1,5 +1,6 @@
 
 import Foundation
+import CoreFoundation
 
 /// A protocol for types which can be decoded from binary.
 public protocol BinaryDecodable: Decodable, CodingPathIntrospectable {

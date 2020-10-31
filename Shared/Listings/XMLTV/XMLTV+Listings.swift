@@ -182,12 +182,7 @@ extension XMLTV.Channel.Program {
         }
         
         if isMovie, let duration = duration {
-            let formatter = DateComponentsFormatter()
-            formatter.unitsStyle = .short
-            if let formattedDuration = formatter.string(from: duration) {
-                let formattedDurationWithoutComma = formattedDuration.replacingOccurrences(of: ",", with: "")
-                programName.append(.string(" (\(formattedDurationWithoutComma))"))
-            }
+            programName.append(.string(" (\(duration.durationString))"))
             
         }
         

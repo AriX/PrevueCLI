@@ -28,3 +28,24 @@ extension Calendar {
         return self.date(bySettingHour: 5, minute: 0, second: 0, of: date)! // Listings start at 5 AM
     }
 }
+
+extension TimeInterval {
+    // Returns a string like "1 hr 37 min"
+    var durationString: String {
+        let currentDate = Date()
+        let intervalDate = Date(timeInterval: self, since: currentDate)
+
+        let components = Calendar.current.dateComponents([.hour, .minute], from: currentDate, to: intervalDate)
+        var componentStrings: [String] = []
+        
+        if let hour = components.hour, hour > 0 {
+            componentStrings.append("\(hour) hr")
+        }
+        
+        if let minute = components.minute, minute > 0 {
+            componentStrings.append("\(minute) min")
+        }
+        
+        return componentStrings.joined(separator: " ")
+    }
+}

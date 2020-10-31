@@ -24,9 +24,9 @@ class DataController {
         self.init(dataDestinations: [destination])
     }
     
-    func send(control command: UVSGCommand) {
+    func send(control command: ControlCommand) {
         for dataDestination in dataDestinations {
-            dataDestination.send(control: command.encodedWithChecksum)
+            dataDestination.send(control: command)
         }
     }
     

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-#if os(Windows)
+#if os(Windows) || os(Linux)
 import Yams
 #endif
 

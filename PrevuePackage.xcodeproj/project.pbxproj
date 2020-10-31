@@ -233,7 +233,7 @@
 		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
 		02678B4C250C073B005D1114 /* pplib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pplib.c; sourceTree = "<group>"; };
 		02678B4E250C073B005D1114 /* pplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplib.h; sourceTree = "<group>"; };
-		02678B51250C65A4005D1114 /* PowerPacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerPacker.swift; sourceTree = SOURCE_ROOT; };
+		02678B51250C65A4005D1114 /* PowerPacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerPacker.swift; path = Modules/PowerPacker/PowerPacker.swift; sourceTree = SOURCE_ROOT; };
 		02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacterString.swift; sourceTree = "<group>"; };
 		026A9413245E31180057E012 /* PrevueCommandFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrevueCommandFile.swift; sourceTree = "<group>"; };
 		026F628D248C6D6200E78F2C /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };

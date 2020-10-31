@@ -7,6 +7,9 @@
 //
 
 import Foundation
+#if os(Windows) || os(Linux)
+import Yams
+#endif
 
 struct PrevueCommandFile: Codable {
     let destinations: [DataDestination]

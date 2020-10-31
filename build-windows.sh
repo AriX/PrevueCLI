@@ -5,7 +5,7 @@ export SDKROOT=$DEVELOPER_DIR/Platforms/Windows.platform/Developer/SDKs/Windows.
 export SWIFTFLAGS="-sdk $SDKROOT -I $SDKROOT/usr/lib/swift -L $SDKROOT/usr/lib/swift/windows"
 export PATH="$PATH:/c/Library/Developer/Toolchains/unknown-Asserts-development.xctoolchain/usr/bin"
 
-export ICU_DLLS=C:/Library/icu-64/usr/bin
+export ICU_DLLS=C:/Library/icu-67/usr/bin
 export SWIFT_DLLS=C:/Library/Swift-development/bin
 export MSVC_RUNTIME_DLLS="C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Redist/MSVC/14.25.28508/onecore/x64/Microsoft.VC142.CRT"
 
@@ -17,10 +17,10 @@ cmake -G Ninja -B Yams -D BUILD_SHARED_LIBS=YES -D BUILD_TESTING=NO -D CMAKE_BUI
 cmake --build Yams
 
 # Build UVSGSerialData
-clang -c ../Modules/UVSGSerialData/UVSGSerialData.c
+clang -c ../Modules/UVSGSerialData/UVSGSerialData.c ../Modules/PowerPacker/pplib.c
 
 # Build the Swift code
-swiftc $SWIFTFLAGS -I../Modules/ -I../Modules/Yams/Sources/CYaml/include/ -IYams/swift -LYams/lib ../Shared/*/*.swift ../Shared/Commands/*/*.swift ../PrevueCLI/*.swift *.o -o PrevueCLI.exe
+swiftc $SWIFTFLAGS -I../Modules/ -I../Modules/Yams/Sources/CYaml/include/ -IYams/swift -LYams/lib ../Shared/*/*.swift ../Shared/*/*/*.swift ../Shared/*/*/*/*.swift ../PrevueCLI/*.swift ../Modules/PowerPacker/*.swift ../Modules/BinaryCoder/*.swift ../Modules/CSV.swift/Sources/CSV/*.swift *.o -o PrevueCLI.exe
 
 # Make the Windows distribution directory
 mkdir -p windows-distribution

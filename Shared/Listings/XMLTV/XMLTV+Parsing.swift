@@ -7,6 +7,9 @@
 //
 
 import Foundation
+#if os(Windows) || os(Linux)
+import FoundationXML
+#endif
 
 extension XMLTV {
     init(xmlData: Data) throws {
