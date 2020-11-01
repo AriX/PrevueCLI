@@ -379,7 +379,7 @@
 			path = "Control Commands";
 			sourceTree = "<group>";
 		};
-		021931A5238103BB0076A810 /* Shared */ = {
+		021931A5238103BB0076A810 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				021931DC2381063A0076A810 /* Controller */,
@@ -389,7 +389,7 @@
 				021931DA238105AA0076A810 /* Types */,
 				02A6FCFD21A13EBD00323C8F /* Commands */,
 			);
-			path = Shared;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		021931DA238105AA0076A810 /* Types */ = {
@@ -525,7 +525,7 @@
 			isa = PBXGroup;
 			children = (
 				02193F3D2454B1CA0093D586 /* Modules */,
-				021931A5238103BB0076A810 /* Shared */,
+				021931A5238103BB0076A810 /* Source */,
 				02B1BCCB24DE63F400ACF1D7 /* Tests */,
 				02A6FCDB21A0ABB900323C8F /* PrevueCLI */,
 				026F628D248C6D6200E78F2C /* Resources */,
