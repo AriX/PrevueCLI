@@ -21,7 +21,7 @@ struct PrevueCommandFile: Codable {
 extension PrevueCommandFile {
     struct SerializedDestination: Codable, PropertiesGettableByType {
         let TCPDataDestination: TCPDataDestination?
-        #if !os(Windows)
+        #if !os(Windows) && !os(Linux)
         let SerialPortDataDestination: SerialPortDataDestination?
         #endif
     }

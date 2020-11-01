@@ -8,7 +8,7 @@
 
 import Foundation
 
-#if !os(Windows)
+#if !os(Windows) && !os(Linux)
 class SerialPortDataDestination: DataDestination {
     let path: String
     let baudRate: speed_t
