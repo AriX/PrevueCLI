@@ -13,7 +13,7 @@ import Foundation
 extension String {
     var asLatin1Bytes: Bytes? {
         let string = self as NSString
-        guard let stringData = string.data(using: String.Encoding.isoLatin1.rawValue) else { return nil }
+        guard let stringData = string.data(using: String.Encoding.isoLatin1.rawValue, allowLossyConversion: true) else { return nil }
         
         return Bytes(stringData)
     }
