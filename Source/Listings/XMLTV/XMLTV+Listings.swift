@@ -59,7 +59,17 @@ extension XMLTV.Channel {
         guard let callLetters = callLetters else {
             return nil
         }
-        return String(callLetters.prefix(6))
+        if callLetters.count > 6 {
+            // If the source is longer than six characters, and it ends with a number that makes it unique, keep that number on the end
+            var shortenedString = String(callLetters.prefix(6))
+            if let lastCharacter = callLetters.last,
+                lastCharacter.isNumber {
+                shortenedString = String(callLetters.prefix(5)) + String(lastCharacter)
+            }
+            return shortenedString
+        } else {
+            return callLetters
+        }
     }
     
     var channelNumber: Int? {
