@@ -25,7 +25,14 @@ extension Calendar {
         return self.date(from: yearComponents)
     }
     func startOfListingsDay(for date: Date) -> Date {
-        return self.date(bySettingHour: 5, minute: 0, second: 0, of: date)! // Listings start at 5 AM
+        var components = self.dateComponents(in: .tulsa, from: date)
+        components.timeZone = .tulsa
+        components.hour = 5 // Listings start at 5 AM
+        components.minute = 0
+        components.second = 0
+        components.nanosecond = 0
+        
+        return self.date(from: components)!
     }
 }
 

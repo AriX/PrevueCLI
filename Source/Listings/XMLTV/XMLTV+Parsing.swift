@@ -190,14 +190,14 @@ class XMLTVParser: NodeParser {
             guard let channelIdentifier = attributes["channel"],
                 channelsParser.channels[channelIdentifier] != nil,
                 let start = attributes["start"],
-                let startDate = dateFormatter.date(from: start)?.convertTimeZone(from: .current, to: timeZone),
-                startDate > minDate,
-                startDate < maxDate,
+                let startDate = dateFormatter.date(from: start),
+                startDate >= minDate,
+                startDate <= maxDate,
                 let title = titleParser.strings.first else { return }
             
             var endDate: Date? = nil
             if let end = attributes["end"] {
-                endDate = dateFormatter.date(from: end)?.convertTimeZone(from: .current, to: timeZone)
+                endDate = dateFormatter.date(from: end)
             }
             
             var duration: TimeInterval? = nil

@@ -130,7 +130,7 @@ extension XMLTV.Channel.Program {
         if !startDate.startsOnTimeslotBoundary {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "h:mm"
-            var startTime = dateFormatter.string(from: startDate.convertTimeZone(from: .tulsa, to: .current)) // TODO: Use some higher level concept of time zone so this can't get out of sync
+            var startTime = dateFormatter.string(from: startDate) // NOTE: This assumes listings are in local time zone. In the future, we may want to support generating listings for other time zones.
             
             // To match Prevue behavior, pad with a space if the hour is only one character long
             if startTime.count < 5 {
