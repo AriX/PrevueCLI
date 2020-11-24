@@ -141,8 +141,8 @@ class XMLTVParser: NodeParser {
         var ratings: [XMLTV.Channel.Program.Rating] = []
         
         override func didParseElement() {
-            if let ratingSystem = attributes["system"],
-                let value = valueParser.strings.first {
+            let ratingSystem = attributes["system"]
+            if let value = valueParser.strings.first {
                 ratings += [XMLTV.Channel.Program.Rating(ratingSystem: ratingSystem, rating: value)]
             }
         }

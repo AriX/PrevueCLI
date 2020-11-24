@@ -28,7 +28,7 @@ struct XMLTV {
             let ratings: [Rating]
             
             struct Rating {
-                let ratingSystem: String
+                let ratingSystem: String?
                 let rating: String
             }
         }

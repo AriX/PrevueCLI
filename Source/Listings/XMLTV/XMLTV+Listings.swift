@@ -91,7 +91,7 @@ extension XMLTV.Channel {
 
 extension XMLTV.Channel.Program {
     var isMovie: Bool {
-        return categories.contains("movie")
+        return (categories.contains("movie") || categories.contains("Movie"))
     }
     
     var ratingCharacter: SpecialCharacter? {
@@ -108,11 +108,11 @@ extension XMLTV.Channel.Program {
     var flags: Listings.Program.Attributes {
         var flags: Listings.Program.Attributes = []
         
-        if categories.contains("movie") {
+        if isMovie {
             flags.insert(.movie)
         }
         
-        if categories.contains("sports") {
+        if categories.contains("sports") || categories.contains("Sports") {
             flags.insert(.none)
             flags.insert(.sportsProg)
         }
@@ -201,6 +201,8 @@ extension XMLTV.Channel.Program.Rating {
             return true
         case "USA Parental Rating":
             return true
+        case nil:
+            return true
         default:
             return false
         }
@@ -216,16 +218,28 @@ extension XMLTV.Channel.Program.Rating {
             return .ratingPG13
         case "NC-17":
             return .ratingNC17
+        case "TV-Y":
+            fallthrough
         case "TVY":
             return .ratingTVY
+        case "TV-Y7":
+            fallthrough
         case "TVY7":
             return .ratingTVY7
+        case "TV-G":
+            fallthrough
         case "TVG":
             return .ratingTVG
+        case "TV-PG":
+            fallthrough
         case "TVPG":
             return .ratingTVPG
+        case "TV-M":
+            fallthrough
         case "TVM":
             return .ratingTVM
+        case "TV-MA":
+            fallthrough
         case "TVMA":
             return .ratingTVMA
         default:
