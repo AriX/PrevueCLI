@@ -30,7 +30,6 @@ extension Listings.Channel: AtariListingsFiltering {
 
 extension Listings.Program: AtariListingsFiltering {
     func makeAtariCompatible(atIndex index: Int) -> Listings.Program? {
-        // Atari can't handle channel names longer than 5 characters, so let's skip those programs
         let strippedProgramName = SpecialCharacterString(with: programName.descriptionExcludingSpecialCharacters)
         return Listings.Program(timeslot: timeslot, sourceIdentifier: sourceIdentifier, programName: strippedProgramName, flags: flags)
     }

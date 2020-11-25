@@ -9,12 +9,15 @@
 import Foundation
 
 extension Listings {
-    init(channelsCSVFile: URL, programsCSVFile: URL, day: JulianDay, forAtari: Bool = false) throws {
+    init(channelsCSVFile: URL, programsCSVFile: URL, day: JulianDay, forAtari: Bool = false, omitSpecialCharacters: Bool = false) throws {
         var channels = try Channel.load(from: channelsCSVFile)
         var programs = try Program.load(from: programsCSVFile)
         
-        if (forAtari) {
+        if forAtari {
             channels = channels.makeAtariCompatible()
+        }
+        
+        if forAtari || omitSpecialCharacters {
             programs = programs.makeAtariCompatible()
         }
         

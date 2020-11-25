@@ -31,7 +31,7 @@ public struct SerializedCommand {
         NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .satellite),
         ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Listings.Channel(sourceIdentifier: "", channelNumber: "", timeslotMask: TimeslotMask(blackedOutTimeslots: [0]), callLetters: "", flags: [])]),
         ProgramCommand(day: JulianDay(dayOfYear: 0), program: Listings.Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
-        ListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false),
+        ListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false, omitSpecialCharacters: false),
     ]
 }
 

@@ -37,7 +37,7 @@ commands:
 - ColorLocalAdCommand: {adNumber: 5, content: [{text: "Always think "}, {text: "Prevue ", color: {background: grey, foreground: yellow}}, {text: "first!", color: {background: lightBlue, foreground: red}}]}
 
 # Send sample listings data from the included .csv files
-- ListingsCommand: {channelsFilePath: "Sample Listings/channels.csv", programsFilePath: "Sample Listings/programs.csv", forAtari: false}
+- ListingsCommand: {channelsFilePath: "Sample Listings/channels.csv", programsFilePath: "Sample Listings/programs.csv", forAtari: false, omitSpecialCharacters: false}
 
 # Other command examples:
 #- ClockCommand: {dayOfWeek: 5, month: 2, day: 4, year: 120, hour: 07, minute: 00, second: 00, daylightSavingsTime: True}

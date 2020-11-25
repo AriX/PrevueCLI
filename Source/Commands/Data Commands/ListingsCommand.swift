@@ -12,6 +12,7 @@ struct ListingsCommand: MetaCommand {
     let channelsFilePath: String
     let programsFilePath: String
     let forAtari: Bool
+    let omitSpecialCharacters: Bool?
     
     var commands: [DataCommand] {
         let channelsFile = URL(fileURLWithPath: channelsFilePath)
@@ -19,7 +20,7 @@ struct ListingsCommand: MetaCommand {
         
         var listings: Listings
         do {
-            listings = try Listings(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: .today, forAtari: forAtari)
+            listings = try Listings(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: .today, forAtari: forAtari, omitSpecialCharacters: omitSpecialCharacters ?? false)
         } catch {
             print("Error loading listings from CSVListings: \(error)")
             return []
