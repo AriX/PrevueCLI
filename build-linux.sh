@@ -11,7 +11,7 @@ cmake --build Yams
 clang -fPIC -c ../Modules/UVSGSerialData/UVSGSerialData.c ../Modules/PowerPacker/pplib.c
 
 # Build the Swift code
-swiftc $SWIFTFLAGS -I../Modules/ -I../Modules/Yams/Sources/CYaml/include/ -IYams/swift -LYams/lib ../Shared/*/*.swift ../Shared/*/*/*.swift ../Shared/*/*/*/*.swift ../PrevueCLI/*.swift ../Modules/PowerPacker/*.swift ../Modules/BinaryCoder/*.swift ../Modules/CSV.swift/Sources/CSV/*.swift *.o -o PrevueCLI -Xlinker '-rpath=$ORIGIN'
+swiftc $SWIFTFLAGS -I../Modules/ -I../Modules/Yams/Sources/CYaml/include/ -IYams/swift -LYams/lib ../Source/*/*.swift ../Source/*/*/*.swift ../Source/*/*/*/*.swift ../PrevueCLI/*.swift ../Modules/PowerPacker/*.swift ../Modules/BinaryCoder/*.swift ../Modules/CSV.swift/Sources/CSV/*.swift *.o -o PrevueCLI -Xlinker '-rpath=$ORIGIN'
 
 # Make the Linux distribution directory
 mkdir -p linux-distribution
