@@ -22,7 +22,6 @@ protocol DataDestination: Codable {
 /**
  Support sending UVSGCommand commands to a data destination.
  */
-// TODO: Should there instead be a single protocol for converting things into bytes, and this takes those?
 extension DataDestination {
     func send(data command: SatelliteCommand) {
         do {
@@ -85,11 +84,22 @@ import WinSDK
 #endif
 
 extension DataDestination {
+    func durationToSendBit(baudRate: Int) -> TimeInterval {
+        return (1 / Double(baudRate))
+    }
+    
+    func durationToSendBytes(byteCount: Int, at baudRate: Int, startBits: Int = 1, stopBits: Int = 1) -> TimeInterval {
+        let bytes = Double(byteCount)
+        let bitsPerByte = Double(8 + startBits + stopBits)
+        let durationPerBit = durationToSendBit(baudRate: baudRate)
+        
+        return (bytes * bitsPerByte * durationPerBit)
+    }
+    
     // Call this after sending data to rate limit sending to a particular baud rate
-    func limitSendingRate(byteCount: Int, baudRate: Int) {
-        // e.g. for 2400 baud, assume we're sending 240 bytes per second, with 1,000 miliseconds in a second
+    func delayForSendingBytes(byteCount: Int, baudRate: Int) {
         // For unknown reasons, this seems to be too fast (for the Atari emulator) until I apply a factor of 4 or 5
-        let timeToWait = (Double(byteCount) * 10.0) * (1 / Double(baudRate)) * 1000.0 * 4.5
+        let timeToWait = durationToSendBytes(byteCount: byteCount, at: baudRate).miliseconds
         sleep(miliseconds: timeToWait)
     }
     
@@ -100,5 +110,14 @@ extension DataDestination {
         let microseconds = miliseconds * 1000.0
         usleep(UInt32(microseconds))
         #endif
+    }
+}
+
+extension TimeInterval {
+    var miliseconds: Double {
+        return (self * 1000.0)
+    }
+    var microseconds: Double {
+        return (miliseconds * 1000.0)
     }
 }

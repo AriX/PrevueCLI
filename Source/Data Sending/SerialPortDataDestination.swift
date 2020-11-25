@@ -65,10 +65,7 @@ class SerialPortDataDestination: DataDestination {
         
         write(handle, buffer.baseAddress, size)
         
-//        let timeToSend = (Double(bytes.count)/1.5)*1000.0*2
-//        usleep(UInt32(timeToSend))
-        // TODO: Is this potentially unnecessarily slow?
-        limitSendingRate(byteCount: bytes.count, baudRate: Int(baudRate))
+        delayForSendingBytes(byteCount: bytes.count, baudRate: Int(baudRate))
     }
     let delay: useconds_t = 830
     func setRTS(_ up: Bool) {

@@ -45,7 +45,7 @@ class TCPDataDestination: NetworkDataDestination {
             print("Failed to send packet of size \(bytes.count)")
         }
         
-        limitSendingRate(byteCount: bytes.count, baudRate: 2400)
+        delayForSendingBytes(byteCount: bytes.count, baudRate: 2400)
     }
     
     override func send(control bytes: Bytes) {
