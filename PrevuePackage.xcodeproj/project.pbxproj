@@ -179,6 +179,7 @@
 		02CFDFD825202490004E5EB4 /* DST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD625202490004E5EB4 /* DST.swift */; };
 		02CFDFDA252044A4004E5EB4 /* CalendarUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */; };
 		02CFDFDB252044A4004E5EB4 /* CalendarUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */; };
+		02F93C10256B9838009271D4 /* DefaultGraphicCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F93C0F256B9838009271D4 /* DefaultGraphicCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -292,6 +293,7 @@
 		02CFDFD625202490004E5EB4 /* DST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DST.swift; sourceTree = "<group>"; };
 		02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUtilities.swift; sourceTree = "<group>"; };
 		02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGDocumentable.swift; sourceTree = "<group>"; };
+		02F93C0F256B9838009271D4 /* DefaultGraphicCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGraphicCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +377,7 @@
 				02193163237B90890076A810 /* ActionCommand.swift */,
 				02193165237BAD310076A810 /* PromoTitleCommand.swift */,
 				02193167237BAFB30076A810 /* EventCommand.swift */,
+				02F93C0F256B9838009271D4 /* DefaultGraphicCommand.swift */,
 			);
 			path = "Control Commands";
 			sourceTree = "<group>";
@@ -797,6 +800,7 @@
 				02B193D124B12D0C00041C8B /* BinaryCodableExtensions.swift in Sources */,
 				02C71C0B2504BC2800550746 /* ActionCommand.swift in Sources */,
 				02173F84250EE8550078C83B /* Timeslot.swift in Sources */,
+				02F93C10256B9838009271D4 /* DefaultGraphicCommand.swift in Sources */,
 				02C71C18250AF3E600550746 /* CSVWriter.swift in Sources */,
 				02678B55250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */,
 				02C71C142506012800550746 /* CurdayDat.swift in Sources */,

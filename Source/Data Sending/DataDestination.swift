@@ -44,10 +44,15 @@ extension DataDestination {
             i += 1
         }
     }
-    func send(control command: ControlCommand) {
+    func send(control commands: [ControlCommand]) {
         do {
-            let encodedCommand = try BinaryEncoder.encode(SerializedCommand(command: command))
-            send(control: encodedCommand)
+            let encodedCommands = try commands.flatMap { (command) -> Bytes in
+                let bytes = try BinaryEncoder.encode(SerializedCommand(command: command))
+                let commandType = type(of: command)
+                print("Sending CTRL \(commandType) in \(bytes.count) \(bytes.count == 1 ? "byte" : "bytes"): \(bytes.hexEncodedString())")
+                return bytes
+            }
+            send(control: encodedCommands)
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -119,5 +124,8 @@ extension TimeInterval {
     }
     var microseconds: Double {
         return (miliseconds * 1000.0)
+    }
+    var nanoseconds: Double {
+        return (microseconds * 1000.0)
     }
 }

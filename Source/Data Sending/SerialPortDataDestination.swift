@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Dispatch
 
 #if !os(Windows) && !os(Linux)
 class SerialPortDataDestination: DataDestination {
@@ -14,10 +15,16 @@ class SerialPortDataDestination: DataDestination {
     let baudRate: speed_t
     var handle: CInt?
     
+    enum CodingKeys: CodingKey {
+        case path
+        case baudRate
+    }
+    
     init(path: String, baudRate: speed_t = 2400) {
         self.path = path
         self.baudRate = baudRate
     }
+    
     func openConnection() {
         guard self.handle == nil else { return }
         
@@ -43,12 +50,14 @@ class SerialPortDataDestination: DataDestination {
         
         self.handle = handle
     }
+    
     func closeConnection() {
         if let handle = handle {
             close(handle)
         }
         handle = nil
     }
+    
     func send(data bytes: Bytes) {
         guard let handle = handle else {
             print("[SerialPortDataDestination] Tried to send bytes with no open handle")
@@ -67,7 +76,45 @@ class SerialPortDataDestination: DataDestination {
         
         delayForSendingBytes(byteCount: bytes.count, baudRate: Int(baudRate))
     }
-    let delay: useconds_t = 830
+    
+    var ctrlBitBuffer: [Bool] = []
+    var ctrlSending: Bool = false
+    let ctrlQueue = DispatchQueue(label: "CTRL data", qos: .userInteractive, attributes: .concurrent)
+    lazy var ctrlTimer = DispatchSource.makeTimerSource(flags: .strict, queue: ctrlQueue)
+    
+    func startTimer() {
+        let duration = durationToSendBit(baudRate: 110)
+        let nanosecondDuration = Int(round(duration.nanoseconds))
+        ctrlTimer.schedule(deadline: .now(), repeating: .nanoseconds(nanosecondDuration), leeway: .nanoseconds(0))
+        
+        ctrlTimer.setEventHandler(handler: sendCTRLBitFromBuffer)
+        ctrlTimer.resume()
+    }
+    
+    func sendCTRLBitFromBuffer() {
+        guard let bit = ctrlBitBuffer.first else {
+            if ctrlSending {
+                ctrlSending = false
+                print("[CTRL] Exhausted buffer")
+            }
+            
+            return
+        }
+        
+        if !ctrlSending {
+            print("[CTRL] Start sending")
+            ctrlSending = true
+        }
+        
+        setRTS(bit)
+        
+        ctrlBitBuffer.removeFirst()
+    }
+
+    func stopTimer() {
+        ctrlTimer.cancel()
+    }
+    
     func setRTS(_ up: Bool) {
         guard let handle = handle else {
             print("[SerialPortDataDestination] Tried to set RTS with no open handle")
@@ -75,45 +122,39 @@ class SerialPortDataDestination: DataDestination {
         }
         
         var status: Int32 = 0
-        let statusPointer = UnsafeMutableRawPointer(&status)
+        _ = ioctl(handle, TIOCMGET, &status)
         
-        _ = ioctl(handle, TIOCMGET, statusPointer);
-        
+        var updatedStatus = status
         if up {
-            status |= TIOCM_RTS;
+            updatedStatus |= TIOCM_RTS
         } else {
-            status &= ~TIOCM_RTS;
+            updatedStatus &= ~TIOCM_RTS
         }
-        print("Setting status to \(status)")
         
-        _ = ioctl(handle, TIOCMSET, statusPointer);
+        if status != updatedStatus {
+            _ = ioctl(handle, TIOCMSET, &updatedStatus)
+        }
+    }
+    
+    func sendCTRLByte(_ byte: Byte) {
+        let bits = byte.asBits.reversed().map { $0 == .zero }
         
-        usleep(delay);
+        ctrlBitBuffer.append(false) // stop
+        ctrlBitBuffer.append(true) // start
+        ctrlBitBuffer.append(contentsOf: bits)
+        ctrlBitBuffer.append(false) // stop
+        ctrlBitBuffer.append(false) // stop
+        ctrlBitBuffer.append(false) // stop
+        ctrlBitBuffer.append(false) // stop
+        
+        // TODO: Do we really need this many stop bits?
     }
-    func sendCTRLGroup(_ r: Bool, _ s: Bool) {
-        for _ in 1...4 {
-            setRTS(r);
-        }
-        for _ in 1...4 {
-            setRTS(s);
-        }
-    }
-    func sendCTRLByte(byt: Byte) {
-        setRTS(true); setRTS(true); setRTS(true);
-        sendCTRLGroup(true, !((byt&1)>0)); // start
-        sendCTRLGroup(!((byt&1)>0), !((byt&2)>0)); // data
-        sendCTRLGroup(!((byt&2)>0), !((byt&4)>0)); // data
-        sendCTRLGroup(!((byt&4)>0), !((byt&8)>0)); // data
-        sendCTRLGroup(!((byt&8)>0), !((byt&16)>0)); // data
-        sendCTRLGroup(!((byt&16)>0), !((byt&32)>0)); // data
-        sendCTRLGroup(!((byt&32)>0), !((byt&64)>0)); // data
-        sendCTRLGroup(!((byt&64)>0), !((byt&128)>0)); // data
-        sendCTRLGroup(!((byt&128)>0), false); // data
-        sendCTRLGroup(false, false); // stop
-    }
+    
     func send(control bytes: Bytes) {
-        for byte in bytes {
-            sendCTRLByte(byt: byte)
+        ctrlQueue.sync {
+            for byte in bytes {
+                sendCTRLByte(byte)
+            }
         }
     }
 }
