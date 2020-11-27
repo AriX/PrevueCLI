@@ -101,7 +101,7 @@ extension XMLTV.Channel {
 
 extension XMLTV.Channel.Program {
     var isMovie: Bool {
-        return (categories.contains("movie") || categories.contains("Movie"))
+        return categories.contains { $0.localizedCaseInsensitiveContains("movie") }
     }
     
     var ratingCharacter: SpecialCharacter? {
@@ -122,7 +122,7 @@ extension XMLTV.Channel.Program {
             flags.insert(.movie)
         }
         
-        if categories.contains("sports") || categories.contains("Sports") {
+        if categories.contains(where: { $0.localizedCaseInsensitiveContains("sports") }) {
             flags.insert(.none)
             flags.insert(.sportsProg)
         }
