@@ -35,11 +35,13 @@ let commands = [
             print("PrevueCLI: An error occurred: \(error)")
         }
     }),
-    CLI.Command(name: "convertXMLTVToListings", usage: " <xmltv file> <directory to save .csv listings files>: Converts an XMLTV file to the channels.csv and programs.csv listings format", minimumArgumentCount: 2, handler: { (arguments) in
+    CLI.Command(name: "convertXMLTVToListings", usage: " <xmltv file> <directory to save .csv listings files> [max channel number]: Converts an XMLTV file to the channels.csv and programs.csv listings format. If no max channel number is specified, the default is 100.", minimumArgumentCount: 2, handler: { (arguments) in
         do {
             let fileURL = URL(fileURLWithPath: arguments[0])
+            let maxChannelNumber = (arguments.count > 2 ? Int(arguments[2]) : nil) ?? 100
             let data = try Data(contentsOf: fileURL, options: .alwaysMapped)
-            let xmltv = try XMLTV(xmlData: data)
+            
+            let xmltv = try XMLTV(xmlData: data, maxChannelNumber: maxChannelNumber)
             let listings = xmltv.listings
             
             let directoryURL = URL(fileURLWithPath: arguments[1])

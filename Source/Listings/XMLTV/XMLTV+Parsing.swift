@@ -12,12 +12,12 @@ import FoundationXML
 #endif
 
 extension XMLTV {
-    init(xmlData: Data) throws {
+    init(xmlData: Data, maxChannelNumber: Int) throws {
         let calendar = Calendar.current
         let timeZone = TimeZone.tulsa
         let startOfToday = calendar.startOfListingsDay(for: .currentTulsaDate)
         let startOfTomorrow = calendar.date(byAdding: .day, value: 1, to: startOfToday)!
-        let parser = XMLTVParser(fromDate: startOfToday, toDate: startOfTomorrow, timeZone: timeZone, maxChannelNumber: 100)
+        let parser = XMLTVParser(fromDate: startOfToday, toDate: startOfTomorrow, timeZone: timeZone, maxChannelNumber: maxChannelNumber)
         
         let xmlParser = XMLParser(data: xmlData)
         let delegateStack = ParserDelegateStack(xmlParser: xmlParser)
