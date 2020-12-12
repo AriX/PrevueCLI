@@ -192,7 +192,7 @@ class XMLTVParser: NodeParser {
                 let start = attributes["start"],
                 let startDate = dateFormatter.date(from: start),
                 startDate >= minDate,
-                startDate <= maxDate,
+                startDate < maxDate,
                 let title = titleParser.strings.first else { return }
             
             var endDate: Date? = nil
