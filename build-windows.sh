@@ -7,7 +7,7 @@ export PATH="$PATH:/c/Library/Developer/Toolchains/unknown-Asserts-development.x
 
 export ICU_DLLS=C:/Library/icu-67/usr/bin
 export SWIFT_DLLS=C:/Library/Swift-development/bin
-export MSVC_RUNTIME_DLLS="C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Redist/MSVC/14.25.28508/onecore/x64/Microsoft.VC142.CRT"
+export MSVC_RUNTIME_DLLS="C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Redist/MSVC/14.25.28508/x64/Microsoft.VC142.CRT"
 
 mkdir -p build
 cd build
