@@ -65,14 +65,14 @@ struct NewLookConfigurationCommand: DataCommand, Equatable {
     let unknown39: Byte = 0x4E // N Default N.
     let unknown40: Byte = 0x4E // N Default Y.
     let unknown41: Byte = 0x4E // N - something related to CTRL? Default N.
-//    let clockCmd: ASCIIDigitInt // Clock command. If 1, the 'K' clock command doesn't work. If 2, it does. Default 1.
+    let clockCmd: ASCIIDigitInt? // Clock command. If 1, the 'K' clock command doesn't work. If 2, it does. Default 1.
 }
 
 extension NewLookConfigurationCommand {
     func binaryEncode(to encoder: BinaryEncoder) throws {
         let innerEncoder = BinaryEncoder()
         try self.encode(to: innerEncoder)
-        let configDatBytes = innerEncoder.data
+        let configDatBytes = innerEncoder.data + [Byte(0x00)]
         
         let unknownByte = Byte(0x00) // Unknown! What does this mean? Perhaps unused.
         let configLength = UInt16(configDatBytes.count) + 1 // Unsure why, but it expects 1 more than the config length
@@ -90,12 +90,15 @@ extension NewLookConfigurationCommand {
         displayFormat = try innerDecoder.decode(DisplayFormat.self)
         innerDecoder.cursor += 37
         textAdFlag = try innerDecoder.decode(TextAdFlag.self)
+        
+        // TODO: check length of command and set version as appropriate
+        clockCmd = 1 // TODO: Actually read
     }
 }
 
 // TODO: Remove once this command is fully modeled
 extension NewLookConfigurationCommand: UVSGDocumentable {
     var documentedType: UVSGDocumentedType {
-        return .dictionary([("displayFormat", DisplayFormat.grid.documentedType), ("textAdFlag", TextAdFlag.satellite.documentedType)])
+        return .dictionary([("displayFormat", DisplayFormat.grid.documentedType), ("textAdFlag", TextAdFlag.satellite.documentedType), ("clockCmd", .scalar("UInt8"))])
     }
 }

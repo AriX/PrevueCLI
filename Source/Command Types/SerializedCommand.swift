@@ -28,7 +28,7 @@ public struct SerializedCommand {
         LocalAdCommand.ad(LocalAd(adNumber: 0, content: [.init(alignment: nil, color: nil, text: "")], timePeriod: .init(beginning: 0, ending: 0))),
         ColorLocalAdCommand(ad: LocalAd(adNumber: 0, content: [.init(alignment: .center, color: .init(background: .red, foreground: .red), text: "")], timePeriod: .init(beginning: 0, ending: 0))),
         ConfigurationCommand(timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00),
-        NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .satellite),
+        NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .satellite, clockCmd: 1),
         ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Listings.Channel(sourceIdentifier: "", channelNumber: "", timeslotMask: TimeslotMask(blackedOutTimeslots: [0]), callLetters: "", flags: [])]),
         ProgramCommand(day: JulianDay(dayOfYear: 0), program: Listings.Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
         ListingsCommand(channelsFilePath: "", programsFilePath: "", forAtari: false, omitSpecialCharacters: false),

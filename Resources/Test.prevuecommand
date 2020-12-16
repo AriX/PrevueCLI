@@ -10,18 +10,18 @@ commands:
 # Tell all boxes to start listening
 - BoxOnCommand: {selectCode: "*"}
 
+# Send a configuration
+- ConfigurationCommand: {timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00}
+
+# Send New Look configuration (for 7.8.3, remove the "clockCmd" argument; you can change 'grid' to 'scroll' to get the list format)
+- NewLookConfigurationCommand: {displayFormat: grid, textAdFlag: satellite, clockCmd: 2}
+
 # Send the current time
 - CurrentClockCommand: {}
 - CurrentDSTCommand: {}
 
 # Send a title
 - TitleCommand: {alignment: "center", title: "Electronic Program Guide"}
-
-# Send a configuration
-- ConfigurationCommand: {timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00}
-
-# Send New Look configuration (change 'grid' to 'scroll' to get the list format)
-# - NewLookConfigurationCommand: {displayFormat: grid, textAdFlag: satellite}
 
 # Reset local ads
 - LocalAdCommand: {reset: true}
