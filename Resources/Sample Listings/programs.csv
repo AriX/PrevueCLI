@@ -1,27 +1,8 @@
 timeslot,sourceIdentifier,programName,flags
-1,WDPN,Paid Programming \{99},none
-2,WDPN,The Key To Healthy Living,none
-3,WDPN,Gilligan's Island \{99} \{7C},none
-4,WDPN,My Three Sons \{99} \{7C},none
-5,WDPN,Leave It to Beaver \{99} \{7C},none
-6,WDPN,Leave It to Beaver \{99} \{7C},none
-7,WDPN,Perry Mason \{9B} \{7C},none
-9,WDPN,Matlock \{9B} \{91} \{7C},none
-11,WDPN,In the Heat of the Night \{9B} \{91} \{7C},none
-13,WDPN,The Waltons \{99} \{7C},none
-15,WDPN,Gunsmoke \{9B} \{7C},none
-17,WDPN,Bonanza \{99} \{7C},none
-19,WDPN,The Rifleman \{99} \{7C},none
-20,WDPN,The Rifleman \{99} \{7C},none
-21,WDPN,Wagon Train \{99} \{7C},none
-23,WDPN,Adam-12 \{9B} \{7C},none
-24,WDPN,Adam-12 \{9B} \{7C},none
-25,WDPN,The Flintstones \{99} \{7C},none
-26,WDPN,Happy Days \{9B} \{7C},none
 27,WDPN,M*A*S*H \{9B} \{7C},none
 28,WDPN,M*A*S*H \{9B} \{7C},none
-29,WDPN,The Andy Griffith Show \{99} \{7C},none
-30,WDPN,The Andy Griffith Show \{99} \{7C},none
+29,WDPN,The Andy Griffith Show \{9B} \{7C},none
+30,WDPN,The Andy Griffith Show \{9B} \{7C},none
 31,WDPN,"Gomer Pyle, U.S.M.C. \{99} \{7C}",none
 32,WDPN,Green Acres \{99} \{7C},none
 33,WDPN,Hogan's Heroes \{99} \{7C},none
@@ -33,269 +14,133 @@ timeslot,sourceIdentifier,programName,flags
 41,WDPN,Mannix \{9B} \{7C},none
 43,WDPN,Cannon \{9B} \{7C},none
 45,WDPN,Barnaby Jones \{99} \{91} \{7C},none
-47,WDPN,Jersey Matters with Larry Mendte \{7C},none
-49,WDPN,The 302,none
-1,KYW,Eyewitness News at 6am \{91} \{7C},none
-3,KYW,CBS This Morning \{91} \{7C},none
-7,KYW,The Drew Barrymore Show \{99} \{91} \{7C},none
-9,KYW,Let's Make a Deal \{9B} \{91} \{7C},none
-11,KYW,The Price Is Right \{99} \{91} \{7C},none
-13,KYW,Eyewitness News at 12pm \{91} \{7C},none
-14,KYW,The Young and the Restless \{91} \{7C},none
-16,KYW,The Bold and the Beautiful \{91} \{7C},none
-17,KYW,The Talk \{91} \{7C},none
-19,KYW,Dr. Phil \{9B} \{91} \{7C},none
-21,KYW,Eyewitness News at 4pm \{91} \{7C},none
-23,KYW,Eyewitness News at 5pm \{91} \{7C},none
-25,KYW,Eyewitness News at 6pm \{91} \{7C},none
-26,KYW,CBS Evening News With Norah O'Donnell \{91} \{7C},none
+47,WDPN,Paid Programming \{99},none
+48,WDPN,The Key To Healthy Living,none
 27,KYW,Inside Edition \{9B} \{91} \{7C},none
 28,KYW,Entertainment Tonight \{91} \{7C},none
-29,KYW,Frosty the Snowman \{99} \{91} \{7C},none
-30,KYW,( 8:32) Frosty Returns \{99} \{91} \{7C},none
-31,KYW,( 9:01) CBS News Sunday Morning \{91} \{7C},none
-33,KYW,(10:01) Blue Bloods \{91} \{7C},none
+29,KYW,Play On: Celebrating the Power of Music to Make Change \{9B} \{91} \{7C},none
+31,KYW,NCIS \{91} \{7C},none
+33,KYW,FBI \{91} \{7C},none
 35,KYW,Eyewitness News at 11pm \{91} \{7C},none
 36,KYW,(11:35) The Late Show With Stephen Colbert \{9B} \{91} \{7C},none
 38,KYW,(12:37) The Late Late Show With James Corden \{91} \{7C},none
 40,KYW,( 1:37) Comics Unleashed With Byron Allen \{9B} \{91} \{7C},none
 41,KYW,( 2:07) Eyewitness News at 11pm \{91} \{7C},none
-42,KYW,( 2:35) Remove THE VIRUS from Your Home!,none
-43,KYW,( 3:05) CBS Evening News With Norah O'Donnell \{91} \{7C},none
-44,KYW,( 3:35) Missing \{99} \{91} \{7C},none
-45,KYW,Entertainers: With Byron Allen \{9B} \{91} \{7C},none
-47,KYW,Eyewitness News Weekend Morning \{91} \{7C},none
-49,KYW,Eyewitness News Weekend Morning \{91} \{7C},none
-1,WACPSD,News 12,none
-7,WACPSD,Medicare Plans with Dental Coverage,none
-9,WACPSD,"Improve Your Immunity, Energy & Sleep!",none
-10,WACPSD,Going To The Bathroom Too Much?,none
-11,WACPSD,Vacuuming Re-Invented with the NEW Kenmore Intuition,none
-12,WACPSD,Medicare Plans with Dental Coverage,none
-14,WACPSD,Medicare Plans with Dental Coverage,none
-15,WACPSD,"Smile Healthy Philadelphia, With ClearChoice Dental Implant Centers",none
-16,WACPSD,Medicare Plans with Dental Coverage,none
-17,WACPSD,Paid Programming \{99},none
-18,WACPSD,Devon Nissan,none
-19,WACPSD,Inside Investigations \{99} \{7C},none
-20,WACPSD,Medicare Plans with Dental Coverage,none
-21,WACPSD,Devon Nissan,none
-22,WACPSD,Medicare Plans with Dental Coverage,none
-24,WACPSD,Medicare Plans with Dental Coverage,none
-25,WACPSD,Paid Programming \{99},none
-26,WACPSD,"Smile Healthy Philadelphia, With ClearChoice Dental Implant Centers",none
-27,WACPSD,Medicare Plans with Dental Coverage,none
-28,WACPSD,Devon Nissan,none
-29,WACPSD,SNL: The Early Years,none
-30,WACPSD,Experience Hollywood's Red Carpet Secret for a Flawless Looking Body!,none
-31,WACPSD,Paid Programming \{99},none
-32,WACPSD,MyPillow Topper,none
-33,WACPSD,Devon Nissan,none
-34,WACPSD,Kill Viruses NOW!,none
-35,WACPSD,Devon Nissan,none
-36,WACPSD,Robot Cleans 4 You,none
-37,WACPSD,Devon Nissan,none
-38,WACPSD,SNL: The Early Years,none
-39,WACPSD,5 Makeup Tips 4 You,none
-40,WACPSD,5 Makeup Tips 4 You,none
-41,WACPSD,NEW Shark Vacuum!,none
-42,WACPSD,NEW Shark Vacuum!,none
-43,WACPSD,MyPillow Topper,none
-44,WACPSD,MyPillow Topper,none
-45,WACPSD,Never Rake Again!,none
-46,WACPSD,Never Rake Again!,none
-47,WACPSD,Humana Medicare Plans,none
-48,WACPSD,Humana Medicare Plans,none
-49,WACPSD,Cooking Made EZ!,none
-1,USA,Chrisley Knows Best \{7C},none
-2,USA,"""Harry Potter and the Chamber of Secrets"" \{85} (2002) Daniel Radcliffe, Rupert Grint. The follow-up to ""Harry Potter and the Sorcerer's Stone"" finds young wizard Harry Potter (Daniel Radcliffe) and his friends, Ron (Rupert Grint) and Hermione (Emma Watson), facing new challenges during their second year at Hogwarts School of Witchcraft and Wizardry as they try to discover a dark force that is terrorizing the school. \{7C} (2 hr 41 min)",movie
-9,USA,"(10:10) ""Harry Potter and the Prisoner of Azkaban"" \{85} (2004) Daniel Radcliffe, Rupert Grint. Harry Potter's (Daniel Radcliffe) third year at Hogwarts starts off badly when he learns deranged killer Sirius Black (Gary Oldman) has escaped from Azkaban prison and is bent on murdering the teenage wizard. While Hermione's (Emma Watson) cat torments Ron's (Rupert Grint) sickly rat, causing a rift among the trio, a swarm of nasty Dementors is sent to protect the school from Black. A mysterious new teacher helps Harry learn to defend himself, but what is his secret tie to Sirius Black? \{7C} (2 hr 21 min)",movie
-15,USA,"( 1:10) ""Harry Potter and the Goblet of Fire"" \{87} (2005) Daniel Radcliffe, Rupert Grint. The fourth movie in the Harry Potter franchise sees Harry (Daniel Radcliffe) returning for his fourth year at Hogwarts School of Witchcraft and Wizardry, along with his friends, Ron (Rupert Grint) and Hermione (Emma Watson). There is an upcoming tournament between the three major schools of magic, with one participant selected from each school by the Goblet of Fire. When Harry's name is drawn, even though he is not eligible and is a fourth player, he must compete in the dangerous contest. \{7C} (2 hr 37 min)",movie
-22,USA,"( 4:35) ""Harry Potter and the Order of the Phoenix"" \{87} (2007) Daniel Radcliffe, Rupert Grint. Now in his fifth year at Hogwarts, Harry (Daniel Radcliffe) learns that many in the wizarding community do not know the truth of his encounter with Lord Voldemort. Cornelius Fudge, minister of Magic, appoints his toady, Dolores Umbridge, as Defense Against the Dark Arts teacher, for he fears that professor Dumbledore will take his job. But her teaching is deficient and her methods, cruel, so Harry prepares a group of students to defend the school against a rising tide of evil. \{7C} (2 hr 18 min)",movie
-28,USA,"( 7:35) ""Harry Potter and the Half-Blood Prince"" \{85} (2009) Daniel Radcliffe, Rupert Grint. As Death Eaters wreak havoc in both Muggle and Wizard worlds, Hogwarts is no longer a safe haven for students. Though Harry (Daniel Radcliffe) suspects there are new dangers lurking within the castle walls, Dumbledore is more intent than ever on preparing the young wizard for the final battle with Voldemort. Meanwhile, teenage hormones run rampant through Hogwarts, presenting a different sort of danger. Love may be in the air, but tragedy looms, and Hogwarts may never be the same again. \{7C} (2 hr 33 min)",movie
-35,USA,(11:04) Modern Family \{9B} \{91} \{7C},none
-36,USA,(11:34) Modern Family \{9B} \{91} \{7C},none
-37,USA,(12:04) Modern Family \{9B} \{91} \{7C},none
-38,USA,(12:34) Modern Family \{9B} \{91} \{7C},none
-39,USA,( 1:05) Modern Family \{9B} \{91} \{7C},none
-40,USA,( 1:35) Modern Family \{9B} \{91} \{7C},none
-41,USA,( 2:06) Monk \{9B} \{7C},none
-43,USA,( 3:04) Monk \{9B} \{7C},none
-45,USA,( 4:03) Dateline \{91} \{7C},none
-47,USA,( 5:01) Dateline \{91} \{7C},none
-49,USA,CSI: Crime Scene Investigation \{91} \{7C},none
-1,WPVI,Action News 6:00 AM \{91} \{7C},none
-3,WPVI,Good Morning America \{7C},none
-7,WPVI,Live with Kelly and Ryan \{9B} \{91} \{7C},none
-9,WPVI,Tamron Hall \{9B} \{91} \{7C},none
-11,WPVI,The View \{91} \{7C},none
-13,WPVI,College Football,none|sportsProg
-19,WPVI,College Football Scoreboard \{7C},none|sportsProg
-20,WPVI,College Football,none|sportsProg
-26,WPVI,College Football Scoreboard \{7C},none|sportsProg
-27,WPVI,Action News 7 PM \{91} \{7C},none
+42,KYW,( 2:37) Relief from Inflammation,none
+43,KYW,( 3:07) Paid Programming \{99},none
+43,KYW,( 3:10) CBS Evening News With Norah O'Donnell \{91} \{7C},none
+44,KYW,( 3:40) CBS Overnight News \{91} \{7C},none
+45,KYW,CBS Morning News \{91} \{7C},none
+46,KYW,Eyewitness News at 4:30am \{91} \{7C},none
+47,KYW,Eyewitness News at 5am \{91} \{7C},none
+27,WACPSD,MyPillow Topper,none
+28,WACPSD,MyPillow Topper,none
+29,WACPSD,Cher,none
+30,WACPSD,Silver Peace Dollars,none
+31,WACPSD,SNL: The Early Years,none
+32,WACPSD,SNL: The Early Years,none
+33,WACPSD,Union Baptist Temple,none
+35,WACPSD,Dolly Parton!,none
+36,WACPSD,Dolly Parton!,none
+37,WACPSD,Never Rake Again!,none
+38,WACPSD,Never Rake Again!,none
+39,WACPSD,Liberty Safes,none
+40,WACPSD,MyPillow Topper,none
+41,WACPSD,Dolly Parton!,none
+42,WACPSD,Dolly Parton!,none
+43,WACPSD,Emeril Pasta Secret,none
+44,WACPSD,Emeril Pasta Secret,none
+45,WACPSD,MyPillow Topper,none
+46,WACPSD,MyPillow Topper,none
+47,WACPSD,5 Makeup Tips 4 You,none
+48,WACPSD,5 Makeup Tips 4 You,none
+27,USA,Law & Order: Special Victims Unit \{91} \{7C},none
+29,USA,Law & Order: Special Victims Unit \{91} \{7C},none
+31,USA,Law & Order: Special Victims Unit \{91} \{7C},none
+33,USA,Law & Order: Special Victims Unit \{91} \{7C},none
+35,USA,(11:01) Modern Family \{9B} \{91} \{7C},none
+36,USA,(11:31) Modern Family \{9B} \{91} \{7C},none
+37,USA,Modern Family \{9B} \{91} \{7C},none
+38,USA,Modern Family \{9B} \{91} \{7C},none
+39,USA,Modern Family \{9B} \{91} \{7C},none
+40,USA,( 1:31) Modern Family \{9B} \{91} \{7C},none
+41,USA,( 2:02) Law & Order: Special Victims Unit \{91} \{7C},none
+43,USA,( 3:01) Law & Order: Special Victims Unit \{91} \{7C},none
+45,USA,( 4:01) Dateline \{91} \{7C},none
+47,USA,Dateline \{9B} \{91} \{7C},none
+27,WPVI,Jeopardy! \{99} \{91} \{7C},none
 28,WPVI,Wheel of Fortune \{99} \{91} \{7C},none
-29,WPVI,Santa Claus Is Comin' to Town \{99} \{91} \{7C},none
-31,WPVI,( 9:01) 20/20 \{91} \{7C},none
+29,WPVI,The Bachelorette \{9B} \{91} \{7C},none
+33,WPVI,(10:01) Big Sky \{91} \{7C},none
 35,WPVI,Action News 11 PM \{91} \{7C},none
 36,WPVI,(11:35) Jimmy Kimmel Live! \{91} \{7C},none
 38,WPVI,(12:37) Nightline \{99} \{7C},none
 39,WPVI,( 1:06) Live with Kelly and Ryan \{9B} \{91} \{7C},none
-41,WPVI,ABC World News Tonight With David Muir \{7C},none
-42,WPVI,Tamron Hall \{9B} \{91} \{7C},none
-44,WPVI,The Listener \{91} \{7C},none
-46,WPVI,Ocean Mysteries With Jeff Corwin \{99} \{91} \{7C},none
+41,WPVI,( 2:06) ABC World News Tonight With David Muir \{7C},none
+42,WPVI,( 2:36) Tamron Hall \{9B} \{91} \{7C},none
+44,WPVI,( 3:36) America This Morning \{7C},none
+45,WPVI,Action News 4:00 AM \{91} \{7C},none
+46,WPVI,Action News 4:30 AM \{91} \{7C},none
 47,WPVI,Action News 5:00 AM \{91} \{7C},none
 48,WPVI,Action News 5:30 AM \{91} \{7C},none
-49,WPVI,Action News Weekend 6AM \{91} \{7C},none
-1,ESPN,SportsCenter \{7C},none|sportsProg
-3,ESPN,SportsCenter \{7C},none|sportsProg
-5,ESPN,Get Up,none|sportsProg
-9,ESPN,First Take \{91} \{7C},none|sportsProg
-12,ESPN,College Basketball,none|sportsProg
-16,ESPN,College Basketball,none|sportsProg
-20,ESPN,College Football,none|sportsProg
-26,ESPN,College Football Scoreboard \{7C},none|sportsProg
-28,ESPN,College Football \{7C},none|sportsProg
-34,ESPN,College Football \{7C},none|sportsProg
+27,ESPN,College Football Playoff: Top 25,none|sportsProg
+29,ESPN,30 for 30,none|sportsProg
+32,ESPN,30 for 30 \{7C},none|sportsProg
+36,ESPN,SportsCenter With Scott Van Pelt,none|sportsProg
+38,ESPN,SportsCenter \{7C},none|sportsProg
 40,ESPN,SportsCenter \{7C},none|sportsProg
-43,ESPN,College Football \{7C},none|sportsProg
-46,ESPN,College Football \{7C},none|sportsProg
-49,ESPN,SportsCenter \{7C},none|sportsProg
-1,NBSPP,American Ninja Warrior \{9B} \{91} \{7C},none|sportsProg
-3,NBSPP,American Ninja Warrior \{9B} \{91} \{7C},none|sportsProg
-5,NBSPP,Never Rake Again!,none
-6,NBSPP,Never Rake Again!,none
-7,NBSPP,NEW Shark Upright Vacuum for 2020! The BEST Yet!,none
-13,NBSPP,Humana Medicare Advantage Plans,none
-19,NBSPP,Robot Cleans 4 You,none
-20,NBSPP,Robot Cleans 4 You,none
-21,NBSPP,Paid Programming \{99},none
-22,NBSPP,Paid Programming \{99},none
-23,NBSPP,TVG Trackside Live!,none|sportsProg
-25,NBSPP,American Ninja Warrior \{9B} \{91} \{7C},none|sportsProg
+42,ESPN,SportsCenter \{7C},none|sportsProg
+44,ESPN,SportsCenter \{7C},none|sportsProg
+46,ESPN,SportsCenter \{7C},none|sportsProg
+47,ESPN,SportsCenter \{7C},none|sportsProg
 27,NBSPP,The Chef's Kitchen \{99},none
-28,NBSPP,Winning Golf,none|sportsProg
-29,NBSPP,Traveling Golfer,none|sportsProg
-30,NBSPP,Rutgers Football Story,none|sportsProg
-31,NBSPP,FTW Philly,none|sportsProg
-32,NBSPP,Pro Football Weekly \{99},none|sportsProg
-33,NBSPP,American Ninja Warrior \{9B} \{91} \{7C},none|sportsProg
-35,NBSPP,American Ninja Warrior \{9B} \{91} \{7C},none|sportsProg
+28,NBSPP,Rock Star Kitchen \{99},none
+29,NBSPP,What's Brewing,none
+30,NBSPP,In Depth With Graham Bensinger \{91} \{7C},none|sportsProg
+31,NBSPP,Pure Outdoor,none|sportsProg
+32,NBSPP,World Championship Kickboxing,none
+34,NBSPP,Fight Sports MMA,none|sportsProg
+36,NBSPP,The Short List,none|sportsProg
 37,NBSPP,Paid Programming \{99},none
 38,NBSPP,Paid Programming \{99},none
-39,NBSPP,Best Hair Regrowth Treatment,none
-45,NBSPP,Paid Programming \{99},none
-46,NBSPP,Paid Programming \{99},none
-47,NBSPP,Paid Programming \{99},none
-48,NBSPP,Paid Programming \{99},none
-49,NBSPP,Charlie Moore: No Offense,none
-1,WCAU,NBC 10 News Today at 6a \{7C},none
-3,WCAU,Today \{91} \{7C},none
-7,WCAU,Today 3rd Hour \{91} \{7C},none
-9,WCAU,Today With Hoda & Jenna \{91} \{7C},none
-11,WCAU,NBC 10 News Today at 11a \{7C},none
-12,WCAU,(11:45) Philly Live,none
-13,WCAU,Days of our Lives \{91} \{7C},none
-15,WCAU,Access Daily \{9B} \{91} \{7C},none
-17,WCAU,The Kelly Clarkson Show \{99} \{91} \{7C},none
-19,WCAU,The Ellen DeGeneres Show \{9B} \{91} \{7C},none
-21,WCAU,NBC 10 News at 4p \{7C},none
-23,WCAU,NBC 10 News at 5p \{7C},none
-25,WCAU,NBC 10 News at 6p \{7C},none
-26,WCAU,NBC Nightly News With Lester Holt \{91} \{7C},none
+39,NBSPP,"Thicker, Fuller Hair Today!",none
+45,NBSPP,NBA Basketball,none|sportsProg
 27,WCAU,NBC 10 News at 7p \{7C},none
 28,WCAU,Access Hollywood \{9B} \{91} \{7C},none
-29,WCAU,How the Grinch Stole Christmas! \{99},none
-30,WCAU,Minions Holiday Special \{9B} \{91} \{7C},none
-31,WCAU,Dateline NBC \{9B} \{91} \{7C},none
+29,WCAU,The Voice \{9B} \{91} \{7C},none
+31,WCAU,The Voice \{9B} \{91} \{7C},none
 35,WCAU,NBC 10 News at 11p \{7C},none
 36,WCAU,(11:34) The Tonight Show Starring Jimmy Fallon \{91} \{7C},none
 38,WCAU,(12:36) Late Night With Seth Meyers \{91} \{7C},none
 40,WCAU,( 1:36) A Little Late With Lilly Singh \{91} \{7C},none
 41,WCAU,( 2:06) NBC Nightly News With Lester Holt \{91} \{7C},none
 42,WCAU,( 2:35) The Kelly Clarkson Show \{99} \{91} \{7C},none
-44,WCAU,Access Hollywood \{9B} \{91} \{7C},none
-45,WCAU,1st Look \{9B} \{91} \{7C},none
-46,WCAU,Open House \{9B} \{91} \{7C},none
+44,WCAU,Early Today \{99} \{7C},none
+45,WCAU,NBC 10 News Today at 4:00a \{7C},none
+46,WCAU,NBC 10 News Today at 4:30a \{7C},none
 47,WCAU,NBC 10 News Today at 5:00a \{7C},none
 48,WCAU,NBC 10 News Today at 5:30a \{7C},none
-49,WCAU,NBC 10 News at 6a \{7C},none
-1,QVC,Bose Sound Innovations \{99} \{7C},none
-3,QVC,Black Friday Weekend \{99} \{7C},none
-7,QVC,Bose Sound Innovations \{99} \{7C},none
-9,QVC,Black Friday Weekend \{99} \{7C},none
-15,QVC,Bose Sound Innovations \{99} \{7C},none
-17,QVC,Black Friday Weekend \{99} \{7C},none
-21,QVC,Black Friday Weekend \{99} \{7C},none
-27,QVC,Bose Sound Innovations \{99} \{7C},none
-29,QVC,David & Jane's Holi-YAYS \{99} \{7C},none
-37,QVC,Powerful Innovations by HALO \{99} \{7C},none
-39,QVC,Black Friday Weekend \{99} \{7C},none
-43,QVC,Powerful Innovations by HALO \{99} \{7C},none
-45,QVC,Powerful Innovations by HALO \{99} \{7C},none
-47,QVC,Powerful Innovations by HALO \{99} \{7C},none
-49,QVC,Powerful Innovations by HALO \{99} \{7C},none
-1,WHYY,Ready Jet Go! \{90} \{91} \{7C},none
-2,WHYY,Arthur \{90} \{91} \{7C},none
-3,WHYY,Molly of Denali \{90} \{91} \{7C},none
-4,WHYY,Wild Kratts \{90} \{91} \{7C},none
-5,WHYY,Hero Elementary \{90} \{91} \{7C},none
-6,WHYY,Xavier Riddle and the Secret Museum \{90} \{91} \{7C},none
-7,WHYY,Curious George \{90} \{91} \{7C},none
-8,WHYY,Daniel Tiger's Neighborhood \{90} \{91} \{7C},none
-9,WHYY,Daniel Tiger's Neighborhood \{90} \{91} \{7C},none
-10,WHYY,Elinor Wonders Why \{90} \{91} \{7C},none
-11,WHYY,Sesame Street \{90} \{91} \{7C},none
-12,WHYY,Pinkalicious & Peterrific \{90} \{91} \{7C},none
-13,WHYY,Dinosaur Train \{90} \{91} \{7C},none
-14,WHYY,Clifford the Big Red Dog \{90} \{91} \{7C},none
-15,WHYY,Sesame Street \{90} \{91} \{7C},none
-16,WHYY,Elinor Wonders Why \{90} \{91} \{7C},none
-17,WHYY,Hero Elementary \{90} \{91} \{7C},none
-18,WHYY,Let's Go Luna! \{90} \{91} \{7C},none
-19,WHYY,An Arthur Thanksgiving \{90} \{91} \{7C},none
-21,WHYY,Molly of Denali \{90} \{91} \{7C},none
-22,WHYY,Xavier Riddle and the Secret Museum \{90} \{91} \{7C},none
-23,WHYY,Odd Squad \{90} \{91} \{7C},none
-24,WHYY,Arthur \{90} \{91} \{7C},none
-25,WHYY,PBS NewsHour \{91} \{7C},none
+27,QVC,Comfort & Joy with Jane \{99} \{7C},none
+31,QVC,Cheers! to Holiday Shopping With Leah and Shawn \{99} \{7C},none
+37,QVC,The Wrap It Up Gift Event \{99} \{7C},none
+39,QVC,The Wrap It Up Gift Event \{99} \{7C},none
+43,QVC,Denim & Co. \{99} \{7C},none
+45,QVC,Dyson Supersonic Hair Dryer \{99} \{7C},none
+47,QVC,The Wrap It Up Gift Event \{99} \{7C},none
 27,WHYY,BBC World News America \{91} \{7C},none
-28,WHYY,The Spirit of Christmas,none
-29,WHYY,Washington Week \{91} \{7C},none
-30,WHYY,Firing Line With Margaret Hoover \{91} \{7C},none
-31,WHYY,Great Performances \{99} \{91} \{7C},none
-34,WHYY,Bee Gees: One Night Only \{99} \{91} \{7C},none
-37,WHYY,Suze Orman's Ultimate Retirement Guide \{99} \{91} \{7C},none
-41,WHYY,Easy Yoga: The Secret to Strength and Balance With Peggy Cappy \{99} \{91} \{7C},none
-43,WHYY,Aging Backwards 3: Fast Track With Miranda Esmonde-White \{99} \{91} \{7C},none
-45,WHYY,"Memory Rescue With Daniel Amen, MD \{99} \{91} \{7C}",none
-49,WHYY,What to Eat When With Dr. Michael Roizen & Dr. Michael Crupain \{99} \{91} \{7C},none
-1,WPSG,"Smile Healthy Philadelphia, With ClearChoice Dental Implant Centers",none
-2,WPSG,Relief from inflammation,none
-3,WPSG,"Have Thinning Hair? Keranique Can Help Regrow Beautiful, Thicker Hair!",none
-4,WPSG,Copper Chef Titan,none
-5,WPSG,Funny You Should Ask \{9B} \{91} \{7C},none
-6,WPSG,Funny You Should Ask \{9B} \{91} \{7C},none
-7,WPSG,Judge Mathis \{9B} \{91} \{7C},none
-9,WPSG,Lauren Lake's Paternity Court \{91} \{7C},none
-10,WPSG,Protection Court \{9B} \{91} \{7C},none
-11,WPSG,Supreme Justice With Judge Karen \{9B} \{91} \{7C},none
-12,WPSG,Justice for All With Judge Cristina Pérez \{9B} \{91} \{7C},none
-13,WPSG,Jerry Springer \{91} \{7C},none
-15,WPSG,Jerry Springer \{91} \{7C},none
-17,WPSG,The Doctors \{9B} \{91} \{7C},none
-19,WPSG,The People's Court \{9B} \{91} \{7C},none
-21,WPSG,Judge Mathis \{9B} \{91} \{7C},none
-23,WPSG,Hot Bench \{99} \{91} \{7C},none
-24,WPSG,Hot Bench \{99} \{91} \{7C},none
-25,WPSG,Family Feud \{9B} \{91} \{7C},none
-26,WPSG,Family Feud \{9B} \{91} \{7C},none
+28,WHYY,The Power of We: A Sesame Street Special \{90} \{91} \{7C},none
+29,WHYY,Ella Wishes You a Swinging Christmas With Vanessa Williams \{99} \{91} \{7C},none
+31,WHYY,Christmas at Belmont \{99} \{91} \{7C},none
+33,WHYY,Frontline \{91} \{7C},none
+35,WHYY,The Great British Baking Show \{9B} \{91} \{7C},none
+37,WHYY,Amanpour and Company \{91} \{7C},none
+39,WHYY,The Brain Fitness Program \{99} \{91} \{7C},none
+43,WHYY,3 Steps to Pain Free Living \{91} \{7C},none
+46,WHYY,"The Longevity Paradox With Steven Gundry, MD \{99} \{91} \{7C}",none
 27,WPSG,Family Feud \{9B} \{91} \{7C},none
 28,WPSG,Family Feud \{9B} \{91} \{7C},none
-29,WPSG,World's Funniest Animals \{9B} \{91} \{7C},none
-30,WPSG,World's Funniest Animals \{9B} \{91} \{7C},none
-31,WPSG,Grandma Got Run Over by a Reindeer \{99} \{91} \{7C},none
+29,WPSG,Swamp Thing \{A3} \{91} \{7C},none
+31,WPSG,Tell Me a Story \{A3} \{91} \{7C},none
 33,WPSG,Eyewitness News on the CW Philly \{91} \{7C},none
 34,WPSG,Eyewitness News on the CW Philly \{91} \{7C},none
 35,WPSG,Schitt's Creek \{91} \{7C},none
@@ -305,105 +150,50 @@ timeslot,sourceIdentifier,programName,flags
 39,WPSG,2 Broke Girls \{91} \{7C},none
 40,WPSG,Mike & Molly \{91} \{7C},none
 41,WPSG,Family Guy \{91} \{7C},none
-42,WPSG,Family Guy \{91} \{7C},none
-43,WPSG,Bob's Burgers \{9B} \{91} \{7C},none
-44,WPSG,Bob's Burgers \{91} \{7C},none
-45,WPSG,Origins \{9B},none
-46,WPSG,On the Spot \{99} \{91} \{7C},none
-47,WPSG,The Outdoorsman With Buck McNeely \{99},none
-48,WPSG,Paid Programming \{99},none
-49,WPSG,The Best Kept Secret To Air Fryer Cooking,none
-1,HSN,Electronic Gifts -- Black Friday Weekend \{99} \{7C},none
-3,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-5,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-7,HSN,Electronic Gifts -- Black Friday Weekend \{99} \{7C},none
-9,HSN,Electronic Gifts -- Black Friday Weekend \{99} \{7C},none
-11,HSN,Electronic Gifts -- Black Friday Weekend \{99} \{7C},none
-13,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-15,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-17,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-19,HSN,Shopping With Colleen - Black Friday Weekend Deals \{99} \{7C},none
-21,HSN,Shopping With Colleen - Black Friday Weekend Deals \{99} \{7C},none
-23,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-25,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-27,HSN,Shannon's In The House! - Black Friday Weekend \{99} \{7C},none
-29,HSN,Shannon's In The House! - Black Friday Weekend \{99} \{7C},none
-31,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-33,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-35,HSN,Great Gifts - Black Friday Weekend \{99} \{7C},none
-37,HSN,HP Electronic Gifts - Black Friday Weekend \{99} \{7C},none
-39,HSN,Electronic Gifts - Flex the Halls \{99} \{7C},none
-41,HSN,HP Electronic Gifts - Black Friday Weekend \{99} \{7C},none
-43,HSN,HP Electronic Gifts - Black Friday Weekend \{99} \{7C},none
-45,HSN,HP Electronic Gifts - Black Friday Weekend \{99} \{7C},none
-47,HSN,HP Electronic Gifts - Black Friday Weekend \{99} \{7C},none
-49,HSN,HP Electronic Gifts - Black Friday Weekend \{99} \{7C},none
-1,WTXF,Good Day Philadelphia at 6AM \{7C},none
-3,WTXF,Good Day Philadelphia at 7AM \{7C},none
-7,WTXF,Good Day Philadelphia at 9AM \{7C},none
-9,WTXF,The Wendy Williams Show \{9B} \{91} \{7C},none
-11,WTXF,College Basketball \{91} \{7C},none|sportsProg
-15,WTXF,College Football \{91} \{7C},none|sportsProg
-22,WTXF,College Football \{91} \{7C},none|sportsProg
-29,WTXF,WWE Friday Night SmackDown \{9B} \{91} \{7C},none|sportsProg
+42,WPSG,Family Guy \{9B} \{91} \{7C},none
+43,WPSG,Bob's Burgers \{91} \{7C},none
+44,WPSG,Bob's Burgers \{9B} \{91} \{7C},none
+45,WPSG,The Drew Barrymore Show \{99} \{91} \{7C},none
+47,WPSG,Impractical Jokers,none
+48,WPSG,Personal Injury Court \{91} \{7C},none
+27,HSN,Colleen Lopez Gemstone Jewelry Gifts \{99} \{7C},none
+29,HSN,Colleen Lopez Gemstone Jewelry Gifts \{99} \{7C},none
+31,HSN,Shannon's CRAZY For Christmas Finale \{99} \{7C},none
+33,HSN,Shannon's CRAZY For Christmas Finale \{99} \{7C},none
+35,HSN,Shannon's CRAZY For Christmas Finale \{99} \{7C},none
+37,HSN,KORRES Beauty Gifts \{99} \{7C},none
+39,HSN,KORRES Beauty Gifts \{99} \{7C},none
+41,HSN,KORRES Beauty Gifts \{99} \{7C},none
+43,HSN,KORRES Beauty Gifts \{99} \{7C},none
+45,HSN,KORRES Beauty Gifts \{99} \{7C},none
+47,HSN,KORRES Beauty Gifts \{99} \{7C},none
+27,WTXF,Dish Nation \{9B} \{91} \{7C},none
+28,WTXF,TMZ \{9B} \{91} \{7C},none
+29,WTXF,Cosmos: Possible Worlds \{91} \{7C},none
+31,WTXF,NEXT \{91} \{7C},none
 33,WTXF,Fox 29 News at 10 \{7C},none
-34,WTXF,Fox 29 News Special: Our Race Our Reality,none
 35,WTXF,PA Lottery \{7C},none
 35,WTXF,(11:02) Fox 29 News at 11 \{7C},none
 36,WTXF,TMZ \{9B} \{91} \{7C},none
 37,WTXF,Dish Nation \{9B} \{91} \{7C},none
 38,WTXF,The ClassH-Room \{9B} \{7C},none
 39,WTXF,The Simpsons \{9B} \{91} \{7C},none
-40,WTXF,Paid Programming \{99},none
+40,WTXF,Relief from Inflammation,none
 41,WTXF,Divorce Court \{9B} \{91} \{7C},none
 42,WTXF,Divorce Court \{9B} \{91} \{7C},none
 43,WTXF,Extra \{9B} \{91} \{7C},none
 44,WTXF,Fox 29 News at 11 \{7C},none
-45,WTXF,Judge Judy \{9B} \{91} \{7C},none
-46,WTXF,Judge Judy \{9B} \{91} \{7C},none
-47,WTXF,"60s POP, ROCK & SOUL",none
-48,WTXF,Remove THE VIRUS from Your Home!,none
-49,WTXF,Life 2.0 \{9B} \{91} \{7C},none
-4,ESPN2,"Keyshawn, JWill and Zubin",none|sportsProg
-5,ESPN2,SportsCenter \{7C},none|sportsProg
-7,ESPN2,SportsCenter \{7C},none|sportsProg
-9,ESPN2,SportsCenter \{7C},none|sportsProg
-11,ESPN2,SportsCenter \{7C},none|sportsProg
-13,ESPN2,SportsCenter \{7C},none|sportsProg
-14,ESPN2,Women's Soccer,none|sportsProg
-18,ESPN2,The Best of This is SportsCenter \{7C},none|sportsProg
-19,ESPN2,NFL Live \{7C},none|sportsProg
-21,ESPN2,College Basketball,none|sportsProg
-25,ESPN2,College Basketball Live Scoreboard,none|sportsProg
-26,ESPN2,College Basketball,none|sportsProg
-30,ESPN2,College Basketball Live Scoreboard,none|sportsProg
-31,ESPN2,College Basketball,none|sportsProg
-35,ESPN2,SportsCenter \{7C},none|sportsProg
-37,ESPN2,SportsCenter \{7C},none|sportsProg
-39,ESPN2,SportsCenter \{7C},none|sportsProg
-40,ESPN2,NFL Live \{7C},none|sportsProg
-42,ESPN2,College Football,none|sportsProg
-45,ESPN2,SportsCenter \{7C},none|sportsProg
-47,ESPN2,SportsCenter \{7C},none|sportsProg
-48,ESPN2,( 5:55) Formula 1 Racing,none|sportsProg
-1,WPHL,PHL17 Morning News \{7C},none
-3,WPHL,PHL17 Morning News \{7C},none
-5,WPHL,PHL17 Morning News \{7C},none
-7,WPHL,The 700 Club \{91} \{7C},none
-9,WPHL,The Verdict With Judge Hatchett \{9B} \{91} \{7C},none
-10,WPHL,America's Court With Judge Ross \{9B} \{91} \{7C},none
-11,WPHL,Justice With Judge Mablean \{9B} \{91} \{7C},none
-12,WPHL,Judge Jerry \{99} \{91} \{7C},none
-13,WPHL,The Steve Wilkos Show \{91} \{7C},none
-15,WPHL,Maury \{91} \{7C},none
-17,WPHL,The Steve Wilkos Show \{91} \{7C},none
-19,WPHL,Maury \{91} \{7C},none
-21,WPHL,Justice With Judge Mablean \{9B} \{91} \{7C},none
-22,WPHL,America's Court With Judge Ross \{9B} \{91} \{7C},none
-23,WPHL,Judge Jerry \{99} \{91} \{7C},none
-24,WPHL,black-ish \{91} \{7C},none
-25,WPHL,black-ish \{9B} \{91} \{7C},none
-26,WPHL,The Big Bang Theory \{9B} \{91} \{7C},none
+45,WTXF,Good Day Philadelphia at 4AM \{7C},none
+47,WTXF,Good Day Philadelphia at 5AM \{7C},none
+27,ESPN2,College Basketball,none|sportsProg
+31,ESPN2,Women's College Basketball,none|sportsProg
+35,ESPN2,NFL Live \{7C},none|sportsProg
+37,ESPN2,30 for 30,none|sportsProg
+40,ESPN2,NBA: The Jump,none|sportsProg
+42,ESPN2,College Football Playoff: Top 25,none|sportsProg
+44,ESPN2,UFC Main Event,none|sportsProg
+45,ESPN2,E60,none|sportsProg
+46,ESPN2,30 for 30,none|sportsProg
 27,WPHL,The Big Bang Theory \{9B} \{91} \{7C},none
 28,WPHL,The Goldbergs \{9B} \{91} \{7C},none
 29,WPHL,Modern Family \{9B} \{91} \{7C},none
@@ -412,467 +202,234 @@ timeslot,sourceIdentifier,programName,flags
 32,WPHL,Mom \{91} \{7C},none
 33,WPHL,Action News at Ten on PHL17 \{7C},none
 35,WPHL,Modern Family \{9B} \{91} \{7C},none
-36,WPHL,Two and a Half Men \{9B} \{91} \{7C},none
+36,WPHL,Two and a Half Men \{91} \{7C},none
 37,WPHL,Two and a Half Men \{91} \{7C},none
 38,WPHL,Seinfeld \{9B} \{91} \{7C},none
 39,WPHL,Seinfeld \{9B} \{91} \{7C},none
 40,WPHL,Last Man Standing \{9B} \{91} \{7C},none
-41,WPHL,Law & Order: Criminal Intent \{91} \{7C},none
-43,WPHL,Law & Order: Criminal Intent \{91} \{7C},none
-45,WPHL,Emeril's Turkey Frying Secret. BAM!,none
-46,WPHL,( 4:59) Paid Programming \{99},none
-47,WPHL,Cindy Crawford's Skincare Secrets,none
-48,WPHL,Paid Programming \{99},none
-49,WPHL,To the Rescue \{91} \{7C},none
-1,NBCSPA,Boxing \{7C},none|sportsProg
-3,NBCSPA,SportsNet Central \{91} \{7C},none|sportsProg
-5,NBCSPA,SportsNet Central \{91} \{7C},none|sportsProg
-7,NBCSPA,SportsNet Central \{91} \{7C},none|sportsProg
-9,NBCSPA,SportsNet Central \{91} \{7C},none|sportsProg
-11,NBCSPA,Quick Slants \{7C},none|sportsProg
-12,NBCSPA,The Immortals \{7C},none|sportsProg
-13,NBCSPA,Vacuuming Re-Invented with the NEW Kenmore Intuition \{7C},none
-14,NBCSPA,Medicare Plans with Dental Coverage \{7C},none
-15,NBCSPA,Emeril's Turkey Frying Secret. BAM! \{7C},none
-16,NBCSPA,Paid Programming \{99} \{7C},none
-17,NBCSPA,The Mike Missanelli Show \{91} \{7C},none|sportsProg
-25,NBCSPA,Boxing \{7C},none|sportsProg
-29,NBCSPA,World Class Championship Boxing \{7C},none
-33,NBCSPA,Pro Football Weekly \{99} \{7C},none|sportsProg
-34,NBCSPA,Quick Slants \{7C},none|sportsProg
-35,NBCSPA,FTW Philly \{7C},none|sportsProg
-36,NBCSPA,The Mike Missanelli Show \{91} \{7C},none|sportsProg
-40,NBCSPA,Easy Workout Solution! \{7C},none
-41,NBCSPA,Men's Health - All-Natural Secret for Prostate Health \{7C},none
-42,NBCSPA,Paid Programming \{99} \{7C},none
+41,WPHL,Chicago P.D. \{91} \{7C},none
+43,WPHL,Chicago P.D. \{91} \{7C},none
+45,WPHL,DailyMailTV \{91} \{7C},none
+46,WPHL,DailyMailTV \{91} \{7C},none
+47,WPHL,PHL17 Morning News \{7C},none
+48,WPHL,PHL17 Morning News \{7C},none
+27,NBCSPA,Sixers Pregame Live \{7C},none|sportsProg
+28,NBCSPA,NBA Basketball \{7C},none|sportsProg
+33,NBCSPA,Sixers Postgame Live \{7C},none|sportsProg
+35,NBCSPA,NHL Hockey \{7C},none|sportsProg
+39,NBCSPA,NBA Basketball \{7C},none|sportsProg
 43,NBCSPA,Paid Programming \{99} \{7C},none
-44,NBCSPA,Slim Cycle \{7C},none
+44,NBCSPA,Cooking with Emeril \{7C},none
 45,NBCSPA,Men's Health - All-Natural Secret for Prostate Health \{7C},none
 46,NBCSPA,Paid Programming \{99} \{7C},none
-47,NBCSPA,Paid Programming \{99} \{7C},none
+47,NBCSPA,H2O Steam Fx Pro \{7C},none
 48,NBCSPA,Men's Health - All-Natural Secret for Prostate Health \{7C},none
-49,NBCSPA,Paid Programming \{99} \{7C},none
-1,TBS,"""Tammy"" \{84} (2014) Melissa McCarthy, Susan Sarandon. For Tammy (Melissa McCarthy), a burger-joint waitress, a bad day keeps getting worse. She wrecks her car, loses her job and finds her husband in a compromising position with their neighbor. It's time for Tammy to hit the road, but without money or transportation, her options are limited. Her only choice is a road trip with her grandmother, Pearl (Susan Sarandon), who has a car, cash and an itch to see Niagara Falls. It's not the escape Tammy had in mind, but it may be what she needs. \{7C} (1 hr 37 min)",movie
-5,TBS,"""Life of the Party"" \{87} (2018) Melissa McCarthy, Gillian Jacobs. When her husband suddenly dumps her, longtime and dedicated housewife Deanna turns regret into reset by going back to college. Unfortunately, Deanna winds up at the same school as her less-than-thrilled daughter. Plunging headlong into the campus experience, the outspoken new student soon finds her true self while fully embracing all the fun, freedom and frat boys that she can handle. \{7C} (1 hr 45 min)",movie
-9,TBS,Friends \{9B} \{91} \{7C},none
-10,TBS,Friends \{9B} \{91} \{7C},none
-11,TBS,Friends \{9B} \{91} \{7C},none
-12,TBS,Friends \{9B} \{91} \{7C},none
-13,TBS,Friends \{9B} \{91} \{7C},none
-14,TBS,Friends \{9B} \{91} \{7C},none
-15,TBS,Friends \{9B} \{91} \{7C},none
-16,TBS,( 1:32) Friends \{91} \{7C},none
-17,TBS,( 2:04) Friends \{91} \{7C},none
-18,TBS,( 2:36) Friends \{91} \{7C},none
-19,TBS,"( 3:08) ""Life of the Party"" \{87} (2018) Melissa McCarthy, Gillian Jacobs. When her husband suddenly dumps her, longtime and dedicated housewife Deanna turns regret into reset by going back to college. Unfortunately, Deanna winds up at the same school as her less-than-thrilled daughter. Plunging headlong into the campus experience, the outspoken new student soon finds her true self while fully embracing all the fun, freedom and frat boys that she can handle. \{7C} (1 hr 45 min)",movie
-23,TBS,"( 5:10) ""Tammy"" \{84} (2014) Melissa McCarthy, Susan Sarandon. For Tammy (Melissa McCarthy), a burger-joint waitress, a bad day keeps getting worse. She wrecks her car, loses her job and finds her husband in a compromising position with their neighbor. It's time for Tammy to hit the road, but without money or transportation, her options are limited. Her only choice is a road trip with her grandmother, Pearl (Susan Sarandon), who has a car, cash and an itch to see Niagara Falls. It's not the escape Tammy had in mind, but it may be what she needs. \{7C} (1 hr 37 min)",movie
-27,TBS,"""Crazy Rich Asians"" \{87} (2018) Constance Wu, Henry Golding. Rachel Chu is happy to accompany her longtime boyfriend, Nick, to his best friend's wedding in Singapore. She's also surprised to learn that Nick's family is extremely wealthy and he's considered one of the country's most eligible bachelors. Thrust into the spotlight, Rachel must now contend with jealous socialites, quirky relatives and something far, far worse -- Nick's disapproving mother. \{7C} (2 min)",movie
-32,TBS,"""Crazy Rich Asians"" \{87} (2018) Constance Wu, Henry Golding. Rachel Chu is happy to accompany her longtime boyfriend, Nick, to his best friend's wedding in Singapore. She's also surprised to learn that Nick's family is extremely wealthy and he's considered one of the country's most eligible bachelors. Thrust into the spotlight, Rachel must now contend with jealous socialites, quirky relatives and something far, far worse -- Nick's disapproving mother. \{7C} (2 min)",movie
-37,TBS,ELEAGUE Super Punch \{A3} \{7C},none|sportsProg
-41,TBS,"""The LEGO Batman Movie"" \{85} (2017) Will Arnett, Michael Cera. There are big changes brewing in Gotham, but if Batman (Will Arnett) wants to save the city from the Joker's (Zach Galifianakis) hostile takeover, he may have to drop the lone vigilante thing, try to work with others and maybe, just maybe, learn to lighten up. Maybe his superhero sidekick Robin (Michael Cera) and loyal butler Alfred (Ralph Fiennes) can show him a thing or two. \{7C} (1 hr 46 min)",movie
-45,TBS,"""The LEGO Movie"" \{85} (2014) Chris Pratt, Will Ferrell. Emmet (Chris Pratt), an ordinary LEGO figurine who always follows the rules, is mistakenly identified as the Special -- an extraordinary being and the key to saving the world. He finds himself drafted into a fellowship of strangers who are on a mission to stop an evil tyrant's (Will Ferrell) plans to conquer the world. Unfortunately for Emmet, he is hopelessly -- and hilariously -- unprepared for such a task, but he'll give it his all nonetheless. \{7C} (1 hr 35 min)",movie
-49,TBS,"""Lara Croft Tomb Raider: The Cradle of Life"" \{87} (2003) Angelina Jolie, Gerard Butler. Fearless explorer Lara Croft (Angelina Jolie) tries to locate Pandora's box before criminals Jonathan Reiss (Ciarán Hinds) and Chen Lo (Simon Yam) use it for evil. According to myth, the box holds deadly organisms that could kill millions of people. With her old partner, Terry (Gerard Butler), Croft goes on a hunt that takes her from Europe to Asia to Africa, where pal Kosa (Djimon Hounsou) helps her. Along the way, Croft rappels down cliffs, scuba dives and decimates many male opponents. \{7C} (1 hr 58 min)",movie
-1,WMCNSD,Time of Decision,none
-2,WMCNSD,America's Heartland \{99} \{91} \{7C},none
-3,WMCNSD,FCI News Catch,none
-5,WMCNSD,Holiday Home Cooked Feast!,none
-6,WMCNSD,Medicare Plans with Dental Coverage,none
-8,WMCNSD,Copper Chef Titan,none
-9,WMCNSD,Medicare Plans with Dental Coverage,none
-11,WMCNSD,Paid Programming \{99},none
-12,WMCNSD,Medicare Plans with Dental Coverage,none
-13,WMCNSD,Humana Medicare Advantage Plans,none
-19,WMCNSD,Medicare Plans with Dental Coverage,none
-21,WMCNSD,Medicare Plans with Dental Coverage,none
-23,WMCNSD,Medicare Plans with Dental Coverage,none
-25,WMCNSD,Richard French Live,none
-27,WMCNSD,Humana Medicare Plans,none
-28,WMCNSD,Humana Medicare Plans,none
-29,WMCNSD,Robot Cleans 4 You,none
-30,WMCNSD,Robot Cleans 4 You,none
-31,WMCNSD,Dr. Ho's Total Body Pain Relief,none
-32,WMCNSD,Keep Your Immune System Strong with MagBlue!,none
-33,WMCNSD,Paid Programming \{99},none
-34,WMCNSD,New BISSELL® CrossWave® is Now Cordless,none
-35,WMCNSD,Cooking with Emeril,none
-36,WMCNSD,Holiday Home Cooked Feast! \{99},none
-37,WMCNSD,Namaste America,none
-38,WMCNSD,Sexy Toys & Lingerie,none
-39,WMCNSD,"Smile Healthy Philadelphia, With ClearChoice Dental Implant Centers",none
-40,WMCNSD,Medicare Plans with Dental Coverage,none
-41,WMCNSD,Slim Cycle,none
-42,WMCNSD,Medicare Plans with Dental Coverage,none
-43,WMCNSD,H2O Steam Fx Pro,none
-44,WMCNSD,Medicare Plans with Dental Coverage,none
-45,WMCNSD,H2O Steam Fx Pro,none
-46,WMCNSD,Medicare Plans with Dental Coverage,none
-47,WMCNSD,Cooking with Emeril,none
-48,WMCNSD,Medicare Plans with Dental Coverage,none
-49,WMCNSD,Throw away your makeup and discover Hollywood's fountain of youth! \{7C},none
-1,COMEDY,Men's Health: All-Natural Secret for Prostate Health \{7C},none
-2,COMEDY,Paid Programming \{99} \{7C},none
-3,COMEDY,Parks and Recreation \{9B} \{91} \{7C},none
-4,COMEDY,Parks and Recreation \{9B} \{91} \{7C},none
-5,COMEDY,Parks and Recreation \{9B} \{91} \{7C},none
-6,COMEDY,Parks and Recreation \{91} \{7C},none
-7,COMEDY,The Office \{9B} \{91} \{7C},none
-8,COMEDY,( 9:35) The Office \{91} \{7C},none
-9,COMEDY,(10:10) The Office \{9B} \{91} \{7C},none
-10,COMEDY,(10:45) The Office \{9B} \{91} \{7C},none
-11,COMEDY,(11:15) The Office \{9B} \{91} \{7C},none
-12,COMEDY,(11:50) The Office \{9B} \{91} \{7C},none
-13,COMEDY,(12:25) The Office \{9B} \{91} \{7C},none
-15,COMEDY,The Office \{91} \{7C},none
-16,COMEDY,The Office \{91} \{7C},none
-17,COMEDY,The Office \{91} \{7C},none
-18,COMEDY,The Office \{9B} \{91} \{7C},none
-19,COMEDY,The Office \{9B} \{91} \{7C},none
-20,COMEDY,"""Bee Movie"" \{85} (2007) Jerry Seinfeld, Renée Zellweger. Fresh out of college, Barry the Bee (Jerry Seinfeld) finds the prospect of working with honey uninspiring. He flies outside the hive for the first time and talks to a human (Renée Zellweger), breaking a cardinal rule of his species. Barry learns that humans have been stealing and eating honey for centuries, and he realizes that his true calling is to obtain justice for his kind by suing humanity for theft. \{7C} (1 hr 31 min)",movie
-24,COMEDY,"""We're the Millers"" \{84} (2013) Jennifer Aniston, Jason Sudeikis. Small-time pot dealer David (Jason Sudeikis) learns the hard way that no good deed goes unpunished; trying to help some teens, he is jumped by thugs and loses his cash and stash. Now, David's in big debt to his supplier and -- to wipe the slate clean -- he must go to Mexico to pick up the guy's latest shipment. To accomplish his mission, Dave devises a foolproof plan: He packs a fake family into a huge RV and heads south of the border for a wild weekend that is sure to end with a bang. \{7C} (1 hr 50 min)",movie
-29,COMEDY,Jeff Dunham's Completely Unrehearsed Last Minute Pandemic Holiday Special \{7C},none
-30,COMEDY,( 8:55) Jeff Dunham's Completely Unrehearsed Last Minute Pandemic Holiday Special \{7C},none
-32,COMEDY,( 9:57) Jeff Dunham's Completely Unrehearsed Last Minute Pandemic Holiday Special \{7C},none
-35,COMEDY,"""Bad Santa 2"" \{84} (2016) Billy Bob Thornton, Kathy Bates. Fueled by cheap whiskey, greed and hatred, Willie Soke (Billy Bob Thornton) teams up with his angry little sidekick, Marcus, to knock off a Chicago charity on Christmas Eve. Along for the ride is chubby and cheery Thurman Merman, a 250-pound ray of sunshine who brings out Willie's sliver of humanity. Mommy issues arise when the pair are joined by Willie's horror story of a mother, Sunny Soke, who raises the bar for the gang's ambitions, while somehow lowering the standards of criminal behavior. \{7C} (1 hr 32 min)",movie
-39,COMEDY,South Park \{A3} \{7C},none
+27,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
+28,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
+29,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
+30,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
+31,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
+32,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
+33,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
+34,TBS,The Misery Index \{7C},none
+35,TBS,Conan \{7C},none
+36,TBS,The Misery Index \{7C},none
+37,TBS,The Misery Index \{7C},none
+38,TBS,Conan \{7C},none
+39,TBS,Brooklyn Nine-Nine \{91} \{7C},none
+40,TBS,Brooklyn Nine-Nine \{91} \{7C},none
+41,TBS,Brooklyn Nine-Nine \{91} \{7C},none
+42,TBS,Brooklyn Nine-Nine \{91} \{7C},none
+43,TBS,2 Broke Girls \{91} \{7C},none
+44,TBS,2 Broke Girls \{91} \{7C},none
+45,TBS,2 Broke Girls \{91} \{7C},none
+46,TBS,2 Broke Girls \{91} \{7C},none
+47,TBS,Family Matters \{99} \{91} \{7C},none
+48,TBS,Family Matters \{99} \{91} \{7C},none
+27,WMCNSD,Emeril Delivers 2 U,none
+28,WMCNSD,Emeril Delivers 2 U,none
+29,WMCNSD,SNL: The Early Years,none
+30,WMCNSD,SNL: The Early Years,none
+31,WMCNSD,Cooking with Emeril,none
+32,WMCNSD,Promote Your Immune System with Vitamin D,none
+33,WMCNSD,Throw away your makeup and discover Hollywood's fountain of youth!,none
+34,WMCNSD,Emeril's Pasta & Beyond!,none
+35,WMCNSD,Paid Programming \{99},none
+36,WMCNSD,Paid Programming \{99},none
+37,WMCNSD,"Smile Healthy Philadelphia, With ClearChoice Dental Implant Centers",none
+38,WMCNSD,"Blast Grime Away: Patio, Deck + More",none
+39,WMCNSD,Emeril's Pasta & Beyond!,none
+40,WMCNSD,Holiday Home Cooked Feast!,none
+41,WMCNSD,Throw away your makeup and discover Hollywood's fountain of youth!,none
+42,WMCNSD,Hempvana Gold Pain Relief Cream,none
+43,WMCNSD,Slim Cycle,none
+44,WMCNSD,Cooking with Emeril,none
+45,WMCNSD,Larry King Special Report,none
+46,WMCNSD,Throw away your makeup and discover Hollywood's fountain of youth!,none
+47,WMCNSD,Shepherd's Chapel \{99} \{91} \{7C},none
+27,COMEDY,( 7:25) The Office \{91} \{7C},none
+29,COMEDY,The Office \{91} \{7C},none
+30,COMEDY,The Office \{91} \{7C},none
+31,COMEDY,Drunk History \{7C},none
+32,COMEDY,Drunk History \{7C},none
+33,COMEDY,Drunk History \{7C},none
+34,COMEDY,Drunk History \{7C},none
+35,COMEDY,The Daily Show With Trevor Noah \{7C},none
+36,COMEDY,(11:46) South Park \{A3} \{7C},none
+37,COMEDY,(12:15) South Park \{A3} \{7C},none
+38,COMEDY,(12:45) South Park \{A3} \{7C},none
+39,COMEDY,( 1:14) The Daily Show With Trevor Noah \{7C},none
+41,COMEDY,South Park \{A3} \{7C},none
 42,COMEDY,South Park \{A3} \{7C},none
 43,COMEDY,South Park \{A3} \{7C},none
 44,COMEDY,South Park \{A3} \{7C},none
 45,COMEDY,South Park \{A3} \{7C},none
-46,COMEDY,BoJack Horseman \{A3} \{7C},none
-47,COMEDY,Sex Toys - 50 Percent OFF! \{91} \{7C},none
-48,COMEDY,Paid Programming \{99} \{7C},none
-49,COMEDY,Paid Programming \{99} \{7C},none
-1,WNJN,BBC World News \{91} \{7C},none
-2,WNJN,NJ Spotlight News with Briana Vannozzi \{91} \{7C},none
-3,WNJN,Xavier Riddle and the Secret Movie: I Am Madam President \{90} \{91} \{7C},none
-5,WNJN,Pinkalicious & Peterrific: A Pinkaperfect Birthday \{90} \{91} \{7C},none
-7,WNJN,"""Curious George 2: Follow That Monkey"" (2009) Tim Curry, Jamie Kennedy. George embarks on a cross-country trip to reunite a baby elephant with her family. \{91} \{7C} (1 hr 21 min)",movie
-10,WNJN,Nature Cat: The Return of Bad Dog Bart \{90} \{91} \{7C},none
-12,WNJN,"""Odd Squad: The Movie"" \{99} (2016) Dalila Bela, Anna Cathcart. The Odd Squad springs into action when a rival group called Weird Team starts to cover up problems instead of solving them. \{91} \{7C} (1 hr 6 min)",movie
-15,WNJN,An Arthur Thanksgiving \{90} \{91} \{7C},none
-17,WNJN,Wild Kratts: Amazin' Amazon Adventure \{90} \{91} \{7C},none
-19,WNJN,Ask This Old House \{99} \{91} \{7C},none
-20,WNJN,Rick Steves' Europe \{99} \{91} \{7C},none
-21,WNJN,A Chef's Life \{99} \{91} \{7C},none
-22,WNJN,Rick Steves European Christmas \{99} \{91} \{7C},none
-24,WNJN,MetroFocus \{91} \{7C},none
-25,WNJN,NJ Spotlight News with Briana Vannozzi \{91} \{7C},none
-26,WNJN,NHK Newsline \{91} \{7C},none
-27,WNJN,One on One With Steve Adubato \{91} \{7C},none
+46,COMEDY,South Park \{A3} \{7C},none
+47,COMEDY,Sex Toys - 50 Percent OFF! \{7C},none
+48,COMEDY,Larry King Exclusive: Is Your Credit In Crisis? \{7C},none
+27,WNJN,One on One With Steve Adubato,none
 28,WNJN,NJ Spotlight News with Briana Vannozzi \{91} \{7C},none
-29,WNJN,Frankie Drake Mysteries \{9B} \{91} \{7C},none
-31,WNJN,Midsomer Murders \{9B} \{91} \{7C},none
-32,WNJN,( 9:52) Midsomer Murders \{9B} \{91} \{7C},none
-34,WNJN,(10:32) Start Up \{99} \{91} \{7C},none
+29,WNJN,Father Brown \{9B} \{91} \{7C},none
+31,WNJN,The Durrells in Corfu on Masterpiece \{91} \{7C},none
+33,WNJN,Line of Separation \{91} \{7C},none
 35,WNJN,NJ Spotlight News with Briana Vannozzi \{91} \{7C},none
-36,WNJN,One on One With Steve Adubato \{91} \{7C},none
+36,WNJN,Drive by History,none
 37,WNJN,BBC World News \{91} \{7C},none
 38,WNJN,MetroFocus \{91} \{7C},none
 39,WNJN,Amanpour and Company \{91} \{7C},none
-41,WNJN,"Change Your Brain, Heal Your Mind With Daniel Amen, MD \{99} \{91} \{7C}",none
-45,WNJN,Marian Anderson: Once in a Hundred Years \{99} \{91} \{7C},none
-47,WNJN,"Classroom Close-up, NJ \{91} \{7C}",none
-48,WNJN,Classical Stretch: By Essentrics \{99} \{91} \{7C},none
-49,WNJN,State of Affairs \{91} \{7C},none
-3,CNN,New Day With Alisyn Camerota and John Berman \{7C},none
-5,CNN,New Day With Alisyn Camerota and John Berman \{7C},none
-7,CNN,CNN Newsroom With Poppy Harlow and Jim Sciutto \{7C},none
-9,CNN,CNN Newsroom With Poppy Harlow and Jim Sciutto \{7C},none
-11,CNN,CNN Newsroom \{7C},none
-13,CNN,CNN Newsroom \{7C},none
-15,CNN,CNN Newsroom \{7C},none
-17,CNN,CNN Newsroom With Brooke Baldwin \{7C},none
-19,CNN,CNN Newsroom With Brooke Baldwin \{7C},none
-21,CNN,The Lead With Jake Tapper \{7C},none
-23,CNN,The Situation Room With Wolf Blitzer \{7C},none
-25,CNN,The Situation Room With Wolf Blitzer \{7C},none
+41,WNJN,Nature \{99} \{91} \{7C},none
+44,WNJN,Ken Burns: The National Parks \{99} \{91} \{7C},none
+47,WNJN,Articulate With Jim Cotter \{9B} \{91} \{7C},none
+48,WNJN,The McLaughlin Group \{91} \{7C},none
 27,CNN,Erin Burnett OutFront \{7C},none
-29,CNN,First Ladies \{7C},none
-32,CNN,First Ladies \{7C},none
-34,CNN,First Ladies \{7C},none
-36,CNN,First Ladies \{7C},none
-38,CNN,The Nineties \{7C},none
-40,CNN,The 2000s \{9B} \{7C},none
-42,CNN,The Seventies \{9B} \{7C},none
-44,CNN,The Sixties \{9B} \{7C},none
-46,CNN,CNN Newsroom Live \{7C},none
-47,CNN,CNN Newsroom Live \{7C},none
-49,CNN,New Day Weekend With Victor Blackwell and Christi Paul \{7C},none
-1,LIFE,( 6:02) Paid Programming \{99} \{7C},none
-2,LIFE,Life Today With James Robison \{9B} \{91} \{7C},none
-3,LIFE,Joyce Meyer Enjoying Everyday Life \{99} \{91} \{7C},none
-4,LIFE,Military Makeover \{9B} \{91} \{7C},none
-5,LIFE,"""12 Wishes of Christmas"" (2011) Elisa Donovan, Gabrielle Carteris. A woman (Elisa Donovan) makes 12 wishes, and when the things she wished for start coming true, she discovers the consequences are not always easy to deal with. \{7C} (1 hr 30 min)",movie
-9,LIFE,"""A Very Merry Daughter of the Bride"" \{9B} (2008) Joanna Garcia, Luke Perry. A scheming wedding planner (Joanna Garcia) disapproves of her mother's (Helen Shaver) upcoming marriage. \{7C} (1 hr 29 min)",movie
-13,LIFE,"""Dear Santa"" \{9B} (2011) Amy Acker, Brooklynn Proulx. Crystal, a rich party girl, finds a little girl's letter to Santa asking for a new mother, and she vows to win over the father and daughter before the holidays. \{7C} (1 hr 30 min)",movie
-17,LIFE,"""Christmas Reservations"" \{9B} (2019) Melissa Joan Hart, Markie Post. The event coordinator at the Treeline Ski Resort plans every event and keeps all the guests happy. But when her widowed college sweetheart and his two children check in, she discovers she has her own reservations about life and love. \{7C}",movie
-21,LIFE,"""Christmas Unwrapped"" \{99} (2020) Amber Stevens West, Marco Grazzini. An ambitious yet pragmatic reporter learns the true meaning of Christmas when she investigates a millionaire and beloved member of the town who insists that all the gifts that arrive on Christmas Day every year are from none other than Santa himself. \{7C} (1 hr 27 min)",movie
-25,LIFE,"""A Christmas in Tennessee"" \{9B} (2018) Rachel Boston, Andrew Walker. A baker unites the people of her small mountain town to resist a real estate developer's plan to build a ski resort. \{7C} (1 hr 30 min)",movie
-29,LIFE,"""Dear Christmas"" \{99} (2020) Melissa Joan Hart, Jason Priestley. A podcast host develops an unexpected romance with a local firefighter during the holidays. \{7C} (1 hr 30 min)",movie
-33,LIFE,"(10:05) ""Christmas Hotel"" \{99} (2019) Tatyana Ali, Sean Patrick Thomas. A big city hotelier's boss informs her that she will receive a promotion if she can pull off a major project. \{7C} (1 hr 30 min)",movie
-37,LIFE,"(12:01) ""Dear Christmas"" \{99} (2020) Melissa Joan Hart, Jason Priestley. A podcast host develops an unexpected romance with a local firefighter during the holidays. \{7C} (1 hr 30 min)",movie
-41,LIFE,"( 2:06) ""Christmas Hotel"" \{99} (2019) Tatyana Ali, Sean Patrick Thomas. A big city hotelier's boss informs her that she will receive a promotion if she can pull off a major project. \{7C} (1 hr 30 min)",movie
-45,LIFE,( 4:02) Keep Your Immune System Strong with MagBlue! \{7C},none
+29,CNN,Anderson Cooper 360 \{9B} \{7C},none
+31,CNN,Cuomo Prime Time \{7C},none
+33,CNN,CNN Tonight with Don Lemon \{7C},none
+35,CNN,CNN Tonight with Don Lemon \{7C},none
+37,CNN,Anderson Cooper 360 \{9B} \{7C},none
+39,CNN,Cuomo Prime Time \{7C},none
+41,CNN,CNN Tonight with Don Lemon \{7C},none
+43,CNN,CNN Tonight with Don Lemon \{7C},none
+45,CNN,CNN Newsroom Live \{7C},none
+47,CNN,Early Start With Christine Romans and Laura Jarrett \{7C},none
+48,CNN,( 5:59) New Day With Alisyn Camerota and John Berman \{7C},none
+29,LIFE,"""Christmas Pen Pals"" \{9B} (2018) Sarah Drew, Niall Matter. Following an unexpected breakup weeks before Christmas, a tech wiz heads back to her hometown for the holidays. She signs up for an anonymous holiday pen pal service and becomes enchanted by each beautifully written letter she receives. \{7C} (1 hr 30 min)",movie
+33,LIFE,"(10:03) ""A Taste of Christmas"" (2020) Anni Krueger, Gilles Marini. Upon learning her cousin Francesca must cancel the Christmas Eve opening of her Italian restaurant, Natalie becomes determined to help make the opening day a reality. \{7C} (1 hr 30 min)",movie
+37,LIFE,"(12:01) ""Christmas Pen Pals"" \{9B} (2018) Sarah Drew, Niall Matter. Following an unexpected breakup weeks before Christmas, a tech wiz heads back to her hometown for the holidays. She signs up for an anonymous holiday pen pal service and becomes enchanted by each beautifully written letter she receives. \{7C} (1 hr 30 min)",movie
+41,LIFE,"( 2:04) ""A Taste of Christmas"" (2020) Anni Krueger, Gilles Marini. Upon learning her cousin Francesca must cancel the Christmas Eve opening of her Italian restaurant, Natalie becomes determined to help make the opening day a reality. \{7C} (1 hr 30 min)",movie
+45,LIFE,( 4:02) 5 Makeup Tips 4 You \{7C},none
 46,LIFE,( 4:32) Experience Hollywood's Red Carpet Secret for a Flawless Looking Body! \{7C},none
-47,LIFE,"( 5:02) Ninja Foodi NeverStick - The cookware that never sticks, chips, or flakes \{7C}",none
-48,LIFE,( 5:32) Paid Programming \{99} \{7C},none
-49,LIFE,"Ninja Foodi Grill - The grill that sears, sizzles, and air fry crisps! \{7C}",none
-1,AETV,OxyPure Air Purifier Kills 99.5% of Airborne Viruses & Bacteria \{91} \{7C},none
-2,AETV,Joyce Meyer Enjoying Everyday Life \{99} \{91} \{7C},none
-3,AETV,Live Rescue: Rewind \{91} \{7C},none
-5,AETV,Live Rescue: Rewind \{91} \{7C},none
-7,AETV,Live Rescue: Rewind \{91} \{7C},none
-9,AETV,The First 48 \{91} \{7C},none
-11,AETV,The First 48 \{91} \{7C},none
-13,AETV,The First 48 \{91} \{7C},none
-15,AETV,The First 48 \{91} \{7C},none
-17,AETV,The First 48 \{91} \{7C},none
-19,AETV,The First 48 \{91} \{7C},none
-21,AETV,The First 48 \{9B} \{91} \{7C},none
-23,AETV,The First 48 \{91} \{7C},none
-25,AETV,The First 48 \{91} \{7C},none
-27,AETV,The First 48 \{91} \{7C},none
-29,AETV,The First 48: Shocking Interrogations \{91} \{7C},none
-31,AETV,Live Rescue \{91} \{7C},none
-37,AETV,Live Rescue \{91} \{7C},none
-43,AETV,The First 48: Shocking Interrogations \{91} \{7C},none
-45,AETV,"Ninja Foodi Grill - The grill that sears, sizzles, and air fry crisps! \{91} \{7C}",none
-46,AETV,Earn $$$ from Home! \{91} \{7C},none
-47,AETV,Paid Programming \{99} \{91} \{7C},none
-48,AETV,Oxygen Therapy Innovation \{91} \{7C},none
-49,AETV,Shark Vertex with DuoClean PowerFins \{91} \{7C},none
-1,NIK,Full House \{99} \{91} \{7C},none
-2,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-3,NIK,PAW Patrol \{90} \{91} \{7C},none
-5,NIK,PAW Patrol \{90} \{91} \{7C},none
-7,NIK,Santiago of the Seas \{90} \{91} \{7C},none
-8,NIK,PAW Patrol \{90} \{91} \{7C},none
-9,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-10,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-11,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-12,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-13,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-15,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-16,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-17,NIK,The Loud House \{93} \{91} \{7C},none
-18,NIK,The Loud House \{93} \{91} \{7C},none
-19,NIK,"""Rio 2"" (2014) Anne Hathaway, Jesse Eisenberg. Blue macaws Blu (Jesse Eisenberg), Jewel (Anne Hathaway) and their three children are comfortably settled in the city -- perhaps too comfortably. Jewel fears that the children are becoming more like humans than birds. After learning that she and Blu may not be the last blue macaws after all, Jewel decides that their little family should visit the Amazon jungle. It's there that Blu meets his formidable father-in-law (Andy Garcia) and goes beak-to-beak with archnemesis Nigel (Jemaine Clement). \{91} \{7C} (1 hr 41 min)",movie
-23,NIK,"""The SpongeBob Movie: Sponge Out of Water"" \{85} (2015) Tom Kenny, Bill Fagerbakke. Life is dandy in Bikini Bottom for SpongeBob Squarepants (Tom Kenny) and his friends Patrick (Bill Fagerbakke), Squidward (Rodger Bumpass), Mr. Krabs (Clancy Brown) and Sandy (Carolyn Lawrence). However, when the top-secret recipe for Krabby Patties is stolen, SpongeBob finds that he must join forces with perpetual adversary Plankton (Mr. Lawrence) and come ashore to battle a fiendish pirate named Burger Beard (Antonio Banderas), who has his own plans for the delicious delicacies. \{91} \{7C} (1 hr 32 min)",movie
-27,NIK,The Astronauts \{99} \{91} \{7C},none
-28,NIK,Side Hustle \{9B} \{91} \{7C},none
-29,NIK,Side Hustle \{9B} \{91} \{7C},none
-30,NIK,Side Hustle \{9B} \{91} \{7C},none
-31,NIK,Friends \{9B} \{91} \{7C},none
-32,NIK,Friends \{9B} \{91} \{7C},none
+47,LIFE,( 5:02) Got Debt? \{7C},none
+48,LIFE,( 5:32) Marie Osmond's BodyGym \{7C},none
+27,AETV,Storage Wars \{9B} \{91} \{7C},none
+28,AETV,Storage Wars \{9B} \{91} \{7C},none
+29,AETV,Storage Wars \{9B} \{91} \{7C},none
+30,AETV,Storage Wars \{9B} \{91} \{7C},none
+31,AETV,Storage Wars \{9B} \{91} \{7C},none
+32,AETV,Storage Wars \{9B} \{91} \{7C},none
+33,AETV,(10:01) Storage Wars \{9B} \{91} \{7C},none
+34,AETV,(10:32) Storage Wars \{9B} \{91} \{7C},none
+35,AETV,(11:04) Storage Wars \{9B} \{91} \{7C},none
+36,AETV,(11:34) Storage Wars \{9B} \{91} \{7C},none
+37,AETV,(12:03) Storage Wars \{9B} \{91} \{7C},none
+38,AETV,(12:33) Storage Wars \{9B} \{91} \{7C},none
+39,AETV,( 1:03) Storage Wars \{9B} \{91} \{7C},none
+40,AETV,( 1:33) Storage Wars \{9B} \{91} \{7C},none
+41,AETV,( 2:04) Storage Wars \{9B} \{91} \{7C},none
+42,AETV,( 2:34) Storage Wars \{9B} \{91} \{7C},none
+43,AETV,( 3:05) Storage Wars \{9B} \{91} \{7C},none
+44,AETV,( 3:34) Storage Wars \{9B} \{91} \{7C},none
+45,AETV,( 4:02) Introducing Crepe Erase Advanced Formula! \{91} \{7C},none
+46,AETV,( 4:32) Try the New NuWave Brio Air Fryer Today! Great New Price! \{91} \{7C},none
+47,AETV,( 5:02) BACK PAIN RELIEF NOW! \{91} \{7C},none
+48,AETV,( 5:31) Paid Programming \{99} \{91} \{7C},none
+31,NIK,Young Sheldon \{9B} \{91} \{7C},none
+32,NIK,Young Sheldon \{9B} \{91} \{7C},none
 33,NIK,Friends \{9B} \{91} \{7C},none
 34,NIK,Friends \{9B} \{91} \{7C},none
 35,NIK,Friends \{9B} \{91} \{7C},none
-36,NIK,(11:35) Friends \{9B} \{91} \{7C},none
-37,NIK,(12:10) Friends \{9B} \{91} \{7C},none
-38,NIK,(12:45) Friends \{9B} \{91} \{7C},none
-39,NIK,( 1:20) Friends \{9B} \{91} \{7C},none
-40,NIK,( 1:55) Friends \{9B} \{91} \{7C},none
-42,NIK,Friends \{91} \{7C},none
-43,NIK,( 3:05) Friends \{9B} \{91} \{7C},none
-44,NIK,( 3:39) Mom \{91} \{7C},none
-45,NIK,( 4:16) Mom \{91} \{7C},none
-46,NIK,( 4:41) Mom \{91} \{7C},none
-47,NIK,( 5:07) Mom \{91} \{7C},none
-48,NIK,( 5:33) Mom \{91} \{7C},none
-49,NIK,SpongeBob SquarePants \{93} \{91} \{7C},none
-1,DISN,Puppy Dog Pals \{90} \{91} \{7C},none
-2,DISN,Puppy Dog Pals \{90} \{91} \{7C},none
-3,DISN,T.O.T.S. \{90} \{91} \{7C},none
-4,DISN,T.O.T.S. \{90} \{91} \{7C},none
-4,DISN,( 7:55) Mickey Mouse Hot Diggity-Dog Tales \{90} \{91} \{7C},none
-5,DISN,Bluey \{90} \{91} \{7C},none
-6,DISN,Bluey \{90} \{91} \{7C},none
-6,DISN,( 8:55) Mickey Mouse \{99} \{91} \{7C},none
-7,DISN,Miraculous: Tales of Ladybug and Cat Noir \{93} \{91} \{7C},none
-8,DISN,Miraculous: Tales of Ladybug and Cat Noir \{93} \{91} \{7C},none
-9,DISN,Miraculous: Tales of Ladybug and Cat Noir \{93} \{91} \{7C},none
-10,DISN,Miraculous: Tales of Ladybug and Cat Noir \{93} \{91} \{7C},none
-11,DISN,Big City Greens \{93} \{91} \{7C},none
-12,DISN,Big City Greens \{93} \{91} \{7C},none
-13,DISN,Big City Greens \{93} \{91} \{7C},none
-14,DISN,Jessie \{99} \{91} \{7C},none
-15,DISN,Jessie \{99} \{91} \{7C},none
-16,DISN,Raven's Home \{99} \{91} \{7C},none
-17,DISN,Raven's Home \{99} \{91} \{7C},none
-18,DISN,Raven's Home \{99} \{91} \{7C},none
-19,DISN,Raven's Home \{99} \{91} \{7C},none
-20,DISN,Bunk'd \{99} \{91} \{7C},none
-21,DISN,Bunk'd \{99} \{91} \{7C},none
-22,DISN,Bunk'd \{99} \{91} \{7C},none
-23,DISN,Jessie \{99} \{91} \{7C},none
-24,DISN,Jessie \{99} \{91} \{7C},none
-25,DISN,Jessie \{99} \{91} \{7C},none
-26,DISN,Jessie \{99} \{91} \{7C},none
+36,NIK,Friends \{9B} \{91} \{7C},none
+37,NIK,Friends \{9B} \{91} \{7C},none
+38,NIK,Friends \{9B} \{91} \{7C},none
+39,NIK,Friends \{91} \{7C},none
+40,NIK,( 1:35) Friends \{9B} \{91} \{7C},none
+41,NIK,( 2:09) Friends \{91} \{7C},none
+42,NIK,( 2:44) Young Sheldon \{9B} \{91} \{7C},none
+43,NIK,( 3:18) Mom \{91} \{7C},none
+44,NIK,( 3:50) Mom \{91} \{7C},none
+45,NIK,( 4:24) Mom \{91} \{7C},none
+46,NIK,( 4:55) Mom \{91} \{7C},none
+47,NIK,( 5:27) Full House \{99} \{91} \{7C},none
 27,DISN,Raven's Home \{99} \{91} \{7C},none
 28,DISN,Raven's Home \{99} \{91} \{7C},none
-29,DISN,Raven's Home \{99} \{91} \{7C},none
-29,DISN,( 8:25) Zombies: Addison's Moonstone Mystery \{99} \{91} \{7C},none
-30,DISN,Just Roll With It \{93} \{91} \{7C},none
-30,DISN,( 8:55) Jessie \{99} \{91} \{7C},none
-31,DISN,( 9:20) Jessie \{99} \{91} \{7C},none
-32,DISN,( 9:45) Liv and Maddie \{99} \{91} \{7C},none
-33,DISN,(10:10) Liv and Maddie \{99} \{91} \{7C},none
-34,DISN,(10:35) Raven's Home \{99} \{91} \{7C},none
-35,DISN,Raven's Home \{99} \{91} \{7C},none
-36,DISN,Just Roll With It \{93} \{91} \{7C},none
+29,DISN,Good Luck Jessie: NYC Christmas \{99} \{91} \{7C},none
+31,DISN,Bunk'd \{99} \{91} \{7C},none
+32,DISN,Raven's Home \{99} \{91} \{7C},none
+33,DISN,Raven's Home \{99} \{91} \{7C},none
+34,DISN,Raven's Home \{99} \{91} \{7C},none
+35,DISN,Sydney to the Max \{99} \{91} \{7C},none
+36,DISN,Sydney to the Max \{99} \{91} \{7C},none
 37,DISN,Jessie \{99} \{91} \{7C},none
 38,DISN,Jessie \{99} \{91} \{7C},none
 39,DISN,Bunk'd \{99} \{91} \{7C},none
 40,DISN,Raven's Home \{99} \{91} \{7C},none
 41,DISN,Raven's Home \{99} \{91} \{7C},none
-42,DISN,Liv and Maddie \{99} \{91} \{7C},none
-43,DISN,Liv and Maddie \{99} \{91} \{7C},none
+42,DISN,Liv and Maddie: Cali Style \{99} \{91} \{7C},none
+43,DISN,Liv and Maddie: Cali Style \{99} \{91} \{7C},none
 44,DISN,Austin & Ally \{99} \{91} \{7C},none
 45,DISN,Austin & Ally \{99} \{91} \{7C},none
 46,DISN,Bunk'd \{99} \{91} \{7C},none
-47,DISN,Bunk'd \{99} \{91} \{7C},none
-48,DISN,Big City Greens \{93} \{91} \{7C},none
-49,DISN,Big City Greens \{93} \{91} \{7C},none
-1,PAR,Salon Hair at Home! \{91} \{7C},none
-2,PAR,Shaq is back... with a new Grill! \{91} \{7C},none
-3,PAR,Paid Programming \{99} \{91} \{7C},none
-4,PAR,Paid Programming \{99} \{91} \{7C},none
-5,PAR,"""The Italian Job"" \{87} (2003) Mark Wahlberg, Charlize Theron. After a heist in Venice, Steve (Edward Norton) turns on his partners in crime, killing safecracker John Bridger (Donald Sutherland) and keeping all the gold for himself. The rest of the team, including leader Charlie Croker (Mark Wahlberg), driver Handsome Rob (Jason Statham), explosives man Left Ear (Mos Def) and tech geek Lyle (Seth Green), vows revenge. They enlist the help of Bridger's daughter, Stella (Charlize Theron), and plot to recover the gold from Steve's Los Angeles mansion. \{91} \{7C} (1 hr 51 min)",movie
-10,PAR,"""2 Guns"" \{84} (2013) Denzel Washington, Mark Wahlberg. For the past year, DEA agent Bobby Trench (Denzel Washington) and U.S. Navy intelligence officer Marcus Stigman (Mark Wahlberg) have been working under cover as members of a narcotics syndicate. The twist: Neither man knows that the other is an undercover agent. When their attempt to infiltrate a Mexican drug cartel and recover millions goes haywire, the men are disavowed by their superiors. Trench and Stigman must go on the run lest they wind up in jail or in a grave. \{91} \{7C} (1 hr 49 min)",movie
-15,PAR,"""Gone in 60 Seconds"" \{87} (2000) Nicolas Cage, Angelina Jolie. Randall ""Memphis"" Raines long ago abandoned his life of crime, but after an ominous visit from an old friend, he finds he has no choice but to return to what he does best -- stealing cars -- in order to save his brother's life. It all comes down to one night, 50 cars and a contract. \{91} \{7C} (1 hr 57 min)",movie
-20,PAR,"""Con Air"" \{84} (1997) Nicolas Cage, John Cusack. Just-paroled army ranger Cameron Poe (Nicolas Cage) is headed back to his wife (Monica Potter), but must fly home aboard a prison transport flight dubbed ""Jailbird"" with some of the worst criminals living. Along with Diamond Dog (Ving Rhames) and Baby-O (Mykelti Williamson), genius serial killer Cyrus ""The Virus"" Grissom (John Malkovich) unleashes a violent escape plot in mid-flight. Secretly working with U.S. Marshall Vince Larkin (John Cusack), Poe tries to foil Grissom's plan. \{91} \{7C} (1 hr 55 min)",movie
-25,PAR,"""2 Guns"" \{84} (2013) Denzel Washington, Mark Wahlberg. For the past year, DEA agent Bobby Trench (Denzel Washington) and U.S. Navy intelligence officer Marcus Stigman (Mark Wahlberg) have been working under cover as members of a narcotics syndicate. The twist: Neither man knows that the other is an undercover agent. When their attempt to infiltrate a Mexican drug cartel and recover millions goes haywire, the men are disavowed by their superiors. Trench and Stigman must go on the run lest they wind up in jail or in a grave. \{91} \{7C} (1 hr 49 min)",movie
-30,PAR,"""Gone in 60 Seconds"" \{87} (2000) Nicolas Cage, Angelina Jolie. Randall ""Memphis"" Raines long ago abandoned his life of crime, but after an ominous visit from an old friend, he finds he has no choice but to return to what he does best -- stealing cars -- in order to save his brother's life. It all comes down to one night, 50 cars and a contract. \{91} \{7C} (1 hr 57 min)",movie
-35,PAR,"""Con Air"" \{84} (1997) Nicolas Cage, John Cusack. Just-paroled army ranger Cameron Poe (Nicolas Cage) is headed back to his wife (Monica Potter), but must fly home aboard a prison transport flight dubbed ""Jailbird"" with some of the worst criminals living. Along with Diamond Dog (Ving Rhames) and Baby-O (Mykelti Williamson), genius serial killer Cyrus ""The Virus"" Grissom (John Malkovich) unleashes a violent escape plot in mid-flight. Secretly working with U.S. Marshall Vince Larkin (John Cusack), Poe tries to foil Grissom's plan. \{91} \{7C} (1 hr 55 min)",movie
-40,PAR,"""The Italian Job"" \{87} (2003) Mark Wahlberg, Charlize Theron. After a heist in Venice, Steve (Edward Norton) turns on his partners in crime, killing safecracker John Bridger (Donald Sutherland) and keeping all the gold for himself. The rest of the team, including leader Charlie Croker (Mark Wahlberg), driver Handsome Rob (Jason Statham), explosives man Left Ear (Mos Def) and tech geek Lyle (Seth Green), vows revenge. They enlist the help of Bridger's daughter, Stella (Charlize Theron), and plot to recover the gold from Steve's Los Angeles mansion. \{91} \{7C} (1 hr 51 min)",movie
+47,DISN,Big City Greens \{93} \{91} \{7C},none
+48,DISN,Miraculous: Tales of Ladybug and Cat Noir \{93} \{91} \{7C},none
+27,PAR,"""Shooter"" \{84} (2007) Mark Wahlberg, Michael Peña. A top Marine sniper, Bob Lee Swagger (Mark Wahlberg), leaves the military after a mission goes horribly awry and disappears without a trace. Swagger is coaxed back into service after high-profile government officials convince him to help thwart a plot against the President of the United States. Swagger realizes he has been betrayed and becomes the target of a nationwide manhunt. Instead of hiding, he seeks revenge against some of the most powerful and corrupt leaders in the free world. \{91} \{7C} (2 hr 6 min)",movie
+33,PAR,"""Four Brothers"" \{84} (2005) Mark Wahlberg, Tyrese Gibson. When an inner-city Detroit foster mother (Fionnula Flanagan) is murdered in a botched holdup, four of her now-grown adopted children suspect it was no random killing. Rising musician Jack (Garrett Hedlund), former-Marine Angel (Tyrese Gibson), hotheaded hockey player Bobby (Mark Wahlberg) and settled-down husband and father Jeremiah (André Benjamin) go on the hunt for neighborhood criminal kingpin Victor Sweet (Chiwetel Ejiofor) while being trailed themselves by the local beat cops. \{91} \{7C} (1 hr 48 min)",movie
+38,PAR,"""Shooter"" \{84} (2007) Mark Wahlberg, Michael Peña. A top Marine sniper, Bob Lee Swagger (Mark Wahlberg), leaves the military after a mission goes horribly awry and disappears without a trace. Swagger is coaxed back into service after high-profile government officials convince him to help thwart a plot against the President of the United States. Swagger realizes he has been betrayed and becomes the target of a nationwide manhunt. Instead of hiding, he seeks revenge against some of the most powerful and corrupt leaders in the free world. \{91} \{7C} (2 hr 6 min)",movie
+44,PAR,The Office \{9B} \{91} \{7C},none
 45,PAR,Sex Toys - 50 Percent OFF! \{91} \{7C},none
 46,PAR,Sex Toys - 50 Percent OFF! \{91} \{7C},none
 47,PAR,Sex Toys - 50 Percent OFF! \{91} \{7C},none
-48,PAR,The PiYo Craze from Beachbody! \{91} \{7C},none
-49,PAR,Today Show \{91} \{7C},none
-1,E,30 Rock \{91} \{7C},none
-2,E,30 Rock \{91} \{7C},none
-3,E,30 Rock \{91} \{7C},none
-4,E,30 Rock \{91} \{7C},none
-5,E,30 Rock \{91} \{7C},none
-6,E,30 Rock \{91} \{7C},none
-7,E,30 Rock \{91} \{7C},none
-8,E,30 Rock \{91} \{7C},none
-9,E,30 Rock \{91} \{7C},none
-10,E,30 Rock \{91} \{7C},none
-11,E,30 Rock \{91} \{7C},none
-12,E,30 Rock \{91} \{7C},none
-13,E,30 Rock \{91} \{7C},none
-14,E,30 Rock \{91} \{7C},none
-15,E,30 Rock \{91} \{7C},none
-16,E,30 Rock \{91} \{7C},none
-17,E,30 Rock \{91} \{7C},none
-18,E,30 Rock \{91} \{7C},none
-19,E,30 Rock \{91} \{7C},none
-20,E,30 Rock \{91} \{7C},none
-21,E,30 Rock \{91} \{7C},none
-22,E,30 Rock \{9B} \{91} \{7C},none
-23,E,30 Rock \{9B} \{91} \{7C},none
-24,E,30 Rock \{9B} \{91} \{7C},none
-25,E,30 Rock \{9B} \{91} \{7C},none
-26,E,30 Rock \{91} \{7C},none
-27,E,30 Rock \{9B} \{91} \{7C},none
-28,E,30 Rock \{9B} \{91} \{7C},none
-29,E,30 Rock \{9B} \{91} \{7C},none
-30,E,30 Rock \{91} \{7C},none
-31,E,30 Rock \{9B} \{91} \{7C},none
-32,E,30 Rock \{91} \{7C},none
-33,E,30 Rock \{91} \{7C},none
-34,E,30 Rock \{91} \{7C},none
-35,E,30 Rock \{91} \{7C},none
-36,E,30 Rock \{91} \{7C},none
-37,E,30 Rock \{91} \{7C},none
-38,E,30 Rock \{91} \{7C},none
-39,E,30 Rock \{91} \{7C},none
-40,E,30 Rock \{9B} \{91} \{7C},none
-41,E,30 Rock \{91} \{7C},none
-42,E,30 Rock \{91} \{7C},none
-43,E,30 Rock \{91} \{7C},none
-44,E,30 Rock \{91} \{7C},none
-45,E,30 Rock \{91} \{7C},none
-46,E,30 Rock \{91} \{7C},none
-47,E,30 Rock \{91} \{7C},none
-48,E,30 Rock \{91} \{7C},none
-49,E,30 Rock \{91} \{7C},none
-1,FREEFR,Under Eye Bags? SOLUTION! \{7C},none
-2,FREEFR,Paid Programming \{99} \{7C},none
-3,FREEFR,The Wonderful World of Disney: Magical Holiday Celebration \{9B} \{91} \{7C},none
-7,FREEFR,The 700 Club \{91} \{7C},none
-9,FREEFR,700 Club Interactive \{99} \{7C},none
-10,FREEFR,"""Matilda"" \{85} (1996) Mara Wilson, Danny DeVito. This film adaptation of a Roald Dahl work tells the story of Matilda Wormwood (Mara Wilson), a gifted girl forced to put up with a crude, distant father (Danny DeVito) and mother (Rhea Perlman). Worse, Agatha Trunchbull (Pam Ferris), the evil principal at Matilda's school, is a terrifyingly strict bully. However, when Matilda realizes she has the power of telekinesis, she begins to defend her friends from Trunchbull's wrath and fight back against her unkind parents. \{91} \{7C} (1 hr 33 min)",movie
-14,FREEFR,"""Jingle All the Way 2"" \{85} (2014) Larry the Cable Guy, Anthony Carelli. A child's father and stepfather engage in an all-out battle to get her the toy of her dreams for Christmas. \{91} \{7C} (1 hr 33 min)",movie
-18,FREEFR,"""The Hunchback of Notre Dame"" (1996) Tom Hulce, Demi Moore. An animated Disney adventure follows disfigured Quasimodo (Tom Hulce), the bell-ringer of Notre Dame Cathedral, who bides his time locked away in a tower. With only gargoyles to keep him company, Quasimodo longs to be with other people, leading to his chance encounter with the enchanting Gypsy Esmeralda (Demi Moore). When the beautiful young woman catches the attention of Quasimodo's guardian, sinister Frollo (Tony Jay), Quasimodo must help to keep her out of his clutches. \{91} \{7C} (1 hr 26 min)",movie
-22,FREEFR,"""The Nightmare Before Christmas"" \{85} (1993) Danny Elfman, Chris Sarandon. The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king, who has become bored with the same annual routine of frightening people in the ""real world."" When Jack accidentally stumbles on Christmastown, all bright colors and warm spirits, he gets a new lease on life -- he plots to bring Christmas under his control by kidnapping Santa Claus and taking over the role. But Jack soon discovers even the best-laid plans of mice and skeleton men can go seriously awry. \{91} \{7C} (1 hr 15 min)",movie
-25,FREEFR,"""Ratatouille"" (2007) Patton Oswalt, Ian Holm. Remy (Patton Oswalt), a resident of Paris, appreciates good food and has quite a sophisticated palate. He would love to become a chef so he can create and enjoy culinary masterpieces to his heart's delight. The only problem is, Remy is a rat. When he winds up in the sewer beneath one of Paris' finest restaurants, the rodent gourmet finds himself ideally placed to realize his dream. \{91} \{7C} (1 hr 51 min)",movie
-30,FREEFR,"""Zootopia"" \{85} (2016) Ginnifer Goodwin, Jason Bateman. From the largest elephant to the smallest shrew, the city of Zootopia is a mammal metropolis where various animals live and thrive. When Judy Hopps (Ginnifer Goodwin) becomes the first rabbit to join the police force, she quickly learns how tough it is to enforce the law. Determined to prove herself, Judy jumps at the opportunity to solve a mysterious case. Unfortunately, that means working with Nick Wilde (Jason Bateman), a wily fox who makes her job even harder. \{91} \{7C} (1 hr 48 min)",movie
+48,PAR,Ideal Prostate+ Provides Safe Natural Relief \{91} \{7C},none
+28,E,"( 7:45) ""Fast & Furious"" \{87} (2009) Vin Diesel, Paul Walker. When a crime brings them back to the mean streets of Los Angeles, fugitive ex-convict Dom Toretto (Vin Diesel) and agent Brian O'Conner (Paul Walker) reignite their high-octane feud. However, when a common enemy rears his head, Dom and Brian must learn how to work together and trust one another in order to defeat him. \{7C} (1 hr 47 min)",movie
+33,E,Celebrity Game Face \{9B} \{7C},none
+35,E,Nightly Pop \{7C},none
+36,E,"""Speed"" \{84} (1994) Keanu Reeves, Dennis Hopper. Los Angeles police officer Jack (Keanu Reeves) angers retired bomb squad member Howard Payne (Dennis Hopper) by foiling his attempt at taking hostages. In revenge, Payne arms a bus with a bomb that will explode if it drops below 50 miles per hour. With the help of spunky passenger Annie (Sandra Bullock), Jack and his partner Harry (Jeff Daniels) try to save the people on the bus before the bomb goes off, while also trying to figure out how Payne is monitoring them. \{7C} (1 hr 55 min)",movie
+41,E,Sex and the City \{A3} \{91} \{7C},none
+42,E,Sex and the City \{A3} \{91} \{7C},none
+43,E,Sex and the City \{A3} \{91} \{7C},none
+44,E,Sex and the City \{A3} \{91} \{7C},none
+45,E,Keeping Up With the Kardashians \{7C},none
+47,E,Keeping Up With the Kardashians \{7C},none
+29,FREEFR,"( 8:25) ""Disney's A Christmas Carol"" \{85} (2009) Jim Carrey, Robin Wright Penn. Though London awaits the joyful arrival of Christmas, miserly Ebenezer Scrooge (Jim Carrey) thinks it's all humbug, berating his faithful clerk and cheerful nephew for their view. Later, Scrooge encounters the ghost of his late business partner, who warns that three spirits will visit him this night. The ghosts take Scrooge on a journey through his past, present and future in the hope of transforming his bitterness. \{91} \{7C} (1 hr 35 min)",movie
+34,FREEFR,Prep & Landing: Naughty vs. Nice \{99} \{91} \{7C},none
 35,FREEFR,The 700 Club \{91} \{7C},none
-37,FREEFR,The Simpsons \{9B} \{91} \{7C},none
-38,FREEFR,The Simpsons \{9B} \{91} \{7C},none
-39,FREEFR,The Simpsons \{9B} \{91} \{7C},none
-40,FREEFR,The Simpsons \{9B} \{91} \{7C},none
-41,FREEFR,The PiYo Craze from Beachbody! \{7C},none
+37,FREEFR,"""Jingle All the Way 2"" \{85} (2014) Larry the Cable Guy, Anthony Carelli. A child's father and stepfather engage in an all-out battle to get her the toy of her dreams for Christmas. \{91} \{7C} (1 hr 33 min)",movie
+41,FREEFR,Paid Programming \{99} \{7C},none
 42,FREEFR,NuWave Bravo XL Smart Countertop Air Fryer Convection Oven \{7C},none
 43,FREEFR,The 700 Club \{91} \{7C},none
 45,FREEFR,Paid Programming \{99} \{7C},none
 46,FREEFR,Paid Programming \{99} \{7C},none
-47,FREEFR,Shark IQ Robot: Ultimate Convenience \{7C},none
-48,FREEFR,Salon Hair at Home! \{7C},none
-49,FREEFR,NuWave Bravo XL Smart Countertop Air Fryer Convection Oven \{7C},none
-1,WLVT,Curious George \{90} \{91} \{7C},none
-2,WLVT,Molly of Denali \{90} \{91} \{7C},none
-3,WLVT,Wild Kratts \{90} \{91} \{7C},none
-4,WLVT,An Arthur Thanksgiving \{90} \{91} \{7C},none
-6,WLVT,Curious George \{90} \{91} \{7C},none
-7,WLVT,Arthur \{90} \{91} \{7C},none
-8,WLVT,Daniel Tiger's Neighborhood \{90} \{91} \{7C},none
-9,WLVT,Daniel Tiger's Neighborhood \{90} \{91} \{7C},none
-10,WLVT,Elinor Wonders Why \{90} \{91} \{7C},none
-11,WLVT,Sesame Street \{90} \{91} \{7C},none
-12,WLVT,Peg + Cat \{90} \{91} \{7C},none
-13,WLVT,Wild Kratts: Amazin' Amazon Adventure \{90} \{91} \{7C},none
-15,WLVT,10 Towns That Changed America \{99} \{91} \{7C},none
-17,WLVT,10 Streets That Changed America \{99} \{91} \{7C},none
-19,WLVT,Cook's Country \{99} \{91} \{7C},none
-20,WLVT,Field Trip With Curtis Stone \{99} \{91} \{7C},none
-21,WLVT,Antiques Roadshow \{99} \{91} \{7C},none
-23,WLVT,"Finding Your Roots With Henry Louis Gates, Jr. \{9B} \{91} \{7C}",none
-25,WLVT,Lidia's Kitchen \{99} \{91} \{7C},none
-26,WLVT,Counter Culture with Grover Silcox,none
-27,WLVT,Rick Steves' Europe \{99} \{91} \{7C},none
-28,WLVT,Articulate With Jim Cotter \{9B} \{91} \{7C},none
-29,WLVT,"Finding Your Roots With Henry Louis Gates, Jr. \{9B} \{91} \{7C}",none
-31,WLVT,Secrets of the Dead \{9B} \{91} \{7C},none
-33,WLVT,Antiques Roadshow \{99} \{91} \{7C},none
-35,WLVT,Courageous Conversations,none
+47,FREEFR,OxyPure Air Purifier Kills 99.5% of Airborne Viruses & Bacteria \{7C},none
+48,FREEFR,Paid Programming \{99} \{7C},none
+27,WLVT,Counter Culture with Grover Silcox,none
+28,WLVT,More Than Money,none
+29,WLVT,Real Rail Adventures: Swiss Winter Magic \{99} \{91} \{7C},none
+31,WLVT,Real Rail Adventures: Swiss International Hubs \{99} \{91} \{7C},none
+33,WLVT,Real Rail Adventures: Swiss Grand Tour \{99} \{91} \{7C},none
+35,WLVT,PBS39 Nightly News \{91} \{7C},none
 36,WLVT,BBC World News \{91} \{7C},none
-37,WLVT,Austin City Limits \{9B} \{91} \{7C},none
-39,WLVT,Rick Steves' Europe \{99} \{91} \{7C},none
-40,WLVT,Articulate With Jim Cotter \{9B} \{91} \{7C},none
-41,WLVT,"Finding Your Roots With Henry Louis Gates, Jr. \{9B} \{91} \{7C}",none
-43,WLVT,Secrets of the Dead \{9B} \{91} \{7C},none
-45,WLVT,Antiques Roadshow \{99} \{91} \{7C},none
-47,WLVT,Austin City Limits \{9B} \{91} \{7C},none
-49,WLVT,Clifford the Big Red Dog \{90} \{91} \{7C},none
-1,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-2,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-3,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-4,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-5,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-6,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-7,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-8,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-9,BET,"""The Color Purple"" \{87} (1985) Whoopi Goldberg, Danny Glover. An epic tale spanning forty years in the life of Celie (Whoopi Goldberg), an African-American woman living in the South who survives incredible abuse and bigotry. After Celie's abusive father marries her off to the equally debasing ""Mister"" Albert Johnson (Danny Glover), things go from bad to worse, leaving Celie to find companionship anywhere she can. She perseveres, holding on to her dream of one day being reunited with her sister in Africa. Based on the novel by Alice Walker. \{7C} (2 hr 32 min)",movie
-17,BET,BET Star Cinema,none
-25,BET,"""The Nutty Professor"" \{87} (1996) Eddie Murphy, Jada Pinkett. Brilliant and obese scientist Sherman Klump (Eddie Murphy) invents a miraculous weight-loss solution. After a date with chemistry student Carla Purty (Jada Pinkett) goes badly, a depressed Klump tries the solution on himself. Though he instantly loses 250 pounds, the side effects include a second personality: an obnoxiously self-assertive braggart who calls himself Buddy Love. Buddy proves to be more popular than Sherman, but his arrogance and bad behavior quickly spiral out of control. \{7C} (1 hr 35 min)",movie
-30,BET,"""Nutty Professor II: The Klumps"" \{87} (2000) Eddie Murphy, Janet Jackson. Professor Sherman Klump (Eddie Murphy) is getting married. And the Klump family could not be more delighted. His fiancee Denise (Janet Jackson) is thrilled to become a Klump, and with her appetite she'll fit right in. But Buddy Love ... well, Buddy is another matter. \{7C} (1 hr 46 min)",movie
-35,BET,Tyler Perry's House of Payne \{9B} \{7C},none
-36,BET,Tyler Perry's Assisted Living \{9B} \{7C},none
-37,BET,Tyler Perry's Sistas \{7C},none
+37,WLVT,NOVA \{99} \{91} \{7C},none
+39,WLVT,Counter Culture with Grover Silcox,none
+40,WLVT,More Than Money,none
+41,WLVT,Real Rail Adventures: Swiss Winter Magic \{99} \{91} \{7C},none
+43,WLVT,Real Rail Adventures: Swiss International Hubs \{99} \{91} \{7C},none
+45,WLVT,Real Rail Adventures: Swiss Grand Tour \{99} \{91} \{7C},none
+47,WLVT,Rick Steves' Europe \{99} \{91} \{7C},none
+48,WLVT,Clifford the Big Red Dog \{90} \{91} \{7C},none
+27,BET,"""Beauty Shop"" \{87} (2005) Queen Latifah, Alicia Silverstone. Far from Chicago, hairdresser Gina Norris (Queen Latifah) has relocated to Atlanta with her daughter (Paige Hurd) and has quickly established herself as a rare talent in her profession. But after repeatedly butting heads with her shady, over-the-top boss, Jorge (Kevin Bacon), Norris sets out to create her own salon -- even snagging a few of Jorge's employees and clients, including Lynn (Alicia Silverstone) and Terri (Andie MacDowell), respectively. Now, Jorge will do anything to shut her down. \{7C} (1 hr 45 min)",movie
+31,BET,"""Welcome Home Roscoe Jenkins"" \{87} (2008) Martin Lawrence, James Earl Jones. As a child, RJ Stevens (Martin Lawrence) was the awkward brunt of numerous jokes. Now, RJ is a successful talk-show host who dispenses advice and encouragement to millions. When his parents ask him to come back home for their anniversary, RJ vows to show everyone how much he has changed. Unfortunately, RJ's plans are no match for his Southern relatives. \{7C} (1 hr 54 min)",movie
+36,BET,Martin \{9B} \{91} \{7C},none
+37,BET,Martin \{9B} \{91} \{7C},none
+38,BET,Martin \{9B} \{91} \{7C},none
 39,BET,The Cleveland Show \{91} \{7C},none
 40,BET,The Cleveland Show \{91} \{7C},none
 41,BET,Martin \{9B} \{91} \{7C},none
@@ -883,193 +440,86 @@ timeslot,sourceIdentifier,programName,flags
 46,BET,The Parkers \{9B} \{91} \{7C},none
 47,BET,The Parkers \{9B} \{91} \{7C},none
 48,BET,The Parkers \{9B} \{91} \{7C},none
-49,BET,BET Rejoices: Showdown of Faith,none
-1,TNT,Charmed \{9B} \{91} \{7C},none
-3,TNT,Charmed \{9B} \{91} \{7C},none
-5,TNT,Charmed \{9B} \{91} \{7C},none
-7,TNT,Charmed \{9B} \{91} \{7C},none
-9,TNT,Charmed \{9B} \{91} \{7C},none
-11,TNT,"""Wonder Woman"" \{87} (2017) Gal Gadot, Chris Pine. Before she was Wonder Woman (Gal Gadot), she was Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, Diana meets an American pilot (Chris Pine) who tells her about the massive conflict that's raging in the outside world. Convinced that she can stop the threat, Diana leaves her home for the first time. Fighting alongside men in a war to end all wars, she finally discovers her full powers and true destiny. \{7C} (2 hr 21 min)",movie
-17,TNT,The Match: Champions for Change: Preshow \{7C},none
-19,TNT,The Match: Champions for Change \{7C},none|sportsProg
-27,TNT,"""Aquaman"" \{87} (2018) Jason Momoa, Amber Heard. Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people -- and then the surface world. Standing in his way is Arthur, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Arthur must retrieve the legendary Trident of Atlan and embrace his destiny as protector of the deep sea. \{7C} (2 hr 23 min)",movie
-33,TNT,"""Justice League"" \{87} (2017) Ben Affleck, Henry Cavill. Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly awakened enemy. Despite the formation of an unprecedented league of heroes -- Batman, Wonder Woman, Aquaman, Cyborg and the Flash -- it may be too late to save the planet from an assault of catastrophic proportions. \{7C} (1 hr 59 min)",movie
-38,TNT,The Match: Champions for Change \{7C},none|sportsProg
-46,TNT,All Elite Wrestling: Dynamite \{7C},none|sportsProg
+28,TNT,NBA Basketball \{7C},none|sportsProg
+33,TNT,NBA Basketball \{7C},none|sportsProg
+38,TNT,"""Eagle Eye"" \{87} (2008) Shia LaBeouf, Michelle Monaghan. Jerry Shaw (Shia LaBeouf) and Rachel Holloman (Michelle Monaghan) are two strangers whose lives are suddenly thrown into turmoil by a mysterious woman they have never met. Threatening their lives and family, the unseen caller uses everyday technology to control their actions and push them into increasing danger. As events escalate, Jerry and Rachel become the country's most-wanted fugitives and must figure out what is happening to them. \{7C} (1 hr 58 min)",movie
+43,TNT,NCIS: New Orleans \{91} \{7C},none
+45,TNT,NCIS: New Orleans \{91} \{7C},none
 47,TNT,NCIS: New Orleans \{91} \{7C},none
-49,TNT,NCIS: New Orleans \{91} \{7C},none
-1,FX,Today Show \{91} \{7C},none
-2,FX,Introducing Crepe Erase Advanced Formula! \{91} \{7C},none
-3,FX,"""Smurfs: The Lost Village"" \{85} (2017) Demi Lovato, Rainn Wilson. Best friends Smurfette (Demi Lovato), Brainy (Danny Pudi), Clumsy (Jack McBrayer) and Hefty (Joe Manganiello) use a special map that guides them through the Forbidden Forest, an enchanted wonderland that's filled with magical creatures. Their adventure leads them on a course to discover the biggest secret in Smurf history as they race against time and the evil wizard Gargamel (Rainn Wilson) to find a mysterious village. \{91} \{7C} (1 hr 31 min)",movie
-7,FX,Mike & Molly \{91} \{7C},none
-8,FX,Mike & Molly \{91} \{7C},none
-9,FX,Mike & Molly \{91} \{7C},none
-10,FX,Mike & Molly \{91} \{7C},none
-11,FX,Mike & Molly \{91} \{7C},none
-12,FX,"""Captain Underpants: The First Epic Movie"" \{85} (2017) Kevin Hart, Ed Helms. George Beard and Harold Hutchins are two overly imaginative pranksters who spend hours in a treehouse creating comic books. When their mean principal threatens to separate them into different classes, the mischievous boys accidentally hypnotize him into thinking that he's a ridiculously enthusiastic, incredibly dimwitted superhero named Captain Underpants. \{91} \{7C} (1 hr 29 min)",movie
-16,FX,"""Smurfs: The Lost Village"" \{85} (2017) Demi Lovato, Rainn Wilson. Best friends Smurfette (Demi Lovato), Brainy (Danny Pudi), Clumsy (Jack McBrayer) and Hefty (Joe Manganiello) use a special map that guides them through the Forbidden Forest, an enchanted wonderland that's filled with magical creatures. Their adventure leads them on a course to discover the biggest secret in Smurf history as they race against time and the evil wizard Gargamel (Rainn Wilson) to find a mysterious village. \{91} \{7C} (1 hr 31 min)",movie
-20,FX,"""Ferdinand"" \{85} (2017) John Cena, Kate McKinnon. Ferdinand is a young bull who escapes from a training camp in rural Spain after his father never returns from a showdown with a matador. Adopted by a girl who lives on a farm, Ferdinand's peaceful existence comes crashing down when the authorities return him to his former captors. With help from a wisecracking goat and three hedgehogs, the giant but gentle bovine must find a way to break free before he squares off against El Primero, the famous bullfighter who never loses. \{91} \{7C} (1 hr 48 min)",movie
-25,FX,"""Minions"" \{85} (2015) Sandra Bullock, Jon Hamm. Evolving from single-celled yellow organisms at the dawn of time, Minions live to serve, but find themselves working for a continual series of unsuccessful masters, from T. Rex to Napoleon. Without a master to grovel for, the Minions fall into a deep depression. But one minion, Kevin, has a plan; accompanied by his pals Stuart and Bob, Kevin sets forth to find a new evil boss for his brethren to follow. Their search leads them to Scarlet Overkill, the world's first-ever super-villainess. \{91} \{7C} (1 hr 31 min)",movie
-29,FX,"""Despicable Me 3"" \{85} (2017) Steve Carell, Kristen Wiig. The mischievous Minions hope that Gru will return to a life of crime after the new boss of the Anti-Villain League fires him. Instead, Gru decides to remain retired and travel to Freedonia to meet his long-lost twin brother for the first time. The reunited siblings soon find themselves in an uneasy alliance to take down the elusive Balthazar Bratt, a former 1980s child star who seeks revenge against the world. \{91} \{7C} (1 hr 30 min)",movie
-33,FX,"""Minions"" \{85} (2015) Sandra Bullock, Jon Hamm. Evolving from single-celled yellow organisms at the dawn of time, Minions live to serve, but find themselves working for a continual series of unsuccessful masters, from T. Rex to Napoleon. Without a master to grovel for, the Minions fall into a deep depression. But one minion, Kevin, has a plan; accompanied by his pals Stuart and Bob, Kevin sets forth to find a new evil boss for his brethren to follow. Their search leads them to Scarlet Overkill, the world's first-ever super-villainess. \{91} \{7C} (1 hr 31 min)",movie
-37,FX,"""Pixels"" \{87} (2015) Adam Sandler, Kevin James. When aliens intercept video feeds of classic arcade games and misinterpret them as a declaration of war, they attack Earth, using the games as models. Knowing that he must employ a similar strategy, President Will Cooper (Kevin James) recruits his childhood pal, former video-game champ and home-theater installer Sam Brenner (Adam Sandler), to lead a team of old-school arcade players and a military specialist (Michelle Monaghan) in an all-out battle to save the planet. \{91} \{7C} (1 hr 46 min)",movie
-41,FX,Mr Inbetween \{A3} \{91} \{7C},none
-42,FX,( 2:34) Mr Inbetween \{A3} \{91} \{7C},none
-43,FX,( 3:07) Mr Inbetween \{A3} \{91} \{7C},none
-44,FX,( 3:41) Mr Inbetween \{A3} \{91} \{7C},none
-45,FX,( 4:13) Better Things \{A3} \{91} \{7C},none
-46,FX,( 4:49) FXM Presents \{91} \{7C},none
-47,FX,Paid Programming \{99} \{91} \{7C},none
-48,FX,Paid Programming \{99} \{91} \{7C},none
-49,FX,Paid Programming \{99} \{91} \{7C},none
-1,HLN,Forensic Files \{9B} \{7C},none
-2,HLN,Forensic Files \{9B} \{7C},none
-3,HLN,Forensic Files \{9B} \{7C},none
-4,HLN,Forensic Files \{9B} \{7C},none
-5,HLN,Forensic Files \{9B} \{7C},none
-6,HLN,Forensic Files \{9B} \{7C},none
-7,HLN,Forensic Files \{9B} \{7C},none
-8,HLN,Forensic Files \{9B} \{7C},none
-9,HLN,Forensic Files \{9B} \{7C},none
-10,HLN,Forensic Files \{9B} \{7C},none
-11,HLN,Forensic Files \{9B} \{7C},none
-12,HLN,Forensic Files \{9B} \{7C},none
-13,HLN,Forensic Files \{9B} \{7C},none
-14,HLN,Forensic Files \{9B} \{7C},none
-15,HLN,Forensic Files \{9B} \{7C},none
-16,HLN,Forensic Files \{9B} \{7C},none
-17,HLN,Forensic Files \{9B} \{7C},none
-18,HLN,Forensic Files \{9B} \{7C},none
-19,HLN,Forensic Files \{9B} \{7C},none
-20,HLN,Forensic Files \{9B} \{7C},none
-21,HLN,Forensic Files \{9B} \{7C},none
-22,HLN,Forensic Files \{9B} \{7C},none
-23,HLN,Forensic Files \{9B} \{7C},none
-24,HLN,Forensic Files \{9B} \{7C},none
-25,HLN,Forensic Files \{9B} \{7C},none
-26,HLN,Forensic Files \{9B} \{7C},none
-27,HLN,Forensic Files \{9B} \{7C},none
-28,HLN,Forensic Files \{9B} \{7C},none
-29,HLN,Forensic Files \{9B} \{7C},none
-30,HLN,Forensic Files \{9B} \{7C},none
-31,HLN,Forensic Files \{7C},none
+29,FX,"""Baywatch"" \{84} (2017) Dwayne Johnson, Zac Efron. When a dangerous crime wave hits the beach, the legendary Mitch Buchannon leads his elite squad of lifeguards on a mission to prove that you don't have to wear a badge to save the bay. Joined by a trio of hotshot recruits, including former Olympian Matt Brody, they ditch the surf and go deep under cover to take down a ruthless businesswoman whose devious plans threaten the future of the bay. \{91} \{7C} (1 hr 56 min)",movie
+34,FX,"""Baywatch"" \{84} (2017) Dwayne Johnson, Zac Efron. When a dangerous crime wave hits the beach, the legendary Mitch Buchannon leads his elite squad of lifeguards on a mission to prove that you don't have to wear a badge to save the bay. Joined by a trio of hotshot recruits, including former Olympian Matt Brody, they ditch the surf and go deep under cover to take down a ruthless businesswoman whose devious plans threaten the future of the bay. \{91} \{7C} (1 hr 56 min)",movie
+39,FX,Mike & Molly \{91} \{7C},none
+40,FX,Mike & Molly \{91} \{7C},none
+41,FX,Mike & Molly \{91} \{7C},none
+42,FX,Mike & Molly \{91} \{7C},none
+43,FX,"Earth Wind and Fire, O'Jays, Commodores \{91} \{7C}",none
+44,FX,"Total Gym; the most effective way to stay your best, without leaving home! \{91} \{7C}",none
+45,FX,PiYo Workout! \{91} \{7C},none
+46,FX,Oxygen Therapy Innovation \{91} \{7C},none
+47,FX,The Best Kept Secret To Air Fryer Cooking \{91} \{7C},none
+48,FX,Inogen Portable Oxygen - No More Tanks! \{91} \{7C},none
+27,HLN,Death Row Stories \{7C},none
+29,HLN,Death Row Stories \{7C},none
+31,HLN,Forensic Files \{9B} \{7C},none
 32,HLN,Forensic Files \{9B} \{7C},none
 33,HLN,Forensic Files \{9B} \{7C},none
 34,HLN,Forensic Files \{9B} \{7C},none
 35,HLN,Forensic Files \{9B} \{7C},none
 36,HLN,Forensic Files \{9B} \{7C},none
-37,HLN,Forensic Files \{9B} \{7C},none
-38,HLN,Forensic Files \{9B} \{7C},none
+37,HLN,Real Life Nightmare \{7C},none
 39,HLN,Forensic Files \{9B} \{7C},none
 40,HLN,Forensic Files \{9B} \{7C},none
 41,HLN,Forensic Files \{9B} \{7C},none
 42,HLN,Forensic Files \{9B} \{7C},none
 43,HLN,Forensic Files \{9B} \{7C},none
 44,HLN,Forensic Files \{9B} \{7C},none
-45,HLN,Forensic Files \{7C},none
-47,HLN,Forensic Files \{7C},none
-49,HLN,Forensic Files \{7C},none
-1,CNBC,Squawk Box \{7C},none
-7,CNBC,Squawk on the Street \{7C},none
-11,CNBC,Squawk Alley \{7C},none
-13,CNBC,Closing Bell \{91} \{7C},none
-17,CNBC,Shark Tank \{9B} \{91} \{7C},none
-19,CNBC,Shark Tank \{9B} \{91} \{7C},none
-21,CNBC,Shark Tank \{9B} \{91} \{7C},none
-23,CNBC,Shark Tank \{91} \{7C},none
-25,CNBC,Shark Tank \{9B} \{91} \{7C},none
+45,HLN,Forensic Files \{9B} \{7C},none
+46,HLN,Forensic Files \{9B} \{7C},none
+47,HLN,Forensic Files \{9B} \{7C},none
+48,HLN,Forensic Files \{9B} \{7C},none
 27,CNBC,The News With Shepard Smith \{7C},none
-29,CNBC,Deal or No Deal \{99} \{7C},none
-31,CNBC,Deal or No Deal \{99} \{7C},none
-33,CNBC,Deal or No Deal \{99} \{7C},none
-35,CNBC,Deal or No Deal \{99} \{7C},none
+29,CNBC,Shark Tank \{9B} \{91} \{7C},none
+31,CNBC,Shark Tank \{9B} \{91} \{7C},none
+32,CNBC,( 9:58) The Profit \{9B} \{7C},none
+33,CNBC,(10:04) Shark Tank \{9B} \{91} \{7C},none
+35,CNBC,(11:02) Shark Tank \{9B} \{91} \{7C},none
 37,CNBC,The News With Shepard Smith \{7C},none
-39,CNBC,American Greed \{9B} \{7C},none
-41,CNBC,Dateline \{91} \{7C},none
-43,CNBC,Dateline \{91} \{7C},none
+39,CNBC,The Profit \{9B} \{7C},none
+41,CNBC,Dateline \{9B} \{91} \{7C},none
+43,CNBC,Dateline \{9B} \{91} \{7C},none
 45,CNBC,The News With Shepard Smith \{7C},none
-47,CNBC,American Greed \{9B} \{7C},none
-49,CNBC,American Greed \{9B} \{7C},none
-1,TBN,Joyce Meyer Enjoying Everyday Life \{99} \{91} \{7C},none
-2,TBN,Andrew Wommack: Gospel Truth \{99} \{91} \{7C},none
-3,TBN,Turning Point with Dr. David Jeremiah \{99} \{91} \{7C},none
-4,TBN,Joseph Prince \{91} \{7C},none
-5,TBN,Dr. Robert Jeffress \{99} \{7C},none
-6,TBN,Joyce Meyer Enjoying Everyday Life \{99} \{91} \{7C},none
-7,TBN,Creflo Dollar \{99} \{7C},none
-8,TBN,Hagee Ministries \{99} \{7C},none
-9,TBN,Joel Osteen \{9B} \{7C},none
-10,TBN,Allen Jackson Ministries \{99} \{7C},none
-11,TBN,Steven Furtick \{99} \{7C},none
-12,TBN,Kingdom Connection With Jentezen Franklin \{7C},none
-13,TBN,Dr. Robert Jeffress \{99} \{7C},none
-14,TBN,Pastor Robert Morris Ministries \{99} \{7C},none
-15,TBN,( 1:01) Joyce Meyer Enjoying Everyday Life \{99} \{91} \{7C},none
-15,TBN,( 1:29) To Be Announced,none
-17,TBN,Life Today With James Robison \{9B} \{91} \{7C},none
-18,TBN,Gaither Gospel Hour \{99} \{91} \{7C},none
-19,TBN,The 700 Club \{91} \{7C},none
-21,TBN,Hagee Ministries \{99} \{7C},none
-23,TBN,Praise \{99} \{7C},none
-25,TBN,The Eric Metaxas Radio Show \{99} \{7C},none
-26,TBN,Empty Out the Negative \{99} \{7C},none
-27,TBN,Jordan Rubin: Multi Collagen Protein \{99} \{7C},none
+47,CNBC,Worldwide Exchange \{7C},none
+27,TBN,The Christmas Experience \{9B} \{7C},none
 28,TBN,The Potter's Touch \{99} \{7C},none
-29,TBN,To Be Announced,none
-31,TBN,Michael W. Smith: Waymaker \{99} \{7C},none
-33,TBN,To Be Announced,none
-35,TBN,Michael W. Smith: Waymaker \{99} \{7C},none
-37,TBN,The Potter's Touch \{99} \{7C},none
-38,TBN,End of the Age \{99} \{7C},none
-39,TBN,Jordan Rubin: CBD Pills \{99} \{7C},none
-42,TBN,Treasures \{9B} \{7C},none
-43,TBN,Gospel Worship Experience \{99} \{7C},none
-44,TBN,Xtreme Life \{99} \{7C},none|sportsProg
-45,TBN,Behind the Scenes \{99} \{7C},none
-46,TBN,Jordan Rubin: Multi Collagen Protein \{99} \{7C},none
-47,TBN,Binions Dwell \{99} \{7C},none
-48,TBN,God Came Near \{99} \{7C},none
-3,CSPAN,Washington Journal \{7C},none
-9,CSPAN,Public Affairs Events \{91} \{7C},none
-20,CSPAN,Public Affairs Events \{91} \{7C},none
+29,TBN,This Is How We Celebrate With Javen \{99} \{7C},none
+31,TBN,Joyce Meyer Enjoying Everyday Life \{99} \{91} \{7C},none
+32,TBN,Living Proof With Beth Moore \{99} \{7C},none
+33,TBN,Better Together \{99} \{7C},none
+34,TBN,Christine Caine \{99} \{7C},none
+35,TBN,Javen Christmas Special \{99} \{7C},none
+37,TBN,Joseph Prince \{91} \{7C},none
+38,TBN,Michael Youssef \{99} \{7C},none
+39,TBN,Sekulow \{9B} \{7C},none
+40,TBN,Christine Caine \{99} \{7C},none
+41,TBN,Jewish Voice with Jonathan Bernis \{99} \{7C},none
+42,TBN,Jordan Rubin: CBD Powder \{99} \{7C},none
+43,TBN,Because of Bethlehem \{99} \{7C},none
+45,TBN,Christine Caine \{99} \{7C},none
+46,TBN,Access 360 \{99} \{7C},none
+47,TBN,Jordan Rubin: Multi Collagen Protein \{99} \{7C},none
+48,TBN,Steven Furtick \{99} \{7C},none
 31,CSPAN,Politics and Public Policy Today \{7C},none
-34,CSPAN,The Communicators \{7C},none
-34,CSPAN,(10:58) Politics and Public Policy Today \{7C},none
+33,CSPAN,Hearing on COVID-19 Impact on Live Event Entertainment Industry \{7C},none
 37,CSPAN,Politics and Public Policy Today \{7C},none
-43,CSPAN,Public Affairs Events \{91} \{7C},none
-1,EDAC00,Educational Access,none
-9,EDAC00,Educational Access,none
-17,EDAC00,Educational Access,none
-25,EDAC00,Educational Access,none
+43,CSPAN,Hearing on COVID-19 Impact on Live Event Entertainment Industry \{7C},none
+47,CSPAN,Public Affairs Events \{91} \{7C},none
 33,EDAC00,Educational Access,none
 41,EDAC00,Educational Access,none
-49,EDAC00,Educational Access,none
-1,WBPH,Song & Scripture,none
-3,WBPH,WatchWord,none
-4,WBPH,Climbing Higher \{7C},none
-5,WBPH,Song & Scripture,none
-6,WBPH,Bethlehem Glory,none
-7,WBPH,Song & Scripture,none
-8,WBPH,Song & Scripture,none
-9,WBPH,Song & Scripture,none
-11,WBPH,Your Health With Dr. Richard & Cindy Becker \{99},none
-13,WBPH,Song & Scripture,none
-15,WBPH,Dr. Robert Jeffress: Pathway to Victory \{99} \{91} \{7C},none
-16,WBPH,PowerPoint \{9B},none
-17,WBPH,Bethlehem Glory,none
-18,WBPH,Song & Scripture,none
-19,WBPH,Gaither Homecoming \{99} \{7C},none
-21,WBPH,WatchWord,none
-22,WBPH,Song & Scripture,none
-24,WBPH,Bethlehem Glory,none
-25,WBPH,CBN Newswatch,none
-26,WBPH,69 News: Edición en Español \{7C},none
-27,WBPH,Digging for Truth,none
-28,WBPH,Origins,none
-29,WBPH,Joe Watkins: State of Independence,none
+27,WBPH,Gaither Homecoming \{99} \{7C},none
+29,WBPH,Stand in the Gap,none
 30,WBPH,Face the Issues,none
 31,WBPH,Your Health With Dr. Richard & Cindy Becker \{99},none
-33,WBPH,The Christian and The Culture,none
+33,WBPH,Today's News & Biblical Views,none
 34,WBPH,CBN Newswatch,none
 35,WBPH,Song & Scripture,none
 37,WBPH,Song & Scripture,none
@@ -1078,201 +528,71 @@ timeslot,sourceIdentifier,programName,flags
 43,WBPH,Song & Scripture,none
 45,WBPH,Song & Scripture,none
 47,WBPH,Song & Scripture,none
-49,WBPH,Song & Scripture,none
-1,EDAC02,Educational Access,none
-9,EDAC02,Educational Access,none
-17,EDAC02,Educational Access,none
-25,EDAC02,Educational Access,none
+48,WBPH,WatchWord,none
 33,EDAC02,Educational Access,none
 41,EDAC02,Educational Access,none
-49,EDAC02,Educational Access,none
-1,CCPTV3,Aerobics,none
-3,CCPTV3,Show Off,none
-4,CCPTV3,Burton Klein Speaks,none
-5,CCPTV3,Bike On,none|sportsProg
-7,CCPTV3,Entre Nosotros,none
-8,CCPTV3,"Classroom Close-up, NJ \{7C}",none
-9,CCPTV3,Tapestry of Life,none
-11,CCPTV3,The Chefs Cook!,none
-13,CCPTV3,Aerobics,none
-15,CCPTV3,Focal Point,none
-15,CCPTV3,( 1:24) Channel Generic Promo,none
-15,CCPTV3,( 1:25) CCPTV53,none
-16,CCPTV3,Strange College,none
-16,CCPTV3,( 1:59) Channel Emmy Promo,none
-17,CCPTV3,The Chefs Cook!,none
-19,CCPTV3,Bike On,none|sportsProg
-20,CCPTV3,( 3:56) Who Is Among Us? (Halloween),none
-20,CCPTV3,( 3:59) Channel Generic Promo,none
-21,CCPTV3,Car Corner,none
-22,CCPTV3,( 4:59) Channel Emmy Promo,none
-23,CCPTV3,Focal Point,none
-23,CCPTV3,( 5:24) Channel Generic Promo,none
-23,CCPTV3,( 5:25) Halloween Hall,none
-24,CCPTV3,Strange College,none
-25,CCPTV3,Entre Nosotros,none
-26,CCPTV3,"Classroom Close-up, NJ \{7C}",none
-26,CCPTV3,( 6:57) Trick or Treat Candy Chut,none
 27,CCPTV3,Tapestry of Life,none
-28,CCPTV3,( 7:58) Halloween Scream,none
-29,CCPTV3,Cinema Bytes,none
-29,CCPTV3,( 8:27) Halloween Scream,none
-30,CCPTV3,The Market,none
+29,CCPTV3,Tapestry of Life,none
 31,CCPTV3,Strange College,none
 32,CCPTV3,Strange College,none
 33,CCPTV3,Drop the Mic,none
-34,CCPTV3,(10:57) Who Is Among Us? (Halloween),none
 35,CCPTV3,Drop the Mic,none
 37,CCPTV3,Car Corner,none
 39,CCPTV3,Focal Point,none
-39,CCPTV3,( 1:21) Trick or Treat Candy Chut,none
-39,CCPTV3,( 1:24) Halloween Hall,none
-40,CCPTV3,Strange College,none
+39,CCPTV3,( 1:21) CCPTV53,none
 41,CCPTV3,Tapestry of Life,none
-42,CCPTV3,( 2:58) Halloween Scream,none
-43,CCPTV3,Philadelphia Cultural For,none
-45,CCPTV3,Cinema Bytes,none
-46,CCPTV3,The Market,none
-46,CCPTV3,( 4:58) Halloween Scream,none
-47,CCPTV3,Academic Dialogues,none
-48,CCPTV3,( 5:59) Channel Generic Promo,none
-49,CCPTV3,Yoga,none
-1,DUTV54,Educational Television From Drexel University,none
-9,DUTV54,Educational Television From Drexel University,none
-17,DUTV54,Educational Television From Drexel University,none
-25,DUTV54,Educational Television From Drexel University,none
+45,CCPTV3,Philadelphia Cultural For,none
+48,CCPTV3,Fox Rothschild Center for,none
 33,DUTV54,Educational Television From Drexel University,none
 41,DUTV54,Educational Television From Drexel University,none
-49,DUTV54,Educational Television From Drexel University,none
-1,LSUNIT,LaSalle University TV,none
-9,LSUNIT,LaSalle University TV,none
-17,LSUNIT,LaSalle University TV,none
-25,LSUNIT,LaSalle University TV,none
 33,LSUNIT,LaSalle University TV,none
 41,LSUNIT,LaSalle University TV,none
-49,LSUNIT,LaSalle University TV,none
-1,APL,Tanked \{9B} \{91} \{7C},none
-3,APL,Tanked \{9B} \{91} \{7C},none
-5,APL,Tanked \{9B} \{91} \{7C},none
-7,APL,Tanked \{9B} \{91} \{7C},none
-9,APL,Tanked \{9B} \{91} \{7C},none
-11,APL,Tanked \{9B} \{91} \{7C},none
-13,APL,Tanked \{9B} \{91} \{7C},none
-15,APL,Tanked \{9B} \{91} \{7C},none
-17,APL,Tanked \{9B} \{91} \{7C},none
-19,APL,Tanked \{9B} \{91} \{7C},none
-21,APL,Tanked \{9B} \{91} \{7C},none
-23,APL,Tanked \{9B} \{91} \{7C},none
-25,APL,Tanked: Tanksgiving \{9B} \{91} \{7C},none
-27,APL,Tanked: Tanksgiving \{9B} \{91} \{7C},none
-29,APL,Tanked: Tanksgiving \{9B} \{91} \{7C},none
-31,APL,Tanked: Tanksgiving \{9B} \{91} \{7C},none
-35,APL,Tanked: Tanksgiving \{9B} \{91} \{7C},none
-37,APL,Tanked: Tanksgiving \{9B} \{91} \{7C},none
-39,APL,Tanked: Tanksgiving \{9B} \{91} \{7C},none
-43,APL,Tanked: Tanksgiving \{9B} \{91} \{7C},none
-45,APL,Tanked \{9B} \{91} \{7C},none
-47,APL,Tanked \{9B} \{91} \{7C},none
-49,APL,Pit Bulls and Parolees \{9B} \{91} \{7C},none
-1,OXYGEN,The Real Murders of Orange County \{9B} \{7C},none
-3,OXYGEN,The Real Murders of Orange County \{9B} \{7C},none
-5,OXYGEN,Injustice With Nancy Grace \{7C},none
-7,OXYGEN,Killer Siblings \{7C},none
-9,OXYGEN,Killer Siblings \{7C},none
-11,OXYGEN,Killer Siblings \{7C},none
-13,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-15,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-17,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-19,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-21,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-23,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-25,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-27,OXYGEN,Dateline: Secrets Uncovered \{9B},none
-31,OXYGEN,Homicide for the Holidays \{7C},none
-33,OXYGEN,Homicide for the Holidays \{7C},none
-35,OXYGEN,Homicide for the Holidays \{7C},none
-37,OXYGEN,Buried in the Backyard \{7C},none
-39,OXYGEN,Buried in the Backyard \{7C},none
-41,OXYGEN,License to Kill \{9B} \{7C},none
-43,OXYGEN,License to Kill \{9B} \{7C},none
-45,OXYGEN,License to Kill \{9B} \{7C},none
-47,OXYGEN,License to Kill \{9B} \{7C},none
-49,OXYGEN,Dateline \{91} \{7C},none
-1,WFMZ,69 News Sunrise - 6:00am \{7C},none
-2,WFMZ,69 News Sunrise - 6:30am \{7C},none
-3,WFMZ,69 News Sunrise - 7:00am \{7C},none
-4,WFMZ,69 News Sunrise - 7:30am \{7C},none
-5,WFMZ,69 News Sunrise - 8:00am \{7C},none
-6,WFMZ,69 News Sunrise - 8:30am \{7C},none
-7,WFMZ,69 News at 9:00 \{7C},none
-9,WFMZ,Rachael Ray \{99} \{91} \{7C},none
-11,WFMZ,Hot Bench \{99} \{91} \{7C},none
-12,WFMZ,Hot Bench \{99} \{91} \{7C},none
-13,WFMZ,69 News at Noon \{7C},none
-14,WFMZ,Judge Judy \{9B} \{91} \{7C},none
-15,WFMZ,Last Man Standing \{9B} \{91} \{7C},none
-16,WFMZ,Last Man Standing \{9B} \{91} \{7C},none
-17,WFMZ,RightThisMinute \{91} \{7C},none
-18,WFMZ,RightThisMinute \{91} \{7C},none
-19,WFMZ,Dateline \{9B} \{91} \{7C},none
-21,WFMZ,69 News at 4:00 \{7C},none
-23,WFMZ,69 News at 5:00 \{7C},none
-24,WFMZ,69 News Berks Edition \{7C},none
-25,WFMZ,69 News at 6:00 \{7C},none
-26,WFMZ,Judge Judy \{9B} \{91} \{7C},none
+27,APL,Walking The Nile \{91} \{7C},none
+29,APL,Walking with Elephants \{9B} \{91} \{7C},none
+31,APL,Walking with Elephants \{9B} \{91} \{7C},none
+33,APL,Walking with Elephants \{9B} \{91} \{7C},none
+35,APL,Lone Star Law \{91} \{7C},none
+37,APL,Walking with Elephants \{9B} \{91} \{7C},none
+39,APL,Walking with Elephants \{9B} \{91} \{7C},none
+41,APL,Walking with Elephants \{9B} \{91} \{7C},none
+43,APL,Lone Star Law \{91} \{7C},none
+45,APL,Lone Star Law \{91} \{7C},none
+47,APL,Lone Star Law \{91} \{7C},none
+27,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
+29,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
+31,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
+33,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
+35,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
+37,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
+39,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
+41,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
+43,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
+45,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
+47,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
 27,WFMZ,Judge Judy \{9B} \{91} \{7C},none
 28,WFMZ,Judge Judy \{9B} \{91} \{7C},none
 29,WFMZ,The Doctors \{9B} \{91} \{7C},none
-31,WFMZ,Dr. Phil \{9B} \{91} \{7C},none
-33,WFMZ,69 News at 10:00 \{7C},none
-34,WFMZ,69 News Berks Edition \{7C},none
+31,WFMZ,69 News Election Central,none
 35,WFMZ,69 News: Edicion en Espanol \{7C},none
-36,WFMZ,"60s POP, ROCK & SOUL",none
-37,WFMZ,Promote Your Immune System with Vitamin D,none
+36,WFMZ,Hempvana Gold Pain Relief Cream,none
+37,WFMZ,Remove THE VIRUS from Your Home!,none
 38,WFMZ,"Smile Healthy Philadelphia, With ClearChoice Dental Implant Centers",none
-39,WFMZ,69 News at 10:00 \{7C},none
-40,WFMZ,69 News Berks Edition \{7C},none
+39,WFMZ,The First 48 \{9B} \{7C},none
 41,WFMZ,The First 48 \{7C},none
-43,WFMZ,Bloodline Detectives \{9B} \{91} \{7C},none
-45,WFMZ,Forensic Files \{91} \{7C},none
-46,WFMZ,MyDestination.TV \{9B} \{91} \{7C},none
-47,WFMZ,Promote Your Immune System with Vitamin D,none
-48,WFMZ,Relief from Inflammation,none
-49,WFMZ,Awesome Adventures \{99} \{91} \{7C},none
-1,SYFY,The Twilight Zone \{9B} \{91} \{7C},none
-2,SYFY,The Twilight Zone \{9B} \{91} \{7C},none
-3,SYFY,The Twilight Zone \{9B} \{91} \{7C},none
-4,SYFY,"""A Nightmare on Elm Street 4: The Dream Master"" \{84} (1988) Robert Englund, Lisa Wilcox. Grotesque Freddy Krueger (Robert Englund) gives some more suburban teenagers something to dream about. \{7C} (1 hr 33 min)",movie
-8,SYFY,"""A Nightmare on Elm Street 5: The Dream Child"" \{84} (1989) Robert Englund, Lisa Wilcox. The fifth installment of the popular franchise focuses on Alice (Lisa Wilcox), a survivor of the fourth, who believes Freddy Krueger (Robert Englund) has been eliminated for good. She optimistically hopes to start a life with fellow survivor Dan (Danny Hassel). The nightmares begin soon enough, though, and Alice learns she is pregnant. When her friends start dying, Alice suspects that Freddy is using the fetus within her as a weapon. Can she fight the demon while protecting her unborn child? \{7C} (1 hr 30 min)",movie
-12,SYFY,"""The Legend of Hercules"" \{87} (2014) Kellan Lutz, Scott Adkins. As the son of Zeus, king of the gods, and a mortal woman, Hercules (Kellan Lutz) is blessed with extraordinary strength. Caught in a forbidden love, Hercules is exiled by his stepfather, the king, and sold into slavery. The legendary strongman endures harrowing battles and death matches in the gladiators arena, and must use his formidable powers to fight his way back to his rightful kingdom, overthrow its traitorous ruler and restore peace to the land. \{7C} (1 hr 38 min)",movie
-16,SYFY,"( 1:31) ""The Mortal Instruments: City of Bones"" \{87} (2013) Lily Collins, Jamie Campbell Bower. In New York City, a seemingly ordinary teenager named Clary Fray (Lily Collins) learns that she is descended from a line of Shadowhunters -- half-angel warriors who protect humanity from evil forces. After her mother (Lena Headey) disappears, Clary joins forces with a group of Shadowhunters and enters Downworld, an alternate realm filled with demons, vampires and a host of other creatures. Clary and her companions must find and protect an ancient cup that holds the key to her mother's future. \{7C} (2 hr 10 min)",movie
-21,SYFY,"( 4:28) ""Maleficent"" \{85} (2014) Angelina Jolie, Elle Fanning. As a beautiful young woman of pure heart, Maleficent (Angelina Jolie) has an idyllic life in a forest kingdom. When an invading army threatens the land, Maleficent rises up to become its fiercest protector. However, a terrible betrayal hardens her heart and twists her into a creature bent on revenge. She engages in an epic battle with the invading king's successor, then curses his newborn daughter, Aurora -- realizing only later that the child holds the key to peace in the kingdom. \{7C} (1 hr 38 min)",movie
-26,SYFY,"""The Fifth Element"" \{87} (1997) Bruce Willis, Gary Oldman. In the 23rd century, a New York City cabbie, Korben Dallas (Bruce Willis), finds the fate of the world in his hands when Leeloo (Milla Jovovich) falls into his cab. As the embodiment of the fifth element, Leeloo needs to combine with the other four to keep the approaching Great Evil from destroying the world. Together with Father Vito Cornelius (Ian Holm) and zany broadcaster Ruby Rhod (Chris Tucker), Dallas must race against time and the wicked industrialist Zorg (Gary Oldman) to save humanity. \{7C} (2 hr 7 min)",movie
-31,SYFY,"""Doctor Strange"" \{87} (2016) Benedict Cumberbatch, Chiwetel Ejiofor. Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces bent on destroying reality. Before long, Strange is forced to choose between his life of fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence. \{7C} (1 hr 55 min)",movie
-36,SYFY,(11:35) The Movie Show \{A3} \{7C},none
-37,SYFY,(12:05) A Very Special G4 Holiday Reunion Special \{7C},none
+43,WFMZ,Forensic Files \{9B} \{91} \{7C},none
+44,WFMZ,Justice for All With Judge Cristina Pérez \{9B} \{91} \{7C},none
+45,WFMZ,Pawn Stars \{9B} \{7C},none
+46,WFMZ,Pawn Stars \{9B} \{7C},none
+47,WFMZ,69 News at Sunrise - 5:00am \{7C},none
+48,WFMZ,69 News at Sunrise - 5:30am \{7C},none
+31,SYFY,"""The Goonies"" \{85} (1985) Sean Astin, Josh Brolin. When two brothers find out they might lose their house they are desperate to find a way to keep their home. They find a treasure map and bring some friends along to find it. They are all out looking for the ""X"" and trying to get away from a group of bad guys who also want the treasure. \{7C} (1 hr 51 min)",movie
+36,SYFY,(11:33) Futurama \{9B} \{91} \{7C},none
+37,SYFY,(12:04) Futurama \{9B} \{91} \{7C},none
+38,SYFY,(12:35) Futurama \{9B} \{91} \{7C},none
 39,SYFY,( 1:05) Futurama \{9B} \{91} \{7C},none
 40,SYFY,( 1:36) Futurama \{9B} \{91} \{7C},none
-41,SYFY,( 2:06) Futurama \{9B} \{91} \{7C},none
-42,SYFY,( 2:36) Futurama \{9B} \{91} \{7C},none
-43,SYFY,"( 3:06) ""The Mortal Instruments: City of Bones"" \{87} (2013) Lily Collins, Jamie Campbell Bower. In New York City, a seemingly ordinary teenager named Clary Fray (Lily Collins) learns that she is descended from a line of Shadowhunters -- half-angel warriors who protect humanity from evil forces. After her mother (Lena Headey) disappears, Clary joins forces with a group of Shadowhunters and enters Downworld, an alternate realm filled with demons, vampires and a host of other creatures. Clary and her companions must find and protect an ancient cup that holds the key to her mother's future. \{7C} (2 hr 10 min)",movie
-49,SYFY,The Power of Fein!,none
-1,WPPX,The Key of David \{99} \{91} \{7C},none
-2,WPPX,Through the Bible With Les Feldick \{99} \{91} \{7C},none
-3,WPPX,Finding Stuff Out \{90} \{91} \{7C},none
-4,WPPX,Finding Stuff Out \{90} \{91} \{7C},none
-5,WPPX,Animal Science \{99} \{91} \{7C},none
-6,WPPX,Animal Science \{99} \{91} \{7C},none
-7,WPPX,Law & Order \{91} \{7C},none
-9,WPPX,Law & Order \{91} \{7C},none
-11,WPPX,Criminal Minds \{91} \{7C},none
-13,WPPX,Criminal Minds \{91} \{7C},none
-15,WPPX,Criminal Minds \{91} \{7C},none
-17,WPPX,Criminal Minds \{91} \{7C},none
-19,WPPX,Criminal Minds \{91} \{7C},none
-21,WPPX,Criminal Minds \{91} \{7C},none
-23,WPPX,Criminal Minds \{91} \{7C},none
-25,WPPX,Criminal Minds \{91} \{7C},none
+41,SYFY,"( 2:07) ""Space Jam"" \{85} (1996) Michael Jordan, Wayne Knight. Swackhammer (Danny DeVito), an evil alien theme park owner, needs a new attraction at Moron Mountain. When his gang, the Nerdlucks, heads to Earth to kidnap Bugs Bunny (Billy West) and the Looney Tunes, Bugs challenges them to a basketball game to determine their fate. The aliens agree, but they steal the powers of NBA basketball players, including Larry Bird (Larry Bird) and Charles Barkley (Charles Barkley) -- so Bugs gets some help from superstar Michael Jordan (Michael Jordan). \{7C} (1 hr 27 min)",movie
+45,SYFY,"""A Nightmare on Elm Street 4: The Dream Master"" \{84} (1988) Robert Englund, Lisa Wilcox. Grotesque Freddy Krueger (Robert Englund) gives some more suburban teenagers something to dream about. \{7C} (1 hr 33 min)",movie
 27,WPPX,Criminal Minds \{91} \{7C},none
 29,WPPX,Criminal Minds \{91} \{7C},none
 31,WPPX,Criminal Minds \{91} \{7C},none
@@ -1282,49 +602,25 @@ timeslot,sourceIdentifier,programName,flags
 39,WPPX,Law & Order \{91} \{7C},none
 41,WPPX,Law & Order \{91} \{7C},none
 43,WPPX,"Achieve flawless, airbrushed, porcelain perfection with Luminess Air! \{91} \{7C}",none
-44,WPPX,Latest cyberthreat is stealing your home equity. Protect Your Home! \{91} \{7C},none
-45,WPPX,Did Talcum Powder Cause Your Cancer? \{91} \{7C},none
-46,WPPX,Mike Huckabee On Christians and Jews \{91} \{7C},none
-47,WPPX,Inspiration Today Camp Meeting \{99} \{91} \{7C},none
-49,WPPX,Paid Programming \{99} \{91} \{7C},none
-1,GOAC03,Government Access,none
-9,GOAC03,Government Access,none
-17,GOAC03,Government Access,none
-25,GOAC03,Government Access,none
+44,WPPX,Paid Programming \{99} \{91} \{7C},none
+45,WPPX,Dr. Ho's Total Body Relief \{91} \{7C},none
+46,WPPX,U-Box by U-Haul Containers for Moving & Storage \{91} \{7C},none
+47,WPPX,Oxygen Therapy Innovation \{91} \{7C},none
+48,WPPX,Latest cyberthreat is stealing your home equity. Protect Your Home! \{91} \{7C},none
 33,GOAC03,Government Access,none
 41,GOAC03,Government Access,none
-49,GOAC03,Government Access,none
-1,GOAC04,Government Access,none
-9,GOAC04,Government Access,none
-17,GOAC04,Government Access,none
-25,GOAC04,Government Access,none
 33,GOAC04,Government Access,none
 41,GOAC04,Government Access,none
-49,GOAC04,Government Access,none
-1,PUAC06,Public Access,none
-9,PUAC06,Public Access,none
-17,PUAC06,Public Access,none
-25,PUAC06,Public Access,none
 33,PUAC06,Public Access,none
 41,PUAC06,Public Access,none
-49,PUAC06,Public Access,none
-1,MTV,Ridiculousness \{91} \{7C},none
-2,MTV,Ridiculousness \{91} \{7C},none
-3,MTV,Ridiculousness \{91} \{7C},none
-4,MTV,Ridiculousness \{91} \{7C},none
-5,MTV,Ridiculousness \{91} \{7C},none
-6,MTV,Ridiculousness \{91} \{7C},none
-7,MTV,Ridiculousness \{91} \{7C},none
-8,MTV,Ridiculousness \{91} \{7C},none
-9,MTV,Ridiculousness \{91} \{7C},none
-10,MTV,Ridiculousness \{91} \{7C},none
-11,MTV,Ridiculousness \{91} \{7C},none
-12,MTV,"""Rush Hour"" \{87} (1998) Jackie Chan, Chris Tucker. When a Chinese diplomat's daughter is kidnapped in Los Angeles, he calls in Hong Kong Detective Inspector Lee (Jackie Chan) to assist the FBI with the case. But the FBI doesn't want anything to do with Lee, and they dump him off on the LAPD, who assign wisecracking Detective James Carter (Chris Tucker) to watch over him. Although Lee and Carter can't stand each other, they choose to work together to solve the case on their own when they figure out they've been ditched by both the FBI and police. \{91} \{7C} (1 hr 38 min)",movie
-16,MTV,"( 1:45) ""Rush Hour 2"" \{87} (2001) Jackie Chan, Chris Tucker. After an explosion at the US Embassy in Hong Kong kills two customs agents investigating currency smuggling, Inspector Lee (Jackie Chan) and James Carter (Chris Tucker) search for the mastermind. Ricky Tan (John Lone), head of the Fu-Cang-Long Triad, sends out his minions to insure that Carter and Lee don't solve the case. \{91} \{7C} (1 hr 30 min)",movie
-20,MTV,"( 3:45) ""Rush Hour 3"" \{87} (2007) Jackie Chan, Chris Tucker. East meets West again when the assassination of Ambassador Han leads to the reunion of Lee (Jackie Chan) and Carter (Chris Tucker). In Paris, the pair must stay one step ahead of Chinese gangsters, and Lee's childhood friend (Hiroyuki Sanada), as they track down an envelope containing the identity of a powerful crime lord. \{91} \{7C} (1 hr 31 min)",movie
-24,MTV,"( 5:45) ""Rush Hour"" \{87} (1998) Jackie Chan, Chris Tucker. When a Chinese diplomat's daughter is kidnapped in Los Angeles, he calls in Hong Kong Detective Inspector Lee (Jackie Chan) to assist the FBI with the case. But the FBI doesn't want anything to do with Lee, and they dump him off on the LAPD, who assign wisecracking Detective James Carter (Chris Tucker) to watch over him. Although Lee and Carter can't stand each other, they choose to work together to solve the case on their own when they figure out they've been ditched by both the FBI and police. \{91} \{7C} (1 hr 38 min)",movie
-29,MTV,"""Rush Hour 2"" \{87} (2001) Jackie Chan, Chris Tucker. After an explosion at the US Embassy in Hong Kong kills two customs agents investigating currency smuggling, Inspector Lee (Jackie Chan) and James Carter (Chris Tucker) search for the mastermind. Ricky Tan (John Lone), head of the Fu-Cang-Long Triad, sends out his minions to insure that Carter and Lee don't solve the case. \{91} \{7C} (1 hr 30 min)",movie
-33,MTV,"""Rush Hour 3"" \{87} (2007) Jackie Chan, Chris Tucker. East meets West again when the assassination of Ambassador Han leads to the reunion of Lee (Jackie Chan) and Carter (Chris Tucker). In Paris, the pair must stay one step ahead of Chinese gangsters, and Lee's childhood friend (Hiroyuki Sanada), as they track down an envelope containing the identity of a powerful crime lord. \{91} \{7C} (1 hr 31 min)",movie
+27,MTV,Deliciousness \{91} \{7C},none
+28,MTV,Deliciousness \{91} \{7C},none
+29,MTV,Teen Mom 2 \{91} \{7C},none
+31,MTV,Catfish: The TV Show \{91} \{7C},none
+33,MTV,Deliciousness \{91} \{7C},none
+34,MTV,Deliciousness \{91} \{7C},none
+35,MTV,Ridiculousness \{91} \{7C},none
+36,MTV,Ridiculousness \{91} \{7C},none
 37,MTV,Ridiculousness \{91} \{7C},none
 38,MTV,Ridiculousness \{91} \{7C},none
 39,MTV,Ridiculousness \{91} \{7C},none
@@ -1337,254 +633,129 @@ timeslot,sourceIdentifier,programName,flags
 46,MTV,Ridiculousness \{91} \{7C},none
 47,MTV,Ridiculousness \{91} \{7C},none
 48,MTV,Ridiculousness \{91} \{7C},none
-49,MTV,Catfish: The TV Show \{91} \{7C},none
-1,TCM,"""The Lady Vanishes"" (1938) Margaret Lockwood, Michael Redgrave. On a train headed for England a group of travelers is delayed by an avalanche. Holed up in a hotel in a fictional European country, young Iris (Margaret Lockwood) befriends elderly Miss Froy (Dame May Whitty). When the train resumes, Iris suffers a bout of unconsciousness and wakes to find the old woman has disappeared. The other passengers ominously deny Miss Froy ever existed, so Iris begins to investigate with another traveler (Michael Redgrave) and, as the pair sleuth, romantic sparks fly. \{7C} (1 hr 37 min)",movie
-4,TCM,"( 7:45) ""Strangers on a Train"" \{85} (1951) Robert Walker, Farley Granger. In Alfred Hitchcock's adaptation of Patricia Highsmith's thriller, tennis star Guy Haines (Farley Granger) is enraged by his trampy wife's refusal to finalize their divorce so he can wed senator's daughter Anne (Ruth Roman). He strikes up a conversation with a stranger, Bruno Anthony (Robert Walker), and unwittingly sets in motion a deadly chain of events. Psychopathic Bruno kills Guy's wife, then urges Guy to reciprocate by killing Bruno's father. Meanwhile, Guy is murder suspect number one. \{7C} (1 hr 41 min)",movie
-8,TCM,"""Saboteur"" \{85} (1942) Robert Cummings, Priscilla Lane. Factory worker Barry Kane (Robert Cummings) is wrongfully accused of setting a deadly fire at an airplane plant in an apparent act of sabotage. Kane believes that the fire was set by another worker (Norman Lloyd), and he travels across the country to find the mysterious saboteur. Along the way he is forced to take Patricia Martin (Priscilla Lane) hostage, but as he begins to earn her trust, she turns from an unwilling captive to a willing accomplice in his quest to help clear his name. \{7C} (1 hr 48 min)",movie
-12,TCM,"(11:45) ""Torn Curtain"" \{85} (1966) Paul Newman, Julie Andrews. American physicist Michael Armstrong (Paul Newman) shocks his friends and family by defecting to East Germany to work with the Soviets during the height of the Cold War. Even his fiancée (Julie Andrews) is surprised by the move, but when she follows him behind the Iron Curtain, she discovers that her husband-to-be isn't a spy, but a double agent working to discover Soviet nuclear secrets. As they plot a way to escape back to America, his cover is blown, putting both of their lives in jeopardy. \{7C} (2 hr 8 min)",movie
-17,TCM,"""Marnie"" \{85} (1964) Tippi Hedren, Sean Connery. Mark Rutland (Sean Connery) is a customer of one Mr. Strutt, whose business was robbed by his secretary, the mysterious Marnie Edgar (Tippi Hedren). When Marnie applies for a job with Mark, with the intention of stealing from him, Mark -- who is obsessively in love with her -- blackmails her into marrying him. However, he soon discovers that she has severe psychological issues regarding men, thunderstorms and the color red, and resolves to help her come to terms with her past trauma. \{7C} (2 hr 9 min)",movie
-21,TCM,"( 4:15) ""The Trouble With Harry"" \{85} (1955) Edmund Gwenn, Shirley MacLaine. When a local man's corpse appears on a nearby hillside, no one is quite sure what happened to him. Many of the town's residents secretly wonder if they are responsible, including the man's ex-wife, Jennifer (Shirley MacLaine), and Capt. Albert Wiles (Edmund Gwenn), a retired seaman who was hunting in the woods where the body was found. As the no-nonsense sheriff (Royal Dano) gets involved and local artist Sam Marlowe (John Forsythe) offers his help, the community slowly unravels the mystery. \{7C} (1 hr 39 min)",movie
-25,TCM,"""Shadow of a Doubt"" \{85} (1943) Teresa Wright, Joseph Cotten. Uncle Charlie (Joseph Cotten) visits his relatives in Santa Rosa. He is a very charming man, but his niece slowly realizes that he is wanted for murder and he soon recognizes her suspicions. Although one of the suspected murderers is killed and the case is considered closed, she still has her suspicions. \{7C} (1 hr 48 min)",movie
-29,TCM,"""7 Faces of Dr. Lao"" (1964) Tony Randall, Barbara Eden. When the inscrutable Dr. Lao (Tony Randall) and his mystical Chinese medicine show roll into the Wild West settlement of Abalone, Arizona, he ends up in the middle of an ongoing feud between a ruthless land baron, Clint Stark (Arthur O'Connell), and an idealistic newspaper editor, Ed Cunningham (John Ericson). The shape-shifting Dr. Lao soon weighs in on the battle, as well as the problems of widowed librarian Angela (Barbara Eden) and her ambitious young son, Mike. \{7C} (1 hr 40 min)",movie
-33,TCM,"""Billy Rose's Jumbo"" (1962) Doris Day, Stephen Boyd. Pop and Kitty Wonder are father-and-daughter circus hands trying to save their tiny business from rival owner John Noble, whose son, Sam has secretly joined their circus as a tightrope walker, calling himself Sam Rawlins. Kitty falls for Sam, not knowing his relationship to their enemy. \{7C} (2 hr 3 min)",movie
-37,TCM,"(12:15) ""At the Circus"" (1939) Groucho Marx, Harpo Marx. ""At the Circus"" features the Marx Brothers (Groucho, Harpo, Chico) working together to save a circus from closing. Circus owner Jeff (Kenny Baker) needs $10,000 to pay off his business partner, John. In an effort to take over the circus himself, John allows his accomplices to steal the $10,000 from Jeff before he can pay. Loophole (Groucho Marx), a clumsy attorney who tries to help recover the money, enlists the help of wealthy Mrs. Dukesbury (Margaret Dumont). \{7C} (1 hr 27 min)",movie
-41,TCM,"""Born in Flames"" (1983) Honey, Adele Bertei. In a future where a socialist government gains power, a group of women decides to organize and rebel. (1 hr 40 min)",movie
-44,TCM,"""The Fog"" \{84} (1980) Adrienne Barbeau, Hal Holbrook. Strange things begin to occurs as a tiny California coastal town prepares to commemorate its centenary. Inanimate objects spring eerily to life; Rev. Malone (Hal Holbrook) stumbles upon a dark secret about the town's founding; radio announcer Stevie (Adrienne Barbeau) witnesses a mystical fire; and hitchhiker Elizabeth (Jamie Lee Curtis) discovers the mutilated corpse of a fisherman. Then a mysterious iridescent fog descends upon the village, and more people start to die. \{7C} (1 hr 29 min)",movie
-47,TCM,( 5:15) Living Stereo,none
-48,TCM,"( 5:38) ""Time Out for Trouble"" (1961) Bonnie Hammett, John Nesom. A misanthropic clock mocks victims of household accidents. (19 min)",movie
-49,TCM,"""Key Largo"" (1948) Humphrey Bogart, Edward G. Robinson. This classic film noir by John Huston stars Humphrey Bogart as World War II vet Frank McCloud. Visiting Key Largo to pay his respects to the family of his late war buddy, McCloud attempts to comfort his comrade's widow, Nora (Lauren Bacall), and father, James Temple (Lionel Barrymore), who operate a hotel. But McCloud realizes that mobsters, led by the infamous Johnny Rocco (Edward G. Robinson), are staying in the hotel. When the criminals take over the establishment, conflict is inevitable. \{7C} (1 hr 41 min)",movie
-1,HISTOR,Paid Programming \{99} \{91} \{7C},none
-2,HISTOR,"Ninja Foodi Grill - The grill that sears, sizzles, and air fry crisps! \{91} \{7C}",none
-3,HISTOR,WWII in HD \{91} \{7C},none
-5,HISTOR,Band of Brothers \{A3} \{91} \{7C},none
-8,HISTOR,( 9:45) Band of Brothers \{A3} \{91} \{7C},none
-11,HISTOR,(11:05) Band of Brothers \{A3} \{91} \{7C},none
-14,HISTOR,(12:38) Band of Brothers \{A3} \{91} \{7C},none
-17,HISTOR,( 2:06) Band of Brothers \{A3} \{91} \{7C},none
-19,HISTOR,( 3:24) Band of Brothers \{A3} \{91} \{7C},none
-22,HISTOR,( 4:57) Band of Brothers \{A3} \{91} \{7C},none
-26,HISTOR,( 6:40) Band of Brothers \{A3} \{91} \{7C},none
-29,HISTOR,Band of Brothers \{A3} \{91} \{7C},none
-31,HISTOR,( 9:21) Band of Brothers \{A3} \{91} \{7C},none
-34,HISTOR,(10:51) Beyond Oak Island \{9B} \{91} \{7C},none
-36,HISTOR,(11:51) Beyond Oak Island \{9B} \{91} \{7C},none
-37,HISTOR,(12:01) Band of Brothers \{A3} \{91} \{7C},none
-39,HISTOR,( 1:22) Band of Brothers \{A3} \{91} \{7C},none
-42,HISTOR,( 2:52) Beyond Oak Island \{9B} \{91} \{7C},none
-44,HISTOR,( 3:52) Beyond Oak Island \{9B} \{91} \{7C},none
-45,HISTOR,( 4:02) Coin Collecting with Mike Mezack \{7C},none
-46,HISTOR,Coin Collecting with Mike Mezack \{7C},none
-47,HISTOR,Coin Collecting with Mike Mezack \{7C},none
-48,HISTOR,Coin Collecting with Mike Mezack \{7C},none
-49,HISTOR,Coin Collecting with Mike Mezack \{7C},none
-1,MSNBC,Dateline \{91} \{7C},none
-3,MSNBC,Morning Joe \{7C},none
-7,MSNBC,MSNBC Live \{7C},none
-9,MSNBC,MSNBC Live \{7C},none
-11,MSNBC,MSNBC Live \{7C},none
-13,MSNBC,MSNBC Live \{7C},none
-15,MSNBC,MSNBC Live \{7C},none
-17,MSNBC,MSNBC Live \{7C},none
-19,MSNBC,MSNBC Live \{7C},none
-21,MSNBC,Deadline: White House \{99} \{7C},none
-23,MSNBC,The Beat With Ari Melber \{7C},none
-25,MSNBC,MSNBC Live \{7C},none
-27,MSNBC,MSNBC Live \{7C},none
-29,MSNBC,Obama \{7C},none
-33,MSNBC,Obama \{7C},none
-35,MSNBC,"""The Sit-In: Harry Belafonte Hosts The Tonight Show"" (2020) Harry Belafonte, Whoopi Goldberg. In early 1968, as riots rock American cities and the Vietnam War escalates, the legendary entertainer and activist Harry Belafonte takes over ""The Tonight Show"" for one week. With a guest list that includes Bobby Kennedy, Aretha Franklin, Rev. Dr. Martin Luther King Jr. and Sidney Poitier, Belafonte introduces a fractured, changing country to itself for five historic nights. \{7C} (1 hr 15 min)",movie
-39,MSNBC,On Assignment With Richard Engel \{7C},none
-41,MSNBC,Dateline \{9B} \{91} \{7C},none
-43,MSNBC,Dateline \{9B} \{91} \{7C},none
-45,MSNBC,Dateline \{9B} \{91} \{7C},none
-47,MSNBC,Dateline \{9B} \{7C},none
-49,MSNBC,MSNBC Live With Kendis Gibson and Lindsey Reiser \{7C},none
-1,FNC,FOX and Friends \{7C},none
-7,FNC,America's Newsroom \{7C},none
-13,FNC,Outnumbered \{7C},none
-15,FNC,Outnumbered Overtime With Harris Faulkner \{7C},none
-17,FNC,The Daily Briefing With Dana Perino \{7C},none
-19,FNC,Bill Hemmer Reports \{7C},none
-21,FNC,Your World With Neil Cavuto \{7C},none
-23,FNC,The Five \{7C},none
-25,FNC,Special Report With Bret Baier \{7C},none
+29,TCM,"""The Battle of the Century"" (1927) Stan Laurel, Oliver Hardy. A manager tries to throw a fight to make money. (19 min)",movie
+30,TCM,"""Lilies of the Field"" (1963) Sidney Poitier, Lilia Skala. When traveling African-American handyman Homer Smith (Sidney Poitier) stops by a farm in rural Arizona, he is welcomed by a group of Roman Catholic nuns who have emigrated from Germany. Realizing that the farm needs a lot of work, Homer takes on a number of repair projects for the women, who are led by the headstrong Mother Maria (Lilia Skala). Impressed by Homer's kindness and strong work ethic, the nuns come to believe that he has been sent by God to help build them a chapel. \{7C} (1 hr 34 min)",movie
+33,TCM,"(10:15) ""Illusions"" (1983) Karen Valentine, Brian Murray. An American designer (Karen Valentine) of Western wear thinks her husband's (Ben Masters) fatal plane crash is hiding something. (1 hr 40 min)",movie
+35,TCM,"""The Joy Luck Club"" \{84} (1993) Rosalind Chao, Tamlyn Tomita. In San Francisco, a group of aging Chinese women (Kieu Chinh, Tsai Chin, France Nuyen, Lisa Lu) meet regularly to trade familial stories while playing Mahjong. In a series of sixteen vignettes that spans generations and continents, this adaptation of Amy Tan's bestselling novel explores cultural conflict and the often-turbulent relationships between four first-generation Chinese-American women (Ming-Na Wen, Tamlyn Tomita, Lauren Tom, Rosalind Chao) and their mothers. \{7C} (2 hr 18 min)",movie
+40,TCM,"""Cabin in the Sky"" (1943) Ethel Waters, Eddie ""Rochester"" Anderson. When compulsive gambler Little Joe Jackson (Eddie ""Rochester"" Anderson) dies in a drunken fight, he awakens in purgatory, where he learns that he will be sent back to Earth for six months to prove that he deserves to be in heaven. He awakens, remembering nothing and struggles to do right by his devout wife, Petunia (Ethel Waters), while an angel known as the General (Kenneth Spencer) and the devil's son, Lucifer Jr. (Rex Ingram), fight for his soul. \{7C} (1 hr 38 min)",movie
+43,TCM,"( 3:15) ""The Man With the Golden Arm"" (1955) Frank Sinatra, Eleanor Parker. When illegal card dealer and recovering heroin addict Frankie Machine (Frank Sinatra) gets out of prison, he decides to straighten up. Armed with nothing but an old drum set, Frankie tries to get honest work as a drummer. But when his former employer, small-time con man Schwiefka (Robert Strauss), and Frankie's old drug dealer, Louis (Darren McGavin), re-enter his life, Frankie finds it hard to stay clean and eventually finds himself succumbing to his old habits. \{7C} (1 hr 59 min)",movie
+48,TCM,MGM Parade Show \{99},none
+27,HISTOR,The Curse of Oak Island \{9B} \{91} \{7C},none
+29,HISTOR,The Curse of Oak Island: Digging Deeper \{9B} \{7C},none
+31,HISTOR,The Curse of Oak Island \{9B} \{7C},none
+33,HISTOR,(10:03) Beyond Oak Island \{9B} \{91} \{7C},none
+35,HISTOR,(11:05) The Curse of Oak Island \{9B} \{91} \{7C},none
+37,HISTOR,(12:03) The Curse of Oak Island: Digging Deeper \{9B} \{91} \{7C},none
+39,HISTOR,( 1:03) The Curse of Oak Island \{9B} \{91} \{7C},none
+41,HISTOR,( 2:06) Beyond Oak Island \{9B} \{91} \{7C},none
+43,HISTOR,( 3:06) The Curse of Oak Island \{9B} \{7C},none
+45,HISTOR,Earn $$$ from Home! \{7C},none
+46,HISTOR,Paid Programming \{99} \{91} \{7C},none
+47,HISTOR,"Improve Your Immunity, Energy & Sleep! \{91} \{7C}",none
+48,HISTOR,Get the World's Best Solar for $0 Down + 6 Months on SunPower \{91} \{7C},none
+27,MSNBC,The ReidOut \{7C},none
+29,MSNBC,All In With Chris Hayes \{7C},none
+31,MSNBC,The Rachel Maddow Show \{7C},none
+33,MSNBC,The Last Word With Lawrence O'Donnell \{7C},none
+35,MSNBC,The 11th Hour With Brian Williams \{7C},none
+37,MSNBC,The Rachel Maddow Show \{7C},none
+39,MSNBC,The Last Word With Lawrence O'Donnell \{7C},none
+41,MSNBC,The 11th Hour With Brian Williams \{7C},none
+43,MSNBC,All In With Chris Hayes \{7C},none
+45,MSNBC,The Rachel Maddow Show \{7C},none
+47,MSNBC,Way Too Early With Kasie Hunt \{7C},none
 27,FNC,The Story With Martha MacCallum \{7C},none
 29,FNC,Tucker Carlson Tonight \{7C},none
 31,FNC,Hannity \{7C},none
 33,FNC,The Ingraham Angle \{7C},none
-35,FNC,The Story With Martha MacCallum \{7C},none
+35,FNC,Fox News at Night With Shannon Bream \{7C},none
 37,FNC,Tucker Carlson Tonight \{7C},none
 39,FNC,Hannity \{7C},none
 41,FNC,The Ingraham Angle \{7C},none
-43,FNC,The Story With Martha MacCallum \{7C},none
-45,FNC,Hannity \{7C},none
-47,FNC,The Five \{7C},none
-49,FNC,FOX and Friends Saturday \{7C},none
-9,GOLF,GOLF Films \{99} \{7C},none|sportsProg
-10,GOLF,GOLF Films \{9B} \{7C},none|sportsProg
-12,GOLF,GOLF Films \{9B} \{7C},none|sportsProg
-14,GOLF,Ladies Euro Tour Golf \{99} \{7C},none|sportsProg
-22,GOLF,European PGA Tour Golf \{7C},none|sportsProg
-29,GOLF,Golf \{7C},none|sportsProg
-33,GOLF,Golf \{7C},none|sportsProg
-37,GOLF,Wonderful World of Golf \{99} \{7C},none|sportsProg
-41,GOLF,Wonderful World of Golf \{99} \{7C},none|sportsProg
+43,FNC,Fox News at Night With Shannon Bream \{7C},none
+45,FNC,FOX & Friends First \{7C},none
+47,FNC,FOX & Friends First \{7C},none
+27,GOLF,2020 U.S. Women's Open Golf Championship \{99} \{7C},none|sportsProg
+37,GOLF,Golf Central \{99} \{7C},none|sportsProg
+38,GOLF,Golf Central \{99} \{7C},none|sportsProg
+39,GOLF,GOLF Films \{9B} \{7C},none|sportsProg
+41,GOLF,GOLF Films \{99} \{7C},none|sportsProg
 43,GOLF,Paid Programming \{99} \{7C},none
-44,GOLF,Paid Programming \{99} \{7C},none
-45,GOLF,Chronicles of a Champion Golfer \{9B} \{7C},none|sportsProg
-46,GOLF,Chronicles of a Champion Golfer \{9B} \{7C},none|sportsProg
-47,GOLF,European PGA Tour Golf \{7C},none|sportsProg
-1,BRAVO,"""The Nanny Diaries"" \{87} (2007) Scarlett Johansson, Laura Linney. A college student, Annie Braddock (Scarlett Johansson), with a working-class background takes a nanny job with Mr. and Mrs. X (Paul Giamatti, Laura Linney), an affluent but highly dysfunctional Manhattan couple. She must find a way to manage her studies, a new boyfriend, and the demands of her new employers and their spoiled offspring. \{7C} (1 hr 44 min)",movie
-5,BRAVO,"( 8:15) ""Delivery Man"" \{87} (2013) Vince Vaughn, Chris Pratt. Amiable slacker David Wozniak (Vince Vaughn) drives a delivery truck for his family's company and is content with a life of mediocrity. However, when he learns that he is the biological father of more than 500 offspring and many of them are suing to learn his identity, he decides to hold himself accountable for his actions. He finds some of his progeny and becomes involved in their lives; however, when David's girlfriend announces her pregnancy, she keeps her expectations low. \{7C} (1 hr 45 min)",movie
-10,BRAVO,"(10:33) ""The Dilemma"" \{87} (2011) Vince Vaughn, Kevin James. Longtime friends Ronny (Vince Vaughn) and Nick (Kevin James) are partners in an auto-design firm. They are hard at work on a presentation for a dream project that would really launch their company. Then Ronny spots Nick's wife out with another man, and in the process of investigating the possible affair, he learns that Nick has a few secrets of his own. As the presentation nears, Ronny agonizes over what might happen if the truth gets out. \{7C} (1 hr 51 min)",movie
-15,BRAVO,"( 1:03) ""The Break-Up"" \{87} (2006) Vince Vaughn, Jennifer Aniston. When Brooke (Jennifer Aniston), an art dealer, and Gary (Vince Vaughn), a tour-bus driver, finally call it quits in their relationship, neither is willing to move out of their shared condo. With their friends suggesting a series of underhanded tactics that fail to get either Brooke or Gary to cave in, the only solution is to become hostile roommates. \{7C} (1 hr 47 min)",movie
-19,BRAVO,"( 3:23) ""Knocked Up"" \{84} (2007) Seth Rogen, Katherine Heigl. Rising journalist Alison Scott (Katherine Heigl) hits a serious bump in the road after a one-night stand with irresponsible slacker Ben Stone (Seth Rogen) results in pregnancy. Rather than raise the baby on her own, she decides to give Ben a chance to prove he is father material. However, he is unsure if he is ready to be a parent, and both wonder if they would be compatible lifetime partners. \{7C} (2 hr 9 min)",movie
-24,BRAVO,"( 5:54) ""Twilight"" \{87} (2008) Kristen Stewart, Robert Pattinson. High-school student Bella Swan (Kristen Stewart), always a bit of a misfit, doesn't expect life to change much when she moves from sunny Arizona to rainy Washington state. Then she meets Edward Cullen (Robert Pattinson), a handsome but mysterious teen whose eyes seem to peer directly into her soul. Edward is a vampire whose family does not drink blood, and Bella, far from being frightened, enters into a dangerous romance with her immortal soulmate. \{7C} (2 hr 1 min)",movie
-30,BRAVO,"""The Twilight Saga: New Moon"" \{87} (2009) Kristen Stewart, Robert Pattinson. After the abrupt departure of Edward (Robert Pattinson), her vampire love, Bella (Kristen Stewart) finds comfort in her deepening friendship with Jacob Black (Taylor Lautner). However Bella's loyalties are put to the test as she becomes drawn into the world of werewolves, ancient enemies of vampires. \{7C} (2 hr 10 min)",movie
-35,BRAVO,"(11:19) ""The Twilight Saga: Eclipse"" \{87} (2010) Kristen Stewart, Robert Pattinson. Danger once again surrounds Bella (Kristen Stewart), as a string of mysterious killings terrorizes Seattle and a malicious vampire continues her infernal quest for revenge. Amid the tumult, Bella must choose between her love for Edward (Robert Pattinson) and her friendship with Jacob (Taylor Lautner), knowing that her decision may ignite the long-simmering feud between vampire and werewolf. \{7C} (2 hr 4 min)",movie
-41,BRAVO,Shahs of Sunset \{7C},none
-43,BRAVO,Shahs of Sunset \{7C},none
-45,BRAVO,Shahs of Sunset \{7C},none
-47,BRAVO,Shahs of Sunset \{7C},none
-49,BRAVO,Below Deck Mediterranean \{7C},none
-1,TRUTV,"Ninja Foodi Grill - The grill that sears, sizzles, and air fry crisps! \{7C}",none
-2,TRUTV,"Ninja Foodi NeverStick - The cookware that never sticks, chips, or flakes \{7C}",none
-3,TRUTV,Paid Programming \{99} \{7C},none
-4,TRUTV,The Carbonaro Effect \{7C},none
-5,TRUTV,The Carbonaro Effect \{7C},none
-6,TRUTV,The Carbonaro Effect \{7C},none
-7,TRUTV,Impractical Jokers \{7C},none
-8,TRUTV,Impractical Jokers \{7C},none
-9,TRUTV,Impractical Jokers \{7C},none
-10,TRUTV,Impractical Jokers \{7C},none
-11,TRUTV,Impractical Jokers \{7C},none
-12,TRUTV,Impractical Jokers \{7C},none
-13,TRUTV,Impractical Jokers \{7C},none
-14,TRUTV,Impractical Jokers \{7C},none
-15,TRUTV,Impractical Jokers \{7C},none
-16,TRUTV,Impractical Jokers \{7C},none
-17,TRUTV,Impractical Jokers \{7C},none
-18,TRUTV,Impractical Jokers \{7C},none
-19,TRUTV,Impractical Jokers \{7C},none
-20,TRUTV,Impractical Jokers \{7C},none
-21,TRUTV,Impractical Jokers \{7C},none
-22,TRUTV,Impractical Jokers \{7C},none
-23,TRUTV,Impractical Jokers \{7C},none
-24,TRUTV,Impractical Jokers \{7C},none
-25,TRUTV,Impractical Jokers \{7C},none
-26,TRUTV,Impractical Jokers \{7C},none
+44,GOLF,Dr. Ho's Total Body Relief \{7C},none
+45,GOLF,Best Pan Ever! \{7C},none
+46,GOLF,MyPillow Topper \{7C},none
+47,GOLF,Mulligan - Tough Love and Second Chances \{99} \{7C},none
+27,BRAVO,Chrisley Knows Best \{7C},none
+28,BRAVO,Chrisley Knows Best \{7C},none
+29,BRAVO,Chrisley Knows Best \{7C},none
+30,BRAVO,Chrisley Knows Best \{7C},none
+31,BRAVO,Chrisley Knows Best \{7C},none
+32,BRAVO,Don't Be Tardy ... \{7C},none
+33,BRAVO,Don't Be Tardy ... \{7C},none
+35,BRAVO,Watch What Happens Live With Andy Cohen \{7C},none
+36,BRAVO,The Real Housewives of Atlanta \{7C},none
+38,BRAVO,(12:31) The Real Housewives of Potomac \{7C},none
+40,BRAVO,( 1:32) Don't Be Tardy ... \{7C},none
+42,BRAVO,( 2:32) The Real Housewives of Atlanta \{7C},none
+44,BRAVO,Watch What Happens Live With Andy Cohen \{7C},none
+45,BRAVO,The Kelly Clarkson Show \{99} \{91} \{7C},none
+47,BRAVO,"Visibly Reduce Crow's Feet, Wrinkles, and Under-Eye Bags in Minutes! \{7C}",none
+48,BRAVO,PiYo Workout! \{7C},none
 27,TRUTV,Impractical Jokers \{7C},none
 28,TRUTV,Impractical Jokers \{7C},none
 29,TRUTV,Impractical Jokers \{7C},none
 30,TRUTV,Impractical Jokers \{7C},none
 31,TRUTV,Impractical Jokers \{7C},none
 32,TRUTV,Impractical Jokers \{7C},none
-33,TRUTV,Impractical Jokers \{7C},none
-34,TRUTV,Impractical Jokers \{7C},none
-35,TRUTV,Tacoma FD \{A3} \{7C},none
-36,TRUTV,Tacoma FD \{A3} \{7C},none
-37,TRUTV,Tacoma FD \{A3} \{7C},none
-38,TRUTV,Tacoma FD \{A3} \{7C},none
-39,TRUTV,Impractical Jokers \{7C},none
-40,TRUTV,Impractical Jokers \{7C},none
-41,TRUTV,Impractical Jokers \{7C},none
-42,TRUTV,Impractical Jokers \{7C},none
-43,TRUTV,Impractical Jokers \{7C},none
-44,TRUTV,Impractical Jokers \{7C},none
-45,TRUTV,Laff Mobb's Laff Tracks \{7C},none
-46,TRUTV,Laff Mobb's Laff Tracks \{7C},none
-47,TRUTV,Laff Mobb's Laff Tracks \{7C},none
-48,TRUTV,Laff Mobb's Laff Tracks \{7C},none
-49,TRUTV,Adam Ruins Everything \{7C},none
-3,QVC2,Great Gifts \{99} \{7C},none
-7,QVC2,Football Team Shop \{99} \{7C},none|sportsProg
-9,QVC2,Black Friday Weekend \{99} \{7C},none
-19,QVC2,Football Team Shop \{99} \{7C},none|sportsProg
-21,QVC2,Denim & Co. \{99} \{7C},none
-27,QVC2,Very Merry Deals \{99} \{7C},none
-29,QVC2,Football Team Shop \{99} \{7C},none|sportsProg
-31,QVC2,Black Friday Weekend \{99} \{7C},none
-37,QVC2,Black Friday Weekend \{99} \{7C},none
-43,QVC2,Bose Sound Innovations \{99} \{7C},none
-45,QVC2,Powerful Innovations by HALO \{99} \{7C},none
-47,QVC2,Gift Guide \{99} \{7C},none
-49,QVC2,Black Friday Weekend \{99} \{7C},none
-9,QVC3,Denim & Co. \{99} \{7C},none
-15,QVC3,Jane & Courtney's Gift Guide \{99} \{7C},none
-19,QVC3,Shoe Shopping With Jane \{99} \{7C},none
-21,QVC3,David's Gift Guide \{99} \{7C},none
-25,QVC3,HP Computer Workshop \{99} \{7C},none
-27,QVC3,Black Friday Weekend \{99} \{7C},none
-37,QVC3,Bose Sound Innovations \{99} \{7C},none
-39,QVC3,Black Friday Weekend \{99} \{7C},none
-45,QVC3,Black Friday Weekend \{99} \{7C},none
-1,MDUC1,MDU Camera Channel,none
-9,MDUC1,MDU Camera Channel,none
-17,MDUC1,MDU Camera Channel,none
-25,MDUC1,MDU Camera Channel,none
+33,TRUTV,"""Dumb & Dumber"" \{87} (1994) Jim Carrey, Jeff Daniels. Imbecilic best friends Lloyd Christmas (Jim Carrey) and Harry Dunne (Jeff Daniels) stumble across a suitcase full of money left behind in Harry's car by Mary Swanson (Lauren Holly), who was on her way to the airport. The pair decide to go to Aspen, Colo., to return the money, unaware that it is connected to a kidnapping. As Harry and Lloyd -- who has fallen in love with Mary -- are pursued across the country by hired killers and police, they find both their friendship and their brains tested. \{7C} (1 hr 46 min)",movie
+37,TRUTV,"(12:15) ""Dumb & Dumber"" \{87} (1994) Jim Carrey, Jeff Daniels. Imbecilic best friends Lloyd Christmas (Jim Carrey) and Harry Dunne (Jeff Daniels) stumble across a suitcase full of money left behind in Harry's car by Mary Swanson (Lauren Holly), who was on her way to the airport. The pair decide to go to Aspen, Colo., to return the money, unaware that it is connected to a kidnapping. As Harry and Lloyd -- who has fallen in love with Mary -- are pursued across the country by hired killers and police, they find both their friendship and their brains tested. \{7C} (1 hr 46 min)",movie
+42,TRUTV,The Carbonaro Effect \{7C},none
+43,TRUTV,The Carbonaro Effect \{7C},none
+44,TRUTV,The Carbonaro Effect \{7C},none
+45,TRUTV,U-Box by U-Haul Containers for Moving & Storage \{7C},none
+46,TRUTV,Emergency Power Kit! \{7C},none
+47,TRUTV,New BISSELL® CrossWave® is Now Cordless \{7C},none
+48,TRUTV,"Move Easier with MovingHelp, Powered by U-Haul \{7C}",none
+29,QVC2,Very Merry Deals \{99} \{7C},none
+31,QVC2,Very Merry Deals \{99} \{7C},none
+33,QVC2,Gourmet Holiday \{99} \{7C},none
+37,QVC2,Very Merry Deals \{99} \{7C},none
+39,QVC2,Cheers! to Holiday Shopping With Leah and Shawn \{99} \{7C},none
+45,QVC2,Very Merry Deals \{99} \{7C},none
+47,QVC2,Dyson Supersonic Hair Dryer \{99} \{7C},none
+29,QVC3,In the Kitchen With David \{99} \{7C},none
+37,QVC3,Carolyn's Gift Guide \{99} \{7C},none
+41,QVC3,The Wrap It Up Gift Event \{99} \{7C},none
+45,QVC3,Comfort & Joy with Jane \{99} \{7C},none
 33,MDUC1,MDU Camera Channel,none
 41,MDUC1,MDU Camera Channel,none
-49,MDUC1,MDU Camera Channel,none
-3,CMDUCC,MDU Camera Channel,none
-11,CMDUCC,MDU Camera Channel,none
-19,CMDUCC,MDU Camera Channel,none
 27,CMDUCC,MDU Camera Channel,none
 35,CMDUCC,MDU Camera Channel,none
 43,CMDUCC,MDU Camera Channel,none
-1,HGTV,Fixer Upper \{99} \{7C},none
-3,HGTV,Fixer Upper \{99} \{7C},none
-5,HGTV,Fixer Upper \{99} \{7C},none
-7,HGTV,Fixer Upper \{99} \{7C},none
-9,HGTV,Fixer Upper \{99} \{7C},none
-11,HGTV,Fixer Upper \{99} \{7C},none
-13,HGTV,Holiday Crafters Gone Wild \{99} \{7C},none
-17,HGTV,Love It or List It \{9B} \{7C},none
-19,HGTV,Love It or List It \{9B} \{7C},none
-21,HGTV,Love It or List It \{9B} \{7C},none
-23,HGTV,Love It or List It \{9B} \{7C},none
-25,HGTV,Love It or List It \{9B} \{7C},none
-27,HGTV,Love It or List It \{9B} \{7C},none
-29,HGTV,My Lottery Dream Home \{99} \{7C},none
-30,HGTV,( 8:35) My Lottery Dream Home \{99} \{7C},none
-31,HGTV,Biggest Little Christmas Showdown \{7C},none
-33,HGTV,Martha Knows Best \{7C},none
-34,HGTV,Martha Knows Best \{7C},none
+27,HGTV,Fixer to Fabulous \{99} \{7C},none
+29,HGTV,Fixer to Fabulous \{99} \{7C},none
+31,HGTV,Fixer to Fabulous \{99} \{7C},none
+33,HGTV,House Hunters \{99} \{7C},none
+34,HGTV,House Hunters International \{99} \{7C},none
 35,HGTV,House Hunters \{99} \{7C},none
 36,HGTV,House Hunters International \{99} \{7C},none
-37,HGTV,Biggest Little Christmas Showdown \{7C},none
-39,HGTV,Martha Knows Best \{7C},none
-40,HGTV,Martha Knows Best \{7C},none
+37,HGTV,Fixer to Fabulous \{99} \{7C},none
+39,HGTV,House Hunters \{99} \{7C},none
+40,HGTV,House Hunters International \{99} \{7C},none
 41,HGTV,House Hunters \{99} \{7C},none
 42,HGTV,House Hunters International \{99} \{7C},none
-43,HGTV,My Lottery Dream Home \{99} \{7C},none
-44,HGTV,( 3:35) My Lottery Dream Home \{99} \{7C},none
-45,HGTV,The PiYo Craze from Beachbody! \{7C},none
-46,HGTV,Operation Smile \{7C},none
-47,HGTV,Salon Hair at Home! \{7C},none
-48,HGTV,Marie Osmond's BodyGym \{7C},none
-49,HGTV,Emeril's Turkey Frying Secret. BAM! \{7C},none
-1,POPSD,Scorpion \{91} \{7C},none
-3,POPSD,Scorpion \{91} \{7C},none
-5,POPSD,Scorpion \{91} \{7C},none
-7,POPSD,Scorpion \{91} \{7C},none
-9,POPSD,ER \{9B} \{91} \{7C},none
-11,POPSD,ER \{91} \{7C},none
-13,POPSD,ER \{9B} \{91} \{7C},none
-15,POPSD,ER \{9B} \{91} \{7C},none
-17,POPSD,ER \{9B} \{91} \{7C},none
-19,POPSD,ER \{91} \{7C},none
-21,POPSD,ER \{91} \{7C},none
-23,POPSD,NCIS: New Orleans \{9B} \{91} \{7C},none
-25,POPSD,NCIS: New Orleans \{91} \{7C},none
-27,POPSD,NCIS: New Orleans \{91} \{7C},none
+43,HGTV,Fixer to Fabulous \{99} \{7C},none
+45,HGTV,Fixer to Fabulous \{99} \{7C},none
+47,HGTV,Fixer to Fabulous \{99} \{7C},none
+27,POPSD,House \{91} \{7C},none
 29,POPSD,NCIS: New Orleans \{91} \{7C},none
 31,POPSD,NCIS: New Orleans \{91} \{7C},none
 33,POPSD,NCIS: New Orleans \{91} \{7C},none
 35,POPSD,NCIS: New Orleans \{91} \{7C},none
 37,POPSD,NCIS: New Orleans \{91} \{7C},none
-39,POPSD,NCIS: New Orleans \{91} \{7C},none
-41,POPSD,NCIS: New Orleans \{91} \{7C},none
-43,POPSD,Scorpion \{91} \{7C},none
-45,POPSD,Scorpion \{91} \{7C},none
-47,POPSD,Scorpion \{91} \{7C},none
-49,POPSD,Scorpion \{91} \{7C},none
+39,POPSD,Charmed \{91} \{7C},none
+41,POPSD,Charmed \{9B} \{91} \{7C},none
+43,POPSD,Charmed \{9B} \{91} \{7C},none
+45,POPSD,Charmed \{9B} \{91} \{7C},none
+47,POPSD,The Goldbergs \{9B} \{91} \{7C},none
+48,POPSD,The Goldbergs \{9B} \{91} \{7C},none
