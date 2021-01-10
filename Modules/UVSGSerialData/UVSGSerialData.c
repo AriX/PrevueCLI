@@ -303,3 +303,7 @@ bool UVSGSerialDataSenderSendData(UVSGSerialDataSender *sender, const void *data
     
     return true;
 }
+
+int UVSGSerialDataSenderGetSocket(UVSGSerialDataSender *sender) {
+    return sender->tcpSocket;
+}

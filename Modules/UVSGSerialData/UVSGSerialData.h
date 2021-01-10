@@ -31,3 +31,4 @@ UVSGSerialDataSender *UVSGSerialDataSenderCreate(const char *host, int port);
 void UVSGSerialDataSenderFree(UVSGSerialDataSender *sender);
 
 bool UVSGSerialDataSenderSendData(UVSGSerialDataSender *sender, const void *data, size_t dataSize);
+int UVSGSerialDataSenderGetSocket(UVSGSerialDataSender *sender);

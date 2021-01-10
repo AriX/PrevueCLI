@@ -10,7 +10,7 @@ import Foundation
 import Dispatch
 
 #if !os(Windows) && !os(Linux)
-class SerialPortDataDestination: DataDestination {
+class SerialPortDataDestination: FileDescriptorSerialInterface {
     let path: String
     let baudRate: speed_t
     var handle: CInt?
@@ -58,6 +58,8 @@ class SerialPortDataDestination: DataDestination {
         handle = nil
     }
     
+    // MARK: - Sending data
+    
     func send(data bytes: Bytes) {
         guard let handle = handle else {
             print("[SerialPortDataDestination] Tried to send bytes with no open handle")
@@ -76,6 +78,34 @@ class SerialPortDataDestination: DataDestination {
         
         delayForSendingBytes(byteCount: bytes.count, baudRate: Int(baudRate))
     }
+    
+    // MARK: - Receiving data (FileDescriptorDataOrigin)
+
+    func receive(byteCount: Int) -> Bytes? {
+        guard let handle = handle else {
+            print("[SerialPortDataDestination] Tried to receive bytes with no open handle")
+            return nil
+        }
+        
+        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
+        defer {
+            buffer.deallocate()
+        }
+
+        let bytesRead = read(handle, buffer, byteCount)
+
+        guard bytesRead >= 0 else {
+            return nil
+        }
+        
+        return Bytes(UnsafeMutableBufferPointer(start: buffer, count: bytesRead))
+    }
+    
+    var fileDescriptor: CInt? {
+        return handle
+    }
+    
+    // MARK: - CTRL
     
     var ctrlBitBuffer: [Bool] = []
     var ctrlSending: Bool = false

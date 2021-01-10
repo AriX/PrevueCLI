@@ -15,17 +15,22 @@ class DataController {
     
     init(dataDestinations: [DataDestination]) {
         self.dataDestinations = dataDestinations
+        
+        for destination in dataDestinations {
+            if let serialDestination = destination as? SerialPortDataDestination {
+                serialDestination.startTimer()
+            }
+            
+            destination.openConnection()
+        }
     }
     
     convenience init() {
 #if os(Windows) || os(Linux)
         let destination = TCPDataDestination(host: "127.0.0.1", port: 5542)
 #else
-        let destination = SerialPortDataDestination(path: "/dev/cu.usbserial-1440")
-        destination.startTimer()
+        let destination = SerialPortDataDestination(path: "/dev/cu.usbserial-14210")
 #endif
-        destination.openConnection()
-        destination.send(data: BoxOnCommand(selectCode: "*"))
         self.init(dataDestinations: [destination])
     }
     

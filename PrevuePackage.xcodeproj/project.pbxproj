@@ -37,6 +37,8 @@
 		02193F772454B2F70093D586 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F5C2454B2060093D586 /* emitter.c */; };
 		02193F782454B2F70093D586 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 02193F5D2454B2060093D586 /* parser.c */; };
 		02193F7C2459069F0093D586 /* CLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F7B2459069F0093D586 /* CLI.swift */; };
+		024CE95E25AACD6400C88001 /* SerialInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CE95D25AACD6400C88001 /* SerialInterface.swift */; };
+		024CE95F25AACD6400C88001 /* SerialInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CE95D25AACD6400C88001 /* SerialInterface.swift */; };
 		02678B4F250C073C005D1114 /* pplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 02678B4C250C073B005D1114 /* pplib.c */; };
 		02678B50250C073C005D1114 /* pplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 02678B4C250C073B005D1114 /* pplib.c */; };
 		02678B52250C65A4005D1114 /* PowerPacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02678B51250C65A4005D1114 /* PowerPacker.swift */; };
@@ -179,6 +181,8 @@
 		02CFDFD825202490004E5EB4 /* DST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD625202490004E5EB4 /* DST.swift */; };
 		02CFDFDA252044A4004E5EB4 /* CalendarUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */; };
 		02CFDFDB252044A4004E5EB4 /* CalendarUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */; };
+		02DFE07825AA789000BC4C50 /* AudioSwitchMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DFE07725AA789000BC4C50 /* AudioSwitchMonitor.swift */; };
+		02DFE07925AA789000BC4C50 /* AudioSwitchMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DFE07725AA789000BC4C50 /* AudioSwitchMonitor.swift */; };
 		02F93C10256B9838009271D4 /* DefaultGraphicCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F93C0F256B9838009271D4 /* DefaultGraphicCommand.swift */; };
 /* End PBXBuildFile section */
 
@@ -231,6 +235,7 @@
 		02193F712454B2DC0093D586 /* UVSGSerialData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVSGSerialData.h; sourceTree = "<group>"; };
 		02193F7B2459069F0093D586 /* CLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLI.swift; sourceTree = "<group>"; };
 		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
+		024CE95D25AACD6400C88001 /* SerialInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialInterface.swift; sourceTree = "<group>"; };
 		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
 		02678B4C250C073B005D1114 /* pplib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pplib.c; sourceTree = "<group>"; };
 		02678B4E250C073B005D1114 /* pplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplib.h; sourceTree = "<group>"; };
@@ -293,6 +298,7 @@
 		02CFDFD625202490004E5EB4 /* DST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DST.swift; sourceTree = "<group>"; };
 		02CFDFD9252044A4004E5EB4 /* CalendarUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUtilities.swift; sourceTree = "<group>"; };
 		02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGDocumentable.swift; sourceTree = "<group>"; };
+		02DFE07725AA789000BC4C50 /* AudioSwitchMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSwitchMonitor.swift; sourceTree = "<group>"; };
 		02F93C0F256B9838009271D4 /* DefaultGraphicCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGraphicCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -385,7 +391,7 @@
 		021931A5238103BB0076A810 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				021931DC2381063A0076A810 /* Controller */,
+				021931DC2381063A0076A810 /* Configuration */,
 				02A6FCFC21A13E9E00323C8F /* Data Sending */,
 				02A6FD6F2268230D00323C8F /* Listings */,
 				026A940F245E1D850057E012 /* Command Types */,
@@ -410,12 +416,13 @@
 			path = Types;
 			sourceTree = "<group>";
 		};
-		021931DC2381063A0076A810 /* Controller */ = {
+		021931DC2381063A0076A810 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
 				021931DD238106400076A810 /* DataController.swift */,
+				02A6FCE621A0B81C00323C8F /* EPGMachine.swift */,
 			);
-			path = Controller;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		02193F3D2454B1CA0093D586 /* Modules */ = {
@@ -557,11 +564,12 @@
 		02A6FCFC21A13E9E00323C8F /* Data Sending */ = {
 			isa = PBXGroup;
 			children = (
-				02A6FCE621A0B81C00323C8F /* EPGMachine.swift */,
 				02A6FCF921A13DFE00323C8F /* DataDestination.swift */,
 				02A6FCF621A13BC800323C8F /* TCPDataDestination.swift */,
 				0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */,
 				025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */,
+				024CE95D25AACD6400C88001 /* SerialInterface.swift */,
+				02DFE07725AA789000BC4C50 /* AudioSwitchMonitor.swift */,
 			);
 			path = "Data Sending";
 			sourceTree = "<group>";
@@ -777,6 +785,7 @@
 				02B1939F24A71B2B00041C8B /* CSVReader.swift in Sources */,
 				02B193D924B9645900041C8B /* Command.swift in Sources */,
 				02C71BF4250445A400550746 /* DataDestination.swift in Sources */,
+				024CE95E25AACD6400C88001 /* SerialInterface.swift in Sources */,
 				02B1939824A71B2B00041C8B /* CSVError.swift in Sources */,
 				02B1939D24A71B2B00041C8B /* Endian.swift in Sources */,
 				02B1939E24A71B2B00041C8B /* CSVRowDecoder.swift in Sources */,
@@ -798,6 +807,7 @@
 				0270E6DE21A0E388003C98EF /* main.swift in Sources */,
 				029BA0E0254D3CFB00F3EF2E /* SpecialCharacter.swift in Sources */,
 				02B193D124B12D0C00041C8B /* BinaryCodableExtensions.swift in Sources */,
+				02DFE07825AA789000BC4C50 /* AudioSwitchMonitor.swift in Sources */,
 				02C71C0B2504BC2800550746 /* ActionCommand.swift in Sources */,
 				02173F84250EE8550078C83B /* Timeslot.swift in Sources */,
 				02F93C10256B9838009271D4 /* DefaultGraphicCommand.swift in Sources */,
@@ -870,6 +880,7 @@
 				02B1BCDC24DE646900ACF1D7 /* CSVRowDecoder.swift in Sources */,
 				02C71C24250B3CE600550746 /* TransferFileCommand.swift in Sources */,
 				02C71BF5250445A400550746 /* DataDestination.swift in Sources */,
+				02DFE07925AA789000BC4C50 /* AudioSwitchMonitor.swift in Sources */,
 				02B1BCE324DE647300ACF1D7 /* parser.c in Sources */,
 				02B1BCDB24DE646900ACF1D7 /* Endian.swift in Sources */,
 				020C6631250DB77B00AACAAB /* CurdayDat+Listings.swift in Sources */,
@@ -884,6 +895,7 @@
 				02B1BCD724DE646900ACF1D7 /* CSVError.swift in Sources */,
 				02B1BCD324DE646500ACF1D7 /* BinaryCodable.swift in Sources */,
 				02B1BCDE24DE647300ACF1D7 /* scanner.c in Sources */,
+				024CE95F25AACD6400C88001 /* SerialInterface.swift in Sources */,
 				02B1BCDD24DE646900ACF1D7 /* CSVReader.swift in Sources */,
 				027B7C3C251FD3E90092EE7E /* Bit.swift in Sources */,
 				02B1BCEC24DE647700ACF1D7 /* Parser.swift in Sources */,

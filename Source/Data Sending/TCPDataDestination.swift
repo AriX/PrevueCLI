@@ -54,3 +54,30 @@ class TCPDataDestination: NetworkDataDestination {
         }
     }
 }
+
+extension TCPDataDestination: FileDescriptorSerialInterface {
+    func receive(byteCount: Int) -> Bytes? {
+        guard let fileDescriptor = fileDescriptor else {
+            print("[TCPDataDestination] Tried to receive bytes with no open connection")
+            return nil
+        }
+        
+        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
+        defer {
+            buffer.deallocate()
+        }
+
+        let bytesRead = recv(fileDescriptor, buffer, byteCount, 0)
+
+        guard bytesRead >= 0 else {
+            return nil
+        }
+        
+        return Bytes(UnsafeMutableBufferPointer(start: buffer, count: bytesRead))
+    }
+    
+    var fileDescriptor: CInt? {
+        guard let sender = sender else { return nil }
+        return UVSGSerialDataSenderGetSocket(sender)
+    }
+}
