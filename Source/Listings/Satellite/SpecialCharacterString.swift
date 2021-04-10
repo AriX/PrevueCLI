@@ -130,7 +130,7 @@ extension SpecialCharacterString: Codable, LosslessStringConvertible, Expressibl
             return nil
         }.joined()
     }
-    init?(_ description: String) {
+    init(_ description: String) {
         self.init(with: description)
     }
     init(stringLiteral value: String) {

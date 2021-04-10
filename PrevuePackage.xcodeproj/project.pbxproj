@@ -184,6 +184,8 @@
 		02DFE07825AA789000BC4C50 /* AudioSwitchMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DFE07725AA789000BC4C50 /* AudioSwitchMonitor.swift */; };
 		02DFE07925AA789000BC4C50 /* AudioSwitchMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DFE07725AA789000BC4C50 /* AudioSwitchMonitor.swift */; };
 		02F93C10256B9838009271D4 /* DefaultGraphicCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F93C0F256B9838009271D4 /* DefaultGraphicCommand.swift */; };
+		02FFD4BC26216F4800C3E067 /* Listings+FooterConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFD4BB26216F4800C3E067 /* Listings+FooterConvenience.swift */; };
+		02FFD4BD26216F4800C3E067 /* Listings+FooterConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFD4BB26216F4800C3E067 /* Listings+FooterConvenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -300,6 +302,7 @@
 		02D2BC15246FD0CE008CD801 /* UVSGDocumentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVSGDocumentable.swift; sourceTree = "<group>"; };
 		02DFE07725AA789000BC4C50 /* AudioSwitchMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSwitchMonitor.swift; sourceTree = "<group>"; };
 		02F93C0F256B9838009271D4 /* DefaultGraphicCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGraphicCommand.swift; sourceTree = "<group>"; };
+		02FFD4BB26216F4800C3E067 /* Listings+FooterConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Listings+FooterConvenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +329,7 @@
 				02173F82250EE8350078C83B /* Date & Time */,
 				02A6FD162259875800323C8F /* Listings.swift */,
 				02C71C1A250B08D800550746 /* Listings+CSVCodable.swift */,
+				02FFD4BB26216F4800C3E067 /* Listings+FooterConvenience.swift */,
 				029BA0DF254D3CFB00F3EF2E /* SpecialCharacter.swift */,
 				02678B54250D6A1B005D1114 /* SpecialCharacterString.swift */,
 				02C71C1C250B376200550746 /* AtariListingsFiltering.swift */,
@@ -772,6 +776,7 @@
 				02B1BD0D24F1FD4500ACF1D7 /* ClockCommand.swift in Sources */,
 				02C71C1D250B376200550746 /* AtariListingsFiltering.swift in Sources */,
 				02CFDFD725202490004E5EB4 /* DST.swift in Sources */,
+				02FFD4BC26216F4800C3E067 /* Listings+FooterConvenience.swift in Sources */,
 				021931F7238123710076A810 /* ByteConvenience.swift in Sources */,
 				02C71C1F250B3C1100550746 /* ListingsCommand.swift in Sources */,
 				02C71C112504CA9E00550746 /* DataSending+AriDebugCTRL.swift in Sources */,
@@ -903,6 +908,7 @@
 				02C71C20250B3C1100550746 /* ListingsCommand.swift in Sources */,
 				02C71BF32504459F00550746 /* EPGMachine.swift in Sources */,
 				02B1BCD924DE646900ACF1D7 /* Legacy.swift in Sources */,
+				02FFD4BD26216F4800C3E067 /* Listings+FooterConvenience.swift in Sources */,
 				02B1BCEA24DE647700ACF1D7 /* String+Yams.swift in Sources */,
 				027B7C352511F34A0092EE7E /* Listings+CSVCodable.swift in Sources */,
 				02678B56250D6A1B005D1114 /* SpecialCharacterString.swift in Sources */,
