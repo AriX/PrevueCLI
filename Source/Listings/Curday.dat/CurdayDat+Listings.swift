@@ -33,7 +33,8 @@ extension CurdayDat {
         }
         
         let julianDay = JulianDay(dayOfYear: header.julianDayNumber.value)
-        return Listings(julianDay: julianDay, channels: channels, programs: programs)
+        let programsDay = (julianDay, programs)
+        return Listings(channels: channels, days: [programsDay])
     }
 }
 

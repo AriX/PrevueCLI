@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct JulianDay: Equatable {
+struct JulianDay: Equatable, Hashable {
     let dayOfYear: Int
 }
 

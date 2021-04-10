@@ -9,32 +9,61 @@
 import Foundation
 
 extension Listings {
-    init(channelsCSVFile: URL, programsCSVFile: URL, day: JulianDay, forAtari: Bool = false, omitSpecialCharacters: Bool = false) throws {
-        var channels = try Channel.load(from: channelsCSVFile)
-        var programs = try Program.load(from: programsCSVFile)
+    init(channelsCSVFile: URL, programsCSVFile: URL, startDay: Date = Date(), forAtari: Bool = false, omitSpecialCharacters: Bool = false) throws {
+        try self.init(channelsCSVFile: channelsCSVFile, programsCSVFiles: [programsCSVFile], startDay: startDay, forAtari: forAtari, omitSpecialCharacters: omitSpecialCharacters)
+    }
+    
+    init(channelsCSVFile: URL, programsCSVFiles: [URL], startDay: Date = Date(), forAtari: Bool = false, omitSpecialCharacters: Bool = false) throws {
+        channels = try Channel.load(from: channelsCSVFile)
         
         if forAtari {
             channels = channels.makeAtariCompatible()
         }
         
-        if forAtari || omitSpecialCharacters {
-            programs = programs.makeAtariCompatible()
+        days = []
+        var day = startDay
+        for programsCSVFile in programsCSVFiles {
+            var loadedPrograms = try Program.load(from: programsCSVFile)
+            
+            if forAtari || omitSpecialCharacters {
+                loadedPrograms = loadedPrograms.makeAtariCompatible()
+            }
+            
+            let julianDay = JulianDay(from: day)
+            days.append((julianDay, loadedPrograms))
+            
+            day = day.incrementingDay(by: 1)
         }
-        
-        self.julianDay = day
-        self.channels = channels
-        self.programs = programs
     }
     
-    func write(channelsCSVFile: URL, programsCSVFile: URL) throws {
+    init(directory: URL, startDay: Date = Date(), forAtari: Bool = false, omitSpecialCharacters: Bool = false) throws {
+        let channelsFileURL = directory.appendingPathComponent("channels.csv", isDirectory: false)
+        let programsFileURLs = stride(from: 0, to: 7, by: 1).compactMap { (index) -> URL? in
+            let suffix = (index > 0 ? String(index + 1) : "")
+            let programsFileURL = directory.appendingPathComponent("programs\(suffix).csv", isDirectory: false)
+            guard FileManager.default.fileExists(atPath: programsFileURL.path) else { return nil }
+            
+            return programsFileURL
+        }
+        
+        try self.init(channelsCSVFile: channelsFileURL, programsCSVFiles: programsFileURLs, startDay: startDay, forAtari: forAtari, omitSpecialCharacters: omitSpecialCharacters)
+    }
+    
+    func write(channelsCSVFile: URL, programsCSVFiles: [URL]) throws {
         try Channel.write(channels, to: channelsCSVFile)
-        try Program.write(programs, to: programsCSVFile)
+        let programs = days.map(\.programs)
+        for (programs, programsCSVFile) in zip(programs, programsCSVFiles) {
+            try Program.write(programs, to: programsCSVFile)
+        }
     }
     
     func write(to directory: URL) throws {
         let channelsFileURL = directory.appendingPathComponent("channels.csv", isDirectory: false)
-        let programsFileURL = directory.appendingPathComponent("programs.csv", isDirectory: false)
-        try write(channelsCSVFile: channelsFileURL, programsCSVFile: programsFileURL)
+        let programsFileURLs = days.indices.map { (index) -> URL in
+            let suffix = (index > 0 ? String(index + 1) : "")
+            return directory.appendingPathComponent("programs\(suffix).csv", isDirectory: false)
+        }
+        try write(channelsCSVFile: channelsFileURL, programsCSVFiles: programsFileURLs)
     }
 }
 

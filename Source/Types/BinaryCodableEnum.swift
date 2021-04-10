@@ -75,6 +75,6 @@ extension BinaryCodableEnum {
 
 extension BinaryCodableEnum {
     static var allCaseNames: [String] {
-        allCases.map { $0.stringValue }
+        allCases.map(\.stringValue)
     }
 }

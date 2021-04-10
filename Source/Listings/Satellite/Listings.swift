@@ -9,18 +9,19 @@
 import Foundation
 
 struct Listings {
-    let julianDay: JulianDay
-    let channels: [Channel]
-    let programs: [Program]
+    typealias ProgramsDay = (julianDay: JulianDay, programs: [Program])
+    
+    var channels: [Channel]
+    var days: [ProgramsDay]
     
     typealias SourceIdentifier = String // Limited to 6 characters
 
     struct Channel: Codable, UVSGDocumentable, Equatable {
-        let sourceIdentifier: SourceIdentifier
-        let channelNumber: String?
-        let timeslotMask: TimeslotMask?
-        let callLetters: String? // Limited to 5 characters on EPG Jr., 7 on Amiga
-        let flags: Attributes
+        var sourceIdentifier: SourceIdentifier
+        var channelNumber: String?
+        var timeslotMask: TimeslotMask?
+        var callLetters: String? // Limited to 5 characters on EPG Jr., 7 on Amiga
+        var flags: Attributes
         
         struct Attributes: BinaryCodableOptionSet {
             let rawValue: UInt8
@@ -41,10 +42,10 @@ struct Listings {
     }
 
     struct Program: Codable, UVSGDocumentable, Equatable {
-        let timeslot: Timeslot
-        let sourceIdentifier: SourceIdentifier // Channel source
-        let programName: SpecialCharacterString
-        let flags: Attributes
+        var timeslot: Timeslot
+        var sourceIdentifier: SourceIdentifier // Channel source
+        var programName: SpecialCharacterString
+        var flags: Attributes
         
         struct Attributes: BinaryCodableOptionSet {
             let rawValue: UInt8
@@ -62,5 +63,15 @@ struct Listings {
                 case none, movie, altHiliteProg, tagProg, sportsProg, dViewUsed, repeatProg, prevDaysData
             }
         }
+    }
+}
+
+extension Listings {
+    var allPrograms: [Program] {
+        days.flatMap { $0.programs }
+    }
+    
+    var julianDay: JulianDay {
+        days.first!.julianDay
     }
 }

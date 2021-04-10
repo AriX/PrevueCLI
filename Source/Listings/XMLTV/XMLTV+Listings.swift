@@ -19,20 +19,32 @@ import Foundation
 
 extension XMLTV {
     var listings: Listings {
+        let date = Calendar.current.startOfListingsDay(for: .currentTulsaDate) //find earliest date?
+        
         var channels: [Listings.Channel] = []
-        var programs: [Listings.Program] = []
+        var days: [Listings.ProgramsDay] = stride(from: 0, to: numberOfDaysIncluded, by: 1).map { dayIndex in
+            let startDate = date.incrementingDay(by: dayIndex)
+            let julianDay = JulianDay(from: startDate)
+            return (julianDay, [])
+        }
         
         let sortedChannels = self.channels.values.sorted { $0.channelNumber! < $1.channelNumber! }
         for channel in sortedChannels {
             if let listingsChannel = channel.listingsChannel {
                 channels.append(listingsChannel)
-                programs += channel.listingsPrograms
+                
+                for dayIndex in 0..<numberOfDaysIncluded {
+                    let startDate = date.incrementingDay(by: dayIndex)
+                    let endDate = date.incrementingDay(by: dayIndex + 1)
+                    
+                    // Only include programs for this specific day
+                    days[dayIndex].programs += channel.listingsPrograms(from: startDate, to: endDate)
+                }
             }
         }
         
-        let julianDay = JulianDay.today //find earliest date?JulianDay(convertingToByte: header.julianDayNumber.value)
-        return Listings(julianDay: julianDay, channels: channels, programs: programs)
-    }
+        return Listings(channels: channels, days: days)
+     }
 }
 
 extension XMLTV.Channel {
@@ -44,11 +56,12 @@ extension XMLTV.Channel {
         return Listings.Channel(sourceIdentifier: sourceIdentifier, channelNumber: String(channelNumber), timeslotMask: nil, callLetters: callLetters, flags: .none)
     }
     
-    var listingsPrograms: [Listings.Program] {
+    func listingsPrograms(from startDate: Date, to endDate: Date) -> [Listings.Program] {
         guard let sourceIdentifier = sourceIdentifier else { return [] }
         
         return programs.compactMap {
-            return $0.listingsProgram(sourceIdentifier: sourceIdentifier)
+            guard $0.startDate >= startDate && $0.startDate < endDate else { return nil }
+            return $0.listingsProgram(forDay: startDate, sourceIdentifier: sourceIdentifier)
         }
     }
 }
@@ -137,7 +150,7 @@ extension XMLTV.Channel.Program {
     var programName: SpecialCharacterString {
         var programName: [SpecialCharacterString.Component] = []
         
-        if !startDate.startsOnTimeslotBoundary {
+        if !startDate.startsOnTimeslotBoundary() {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "h:mm"
             var startTime = dateFormatter.string(from: startDate) // NOTE: This assumes listings are in local time zone. In the future, we may want to support generating listings for other time zones.
@@ -199,8 +212,8 @@ extension XMLTV.Channel.Program {
         return SpecialCharacterString(components: programName)
     }
     
-    func listingsProgram(sourceIdentifier: Listings.SourceIdentifier) -> Listings.Program? {
-        return Listings.Program(timeslot: startDate.timeslot, sourceIdentifier: sourceIdentifier, programName: programName, flags: flags)
+    func listingsProgram(forDay day: Date, sourceIdentifier: Listings.SourceIdentifier) -> Listings.Program? {
+        return Listings.Program(timeslot: startDate.timeslot(for: day), sourceIdentifier: sourceIdentifier, programName: programName, flags: flags)
     }
 }
 

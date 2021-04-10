@@ -38,4 +38,5 @@ struct XMLTV {
     var sourceInfoName: String?
     var generatorInfoName: String?
     var channels: [String: Channel]
+    var numberOfDaysIncluded: Int
 }

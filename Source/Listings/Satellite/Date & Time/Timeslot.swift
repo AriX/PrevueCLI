@@ -17,12 +17,17 @@ struct TimeslotMask: Equatable {
 // MARK: Date utilities
 
 extension Date {
-    var timeslot: Timeslot {
-        return UInt8(timeslotWithRemainder)
+    func timeslot(for day: Date) -> Timeslot {
+        let timeslot = timeslotWithRemainder(for: day)
+        guard timeslot >= 0 else {
+            print("Found timeslot less than zero, returning 0")
+            return 0
+        }
+        return UInt8(timeslot)
     }
-    var timeslotWithRemainder: Double {
+    func timeslotWithRemainder(for day: Date) -> Double {
         let calendar = Calendar.current
-        let startOfToday = calendar.startOfListingsDay(for: .currentTulsaDate)
+        let startOfToday = calendar.startOfListingsDay(for: day)
         
         let timeComponents = calendar.dateComponents(in: .tulsa, from: self)
         let todayComponents = calendar.dateComponents(in: .tulsa, from: startOfToday)
@@ -31,8 +36,8 @@ extension Date {
         let timeslot = (Double(minutes) / 30.0)
         return (timeslot + 1) // Add 1 to get range 1-48, not 0-47
     }
-    var startsOnTimeslotBoundary: Bool {
-        return timeslotWithRemainder.truncatingRemainder(dividingBy: 1) == 0
+    func startsOnTimeslotBoundary() -> Bool {
+        return timeslotWithRemainder(for: .currentTulsaDate).truncatingRemainder(dividingBy: 1) == 0
     }
 }
 

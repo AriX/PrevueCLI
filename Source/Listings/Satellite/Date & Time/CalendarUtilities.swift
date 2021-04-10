@@ -34,6 +34,19 @@ extension Calendar {
         
         return self.date(from: components)!
     }
+    func numberOfDaysInlcudedBetween(_ from: Date, and to: Date) -> Int {
+        let fromDate = startOfDay(for: from)
+        let toDate = startOfDay(for: to)
+        let numberOfDays = dateComponents([.day], from: fromDate, to: toDate)
+        
+        return numberOfDays.day!
+    }
+}
+
+extension Date {
+    func incrementingDay(by days: Int) -> Date {
+        return Calendar.current.date(byAdding: .day, value: days, to: self)!
+    }
 }
 
 extension TimeInterval {

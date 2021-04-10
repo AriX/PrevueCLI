@@ -9,18 +9,16 @@
 import Foundation
 
 struct ListingsCommand: MetaCommand {
-    let channelsFilePath: String
-    let programsFilePath: String
+    let listingsDirectoryPath: String
     let forAtari: Bool
     let omitSpecialCharacters: Bool?
     
     var commands: [DataCommand] {
-        let channelsFile = URL(fileURLWithPath: channelsFilePath)
-        let programsFile = URL(fileURLWithPath: programsFilePath)
+        let listingsDirectory = URL(fileURLWithPath: listingsDirectoryPath)
         
         var listings: Listings
         do {
-            listings = try Listings(channelsCSVFile: channelsFile, programsCSVFile: programsFile, day: .today, forAtari: forAtari, omitSpecialCharacters: omitSpecialCharacters ?? false)
+            listings = try Listings(directory: listingsDirectory, startDay: Date(), forAtari: forAtari, omitSpecialCharacters: omitSpecialCharacters ?? false)
         } catch {
             print("Error loading listings from CSVListings: \(error)")
             return []
@@ -33,8 +31,8 @@ struct ListingsCommand: MetaCommand {
 extension Listings {
     var commands: [DataCommand] {
         let channelCommand = ChannelsCommand(day: julianDay, channels: Array(channels))
-        let programCommands: [ProgramCommand] = programs.map { (program) in
-            ProgramCommand(day: julianDay, program: program)
+        let programCommands = days.prefix(2).flatMap { (day) -> [ProgramCommand] in
+            day.programs.map { ProgramCommand(day: day.julianDay, program: $0) }
         }
         
         return [channelCommand] + programCommands

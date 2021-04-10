@@ -12,12 +12,12 @@ import FoundationXML
 #endif
 
 extension XMLTV {
-    init(xmlData: Data, maxChannelNumber: Int) throws {
+    init(xmlData: Data, maxChannelNumber: Int, daysToFetch: Int = 1) throws {
         let calendar = Calendar.current
         let timeZone = TimeZone.tulsa
         let startOfToday = calendar.startOfListingsDay(for: .currentTulsaDate)
-        let startOfTomorrow = calendar.date(byAdding: .day, value: 1, to: startOfToday)!
-        let parser = XMLTVParser(fromDate: startOfToday, toDate: startOfTomorrow, timeZone: timeZone, maxChannelNumber: maxChannelNumber)
+        let startOfEndDay = startOfToday.incrementingDay(by: daysToFetch)
+        let parser = XMLTVParser(fromDate: startOfToday, toDate: startOfEndDay, timeZone: timeZone, maxChannelNumber: maxChannelNumber)
         
         let xmlParser = XMLParser(data: xmlData)
         let delegateStack = ParserDelegateStack(xmlParser: xmlParser)
@@ -50,10 +50,12 @@ class XMLTVParser: NodeParser {
     }
     
     override func didParseElement() {
+        let numberOfDaysIncluded = Calendar.current.numberOfDaysInlcudedBetween(programsParser.minDate, and: programsParser.maxDate)
         result = XMLTV(sourceInfoURL: attributes["source-info-url"],
                        sourceInfoName: attributes["source-info-name"],
                        generatorInfoName: attributes["generator-info-name"],
-                       channels: channelsParser.channels)
+                       channels: channelsParser.channels,
+                       numberOfDaysIncluded: numberOfDaysIncluded)
     }
         
     let channelsParser: ChannelsParser
