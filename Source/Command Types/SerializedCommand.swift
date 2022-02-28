@@ -18,6 +18,7 @@ public struct SerializedCommand {
         BoxOnCommand(selectCode: ""),
         BoxOffCommand(),
         ResetCommand(),
+        VersionCommand(versionString: "4.1"),
         TitleCommand(alignment: .center, title: ""),
         ClockCommand(with: Date())!,
         CurrentClockCommand(dayOfYear: 0),

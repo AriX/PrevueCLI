@@ -19,6 +19,11 @@ struct ResetCommand: DataCommand, Equatable {
     static let commandMode = DataCommandMode.reset
 }
 
+struct VersionCommand: DataCommand, Equatable {
+    static let commandMode: DataCommandMode = .version
+    let versionString: String
+}
+
 // MARK: Encoding
 
 extension BoxOffCommand {
@@ -30,5 +35,11 @@ extension BoxOffCommand {
 extension ResetCommand {
     var footerBytes: Bytes {
         return [0x00]
+    }
+}
+
+extension VersionCommand {
+    static var headerBytes: Bytes {
+        return [0x01]
     }
 }

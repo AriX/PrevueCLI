@@ -26,6 +26,7 @@ enum DataCommandMode: ASCIICharacter, BinaryCodableEnum {
     case reset = "R"
     case title = "T"
     case colorLocalAd = "t"
+    case version = "V"
     case saveData = "%"
     case boxOff = "\u{BB}"
     
