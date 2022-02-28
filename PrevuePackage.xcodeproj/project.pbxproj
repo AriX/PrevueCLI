@@ -39,6 +39,7 @@
 		02193F7C2459069F0093D586 /* CLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02193F7B2459069F0093D586 /* CLI.swift */; };
 		024CE95E25AACD6400C88001 /* SerialInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CE95D25AACD6400C88001 /* SerialInterface.swift */; };
 		024CE95F25AACD6400C88001 /* SerialInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024CE95D25AACD6400C88001 /* SerialInterface.swift */; };
+		025F523E270024D70087E328 /* ScrollCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F523D270024D70087E328 /* ScrollCommand.swift */; };
 		02678B4F250C073C005D1114 /* pplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 02678B4C250C073B005D1114 /* pplib.c */; };
 		02678B50250C073C005D1114 /* pplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 02678B4C250C073B005D1114 /* pplib.c */; };
 		02678B52250C65A4005D1114 /* PowerPacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02678B51250C65A4005D1114 /* PowerPacker.swift */; };
@@ -239,6 +240,7 @@
 		0220A64B2274E8550058C20D /* SerialPortDataDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortDataDestination.swift; sourceTree = "<group>"; };
 		024CE95D25AACD6400C88001 /* SerialInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialInterface.swift; sourceTree = "<group>"; };
 		025C0D9123714A9600489835 /* DataSending+AriDebugCTRL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSending+AriDebugCTRL.swift"; sourceTree = "<group>"; };
+		025F523D270024D70087E328 /* ScrollCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCommand.swift; sourceTree = "<group>"; };
 		02678B4C250C073B005D1114 /* pplib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pplib.c; sourceTree = "<group>"; };
 		02678B4E250C073B005D1114 /* pplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pplib.h; sourceTree = "<group>"; };
 		02678B51250C65A4005D1114 /* PowerPacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerPacker.swift; path = Modules/PowerPacker/PowerPacker.swift; sourceTree = SOURCE_ROOT; };
@@ -388,6 +390,7 @@
 				02193165237BAD310076A810 /* PromoTitleCommand.swift */,
 				02193167237BAFB30076A810 /* EventCommand.swift */,
 				02F93C0F256B9838009271D4 /* DefaultGraphicCommand.swift */,
+				025F523D270024D70087E328 /* ScrollCommand.swift */,
 			);
 			path = "Control Commands";
 			sourceTree = "<group>";
@@ -828,6 +831,7 @@
 				02B1BD0224E274A600ACF1D7 /* TitleCommand.swift in Sources */,
 				02C71BEF24FDA40A00550746 /* NewLookConfigurationCommand.swift in Sources */,
 				02193F6C2454B2360093D586 /* Node.swift in Sources */,
+				025F523E270024D70087E328 /* ScrollCommand.swift in Sources */,
 				02193F722454B2E50093D586 /* UVSGSerialData.c in Sources */,
 				02CFDFD42520169E004E5EB4 /* JulianDay.swift in Sources */,
 				02C71BF8250445AB00550746 /* SerialPortDataDestination.swift in Sources */,
