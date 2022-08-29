@@ -13,6 +13,7 @@
 #ifdef _WIN32
 #include <io.h>
 #include <Ws2tcpip.h>
+#include <windows.h>
 #else
 #include <arpa/inet.h>
 #include <errno.h>
@@ -307,3 +308,87 @@ bool UVSGSerialDataSenderSendData(UVSGSerialDataSender *sender, const void *data
 int UVSGSerialDataSenderGetSocket(UVSGSerialDataSender *sender) {
     return sender->tcpSocket;
 }
+
+// MARK: Serial port client
+
+#ifdef _WIN32
+struct UVSGSerialPortIOClient {
+    HANDLE handle;
+};
+
+UVSGSerialPortIOClient *UVSGSerialPortIOClientCreate(const char *name, unsigned int baudRate) {
+    DWORD accessdirection = GENERIC_WRITE;
+    HANDLE serialHandle = CreateFile(name, accessdirection, 0, 0, OPEN_EXISTING, 0, 0);
+    if (serialHandle == INVALID_HANDLE_VALUE) {
+        fprintf(stderr, "UVSGSerialPortIOClient: CreateFile() failed: %d\n", getUVSGSocketError());
+        return false;
+    }
+    
+    DCB dcbSerialParams = {0};
+    dcbSerialParams.DCBlength = sizeof(dcbSerialParams);
+    BOOL status = GetCommState(serialHandle, &dcbSerialParams);
+    if (!status) {
+        fprintf(stderr, "UVSGSerialPortIOClient: GetCommState() failed: %d\n", getUVSGSocketError());
+        return false;
+    }
+    
+    dcbSerialParams.BaudRate = baudRate;
+    dcbSerialParams.ByteSize = 8;
+    dcbSerialParams.StopBits = ONESTOPBIT;
+    dcbSerialParams.Parity = NOPARITY;
+    dcbSerialParams.fRtsControl = RTS_CONTROL_ENABLE;
+    status = SetCommState(serialHandle, &dcbSerialParams);
+    if (!status) {
+        fprintf(stderr, "UVSGSerialPortIOClient: SetCommState() failed: %d\n", getUVSGSocketError());
+        return false;
+    }
+    
+    COMMTIMEOUTS timeouts = {0};
+    timeouts.WriteTotalTimeoutConstant = 50;
+    timeouts.WriteTotalTimeoutMultiplier = 10;
+    status = SetCommTimeouts(serialHandle, &timeouts);
+    if (!status) {
+        fprintf(stderr, "UVSGSerialPortIOClient: SetCommState() failed: %d\n", getUVSGSocketError());
+        return false;
+    }
+    
+    printf("UVSGSerialPortIOClient: Connected to serial port %s at rate %u\n", name, baudRate);
+    
+    UVSGSerialPortIOClient *client = malloc(sizeof(UVSGSerialPortIOClient));
+    client->handle = serialHandle;
+    
+    return client;
+}
+
+void UVSGSerialPortIOClientFree(UVSGSerialPortIOClient *client) {
+    printf("UVSGSerialPortIOClient: Disconnecting\n");
+    
+    CloseHandle(client->handle);
+    free(client);
+}
+
+bool UVSGSerialPortIOClientSendData(UVSGSerialPortIOClient *client, const void *data, size_t dataSize) {
+    DWORD bytesWritten = 0;
+    BOOL status = WriteFile(client->handle, data, dataSize, &bytesWritten, NULL);
+    if (!status) {
+        fprintf(stderr, "UVSGSerialPortIOClient: WriteFile() failed: %d\n", getUVSGSocketError());
+        return false;
+    }
+    
+    if (bytesWritten != dataSize) {
+        fprintf(stderr, "UVSGSerialPortIOClient: WriteFile() failed: wrote %lu bytes instead of %zu\n", bytesWritten, dataSize);
+        return false;
+    }
+    
+    return true;
+}
+
+/*
+ TODO: Support receiving data on Windows (for audio switch monitoring), and RTS setting (for bit-banging)
+
+size_t UVSGSerialPortIOClientReceiveData(UVSGSerialPortIOClient *client, void **receivedData);
+int UVSGSerialPortIOClientGetHandle(UVSGSerialPortIOClient *client) {
+    return client->handle;
+}*/
+
+#endif

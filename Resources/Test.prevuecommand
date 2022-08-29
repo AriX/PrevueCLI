@@ -2,7 +2,7 @@
 destinations:
 - TCPDataDestination: {host: "127.0.0.1", port: 5541}
 
-# Serial port data destination is currently supported on Mac only:
+# Serial port data destination is currently supported on Mac and Windows only:
 # - SerialPortDataDestination: {path: "/dev/cu.usbserial", baudRate: 2400}
 
 ## Commands: define what to send

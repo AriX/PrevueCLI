@@ -21,7 +21,7 @@ struct PrevueCommandFile: Codable {
 extension PrevueCommandFile {
     struct SerializedDestination: Codable, PropertiesGettableByType {
         let TCPDataDestination: TCPDataDestination?
-        #if !os(Windows) && !os(Linux)
+        #if !os(Linux)
         let SerialPortDataDestination: SerialPortDataDestination?
         #endif
     }
@@ -67,15 +67,11 @@ extension PrevueCommandFile {
 extension PrevueCommandFile {
     func sendAllCommands() {
         for destination in destinations {
-            destination.openConnection()
+            try! destination.openConnection()
         }
         
         for command in commands {
-            for satelliteCommand in command.satelliteCommands {
-                for destination in destinations {
-                    destination.send(data: satelliteCommand)
-                }
-            }
+            destinations.send(data: command.satelliteCommands)
         }
         
         for destination in destinations {

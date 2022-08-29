@@ -15,21 +15,27 @@ protocol DataDestination: Codable {
     func send(data bytes: Bytes)
     func send(control bytes: Bytes)
     
-    func openConnection()
+    func openConnection() throws
     func closeConnection()
+    
+    var baudRate: UInt { get }
 }
 
 /**
- Support sending UVSGCommand commands to a data destination.
+ Support sending UVSGCommand commands to data destinations.
  */
-extension DataDestination {
+extension Array where Element == DataDestination {
     func send(data command: SatelliteCommand) {
         do {
             let bytes = try BinaryEncoder.encode(SerializedCommand(command: command))
             
             let commandType = type(of: command)
             print("Sending \(commandType) in \(bytes.count) \(bytes.count == 1 ? "byte" : "bytes"): \(bytes.hexEncodedString())")
-            send(data: bytes)
+            for destination in self {
+                destination.send(data: bytes)
+            }
+            let slowestBaudRate = map(\.baudRate).min() ?? 2400
+            bytes.delayForSending(at: slowestBaudRate)
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -43,6 +49,15 @@ extension DataDestination {
             send(data: command)
             i += 1
         }
+    }
+}
+
+extension DataDestination {
+    func send(data command: SatelliteCommand) {
+        [self].send(data: command)
+    }
+    func send(data commands: [SatelliteCommand]) {
+        [self].send(data: commands)
     }
     func send(control commands: [ControlCommand]) {
         do {
@@ -62,6 +77,7 @@ extension DataDestination {
 class NetworkDataDestination: DataDestination {
     var host: String
     var port: Int32
+    var baudRate: UInt { 2400 }
     
     init(host: String, port: Int32) {
         self.host = host
@@ -75,7 +91,7 @@ class NetworkDataDestination: DataDestination {
         // Unimplemented
     }
     
-    func openConnection() {
+    func openConnection() throws {
         // Unimplemented
     }
     
@@ -88,23 +104,23 @@ class NetworkDataDestination: DataDestination {
 import WinSDK
 #endif
 
-extension DataDestination {
-    func durationToSendBit(baudRate: Int) -> TimeInterval {
+extension Array where Element == Byte {
+    static func durationToSendBit(atBaudRate baudRate: UInt) -> TimeInterval {
         return (1 / Double(baudRate))
     }
     
-    func durationToSendBytes(byteCount: Int, at baudRate: Int, startBits: Int = 1, stopBits: Int = 1) -> TimeInterval {
+    func durationToSendBytes(byteCount: Int, at baudRate: UInt, startBits: Int = 1, stopBits: Int = 1) -> TimeInterval {
         let bytes = Double(byteCount)
         let bitsPerByte = Double(8 + startBits + stopBits)
-        let durationPerBit = durationToSendBit(baudRate: baudRate)
+        let durationPerBit = Self.durationToSendBit(atBaudRate: baudRate)
         
         return (bytes * bitsPerByte * durationPerBit)
     }
     
     // Call this after sending data to rate limit sending to a particular baud rate
-    func delayForSendingBytes(byteCount: Int, baudRate: Int) {
+    func delayForSending(at baudRate: UInt) {
         // For unknown reasons, this seems to be too fast (for the Atari emulator) until I apply a factor of 4 or 5
-        let timeToWait = durationToSendBytes(byteCount: byteCount, at: baudRate).miliseconds
+        let timeToWait = durationToSendBytes(byteCount: count, at: baudRate).miliseconds
         sleep(miliseconds: timeToWait)
     }
     

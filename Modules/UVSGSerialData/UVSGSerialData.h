@@ -32,3 +32,15 @@ void UVSGSerialDataSenderFree(UVSGSerialDataSender *sender);
 
 bool UVSGSerialDataSenderSendData(UVSGSerialDataSender *sender, const void *data, size_t dataSize);
 int UVSGSerialDataSenderGetSocket(UVSGSerialDataSender *sender);
+
+/**
+ Windows serial port IO client
+ */
+#ifdef _WIN32
+typedef struct UVSGSerialPortIOClient UVSGSerialPortIOClient;
+
+UVSGSerialPortIOClient *UVSGSerialPortIOClientCreate(const char *name, unsigned int baudRate);
+void UVSGSerialPortIOClientFree(UVSGSerialPortIOClient *client);
+
+bool UVSGSerialPortIOClientSendData(UVSGSerialPortIOClient *client, const void *data, size_t dataSize);
+#endif

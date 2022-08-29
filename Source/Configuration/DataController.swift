@@ -8,30 +8,15 @@
 
 import Foundation
 
-// have some kind of serializable config for machines?
-
 class DataController {
-    let dataDestinations: [DataDestination]
+    var dataDestinations: [DataDestination]
     
     init(dataDestinations: [DataDestination]) {
         self.dataDestinations = dataDestinations
-        
-        for destination in dataDestinations {
-            if let serialDestination = destination as? SerialPortDataDestination {
-                serialDestination.startTimer()
-            }
-            
-            destination.openConnection()
-        }
     }
     
     convenience init() {
-#if os(Windows) || os(Linux)
-        let destination = TCPDataDestination(host: "127.0.0.1", port: 5542)
-#else
-        let destination = SerialPortDataDestination(path: "/dev/cu.usbserial-14210")
-#endif
-        self.init(dataDestinations: [destination])
+        self.init(dataDestinations: [])
     }
     
     func send(control commands: [ControlCommand]) {
@@ -40,7 +25,27 @@ class DataController {
         }
     }
     
-    func sendBlastoff() {
-        // do things?
+    func send(data commands: [Command]) {
+        for command in commands {
+            dataDestinations.send(data: command.satelliteCommands)
+        }
+    }
+    
+    func connect() throws {
+        for destination in dataDestinations {
+            try destination.openConnection()
+            
+#if !os(Windows) && !os(Linux)
+            if let serialDestination = destination as? SerialPortDataDestination {
+                if serialDestination.supportsRTSBitBanging {
+                    // For CTRL
+                    serialDestination.startTimer()
+                } else {
+                    // To switch Atari SIO2PC adapter into data mode
+                    serialDestination.setRTS(false)
+                }
+            }
+#endif
+        }
     }
 }

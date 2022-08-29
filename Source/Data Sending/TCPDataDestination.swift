@@ -12,11 +12,12 @@ import UVSGSerialData
 class TCPDataDestination: NetworkDataDestination {
     var sender: OpaquePointer?
     
-    override func openConnection() {
+    override func openConnection() throws {
         if sender == nil {
             sender = host.withCString { UVSGSerialDataSenderCreate($0, port) }
             if sender == nil {
                 print("[TCPDataDestination] Failed to open connection")
+                throw POSIXError(POSIXErrorCode(rawValue: errno) ?? .EIO)
             }
         }
     }
@@ -44,8 +45,6 @@ class TCPDataDestination: NetworkDataDestination {
         if !success {
             print("Failed to send packet of size \(bytes.count)")
         }
-        
-        delayForSendingBytes(byteCount: bytes.count, baudRate: 2400)
     }
     
     override func send(control bytes: Bytes) {
@@ -55,6 +54,7 @@ class TCPDataDestination: NetworkDataDestination {
     }
 }
 
+#if !os(Windows)
 extension TCPDataDestination: FileDescriptorSerialInterface {
     func receive(byteCount: Int) -> Bytes? {
         guard let fileDescriptor = fileDescriptor else {
@@ -81,3 +81,4 @@ extension TCPDataDestination: FileDescriptorSerialInterface {
         return UVSGSerialDataSenderGetSocket(sender)
     }
 }
+#endif

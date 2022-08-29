@@ -8,30 +8,44 @@
 
 import Foundation
 import Dispatch
+import UVSGSerialData
 
-#if !os(Windows) && !os(Linux)
-class SerialPortDataDestination: FileDescriptorSerialInterface {
+#if !os(Linux)
+class SerialPortDataDestination: DataDestination {
     let path: String
-    let baudRate: speed_t
+    let baudRate: UInt
+    var supportsRTSBitBanging: Bool = true
+    #if os(Windows)
+    var handle: OpaquePointer?
+    #else
     var handle: CInt?
+    #endif
     
     enum CodingKeys: CodingKey {
         case path
         case baudRate
     }
     
-    init(path: String, baudRate: speed_t = 2400) {
+    init(path: String, baudRate: UInt = 2400, supportsRTSBitBanging: Bool) {
         self.path = path
         self.baudRate = baudRate
+        self.supportsRTSBitBanging = supportsRTSBitBanging
     }
     
-    func openConnection() {
+    func openConnection() throws {
         guard self.handle == nil else { return }
         
+        #if os(Windows)
+        handle = path.withCString { UVSGSerialPortIOClientCreate($0, UInt32(baudRate)) }
+        if handle == nil {
+            print("[SerialPortDataDestination] Failed to open \(path)")
+            throw POSIXError(POSIXErrorCode(rawValue: errno) ?? .EIO)
+        }
+        #else
         let handle = open(path, O_RDWR | O_NOCTTY | O_NONBLOCK)
         if handle == -1 {
             print("[SerialPortDataDestination] Failed to open \(path)")
-            return
+            throw POSIXError(POSIXErrorCode(rawValue: errno) ?? .EIO)
         }
         
         _ = ioctl(handle, TIOCEXCL)
@@ -49,11 +63,16 @@ class SerialPortDataDestination: FileDescriptorSerialInterface {
         tcsetattr(handle, TCSANOW, &settings)
         
         self.handle = handle
+        #endif
     }
     
     func closeConnection() {
         if let handle = handle {
+            #if os(Windows)
+            UVSGSerialPortIOClientFree(handle)
+            #else
             close(handle)
+            #endif
         }
         handle = nil
     }
@@ -74,35 +93,11 @@ class SerialPortDataDestination: FileDescriptorSerialInterface {
         
         buffer.copyBytes(from: bytes)
         
+        #if os(Windows)
+        UVSGSerialPortIOClientSendData(handle, buffer.baseAddress, size)
+        #else
         write(handle, buffer.baseAddress, size)
-        
-        delayForSendingBytes(byteCount: bytes.count, baudRate: Int(baudRate))
-    }
-    
-    // MARK: - Receiving data (FileDescriptorDataOrigin)
-
-    func receive(byteCount: Int) -> Bytes? {
-        guard let handle = handle else {
-            print("[SerialPortDataDestination] Tried to receive bytes with no open handle")
-            return nil
-        }
-        
-        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
-        defer {
-            buffer.deallocate()
-        }
-
-        let bytesRead = read(handle, buffer, byteCount)
-
-        guard bytesRead >= 0 else {
-            return nil
-        }
-        
-        return Bytes(UnsafeMutableBufferPointer(start: buffer, count: bytesRead))
-    }
-    
-    var fileDescriptor: CInt? {
-        return handle
+        #endif
     }
     
     // MARK: - CTRL
@@ -113,7 +108,7 @@ class SerialPortDataDestination: FileDescriptorSerialInterface {
     lazy var ctrlTimer = DispatchSource.makeTimerSource(flags: .strict, queue: ctrlQueue)
     
     func startTimer() {
-        let duration = durationToSendBit(baudRate: 110)
+        let duration = Bytes.durationToSendBit(atBaudRate: 110)
         let nanosecondDuration = Int(round(duration.nanoseconds))
         ctrlTimer.schedule(deadline: .now(), repeating: .nanoseconds(nanosecondDuration), leeway: .nanoseconds(0))
         
@@ -151,6 +146,8 @@ class SerialPortDataDestination: FileDescriptorSerialInterface {
             return
         }
         
+        // TODO: Support RTS bit-banging on Windows
+        #if !os(Windows)
         var status: Int32 = 0
         _ = ioctl(handle, TIOCMGET, &status)
         
@@ -164,6 +161,7 @@ class SerialPortDataDestination: FileDescriptorSerialInterface {
         if status != updatedStatus {
             _ = ioctl(handle, TIOCMSET, &updatedStatus)
         }
+        #endif
     }
     
     func sendCTRLByte(_ byte: Byte) {
@@ -188,4 +186,34 @@ class SerialPortDataDestination: FileDescriptorSerialInterface {
         }
     }
 }
+
+#if !os(Windows)
+// TODO: Support receiving serial data on Windows
+extension SerialPortDataDestination: FileDescriptorSerialInterface {
+    func receive(byteCount: Int) -> Bytes? {
+        guard let handle = handle else {
+            print("[SerialPortDataDestination] Tried to receive bytes with no open handle")
+            return nil
+        }
+        
+        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
+        defer {
+            buffer.deallocate()
+        }
+
+        let bytesRead = read(handle, buffer, byteCount)
+
+        guard bytesRead >= 0 else {
+            return nil
+        }
+        
+        return Bytes(UnsafeMutableBufferPointer(start: buffer, count: bytesRead))
+    }
+    
+    var fileDescriptor: CInt? {
+        return handle
+    }
+}
+#endif
+
 #endif
