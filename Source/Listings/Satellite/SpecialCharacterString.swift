@@ -123,11 +123,19 @@ extension SpecialCharacterString: Codable, LosslessStringConvertible, Expressibl
     }
     var descriptionExcludingSpecialCharacters: String {
         return components.compactMap { (component) -> String? in
-            if case let .string(string) = component {
-                return string.replacingOccurrences(of: "|", with: "")
+            switch component {
+            case .string(let string):
+                var strippedString = string.replacingOccurrences(of: "|", with: "")
+                
+                // Trim trailing whitespace (e.g. "CBS Weekend News \{91} \{7C}" should become "CBS Weekend News")
+                while strippedString.last?.isWhitespace == true {
+                    strippedString.removeLast()
+                }
+                
+                return strippedString
+            case .specialCharacter:
+                return nil
             }
-            
-            return nil
         }.joined()
     }
     init(_ description: String) {

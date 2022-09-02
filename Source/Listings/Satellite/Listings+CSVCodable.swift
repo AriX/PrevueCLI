@@ -17,7 +17,7 @@ extension Listings {
         channels = try Channel.load(from: channelsCSVFile)
         
         if forAtari {
-            channels = channels.makeAtariCompatible()
+            channels.makeAtariCompatible()
         }
         
         days = []
@@ -26,7 +26,7 @@ extension Listings {
             var loadedPrograms = try Program.load(from: programsCSVFile)
             
             if forAtari || omitSpecialCharacters {
-                loadedPrograms = loadedPrograms.makeAtariCompatible()
+                loadedPrograms.stripSpecialCharacters()
             }
             
             let julianDay = JulianDay(from: day)

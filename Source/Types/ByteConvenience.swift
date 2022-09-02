@@ -32,11 +32,11 @@ extension String {
 
 // MARK: Convenience conversions
 
-extension Array where Element == Byte {
-    func splitIntoChunks(chunkSize: Int) -> [Bytes] {
-        return stride(from: 0, to: self.count, by: chunkSize).map { chunkStartIndex in
-            let endIndex = (self.index(chunkStartIndex, offsetBy: chunkSize, limitedBy: self.count) ?? self.count)
-            return Bytes(self[chunkStartIndex ..< endIndex])
+extension Array {
+    func splitIntoChunks(chunkSize: Int) -> [[Element]] {
+        return stride(from: 0, to: count, by: chunkSize).map { chunkStartIndex in
+            let endIndex = (index(chunkStartIndex, offsetBy: chunkSize, limitedBy: count) ?? count)
+            return Array(self[chunkStartIndex ..< endIndex])
         }
     }
 }

@@ -7,7 +7,7 @@
 //
 
 // Protocol that allows an enum to be coded as its raw value with BinaryCodable, and as a case name wih Codable
-protocol BinaryCodableEnum: BinaryCodable, UVSGDocumentableEnum, RawRepresentable, CaseIterable where RawValue: BinaryCodable {
+protocol BinaryCodableEnum: BinaryCodable, EnumCodableAsCaseName, UVSGDocumentableEnum, RawRepresentable where RawValue: BinaryCodable {
 }
 
 // MARK: BinaryCodable
@@ -49,11 +49,26 @@ extension BinaryCodableEnum {
         
         try self.init(fromBinary: decoder)
     }
+    // This is verbatim the same as the EnumCodableAsCaseName implementation down below. The inheritance doesn't work as expected, presumably due to a lack of clarity on the relationship between EnumCodableAsCaseName and RawRepresentable, so I've duplicated it.
+    init(from decoder: Decoder) throws {
+        let stringValue = try decoder.singleValueContainer().decode(String.self)
+        guard let matchingCase = Self.allCases.first(where: { $0.stringValue == stringValue }) else {
+            throw DecodingError.typeMismatch(Self.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Invalid enum case specified: \(stringValue)"))
+        }
+        
+        self = matchingCase
+    }
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(self.stringValue)
+    }
 }
 
 // MARK: Codable
 
-extension BinaryCodableEnum {
+protocol EnumCodableAsCaseName: Codable, CaseIterable {}
+
+extension EnumCodableAsCaseName {
     init(from decoder: Decoder) throws {
         let stringValue = try decoder.singleValueContainer().decode(String.self)
         guard let matchingCase = Self.allCases.first(where: { $0.stringValue == stringValue }) else {

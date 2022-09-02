@@ -1,5 +1,5 @@
 //
-//  TransferFileCommand.swift
+//  SendFileCommand.swift
 //  PrevuePackage
 //
 //  Created by Ari on 9/10/20.
@@ -8,13 +8,12 @@
 
 import Foundation
 
-struct TransferFileCommand: MetaCommand {
+struct SendFileCommand: MetaCommand {
     let localFilePath: String
     let remoteFilePath: String
     
     var commands: [DataCommand] {
         let fileData = try! Data(contentsOf: URL(fileURLWithPath: localFilePath))
-        let fileBytes = [UInt8](fileData)
-        return DownloadCommand.commandsToTransferFile(filePath: remoteFilePath, contents: fileBytes)
+        return DownloadCommand.commandsToTransferFile(filePath: remoteFilePath, contents: Bytes(fileData))
     }
 }

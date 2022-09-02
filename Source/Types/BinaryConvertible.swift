@@ -132,7 +132,7 @@ extension BinaryConvertible {
     }
 }
 
-protocol BinaryConvertibleInteger: BinaryConvertible, ExpressibleByIntegerLiteral where IntegerLiteralType == UnderlyingType {
+protocol BinaryConvertibleInteger: BinaryConvertible, Hashable, ExpressibleByIntegerLiteral where IntegerLiteralType == UnderlyingType {
 }
 
 extension BinaryConvertibleInteger {

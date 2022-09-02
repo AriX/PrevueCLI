@@ -17,37 +17,38 @@ enum SatelliteAudioState: Byte {
     case backgroundAudio = 3
 }
 
-protocol AudioStateObserver: class {
+protocol AudioStateObserver: AnyObject {
     func setAudioState(_ audioState: SatelliteAudioState)
 }
 
 class AudioSwitchMonitor {
-    let serialInterface: FileDescriptorSerialInterface
-    let source: DispatchSourceRead
-    
     weak var switcher: AudioStateObserver?
     
-    init?(serialInterface: FileDescriptorSerialInterface) {
-        self.serialInterface = serialInterface
-        
-        guard let fileDescriptor = serialInterface.fileDescriptor else {
-            print("[AudioSwitchMonitor] Failed to initialize because serial interface is not connected")
-            return nil
-        }
-        
-        source = DispatchSource.makeReadSource(fileDescriptor: fileDescriptor, queue: DispatchQueue.global(qos: .default))
-        source.setEventHandler { 
-            guard let bytes = serialInterface.receive(byteCount: 128),
-                  let lastByte = bytes.last,
-                  let audioState = SatelliteAudioState(rawValue: lastByte) else { return }
+    var source: DispatchSourceRead?
+    var serialInterface: FileDescriptorSerialInterface? {
+        didSet {
+            guard let fileDescriptor = serialInterface?.fileDescriptor else {
+                print("[AudioSwitchMonitor] Failed to initialize because serial interface is not connected")
+                return
+            }
             
-            print("[AudioSwitchMonitor] Changing audio state to \(audioState)")
-            self.switcher?.setAudioState(audioState)
+            let readSource = DispatchSource.makeReadSource(fileDescriptor: fileDescriptor, queue: DispatchQueue.global(qos: .default))
+            readSource.setEventHandler {
+                guard let bytes = self.serialInterface?.receive(byteCount: 128),
+                      let lastByte = bytes.last,
+                      let audioState = SatelliteAudioState(rawValue: lastByte) else { return }
+                
+                print("[AudioSwitchMonitor] Changing audio state to \(audioState)")
+                self.switcher?.setAudioState(audioState)
+            }
+            readSource.resume()
+            
+            source?.cancel()
+            source = readSource
         }
-        source.resume()
     }
     
     deinit {
-        source.cancel()
+        source?.cancel()
     }
 }

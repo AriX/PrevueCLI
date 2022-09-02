@@ -29,12 +29,25 @@ struct ListingsCommand: MetaCommand {
 }
 
 extension Listings {
-    var commands: [DataCommand] {
-        let channelCommand = ChannelsCommand(day: julianDay, channels: Array(channels))
-        let programCommands = days.prefix(2).flatMap { (day) -> [ProgramCommand] in
+    var channelsCommand: ChannelsCommand {
+        ChannelsCommand(day: julianDay, channels: Array(channels))
+    }
+    
+    func programCommands(forDays: Int) -> [ProgramCommand] {
+        days.prefix(forDays).flatMap { (day) -> [ProgramCommand] in
             day.programs.map { ProgramCommand(day: day.julianDay, program: $0) }
         }
-        
-        return [channelCommand] + programCommands
+    }
+    
+    var programCommandsForCurrentDay: [ProgramCommand] {
+        programCommands(forDays: 1)
+    }
+    
+    var programCommandsForCurrentAndNextDay: [ProgramCommand] {
+        programCommands(forDays: 2)
+    }
+    
+    var commands: [DataCommand] {
+        return [channelsCommand] + programCommandsForCurrentAndNextDay
     }
 }

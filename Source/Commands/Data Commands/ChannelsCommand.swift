@@ -8,8 +8,8 @@
 
 struct ChannelsCommand: DataCommand, Codable, Equatable {
     static let commandMode = DataCommandMode.channel
-    let day: JulianDay
-    let channels: [Listings.Channel]
+    var day: JulianDay
+    var channels: [Listings.Channel]
 }
 
 // MARK: Binary coding

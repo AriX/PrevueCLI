@@ -23,7 +23,10 @@ public struct SerializedCommand {
         ClockCommand(with: Date())!,
         CurrentClockCommand(dayOfYear: 0),
         DownloadCommand(message: .start(filePath: "")),
-        TransferFileCommand(localFilePath: "", remoteFilePath: ""),
+        SendFileCommand(localFilePath: "", remoteFilePath: ""),
+        SendBrushes(brushes: [Brush(localFilePath: "", filename: "", id: "")], driveName: ""),
+        SendLogos(logos: [Logo(localFilePath: "", filename: "")], logoListDriveName: "", imageDriveName: ""),
+        SendScrollBanner(scrollBannerPath: "", sendBannerINI: true, driveName: ""),
         DSTCommand(mode: .local, start: DSTBoundary(year: 0, dayOfYear: 0, hour: 0, minute: 0), end: DSTBoundary(year: 0, dayOfYear: 0, hour: 0, minute: 0)),
         CurrentDSTCommand(),
         LocalAdCommand.ad(LocalAd(adNumber: 0, content: [.init(alignment: nil, color: nil, text: "")], timePeriod: .init(beginning: 0, ending: 0))),
@@ -33,6 +36,8 @@ public struct SerializedCommand {
         ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Listings.Channel(sourceIdentifier: "", channelNumber: "", timeslotMask: TimeslotMask(blackedOutTimeslots: [0]), callLetters: "", flags: [])]),
         ProgramCommand(day: JulianDay(dayOfYear: 0), program: Listings.Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
         ListingsCommand(listingsDirectoryPath: "", forAtari: false, omitSpecialCharacters: false),
+        UtilityCommand(mode: .reloadScrollBanner),
+        UtilityRunShellCommand(command: ""),
     ]
 }
 
