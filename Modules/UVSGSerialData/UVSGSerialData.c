@@ -336,7 +336,7 @@ UVSGSerialPortIOClient *UVSGSerialPortIOClientCreate(const char *name, unsigned 
     dcbSerialParams.ByteSize = 8;
     dcbSerialParams.StopBits = ONESTOPBIT;
     dcbSerialParams.Parity = NOPARITY;
-    dcbSerialParams.fRtsControl = RTS_CONTROL_ENABLE;
+//    dcbSerialParams.fRtsControl = RTS_CONTROL_ENABLE;
     status = SetCommState(serialHandle, &dcbSerialParams);
     if (!status) {
         fprintf(stderr, "UVSGSerialPortIOClient: SetCommState() failed: %d\n", getUVSGSocketError());

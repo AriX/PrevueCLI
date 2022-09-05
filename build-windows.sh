@@ -5,7 +5,7 @@ export SDKROOT=$DEVELOPER_DIR/Platforms/Windows.platform/Developer/SDKs/Windows.
 export SWIFTFLAGS="-sdk $SDKROOT -I $SDKROOT/usr/lib/swift -L $SDKROOT/usr/lib/swift/windows"
 export PATH="$PATH:/c/Library/Developer/Toolchains/unknown-Asserts-development.xctoolchain/usr/bin"
 
-export ICU_DLLS=C:/Library/icu-67/usr/bin
+export ICU_DLLS=C:/Library/icu-69.1/usr/bin
 export SWIFT_DLLS=C:/Library/Swift-development/bin
 export MSVC_RUNTIME_DLLS="C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Redist/MSVC/14.25.28508/x64/Microsoft.VC142.CRT"
 
