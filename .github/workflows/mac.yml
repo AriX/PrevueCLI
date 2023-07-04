@@ -1,0 +1,31 @@
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+name: Mac
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - name: Build
+      run: xcodebuild
+    
+    - name: Package
+      run: ./build-mac.sh
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with: 
+        name: mac-distribution
+        path: build/mac-distribution
