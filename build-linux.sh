@@ -1,3 +1,5 @@
+set -e # Fail script on error
+
 cd "$(dirname "$0")"
 
 mkdir -p build
@@ -18,8 +20,8 @@ mkdir -p linux-distribution
 cp PrevueCLI Yams/lib/*.so linux-distribution/
 
 # Copy required libraries
-cp -P /home/ninjastar/swift/swift-5.3-RELEASE-ubuntu16.04/usr/lib/swift/linux/lib* linux-distribution/
-rm linux-distribution/lib_InternalSwiftSyntaxParser.so linux-distribution/libswift_Differentiation.so linux-distribution/libXCTest.so
+cp -P "$(dirname $(dirname $(which swift)))/lib/swift/linux/lib"* linux-distribution/
+rm linux-distribution/lib_InternalSwift* linux-distribution/libswift_Differentiation.so linux-distribution/libXCTest.so
 
 # Copy resources
 cp ../Resources/*.prevuecommand linux-distribution/

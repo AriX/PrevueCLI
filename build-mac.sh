@@ -1,3 +1,5 @@
+set -e # Fail script on error
+
 cd "$(dirname "$0")"
 xcodebuild
 

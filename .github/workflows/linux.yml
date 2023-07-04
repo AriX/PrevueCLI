@@ -1,0 +1,36 @@
+# See https://github.com/swift-actions/setup-swift
+
+name: Linux
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - name: Install Swift on Linux
+      uses: swift-actions/setup-swift@v1
+      with:
+        swift-version: '5'
+        
+    - name: Install Ninja
+      uses: seanmiddleditch/gha-setup-ninja@master
+
+    - name: Build and package
+      run: ./build-linux.sh
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with: 
+        name: linux-distribution
+        path: build/linux-distribution
