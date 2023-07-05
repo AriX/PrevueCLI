@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "PrevuePackage", targets: ["PrevuePackage"]),
     ],
     dependencies: [
-        .package(name: "CSV", url: "https://github.com/AriX/CSV.swift.git", branch: "master"),
+        .package(url: "https://github.com/AriX/CSV.swift.git", branch: "master"),
         .package(url: "https://github.com/jpsim/Yams.git", from: "5.0.6"),
     ],
     targets: [
@@ -24,8 +24,11 @@ let package = Package(
             name: "PowerPacker"
         ),
         .target(
+            name: "CFByteOrder"
+        ),
+        .target(
             name: "PrevuePackage",
-            dependencies: ["UVSGSerialData", "PowerPacker", "CSV", "Yams"]),
+            dependencies: ["UVSGSerialData", "PowerPacker", "Yams", "CFByteOrder", .product(name: "CSV", package: "CSV.swift")]),
         .testTarget(
             name: "PrevuePackageTests",
             dependencies: ["PrevuePackage"]),
