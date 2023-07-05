@@ -1,0 +1,44 @@
+# See https://github.com/compnerd/gha-setup-swift
+
+name: Windows
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - name: Install MSYS2
+      uses: msys2/setup-msys2@v2
+
+    - name: Install Swift on Windows
+      uses: compnerd/gha-setup-swift@main
+      with:
+        branch: swift-5.8.1-release
+        tag: 5.8.1-RELEASE
+
+    - name: Run Swift tests
+      run: swift test
+
+    - name: Build Swift
+      run: swift build -c release
+
+    - name: Package
+      shell: msys2 {0}
+      run: ./build-windows.sh
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with: 
+        name: windows-distribution
+        path: build/distribution
