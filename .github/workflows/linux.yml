@@ -23,8 +23,11 @@ jobs:
       with:
         swift-version: '5'
         
-    - name: Install Ninja
-      uses: seanmiddleditch/gha-setup-ninja@master
+    - name: Run Swift tests
+      run: swift test
+
+    - name: Build Swift
+      run: swift build -c release
 
     - name: Build and package
       run: ./build-linux.sh
@@ -33,4 +36,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with: 
         name: linux-distribution
-        path: build/linux-distribution
+        path: build/distribution

@@ -1,14 +1,12 @@
 set -e # Fail script on error
 
 cd "$(dirname "$0")"
-xcodebuild
+swift build -c release
 
-cd build
-
-# Make the Mac distribution directory
-mkdir -p mac-distribution
-cp Release/PrevueCLI mac-distribution/
+# Make the distribution directory
+mkdir -p build/distribution
+cp .build/release/PrevueCLI build/distribution/
 
 # Copy resources
-cp ../Resources/*.prevuecommand mac-distribution/
-cp -R ../Resources/Sample\ Listings mac-distribution/
+cp Resources/*.prevuecommand build/distribution/
+cp -R Resources/Sample\ Listings build/distribution/

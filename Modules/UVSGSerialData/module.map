@@ -1,4 +1,0 @@
-module UVSGSerialData {
-    header "UVSGSerialData.h"
-    export *
-}
