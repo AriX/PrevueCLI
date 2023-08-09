@@ -1,4 +1,0 @@
-module PowerPacker {
-    header "pplib.h"
-    export *
-}

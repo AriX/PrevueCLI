@@ -67,3 +67,14 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
+# Swift PM defaults
+
+#.DS_Store
+#/.build
+#/Packages
+#/*.xcodeproj
+#xcuserdata/
+#DerivedData/
+.swiftpm/config/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+#.netrc

@@ -18,8 +18,11 @@ jobs:
       with:
         submodules: true
 
-    - name: Build
-      run: xcodebuild
+    - name: Run Swift tests
+      run: swift test
+
+    - name: Build Swift
+      run: swift build -c release
     
     - name: Package
       run: ./build-mac.sh
@@ -28,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with: 
         name: mac-distribution
-        path: build/mac-distribution
+        path: build/distribution
