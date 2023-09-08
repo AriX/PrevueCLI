@@ -21,6 +21,7 @@ public struct SerializedCommand {
     static let referenceCommands: [Command] = [
         BoxOnCommand(selectCode: ""),
         BoxOffCommand(),
+        SaveDataCommand(),
         ResetCommand(),
         VersionCommand(versionString: "4.1"),
         TitleCommand(alignment: .center, title: ""),

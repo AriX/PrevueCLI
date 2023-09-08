@@ -15,6 +15,10 @@ struct BoxOffCommand: DataCommand, Equatable {
     static let commandMode = DataCommandMode.boxOff
 }
 
+struct SaveDataCommand: DataCommand, Equatable {
+    static let commandMode: DataCommandMode = .saveData
+}
+
 struct ResetCommand: DataCommand, Equatable {
     static let commandMode = DataCommandMode.reset
 }
@@ -29,6 +33,12 @@ struct VersionCommand: DataCommand, Equatable {
 extension BoxOffCommand {
     var footerBytes: Bytes {
         return [0xBB, 0x00]
+    }
+}
+
+extension SaveDataCommand {
+    var footerBytes: Bytes {
+        return [0x00]
     }
 }
 
