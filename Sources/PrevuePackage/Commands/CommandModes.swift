@@ -16,6 +16,7 @@ enum DataCommandMode: ASCIICharacter, BinaryCodableEnum {
     case configDat = "f"
     case daylightSavingsTime = "g"
     case download = "H"
+    case weatherID = "I"
     case ppvOrderInfo = "J"
     case newPPVOverInfo = "j"
     case clock = "K"
