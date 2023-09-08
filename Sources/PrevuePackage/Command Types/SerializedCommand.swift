@@ -96,7 +96,7 @@ extension SerializedCommand: BinaryCodable {
         let commandMode = try decoder.decode(DataCommandMode.self)
         guard let commandType = SerializedCommand.commandType(for: commandMode),
             let referenceCommand = SerializedCommand.referenceCommand(for: commandMode) else {
-            throw DecodingError.dataCorrupted(DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Unrecognized command mode \(commandMode)"))
+            throw DecodingError.dataCorrupted(DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Unsupported command mode \(commandMode)"))
         }
         
         // Create new decoder for this command (so that we can set its referenceItem)

@@ -30,20 +30,23 @@ extension Listings.Channel: BinaryCodable {
         var callLetters: String?
         
         repeat {
-            let chunkEndMarkers = [Self.channelNumberMarker, Self.timeslotMaskMarker, Self.callLettersMarker, Self.marker, ChannelsCommand.terminator]
-            let nextChunk = try decoder.read(until: { chunkEndMarkers.contains($0) }, consumingFinalByte: false)
-            
             switch markerByte {
             case nil:
+                let chunkEndMarkers = [Self.channelNumberMarker, Self.timeslotMaskMarker, Self.callLettersMarker, Self.marker, ChannelsCommand.terminator]
+                let nextChunk = try decoder.read(until: { chunkEndMarkers.contains($0) }, consumingFinalByte: false)
                 readSourceIdentifier = String(decoding: nextChunk, as: Unicode.UTF8.self)
                 break
             case Self.channelNumberMarker:
+                let chunkEndMarkers = [Self.timeslotMaskMarker, Self.callLettersMarker, Self.marker, ChannelsCommand.terminator]
+                let nextChunk = try decoder.read(until: { chunkEndMarkers.contains($0) }, consumingFinalByte: false)
                 channelNumber = String(decoding: nextChunk, as: Unicode.UTF8.self)
                 break
             case Self.timeslotMaskMarker:
-                timeslotMask = try BinaryDecoder(data: nextChunk).decode(TimeslotMask.self)
+                timeslotMask = try decoder.decode(TimeslotMask.self)
                 break
             case Self.callLettersMarker:
+                let chunkEndMarkers = [Self.marker, ChannelsCommand.terminator]
+                let nextChunk = try decoder.read(until: { chunkEndMarkers.contains($0) }, consumingFinalByte: false)
                 callLetters = String(decoding: nextChunk, as: Unicode.UTF8.self)
                 break
             default:
