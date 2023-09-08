@@ -8,6 +8,9 @@ let package = Package(
     products: [
         .executable(name: "PrevueCLI", targets: ["PrevueCLI"]),
         .library(name: "PrevuePackage", targets: ["PrevuePackage"]),
+        .library(name: "UVSGSerialData", targets: ["UVSGSerialData"]),
+        .library(name: "PowerPacker", targets: ["PowerPacker"]),
+        .library(name: "CFByteOrder", targets: ["CFByteOrder"]),
     ],
     dependencies: [
         .package(url: "https://github.com/AriX/CSV.swift.git", branch: "master"),
