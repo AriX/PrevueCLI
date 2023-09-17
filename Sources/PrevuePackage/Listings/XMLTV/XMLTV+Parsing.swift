@@ -7,29 +7,42 @@
 //
 
 import Foundation
-#if os(Windows) || os(Linux)
-import FoundationXML
-#endif
 
 public extension XMLTV {
-    init(xmlData: Data, maxChannelNumber: Int, daysToFetch: Int = 1) throws {
+    enum ParserType {
+        case openSourceParser
+        case foundationParser
+    }
+    
+    enum ParseError: Error {
+        case unknownError
+    }
+    
+    init(xmlData: Data, maxChannelNumber: Int, daysToFetch: Int = 1, parserType: ParserType = .openSourceParser) throws {
         let calendar = Calendar.current
         let timeZone = TimeZone.tulsa
         let startOfToday = calendar.startOfListingsDay(for: .currentTulsaDate)
         let startOfEndDay = startOfToday.incrementingDay(by: daysToFetch)
         let parser = XMLTVParser(fromDate: startOfToday, toDate: startOfEndDay, timeZone: timeZone, maxChannelNumber: maxChannelNumber)
         
-        let xmlParser = XMLParser(data: xmlData)
+        var xmlParser: AbstractXMLParser
+        switch parserType {
+        case .openSourceParser:
+            xmlParser = OpenSourceXMLParser(data: xmlData)
+        case .foundationParser:
+            xmlParser = FoundationXMLParser(data: xmlData)
+        }
+        
         let delegateStack = ParserDelegateStack(xmlParser: xmlParser)
         delegateStack.push(parser)
         
-        guard xmlParser.parse(),
-            let result = parser.result else {
-                if let parserError = xmlParser.parserError {
-                    throw parserError
-                } else {
-                    throw NSError(domain: XMLParser.errorDomain, code: XMLParser.ErrorCode.internalError.rawValue, userInfo: nil)
-                }
+        let fileSize = ByteCountFormatter.string(fromByteCount: Int64(xmlData.count), countStyle: .file)
+        print("Starting to parse \(fileSize) of XMLTV data")
+        
+        try xmlParser.parse()
+        
+        guard let result = parser.result else {
+            throw ParseError.unknownError
         }
         
         print("Finished parsing \(result.channels.count) channels")
@@ -254,8 +267,8 @@ class NodeParser: NSObject {
     }
 }
 
-extension NodeParser: XMLParserDelegate {
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String: String] = [:]) {
+extension NodeParser: AbstractXMLParserDelegate {
+    func parser(didStartElement elementName: String, attributes attributeDict: [String: String] = [:]) {
         if elementName == tagName {
             attributes.merge(attributeDict) { $1 }
             return
@@ -264,19 +277,19 @@ extension NodeParser: XMLParserDelegate {
         for childParser in childParsers {
             if elementName == childParser.tagName {
                 delegateStack?.push(childParser)
-                childParser.parser(parser, didStartElement: elementName, namespaceURI: namespaceURI, qualifiedName: qName, attributes: attributeDict)
+                childParser.parser(didStartElement: elementName, attributes: attributeDict)
             }
         }
     }
     
-    func parser(_ parser: XMLParser, foundCharacters string: String) {
+    func parser(foundCharacters string: String) {
         if parsesContent {
             let existingContent = content ?? ""
             content = (existingContent + string)
         }
     }
 
-    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+    func parser(didEndElement elementName: String) {
         if elementName == tagName {
             didParseElement()
             attributes = [:]
@@ -293,9 +306,9 @@ extension NodeParser: XMLParserDelegate {
 
 class ParserDelegateStack {
     private var parsers: [NodeParser] = []
-    private let xmlParser: XMLParser
+    private var xmlParser: AbstractXMLParser
 
-    init(xmlParser: XMLParser) {
+    init(xmlParser: AbstractXMLParser) {
         self.xmlParser = xmlParser
     }
 
