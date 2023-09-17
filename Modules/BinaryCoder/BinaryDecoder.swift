@@ -1,6 +1,6 @@
 
 import Foundation
-import CoreFoundation
+import CFByteOrder
 
 /// A protocol for types which can be decoded from binary.
 public protocol BinaryDecodable: Decodable, CodingPathIntrospectable {
@@ -95,15 +95,15 @@ public extension BinaryDecoder {
     }
     
     func decode(_ type: Float.Type) throws -> Float {
-        var swapped = CFSwappedFloat32()
+        var swapped = PPCFSwappedFloat32()
         try read(into: &swapped)
-        return CFConvertFloatSwappedToHost(swapped)
+        return PPCFConvertFloatSwappedToHost(swapped)
     }
     
     func decode(_ type: Double.Type) throws -> Double {
-        var swapped = CFSwappedFloat64()
+        var swapped = PPCFSwappedFloat64()
         try read(into: &swapped)
-        return CFConvertDoubleSwappedToHost(swapped)
+        return PPCFConvertDoubleSwappedToHost(swapped)
     }
     
     func decode<T: Decodable>(_ type: T.Type) throws -> T {

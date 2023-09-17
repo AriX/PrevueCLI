@@ -1,5 +1,5 @@
 
-import CoreFoundation
+import CFByteOrder
 
 
 /// A protocol for types which can be encoded to binary.
@@ -58,11 +58,11 @@ public extension BinaryEncoder {
     }
     
     func encode(_ value: Float) {
-        appendBytes(of: CFConvertFloatHostToSwapped(value))
+        appendBytes(of: PPCFConvertFloatHostToSwapped(value))
     }
     
     func encode(_ value: Double) {
-        appendBytes(of: CFConvertDoubleHostToSwapped(value))
+        appendBytes(of: PPCFConvertDoubleHostToSwapped(value))
     }
     
     func encode(_ encodable: Encodable) throws {

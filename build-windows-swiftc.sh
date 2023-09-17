@@ -1,0 +1,1 @@
+swiftc $SWIFTFLAGS -IModules/ -IModules/Yams/Sources/CYaml/include/ -Ibuild/Yams/swift -Lbuild/Yams/lib Source/*/*.swift Source/*/*/*.swift Source/*/*/*/*.swift PrevueCLI/*.swift Modules/PowerPacker/*.swift Modules/BinaryCoder/*.swift Modules/CSV.swift/Sources/CSV/*.swift build/*.o -o PrevueCLI.exe

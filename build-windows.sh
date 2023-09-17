@@ -14,6 +14,7 @@ cd build
 
 # Build Yams
 cmake -G Ninja -B Yams -D BUILD_SHARED_LIBS=YES -D BUILD_TESTING=NO -D CMAKE_BUILD_TYPE=Release -D CMAKE_Swift_FLAGS="$SWIFTFLAGS" -D CMAKE_C_FLAGS="-DWIN32" ../Modules/Yams
+# -DCMAKE_C_COMPILER:PATH="/c/Library/Developer/Toolchains/unknown-Asserts-development.xctoolchain/usr/bin/clang.exe" -DCMAKE_CXX_COMPILER:PATH="/c/Library/Developer/Toolchains/unknown-Asserts-development.xctoolchain/usr/bin/clang.exe" -DCMAKE_C_COMPILER_ID="Clang" -DCMAKE_CXX_COMPILER_ID="Clang" -DCMAKE_SYSTEM_NAME="Generic" ../Modules/Yams
 cmake --build Yams
 
 # Build UVSGSerialData
