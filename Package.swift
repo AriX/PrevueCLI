@@ -14,7 +14,9 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/AriX/CSV.swift.git", branch: "master"),
+        .package(url: "https://github.com/AriX/Progress.swift", branch: "main"),
         .package(url: "https://github.com/jpsim/Yams.git", from: "5.0.6"),
+        .package(url: "https://github.com/stefanspringer1/SwiftXMLParser.git", from: "1.1.123"),
     ],
     targets: [
         .executableTarget(
@@ -31,7 +33,7 @@ let package = Package(
         ),
         .target(
             name: "PrevuePackage",
-            dependencies: ["UVSGSerialData", "PowerPacker", "Yams", "CFByteOrder", .product(name: "CSV", package: "CSV.swift")]),
+            dependencies: ["UVSGSerialData", "PowerPacker", "Yams", "CFByteOrder", "SwiftXMLParser", .product(name: "Progress", package: "Progress.swift"), .product(name: "CSV", package: "CSV.swift")]),
         .testTarget(
             name: "PrevuePackageTests",
             dependencies: ["PrevuePackage"]),

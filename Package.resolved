@@ -1,12 +1,48 @@
 {
   "pins" : [
     {
+      "identity" : "autoreleasepoolshim",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stefanspringer1/AutoreleasepoolShim",
+      "state" : {
+        "revision" : "d345d927f335db2d5e30e69ea943a045da9c16d0",
+        "version" : "1.0.3"
+      }
+    },
+    {
       "identity" : "csv.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AriX/CSV.swift.git",
       "state" : {
         "branch" : "master",
         "revision" : "c2cc96e7cc7043ab7c979f059c7f8cd2b1e3dc08"
+      }
+    },
+    {
+      "identity" : "progress.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AriX/Progress.swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "98a1c5397f1b649947401f27b05a310baa5e2312"
+      }
+    },
+    {
+      "identity" : "swiftxmlinterfaces",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stefanspringer1/SwiftXMLInterfaces",
+      "state" : {
+        "revision" : "ef82df0bd068f0df07061c2e07221bf390f8bf15",
+        "version" : "0.1.94"
+      }
+    },
+    {
+      "identity" : "swiftxmlparser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stefanspringer1/SwiftXMLParser.git",
+      "state" : {
+        "revision" : "8818977cfcce419a83a6b0765d2e696a2329deda",
+        "version" : "1.1.123"
       }
     },
     {
