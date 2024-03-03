@@ -20,13 +20,13 @@ extension ProgramCommand: BinaryCodable {
         day = try decoder.decode(JulianDay.self)
         let sourceIdentifier = try decoder.readString(until: { $0 == Self.endOfStringMarker})
         let flags = try decoder.decode(Listings.Program.Attributes.self)
-        let programName = try decoder.decode(SpecialCharacterString.self)
+        let programName = try decoder.decode(String.self)
         // There's something unhandled here - perhaps the ability to signal that a program spans multiple sources - see the "BIGC" test file for an example
         
         program = Listings.Program(timeslot: timeslot, sourceIdentifier: sourceIdentifier, programName: programName, flags: flags)
     }
     
     func binaryEncode(to encoder: BinaryEncoder) throws {
-        encoder += [program.timeslot, day.asByte, program.sourceIdentifier.asBytes, Self.endOfStringMarker, program.flags.rawValue, program.programName.asBytes]
+        encoder += [program.timeslot, day.asByte, program.sourceIdentifier.asBytes, Self.endOfStringMarker, program.flags.rawValue, program.programName.asLatin1Bytes!, Byte(0x00)]
     }
 }

@@ -27,24 +27,3 @@ extension Array where Element == Listings.Channel {
         self = Array(self.prefix(36/*EPGMachine.atariChannelLimit*/))
     }
 }
-
-extension Listings.Program {
-    mutating func stripSpecialCharacters() {
-        let descriptionExcludingSpecialCharacters = programName.descriptionExcludingSpecialCharacters
-        let descriptionAsASCII = /*descriptionExcludingSpecialCharacters.asASCII ??*/ descriptionExcludingSpecialCharacters
-        // TODO: ^ perhaps overzealous; Atari may require this while PC Prevue does not
-        programName = SpecialCharacterString(with: descriptionAsASCII)
-    }
-    
-    var strippingSpecialCharacters: Listings.Program {
-        var program = self
-        program.stripSpecialCharacters()
-        return program
-    }
-}
-
-extension Array where Element == Listings.Program {
-    mutating func stripSpecialCharacters() {
-        indices.forEach { self[$0].stripSpecialCharacters() }
-    }
-}

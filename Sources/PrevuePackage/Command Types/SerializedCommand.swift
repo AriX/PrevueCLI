@@ -40,7 +40,7 @@ public struct SerializedCommand {
         NewLookConfigurationCommand(displayFormat: .grid, textAdFlag: .satellite, clockCmd: 1),
         ChannelsCommand(day: JulianDay(dayOfYear: 0), channels: [Listings.Channel(sourceIdentifier: "", channelNumber: "", timeslotMask: TimeslotMask(blackedOutTimeslots: [0]), callLetters: "", flags: [])]),
         ProgramCommand(day: JulianDay(dayOfYear: 0), program: Listings.Program(timeslot: 0, sourceIdentifier: "", programName: "", flags: [])),
-        ListingsCommand(listingsDirectoryPath: "", forAtari: false, omitSpecialCharacters: false),
+        ListingsCommand(listingsDirectoryPath: "", forAtari: false),
         UtilityCommand(mode: .reloadScrollBanner),
         UtilityRunShellCommand(command: ""),
         WeatherIDCommand(displayCount: "0", weatherID: "", cityString: ""),

@@ -194,26 +194,25 @@ extension XMLTV.Channel.Program {
             }
         }
         
-        if let stereo = stereo, stereo {
-            programName.append(.string(" "))
-            programName.append(.specialCharacter(.stereo))
-        }
-        
         if closedCaptioned {
             programName.append(.string(" "))
             programName.append(.specialCharacter(.closedCaptioned))
         }
         
+        if let stereo = stereo, stereo {
+            programName.append(.string(" "))
+            programName.append(.specialCharacter(.stereo))
+        }
+        
         if isMovie, let duration = duration {
             programName.append(.string(" (\(duration.durationString))"))
-            
         }
         
         return SpecialCharacterString(components: programName)
     }
     
     func listingsProgram(forDay day: Date, sourceIdentifier: Listings.SourceIdentifier) -> Listings.Program? {
-        return Listings.Program(timeslot: startDate.timeslot(for: day), sourceIdentifier: sourceIdentifier, programName: programName, flags: flags)
+        return Listings.Program(timeslot: startDate.timeslot(for: day), sourceIdentifier: sourceIdentifier, programName: programName.descriptionConvertingSpecialCharactersToStrings, flags: flags)
     }
 }
 
