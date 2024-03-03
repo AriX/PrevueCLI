@@ -39,6 +39,9 @@ commands:
 # Send sample listings data from the included .csv files
 - ListingsCommand: {listingsDirectoryPath: "Sample Listings", forAtari: false}
 
+- WeatherIDCommand: {displayCount: 1, weatherID: "TUL", cityString: "Tulsa"}
+- WeatherCommand: {displayLength: 60, colorID: 1, icon: "sun", weatherID: "TUL", weatherText: "It's nice, go outside!"}
+
 # Other command examples:
 #- ClockCommand: {dayOfWeek: 5, month: 2, day: 4, year: 120, hour: 07, minute: 00, second: 00, daylightSavingsTime: True}
 #- ResetCommand: {}

@@ -10,7 +10,7 @@ import Foundation
 
 struct WeatherIDCommand: DataCommand, Equatable {
     static let commandMode = DataCommandMode.weatherID
-    let displayCount: ASCIICharacter // 0-9; 0 = never display, 1 = display every timeslot, 2 = display every other timeslot, 3 = display every 3rd timeslot etc.
+    let displayCount: ASCIIDigitInt // 0-9; 0 = never display, 1 = display every timeslot, 2 = display every other timeslot, 3 = display every 3rd timeslot etc.
     let weatherID: String
     let cityString: String
 }
@@ -27,7 +27,7 @@ extension WeatherIDCommand {
     }
     
     init(fromBinary decoder: BinaryDecoder) throws {
-        displayCount = try decoder.decode(ASCIICharacter.self)
+        displayCount = try decoder.decode(ASCIIDigitInt.self)
         weatherID = try decoder.readString(until: { $0 == WeatherIDCommand.endOfStringMarker})
         cityString = try decoder.readString(until: { $0 == 0x00})
     }
