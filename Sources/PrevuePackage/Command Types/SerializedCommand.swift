@@ -43,7 +43,8 @@ public struct SerializedCommand {
         ListingsCommand(listingsDirectoryPath: "", forAtari: false),
         UtilityCommand(mode: .reloadScrollBanner),
         UtilityRunShellCommand(command: ""),
-        WeatherIDCommand(displayCount: "0", weatherID: "", cityString: ""),
+        WeatherCommand(displayLength: 0, colorID: 0, icon: .noIcon, weatherID: "", weatherText: ""),
+        WeatherIDCommand(displayCount: 0, weatherID: "", cityString: ""),
     ]
 }
 
