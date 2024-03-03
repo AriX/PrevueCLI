@@ -24,8 +24,7 @@ extension Listings {
         let programs: [Program] = stride(from: 1, to: 48, by: 1).map {
             let timeslot = Timeslot($0)
             let footerText = (timeslot % 2 == 0 ? footerText1 : footerText2)
-            let programName = SpecialCharacterString(footerText)
-            return Program(timeslot: timeslot, sourceIdentifier: sourceIdentifier, programName: programName, flags: .none)
+            return Program(timeslot: timeslot, sourceIdentifier: sourceIdentifier, programName: footerText, flags: .none)
         }
         return (channel, programs)
     }

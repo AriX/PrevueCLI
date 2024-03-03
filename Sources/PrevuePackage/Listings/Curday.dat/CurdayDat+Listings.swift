@@ -51,7 +51,7 @@ extension CurdayDat.Channel {
             }
             
             let flags = Listings.Program.Attributes(rawValue: UInt8($0.flags.value))
-            return Listings.Program(timeslot: timeslot, sourceIdentifier: sourceIdentifier, programName: $0.programName, flags: flags)
+            return Listings.Program(timeslot: timeslot, sourceIdentifier: sourceIdentifier, programName: $0.programName.descriptionConvertingSpecialCharactersToStrings, flags: flags)
         }
     }
 }

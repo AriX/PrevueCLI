@@ -1,526 +1,1089 @@
 timeslot,sourceIdentifier,programName,flags
-27,WDPN,M*A*S*H \{9B} \{7C},none
-28,WDPN,M*A*S*H \{9B} \{7C},none
-29,WDPN,The Andy Griffith Show \{9B} \{7C},none
-30,WDPN,The Andy Griffith Show \{9B} \{7C},none
-31,WDPN,"Gomer Pyle, U.S.M.C. \{99} \{7C}",none
-32,WDPN,Green Acres \{99} \{7C},none
-33,WDPN,Hogan's Heroes \{99} \{7C},none
-34,WDPN,Hogan's Heroes \{99} \{7C},none
-35,WDPN,Carol Burnett and Friends \{99} \{7C},none
-36,WDPN,Perry Mason \{9B} \{7C},none
-38,WDPN,The Twilight Zone \{9B} \{91} \{7C},none
-39,WDPN,Alfred Hitchcock Hour \{9B} \{7C},none
-41,WDPN,Mannix \{9B} \{7C},none
-43,WDPN,Cannon \{9B} \{7C},none
-45,WDPN,Barnaby Jones \{99} \{91} \{7C},none
-47,WDPN,Paid Programming \{99},none
-48,WDPN,The Key To Healthy Living,none
-27,KYW,Inside Edition \{9B} \{91} \{7C},none
-28,KYW,Entertainment Tonight \{91} \{7C},none
-29,KYW,Play On: Celebrating the Power of Music to Make Change \{9B} \{91} \{7C},none
-31,KYW,NCIS \{91} \{7C},none
-33,KYW,FBI \{91} \{7C},none
-35,KYW,Eyewitness News at 11pm \{91} \{7C},none
-36,KYW,(11:35) The Late Show With Stephen Colbert \{9B} \{91} \{7C},none
-38,KYW,(12:37) The Late Late Show With James Corden \{91} \{7C},none
-40,KYW,( 1:37) Comics Unleashed With Byron Allen \{9B} \{91} \{7C},none
-41,KYW,( 2:07) Eyewitness News at 11pm \{91} \{7C},none
-42,KYW,( 2:37) Relief from Inflammation,none
-43,KYW,( 3:07) Paid Programming \{99},none
-43,KYW,( 3:10) CBS Evening News With Norah O'Donnell \{91} \{7C},none
-44,KYW,( 3:40) CBS Overnight News \{91} \{7C},none
-45,KYW,CBS Morning News \{91} \{7C},none
-46,KYW,Eyewitness News at 4:30am \{91} \{7C},none
-47,KYW,Eyewitness News at 5am \{91} \{7C},none
-27,WACPSD,MyPillow Topper,none
-28,WACPSD,MyPillow Topper,none
-29,WACPSD,Cher,none
-30,WACPSD,Silver Peace Dollars,none
-31,WACPSD,SNL: The Early Years,none
-32,WACPSD,SNL: The Early Years,none
-33,WACPSD,Union Baptist Temple,none
-35,WACPSD,Dolly Parton!,none
-36,WACPSD,Dolly Parton!,none
-37,WACPSD,Never Rake Again!,none
-38,WACPSD,Never Rake Again!,none
-39,WACPSD,Liberty Safes,none
-40,WACPSD,MyPillow Topper,none
-41,WACPSD,Dolly Parton!,none
-42,WACPSD,Dolly Parton!,none
-43,WACPSD,Emeril Pasta Secret,none
-44,WACPSD,Emeril Pasta Secret,none
-45,WACPSD,MyPillow Topper,none
-46,WACPSD,MyPillow Topper,none
-47,WACPSD,5 Makeup Tips 4 You,none
-48,WACPSD,5 Makeup Tips 4 You,none
-27,USA,Law & Order: Special Victims Unit \{91} \{7C},none
-29,USA,Law & Order: Special Victims Unit \{91} \{7C},none
-31,USA,Law & Order: Special Victims Unit \{91} \{7C},none
-33,USA,Law & Order: Special Victims Unit \{91} \{7C},none
-35,USA,(11:01) Modern Family \{9B} \{91} \{7C},none
-36,USA,(11:31) Modern Family \{9B} \{91} \{7C},none
-37,USA,Modern Family \{9B} \{91} \{7C},none
-38,USA,Modern Family \{9B} \{91} \{7C},none
-39,USA,Modern Family \{9B} \{91} \{7C},none
-40,USA,( 1:31) Modern Family \{9B} \{91} \{7C},none
-41,USA,( 2:02) Law & Order: Special Victims Unit \{91} \{7C},none
-43,USA,( 3:01) Law & Order: Special Victims Unit \{91} \{7C},none
-45,USA,( 4:01) Dateline \{91} \{7C},none
-47,USA,Dateline \{9B} \{91} \{7C},none
-27,WPVI,Jeopardy! \{99} \{91} \{7C},none
-28,WPVI,Wheel of Fortune \{99} \{91} \{7C},none
-29,WPVI,The Bachelorette \{9B} \{91} \{7C},none
-33,WPVI,(10:01) Big Sky \{91} \{7C},none
-35,WPVI,Action News 11 PM \{91} \{7C},none
-36,WPVI,(11:35) Jimmy Kimmel Live! \{91} \{7C},none
-38,WPVI,(12:37) Nightline \{99} \{7C},none
-39,WPVI,( 1:06) Live with Kelly and Ryan \{9B} \{91} \{7C},none
-41,WPVI,( 2:06) ABC World News Tonight With David Muir \{7C},none
-42,WPVI,( 2:36) Tamron Hall \{9B} \{91} \{7C},none
-44,WPVI,( 3:36) America This Morning \{7C},none
-45,WPVI,Action News 4:00 AM \{91} \{7C},none
-46,WPVI,Action News 4:30 AM \{91} \{7C},none
-47,WPVI,Action News 5:00 AM \{91} \{7C},none
-48,WPVI,Action News 5:30 AM \{91} \{7C},none
-27,ESPN,College Football Playoff: Top 25,none|sportsProg
-29,ESPN,30 for 30,none|sportsProg
-32,ESPN,30 for 30 \{7C},none|sportsProg
-36,ESPN,SportsCenter With Scott Van Pelt,none|sportsProg
-38,ESPN,SportsCenter \{7C},none|sportsProg
-40,ESPN,SportsCenter \{7C},none|sportsProg
-42,ESPN,SportsCenter \{7C},none|sportsProg
-44,ESPN,SportsCenter \{7C},none|sportsProg
-46,ESPN,SportsCenter \{7C},none|sportsProg
-47,ESPN,SportsCenter \{7C},none|sportsProg
-27,NBSPP,The Chef's Kitchen \{99},none
-28,NBSPP,Rock Star Kitchen \{99},none
-29,NBSPP,What's Brewing,none
-30,NBSPP,In Depth With Graham Bensinger \{91} \{7C},none|sportsProg
-31,NBSPP,Pure Outdoor,none|sportsProg
-32,NBSPP,World Championship Kickboxing,none
-34,NBSPP,Fight Sports MMA,none|sportsProg
-36,NBSPP,The Short List,none|sportsProg
-37,NBSPP,Paid Programming \{99},none
-38,NBSPP,Paid Programming \{99},none
-39,NBSPP,"Thicker, Fuller Hair Today!",none
-45,NBSPP,NBA Basketball,none|sportsProg
-27,WCAU,NBC 10 News at 7p \{7C},none
-28,WCAU,Access Hollywood \{9B} \{91} \{7C},none
-29,WCAU,The Voice \{9B} \{91} \{7C},none
-31,WCAU,The Voice \{9B} \{91} \{7C},none
-35,WCAU,NBC 10 News at 11p \{7C},none
-36,WCAU,(11:34) The Tonight Show Starring Jimmy Fallon \{91} \{7C},none
-38,WCAU,(12:36) Late Night With Seth Meyers \{91} \{7C},none
-40,WCAU,( 1:36) A Little Late With Lilly Singh \{91} \{7C},none
-41,WCAU,( 2:06) NBC Nightly News With Lester Holt \{91} \{7C},none
-42,WCAU,( 2:35) The Kelly Clarkson Show \{99} \{91} \{7C},none
-44,WCAU,Early Today \{99} \{7C},none
-45,WCAU,NBC 10 News Today at 4:00a \{7C},none
-46,WCAU,NBC 10 News Today at 4:30a \{7C},none
-47,WCAU,NBC 10 News Today at 5:00a \{7C},none
-48,WCAU,NBC 10 News Today at 5:30a \{7C},none
-27,QVC,Comfort & Joy with Jane \{99} \{7C},none
-31,QVC,Cheers! to Holiday Shopping With Leah and Shawn \{99} \{7C},none
-37,QVC,The Wrap It Up Gift Event \{99} \{7C},none
-39,QVC,The Wrap It Up Gift Event \{99} \{7C},none
-43,QVC,Denim & Co. \{99} \{7C},none
-45,QVC,Dyson Supersonic Hair Dryer \{99} \{7C},none
-47,QVC,The Wrap It Up Gift Event \{99} \{7C},none
-27,WHYY,BBC World News America \{91} \{7C},none
-28,WHYY,The Power of We: A Sesame Street Special \{90} \{91} \{7C},none
-29,WHYY,Ella Wishes You a Swinging Christmas With Vanessa Williams \{99} \{91} \{7C},none
-31,WHYY,Christmas at Belmont \{99} \{91} \{7C},none
-33,WHYY,Frontline \{91} \{7C},none
-35,WHYY,The Great British Baking Show \{9B} \{91} \{7C},none
-37,WHYY,Amanpour and Company \{91} \{7C},none
-39,WHYY,The Brain Fitness Program \{99} \{91} \{7C},none
-43,WHYY,3 Steps to Pain Free Living \{91} \{7C},none
-46,WHYY,"The Longevity Paradox With Steven Gundry, MD \{99} \{91} \{7C}",none
-27,WPSG,Family Feud \{9B} \{91} \{7C},none
-28,WPSG,Family Feud \{9B} \{91} \{7C},none
-29,WPSG,Swamp Thing \{A3} \{91} \{7C},none
-31,WPSG,Tell Me a Story \{A3} \{91} \{7C},none
-33,WPSG,Eyewitness News on the CW Philly \{91} \{7C},none
-34,WPSG,Eyewitness News on the CW Philly \{91} \{7C},none
-35,WPSG,Schitt's Creek \{91} \{7C},none
-36,WPSG,2 Broke Girls \{91} \{7C},none
-37,WPSG,Mike & Molly \{91} \{7C},none
-38,WPSG,The King of Queens \{9B} \{91} \{7C},none
-39,WPSG,2 Broke Girls \{91} \{7C},none
-40,WPSG,Mike & Molly \{91} \{7C},none
-41,WPSG,Family Guy \{91} \{7C},none
-42,WPSG,Family Guy \{9B} \{91} \{7C},none
-43,WPSG,Bob's Burgers \{91} \{7C},none
-44,WPSG,Bob's Burgers \{9B} \{91} \{7C},none
-45,WPSG,The Drew Barrymore Show \{99} \{91} \{7C},none
-47,WPSG,Impractical Jokers,none
-48,WPSG,Personal Injury Court \{91} \{7C},none
-27,HSN,Colleen Lopez Gemstone Jewelry Gifts \{99} \{7C},none
-29,HSN,Colleen Lopez Gemstone Jewelry Gifts \{99} \{7C},none
-31,HSN,Shannon's CRAZY For Christmas Finale \{99} \{7C},none
-33,HSN,Shannon's CRAZY For Christmas Finale \{99} \{7C},none
-35,HSN,Shannon's CRAZY For Christmas Finale \{99} \{7C},none
-37,HSN,KORRES Beauty Gifts \{99} \{7C},none
-39,HSN,KORRES Beauty Gifts \{99} \{7C},none
-41,HSN,KORRES Beauty Gifts \{99} \{7C},none
-43,HSN,KORRES Beauty Gifts \{99} \{7C},none
-45,HSN,KORRES Beauty Gifts \{99} \{7C},none
-47,HSN,KORRES Beauty Gifts \{99} \{7C},none
-27,WTXF,Dish Nation \{9B} \{91} \{7C},none
-28,WTXF,TMZ \{9B} \{91} \{7C},none
-29,WTXF,Cosmos: Possible Worlds \{91} \{7C},none
-31,WTXF,NEXT \{91} \{7C},none
-33,WTXF,Fox 29 News at 10 \{7C},none
-35,WTXF,PA Lottery \{7C},none
-35,WTXF,(11:02) Fox 29 News at 11 \{7C},none
-36,WTXF,TMZ \{9B} \{91} \{7C},none
-37,WTXF,Dish Nation \{9B} \{91} \{7C},none
-38,WTXF,The ClassH-Room \{9B} \{7C},none
-39,WTXF,The Simpsons \{9B} \{91} \{7C},none
-40,WTXF,Relief from Inflammation,none
-41,WTXF,Divorce Court \{9B} \{91} \{7C},none
-42,WTXF,Divorce Court \{9B} \{91} \{7C},none
-43,WTXF,Extra \{9B} \{91} \{7C},none
-44,WTXF,Fox 29 News at 11 \{7C},none
-45,WTXF,Good Day Philadelphia at 4AM \{7C},none
-47,WTXF,Good Day Philadelphia at 5AM \{7C},none
-27,ESPN2,College Basketball,none|sportsProg
-31,ESPN2,Women's College Basketball,none|sportsProg
-35,ESPN2,NFL Live \{7C},none|sportsProg
-37,ESPN2,30 for 30,none|sportsProg
-40,ESPN2,NBA: The Jump,none|sportsProg
-42,ESPN2,College Football Playoff: Top 25,none|sportsProg
-44,ESPN2,UFC Main Event,none|sportsProg
-45,ESPN2,E60,none|sportsProg
-46,ESPN2,30 for 30,none|sportsProg
-27,WPHL,The Big Bang Theory \{9B} \{91} \{7C},none
-28,WPHL,The Goldbergs \{9B} \{91} \{7C},none
-29,WPHL,Modern Family \{9B} \{91} \{7C},none
-30,WPHL,Mom \{91} \{7C},none
-31,WPHL,The Goldbergs \{9B} \{91} \{7C},none
-32,WPHL,Mom \{91} \{7C},none
-33,WPHL,Action News at Ten on PHL17 \{7C},none
-35,WPHL,Modern Family \{9B} \{91} \{7C},none
-36,WPHL,Two and a Half Men \{91} \{7C},none
-37,WPHL,Two and a Half Men \{91} \{7C},none
-38,WPHL,Seinfeld \{9B} \{91} \{7C},none
-39,WPHL,Seinfeld \{9B} \{91} \{7C},none
-40,WPHL,Last Man Standing \{9B} \{91} \{7C},none
-41,WPHL,Chicago P.D. \{91} \{7C},none
-43,WPHL,Chicago P.D. \{91} \{7C},none
-45,WPHL,DailyMailTV \{91} \{7C},none
-46,WPHL,DailyMailTV \{91} \{7C},none
-47,WPHL,PHL17 Morning News \{7C},none
-48,WPHL,PHL17 Morning News \{7C},none
-27,NBCSPA,Sixers Pregame Live \{7C},none|sportsProg
-28,NBCSPA,NBA Basketball \{7C},none|sportsProg
-33,NBCSPA,Sixers Postgame Live \{7C},none|sportsProg
-35,NBCSPA,NHL Hockey \{7C},none|sportsProg
-39,NBCSPA,NBA Basketball \{7C},none|sportsProg
-43,NBCSPA,Paid Programming \{99} \{7C},none
-44,NBCSPA,Cooking with Emeril \{7C},none
-45,NBCSPA,Men's Health - All-Natural Secret for Prostate Health \{7C},none
-46,NBCSPA,Paid Programming \{99} \{7C},none
-47,NBCSPA,H2O Steam Fx Pro \{7C},none
-48,NBCSPA,Men's Health - All-Natural Secret for Prostate Health \{7C},none
-27,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
-28,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
-29,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
-30,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
-31,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
-32,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
-33,TBS,The Big Bang Theory \{9B} \{91} \{7C},none
-34,TBS,The Misery Index \{7C},none
-35,TBS,Conan \{7C},none
-36,TBS,The Misery Index \{7C},none
-37,TBS,The Misery Index \{7C},none
-38,TBS,Conan \{7C},none
-39,TBS,Brooklyn Nine-Nine \{91} \{7C},none
-40,TBS,Brooklyn Nine-Nine \{91} \{7C},none
-41,TBS,Brooklyn Nine-Nine \{91} \{7C},none
-42,TBS,Brooklyn Nine-Nine \{91} \{7C},none
-43,TBS,2 Broke Girls \{91} \{7C},none
-44,TBS,2 Broke Girls \{91} \{7C},none
-45,TBS,2 Broke Girls \{91} \{7C},none
-46,TBS,2 Broke Girls \{91} \{7C},none
-47,TBS,Family Matters \{99} \{91} \{7C},none
-48,TBS,Family Matters \{99} \{91} \{7C},none
-27,WMCNSD,Emeril Delivers 2 U,none
-28,WMCNSD,Emeril Delivers 2 U,none
-29,WMCNSD,SNL: The Early Years,none
-30,WMCNSD,SNL: The Early Years,none
-31,WMCNSD,Cooking with Emeril,none
-32,WMCNSD,Promote Your Immune System with Vitamin D,none
-33,WMCNSD,Throw away your makeup and discover Hollywood's fountain of youth!,none
-34,WMCNSD,Emeril's Pasta & Beyond!,none
-35,WMCNSD,Paid Programming \{99},none
-36,WMCNSD,Paid Programming \{99},none
-37,WMCNSD,"Smile Healthy Philadelphia, With ClearChoice Dental Implant Centers",none
-38,WMCNSD,"Blast Grime Away: Patio, Deck + More",none
-39,WMCNSD,Emeril's Pasta & Beyond!,none
-40,WMCNSD,Holiday Home Cooked Feast!,none
-41,WMCNSD,Throw away your makeup and discover Hollywood's fountain of youth!,none
-42,WMCNSD,Hempvana Gold Pain Relief Cream,none
-43,WMCNSD,Slim Cycle,none
-44,WMCNSD,Cooking with Emeril,none
-45,WMCNSD,Larry King Special Report,none
-46,WMCNSD,Throw away your makeup and discover Hollywood's fountain of youth!,none
-47,WMCNSD,Shepherd's Chapel \{99} \{91} \{7C},none
-27,COMEDY,( 7:25) The Office \{91} \{7C},none
-29,COMEDY,The Office \{91} \{7C},none
-30,COMEDY,The Office \{91} \{7C},none
-31,COMEDY,Drunk History \{7C},none
-32,COMEDY,Drunk History \{7C},none
-33,COMEDY,Drunk History \{7C},none
-34,COMEDY,Drunk History \{7C},none
-35,COMEDY,The Daily Show With Trevor Noah \{7C},none
-36,COMEDY,(11:46) South Park \{A3} \{7C},none
-37,COMEDY,(12:15) South Park \{A3} \{7C},none
-38,COMEDY,(12:45) South Park \{A3} \{7C},none
-39,COMEDY,( 1:14) The Daily Show With Trevor Noah \{7C},none
-41,COMEDY,South Park \{A3} \{7C},none
-42,COMEDY,South Park \{A3} \{7C},none
-43,COMEDY,South Park \{A3} \{7C},none
-44,COMEDY,South Park \{A3} \{7C},none
-45,COMEDY,South Park \{A3} \{7C},none
-46,COMEDY,South Park \{A3} \{7C},none
-47,COMEDY,Sex Toys - 50 Percent OFF! \{7C},none
-48,COMEDY,Larry King Exclusive: Is Your Credit In Crisis? \{7C},none
-27,WNJN,One on One With Steve Adubato,none
-28,WNJN,NJ Spotlight News with Briana Vannozzi \{91} \{7C},none
-29,WNJN,Father Brown \{9B} \{91} \{7C},none
-31,WNJN,The Durrells in Corfu on Masterpiece \{91} \{7C},none
-33,WNJN,Line of Separation \{91} \{7C},none
-35,WNJN,NJ Spotlight News with Briana Vannozzi \{91} \{7C},none
-36,WNJN,Drive by History,none
-37,WNJN,BBC World News \{91} \{7C},none
-38,WNJN,MetroFocus \{91} \{7C},none
-39,WNJN,Amanpour and Company \{91} \{7C},none
-41,WNJN,Nature \{99} \{91} \{7C},none
-44,WNJN,Ken Burns: The National Parks \{99} \{91} \{7C},none
-47,WNJN,Articulate With Jim Cotter \{9B} \{91} \{7C},none
-48,WNJN,The McLaughlin Group \{91} \{7C},none
-27,CNN,Erin Burnett OutFront \{7C},none
-29,CNN,Anderson Cooper 360 \{9B} \{7C},none
-31,CNN,Cuomo Prime Time \{7C},none
-33,CNN,CNN Tonight with Don Lemon \{7C},none
-35,CNN,CNN Tonight with Don Lemon \{7C},none
-37,CNN,Anderson Cooper 360 \{9B} \{7C},none
-39,CNN,Cuomo Prime Time \{7C},none
-41,CNN,CNN Tonight with Don Lemon \{7C},none
-43,CNN,CNN Tonight with Don Lemon \{7C},none
-45,CNN,CNN Newsroom Live \{7C},none
-47,CNN,Early Start With Christine Romans and Laura Jarrett \{7C},none
-48,CNN,( 5:59) New Day With Alisyn Camerota and John Berman \{7C},none
-29,LIFE,"""Christmas Pen Pals"" \{9B} (2018) Sarah Drew, Niall Matter. Following an unexpected breakup weeks before Christmas, a tech wiz heads back to her hometown for the holidays. She signs up for an anonymous holiday pen pal service and becomes enchanted by each beautifully written letter she receives. \{7C} (1 hr 30 min)",movie
-33,LIFE,"(10:03) ""A Taste of Christmas"" (2020) Anni Krueger, Gilles Marini. Upon learning her cousin Francesca must cancel the Christmas Eve opening of her Italian restaurant, Natalie becomes determined to help make the opening day a reality. \{7C} (1 hr 30 min)",movie
-37,LIFE,"(12:01) ""Christmas Pen Pals"" \{9B} (2018) Sarah Drew, Niall Matter. Following an unexpected breakup weeks before Christmas, a tech wiz heads back to her hometown for the holidays. She signs up for an anonymous holiday pen pal service and becomes enchanted by each beautifully written letter she receives. \{7C} (1 hr 30 min)",movie
-41,LIFE,"( 2:04) ""A Taste of Christmas"" (2020) Anni Krueger, Gilles Marini. Upon learning her cousin Francesca must cancel the Christmas Eve opening of her Italian restaurant, Natalie becomes determined to help make the opening day a reality. \{7C} (1 hr 30 min)",movie
-45,LIFE,( 4:02) 5 Makeup Tips 4 You \{7C},none
-46,LIFE,( 4:32) Experience Hollywood's Red Carpet Secret for a Flawless Looking Body! \{7C},none
-47,LIFE,( 5:02) Got Debt? \{7C},none
-48,LIFE,( 5:32) Marie Osmond's BodyGym \{7C},none
-27,AETV,Storage Wars \{9B} \{91} \{7C},none
-28,AETV,Storage Wars \{9B} \{91} \{7C},none
-29,AETV,Storage Wars \{9B} \{91} \{7C},none
-30,AETV,Storage Wars \{9B} \{91} \{7C},none
-31,AETV,Storage Wars \{9B} \{91} \{7C},none
-32,AETV,Storage Wars \{9B} \{91} \{7C},none
-33,AETV,(10:01) Storage Wars \{9B} \{91} \{7C},none
-34,AETV,(10:32) Storage Wars \{9B} \{91} \{7C},none
-35,AETV,(11:04) Storage Wars \{9B} \{91} \{7C},none
-36,AETV,(11:34) Storage Wars \{9B} \{91} \{7C},none
-37,AETV,(12:03) Storage Wars \{9B} \{91} \{7C},none
-38,AETV,(12:33) Storage Wars \{9B} \{91} \{7C},none
-39,AETV,( 1:03) Storage Wars \{9B} \{91} \{7C},none
-40,AETV,( 1:33) Storage Wars \{9B} \{91} \{7C},none
-41,AETV,( 2:04) Storage Wars \{9B} \{91} \{7C},none
-42,AETV,( 2:34) Storage Wars \{9B} \{91} \{7C},none
-43,AETV,( 3:05) Storage Wars \{9B} \{91} \{7C},none
-44,AETV,( 3:34) Storage Wars \{9B} \{91} \{7C},none
-45,AETV,( 4:02) Introducing Crepe Erase Advanced Formula! \{91} \{7C},none
-46,AETV,( 4:32) Try the New NuWave Brio Air Fryer Today! Great New Price! \{91} \{7C},none
-47,AETV,( 5:02) BACK PAIN RELIEF NOW! \{91} \{7C},none
-48,AETV,( 5:31) Paid Programming \{99} \{91} \{7C},none
-31,NIK,Young Sheldon \{9B} \{91} \{7C},none
-32,NIK,Young Sheldon \{9B} \{91} \{7C},none
-33,NIK,Friends \{9B} \{91} \{7C},none
-34,NIK,Friends \{9B} \{91} \{7C},none
-35,NIK,Friends \{9B} \{91} \{7C},none
-36,NIK,Friends \{9B} \{91} \{7C},none
-37,NIK,Friends \{9B} \{91} \{7C},none
-38,NIK,Friends \{9B} \{91} \{7C},none
-39,NIK,Friends \{91} \{7C},none
-40,NIK,( 1:35) Friends \{9B} \{91} \{7C},none
-41,NIK,( 2:09) Friends \{91} \{7C},none
-42,NIK,( 2:44) Young Sheldon \{9B} \{91} \{7C},none
-43,NIK,( 3:18) Mom \{91} \{7C},none
-44,NIK,( 3:50) Mom \{91} \{7C},none
-45,NIK,( 4:24) Mom \{91} \{7C},none
-46,NIK,( 4:55) Mom \{91} \{7C},none
-47,NIK,( 5:27) Full House \{99} \{91} \{7C},none
-27,DISN,Raven's Home \{99} \{91} \{7C},none
-28,DISN,Raven's Home \{99} \{91} \{7C},none
-29,DISN,Good Luck Jessie: NYC Christmas \{99} \{91} \{7C},none
-31,DISN,Bunk'd \{99} \{91} \{7C},none
-32,DISN,Raven's Home \{99} \{91} \{7C},none
-33,DISN,Raven's Home \{99} \{91} \{7C},none
-34,DISN,Raven's Home \{99} \{91} \{7C},none
-35,DISN,Sydney to the Max \{99} \{91} \{7C},none
-36,DISN,Sydney to the Max \{99} \{91} \{7C},none
-37,DISN,Jessie \{99} \{91} \{7C},none
-38,DISN,Jessie \{99} \{91} \{7C},none
-39,DISN,Bunk'd \{99} \{91} \{7C},none
-40,DISN,Raven's Home \{99} \{91} \{7C},none
-41,DISN,Raven's Home \{99} \{91} \{7C},none
-42,DISN,Liv and Maddie: Cali Style \{99} \{91} \{7C},none
-43,DISN,Liv and Maddie: Cali Style \{99} \{91} \{7C},none
-44,DISN,Austin & Ally \{99} \{91} \{7C},none
-45,DISN,Austin & Ally \{99} \{91} \{7C},none
-46,DISN,Bunk'd \{99} \{91} \{7C},none
-47,DISN,Big City Greens \{93} \{91} \{7C},none
-48,DISN,Miraculous: Tales of Ladybug and Cat Noir \{93} \{91} \{7C},none
-27,PAR,"""Shooter"" \{84} (2007) Mark Wahlberg, Michael Peña. A top Marine sniper, Bob Lee Swagger (Mark Wahlberg), leaves the military after a mission goes horribly awry and disappears without a trace. Swagger is coaxed back into service after high-profile government officials convince him to help thwart a plot against the President of the United States. Swagger realizes he has been betrayed and becomes the target of a nationwide manhunt. Instead of hiding, he seeks revenge against some of the most powerful and corrupt leaders in the free world. \{91} \{7C} (2 hr 6 min)",movie
-33,PAR,"""Four Brothers"" \{84} (2005) Mark Wahlberg, Tyrese Gibson. When an inner-city Detroit foster mother (Fionnula Flanagan) is murdered in a botched holdup, four of her now-grown adopted children suspect it was no random killing. Rising musician Jack (Garrett Hedlund), former-Marine Angel (Tyrese Gibson), hotheaded hockey player Bobby (Mark Wahlberg) and settled-down husband and father Jeremiah (André Benjamin) go on the hunt for neighborhood criminal kingpin Victor Sweet (Chiwetel Ejiofor) while being trailed themselves by the local beat cops. \{91} \{7C} (1 hr 48 min)",movie
-38,PAR,"""Shooter"" \{84} (2007) Mark Wahlberg, Michael Peña. A top Marine sniper, Bob Lee Swagger (Mark Wahlberg), leaves the military after a mission goes horribly awry and disappears without a trace. Swagger is coaxed back into service after high-profile government officials convince him to help thwart a plot against the President of the United States. Swagger realizes he has been betrayed and becomes the target of a nationwide manhunt. Instead of hiding, he seeks revenge against some of the most powerful and corrupt leaders in the free world. \{91} \{7C} (2 hr 6 min)",movie
-44,PAR,The Office \{9B} \{91} \{7C},none
-45,PAR,Sex Toys - 50 Percent OFF! \{91} \{7C},none
-46,PAR,Sex Toys - 50 Percent OFF! \{91} \{7C},none
-47,PAR,Sex Toys - 50 Percent OFF! \{91} \{7C},none
-48,PAR,Ideal Prostate+ Provides Safe Natural Relief \{91} \{7C},none
-28,E,"( 7:45) ""Fast & Furious"" \{87} (2009) Vin Diesel, Paul Walker. When a crime brings them back to the mean streets of Los Angeles, fugitive ex-convict Dom Toretto (Vin Diesel) and agent Brian O'Conner (Paul Walker) reignite their high-octane feud. However, when a common enemy rears his head, Dom and Brian must learn how to work together and trust one another in order to defeat him. \{7C} (1 hr 47 min)",movie
-33,E,Celebrity Game Face \{9B} \{7C},none
-35,E,Nightly Pop \{7C},none
-36,E,"""Speed"" \{84} (1994) Keanu Reeves, Dennis Hopper. Los Angeles police officer Jack (Keanu Reeves) angers retired bomb squad member Howard Payne (Dennis Hopper) by foiling his attempt at taking hostages. In revenge, Payne arms a bus with a bomb that will explode if it drops below 50 miles per hour. With the help of spunky passenger Annie (Sandra Bullock), Jack and his partner Harry (Jeff Daniels) try to save the people on the bus before the bomb goes off, while also trying to figure out how Payne is monitoring them. \{7C} (1 hr 55 min)",movie
-41,E,Sex and the City \{A3} \{91} \{7C},none
-42,E,Sex and the City \{A3} \{91} \{7C},none
-43,E,Sex and the City \{A3} \{91} \{7C},none
-44,E,Sex and the City \{A3} \{91} \{7C},none
-45,E,Keeping Up With the Kardashians \{7C},none
-47,E,Keeping Up With the Kardashians \{7C},none
-29,FREEFR,"( 8:25) ""Disney's A Christmas Carol"" \{85} (2009) Jim Carrey, Robin Wright Penn. Though London awaits the joyful arrival of Christmas, miserly Ebenezer Scrooge (Jim Carrey) thinks it's all humbug, berating his faithful clerk and cheerful nephew for their view. Later, Scrooge encounters the ghost of his late business partner, who warns that three spirits will visit him this night. The ghosts take Scrooge on a journey through his past, present and future in the hope of transforming his bitterness. \{91} \{7C} (1 hr 35 min)",movie
-34,FREEFR,Prep & Landing: Naughty vs. Nice \{99} \{91} \{7C},none
-35,FREEFR,The 700 Club \{91} \{7C},none
-37,FREEFR,"""Jingle All the Way 2"" \{85} (2014) Larry the Cable Guy, Anthony Carelli. A child's father and stepfather engage in an all-out battle to get her the toy of her dreams for Christmas. \{91} \{7C} (1 hr 33 min)",movie
-41,FREEFR,Paid Programming \{99} \{7C},none
-42,FREEFR,NuWave Bravo XL Smart Countertop Air Fryer Convection Oven \{7C},none
-43,FREEFR,The 700 Club \{91} \{7C},none
-45,FREEFR,Paid Programming \{99} \{7C},none
-46,FREEFR,Paid Programming \{99} \{7C},none
-47,FREEFR,OxyPure Air Purifier Kills 99.5% of Airborne Viruses & Bacteria \{7C},none
-48,FREEFR,Paid Programming \{99} \{7C},none
-27,WLVT,Counter Culture with Grover Silcox,none
-28,WLVT,More Than Money,none
-29,WLVT,Real Rail Adventures: Swiss Winter Magic \{99} \{91} \{7C},none
-31,WLVT,Real Rail Adventures: Swiss International Hubs \{99} \{91} \{7C},none
-33,WLVT,Real Rail Adventures: Swiss Grand Tour \{99} \{91} \{7C},none
-35,WLVT,PBS39 Nightly News \{91} \{7C},none
-36,WLVT,BBC World News \{91} \{7C},none
-37,WLVT,NOVA \{99} \{91} \{7C},none
-39,WLVT,Counter Culture with Grover Silcox,none
-40,WLVT,More Than Money,none
-41,WLVT,Real Rail Adventures: Swiss Winter Magic \{99} \{91} \{7C},none
-43,WLVT,Real Rail Adventures: Swiss International Hubs \{99} \{91} \{7C},none
-45,WLVT,Real Rail Adventures: Swiss Grand Tour \{99} \{91} \{7C},none
-47,WLVT,Rick Steves' Europe \{99} \{91} \{7C},none
-48,WLVT,Clifford the Big Red Dog \{90} \{91} \{7C},none
-27,BET,"""Beauty Shop"" \{87} (2005) Queen Latifah, Alicia Silverstone. Far from Chicago, hairdresser Gina Norris (Queen Latifah) has relocated to Atlanta with her daughter (Paige Hurd) and has quickly established herself as a rare talent in her profession. But after repeatedly butting heads with her shady, over-the-top boss, Jorge (Kevin Bacon), Norris sets out to create her own salon -- even snagging a few of Jorge's employees and clients, including Lynn (Alicia Silverstone) and Terri (Andie MacDowell), respectively. Now, Jorge will do anything to shut her down. \{7C} (1 hr 45 min)",movie
-31,BET,"""Welcome Home Roscoe Jenkins"" \{87} (2008) Martin Lawrence, James Earl Jones. As a child, RJ Stevens (Martin Lawrence) was the awkward brunt of numerous jokes. Now, RJ is a successful talk-show host who dispenses advice and encouragement to millions. When his parents ask him to come back home for their anniversary, RJ vows to show everyone how much he has changed. Unfortunately, RJ's plans are no match for his Southern relatives. \{7C} (1 hr 54 min)",movie
-36,BET,Martin \{9B} \{91} \{7C},none
-37,BET,Martin \{9B} \{91} \{7C},none
-38,BET,Martin \{9B} \{91} \{7C},none
-39,BET,The Cleveland Show \{91} \{7C},none
-40,BET,The Cleveland Show \{91} \{7C},none
-41,BET,Martin \{9B} \{91} \{7C},none
-42,BET,Martin \{9B} \{91} \{7C},none
-43,BET,The Fresh Prince of Bel-Air \{9B} \{91} \{7C},none
-44,BET,The Fresh Prince of Bel-Air \{9B} \{91} \{7C},none
-45,BET,The Parkers \{9B} \{91} \{7C},none
-46,BET,The Parkers \{9B} \{91} \{7C},none
-47,BET,The Parkers \{9B} \{91} \{7C},none
-48,BET,The Parkers \{9B} \{91} \{7C},none
-28,TNT,NBA Basketball \{7C},none|sportsProg
-33,TNT,NBA Basketball \{7C},none|sportsProg
-38,TNT,"""Eagle Eye"" \{87} (2008) Shia LaBeouf, Michelle Monaghan. Jerry Shaw (Shia LaBeouf) and Rachel Holloman (Michelle Monaghan) are two strangers whose lives are suddenly thrown into turmoil by a mysterious woman they have never met. Threatening their lives and family, the unseen caller uses everyday technology to control their actions and push them into increasing danger. As events escalate, Jerry and Rachel become the country's most-wanted fugitives and must figure out what is happening to them. \{7C} (1 hr 58 min)",movie
-43,TNT,NCIS: New Orleans \{91} \{7C},none
-45,TNT,NCIS: New Orleans \{91} \{7C},none
-47,TNT,NCIS: New Orleans \{91} \{7C},none
-29,FX,"""Baywatch"" \{84} (2017) Dwayne Johnson, Zac Efron. When a dangerous crime wave hits the beach, the legendary Mitch Buchannon leads his elite squad of lifeguards on a mission to prove that you don't have to wear a badge to save the bay. Joined by a trio of hotshot recruits, including former Olympian Matt Brody, they ditch the surf and go deep under cover to take down a ruthless businesswoman whose devious plans threaten the future of the bay. \{91} \{7C} (1 hr 56 min)",movie
-34,FX,"""Baywatch"" \{84} (2017) Dwayne Johnson, Zac Efron. When a dangerous crime wave hits the beach, the legendary Mitch Buchannon leads his elite squad of lifeguards on a mission to prove that you don't have to wear a badge to save the bay. Joined by a trio of hotshot recruits, including former Olympian Matt Brody, they ditch the surf and go deep under cover to take down a ruthless businesswoman whose devious plans threaten the future of the bay. \{91} \{7C} (1 hr 56 min)",movie
-39,FX,Mike & Molly \{91} \{7C},none
-40,FX,Mike & Molly \{91} \{7C},none
-41,FX,Mike & Molly \{91} \{7C},none
-42,FX,Mike & Molly \{91} \{7C},none
-43,FX,"Earth Wind and Fire, O'Jays, Commodores \{91} \{7C}",none
-44,FX,"Total Gym; the most effective way to stay your best, without leaving home! \{91} \{7C}",none
-45,FX,PiYo Workout! \{91} \{7C},none
-46,FX,Oxygen Therapy Innovation \{91} \{7C},none
-47,FX,The Best Kept Secret To Air Fryer Cooking \{91} \{7C},none
-48,FX,Inogen Portable Oxygen - No More Tanks! \{91} \{7C},none
-27,HLN,Death Row Stories \{7C},none
-29,HLN,Death Row Stories \{7C},none
-31,HLN,Forensic Files \{9B} \{7C},none
-32,HLN,Forensic Files \{9B} \{7C},none
-33,HLN,Forensic Files \{9B} \{7C},none
-34,HLN,Forensic Files \{9B} \{7C},none
-35,HLN,Forensic Files \{9B} \{7C},none
-36,HLN,Forensic Files \{9B} \{7C},none
-37,HLN,Real Life Nightmare \{7C},none
-39,HLN,Forensic Files \{9B} \{7C},none
-40,HLN,Forensic Files \{9B} \{7C},none
-41,HLN,Forensic Files \{9B} \{7C},none
-42,HLN,Forensic Files \{9B} \{7C},none
-43,HLN,Forensic Files \{9B} \{7C},none
-44,HLN,Forensic Files \{9B} \{7C},none
-45,HLN,Forensic Files \{9B} \{7C},none
-46,HLN,Forensic Files \{9B} \{7C},none
-47,HLN,Forensic Files \{9B} \{7C},none
-48,HLN,Forensic Files \{9B} \{7C},none
-27,CNBC,The News With Shepard Smith \{7C},none
-29,CNBC,Shark Tank \{9B} \{91} \{7C},none
-31,CNBC,Shark Tank \{9B} \{91} \{7C},none
-32,CNBC,( 9:58) The Profit \{9B} \{7C},none
-33,CNBC,(10:04) Shark Tank \{9B} \{91} \{7C},none
-35,CNBC,(11:02) Shark Tank \{9B} \{91} \{7C},none
-37,CNBC,The News With Shepard Smith \{7C},none
-39,CNBC,The Profit \{9B} \{7C},none
-41,CNBC,Dateline \{9B} \{91} \{7C},none
-43,CNBC,Dateline \{9B} \{91} \{7C},none
-45,CNBC,The News With Shepard Smith \{7C},none
-47,CNBC,Worldwide Exchange \{7C},none
-27,TBN,The Christmas Experience \{9B} \{7C},none
-28,TBN,The Potter's Touch \{99} \{7C},none
-29,TBN,This Is How We Celebrate With Javen \{99} \{7C},none
-31,TBN,Joyce Meyer Enjoying Everyday Life \{99} \{91} \{7C},none
-32,TBN,Living Proof With Beth Moore \{99} \{7C},none
-33,TBN,Better Together \{99} \{7C},none
-34,TBN,Christine Caine \{99} \{7C},none
-35,TBN,Javen Christmas Special \{99} \{7C},none
-37,TBN,Joseph Prince \{91} \{7C},none
-38,TBN,Michael Youssef \{99} \{7C},none
-39,TBN,Sekulow \{9B} \{7C},none
-40,TBN,Christine Caine \{99} \{7C},none
-41,TBN,Jewish Voice with Jonathan Bernis \{99} \{7C},none
-42,TBN,Jordan Rubin: CBD Powder \{99} \{7C},none
-43,TBN,Because of Bethlehem \{99} \{7C},none
-45,TBN,Christine Caine \{99} \{7C},none
-46,TBN,Access 360 \{99} \{7C},none
-47,TBN,Jordan Rubin: Multi Collagen Protein \{99} \{7C},none
-48,TBN,Steven Furtick \{99} \{7C},none
-31,CSPAN,Politics and Public Policy Today \{7C},none
-33,CSPAN,Hearing on COVID-19 Impact on Live Event Entertainment Industry \{7C},none
-37,CSPAN,Politics and Public Policy Today \{7C},none
-43,CSPAN,Hearing on COVID-19 Impact on Live Event Entertainment Industry \{7C},none
-47,CSPAN,Public Affairs Events \{91} \{7C},none
+1,WDPN,H2O X5 - Super Powerful 5-In-1 Multi-Use Steam Cleaner,none
+2,WDPN,Paid Programming (TV-G) (CC),none
+3,WDPN,Catholic Mass,none
+4,WDPN,The 302,none
+5,WDPN,Saved by the Bell (TV-G) (CC) In Stereo,none
+6,WDPN,Saved by the Bell (TV-G) (CC) In Stereo,none
+7,WDPN,Saved by the Bell (TV-G) (CC) In Stereo,none
+8,WDPN,Saved by the Bell (TV-G) (CC) In Stereo,none
+9,WDPN,The Flintstones (TV-G) (CC),none
+10,WDPN,The Flintstones (TV-G) (CC),none
+11,WDPN,The Flintstones (TV-G) (CC),none
+12,WDPN,The Jetsons (TV-G) (CC),none
+13,WDPN,The Brady Bunch (TV-G) (CC),none
+14,WDPN,The Brady Bunch (TV-G) (CC),none
+15,WDPN,Leave It to Beaver (TV-G) (CC),none
+16,WDPN,Leave It to Beaver (TV-G) (CC),none
+17,WDPN,The Beverly Hillbillies (TV-G) (CC),none
+18,WDPN,The Beverly Hillbillies (TV-G) (CC),none
+19,WDPN,Gilligan's Island (TV-G) (CC),none
+20,WDPN,Gilligan's Island (TV-G) (CC),none
+21,WDPN,Mama's Family (TV-PG) (CC),none
+22,WDPN,Mama's Family (TV-PG) (CC),none
+23,WDPN,The Love Boat (TV-G) (CC),none
+25,WDPN,The Andy Griffith Show (TV-PG) (CC),none
+26,WDPN,Collector's Call (TV-G) (CC) In Stereo,none
+27,WDPN,M*A*S*H (TV-PG) (CC),none
+28,WDPN,M*A*S*H (TV-PG) (CC),none
+29,WDPN,All in the Family (TV-PG) (CC),none
+30,WDPN,All in the Family (TV-PG) (CC),none
+31,WDPN,All in the Family (TV-PG) (CC),none
+32,WDPN,All in the Family (TV-PG) (CC),none
+33,WDPN,Ed Sullivan (TV-PG) (CC) In Stereo,none
+34,WDPN,Carol Burnett and Friends (TV-G) (CC),none
+35,WDPN,The Dick Van Dyke Show (TV-G) (CC),none
+36,WDPN,The Dick Van Dyke Show (TV-G) (CC),none
+37,WDPN,The Honeymooners (TV-G) (CC),none
+38,WDPN,The Twilight Zone (TV-PG) (CC) In Stereo,none
+39,WDPN,Alfred Hitchcock Hour (TV-PG) (CC),none
+41,WDPN,The Fugitive (TV-PG) (CC),none
+43,WDPN,Mission: Impossible (TV-PG) (CC),none
+45,WDPN,Peter Gunn (TV-PG) (CC),none
+46,WDPN,Peter Gunn (TV-PG) (CC),none
+47,WDPN,Paid Programming (TV-G) (CC),none
+48,WDPN,Paid Programming (TV-G) (CC),none
+1,KYW,CBS News Philadelphia Sun 6:00am (CC) In Stereo,none
+3,KYW,CBS News Philadelphia Sun 7:00am (CC) In Stereo,none
+5,KYW,CBS News Philadelphia Sun 8:00am (CC) In Stereo,none
+7,KYW,CBS News Sunday Morning (CC) In Stereo,none
+10,KYW,Face the Nation (CC) In Stereo,none
+12,KYW,NEW Secret to Younger Skin,none
+13,KYW,College Basketball (CC) In Stereo,none|sportsProg
+17,KYW,College Basketball (CC) In Stereo,none|sportsProg
+21,KYW,College Basketball (CC) In Stereo,none|sportsProg
+25,KYW,CBS Weekend News (CC) In Stereo,none
+26,KYW,CBS News Philadelphia Sun 6:30pm (CC) In Stereo,none
+27,KYW,60 Minutes (CC) In Stereo,none
+29,KYW,The Equalizer (CC) In Stereo,none
+31,KYW,Tracker (CC) In Stereo,none
+33,KYW,CSI: Vegas (CC) In Stereo,none
+35,KYW,CBS News Philadelphia at 11:00pm (CC) In Stereo,none
+36,KYW,( 8:35) CBS Philadelphia Sports Zone,none|sportsProg
+37,KYW,( 9:05) Turning Point With Dr. David Jeremiah (TV-G) (CC) In Stereo,none
+38,KYW,( 9:35) Joni: Table Talk (TV-G) (CC) In Stereo,none
+39,KYW,(10:05) Game Time With Boomer Esiason (CC) In Stereo,none|sportsProg
+40,KYW,(10:35) The American Athlete (TV-PG) (CC) In Stereo,none|sportsProg
+41,KYW,(11:05) CBS News Philadelphia at 11:00pm (CC) In Stereo,none
+42,KYW,(11:35) CBS Philadelphia Sports Zone,none|sportsProg
+43,KYW,(12:05) Face the Nation (CC) In Stereo,none
+44,KYW,(12:35) CBS Overnight News (CC) In Stereo,none
+45,KYW,CBS Morning News (CC) In Stereo,none
+46,KYW,CBS News Philadelphia at 4:30am (CC) In Stereo,none
+47,KYW,CBS News Philadelphia at 5:00am (CC) In Stereo,none
+2,WACPSD,Elevation with Steven Furtick (TV-G),none
+3,WACPSD,Coral Ridge Ministries Presents: Truths That Transform (TV-G) (CC) In Stereo,none
+4,WACPSD,Pastor Robert Morris Ministries (TV-G),none
+5,WACPSD,Michael Youssef (TV-G),none
+6,WACPSD,Turning Point With Dr. David Jeremiah (TV-G) (CC) In Stereo,none
+7,WACPSD,Dr. Robert Jeffress: Pathway to Victory (TV-G) (CC) In Stereo,none
+8,WACPSD,Higher Aim With Dr. Curt Dodd (TV-G),none
+9,WACPSD,In Touch With Dr. Charles Stanley (TV-G) (CC) In Stereo,none
+11,WACPSD,The Christian Worship Hour (TV-G),none
+12,WACPSD,Worship Anew (TV-G),none
+13,WACPSD,The Pastor's Study (TV-G),none
+14,WACPSD,Israel: The Prophetic Connection,none
+15,WACPSD,Fred Price (TV-G),none
+17,WACPSD,Dorinda (TV-G),none
+18,WACPSD,Daywind Concert Series (TV-G),none
+19,WACPSD,Gaither Gospel Hour (TV-G) (CC) In Stereo,none
+21,WACPSD,Life Outreach International (TV-G),none
+22,WACPSD,Touched by the Truth (TV-G),none
+23,WACPSD,The Kingdom of Heaven (TV-G),none
+24,WACPSD,Daywind Concert Series (TV-G),none
+25,WACPSD,Coral Ridge Ministries Presents: Truths That Transform (TV-G) (CC) In Stereo,none
+26,WACPSD,Manna-Fest With Perry Stone (TV-G),none
+27,WACPSD,RHEMA Praise (TV-G),none
+28,WACPSD,BillyGraham.TV (TV-G) (CC),none
+29,WACPSD,Prophecy USA (TV-G),none
+30,WACPSD,Christ in Prophecy,none
+31,WACPSD,Israel: The Prophetic Connection,none
+32,WACPSD,The Endtime Show (TV-G),none
+33,WACPSD,Coral Ridge Ministries Presents: Truths That Transform (TV-G) (CC) In Stereo,none
+34,WACPSD,A Journey Through the Bible (TV-G),none
+35,WACPSD,Word Alive (TV-G),none
+36,WACPSD,Patterns of Evidence (TV-G),none
+37,WACPSD,Real Stories with Christ (TV-G),none
+39,WACPSD,God First (TV-G),none
+40,WACPSD,Divine Renovations (TV-G),none
+41,WACPSD,Stem Cell Activators with Joseph Christiano ND (TV-G),none
+42,WACPSD,CBN Newswatch (TV-G),none
+43,WACPSD,Joseph Prince (CC) In Stereo,none
+44,WACPSD,Ask the Pastor (TV-G),none
+46,WACPSD,The Global Lane (TV-G),none
+47,WACPSD,Through the Bible With Les Feldick (TV-G) (CC),none
+48,WACPSD,Patterns of Evidence (TV-G),none
+1,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+3,USA,Premier League Mornings (CC),none|sportsProg
+5,USA,Premier League Soccer (CC),none|sportsProg
+9,USA,Premier League Mornings (CC),none|sportsProg
+10,USA,Chrisley Knows Best (CC),none
+11,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+13,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+15,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+17,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+19,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+21,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+23,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+25,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+27,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+29,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+31,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+33,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+35,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+37,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+39,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+41,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+43,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+45,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+47,USA,Law & Order: Special Victims Unit (CC) In Stereo,none
+1,WPVI,Action News Weekend 6AM (CC) In Stereo,none
+3,WPVI,Action News Weekend 7AM (CC) In Stereo,none
+5,WPVI,Good Morning America (CC) In Stereo,none
+7,WPVI,Action News Weekend 9A (CC) In Stereo,none
+10,WPVI,This Week With George Stephanopoulos (TV-G) (CC),none
+12,WPVI,Inside Story,none
+13,WPVI,Action News (CC) In Stereo,none
+14,WPVI,NBA Countdown (CC) In Stereo,none|sportsProg
+15,WPVI,NBA Basketball (CC) In Stereo,none|sportsProg
+20,WPVI,NBA Basketball (CC) In Stereo,none|sportsProg
+25,WPVI,Action News 6PM (CC) In Stereo,none
+26,WPVI,ABC World News Tonight With David Muir (CC),none
+27,WPVI,America's Funniest Home Videos (TV-PG) (CC) In Stereo,none
+29,WPVI,American Idol (TV-PG) (CC) In Stereo,none
+33,WPVI,( 7:01) What Would You Do? (TV-PG) (CC) In Stereo,none
+35,WPVI,Action News 11 PM (CC) In Stereo,none
+36,WPVI,Action News 11:30 PM (CC) In Stereo,none
+36,WPVI,( 8:45) Action News Sports Sunday (CC) In Stereo,none|sportsProg
+37,WPVI,2024 Philadelphia Flower Show: United by Flowers,none
+39,WPVI,"""Devil in a Blue Dress"" (1995) Denzel Washington, Tom Sizemore. In late 1940s Los Angeles, Easy Rawlins (Denzel Washington) is an unemployed black World War II veteran with few job prospects. At a bar, Easy meets DeWitt Albright (Tom Sizemore), a mysterious white man looking for someone to investigate the disappearance of a missing white woman named Daphne Monet (Jennifer Beals), who he suspects is hiding out in one of the city's black jazz clubs. Strapped for money and facing house payments, Easy takes the job, but soon finds himself in over his head. (1 hr 42 min)",movie
+43,WPVI,Small Town Big Deal (TV-G) (CC) In Stereo,none
+44,WPVI,America This Morning (CC),none
+45,WPVI,Action News 4:00 AM (CC) In Stereo,none
+46,WPVI,Action News 4:30 AM (CC) In Stereo,none
+47,WPVI,Action News 5:00 AM (CC) In Stereo,none
+48,WPVI,Action News 5:30 AM (CC) In Stereo,none
+1,ESPN,SportsCenter (CC),none|sportsProg
+3,ESPN,SportsCenter (CC),none|sportsProg
+5,ESPN,SportsCenter (CC),none|sportsProg
+7,ESPN,SportsCenter (CC),none|sportsProg
+9,ESPN,SportsCenter (CC),none|sportsProg
+11,ESPN,College GameDay (CC),none|sportsProg
+13,ESPN,Women's College Basketball (CC),none|sportsProg
+17,ESPN,Women's College Basketball (CC),none|sportsProg
+21,ESPN,Women's College Basketball (CC),none|sportsProg
+25,ESPN,NBA Countdown (CC),none|sportsProg
+27,ESPN,NBA Basketball (CC),none|sportsProg
+32,ESPN,NBA Basketball (CC),none|sportsProg
+37,ESPN,SportsCenter (CC),none|sportsProg
+40,ESPN,SportsCenter With Scott Van Pelt (CC),none|sportsProg
+43,ESPN,NBA Basketball (CC),none|sportsProg
+47,ESPN,SportsCenter With Scott Van Pelt (CC),none|sportsProg
+1,NBSPP,Let's Go Racing (TV-PG),none|sportsProg
+2,NBSPP,Inside Villanova Basketball With Kyle Neptune,none|sportsProg
+3,NBSPP,Diets Don't Work. THIS does!,none
+4,NBSPP,Relief from Inflammation,none
+5,NBSPP,Best Mattress Topper,none
+9,NBSPP,NEW Shark Vacuum! Your Pet Hair Solution!,none
+13,NBSPP,"Reduce swelling in your legs, ankles and feet",none
+14,NBSPP,Under Eye Bags? SOLUTION!,none
+15,NBSPP,Paid Programming (TV-G) (CC),none
+16,NBSPP,Paid Programming (TV-G) (CC),none
+17,NBSPP,British Basketball League,none|sportsProg
+22,NBSPP,British Basketball League,none|sportsProg
+26,NBSPP,Unbeatable,none|sportsProg
+27,NBSPP,Inside Golf (TV-G),none|sportsProg
+28,NBSPP,Invincible,none|sportsProg
+29,NBSPP,Poker Night in America,none|sportsProg
+31,NBSPP,World Poker Tour,none|sportsProg
+33,NBSPP,Inogen Portable Oxygen - No More Tanks!,none
+37,NBSPP,Bathroom Remodel Secrets,none
+41,NBSPP,Never Push a Vacuum Again!,none
+45,NBSPP,Inogen Portable Oxygen - No More Tanks!,none
+47,NBSPP,Cook Family Size Meals Faster,none
+1,WTXF,In Touch With Dr. Charles Stanley (TV-G) (CC) In Stereo,none
+3,WTXF,Spring Preview (CC),none
+4,WTXF,Kelly Drives (CC),none
+5,WTXF,GDP Remix (CC),none
+6,WTXF,Two Mikes & A Bill (CC),none
+7,WTXF,FOX News Sunday (CC) In Stereo,none
+9,WTXF,Paid Programming (TV-G) (CC),none
+10,WTXF,Under Eye Bags? SOLUTION!,none
+11,WTXF,DraftKings Casino Report,none
+13,WTXF,Inside the Big East (CC) In Stereo,none|sportsProg
+14,WTXF,FOX College Hoops Tip-Off (CC) In Stereo,none|sportsProg
+15,WTXF,Women's College Basketball (CC) In Stereo,none|sportsProg
+19,WTXF,NASCAR RaceDay (CC) In Stereo,none|sportsProg
+20,WTXF,NASCAR Cup Series (CC) In Stereo,none|sportsProg
+27,WTXF,Family Guy (CC) In Stereo,none
+28,WTXF,The 2024 FOX Spring Preview (TV-PG) (CC) In Stereo,none
+29,WTXF,The Simpsons (TV-PG) (CC) In Stereo,none
+30,WTXF,Krapopolis (CC) In Stereo,none
+31,WTXF,The Great North (CC) In Stereo,none
+32,WTXF,Grimsburg (CC) In Stereo,none
+33,WTXF,The 10 O'Clock News (CC),none
+35,WTXF,Fox 29 News at 11 (CC),none
+36,WTXF,Extra (TV-PG) (CC) In Stereo,none
+38,WTXF,Paid Programming (TV-G) (CC),none
+39,WTXF,DraftKings Casino Report,none
+41,WTXF,TMZ (TV-PG) (CC) In Stereo,none
+43,WTXF,The 10 O'Clock News (CC),none
+45,WTXF,Good Day Philadelphia at 4AM (CC),none
+47,WTXF,Good Day Philadelphia at 5AM (CC),none
+1,WCAU,NBC 10 News at 6a (CC),none
+3,WCAU,NBC 10 News at 7a (CC),none
+5,WCAU,Sunday Today With Willie Geist (CC) In Stereo,none
+7,WCAU,NBC 10 News at 9a (CC),none
+9,WCAU,NBC 10 News at 10a (CC),none
+10,WCAU,Meet the Press (CC) In Stereo,none
+12,WCAU,Welcome Home Phillies Season Preview,none|sportsProg
+13,WCAU,Paid Programming (TV-G) (CC),none
+14,WCAU,2024 World Athletics Indoor Championships (CC),none|sportsProg
+16,WCAU,FIS Alpine Ski World Cup (CC) In Stereo,none|sportsProg
+19,WCAU,PGA Tour Golf (CC) In Stereo,none|sportsProg
+25,WCAU,NBC 10 News at 6pm (CC),none
+26,WCAU,NBC Nightly News With Lester Holt (CC) In Stereo,none
+27,WCAU,The Wall (TV-PG) (CC) In Stereo,none
+28,WCAU,"""Harry Potter and the Sorcerer's Stone"" (2001) Daniel Radcliffe, Rupert Grint. Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths. (CC) In Stereo (2 hr 32 min)",movie
+35,WCAU,NBC 10 News at 11p (CC),none
+37,WCAU,( 9:05) In Depth With Graham Bensinger (CC) In Stereo,none|sportsProg
+38,WCAU,( 9:35) Open House (TV-PG) (CC) In Stereo,none
+39,WCAU,(10:05) Access Hollywood (TV-PG) (CC) In Stereo,none
+41,WCAU,(11:02) Open House (TV-PG) (CC) In Stereo,none
+42,WCAU,Meet the Press (CC) In Stereo,none
+44,WCAU,Early Today (TV-G) (CC),none
+44,WCAU,(12:58) NBC 10 News Today at 4:00a (CC),none
+45,WCAU,( 1:28) NBC 10 News Today at 4:30a (CC),none
+47,WCAU,NBC 10 News Today at 5:00a (CC),none
+48,WCAU,NBC 10 News Today at 5:30a (CC),none
+1,QVC,Belle by Kim Gravel - Fashion (TV-G) (CC),none
+3,QVC,Denim & Co. (TV-G) (CC),none
+5,QVC,AM Style With Leah Williams - Sunday Edition (TV-G) (CC),none
+9,QVC,Belle by Kim Gravel - Fashion (TV-G) (CC),none
+15,QVC,Clarks Footwear (TV-G) (CC),none
+17,QVC,Dennis by Dennis Basso (TV-G) (CC),none
+19,QVC,Belle by Kim Gravel - Fashion (TV-G) (CC),none
+23,QVC,Barefoot Dreams - California Style (TV-G) (CC),none
+25,QVC,Spring Into Fashion (TV-G) (CC),none
+29,QVC,Belle by Kim Gravel - Fashion (TV-G) (CC),none
+31,QVC,Susan Graver Style (TV-G) (CC),none
+35,QVC,LOGO by Lori Goldstein (TV-G) (CC),none
+37,QVC,LOGO by Lori Goldstein (TV-G) (CC),none
+39,QVC,Patricia Nash Handbags (TV-G) (CC),none
+41,QVC,Anybody Fashion (TV-G) (CC),none
+43,QVC,LOGO by Lori Goldstein (TV-G) (CC),none
+45,QVC,Susan Graver Style (TV-G) (CC),none
+1,WHYY,Supercharge Your Brain: Maximizing Your Cognitive Abilities (TV-G) (CC) In Stereo,none
+4,WHYY,5 Minute Yoga Fix With Peggy Cappy (TV-G) (CC) In Stereo,none
+6,WHYY,"Raising Mentally Strong Kids With Daniel Amen, MD (TV-PG) (CC) In Stereo",none
+10,WHYY,Rick Steves Mighty Alps (TV-G) (CC) In Stereo,none
+13,WHYY,America's Home Cooking: Gadgets & Gizmos (TV-PG) (CC) In Stereo,none
+17,WHYY,Nature (CC) In Stereo,none
+20,WHYY,Rick Steves Island Hopping Europe (TV-G) (CC) In Stereo,none
+21,WHYY,Roy Orbison Forever (TV-PG) (CC) In Stereo,none
+24,WHYY,PBS News Weekend (CC) In Stereo,none
+25,WHYY,Suze Orman's Ultimate Retirement Guide (TV-G) (CC) In Stereo,none
+29,WHYY,Barbra Streisand: Back to Brooklyn (TV-G) (CC) In Stereo,none
+33,WHYY,This Land Is Your Land (My Music Presents) (TV-G) (CC) In Stereo,none
+36,WHYY,Nature (CC) In Stereo,none
+39,WHYY,Social Security & You With Mary Beth Franklin (TV-G) (CC) In Stereo,none
+42,WHYY,Chic Featuring Nile Rodgers Jazz a Vienne (TV-PG) (CC) In Stereo,none
+45,WHYY,"Memory Makeover With Daniel Amen, MD (TV-G) (CC) In Stereo",none
+1,WPSG,Daily Living with Father Chapin (TV-G),none
+2,WPSG,Catholic Mass (TV-PG),none
+3,WPSG,Manna-Fest With Perry Stone (TV-G),none
+4,WPSG,Tomorrow's World (TV-G) (CC) In Stereo,none
+5,WPSG,Funny You Should Ask (TV-PG) (CC) In Stereo,none
+6,WPSG,Funny You Should Ask (TV-PG) (CC) In Stereo,none
+7,WPSG,Leading The Way With Dr. Michael Youssef (TV-G),none
+8,WPSG,Deeper Life Bible Church,none
+9,WPSG,Stories of Love to the Rescue by Shriners Hospitals for Children®,none
+10,WPSG,Who Stole My Life?,none
+11,WPSG,No More Dentures,none
+12,WPSG,Paid Programming (TV-G) (CC),none
+13,WPSG,World Chase Tag,none|sportsProg
+15,WPSG,Storm of Suspicion (TV-PG),none
+17,WPSG,SOS: How to Survive (TV-PG),none
+19,WPSG,Renewal by Andersen,none
+20,WPSG,"Reduce swelling in your legs, ankles and feet",none
+21,WPSG,Fast: Home Rescue,none
+23,WPSG,Law & Order: Special Victims Unit (CC) In Stereo,none
+25,WPSG,Mentoring Queens,none
+27,WPSG,Family Feud (TV-PG) (CC) In Stereo,none
+28,WPSG,Family Feud (TV-PG) (CC) In Stereo,none
+29,WPSG,CBS News Sunday Morning (CC) In Stereo,none
+32,WPSG,Honoring America's Heroes,none
+33,WPSG,Major Crimes (CC),none
+35,WPSG,WOW - Women Of Wrestling (CC) In Stereo,none|sportsProg
+37,WPSG,The King of Queens (TV-PG) (CC) In Stereo,none
+38,WPSG,The King of Queens (TV-PG) (CC) In Stereo,none
+39,WPSG,Family Guy (CC) In Stereo,none
+40,WPSG,Family Guy (CC) In Stereo,none
+41,WPSG,Bob's Burgers (TV-PG) (CC) In Stereo,none
+42,WPSG,Bob's Burgers (TV-PG) (CC) In Stereo,none
+43,WPSG,The First 48 (TV-PG) (CC),none
+45,WPSG,Family Guy (CC) In Stereo,none
+46,WPSG,Family Guy (CC) In Stereo,none
+47,WPSG,Bob's Burgers (TV-PG) (CC) In Stereo,none
+48,WPSG,Bob's Burgers (TV-PG) (CC) In Stereo,none
+1,HSN,HP Innovations (TV-G) (CC),none
+3,HSN,HP Innovations (TV-G) (CC),none
+5,HSN,Nakery Beauty - All on Free Shipping (TV-G) (CC),none
+7,HSN,Healthy Living - LifeSmart (TV-G) (CC),none
+9,HSN,HP Innovations (TV-G) (CC),none
+11,HSN,Mine Finds by Jay King Jewelry (TV-G) (CC),none
+13,HSN,Mine Finds by Jay King Jewelry (TV-G) (CC),none
+15,HSN,HP Innovations (TV-G) (CC),none
+17,HSN,DG2 by Diane Gilman Fashions (TV-G) (CC),none
+19,HSN,Nakery Beauty - All on Free Shipping (TV-G) (CC),none
+21,HSN,Nakery Beauty - All on Free Shipping (TV-G) (CC),none
+23,HSN,HP Innovations (TV-G) (CC),none
+25,HSN,Coin Collector (TV-G) (CC),none
+27,HSN,Coin Collector (TV-G) (CC),none
+29,HSN,HP Innovations (TV-G) (CC),none
+31,HSN,Mine Finds by Jay King Jewelry (TV-G) (CC),none
+33,HSN,Mine Finds by Jay King Jewelry (TV-G) (CC),none
+35,HSN,HP Innovations (TV-G) (CC),none
+37,HSN,Leaf & Petal Designs 5th Anniversary (TV-G) (CC),none
+39,HSN,Samsung Electronics (TV-G) (CC),none
+41,HSN,Leaf & Petal Designs 5th Anniversary (TV-G) (CC),none
+43,HSN,Leaf & Petal Designs 5th Anniversary (TV-G) (CC),none
+45,HSN,Leaf & Petal Designs 5th Anniversary (TV-G) (CC),none
+47,HSN,Leaf & Petal Designs 5th Anniversary (TV-G) (CC),none
+1,BET,Family Matters (TV-G) (CC) In Stereo,none
+2,BET,Family Matters (TV-G) (CC) In Stereo,none
+3,BET,Family Matters (TV-G) (CC) In Stereo,none
+4,BET,Family Matters (TV-G) (CC) In Stereo,none
+5,BET,Martin (TV-PG) (CC) In Stereo,none
+6,BET,Martin (TV-PG) (CC) In Stereo,none
+7,BET,48 Hours (TV-PG) (CC) In Stereo,none
+9,BET,( 7:02) 48 Hours (TV-PG) (CC) In Stereo,none
+11,BET,"( 8:05) ""Tyler Perry's Madea's Big Happy Family"" (2011) Tyler Perry, Shad ""Bow Wow"" Moss. When Shirley (Loretta Devine), Madea's niece, receives distressing news about her health, the only thing she wants is her family gathered around her. However, Shirley's three adult children (Shad ""Bow Wow"" Moss, Shannon Kane, Natalie Desselle-Reid) are too preoccupied with their own troubled lives to pay attention to their mother. It is up to Madea (Tyler Perry), with the help of rowdy Aunt Bam (Cassi Davis), to bring the clan together and help Shirley deal with her crisis. (CC) (1 hr 46 min)",movie
+17,BET,"""Tyler Perry's Why Did I Get Married?"" (2007) Tyler Perry, Janet Jackson. Eight married friends take their annual reunion vacation in the Colorado mountains. Revelations of infidelity involving one pair shatter the amicable mood, forcing the remaining friends to take a hard look at the strength of their own marriages. The couples grapple with issues of commitment, love, betrayal and forgiveness as they try to move on with their lives. (CC) (1 hr 58 min)",movie
+23,BET,"""Tyler Perry's Why Did I Get Married Too?"" (2010) Tyler Perry, Sharon Leal. In the Bahamas for their annual reunion, four couples are eager to share news about their lives over the past year. But when one's ex-husband arrives to break up her marriage and win her back, the others realize they are not immune to the challenges of love and fidelity. (CC) (2 hr 1 min)",movie
+29,BET,"""Tyler Perry's Madea's Big Happy Family"" (2011) Tyler Perry, Shad ""Bow Wow"" Moss. When Shirley (Loretta Devine), Madea's niece, receives distressing news about her health, the only thing she wants is her family gathered around her. However, Shirley's three adult children (Shad ""Bow Wow"" Moss, Shannon Kane, Natalie Desselle-Reid) are too preoccupied with their own troubled lives to pay attention to their mother. It is up to Madea (Tyler Perry), with the help of rowdy Aunt Bam (Cassi Davis), to bring the clan together and help Shirley deal with her crisis. (CC) (1 hr 46 min)",movie
+34,BET,"( 7:50) ""National Security"" (2003) Martin Lawrence, Steve Zahn. Earl Montgomery (Martin Lawrence), a bombastic police academy reject, and Hank Rafferty (Steve Zahn), a disgraced, mild-mannered cop, can't seem to escape each other. They met on opposite sides of the law during a routine traffic stop that escalated out of control; now as lowly security guards they're thrown together to bust a smuggling operation. (CC) (1 hr 28 min)",movie
+39,BET,Martin (TV-PG) (CC) In Stereo,none
+40,BET,Martin (TV-PG) (CC) In Stereo,none
+41,BET,Martin (TV-PG) (CC) In Stereo,none
+42,BET,Martin (TV-PG) (CC) In Stereo,none
+43,BET,Martin (TV-PG) (CC) In Stereo,none
+44,BET,Martin (TV-PG) (CC) In Stereo,none
+45,BET,Tyler Perry's Meet the Browns (TV-PG) (CC),none
+46,BET,Tyler Perry's Meet the Browns (TV-PG) (CC),none
+47,BET,Tyler Perry's Meet the Browns (TV-PG) (CC),none
+48,BET,Tyler Perry's Meet the Browns (TV-PG) (CC),none
+1,ESPN2,Coach K & Roy Williams: Rivals Reunited (CC),none|sportsProg
+3,ESPN2,Coach K & Roy Williams: Rivals Reunited (CC),none|sportsProg
+5,ESPN2,Cheerleading (CC),none|sportsProg
+7,ESPN2,Cheerleading (CC),none|sportsProg
+8,ESPN2,Cheerleading (CC),none|sportsProg
+9,ESPN2,Cheerleading (CC),none|sportsProg
+10,ESPN2,Cheerleading (CC),none|sportsProg
+11,ESPN2,SportsCenter (CC),none|sportsProg
+13,ESPN2,Women's College Basketball (CC),none|sportsProg
+17,ESPN2,Women's College Gymnastics (CC),none|sportsProg
+20,ESPN2,College Basketball (CC),none|sportsProg
+24,ESPN2,College Basketball (CC),none|sportsProg
+28,ESPN2,Bad Beats (CC),none|sportsProg
+29,ESPN2,UFC Countdown (CC),none|sportsProg
+31,ESPN2,30 for 30 (CC),none|sportsProg
+33,ESPN2,Surfing (CC),none|sportsProg
+35,ESPN2,SportsCenter (CC),none|sportsProg
+37,ESPN2,X Games (CC),none|sportsProg
+39,ESPN2,NBA Basketball (CC),none|sportsProg
+43,ESPN2,SportsCenter With Scott Van Pelt (CC),none|sportsProg
+45,ESPN2,NBA Basketball (CC),none|sportsProg
+1,WPHL,"Transform your home today, fast & easy!",none
+2,WPHL,This Week in Pennsylvania: Special Edition,none
+3,WPHL,Jack Hanna's Into the Wild (TV-G) (CC) In Stereo,none
+4,WPHL,Jack Hanna's Into the Wild (TV-G) (CC) In Stereo,none
+5,WPHL,Jack Hanna's Into the Wild (TV-G) (CC) In Stereo,none
+6,WPHL,Jack Hanna's Into the Wild (TV-G) (CC) In Stereo,none
+7,WPHL,RealtyMark Showcase of Homes,none
+8,WPHL,Renewal by Andersen,none
+9,WPHL,DraftKings Casino Report,none
+11,WPHL,In Touch With Dr. Charles Stanley (TV-G) (CC) In Stereo,none
+12,WPHL,Renewal by Andersen,none
+13,WPHL,LegXercise Pro,none
+14,WPHL,Who Stole My Life?,none
+15,WPHL,LIV Golf League (CC) In Stereo,none|sportsProg
+25,WPHL,Two and a Half Men (CC) In Stereo,none
+26,WPHL,Two and a Half Men (CC) In Stereo,none
+27,WPHL,I Am Jackie O (TV-G) (CC) In Stereo,none
+31,WPHL,The Conners (TV-PG) (CC) In Stereo,none
+32,WPHL,The Conners (TV-PG) (CC) In Stereo,none
+33,WPHL,Action News at 10,none
+35,WPHL,Modern Family (TV-PG) (CC) In Stereo,none
+36,WPHL,Modern Family (TV-PG) (CC) In Stereo,none
+37,WPHL,Seinfeld (TV-PG) (CC) In Stereo,none
+38,WPHL,The Big Bang Theory (CC) In Stereo,none
+39,WPHL,S.W.A.T. (CC) In Stereo,none
+41,WPHL,Young Sheldon (TV-PG) (CC) In Stereo,none
+42,WPHL,The Goldbergs (TV-PG) (CC) In Stereo,none
+43,WPHL,Paid Programming (TV-G) (CC),none
+44,WPHL,Who Stole My Life?,none
+45,WPHL,The Verdict With Judge Hatchett (TV-PG) (CC) In Stereo,none
+46,WPHL,America's Court With Judge Ross (TV-PG) (CC) In Stereo,none
+47,WPHL,PHL17 Morning News (CC),none
+48,WPHL,PHL17 Morning News (CC),none
+1,LIFE,H2O X5 - Super Powerful 5-In-1 Multi-Use Steam Cleaner (CC),none
+2,LIFE,Creflo Dollar (TV-G) (CC),none
+3,LIFE,Help Israel & Ukraine (CC),none
+4,LIFE,Harvest With Pastor Greg Laurie (TV-G) (CC),none
+5,LIFE,Amazing Facts With Doug Batchelor (TV-G) (CC),none
+6,LIFE,David Jeremiah (TV-G) (CC) In Stereo,none
+7,LIFE,Joel Osteen (TV-PG) (CC),none
+8,LIFE,Cindy Crawford and Ellen Pompeo share secrets (CC),none
+9,LIFE,"""Stranger Next Door"" (2022) Vicky Jeudy, Skyh Alvester Black. A recently divorced and retired policewoman meets a handsome stranger who turns out to be Mr. Wrong. (CC)",movie
+13,LIFE,"""Obsessed to Death"" (2022) Holland Roden, Colton Royce. Cassie becomes obsessed with the woman who stole her man away from her. (CC) (1 hr 29 min)",movie
+17,LIFE,"""Abducted Off the Street: The Carlesha Gaither Story"" (2024) Riele Downs, Kenya Moore. Carlesha Freeland-Gaither gets abducted by a homicidal predator while walking home from a family gathering. Determined to survive and outsmart her captor, she leaves clues behind at every opportunity, while her mother stops at nothing to find her. (CC) (1 hr 30 min)",movie
+21,LIFE,"""Single Black Female"" (2022) Amber Riley, Raven Goodwin. Monica looks for a fresh start as she tries to land a gig as the host of an afternoon talk show. She soon becomes close friends with her new assistant, Simone, a deranged woman who plans to take over Monica's life for good. (CC) (1 hr 28 min)",movie
+25,LIFE,"""Single Black Female 2: Simone's Revenge"" (2024) Amber Riley, Raven Goodwin. After escaping the murderous clutches of her half sister, Simone, Monica gets a fresh start in Seattle as the host of a TV show. When amnesiac Simone sees her on TV, her memories come rushing back, leading to a fateful reunion between the sisters. (CC) (1 hr 30 min)",movie
+29,LIFE,"""Alone in the Dark"" (2022) Novi Brown, Terrell Carter. Recently divorced Bri is under house arrest due to her ex-husband's crimes, but a stalker shows up and seems to have control over the surroundings. (CC) (1 hr 27 min)",movie
+33,LIFE,"( 7:03) ""The Beach House Murders"" (TV-PG) (2024) Brittney Dorey, Devante Winfrey. A novelist becomes a murder suspect after she has a one-night stand with a mysterious stranger who turns up dead at her summer home. (CC) (1 hr 30 min)",movie
+37,LIFE,"( 9:01) ""Alone in the Dark"" (2022) Novi Brown, Terrell Carter. Recently divorced Bri is under house arrest due to her ex-husband's crimes, but a stalker shows up and seems to have control over the surroundings. (CC) (1 hr 27 min)",movie
+41,LIFE,"(11:04) ""The Beach House Murders"" (TV-PG) (2024) Brittney Dorey, Devante Winfrey. A novelist becomes a murder suspect after she has a one-night stand with a mysterious stranger who turns up dead at her summer home. (CC) (1 hr 30 min)",movie
+45,LIFE,( 1:02) Who Stole My Life? (CC),none
+46,LIFE,( 1:32) Relief from Inflammation (CC),none
+47,LIFE,( 2:02) Shark CarpetXpertTM with StainStrikerTM 2-in-1 deep carpet cleaner with built-in spot & stain remover (CC),none
+48,LIFE,( 2:32) Paid Programming (TV-G) (CC),none
+1,NBCSPA,Relief from inflammation (CC),none
+2,NBCSPA,Under Eye Bags? SOLUTION! (CC),none
+3,NBCSPA,NHL Hockey (CC),none|sportsProg
+7,NBCSPA,The Card Life (CC),none|sportsProg
+8,NBCSPA,The Immortals (CC),none|sportsProg
+9,NBCSPA,Inside Golf (TV-G) (CC),none|sportsProg
+10,NBCSPA,Traveling Golfer (CC),none|sportsProg
+11,NBCSPA,Pocket Hose Copper Bullet (CC),none
+12,NBCSPA,Home Title Theft is Real! Home Title Lock Protects Your Title 24/7 (CC),none
+13,NBCSPA,Amazing Closet Makeovers! 70% more space! (CC),none
+14,NBCSPA,Home Title Theft is Real! Home Title Lock Protects Your Title 24/7 (CC),none
+15,NBCSPA,Joint Gel provides total comfort with daily joint care (CC),none
+16,NBCSPA,Relief from inflammation (CC),none
+17,NBCSPA,Women's College Basketball (CC),none|sportsProg
+21,NBCSPA,Women's College Basketball (CC),none|sportsProg
+25,NBCSPA,Let's Go Racing (TV-PG) (CC),none|sportsProg
+26,NBCSPA,Inside Villanova Basketball With Kyle Neptune (CC),none|sportsProg
+27,NBCSPA,What's Brewing (CC),none
+28,NBCSPA,NLL Lacrosse (CC),none|sportsProg
+33,NBCSPA,In Depth With Graham Bensinger (CC) In Stereo,none|sportsProg
+34,NBCSPA,Greatest Sports Legends: Then and Now (TV-PG) (CC) In Stereo,none|sportsProg
+35,NBCSPA,The Short List (CC),none|sportsProg
+36,NBCSPA,Poker Night in America (CC),none|sportsProg
+38,NBCSPA,World Poker Tour (CC),none|sportsProg
+40,NBCSPA,Relief from Inflammation (CC),none
+41,NBCSPA,Home Title Theft is Real! Home Title Lock Protects Your Title 24/7 (CC),none
+42,NBCSPA,Paid Programming (TV-G) (CC),none
+43,NBCSPA,Relief from inflammation (CC),none
+44,NBCSPA,Cook Family Size Meals Faster (CC),none
+45,NBCSPA,Relieve your foot pain with WalkFit! (CC),none
+46,NBCSPA,Pocket Hose Copper Bullet (CC),none
+47,NBCSPA,"Transform your home today, fast & easy! (CC)",none
+48,NBCSPA,Relieve your foot pain with WalkFit! (CC),none
+1,TBS,Modern Family (CC) In Stereo,none
+2,TBS,Modern Family (TV-PG) (CC) In Stereo,none
+3,TBS,Modern Family (CC) In Stereo,none
+4,TBS,Modern Family (TV-PG) (CC) In Stereo,none
+5,TBS,Modern Family (TV-PG) (CC) In Stereo,none
+6,TBS,Modern Family (TV-PG) (CC) In Stereo,none
+7,TBS,Friends (TV-PG) (CC) In Stereo,none
+8,TBS,Friends (TV-PG) (CC) In Stereo,none
+9,TBS,Friends (CC) In Stereo,none
+10,TBS,Friends (CC) In Stereo,none
+11,TBS,Friends (TV-PG) (CC) In Stereo,none
+12,TBS,Friends (TV-PG) (CC) In Stereo,none
+13,TBS,"""Godzilla: King of the Monsters"" (2019) Kyle Chandler, Vera Farmiga. Members of the crypto-zoological agency Monarch face off against a battery of god-sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah. When these ancient super-species-thought to be mere myths-rise again, they all vie for supremacy, leaving humanity's very existence hanging in the balance. (CC) (2 hr 12 min)",movie
+18,TBS,"""Godzilla vs. Kong"" (2021) Alexander Skarsgård, Millie Bobby Brown. Kong and his protectors undertake a perilous journey to find his true home. Along for the ride is Jia, an orphaned girl who has a unique and powerful bond with the mighty beast. However, they soon find themselves in the path of an enraged Godzilla as he cuts a swath of destruction across the globe. The initial confrontation between the two titans -- instigated by unseen forces -- is only the beginning of the mystery that lies deep within the core of the planet. (CC) (1 hr 53 min)",movie
+23,TBS,"""Transformers"" (2007) Shia LaBeouf, Tyrese Gibson. The fate of humanity is at stake when two races of robots, the good Autobots and the villainous Decepticons, bring their war to Earth. The robots have the ability to change into different mechanical objects as they seek the key to ultimate power. Only a human youth, Sam Witwicky (Shia LaBeouf) can save the world from total destruction. (CC) (2 hr 24 min)",movie
+29,TBS,The Big Bang Theory (TV-PG) (CC) In Stereo,none
+30,TBS,The Big Bang Theory (TV-PG) (CC) In Stereo,none
+31,TBS,The Big Bang Theory (TV-PG) (CC) In Stereo,none
+32,TBS,The Big Bang Theory (TV-PG) (CC) In Stereo,none
+33,TBS,The Big Bang Theory (TV-PG) (CC) In Stereo,none
+34,TBS,The Big Bang Theory (TV-PG) (CC) In Stereo,none
+35,TBS,"""Godzilla vs. Kong"" (2021) Alexander Skarsgård, Millie Bobby Brown. Kong and his protectors undertake a perilous journey to find his true home. Along for the ride is Jia, an orphaned girl who has a unique and powerful bond with the mighty beast. However, they soon find themselves in the path of an enraged Godzilla as he cuts a swath of destruction across the globe. The initial confrontation between the two titans -- instigated by unseen forces -- is only the beginning of the mystery that lies deep within the core of the planet. (CC) (1 hr 53 min)",movie
+40,TBS,"""Godzilla: King of the Monsters"" (2019) Kyle Chandler, Vera Farmiga. Members of the crypto-zoological agency Monarch face off against a battery of god-sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah. When these ancient super-species-thought to be mere myths-rise again, they all vie for supremacy, leaving humanity's very existence hanging in the balance. (CC) (2 hr 12 min)",movie
+45,TBS,"""300: Rise of an Empire"" (2014) Sullivan Stapleton, Eva Green. While King Leonidas and his 300 Spartans have their date with destiny at Thermopylae, another battle against the Persians is brewing, this time at sea. Themistocles (Sullivan Stapleton), a Greek general, sees the threat posed by the God-King Xerxes of Persia. He knows that he must unite all of Greece if he is to stand any chance of repelling the Persian invasion. Even if he accomplishes his mission, Themistocles must still face Artemisia (Eva Green), the ruthless leader of the Persian armada. (CC) (1 hr 43 min)",movie
+1,WMCNSD,Super Sunday Jewelry Deals,none
+3,WMCNSD,Super Sunday Lifestyle Deals,none
+5,WMCNSD,Super Sunday Lifestyle Deals,none
+7,WMCNSD,Super Sunday Lifestyle Deals,none
+9,WMCNSD,Super Sunday Gold Jewelry Deals,none
+11,WMCNSD,Super Sunday Gold Jewelry Deals,none
+13,WMCNSD,Super Sunday Gold Jewelry Deals,none
+15,WMCNSD,Super Sunday Jewelry Deals,none
+17,WMCNSD,Super Sunday Jewelry Deals,none
+19,WMCNSD,Super Sunday Jewelry Deals,none
+21,WMCNSD,Super Sunday Jewelry Deals,none
+23,WMCNSD,Super Sunday Rare Loose Gemstone Deals,none
+25,WMCNSD,Super Sunday Rare Loose Gemstone Deals,none
+27,WMCNSD,Super Sunday Jewelry Deals,none
+29,WMCNSD,Super Sunday Jewelry Deals,none
+31,WMCNSD,Narsipatnam Alexandrite Jewelry,none
+33,WMCNSD,Narsipatnam Alexandrite Jewelry,none
+35,WMCNSD,Narsipatnam Alexandrite Jewelry,none
+37,WMCNSD,Sunday One Time Only Jewelry Deals,none
+39,WMCNSD,TLV Deals Jewelry Collection,none
+41,WMCNSD,Night Owl Dazzling Jewelry Deals,none
+43,WMCNSD,Night Owl Dazzling Jewelry Deals,none
+45,WMCNSD,Night Owl Dazzling Jewelry Deals,none
+47,WMCNSD,Night Owl Dazzling Jewelry Deals,none
+1,COMEDY,Parks and Recreation (TV-PG) (CC) In Stereo,none
+2,COMEDY,Parks and Recreation (TV-PG) (CC) In Stereo,none
+3,COMEDY,Parks and Recreation (TV-PG) (CC) In Stereo,none
+4,COMEDY,Parks and Recreation (TV-PG) (CC) In Stereo,none
+5,COMEDY,The Office (CC) In Stereo,none
+6,COMEDY,( 5:36) The Office (CC) In Stereo,none
+7,COMEDY,( 6:12) The Office (CC) In Stereo,none
+8,COMEDY,( 6:48) The Office (CC) In Stereo,none
+9,COMEDY,( 7:24) The Office (CC) In Stereo,none
+11,COMEDY,The Office (CC) In Stereo,none
+12,COMEDY,The Office (CC) In Stereo,none
+13,COMEDY,The Office (CC) In Stereo,none
+14,COMEDY,"""Talladega Nights: The Ballad of Ricky Bobby"" (2006) Will Ferrell, John C. Reilly. NASCAR superstar Ricky Bobby (Will Ferrell) is at the top of his game; adored by fans, a trophy wife by his side, and incredible wealth. But Ricky loses it all when French Formula One champion Jean Girard (Sacha Baron Cohen) roars onto the scene. Ricky, with the help of his ruthless father, must pull himself out of the depths of despair and restore his honor on the racetrack. (CC) (1 hr 50 min)",movie
+19,COMEDY,"""We're the Millers"" (2013) Jennifer Aniston, Jason Sudeikis. Small-time pot dealer David (Jason Sudeikis) learns the hard way that no good deed goes unpunished; trying to help some teens, he is jumped by thugs and loses his cash and stash. Now, David's in big debt to his supplier and -- to wipe the slate clean -- he must go to Mexico to pick up the guy's latest shipment. To accomplish his mission, Dave devises a foolproof plan: He packs a fake family into a huge RV and heads south of the border for a wild weekend that is sure to end with a bang. (CC) (1 hr 50 min)",movie
+24,COMEDY,The Office (CC) In Stereo,none
+25,COMEDY,The Office (CC) In Stereo,none
+26,COMEDY,The Office (CC) In Stereo,none
+27,COMEDY,The Office (CC) In Stereo,none
+28,COMEDY,The Office (CC) In Stereo,none
+29,COMEDY,The Office (CC) In Stereo,none
+30,COMEDY,The Office (CC) In Stereo,none
+31,COMEDY,The Office (CC) In Stereo,none
+32,COMEDY,The Office (CC) In Stereo,none
+33,COMEDY,The Office (CC) In Stereo,none
+34,COMEDY,The Office (CC) In Stereo,none
+35,COMEDY,The Office (CC) In Stereo,none
+36,COMEDY,( 8:36) South Park (CC),none
+37,COMEDY,( 9:12) South Park (CC),none
+38,COMEDY,( 9:48) South Park (TV-MA) (CC),none
+39,COMEDY,(10:24) South Park (CC),none
+41,COMEDY,South Park (TV-MA) (CC),none
+42,COMEDY,South Park (TV-MA) (CC),none
+43,COMEDY,South Park (CC),none
+44,COMEDY,South Park (CC),none
+45,COMEDY,South Park (TV-MA) (CC),none
+46,COMEDY,South Park (TV-MA) (CC),none
+47,COMEDY,Men's Health: All-Natural Secret for Prostate Health (CC),none
+48,COMEDY,"Get Fit with Total Gym, Risk Free (CC)",none
+1,WTVE,Biz Kid$ (TV-G) (CC) In Stereo,none
+2,WTVE,Science Now (TV-G) (CC) In Stereo,none
+3,WTVE,THE RIVER of Life Church,none
+4,WTVE,DraftKings Casino Report,none
+5,WTVE,Who Stole My Life?,none
+6,WTVE,Catholic Mass (TV-PG),none
+7,WTVE,Honoring America's Heroes,none
+8,WTVE,Asian Variety Show,none
+9,WTVE,DraftKings Casino Report,none
+10,WTVE,Who Stole My Life?,none
+11,WTVE,DraftKings Casino Report,none
+12,WTVE,Who Stole My Life?,none
+13,WTVE,DraftKings Casino Report,none
+14,WTVE,Who Stole My Life?,none
+16,WTVE,DraftKings Casino Report,none
+17,WTVE,Who Stole My Life?,none
+18,WTVE,DraftKings Casino Report,none
+19,WTVE,Who Stole My Life?,none
+20,WTVE,DraftKings Casino Report,none
+21,WTVE,Who Stole My Life?,none
+22,WTVE,DraftKings Casino Report,none
+23,WTVE,Who Stole My Life?,none
+24,WTVE,DraftKings Casino Report,none
+25,WTVE,Who Stole My Life?,none
+26,WTVE,DraftKings Casino Report,none
+27,WTVE,Who Stole My Life?,none
+28,WTVE,DraftKings Casino Report,none
+30,WTVE,Church of Your Destiny,none
+31,WTVE,Who Stole My Life?,none
+32,WTVE,Philadelphia Church of God,none
+33,WTVE,First Church of Our Lord Jesus Christ,none
+35,WTVE,Who Stole My Life?,none
+36,WTVE,DraftKings Casino Report,none
+37,WTVE,Liberty Safes of NJ,none
+38,WTVE,Who Stole My Life?,none
+39,WTVE,Liberty Safes of NJ,none
+40,WTVE,Bird Paradise,none
+41,WTVE,DraftKings Casino Report,none
+42,WTVE,Bird Paradise,none
+43,WTVE,Who Stole My Life?,none
+44,WTVE,DraftKings Casino Report,none
+45,WTVE,Who Stole My Life?,none
+46,WTVE,DraftKings Casino Report,none
+47,WTVE,Bird Paradise,none
+48,WTVE,DraftKings Casino Report,none
+1,FX,Who Stole My Life? (CC) In Stereo,none
+2,FX,"Get Fit with Total Gym, Risk Free (CC) In Stereo",none
+3,FX,"""Jurassic World: Fallen Kingdom"" (2018) Chris Pratt, Bryce Dallas Howard. Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt. They soon encounter terrifying new breeds of gigantic dinos while uncovering a conspiracy that threatens the entire planet. (CC) In Stereo (2 hr 8 min)",movie
+9,FX,"""Pirates of the Caribbean: The Curse of the Black Pearl"" (2003) Johnny Depp, Geoffrey Rush. Capt. Jack Sparrow (Johnny Depp) arrives at Port Royal in the Caribbean without a ship or crew. His timing is inopportune, however, because later that evening the town is besieged by a pirate ship. The pirates kidnap the governor's daughter, Elizabeth (Keira Knightley), who's in possession of a valuable coin that is linked to a curse that has transformed the pirates into the undead. A gallant blacksmith (Orlando Bloom) in love with Elizabeth allies with Sparrow in pursuit of the pirates. (CC) In Stereo (2 hr 23 min)",movie
+15,FX,"""Pirates of the Caribbean: Dead Man's Chest"" (2006) Johnny Depp, Orlando Bloom. When ghostly pirate Davy Jones (Bill Nighy) comes to collect a blood debt, Capt. Jack Sparrow (Johnny Depp) must find a way to avoid his fate lest his soul be damned for all time. Nevertheless, the wily ghost manages to interrupt the wedding plans of Jack's friends Will Turner (Orlando Bloom) and Elizabeth Swann (Keira Knightley). (CC) In Stereo (2 hr 31 min)",movie
+22,FX,"""Pirates of the Caribbean: At World's End"" (2007) Johnny Depp, Orlando Bloom. Will Turner (Orlando Bloom) and Elizabeth Swann (Keira Knightley) join forces with Capt. Barbossa (Geoffrey Rush) to free Jack Sparrow (Johnny Depp) from Davy Jones' locker. Meanwhile, the crew of the Flying Dutchman ghost ship wreaks havoc on the Seven Seas. The friends must navigate dangerous waters to confront Chinese pirate Sao Feng (Chow Yun-Fat) and, ultimately, they must choose sides in a battle wherein the pirate life hangs in the balance. (CC) In Stereo (2 hr 48 min)",movie
+29,FX,"""Pirates of the Caribbean: On Stranger Tides"" (2011) Johnny Depp, Penélope Cruz. The checkered past of Capt. Jack Sparrow (Johnny Depp) catches up to him when he encounters Angelica (Penélope Cruz), a beautiful pirate that Jack once loved then left. Angelica forces him to accompany her to the Queen Anne's Revenge, the ship of the notorious Blackbeard (Ian McShane). Accompanied by a zombie crew, the trio sets sail to find the legendary Fountain of Youth. However, Jack's rival, Barbossa (Geoffrey Rush), also seeks the fountain, as does a ship from Spain. (CC) In Stereo (2 hr 16 min)",movie
+35,FX,"""Armageddon"" (1998) Bruce Willis, Billy Bob Thornton. When an asteroid threatens to collide with Earth, NASA honcho Dan Truman (Billy Bob Thornton) determines the only way to stop it is to drill into its surface and detonate a nuclear bomb. This leads him to renowned driller Harry Stamper (Bruce Willis), who agrees to helm the dangerous space mission provided he can bring along his own hotshot crew. Among them is the cocksure A.J. (Ben Affleck), who Harry thinks isn't good enough for his daughter (Liv Tyler), until the mission proves otherwise. (CC) In Stereo (2 hr 30 min)",movie
+42,FX,black-ish (TV-PG) (CC) In Stereo,none
+43,FX,Car Accident? Free Legal Consultation. (CC) In Stereo,none
+44,FX,Who Stole My Life? (CC) In Stereo,none
+45,FX,Shark CarpetXpertTM with StainStrikerTM 2-in-1 deep carpet cleaner with built-in spot & stain remover (CC) In Stereo,none
+46,FX,Car Accident? Free Legal Consultation. (CC) In Stereo,none
+47,FX,Portable Oxygen (CC) In Stereo,none
+48,FX,H2O X5 - Super Powerful 5-In-1 Multi-Use Steam Cleaner (CC) In Stereo,none
+1,CNN,CNN This Morning Weekend (CC),none
+3,CNN,CNN This Morning Weekend (CC),none
+5,CNN,CNN This Morning Weekend (CC),none
+7,CNN,State of the Union With Jake Tapper and Dana Bash (CC),none
+9,CNN,Fareed Zakaria GPS (TV-PG) (CC),none
+11,CNN,Inside Politics With Manu Raju (CC),none
+13,CNN,State of the Union With Jake Tapper and Dana Bash (CC),none
+15,CNN,Fareed Zakaria GPS (TV-PG) (CC),none
+17,CNN,CNN Newsroom With Fredricka Whitfield (CC),none
+19,CNN,CNN Newsroom With Fredricka Whitfield (CC),none
+21,CNN,CNN Newsroom With Fredricka Whitfield (CC),none
+23,CNN,CNN Newsroom (CC),none
+25,CNN,CNN Newsroom (CC),none
+27,CNN,CNN Newsroom (CC),none
+29,CNN,The Whole Story With Anderson Cooper (CC),none
+31,CNN,United States of Scandal (CC),none
+33,CNN,Vegas: The Story of Sin City (CC),none
+35,CNN,The Whole Story With Anderson Cooper (CC),none
+37,CNN,United States of Scandal (CC),none
+39,CNN,Vegas: The Story of Sin City (CC),none
+41,CNN,CNN Newsroom Live (CC),none
+43,CNN,CNN Newsroom Live (CC),none
+45,CNN,State of the Union With Jake Tapper and Dana Bash (CC),none
+47,CNN,CNN This Morning (CC),none
+1,DSC,Seasons on the Fly (TV-G) (CC) In Stereo,none|sportsProg
+2,DSC,Destroyed in Seconds (CC) In Stereo,none
+3,DSC,Destroyed in Seconds (CC) In Stereo,none
+4,DSC,Operation Healing Heroes (TV-G) (CC) In Stereo,none
+5,DSC,George Poveromo's World of Saltwater Fishing (TV-G) (CC) In Stereo,none|sportsProg
+6,DSC,Sportsman's Adventures (TV-G) (CC) In Stereo,none|sportsProg
+7,DSC,Naked and Afraid (CC) In Stereo,none
+9,DSC,Naked and Afraid (CC) In Stereo,none
+11,DSC,Naked and Afraid (CC) In Stereo,none
+13,DSC,Naked and Afraid (CC) In Stereo,none
+15,DSC,Naked and Afraid (CC) In Stereo,none
+17,DSC,Naked and Afraid (CC) In Stereo,none
+19,DSC,Naked and Afraid (CC) In Stereo,none
+21,DSC,Naked and Afraid (CC) In Stereo,none
+23,DSC,Naked and Afraid (CC) In Stereo,none
+25,DSC,Naked and Afraid (CC) In Stereo,none
+29,DSC,Naked and Afraid (CC) In Stereo,none
+33,DSC,( 7:01) Naked and Afraid (CC) In Stereo,none
+35,DSC,( 8:01) Naked and Afraid (CC) In Stereo,none
+37,DSC,Naked and Afraid (CC) In Stereo,none
+41,DSC,(11:01) Naked and Afraid (CC) In Stereo,none
+43,DSC,(12:01) Naked and Afraid (CC) In Stereo,none
+45,DSC,Bering Sea Gold (CC) In Stereo,none
+1,FOOD,Cindy Crawford and Ellen Pompeo share secrets (TV-G) (CC),none
+2,FOOD,Who Stole My Life? (TV-G) (CC),none
+3,FOOD,Valerie's Home Cooking (TV-G) (CC),none
+4,FOOD,Valerie's Home Cooking (TV-G) (CC),none
+5,FOOD,Girl Meets Farm (TV-G) (CC),none
+6,FOOD,Girl Meets Farm (TV-G) (CC),none
+7,FOOD,The Pioneer Woman (TV-G) (CC),none
+8,FOOD,The Pioneer Woman (TV-G) (CC),none
+9,FOOD,The Pioneer Woman (TV-G) (CC),none
+10,FOOD,The Pioneer Woman (TV-G) (CC),none
+11,FOOD,Magnolia Table With Joanna Gaines (TV-G) (CC) In Stereo,none
+12,FOOD,Magnolia Table With Joanna Gaines (TV-G) (CC) In Stereo,none
+13,FOOD,Mary Makes It Easy (TV-PG) (CC),none
+14,FOOD,Mary Makes It Easy (TV-PG) (CC),none
+15,FOOD,The Kitchen (TV-G) (CC),none
+17,FOOD,Guy's Grocery Games (TV-G) (CC),none
+19,FOOD,Guy's Grocery Games (TV-G) (CC),none
+21,FOOD,Guy's Grocery Games (TV-G) (CC),none
+23,FOOD,Guy's Grocery Games (TV-G) (CC),none
+25,FOOD,Guy's Grocery Games (TV-G) (CC),none
+27,FOOD,Guy's Grocery Games (TV-PG) (CC),none
+29,FOOD,Tournament of Champions (TV-PG) (CC) In Stereo,none
+33,FOOD,Bobby's Triple Threat (TV-PG) (CC),none
+35,FOOD,Beat Bobby Flay (TV-G) (CC),none
+36,FOOD,Beat Bobby Flay (TV-G) (CC),none
+37,FOOD,Tournament of Champions (TV-PG) (CC) In Stereo,none
+41,FOOD,Bobby's Triple Threat (TV-PG) (CC),none
+43,FOOD,Beat Bobby Flay (TV-G) (CC),none
+44,FOOD,Beat Bobby Flay (TV-G) (CC),none
+45,FOOD,Portable Oxygen (TV-G) (CC),none
+46,FOOD,Powerful Cleaning with Shark Stratos (TV-G) (CC),none
+47,FOOD,Who Stole My Life? (TV-G) (CC),none
+1,AETV,Creflo Dollar (TV-G) (CC) In Stereo,none
+2,AETV,The Potter's Touch (TV-G) (CC) In Stereo,none
+3,AETV,Property Virgins (TV-G) (CC) In Stereo,none
+4,AETV,Property Virgins (TV-G) (CC) In Stereo,none
+5,AETV,Property Virgins (TV-G) (CC) In Stereo,none
+6,AETV,Property Virgins (TV-G) (CC) In Stereo,none
+7,AETV,Property Virgins (TV-G) (CC) In Stereo,none
+8,AETV,Property Virgins (TV-G) (CC) In Stereo,none
+9,AETV,Zombie House Flipping (TV-PG) (CC) In Stereo,none
+11,AETV,Zombie House Flipping (TV-PG) (CC) In Stereo,none
+13,AETV,Zombie House Flipping (TV-PG) (CC) In Stereo,none
+15,AETV,Biography: WWE Legends (CC) In Stereo,none
+19,AETV,Biography: WWE Legends (CC) In Stereo,none
+23,AETV,WWE Rivals (CC) In Stereo,none
+25,AETV,WWE Rivals (CC) In Stereo,none
+27,AETV,WWE Rivals (CC) In Stereo,none
+29,AETV,WWE Rivals (CC) In Stereo,none
+31,AETV,Biography: WWE Legends (CC) In Stereo,none
+35,AETV,( 8:04) WWE Rivals (CC) In Stereo,none
+37,AETV,( 9:03) WWE Rivals (CC) In Stereo,none
+39,AETV,(10:03) Biography: WWE Legends (CC) In Stereo,none
+43,AETV,(12:05) WWE Rivals (CC) In Stereo,none
+45,AETV,( 1:02) Car accident? Free Legal Consultation (CC) In Stereo,none
+46,AETV,( 1:32) LegXercise Pro (CC) In Stereo,none
+47,AETV,( 2:02) Who Stole My Life? (CC) In Stereo,none
+48,AETV,"( 2:31) OXYPURE ZERO, AIR PURIFIER WITH ZERO REPLACEMENT FILTERS (CC) In Stereo",none
+1,TLC,Rebuilding Faces (CC) In Stereo,none
+3,TLC,My 600-Lb. Life (CC) In Stereo,none
+7,TLC,My 600-Lb. Life (CC) In Stereo,none
+11,TLC,"Little People, Big World (TV-PG) (CC) In Stereo",none
+13,TLC,"Little People, Big World (TV-PG) (CC) In Stereo",none
+15,TLC,Love & Translation (CC) In Stereo,none
+17,TLC,Love & Translation (CC) In Stereo,none
+19,TLC,Love & Translation (CC) In Stereo,none
+21,TLC,Love & Translation (CC) In Stereo,none
+23,TLC,90 Day Fiancé (CC) In Stereo,none
+25,TLC,90 Day Fiancé (TV-PG) (CC) In Stereo,none
+29,TLC,90 Day Fiancé (CC) In Stereo,none
+33,TLC,90 Day Fiancé (CC) In Stereo,none
+34,TLC,( 7:58) Love & Translation (CC) In Stereo,none
+37,TLC,90 Day Fiancé (CC) In Stereo,none
+41,TLC,90 Day Fiancé (CC) In Stereo,none
+42,TLC,(11:58) Love & Translation (CC) In Stereo,none
+45,TLC,Sister Wives (TV-PG) (CC) In Stereo,none
+47,TLC,Sister Wives (TV-PG) (CC) In Stereo,none
+1,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+2,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+3,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+4,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+5,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+6,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+7,NIK,"""Baby Shark's Big Movie!"" (2023) Kimiko Glenn, Luke Youngblood. Following Baby Shark and his family as they move to Chomp City, the big city of sharks. (CC) In Stereo (1 hr 18 min)",movie
+10,NIK,"( 7:45) ""Cloudy With a Chance of Meatballs"" (2009) Bill Hader, Anna Faris. When hard times hit Swallow Falls, its townspeople can only afford to eat sardines. Flint Lockwood, a failed inventor, thinks he has the answer to the town's crisis. He builds a machine that converts water into food, and becomes a local hero when tasty treats fall from the sky like rain. But when the machine spins out of control and threatens to bury the whole world under giant mounds of food, Flint finds he may have bitten off more than he can chew. (CC) In Stereo (1 hr 30 min)",movie
+14,NIK,"( 9:45) ""Cloudy With a Chance of Meatballs 2"" (2013) Bill Hader, Anna Faris. His genius finally recognized by his idol Chester V, inventor Flint Lockwood (Bill Hader) gets to join Chester's company, where he can work full-time on technologies to help mankind. However, Flint soon discovers that his most-famous machine, which turns water into food, is still operating but now creates animal/vegetable hybrids. With the fate of humanity in Flint's hands, he and his friends set out to save the world from tacodiles, shrimpanzees and other deliciously dangerous creatures. (CC) In Stereo (1 hr 35 min)",movie
+18,NIK,"(11:45) ""Sing 2"" (2021) Matthew McConaughey, Reese Witherspoon. Can-do koala Buster Moon and his all-star cast of animal performers prepare to launch a dazzling stage extravaganza in the glittering entertainment capital of the world. There's just one hitch -- he has to find and persuade the world's most reclusive rock star to join them. What begins as Buster's dream of big-time success soon becomes an emotional reminder of the power of music to heal even the most broken heart. (CC) In Stereo (1 hr 50 min)",movie
+23,NIK,Rock Paper Scissors (TV-Y7) (CC) In Stereo,none
+24,NIK,Rock Paper Scissors (CC) In Stereo,none
+25,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+29,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+30,NIK,SpongeBob SquarePants (TV-Y7) (CC) In Stereo,none
+31,NIK,Friends (TV-PG) (CC) In Stereo,none
+32,NIK,Friends (CC) In Stereo,none
+33,NIK,Friends (TV-PG) (CC) In Stereo,none
+34,NIK,Friends (TV-PG) (CC) In Stereo,none
+35,NIK,Friends (TV-PG) (CC) In Stereo,none
+36,NIK,Friends (TV-PG) (CC) In Stereo,none
+37,NIK,Friends (TV-PG) (CC) In Stereo,none
+38,NIK,Friends (TV-PG) (CC) In Stereo,none
+39,NIK,Friends (TV-PG) (CC) In Stereo,none
+40,NIK,(10:35) Friends (TV-PG) (CC) In Stereo,none
+41,NIK,(11:09) Friends (TV-PG) (CC) In Stereo,none
+42,NIK,(11:44) Friends (TV-PG) (CC) In Stereo,none
+43,NIK,(12:18) Mom (CC) In Stereo,none
+44,NIK,(12:50) Mom (CC) In Stereo,none
+45,NIK,( 1:16) Mom (CC) In Stereo,none
+46,NIK,( 1:42) Mom (CC) In Stereo,none
+47,NIK,( 2:10) Mike & Molly (CC) In Stereo,none
+48,NIK,( 2:34) Mike & Molly (CC) In Stereo,none
+1,DISN,Bluey (TV-Y) (CC) In Stereo,none
+2,DISN,SuperKitties (TV-Y) (CC) In Stereo,none
+3,DISN,Marvel's Spidey and His Amazing Friends (TV-Y) (CC) In Stereo,none
+4,DISN,Bluey (TV-G) (CC) In Stereo,none
+5,DISN,LEGO Friends: The Next Chapter (TV-G) (CC) In Stereo,none
+6,DISN,"""WALL-E"" (2008) Ben Burtt, Elissa Knight. WALL-E, short for Waste Allocation Load Lifter Earth-class, is the last robot left on Earth. He spends his days tidying up the planet, one piece of garbage at a time. But during 700 years, WALL-E has developed a personality, and he's more than a little lonely. Then he spots EVE (Elissa Knight), a sleek and shapely probe sent back to Earth on a scanning mission. Smitten WALL-E embarks on his greatest adventure yet when he follows EVE across the galaxy. (CC) In Stereo (1 hr 37 min)",movie
+9,DISN,( 7:15) Marvel's Moon Girl and Devil Dinosaur (TV-Y7) (CC) In Stereo,none
+10,DISN,( 7:40) Marvel's Moon Girl and Devil Dinosaur (TV-Y7) (CC) In Stereo,none
+11,DISN,( 8:05) Hailey's on It! (TV-Y) (CC) In Stereo,none
+12,DISN,Hailey's on It! (TV-Y) (CC) In Stereo,none
+13,DISN,Miraculous: Tales of Ladybug and Cat Noir (TV-Y7) (CC) In Stereo,none
+14,DISN,Miraculous: Tales of Ladybug and Cat Noir (TV-Y7) (CC) In Stereo,none
+15,DISN,Miraculous: Tales of Ladybug and Cat Noir (TV-Y7) (CC) In Stereo,none
+16,DISN,Miraculous: Tales of Ladybug and Cat Noir (TV-Y7) (CC) In Stereo,none
+17,DISN,Kiff (TV-G) (CC) In Stereo,none
+18,DISN,Kiff (TV-G) (CC) In Stereo,none
+19,DISN,Kiff (TV-G) (CC) In Stereo,none
+20,DISN,Hailey's on It! (TV-Y7) (CC) In Stereo,none
+21,DISN,Hailey's on It! (TV-Y7) (CC) In Stereo,none
+22,DISN,Hailey's on It! (TV-Y7) (CC) In Stereo,none
+23,DISN,Chibiverse (TV-G) (CC) In Stereo,none
+24,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+25,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+26,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+27,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+28,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+29,DISN,"""The Lion King"" (2019) Donald Glover, Seth Rogen. Simba idolizes his father, King Mufasa, and takes to heart his own royal destiny on the plains of Africa. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother -- and former heir to the throne -- has plans of his own. The battle for Pride Rock is soon ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. Now, with help from a curious pair of newfound friends, Simba must figure out how to grow up and take back what is rightfully his. (CC) In Stereo (1 hr 58 min)",movie
+33,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+34,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+35,DISN,LEGO Friends: The Next Chapter (TV-G) (CC) In Stereo,none
+36,DISN,LEGO Friends: The Next Chapter (TV-G) (CC) In Stereo,none
+37,DISN,Miraculous: Tales of Ladybug and Cat Noir (TV-Y7) (CC) In Stereo,none
+38,DISN,Miraculous: Tales of Ladybug and Cat Noir (TV-Y7) (CC) In Stereo,none
+39,DISN,Bluey (TV-Y) (CC) In Stereo,none
+40,DISN,Bluey (TV-Y) (CC) In Stereo,none
+41,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+42,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+43,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+44,DISN,Big City Greens (TV-Y7) (CC) In Stereo,none
+45,DISN,Kiff (TV-G) (CC) In Stereo,none
+46,DISN,Kiff (TV-G) (CC) In Stereo,none
+47,DISN,Bluey (TV-G) (CC) In Stereo,none
+48,DISN,Bluey (TV-Y) (CC) In Stereo,none
+1,PAR,Rare Silver Coin Set (CC) In Stereo,none
+2,PAR,Paid Programming (TV-G) (CC) In Stereo,none
+3,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+5,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+7,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+9,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+11,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+13,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+15,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+17,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+19,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+21,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+23,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+25,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+27,PAR,Bar Rescue (CC) In Stereo,none
+29,PAR,Bar Rescue (CC) In Stereo,none
+31,PAR,Bar Rescue (CC) In Stereo,none
+33,PAR,Bar Rescue (CC) In Stereo,none
+35,PAR,Bar Rescue (CC) In Stereo,none
+37,PAR,Bar Rescue (CC) In Stereo,none
+39,PAR,Bar Rescue (CC) In Stereo,none
+41,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+43,PAR,Bar Rescue (TV-PG) (CC) In Stereo,none
+45,PAR,"Get Fit with Total Gym, Risk Free (CC) In Stereo",none
+46,PAR,Shark CarpetXpertTM with StainStrikerTM 2-in-1 deep carpet cleaner with built-in spot & stain remover (CC) In Stereo,none
+47,PAR,Who Stole My Life? (CC) In Stereo,none
+48,PAR,Shark Matrix™ Plus 2-in-1 Robot Vacuum & Mop (CC) In Stereo,none
+1,E,Sex and the City (TV-MA) (CC) In Stereo,none
+2,E,Sex and the City (TV-MA) (CC) In Stereo,none
+3,E,Sex and the City (TV-MA) (CC) In Stereo,none
+4,E,"""Hitch"" (2005) Will Smith, Eva Mendes. Dating coach Alex ""Hitch"" Hitchens (Will Smith) mentors a bumbling client, Albert (Kevin James), who hopes to win the heart of the glamorous Allegra Cole (Amber Valletta). While Albert makes progress, Hitchens faces his own romantic setbacks when proven techniques fail to work on Sara Melas (Eva Mendes), a tabloid reporter digging for dirt on Allegra Cole's love life. When Sara discovers Hitchens' connection to Albert -- now Allegra's boyfriend -- it threatens to destroy both relationships. (CC) (1 hr 57 min)",movie
+9,E,"""Made of Honor"" (2008) Patrick Dempsey, Michelle Monaghan. Always shy of commitment, Tom (Patrick Dempsey) lives as a serial dater. Hannah (Michelle Monaghan), his best friend, has wanted to marry and now has found Mr. Right -- just as Tom realizes he really loves Hannah. When she asks him to be in her bridal party, Tom seizes the opportunity to prevent the nuptials and woo her himself. (CC) (1 hr 41 min)",movie
+13,E,"""Hitch"" (2005) Will Smith, Eva Mendes. Dating coach Alex ""Hitch"" Hitchens (Will Smith) mentors a bumbling client, Albert (Kevin James), who hopes to win the heart of the glamorous Allegra Cole (Amber Valletta). While Albert makes progress, Hitchens faces his own romantic setbacks when proven techniques fail to work on Sara Melas (Eva Mendes), a tabloid reporter digging for dirt on Allegra Cole's love life. When Sara discovers Hitchens' connection to Albert -- now Allegra's boyfriend -- it threatens to destroy both relationships. (CC) (1 hr 57 min)",movie
+18,E,"""The Proposal"" (2009) Sandra Bullock, Ryan Reynolds. Faced with deportation to her native Canada, high-powered book editor Margaret Tate (Sandra Bullock) says she's engaged to marry Andrew Paxton (Ryan Reynolds), her hapless assistant. Andrew agrees to the charade, but imposes a few conditions of his own, including flying to Alaska to meet his eccentric family. With a suspicious immigration official always lurking nearby, Margaret and Andrew must stick to their wedding plan despite numerous mishaps. (CC) (1 hr 48 min)",movie
+23,E,"""Pitch Perfect"" (2012) Anna Kendrick, Skylar Astin. College student Beca (Anna Kendrick) knows she does not want to be part of a clique, but that's exactly where she finds herself after arriving at her new school. Thrust in among mean gals, nice gals and just plain weird gals, Beca finds that the only thing they have in common is how well they sing together. She takes the women of the group out of their comfort zone of traditional arrangements and into a world of amazing harmonic combinations in a fight to the top of college music competitions. (CC) (1 hr 52 min)",movie
+28,E,"""The Proposal"" (2009) Sandra Bullock, Ryan Reynolds. Faced with deportation to her native Canada, high-powered book editor Margaret Tate (Sandra Bullock) says she's engaged to marry Andrew Paxton (Ryan Reynolds), her hapless assistant. Andrew agrees to the charade, but imposes a few conditions of his own, including flying to Alaska to meet his eccentric family. With a suspicious immigration official always lurking nearby, Margaret and Andrew must stick to their wedding plan despite numerous mishaps. (CC) (1 hr 48 min)",movie
+33,E,"""Pitch Perfect"" (2012) Anna Kendrick, Skylar Astin. College student Beca (Anna Kendrick) knows she does not want to be part of a clique, but that's exactly where she finds herself after arriving at her new school. Thrust in among mean gals, nice gals and just plain weird gals, Beca finds that the only thing they have in common is how well they sing together. She takes the women of the group out of their comfort zone of traditional arrangements and into a world of amazing harmonic combinations in a fight to the top of college music competitions. (CC) (1 hr 52 min)",movie
+38,E,"""Booksmart"" (2019) Kaitlyn Dever, Beanie Feldstein. Academic overachievers Amy and Molly thought keeping their noses to the grindstone gave them a leg up on their high school peers. But on the eve of graduation, the best friends suddenly realize that they may have missed out on the special moments of their teenage years. Determined to make up for lost time, the girls decide to cram four years of not-to-be missed fun into one night -- a chaotic adventure that no amount of book smarts could prepare them for. (CC) (1 hr 42 min)",movie
+43,E,"""The Swing of Things"" (2020) Luke Wilson, Matt McCoy. A groom-to-be accidentally books his destination wedding and honeymoon at a swingers resort in Jamaica. (CC) (1 hr 33 min)",movie
+47,E,Botched (CC),none
+1,FREEFR,Shark Matrix™ Plus 2-in-1 Robot Vacuum & Mop (CC),none
+2,FREEFR,Shark's FIVE Star Cleaning Solutions (CC),none
+3,FREEFR,"""Neighbors 2: Sorority Rising"" (2016) Seth Rogen, Zac Efron. Life is good for Mac Radner (Seth Rogen) and pregnant wife Kelly (Rose Byrne) until the unruly sisters of Kappa Nu move in next door. As the loud parties threaten the sale of their home, the couple turn to ex-neighbor and one-time enemy Teddy Sanders (Zac Efron) for help. Now united with the former college student, the trio devises schemes to get the wild sorority off the block. Unfortunately, the rebellious young women refuse to go down without a fight. (CC) (1 hr 32 min)",movie
+7,FREEFR,"""Why Him?"" (2016) James Franco, Bryan Cranston. During the holidays, loving but overprotective Ned (Bryan Cranston) travels to California to visit his daughter Stephanie (Zoey Deutch) at Stanford University. While there, he meets his biggest nightmare: her well-meaning but socially awkward boyfriend, Laird (James Franco). Even though Laird is a multimillionaire, Ned disapproves of his freewheeling attitude and unfiltered language. His panic level escalates even further when he learns that Laird plans to ask for Stephanie's hand in marriage. (CC) (1 hr 51 min)",movie
+12,FREEFR,"""This Means War"" (2012) Reese Witherspoon, Chris Pine. CIA operatives FDR Foster (Chris Pine) and Tuck (Tom Hardy) are inseparable best friends and partners. Together, their good looks, covert abilities and combat skills rank them among the CIA's elite, but their longstanding personal and professional bond is put to the test when they meet Lauren (Reese Witherspoon). FDR and Tuck both fall hard for the beautiful blonde, turning their deadly skills and an array of high-tech gadgetry against each other in an all-out battle for her love. (CC) (1 hr 37 min)",movie
+16,FREEFR,"""Hope Floats"" (1998) Sandra Bullock, Harry Connick Jr.. Birdee Pruitt (Sandra Bullock) has been humiliated on live television by her best friend, Connie (Rosanna Arquette), who's been sleeping with Birdee's husband, Bill (Michael Paré). Birdee tries starting over with her daughter, Bernice (Mae Whitman), by returning to her small Texas hometown, but she's faced with petty old acquaintances who are thrilled to see Birdee unhappy -- except for her friend Justin (Harry Connick Jr.). As he helps Birdee get back on her feet, love begins to blossom. (CC) (1 hr 54 min)",movie
+21,FREEFR,"( 1:05) ""Sweet Home Alabama"" (2002) Reese Witherspoon, Josh Lucas. New York fashion designer Melanie (Reese Witherspoon) suddenly finds herself engaged to the city's most eligible bachelor. But Melanie's past holds many secrets, including Jake (Josh Lucas), the redneck husband she married in high school, who refuses to divorce her. Bound and determined to end their relationship once and for all, Melanie sneaks back home to Alabama to confront her past, only to discover that you can take the girl out of the South, but you can't take the South out of the girl. (CC) (1 hr 48 min)",movie
+25,FREEFR,"( 3:10) ""Footloose"" (1984) Kevin Bacon, Lori Singer. Moving in from Chicago, newcomer Ren McCormack (Kevin Bacon) is in shock when he discovers the small Midwestern town he now calls home has made dancing and rock music illegal. As he struggles to fit in, Ren faces an uphill battle to change things. With the help of his new friend, Willard Hewitt (Christopher Penn), and defiant teen Ariel Moore (Lori Singer), he might loosen up this conservative town. But Ariel's influential father, Reverend Shaw Moore (John Lithgow), stands in the way. (CC) (1 hr 47 min)",movie
+30,FREEFR,"( 5:45) ""The Parent Trap"" (1998) Lindsay Lohan, Dennis Quaid. In this update of a 1961 film, twins Annie and Hallie (Lindsay Lohan) are strangers until happenstance unites them. The preteen girls' divorced parents, Nick (Dennis Quaid) and Elizabeth (Natasha Richardson), are living on opposite sides of the Atlantic, each with one child. After meeting at camp, American Hallie and British-raised Annie engineer an identity swap, giving both the chance to spend time with the parent they've missed. If the scheme works, it might just make the family whole again. (CC) (2 hr 7 min)",movie
+36,FREEFR,"( 8:55) ""Freaky Friday"" (2003) Jamie Lee Curtis, Lindsay Lohan. Single mother Tess Coleman (Jamie Lee Curtis) and her teenage daughter Anna (Lindsay Lohan) couldn't be more different, and it is driving them both insane. After receiving cryptic fortunes at a Chinese restaurant, the two wake up the next day to discover that they have somehow switched bodies. Unable to switch back, they are forced to masquerade as one another until a solution can be found. In the process, they develop a new sense of respect and understanding for one another. (CC) (1 hr 36 min)",movie
+41,FREEFR,Paid Programming (TV-G) (CC),none
+42,FREEFR,Paid Programming (TV-G) (CC),none
+43,FREEFR,Paid Programming (TV-G) (CC),none
+44,FREEFR,CSN Mint (CC),none
+45,FREEFR,Paid Programming (TV-G) (CC),none
+46,FREEFR,Cindy Crawford and Ellen Pompeo share secrets (CC),none
+47,FREEFR,Portable Oxygen (CC),none
+48,FREEFR,Paid Programming (TV-G) (CC),none
+1,WLVT,Mister Rogers' Neighborhood (TV-Y) (CC),none
+2,WLVT,Daniel Tiger's Neighborhood (TV-Y) (CC) In Stereo,none
+3,WLVT,Rosie's Rules (TV-Y) (CC) In Stereo,none
+4,WLVT,Nature Cat (TV-Y) (CC) In Stereo,none
+5,WLVT,Molly of Denali (TV-Y) (CC) In Stereo,none
+6,WLVT,Xavier Riddle and the Secret Museum (TV-Y) (CC) In Stereo,none
+7,WLVT,Odd Squad (TV-Y) (CC) In Stereo,none
+8,WLVT,Scholastic Scrimmage,none
+9,WLVT,"Memory Makeover With Daniel Amen, MD (TV-G) (CC) In Stereo",none
+13,WLVT,Rick Steves Fascism in Europe (TV-PG) (CC) In Stereo,none
+16,WLVT,Italy Made With Love (CC) In Stereo,none
+19,WLVT,England Made With Love (CC) In Stereo,none
+22,WLVT,Rick Steves Mighty Alps (TV-G) (CC) In Stereo,none
+25,WLVT,Ken Burns: Country Music (TV-G) (CC) In Stereo,none
+29,WLVT,Ken Burns: America's Storyteller (CC) In Stereo,none
+33,WLVT,Your DNA Secrets Revealed (CC) In Stereo,none
+37,WLVT,"Young Forever With Mark Hyman, MD (TV-G) (CC) In Stereo",none
+41,WLVT,England Made With Love (CC) In Stereo,none
+44,WLVT,Rick Steves Mighty Alps (TV-G) (CC) In Stereo,none
+47,WLVT,Kids Jam,none
+48,WLVT,Odd Squad (TV-Y) (CC) In Stereo,none
+1,TNT,NCIS: New Orleans (CC) In Stereo,none
+3,TNT,"""Gods of Egypt"" (2016) Nikolaj Coster-Waldau, Brenton Thwaites. The survival of mankind hangs in the balance when Set (Gerard Butler), the merciless god of darkness, usurps Egypt's throne and plunges the prosperous empire into chaos and conflict. Hoping to save the world and rescue his true love, a defiant mortal named Bek (Brenton Thwaites) forms an unlikely alliance with the powerful god Horus (Nikolaj Coster-Waldau). Their battle against Set and his henchmen takes them into the afterlife and across the heavens for an epic confrontation. (CC) (2 hr 1 min)",movie
+8,TNT,"""Star Wars: A New Hope"" (1977) Mark Hamill, Harrison Ford. The Imperial Forces -- under orders from cruel Darth Vader (David Prowse) -- hold Princess Leia (Carrie Fisher) hostage, in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker (Mark Hamill) and Han Solo (Harrison Ford), captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 (Kenny Baker) and C-3PO (Anthony Daniels) to rescue the beautiful princess, help the Rebel Alliance, and restore freedom and justice to the Galaxy. (CC) (2 hr 1 min)",movie
+13,TNT,"( 9:15) ""Star Wars: The Empire Strikes Back"" (1980) Mark Hamill, Harrison Ford. The adventure continues in this ""Star Wars"" sequel. Luke Skywalker (Mark Hamill), Han Solo (Harrison Ford), Princess Leia (Carrie Fisher) and Chewbacca (Peter Mayhew) face attack by the Imperial forces and its AT-AT walkers on the ice planet Hoth. While Han and Leia escape in the Millennium Falcon, Luke travels to Dagobah in search of Yoda. Only with the Jedi master's help will Luke survive when the dark side of the Force beckons him into the ultimate duel with Darth Vader (David Prowse). (CC) (2 hr 4 min)",movie
+19,TNT,NHL on TNT Face Off (CC),none|sportsProg
+20,TNT,NHL Hockey (CC),none|sportsProg
+26,TNT,NHL Post-Game on TNT (CC),none|sportsProg
+27,TNT,"""Star Wars: Return of the Jedi"" (1983) Mark Hamill, Harrison Ford. Luke Skywalker (Mark Hamill) battles horrible Jabba the Hut and cruel Darth Vader to save his comrades in the Rebel Alliance and triumph over the Galactic Empire. Han Solo (Harrison Ford) and Princess Leia (Carrie Fisher) reaffirm their love and team with Chewbacca, Lando Calrissian (Billy Dee Williams), the Ewoks and the androids C-3PO and R2-D2 to aid in the disruption of the Dark Side and the defeat of the evil emperor. (CC) (2 hr 13 min)",movie
+33,TNT,"""Rogue One: A Star Wars Story"" (2016) Felicity Jones, Diego Luna. Former scientist Galen Erso lives on a farm with his wife and young daughter, Jyn. His peaceful existence comes crashing down when the evil Orson Krennic takes him away from his beloved family. Many years later, Galen becomes the Empire's lead engineer for the most powerful weapon in the galaxy, the Death Star. Knowing that her father holds the key to its destruction, Jyn joins forces with a spy and other resistance fighters to steal the space station's plans for the Rebel Alliance. (CC) (2 hr 14 min)",movie
+39,TNT,"""Star Wars: Return of the Jedi"" (1983) Mark Hamill, Harrison Ford. Luke Skywalker (Mark Hamill) battles horrible Jabba the Hut and cruel Darth Vader to save his comrades in the Rebel Alliance and triumph over the Galactic Empire. Han Solo (Harrison Ford) and Princess Leia (Carrie Fisher) reaffirm their love and team with Chewbacca, Lando Calrissian (Billy Dee Williams), the Ewoks and the androids C-3PO and R2-D2 to aid in the disruption of the Dark Side and the defeat of the evil emperor. (CC) (2 hr 13 min)",movie
+45,TNT,NCIS: New Orleans (CC) In Stereo,none
+47,TNT,NCIS: New Orleans (TV-PG) (CC) In Stereo,none
+1,WEATH,America's Weekend Headquarters (CC),none
+3,WEATH,America's Weekend Headquarters (CC),none
+5,WEATH,America's Weekend Headquarters (CC),none
+7,WEATH,Weekend Recharge (TV-G) (CC),none
+9,WEATH,Weekend Recharge (TV-G) (CC),none
+11,WEATH,Weekend Recharge (TV-G) (CC),none
+13,WEATH,Weekend Recharge (TV-G) (CC),none
+15,WEATH,Deadman's Curse (TV-PG) (CC),none
+17,WEATH,Fast: Home Rescue (CC),none
+19,WEATH,Search Party With Brandon Jordan (CC),none
+21,WEATH,Search Party With Brandon Jordan (CC),none
+23,WEATH,Backroad Truckers (TV-PG) (CC),none
+25,WEATH,Timber Titans (CC),none
+27,WEATH,Highway Thru Hell (TV-PG) (CC),none
+29,WEATH,Highway Thru Hell (TV-PG) (CC),none
+31,WEATH,Timber Titans (CC),none
+33,WEATH,Deadman's Curse (TV-PG) (CC),none
+35,WEATH,Highway Thru Hell (TV-PG) (CC),none
+37,WEATH,Timber Titans (CC),none
+39,WEATH,Deadman's Curse (TV-PG) (CC),none
+41,WEATH,Frozen Gold (CC),none
+43,WEATH,Frozen Gold (CC),none
+45,WEATH,So You Think You'd Survive? (TV-PG) (CC),none
+47,WEATH,So You Think You'd Survive? (TV-PG) (CC),none
+1,HLN,CNN This Morning (CC),none
+3,HLN,CNN This Morning (CC),none
+5,HLN,CNN This Morning (CC),none
+7,HLN,Deadline: Crime With Tamron Hall (CC),none
+9,HLN,Deadline: Crime With Tamron Hall (CC),none
+11,HLN,Deadline: Crime With Tamron Hall (CC),none
+13,HLN,Deadline: Crime With Tamron Hall (CC),none
+15,HLN,Deadline: Crime With Tamron Hall (CC),none
+17,HLN,Deadline: Crime With Tamron Hall (CC),none
+19,HLN,Forensic Files (TV-PG) (CC),none
+20,HLN,Forensic Files (TV-PG) (CC),none
+21,HLN,Forensic Files (TV-PG) (CC),none
+22,HLN,Forensic Files (TV-PG) (CC),none
+23,HLN,Forensic Files (TV-PG) (CC),none
+24,HLN,Forensic Files (TV-PG) (CC),none
+25,HLN,Forensic Files (TV-PG) (CC),none
+26,HLN,Forensic Files (TV-PG) (CC),none
+27,HLN,Forensic Files (TV-PG) (CC),none
+28,HLN,Forensic Files (TV-PG) (CC),none
+29,HLN,Forensic Files (TV-PG) (CC),none
+30,HLN,Forensic Files (TV-PG) (CC),none
+31,HLN,Forensic Files (TV-PG) (CC),none
+32,HLN,Forensic Files (TV-PG) (CC),none
+33,HLN,Forensic Files (TV-PG) (CC),none
+34,HLN,Forensic Files (TV-PG) (CC),none
+35,HLN,Forensic Files (TV-PG) (CC),none
+36,HLN,Forensic Files (TV-PG) (CC),none
+37,HLN,Forensic Files (TV-PG) (CC),none
+38,HLN,Forensic Files (TV-PG) (CC),none
+39,HLN,Forensic Files (TV-PG) (CC),none
+40,HLN,Forensic Files (TV-PG) (CC),none
+41,HLN,Forensic Files (TV-PG) (CC),none
+42,HLN,Forensic Files (TV-PG) (CC),none
+43,HLN,Forensic Files (TV-PG) (CC),none
+44,HLN,Forensic Files (TV-PG) (CC),none
+45,HLN,Forensic Files (TV-PG) (CC),none
+46,HLN,Forensic Files (TV-PG) (CC),none
+47,HLN,Forensic Files (TV-PG) (CC),none
+48,HLN,Forensic Files (TV-PG) (CC),none
+1,CNBC,Home Title Theft is Real! Home Title Lock Protects Your Title 24/7 (CC),none
+2,CNBC,"Improve your brain, strengthen memory, sharpen mental focus naturally (CC)",none
+3,CNBC,Cindy Crawford and Ellen Pompeo share secrets (CC),none
+4,CNBC,Who Stole My Life? (CC),none
+5,CNBC,2024 World Athletics Indoor Championships (CC),none|sportsProg
+11,CNBC,FIS Alpine Ski World Cup (CC),none|sportsProg
+13,CNBC,Rare Gold Coins (CC),none
+14,CNBC,Rare Gold Coins (CC),none
+15,CNBC,World Surf League (CC),none|sportsProg
+17,CNBC,2024 World Athletics Indoor Championships (CC),none|sportsProg
+23,CNBC,Big Shot: The Ozempic Revolution (CC),none
+25,CNBC,Shark Tank (TV-PG) (CC) In Stereo,none
+27,CNBC,Shark Tank (TV-PG) (CC) In Stereo,none
+29,CNBC,Shark Tank (TV-PG) (CC) In Stereo,none
+31,CNBC,Shark Tank (TV-PG) (CC) In Stereo,none
+33,CNBC,Shark Tank (TV-PG) (CC) In Stereo,none
+35,CNBC,Shark Tank (TV-PG) (CC) In Stereo,none
+37,CNBC,Big Shot: The Ozempic Revolution (CC),none
+39,CNBC,AMA Supercross (CC),none|sportsProg
+45,CNBC,Street Signs (CC),none
+47,CNBC,Worldwide Exchange (CC),none
+1,TBN,Jordan Rubin: SuperFruits / SuperVeggies (TV-G) (CC),none
+2,TBN,From His Heart With Jeff Schreve (CC),none
+3,TBN,Live With Passion! (TV-G) (CC),none
+4,TBN,Dr. Tony Evans (TV-G) (CC),none
+5,TBN,Steven Furtick (TV-G) (CC),none
+6,TBN,Touching Lives With James Merritt (TV-G) (CC),none
+7,TBN,Kingdom Connection Jentezen Franklin (TV-G) (CC),none
+8,TBN,Turning Point With Dr. David Jeremiah (TV-G) (CC) In Stereo,none
+9,TBN,Robert Jeffress (TV-G) (CC) In Stereo,none
+10,TBN,Winning Walk (TV-G) (CC),none
+11,TBN,Hagee Ministries (TV-G) (CC),none
+12,TBN,Rick Warren (TV-G) (CC),none
+13,TBN,Allen Jackson Ministries (TV-G) (CC),none
+14,TBN,Creflo Dollar (TV-G) (CC),none
+15,TBN,PowerPoint With Jack Graham (TV-G) (CC),none
+16,TBN,It is Written with John Bradshaw (TV-G) (CC) In Stereo,none
+17,TBN,Hour Of Power with Bobby Schuller (TV-G) (CC),none
+19,TBN,Frankie Mazzapica (TV-G) (CC),none
+20,TBN,Life Today With James Robison (TV-G) (CC) In Stereo,none
+21,TBN,The Eric Metaxas Radio Show (TV-G) (CC),none
+22,TBN,The Easter Experience (TV-PG) (CC),none
+23,TBN,Michael Youssef (TV-G) (CC),none
+24,TBN,Kerry Shook Ministries (TV-G) (CC),none
+25,TBN,Allen Jackson Ministries (TV-G) (CC),none
+26,TBN,Joyce Meyer Enjoying Everyday Life (TV-G) (CC) In Stereo,none
+27,TBN,Marcus Mecum (TV-G) (CC),none
+28,TBN,Pastor Robert Morris Ministries (TV-G) (CC),none
+29,TBN,Joel Osteen (TV-PG) (CC),none
+30,TBN,Turning Point With Dr. David Jeremiah (TV-G) (CC) In Stereo,none
+31,TBN,Huckabee (TV-PG) (CC),none
+33,TBN,Praise (TV-G) (CC),none
+35,TBN,Praise (TV-G) (CC),none
+37,TBN,Praise (TV-G) (CC),none
+39,TBN,Praise (TV-G) (CC),none
+40,TBN,Jordan Rubin: Advanced Lean & Muscle Capsules (TV-G) (CC),none
+42,TBN,Behind the Scenes (TV-G) (CC),none
+43,TBN,D. James Kennedy Ministries Presents: Truths That Transform (TV-G) (CC) In Stereo,none
+44,TBN,Praise (TV-G) (CC),none
+45,TBN,Vinia (CC),none
+46,TBN,Joseph Prince: Healing Scriptures (TV-G) (CC),none
+47,TBN,Allen Jackson Ministries (TV-G) (CC),none
+48,TBN,Steven Furtick (TV-G) (CC),none
+3,CSPAN,Washington Journal (CC),none
+9,CSPAN,( 7:02) Washington Journal (CC),none
+15,CSPAN,(10:03) Washington This Week (CC),none
+29,CSPAN,Q & A (CC),none
+31,CSPAN,Prime Minister's Questions (CC),none
+32,CSPAN,( 6:40) Public Affairs Events (CC) In Stereo,none
+35,CSPAN,Q & A (CC),none
+37,CSPAN,Prime Minister's Questions (CC),none
+38,CSPAN,( 9:40) Public Affairs Events (CC) In Stereo,none
+1,EDAC00,Educational Access,none
+9,EDAC00,Educational Access,none
+17,EDAC00,Educational Access,none
+25,EDAC00,Educational Access,none
 33,EDAC00,Educational Access,none
 41,EDAC00,Educational Access,none
-27,WBPH,Gaither Homecoming \{99} \{7C},none
-29,WBPH,Stand in the Gap,none
-30,WBPH,Face the Issues,none
-31,WBPH,Your Health With Dr. Richard & Cindy Becker \{99},none
-33,WBPH,Today's News & Biblical Views,none
-34,WBPH,CBN Newswatch,none
+1,WBPH,Song & Scripture,none
+3,WBPH,David Jeremiah (TV-G) (CC) In Stereo,none
+5,WBPH,Song & Scripture,none
+6,WBPH,Dr. Robert Jeffress: Pathway to Victory (TV-G) (CC) In Stereo,none
+7,WBPH,In Touch With Dr. Charles Stanley (TV-G) (CC) In Stereo,none
+9,WBPH,Michael Youssef (TV-G),none
+10,WBPH,PowerPoint With Jack Graham (TV-G),none
+11,WBPH,Love Worth Finding (TV-G) (CC),none
+12,WBPH,Grace to You,none
+13,WBPH,Thomas Road With Jonathan Falwell,none
+15,WBPH,Song & Scripture,none
+17,WBPH,Origins,none
+18,WBPH,Digging for Truth,none
+19,WBPH,Stand in the Gap,none
+20,WBPH,Song & Scripture,none
+21,WBPH,Song & Scripture,none
+23,WBPH,One Day Closer (CC),none
+24,WBPH,Renewing Your Mind,none
+25,WBPH,Grace to You,none
+26,WBPH,Today's News & Biblical Views,none
+27,WBPH,The King Is Coming (TV-G),none
+28,WBPH,Climbing Higher (CC),none
+29,WBPH,Rejoice in the Lord,none
+31,WBPH,Song & Scripture,none
+33,WBPH,Song & Scripture,none
 35,WBPH,Song & Scripture,none
 37,WBPH,Song & Scripture,none
 39,WBPH,Song & Scripture,none
@@ -529,233 +1092,524 @@ timeslot,sourceIdentifier,programName,flags
 45,WBPH,Song & Scripture,none
 47,WBPH,Song & Scripture,none
 48,WBPH,WatchWord,none
+1,EDAC02,Educational Access,none
+9,EDAC02,Educational Access,none
+17,EDAC02,Educational Access,none
+25,EDAC02,Educational Access,none
 33,EDAC02,Educational Access,none
 41,EDAC02,Educational Access,none
-27,CCPTV3,Tapestry of Life,none
-29,CCPTV3,Tapestry of Life,none
-31,CCPTV3,Strange College,none
-32,CCPTV3,Strange College,none
-33,CCPTV3,Drop the Mic,none
-35,CCPTV3,Drop the Mic,none
-37,CCPTV3,Car Corner,none
-39,CCPTV3,Focal Point,none
-39,CCPTV3,( 1:21) CCPTV53,none
-41,CCPTV3,Tapestry of Life,none
-45,CCPTV3,Philadelphia Cultural For,none
-48,CCPTV3,Fox Rothschild Center for,none
-33,DUTV54,Educational Television From Drexel University,none
-41,DUTV54,Educational Television From Drexel University,none
+1,LSUNIT,LaSalle University TV,none
+9,LSUNIT,LaSalle University TV,none
+17,LSUNIT,LaSalle University TV,none
+25,LSUNIT,LaSalle University TV,none
 33,LSUNIT,LaSalle University TV,none
 41,LSUNIT,LaSalle University TV,none
-27,APL,Walking The Nile \{91} \{7C},none
-29,APL,Walking with Elephants \{9B} \{91} \{7C},none
-31,APL,Walking with Elephants \{9B} \{91} \{7C},none
-33,APL,Walking with Elephants \{9B} \{91} \{7C},none
-35,APL,Lone Star Law \{91} \{7C},none
-37,APL,Walking with Elephants \{9B} \{91} \{7C},none
-39,APL,Walking with Elephants \{9B} \{91} \{7C},none
-41,APL,Walking with Elephants \{9B} \{91} \{7C},none
-43,APL,Lone Star Law \{91} \{7C},none
-45,APL,Lone Star Law \{91} \{7C},none
-47,APL,Lone Star Law \{91} \{7C},none
-27,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
-29,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
-31,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
-33,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
-35,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
-37,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
-39,OXYGEN,Unsolved Mysteries \{9B} \{7C},none
-41,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-43,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-45,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-47,OXYGEN,Dateline: Secrets Uncovered \{9B} \{7C},none
-27,WFMZ,Judge Judy \{9B} \{91} \{7C},none
-28,WFMZ,Judge Judy \{9B} \{91} \{7C},none
-29,WFMZ,The Doctors \{9B} \{91} \{7C},none
-31,WFMZ,69 News Election Central,none
-35,WFMZ,69 News: Edicion en Espanol \{7C},none
-36,WFMZ,Hempvana Gold Pain Relief Cream,none
-37,WFMZ,Remove THE VIRUS from Your Home!,none
-38,WFMZ,"Smile Healthy Philadelphia, With ClearChoice Dental Implant Centers",none
-39,WFMZ,The First 48 \{9B} \{7C},none
-41,WFMZ,The First 48 \{7C},none
-43,WFMZ,Forensic Files \{9B} \{91} \{7C},none
-44,WFMZ,Justice for All With Judge Cristina Pérez \{9B} \{91} \{7C},none
-45,WFMZ,Pawn Stars \{9B} \{7C},none
-46,WFMZ,Pawn Stars \{9B} \{7C},none
-47,WFMZ,69 News at Sunrise - 5:00am \{7C},none
-48,WFMZ,69 News at Sunrise - 5:30am \{7C},none
-31,SYFY,"""The Goonies"" \{85} (1985) Sean Astin, Josh Brolin. When two brothers find out they might lose their house they are desperate to find a way to keep their home. They find a treasure map and bring some friends along to find it. They are all out looking for the ""X"" and trying to get away from a group of bad guys who also want the treasure. \{7C} (1 hr 51 min)",movie
-36,SYFY,(11:33) Futurama \{9B} \{91} \{7C},none
-37,SYFY,(12:04) Futurama \{9B} \{91} \{7C},none
-38,SYFY,(12:35) Futurama \{9B} \{91} \{7C},none
-39,SYFY,( 1:05) Futurama \{9B} \{91} \{7C},none
-40,SYFY,( 1:36) Futurama \{9B} \{91} \{7C},none
-41,SYFY,"( 2:07) ""Space Jam"" \{85} (1996) Michael Jordan, Wayne Knight. Swackhammer (Danny DeVito), an evil alien theme park owner, needs a new attraction at Moron Mountain. When his gang, the Nerdlucks, heads to Earth to kidnap Bugs Bunny (Billy West) and the Looney Tunes, Bugs challenges them to a basketball game to determine their fate. The aliens agree, but they steal the powers of NBA basketball players, including Larry Bird (Larry Bird) and Charles Barkley (Charles Barkley) -- so Bugs gets some help from superstar Michael Jordan (Michael Jordan). \{7C} (1 hr 27 min)",movie
-45,SYFY,"""A Nightmare on Elm Street 4: The Dream Master"" \{84} (1988) Robert Englund, Lisa Wilcox. Grotesque Freddy Krueger (Robert Englund) gives some more suburban teenagers something to dream about. \{7C} (1 hr 33 min)",movie
-27,WPPX,Criminal Minds \{91} \{7C},none
-29,WPPX,Criminal Minds \{91} \{7C},none
-31,WPPX,Criminal Minds \{91} \{7C},none
-33,WPPX,Criminal Minds \{91} \{7C},none
-35,WPPX,Criminal Minds \{91} \{7C},none
-37,WPPX,Criminal Minds \{91} \{7C},none
-39,WPPX,Law & Order \{91} \{7C},none
-41,WPPX,Law & Order \{91} \{7C},none
-43,WPPX,"Achieve flawless, airbrushed, porcelain perfection with Luminess Air! \{91} \{7C}",none
-44,WPPX,Paid Programming \{99} \{91} \{7C},none
-45,WPPX,Dr. Ho's Total Body Relief \{91} \{7C},none
-46,WPPX,U-Box by U-Haul Containers for Moving & Storage \{91} \{7C},none
-47,WPPX,Oxygen Therapy Innovation \{91} \{7C},none
-48,WPPX,Latest cyberthreat is stealing your home equity. Protect Your Home! \{91} \{7C},none
+1,APL,Scaled (TV-PG) (CC) In Stereo,none
+3,APL,Louisiana Law (CC) In Stereo,none
+5,APL,Louisiana Law (CC) In Stereo,none
+7,APL,Louisiana Law (CC) In Stereo,none
+9,APL,Louisiana Law (CC) In Stereo,none
+11,APL,Louisiana Law (CC) In Stereo,none
+13,APL,Louisiana Law (CC) In Stereo,none
+15,APL,Louisiana Law (CC) In Stereo,none
+17,APL,Louisiana Law (CC) In Stereo,none
+19,APL,Louisiana Law (CC) In Stereo,none
+21,APL,Lone Star Law (CC) In Stereo,none
+23,APL,Lone Star Law (CC) In Stereo,none
+25,APL,Lone Star Law (CC) In Stereo,none
+27,APL,Lone Star Law (CC) In Stereo,none
+29,APL,Wardens of the North (CC) In Stereo,none
+31,APL,Wardens of the North (CC) In Stereo,none
+33,APL,Louisiana Lockdown (CC) In Stereo,none
+35,APL,Louisiana Lockdown (CC) In Stereo,none
+37,APL,Wardens of the North (CC) In Stereo,none
+39,APL,Wardens of the North (CC) In Stereo,none
+41,APL,Louisiana Lockdown (CC) In Stereo,none
+43,APL,Louisiana Lockdown (CC) In Stereo,none
+45,APL,Lone Star Law (CC) In Stereo,none
+47,APL,Lone Star Law (CC) In Stereo,none
+1,OXYGEN,Dateline (TV-PG) (CC) In Stereo,none
+3,OXYGEN,Dateline (TV-PG) (CC) In Stereo,none
+5,OXYGEN,Dateline: Secrets Uncovered (TV-PG) (CC),none
+7,OXYGEN,Dateline: Secrets Uncovered (TV-PG) (CC),none
+9,OXYGEN,Sin City Murders (TV-PG) (CC),none
+11,OXYGEN,Killer Couples (TV-PG) (CC),none
+13,OXYGEN,Killer Couples (CC),none
+15,OXYGEN,Killer Couples (CC),none
+17,OXYGEN,Killer Couples (CC),none
+19,OXYGEN,Killer Couples (CC),none
+21,OXYGEN,Killer Couples (CC),none
+23,OXYGEN,Killer Couples (CC),none
+25,OXYGEN,Snapped: Killer Couples (CC),none
+27,OXYGEN,Sin City Murders (TV-PG) (CC),none
+29,OXYGEN,Kill or Be Killed (TV-PG) (CC),none
+31,OXYGEN,Snapped (TV-PG) (CC),none
+33,OXYGEN,Snapped (TV-PG) (CC),none
+35,OXYGEN,Sin City Murders (TV-PG) (CC),none
+37,OXYGEN,Sin City Murders (TV-PG) (CC),none
+39,OXYGEN,Kill or Be Killed (TV-PG) (CC),none
+41,OXYGEN,Cold Justice (CC),none
+43,OXYGEN,Dateline (CC) In Stereo,none
+45,OXYGEN,Dateline (CC) In Stereo,none
+47,OXYGEN,Dateline (TV-PG) (CC) In Stereo,none
+1,WFMZ,Holy Trinity Church of God,none
+2,WFMZ,Superbook (TV-Y),none
+3,WFMZ,Love Worth Finding (TV-G) (CC),none
+4,WFMZ,Michael Youssef (TV-G),none
+5,WFMZ,In Touch With Dr. Charles Stanley (TV-G) (CC) In Stereo,none
+7,WFMZ,David Jeremiah (TV-G) (CC) In Stereo,none
+8,WFMZ,Jewish Voice with Jonathan Bernis (TV-G) (CC),none
+9,WFMZ,Discovering the Jewish Jesus (TV-G),none
+10,WFMZ,Lehigh Valley Baptist,none
+11,WFMZ,Hour Of Power with Bobby Schuller (TV-G) (CC),none
+13,WFMZ,Elevation with Steven Furtick,none
+14,WFMZ,The Christian and the Culture,none
+15,WFMZ,Going To The Bathroom Too Much?,none
+16,WFMZ,Everyday bra for all-day comfort!,none
+17,WFMZ,Relieve your foot pain with WalkFit!,none
+18,WFMZ,Paid Programming (TV-G) (CC),none
+19,WFMZ,Family Meals Faster!,none
+20,WFMZ,Going To The Bathroom Too Much?,none
+21,WFMZ,Paid Programming (TV-G) (CC),none
+22,WFMZ,Paid Programming (TV-G) (CC),none
+23,WFMZ,Heartland (TV-PG) (CC) In Stereo,none
+25,WFMZ,69 News Weekend Edition (CC),none
+26,WFMZ,Going To The Bathroom Too Much?,none
+27,WFMZ,The Joy of Music With Diane Bish (TV-G) (CC) In Stereo,none
+28,WFMZ,Coral Ridge Ministries Presents: Truths That Transform (CC) In Stereo,none
+29,WFMZ,In Touch With Dr. Charles Stanley (TV-G) (CC) In Stereo,none
+31,WFMZ,David Jeremiah (TV-G) (CC) In Stereo,none
+32,WFMZ,Robert Jeffress (TV-G) (CC) In Stereo,none
+33,WFMZ,69 News Weekend Edition (CC),none
+34,WFMZ,In Touch With Dr. Charles Stanley (TV-G) (CC) In Stereo,none
+35,WFMZ,"OXYPURE ZERO, AIR PURIFIER WITH ZERO REPLACEMENT FILTERS",none
+36,WFMZ,Paid Programming (TV-G) (CC),none
+37,WFMZ,Under Eye Bags? SOLUTION!,none
+38,WFMZ,Paid Programming (TV-G) (CC),none
+39,WFMZ,69 News Weekend Edition (CC),none
+40,WFMZ,Inside Edition Weekend (TV-PG) (CC) In Stereo,none
+41,WFMZ,Entertainment Tonight (CC) In Stereo,none
+43,WFMZ,Forensic Files (TV-PG) (CC) In Stereo,none
+44,WFMZ,Forensic Files (TV-PG) (CC) In Stereo,none
+45,WFMZ,Pawn Stars (TV-PG) (CC),none
+46,WFMZ,Court Cam,none
+47,WFMZ,69 News at Sunrise - 5:00am (CC),none
+48,WFMZ,69 News at Sunrise - 5:30am (CC),none
+1,SYFY,Shark CarpetXpertTM with StainStrikerTM 2-in-1 deep carpet cleaner with built-in spot & stain remover,none
+2,SYFY,Gold 1899 Rare Coins,none
+3,SYFY,Shark's FIVE Star Cleaning Solutions,none
+4,SYFY,Who Stole My Life?,none
+5,SYFY,"""Escape the Field"" (2022) Jordan Claire Robbins, Theo Rossi. Stripped of their possessions, six strangers wake up in a remote, endless cornfield with six items -- a gun with a single bullet, matches, a lantern, a knife, a compass and a flask of water. As mysterious sirens blare in the distance and traps appear at every turn, they soon realize they're in a mysterious cat-and-mouse game with an unseen evil, and survival depends upon solving a diabolical and deadly puzzle. (CC) (1 hr 28 min)",movie
+9,SYFY,"""Nerve"" (2016) Emma Roberts, Dave Franco. Industrious high school senior Vee Delmonico (Emma Roberts) is tired of living life on the sidelines. Pressured by her friends, Vee decides to join Nerve, a popular online game that challenges players to accept a series of dares. It's not long before the adrenaline-fueled competition requires her to perform increasingly dangerous stunts. When Nerve begins to take a sinister turn, Vee finds herself in a high-stakes finale that will ultimately determine her entire future. (CC) (1 hr 36 min)",movie
+13,SYFY,"( 9:05) ""The Golden Compass"" (2007) Nicole Kidman, Dakota Blue Richards. Lyra Belacqua (Dakota Blue Richards) lives in a parallel world in which human souls take the form of lifelong animal companions called daemons. Dark forces are at work in the girl's world, and many children have been kidnapped by beings known as Gobblers. Lyra vows to save her best friend, Roger, after he disappears too. She sets out with her daemon, a tribe of seafarers, a witch, an ice bear and a Texas airman on an epic quest to rescue Roger and save her world. (CC) (1 hr 58 min)",movie
+18,SYFY,"(11:35) ""Alien Resurrection"" (1997) Sigourney Weaver, Winona Ryder. Two hundred years have passed since Ellen Ripley (Sigourney Weaver) died on Fiorina 161. Aboard the medical research vessel USM Auriga, a team of scientists clone Ripley from her extracted DNA and removes the alien Queen embryo which was growing inside her at the time of her death. (CC) (1 hr 49 min)",movie
+23,SYFY,"( 2:04) ""Prometheus"" (2012) Noomi Rapace, Michael Fassbender. The discovery of a clue to mankind's origins on Earth leads a team of explorers to the darkest parts of the universe. Two brilliant young scientists lead the expedition. Shaw (Noomi Rapace) hopes that they will meet a race of benevolent, godlike beings who will in some way verify her religious beliefs, while Holloway (Logan Marshall-Green) is out to debunk any spiritual notions. However, neither the scientists nor their shipmates are prepared for the unimaginable terrors that await them. (CC) (2 hr 3 min)",movie
+28,SYFY,"( 4:34) ""Battleship"" (2012) Taylor Kitsch, Alexander Skarsgård. Lt. Alex Hopper (Taylor Kitsch) is a weapons officer aboard the destroyer USS John Paul Jones, while his older brother, Stone (Alexander Skarsgård), is the commanding officer of the USS Sampson. Unknown to Alex, Stone or the rest of the U.S. Navy, alien invaders have arrived on Earth with plans to steal Earth's resources. When a confrontation with the invaders knocks out the Navy's radar capability, American and Japanese forces must work together to find a way to save the planet. (CC) (2 hr 11 min)",movie
+33,SYFY,"( 7:19) ""Moonfall"" (2022) Halle Berry, Patrick Wilson. The world stands on the brink of annihilation when a mysterious force knocks the moon from its orbit and sends it hurtling toward a collision course with Earth. With only weeks before impact, NASA executive Jocinda ""Jo"" Fowler teams up with a man from her past and a conspiracy theorist for an impossible mission into space to save humanity. (CC) (2 hr 10 min)",movie
+39,SYFY,"(10:04) ""Gods of Egypt"" (2016) Nikolaj Coster-Waldau, Brenton Thwaites. The survival of mankind hangs in the balance when Set (Gerard Butler), the merciless god of darkness, usurps Egypt's throne and plunges the prosperous empire into chaos and conflict. Hoping to save the world and rescue his true love, a defiant mortal named Bek (Brenton Thwaites) forms an unlikely alliance with the powerful god Horus (Nikolaj Coster-Waldau). Their battle against Set and his henchmen takes them into the afterlife and across the heavens for an epic confrontation. (CC) (2 hr 1 min)",movie
+44,SYFY,"(12:34) ""The Golden Compass"" (2007) Nicole Kidman, Dakota Blue Richards. Lyra Belacqua (Dakota Blue Richards) lives in a parallel world in which human souls take the form of lifelong animal companions called daemons. Dark forces are at work in the girl's world, and many children have been kidnapped by beings known as Gobblers. Lyra vows to save her best friend, Roger, after he disappears too. She sets out with her daemon, a tribe of seafarers, a witch, an ice bear and a Texas airman on an epic quest to rescue Roger and save her world. (CC) (1 hr 58 min)",movie
+1,WPPX,Bones (CC) In Stereo,none
+3,WPPX,Bones (CC) In Stereo,none
+5,WPPX,Bones (CC) In Stereo,none
+7,WPPX,Bones (CC) In Stereo,none
+9,WPPX,NCIS (TV-PG) (CC) In Stereo,none
+11,WPPX,NCIS (CC) In Stereo,none
+13,WPPX,NCIS (TV-PG) (CC) In Stereo,none
+15,WPPX,NCIS (CC) In Stereo,none
+17,WPPX,NCIS (CC) In Stereo,none
+19,WPPX,NCIS (CC) In Stereo,none
+21,WPPX,NCIS (CC) In Stereo,none
+23,WPPX,NCIS (CC) In Stereo,none
+25,WPPX,NCIS (CC) In Stereo,none
+27,WPPX,NCIS (TV-PG) (CC) In Stereo,none
+29,WPPX,NCIS (TV-PG) (CC) In Stereo,none
+31,WPPX,NCIS (CC) In Stereo,none
+33,WPPX,NCIS (CC) In Stereo,none
+35,WPPX,NCIS (CC) In Stereo,none
+37,WPPX,NCIS (CC) In Stereo,none
+39,WPPX,NCIS (TV-PG) (CC) In Stereo,none
+41,WPPX,Shark Matrix™ Plus 2-in-1 Robot Vacuum & Mop (CC) In Stereo,none
+42,WPPX,Total Gym with Chuck & Dakota Norris (CC) In Stereo,none
+43,WPPX,Shark CarpetXpertTM with StainStrikerTM 2-in-1 deep carpet cleaner with built-in spot & stain remover (CC) In Stereo,none
+44,WPPX,Help Israel & Ukraine (CC) In Stereo,none
+45,WPPX,Powerful Cleaning with Shark Stratos (CC) In Stereo,none
+46,WPPX,Through the Bible With Les Feldick (TV-G) (CC) In Stereo,none
+47,WPPX,Shark Matrix™ Plus 2-in-1 Robot Vacuum & Mop (CC) In Stereo,none
+48,WPPX,"OXYPURE ZERO, AIR PURIFIER WITH ZERO REPLACEMENT FILTERS (CC) In Stereo",none
+1,GOAC03,Government Access,none
+9,GOAC03,Government Access,none
+17,GOAC03,Government Access,none
+25,GOAC03,Government Access,none
 33,GOAC03,Government Access,none
 41,GOAC03,Government Access,none
+1,GOAC04,Government Access,none
+9,GOAC04,Government Access,none
+17,GOAC04,Government Access,none
+25,GOAC04,Government Access,none
 33,GOAC04,Government Access,none
 41,GOAC04,Government Access,none
-33,PUAC06,Public Access,none
-41,PUAC06,Public Access,none
-27,MTV,Deliciousness \{91} \{7C},none
-28,MTV,Deliciousness \{91} \{7C},none
-29,MTV,Teen Mom 2 \{91} \{7C},none
-31,MTV,Catfish: The TV Show \{91} \{7C},none
-33,MTV,Deliciousness \{91} \{7C},none
-34,MTV,Deliciousness \{91} \{7C},none
-35,MTV,Ridiculousness \{91} \{7C},none
-36,MTV,Ridiculousness \{91} \{7C},none
-37,MTV,Ridiculousness \{91} \{7C},none
-38,MTV,Ridiculousness \{91} \{7C},none
-39,MTV,Ridiculousness \{91} \{7C},none
-40,MTV,Ridiculousness \{91} \{7C},none
-41,MTV,Ridiculousness \{91} \{7C},none
-42,MTV,Ridiculousness \{91} \{7C},none
-43,MTV,Ridiculousness \{91} \{7C},none
-44,MTV,Ridiculousness \{91} \{7C},none
-45,MTV,Ridiculousness \{91} \{7C},none
-46,MTV,Ridiculousness \{91} \{7C},none
-47,MTV,Ridiculousness \{91} \{7C},none
-48,MTV,Ridiculousness \{91} \{7C},none
-29,TCM,"""The Battle of the Century"" (1927) Stan Laurel, Oliver Hardy. A manager tries to throw a fight to make money. (19 min)",movie
-30,TCM,"""Lilies of the Field"" (1963) Sidney Poitier, Lilia Skala. When traveling African-American handyman Homer Smith (Sidney Poitier) stops by a farm in rural Arizona, he is welcomed by a group of Roman Catholic nuns who have emigrated from Germany. Realizing that the farm needs a lot of work, Homer takes on a number of repair projects for the women, who are led by the headstrong Mother Maria (Lilia Skala). Impressed by Homer's kindness and strong work ethic, the nuns come to believe that he has been sent by God to help build them a chapel. \{7C} (1 hr 34 min)",movie
-33,TCM,"(10:15) ""Illusions"" (1983) Karen Valentine, Brian Murray. An American designer (Karen Valentine) of Western wear thinks her husband's (Ben Masters) fatal plane crash is hiding something. (1 hr 40 min)",movie
-35,TCM,"""The Joy Luck Club"" \{84} (1993) Rosalind Chao, Tamlyn Tomita. In San Francisco, a group of aging Chinese women (Kieu Chinh, Tsai Chin, France Nuyen, Lisa Lu) meet regularly to trade familial stories while playing Mahjong. In a series of sixteen vignettes that spans generations and continents, this adaptation of Amy Tan's bestselling novel explores cultural conflict and the often-turbulent relationships between four first-generation Chinese-American women (Ming-Na Wen, Tamlyn Tomita, Lauren Tom, Rosalind Chao) and their mothers. \{7C} (2 hr 18 min)",movie
-40,TCM,"""Cabin in the Sky"" (1943) Ethel Waters, Eddie ""Rochester"" Anderson. When compulsive gambler Little Joe Jackson (Eddie ""Rochester"" Anderson) dies in a drunken fight, he awakens in purgatory, where he learns that he will be sent back to Earth for six months to prove that he deserves to be in heaven. He awakens, remembering nothing and struggles to do right by his devout wife, Petunia (Ethel Waters), while an angel known as the General (Kenneth Spencer) and the devil's son, Lucifer Jr. (Rex Ingram), fight for his soul. \{7C} (1 hr 38 min)",movie
-43,TCM,"( 3:15) ""The Man With the Golden Arm"" (1955) Frank Sinatra, Eleanor Parker. When illegal card dealer and recovering heroin addict Frankie Machine (Frank Sinatra) gets out of prison, he decides to straighten up. Armed with nothing but an old drum set, Frankie tries to get honest work as a drummer. But when his former employer, small-time con man Schwiefka (Robert Strauss), and Frankie's old drug dealer, Louis (Darren McGavin), re-enter his life, Frankie finds it hard to stay clean and eventually finds himself succumbing to his old habits. \{7C} (1 hr 59 min)",movie
-48,TCM,MGM Parade Show \{99},none
-27,HISTOR,The Curse of Oak Island \{9B} \{91} \{7C},none
-29,HISTOR,The Curse of Oak Island: Digging Deeper \{9B} \{7C},none
-31,HISTOR,The Curse of Oak Island \{9B} \{7C},none
-33,HISTOR,(10:03) Beyond Oak Island \{9B} \{91} \{7C},none
-35,HISTOR,(11:05) The Curse of Oak Island \{9B} \{91} \{7C},none
-37,HISTOR,(12:03) The Curse of Oak Island: Digging Deeper \{9B} \{91} \{7C},none
-39,HISTOR,( 1:03) The Curse of Oak Island \{9B} \{91} \{7C},none
-41,HISTOR,( 2:06) Beyond Oak Island \{9B} \{91} \{7C},none
-43,HISTOR,( 3:06) The Curse of Oak Island \{9B} \{7C},none
-45,HISTOR,Earn $$$ from Home! \{7C},none
-46,HISTOR,Paid Programming \{99} \{91} \{7C},none
-47,HISTOR,"Improve Your Immunity, Energy & Sleep! \{91} \{7C}",none
-48,HISTOR,Get the World's Best Solar for $0 Down + 6 Months on SunPower \{91} \{7C},none
-27,MSNBC,The ReidOut \{7C},none
-29,MSNBC,All In With Chris Hayes \{7C},none
-31,MSNBC,The Rachel Maddow Show \{7C},none
-33,MSNBC,The Last Word With Lawrence O'Donnell \{7C},none
-35,MSNBC,The 11th Hour With Brian Williams \{7C},none
-37,MSNBC,The Rachel Maddow Show \{7C},none
-39,MSNBC,The Last Word With Lawrence O'Donnell \{7C},none
-41,MSNBC,The 11th Hour With Brian Williams \{7C},none
-43,MSNBC,All In With Chris Hayes \{7C},none
-45,MSNBC,The Rachel Maddow Show \{7C},none
-47,MSNBC,Way Too Early With Kasie Hunt \{7C},none
-27,FNC,The Story With Martha MacCallum \{7C},none
-29,FNC,Tucker Carlson Tonight \{7C},none
-31,FNC,Hannity \{7C},none
-33,FNC,The Ingraham Angle \{7C},none
-35,FNC,Fox News at Night With Shannon Bream \{7C},none
-37,FNC,Tucker Carlson Tonight \{7C},none
-39,FNC,Hannity \{7C},none
-41,FNC,The Ingraham Angle \{7C},none
-43,FNC,Fox News at Night With Shannon Bream \{7C},none
-45,FNC,FOX & Friends First \{7C},none
-47,FNC,FOX & Friends First \{7C},none
-27,GOLF,2020 U.S. Women's Open Golf Championship \{99} \{7C},none|sportsProg
-37,GOLF,Golf Central \{99} \{7C},none|sportsProg
-38,GOLF,Golf Central \{99} \{7C},none|sportsProg
-39,GOLF,GOLF Films \{9B} \{7C},none|sportsProg
-41,GOLF,GOLF Films \{99} \{7C},none|sportsProg
-43,GOLF,Paid Programming \{99} \{7C},none
-44,GOLF,Dr. Ho's Total Body Relief \{7C},none
-45,GOLF,Best Pan Ever! \{7C},none
-46,GOLF,MyPillow Topper \{7C},none
-47,GOLF,Mulligan - Tough Love and Second Chances \{99} \{7C},none
-27,BRAVO,Chrisley Knows Best \{7C},none
-28,BRAVO,Chrisley Knows Best \{7C},none
-29,BRAVO,Chrisley Knows Best \{7C},none
-30,BRAVO,Chrisley Knows Best \{7C},none
-31,BRAVO,Chrisley Knows Best \{7C},none
-32,BRAVO,Don't Be Tardy ... \{7C},none
-33,BRAVO,Don't Be Tardy ... \{7C},none
-35,BRAVO,Watch What Happens Live With Andy Cohen \{7C},none
-36,BRAVO,The Real Housewives of Atlanta \{7C},none
-38,BRAVO,(12:31) The Real Housewives of Potomac \{7C},none
-40,BRAVO,( 1:32) Don't Be Tardy ... \{7C},none
-42,BRAVO,( 2:32) The Real Housewives of Atlanta \{7C},none
-44,BRAVO,Watch What Happens Live With Andy Cohen \{7C},none
-45,BRAVO,The Kelly Clarkson Show \{99} \{91} \{7C},none
-47,BRAVO,"Visibly Reduce Crow's Feet, Wrinkles, and Under-Eye Bags in Minutes! \{7C}",none
-48,BRAVO,PiYo Workout! \{7C},none
-27,TRUTV,Impractical Jokers \{7C},none
-28,TRUTV,Impractical Jokers \{7C},none
-29,TRUTV,Impractical Jokers \{7C},none
-30,TRUTV,Impractical Jokers \{7C},none
-31,TRUTV,Impractical Jokers \{7C},none
-32,TRUTV,Impractical Jokers \{7C},none
-33,TRUTV,"""Dumb & Dumber"" \{87} (1994) Jim Carrey, Jeff Daniels. Imbecilic best friends Lloyd Christmas (Jim Carrey) and Harry Dunne (Jeff Daniels) stumble across a suitcase full of money left behind in Harry's car by Mary Swanson (Lauren Holly), who was on her way to the airport. The pair decide to go to Aspen, Colo., to return the money, unaware that it is connected to a kidnapping. As Harry and Lloyd -- who has fallen in love with Mary -- are pursued across the country by hired killers and police, they find both their friendship and their brains tested. \{7C} (1 hr 46 min)",movie
-37,TRUTV,"(12:15) ""Dumb & Dumber"" \{87} (1994) Jim Carrey, Jeff Daniels. Imbecilic best friends Lloyd Christmas (Jim Carrey) and Harry Dunne (Jeff Daniels) stumble across a suitcase full of money left behind in Harry's car by Mary Swanson (Lauren Holly), who was on her way to the airport. The pair decide to go to Aspen, Colo., to return the money, unaware that it is connected to a kidnapping. As Harry and Lloyd -- who has fallen in love with Mary -- are pursued across the country by hired killers and police, they find both their friendship and their brains tested. \{7C} (1 hr 46 min)",movie
-42,TRUTV,The Carbonaro Effect \{7C},none
-43,TRUTV,The Carbonaro Effect \{7C},none
-44,TRUTV,The Carbonaro Effect \{7C},none
-45,TRUTV,U-Box by U-Haul Containers for Moving & Storage \{7C},none
-46,TRUTV,Emergency Power Kit! \{7C},none
-47,TRUTV,New BISSELL® CrossWave® is Now Cordless \{7C},none
-48,TRUTV,"Move Easier with MovingHelp, Powered by U-Haul \{7C}",none
-29,QVC2,Very Merry Deals \{99} \{7C},none
-31,QVC2,Very Merry Deals \{99} \{7C},none
-33,QVC2,Gourmet Holiday \{99} \{7C},none
-37,QVC2,Very Merry Deals \{99} \{7C},none
-39,QVC2,Cheers! to Holiday Shopping With Leah and Shawn \{99} \{7C},none
-45,QVC2,Very Merry Deals \{99} \{7C},none
-47,QVC2,Dyson Supersonic Hair Dryer \{99} \{7C},none
-29,QVC3,In the Kitchen With David \{99} \{7C},none
-37,QVC3,Carolyn's Gift Guide \{99} \{7C},none
-41,QVC3,The Wrap It Up Gift Event \{99} \{7C},none
-45,QVC3,Comfort & Joy with Jane \{99} \{7C},none
+1,PCAM,With Christ I Can,none
+2,PCAM,The Prophetic Word,none
+3,PCAM,The Love & Power Broadcast,none
+4,PCAM,One To One,none
+5,PCAM,Need in Deed,none
+7,PCAM,Hard Cover,none
+7,PCAM,( 6:25) Hard Cover,none
+8,PCAM,( 6:50) Hard Cover,none
+9,PCAM,( 7:18) Hard Cover,none
+10,PCAM,( 7:45) Hard Cover,none
+11,PCAM,( 8:12) Hard Cover,none
+13,PCAM,Scribe's Precious Places,none
+14,PCAM,Artist Talk,none
+15,PCAM,Talking Tech w/ Wayne,none
+16,PCAM,"From Here, With a View",none
+17,PCAM,(11:11) The Record Shop,none
+19,PCAM,(12:02) Out and About in Philadelphia,none
+19,PCAM,(12:26) Out and About in Philadelphia,none
+20,PCAM,(12:50) Out & About,none
+21,PCAM,( 1:11) Out & About,none
+22,PCAM,( 1:36) Germantown Boys,none
+23,PCAM,The 7-Figure Hustle,none
+25,PCAM,Time Out,none
+27,PCAM,Phila Jazz Project Presents,none
+29,PCAM,Love Now Media,none
+31,PCAM,( 6:04) How Sweet the Sound,none
+31,PCAM,( 6:14) Positive Movements,none
+32,PCAM,Walkies,none
+33,PCAM,( 7:21) Mr. Y Not,none
+34,PCAM,Dykeumentary TV,none
+35,PCAM,Dumpsta Players Present,none
+36,PCAM,( 8:31) Tribbles After Dark,none
+37,PCAM,( 9:01) sUPERED Surreal Gong Music,none
+38,PCAM,( 9:32) 16th & Philly Music Video,none
+38,PCAM,( 9:37) 16th & Philly,none
+40,PCAM,(10:31) A Foolproof Guide to Relations,none
+41,PCAM,Just Nation,none
+43,PCAM,Just Nation,none
+45,PCAM,Just Nation,none
+47,PCAM,Just Nation,none
+1,VH1,Cheaters (CC) In Stereo,none
+2,VH1,Cheaters (CC) In Stereo,none
+3,VH1,Cheaters (CC) In Stereo,none
+4,VH1,Cheaters (CC) In Stereo,none
+5,VH1,Cheaters (CC) In Stereo,none
+6,VH1,Cheaters (CC) In Stereo,none
+7,VH1,Cheaters (CC) In Stereo,none
+8,VH1,Cheaters (CC) In Stereo,none
+9,VH1,Cheaters (CC) In Stereo,none
+10,VH1,Cheaters (CC) In Stereo,none
+11,VH1,My True Crime Story (CC) In Stereo,none
+13,VH1,Love You to Death (CC) In Stereo,none
+15,VH1,Martin (TV-PG) (CC) In Stereo,none
+16,VH1,Martin (TV-PG) (CC) In Stereo,none
+17,VH1,Martin (TV-PG) (CC) In Stereo,none
+18,VH1,Martin (TV-PG) (CC) In Stereo,none
+19,VH1,"""Boyz N the Hood"" (1991) Larry Fishburne, Ice Cube. Tre (Cuba Gooding Jr.) is sent to live with his father, Furious Styles (Larry Fishburne), in tough South Central Los Angeles. Although his hard-nosed father instills proper values and respect in him, and his devout girlfriend Brandi (Nia Long) teaches him about faith, Tre's friends Doughboy (Ice Cube) and Ricky (Morris Chestnut) don't have the same kind of support and are drawn into the neighborhood's booming drug and gang culture, with increasingly tragic results. (CC) In Stereo (1 hr 52 min)",movie
+24,VH1,"""Red"" (2010) Bruce Willis, Morgan Freeman. After surviving an assault from a squad of hit men, retired CIA agent Frank Moses (Bruce Willis) reassembles his old team for an all-out war. Frank reunites with old Joe (Morgan Freeman), crazy Marvin (John Malkovich) and wily Victoria (Helen Mirren) to uncover a massive conspiracy that threatens their lives. Only their expert training will allow them to survive a near-impossible mission -- breaking into CIA headquarters. (CC) In Stereo (1 hr 50 min)",movie
+29,VH1,"""Red 2"" (2013) Bruce Willis, John Malkovich. Former CIA black-ops agent Frank Moses (Bruce Willis) and his old partner, Marvin Boggs (John Malkovich), are caught in the grip of retirement -- but that soon changes when a powerful Cold War weapon known as Nightshade resurfaces decades after its disappearance. With assassins hot on their trail, Frank and his team set out to find the one scientist (Anthony Hopkins) who can unravel the mystery of Nightshade and help them save themselves -- and the world. (CC) In Stereo (1 hr 56 min)",movie
+34,VH1,"""Shaft"" (2000) Samuel L. Jackson, Vanessa L. Williams. Crooked cops on the take -- small-time drug lords -- sleazy informers and sadistic rich kids ready to kill --- for police detective John Shaft, its just another night in the underbelly of New York City, another shift facing down cops and criminals who want him dead and a legal system that thrives on money, not justice. (CC) In Stereo (1 hr 38 min)",movie
+39,VH1,The Jamie Foxx Show (TV-PG) (CC) In Stereo,none
+40,VH1,The Jamie Foxx Show (TV-PG) (CC) In Stereo,none
+41,VH1,The Jamie Foxx Show (TV-PG) (CC) In Stereo,none
+42,VH1,The Jamie Foxx Show (TV-PG) (CC) In Stereo,none
+43,VH1,The Jamie Foxx Show (TV-PG) (CC) In Stereo,none
+44,VH1,The Jamie Foxx Show (TV-PG) (CC) In Stereo,none
+45,VH1,Cheaters (CC) In Stereo,none
+46,VH1,Cheaters (CC) In Stereo,none
+47,VH1,Cheaters (CC) In Stereo,none
+48,VH1,Cheaters (CC) In Stereo,none
+1,MTV,Ridiculousness (CC) In Stereo,none
+2,MTV,Ridiculousness (CC) In Stereo,none
+3,MTV,Ridiculousness (CC) In Stereo,none
+4,MTV,Ridiculousness (CC) In Stereo,none
+5,MTV,Ridiculousness (CC) In Stereo,none
+6,MTV,Ridiculousness (CC) In Stereo,none
+7,MTV,Ridiculousness (CC) In Stereo,none
+8,MTV,Ridiculousness (CC) In Stereo,none
+9,MTV,Ridiculousness (CC) In Stereo,none
+10,MTV,Ridiculousness (CC) In Stereo,none
+11,MTV,Ridiculousness (CC) In Stereo,none
+12,MTV,Ridiculousness (CC) In Stereo,none
+13,MTV,Ridiculousness (CC) In Stereo,none
+14,MTV,Ridiculousness (CC) In Stereo,none
+15,MTV,Ridiculousness (CC) In Stereo,none
+16,MTV,Ridiculousness (CC) In Stereo,none
+17,MTV,Ridiculousness (CC) In Stereo,none
+18,MTV,Ridiculousness (CC) In Stereo,none
+19,MTV,Ridiculousness (CC) In Stereo,none
+20,MTV,Ridiculousness (CC) In Stereo,none
+21,MTV,Ridiculousness (CC) In Stereo,none
+22,MTV,Ridiculousness (CC) In Stereo,none
+23,MTV,Ridiculousness (CC) In Stereo,none
+24,MTV,Ridiculousness (CC) In Stereo,none
+25,MTV,Ridiculousness (CC) In Stereo,none
+26,MTV,Ridiculousness (CC) In Stereo,none
+27,MTV,Ridiculousness (CC) In Stereo,none
+28,MTV,Ridiculousness (CC) In Stereo,none
+29,MTV,Ridiculousness (CC) In Stereo,none
+30,MTV,Ridiculousness (CC) In Stereo,none
+31,MTV,Ridiculousness (CC) In Stereo,none
+32,MTV,Ridiculousness (CC) In Stereo,none
+33,MTV,Ridiculousness (CC) In Stereo,none
+34,MTV,Ridiculousness (CC) In Stereo,none
+35,MTV,Ridiculousness (CC) In Stereo,none
+36,MTV,Ridiculousness (CC) In Stereo,none
+37,MTV,Ridiculousness (CC) In Stereo,none
+38,MTV,Ridiculousness (CC) In Stereo,none
+39,MTV,Ridiculousness (CC) In Stereo,none
+40,MTV,Ridiculousness (CC) In Stereo,none
+41,MTV,Ridiculousness (CC) In Stereo,none
+42,MTV,Ridiculousness (CC) In Stereo,none
+43,MTV,Ridiculousness (CC) In Stereo,none
+44,MTV,Ridiculousness (CC) In Stereo,none
+45,MTV,Ridiculousness (CC) In Stereo,none
+46,MTV,Ridiculousness (CC) In Stereo,none
+47,MTV,Ridiculousness (CC) In Stereo,none
+48,MTV,Ridiculousness (CC) In Stereo,none
+1,TRUTV,World's Dumbest ... (CC),none
+3,TRUTV,World's Dumbest ... (CC),none
+5,TRUTV,World's Dumbest ... (CC),none
+7,TRUTV,World's Dumbest ... (CC),none
+9,TRUTV,World's Dumbest ... (CC),none
+11,TRUTV,World's Dumbest ... (CC),none
+13,TRUTV,World's Dumbest ... (CC),none
+15,TRUTV,World's Dumbest ... (CC),none
+17,TRUTV,Impractical Jokers (CC),none
+18,TRUTV,Impractical Jokers (CC),none
+19,TRUTV,Impractical Jokers (CC),none
+20,TRUTV,Impractical Jokers (CC),none
+21,TRUTV,Impractical Jokers (CC),none
+22,TRUTV,Impractical Jokers (CC),none
+23,TRUTV,Impractical Jokers (CC),none
+24,TRUTV,Impractical Jokers (CC),none
+25,TRUTV,Impractical Jokers (CC),none
+26,TRUTV,Impractical Jokers (CC),none
+27,TRUTV,Impractical Jokers (CC),none
+29,TRUTV,Impractical Jokers (CC),none
+30,TRUTV,Impractical Jokers (CC),none
+31,TRUTV,Impractical Jokers (CC),none
+32,TRUTV,Impractical Jokers (CC),none
+33,TRUTV,Impractical Jokers (CC),none
+34,TRUTV,Impractical Jokers (CC),none
+35,TRUTV,Impractical Jokers (CC),none
+36,TRUTV,Impractical Jokers (CC),none
+37,TRUTV,Impractical Jokers (CC),none
+38,TRUTV,Impractical Jokers (CC),none
+39,TRUTV,Impractical Jokers (CC),none
+40,TRUTV,Impractical Jokers (CC),none
+41,TRUTV,Impractical Jokers (CC),none
+42,TRUTV,Impractical Jokers (CC),none
+43,TRUTV,Impractical Jokers (CC),none
+44,TRUTV,Impractical Jokers (CC),none
+45,TRUTV,Portable Oxygen (CC),none
+46,TRUTV,Powerful Cleaning with Shark Stratos (CC),none
+47,TRUTV,Who Stole My Life? (CC),none
+1,TCM,"""The Front Page"" (1931) Adolphe Menjou, Pat O'Brien. Adapted from the 1928 stage play, this comedy follows Hildy Johnson (Pat O'Brien), an investigative reporter looking for a bigger paycheck. When an accused murderer (George E. Stone) escapes from custody, Hildy sees an opportunity for the story of a lifetime. But when he finds the criminal, he learns that the man may not be guilty. With the help of his editor (Adolphe Menjou), Hildy attempts to hide the convict, uncover the conspiracy and write the scoop of his career. (CC) (1 hr 41 min)",movie
+4,TCM,"( 4:45) ""Penny Serenade"" (1941) Irene Dunne, Cary Grant. Since marrying Roger Adams (Cary Grant), Julie (Irene Dunne) has wanted to start a family. An accident while she's visiting Japan causes a miscarriage and makes Julie incapable of having children. After they adopt a little girl, Trina (Eva Lee Kuney), Roger's small newspaper folds, and the couple has to fight in court to keep her. Even though they succeed, another tragedy strikes out of nowhere. The Adams' marriage looks headed for divorce, unless something brings them close again. (CC) (1 hr 58 min)",movie
+9,TCM,"""Watch on the Rhine"" (1943) Bette Davis, Paul Lukas. Anti-Fascist German engineer Kurt Muller (Paul Lukas), with his American-born wife, Sara (Bette Davis), and their three children, returns to the United States in 1940 after spending 17 years in Europe, where Kurt has engaged in underground resistance to the rising Nazi threat. Unscrupulous Romanian count Teck de Brancovis (George Coulouris), a houseguest of Sara's family in Washington, D.C., discovers Kurt's secret and threatens to expose his activities to his contacts at the German embassy. (CC) (1 hr 54 min)",movie
+13,TCM,"""Sounder"" (1972) Cicely Tyson, Paul Winfield. The Morgans, a family of poor black sharecroppers in the Depression-plagued South, struggle to find enough to eat despite the help their hunting dog, Sounder. When father Nathan (Paul Winfield) resorts to stealing food, he is captured by police and sent to prison, and his wife, Rebecca (Cicely Tyson), is left to care for their son, David (Kevin Hooks). Though Sounder has run away, David never gives up hope that his dog will return, just as he believes that he will see his father again someday. (CC) (1 hr 45 min)",movie
+17,TCM,"""Cat Ballou"" (1965) Jane Fonda, Lee Marvin. When hired gun Tim Strawn (Lee Marvin) kills her rancher father, Cat Ballou (Jane Fonda) becomes an outlaw set on vengeance. Enlisting the help of washed-up gunslinger Kid Shelleen (also Marvin) as well as the handsome bandit Clay Boone (Michael Callan), Cat strikes back at the land-development company that employed Strawn, and eventually targets the assassin himself. Adding to the lively comedic mood of the film are narrative song performances by Nat King Cole and Stubby Kaye. (CC) (1 hr 36 min)",movie
+21,TCM,"""The Lost Weekend"" (1945) Ray Milland, Jane Wyman. Writer Don Birnam (Ray Milland) is on the wagon. Sober for only a few days, Don is supposed to be spending the weekend with his brother, Wick (Phillip Terry), but, eager for a drink, Don convinces his girlfriend (Jane Wyman) to take Wick to a show. Don, meanwhile, heads to his local bar and misses the train out of town. After recounting to the bartender (Howard da Silva) how he developed a drinking problem, Don goes on a weekend-long bender that just might prove to be his last. (CC) (1 hr 41 min)",movie
+25,TCM,"""The Goodbye Girl"" (1977) Richard Dreyfuss, Marsha Mason. Former Broadway hoofer Paula McFadden (Marsha Mason) and her young daughter, Lucy (Quinn Cummings), are outraged to find that Paula's former lover has fled to Europe and subleased their apartment to hyper Chicago actor Elliot Garfield (Richard Dreyfuss). Neither Marsha nor Elliot is prepared to acknowledge the other's right to the apartment, but they reluctantly agree to share it. Despite their opposite natures and constant bickering, when Elliot's play fails, Marsha is surprisingly affected. (CC) (1 hr 50 min)",movie
+29,TCM,"""A Double Life"" (1947) Ronald Colman, Signe Hasso. Highly regarded theater actor Anthony John (Ronald Colman) has a violent temper, which leads his actress wife, Brita (Signe Hasso), to leave him. When the two perform together in a production of ""Othello,"" the strain of playing Othello drives John insane, to the point of killing his mistress, Pat Kroll (Shelley Winters). John does not remember the incident, but is forced to face his actions when promoter Bill Friend (Edmond O'Brien) uses the murder to publicize the play. (CC) (1 hr 44 min)",movie
+33,TCM,"""To Kill a Mockingbird"" (1962) Gregory Peck, Mary Badham. Scout Finch (Mary Badham), 6,and her older brother, Jem (Phillip Alford), live in sleepy Maycomb, Ala., spending much of their time with their friend Dill (John Megna) and spying on their reclusive and mysterious neighbor, Boo Radley (Robert Duvall). When Atticus (Gregory Peck), their widowed father and a respected lawyer, defends a black man named Tom Robinson (Brock Peters) against fabricated rape charges, the trial and tangent events expose the children to evils of racism and stereotyping. (CC) (2 hr 9 min)",movie
+38,TCM,"""On Golden Pond"" (1981) Katharine Hepburn, Henry Fonda. Cantankerous retiree Norman Thayer (Henry Fonda) and his conciliatory wife, Ethel (Katharine Hepburn), spend summers at their New England vacation home on the shores of idyllic Golden Pond. This year, their adult daughter, Chelsea (Jane Fonda), visits with her new fiancée and his teenage son, Billy (Doug McKeon) on their way to Europe. After leaving Billy behind to bond with Norman, Chelsea returns, attempting to repair the long-strained relationship with her aging father before it's too late. (CC) (1 hr 49 min)",movie
+42,TCM,"""Lilies of the Field"" (1963) Sidney Poitier, Lilia Skala. When traveling African-American handyman Homer Smith (Sidney Poitier) stops by a farm in rural Arizona, he is welcomed by a group of Roman Catholic nuns who have emigrated from Germany. Realizing that the farm needs a lot of work, Homer takes on a number of repair projects for the women, who are led by the headstrong Mother Maria (Lilia Skala). Impressed by Homer's kindness and strong work ethic, the nuns come to believe that he has been sent by God to help build them a chapel. (CC) (1 hr 34 min)",movie
+45,TCM,"( 1:15) ""Boys Town"" (1938) Spencer Tracy, Mickey Rooney. The devout but iron-willed Father Flanagan (Spencer Tracy) leads a community called Boys Town, a different sort of juvenile detention facility where, instead of being treated as underage criminals, the boys are shepherded into making themselves better people. But hard-nosed petty thief and pool shark Whitey Marsh (Mickey Rooney), the impulsive and violent younger brother of an imprisoned murderer, might be too much for the good father's tough-love system. (CC) (1 hr 36 min)",movie
+1,HISTOR,CSN Mint (CC),none
+2,HISTOR,CSN Mint (CC),none
+3,HISTOR,The Engineering That Built the World (TV-PG) (CC) In Stereo,none
+5,HISTOR,The Engineering That Built the World (TV-PG) (CC) In Stereo,none
+7,HISTOR,The Engineering That Built the World (TV-PG) (CC) In Stereo,none
+9,HISTOR,The Engineering That Built the World (TV-PG) (CC) In Stereo,none
+11,HISTOR,The Engineering That Built the World (TV-PG) (CC) In Stereo,none
+13,HISTOR,The Engineering That Built the World (TV-PG) (CC) In Stereo,none
+15,HISTOR,The Engineering That Built the World (TV-PG) (CC) In Stereo,none
+17,HISTOR,The Engineering That Built the World (TV-PG) (CC) In Stereo,none
+19,HISTOR,The Food That Built America (TV-PG) (CC) In Stereo,none
+21,HISTOR,The Food That Built America (TV-PG) (CC) In Stereo,none
+23,HISTOR,The Food That Built America (TV-PG) (CC) In Stereo,none
+25,HISTOR,The Food That Built America (TV-PG) (CC) In Stereo,none
+27,HISTOR,The Food That Built America (TV-PG) (CC) In Stereo,none
+29,HISTOR,The Food That Built America (TV-PG) (CC) In Stereo,none
+31,HISTOR,The Food That Built America (TV-PG) (CC) In Stereo,none
+33,HISTOR,( 7:03) The Food That Built America (TV-PG) (CC) In Stereo,none
+35,HISTOR,( 8:05) The Food That Built America (TV-PG) (CC) In Stereo,none
+37,HISTOR,( 9:03) The Food That Built America (TV-PG) (CC) In Stereo,none
+39,HISTOR,(10:05) The Food That Built America (TV-PG) (CC) In Stereo,none
+41,HISTOR,(11:06) The Food That Built America (TV-PG) (CC) In Stereo,none
+43,HISTOR,(12:05) The Food That Built America (TV-PG) (CC) In Stereo,none
+45,HISTOR,( 1:01) Portable Oxygen (CC) In Stereo,none
+46,HISTOR,"Get Fit with Total Gym, Risk Free (CC) In Stereo",none
+47,HISTOR,Relief from Inflammation (CC) In Stereo,none
+48,HISTOR,LegXercise Pro (CC) In Stereo,none
+1,MSNBC,Morning Joe: Weekend (CC),none
+5,MSNBC,The Weekend (CC),none
+7,MSNBC,The Weekend (CC),none
+9,MSNBC,Velshi (CC),none
+11,MSNBC,Velshi (CC),none
+13,MSNBC,Inside With Jen Psaki (CC),none
+15,MSNBC,Alex Witt Reports (CC),none
+17,MSNBC,Alex Witt Reports (CC),none
+19,MSNBC,Alex Witt Reports (CC),none
+21,MSNBC,Prime: Weekend (CC),none
+23,MSNBC,PoliticsNation (TV-G) (CC),none
+25,MSNBC,The Sunday Show With Jonathan Capehart (CC),none
+27,MSNBC,Ayman (CC),none
+29,MSNBC,Ayman (CC),none
+31,MSNBC,Prime: Weekend (CC),none
+33,MSNBC,Inside With Jen Psaki (CC),none
+35,MSNBC,Ayman (CC),none
+37,MSNBC,The Sunday Show With Jonathan Capehart (CC),none
+39,MSNBC,Dateline (CC) In Stereo,none
+41,MSNBC,Dateline (CC) In Stereo,none
+43,MSNBC,Dateline (CC) In Stereo,none
+45,MSNBC,Meet the Press (CC),none
+47,MSNBC,Way Too Early With Jonathan Lemire (CC),none
+1,FNC,FOX and Friends Sunday (CC),none
+3,FNC,FOX and Friends Sunday (CC),none
+5,FNC,FOX and Friends Sunday (CC),none
+7,FNC,FOX and Friends Sunday (CC),none
+9,FNC,Sunday Morning Futures With Maria Bartiromo (CC),none
+11,FNC,MediaBuzz (CC),none
+13,FNC,Fox News Live (CC),none
+15,FNC,Fox News Live (CC),none
+17,FNC,FOX News Sunday (CC) In Stereo,none
+19,FNC,Sunday Morning Futures With Maria Bartiromo (CC),none
+21,FNC,Fox News Live (CC),none
+23,FNC,FOX News Saturday Night With Jimmy Failla (CC),none
+25,FNC,Fox Report With Jon Scott (CC),none
+27,FNC,The Big Weekend Show (CC),none
+29,FNC,"Life, Liberty & Levin (CC)",none
+31,FNC,Sunday Night in America With Trey Gowdy (CC),none
+33,FNC,The Big Weekend Show (CC),none
+35,FNC,"Life, Liberty & Levin (CC)",none
+37,FNC,Sunday Night in America With Trey Gowdy (CC),none
+39,FNC,The Big Weekend Show (CC),none
+41,FNC,FOX News Sunday (CC) In Stereo,none
+43,FNC,"Life, Liberty & Levin (CC)",none
+45,FNC,Sunday Night in America With Trey Gowdy (CC),none
+47,FNC,FOX & Friends First (CC),none
+5,GOLF,PGA Tour Golf (CC),none|sportsProg
+13,GOLF,Golf Central Pregame (TV-G) (CC),none|sportsProg
+15,GOLF,PGA Tour Golf (CC),none|sportsProg
+19,GOLF,LPGA Tour Golf (CC),none|sportsProg
+25,GOLF,Golf Central (TV-G) (CC),none|sportsProg
+27,GOLF,PGA Tour Golf (CC),none|sportsProg
+37,GOLF,Golf Central (TV-G) (CC),none|sportsProg
+39,GOLF,PGA Tour Golf (CC),none|sportsProg
+1,BRAVO,Summer House: Martha's Vineyard (CC),none
+3,BRAVO,Summer House: Martha's Vineyard (CC),none
+5,BRAVO,Summer House: Martha's Vineyard (CC),none
+7,BRAVO,Summer House (CC),none
+9,BRAVO,Summer House (CC),none
+11,BRAVO,Vanderpump Rules (CC),none
+13,BRAVO,Vanderpump Rules (CC),none
+15,BRAVO,Vanderpump Rules (CC),none
+17,BRAVO,Vanderpump Rules (CC),none
+19,BRAVO,Vanderpump Rules (CC),none
+21,BRAVO,The Real Housewives of Miami (CC),none
+23,BRAVO,The Real Housewives of Miami (CC),none
+25,BRAVO,The Real Housewives of Beverly Hills (CC),none
+27,BRAVO,The Real Housewives of Potomac (CC),none
+29,BRAVO,The Real Housewives of Potomac (CC),none
+31,BRAVO,Married to Medicine (CC),none
+33,BRAVO,Watch What Happens Live With Andy Cohen (CC),none
+34,BRAVO,The Real Housewives of Potomac (CC),none
+36,BRAVO,Married to Medicine (CC),none
+38,BRAVO,The Real Housewives of Beverly Hills (CC),none
+40,BRAVO,Vanderpump Rules (CC),none
+42,BRAVO,Summer House (CC),none
+44,BRAVO,Watch What Happens Live With Andy Cohen (CC),none
+45,BRAVO,The Kelly Clarkson Show (TV-PG) (CC) In Stereo,none
+47,BRAVO,Who Stole My Life? (CC),none
+48,BRAVO,"Get Fit with Total Gym, Risk Free (CC)",none
+1,QVC2,HomeWorx by Slatkin & Co. Candles & Home Fragrance (TV-G) (CC),none
+3,QVC2,Feel Good Finds With Alberti and Kerstin (TV-G) (CC),none
+7,QVC2,Spring It On! (TV-G) (CC),none
+11,QVC2,Home Decor Solutions (TV-G) (CC),none
+13,QVC2,In the Kitchen With David (TV-G) (CC),none
+19,QVC2,Nespresso Vertuo Coffee & Espresso Maker (TV-G) (CC),none
+21,QVC2,Home Decor Solutions (TV-G) (CC),none
+23,QVC2,Tommie Copper Compression Wear (TV-G) (CC),none
+25,QVC2,Love Your Garden With Rick (TV-G) (CC),none
+29,QVC2,Honora Jewelry Collection Clearance (TV-G) (CC),none
+31,QVC2,Diamonique x Kathy Levine (TV-G) (CC),none
+33,QVC2,Refresh Your Home & Garden (TV-G) (CC),none
+37,QVC2,Roberta's Unique Gardens (TV-G) (CC),none
+39,QVC2,In the Garden With Sandra (TV-G) (CC),none
+43,QVC2,Roberta's Unique Gardens (TV-G) (CC),none
+45,QVC2,In the Garden With Sandra (TV-G) (CC),none
+1,QVC3,Feel Good Finds With Alberti and Kerstin (TV-G) (CC),none
+5,QVC3,In the Garden With Sandra (TV-G) (CC),none
+9,QVC3,In the Kitchen With David - PM Edition (TV-G) (CC),none
+13,QVC3,Saturday Morning Q - Fashion Edition (TV-G) (CC),none
+21,QVC3,Gourmet Holiday (TV-G) (CC),none
+29,QVC3,Shoe Shopping (TV-G) (CC),none
+33,QVC3,Shawn Saves Spring (TV-G) (CC),none
+37,QVC3,Belle by Kim Gravel - Fashion (TV-G) (CC),none
+39,QVC3,Denim & Co. (TV-G) (CC),none
+41,QVC3,Spring It On! (TV-G) (CC),none
+45,QVC3,The Perfect Accessory With Jen Coffey (TV-G) (CC),none
+47,QVC3,Calista - Hair Care & Tools (TV-G) (CC),none
+1,MDUC1,MDU Camera Channel,none
+9,MDUC1,MDU Camera Channel,none
+17,MDUC1,MDU Camera Channel,none
+25,MDUC1,MDU Camera Channel,none
 33,MDUC1,MDU Camera Channel,none
 41,MDUC1,MDU Camera Channel,none
+3,CMDUCC,MDU Camera Channel,none
+11,CMDUCC,MDU Camera Channel,none
+19,CMDUCC,MDU Camera Channel,none
 27,CMDUCC,MDU Camera Channel,none
 35,CMDUCC,MDU Camera Channel,none
 43,CMDUCC,MDU Camera Channel,none
-27,HGTV,Fixer to Fabulous \{99} \{7C},none
-29,HGTV,Fixer to Fabulous \{99} \{7C},none
-31,HGTV,Fixer to Fabulous \{99} \{7C},none
-33,HGTV,House Hunters \{99} \{7C},none
-34,HGTV,House Hunters International \{99} \{7C},none
-35,HGTV,House Hunters \{99} \{7C},none
-36,HGTV,House Hunters International \{99} \{7C},none
-37,HGTV,Fixer to Fabulous \{99} \{7C},none
-39,HGTV,House Hunters \{99} \{7C},none
-40,HGTV,House Hunters International \{99} \{7C},none
-41,HGTV,House Hunters \{99} \{7C},none
-42,HGTV,House Hunters International \{99} \{7C},none
-43,HGTV,Fixer to Fabulous \{99} \{7C},none
-45,HGTV,Fixer to Fabulous \{99} \{7C},none
-47,HGTV,Fixer to Fabulous \{99} \{7C},none
-27,POPSD,House \{91} \{7C},none
-29,POPSD,NCIS: New Orleans \{91} \{7C},none
-31,POPSD,NCIS: New Orleans \{91} \{7C},none
-33,POPSD,NCIS: New Orleans \{91} \{7C},none
-35,POPSD,NCIS: New Orleans \{91} \{7C},none
-37,POPSD,NCIS: New Orleans \{91} \{7C},none
-39,POPSD,Charmed \{91} \{7C},none
-41,POPSD,Charmed \{9B} \{91} \{7C},none
-43,POPSD,Charmed \{9B} \{91} \{7C},none
-45,POPSD,Charmed \{9B} \{91} \{7C},none
-47,POPSD,The Goldbergs \{9B} \{91} \{7C},none
-48,POPSD,The Goldbergs \{9B} \{91} \{7C},none
+1,HGTV,Cindy Crawford and Ellen Pompeo share secrets (CC),none
+2,HGTV,Powerful Cleaning with Shark Stratos (CC),none
+3,HGTV,Home Town (TV-G) (CC),none
+5,HGTV,Home Town (TV-G) (CC),none
+7,HGTV,Home Town (TV-G) (CC),none
+9,HGTV,Home Town (TV-G) (CC),none
+11,HGTV,Home Town (TV-G) (CC),none
+13,HGTV,Unsellable Houses (TV-G) (CC),none
+15,HGTV,Unsellable Houses (TV-G) (CC),none
+17,HGTV,Unsellable Houses (TV-G) (CC),none
+19,HGTV,Unsellable Houses (TV-G) (CC),none
+21,HGTV,Unsellable Houses (TV-G) (CC),none
+23,HGTV,Unsellable Houses (TV-G) (CC),none
+25,HGTV,Home Town (TV-G) (CC),none
+27,HGTV,Home Town (TV-G) (CC),none
+29,HGTV,Home Town (TV-G) (CC),none
+31,HGTV,Small Town Potential (TV-G) (CC),none
+33,HGTV,Fixer to Fabulous (TV-G) (CC),none
+35,HGTV,Fixer to Fabulous (TV-G) (CC),none
+37,HGTV,Small Town Potential (TV-G) (CC),none
+39,HGTV,Fixer to Fabulous (TV-G) (CC),none
+41,HGTV,Fixer to Fabulous (TV-G) (CC),none
+43,HGTV,Home Town (TV-G) (CC),none
+45,HGTV,Home Town (TV-G) (CC),none
+47,HGTV,Home Town (TV-G) (CC),none
+1,POPSD,Scorpion (TV-PG) (CC) In Stereo,none
+3,POPSD,Scorpion (TV-PG) (CC) In Stereo,none
+5,POPSD,Scorpion (TV-PG) (CC) In Stereo,none
+7,POPSD,Scorpion (TV-PG) (CC) In Stereo,none
+9,POPSD,Scorpion (TV-PG) (CC) In Stereo,none
+11,POPSD,Scorpion (CC) In Stereo,none
+13,POPSD,Scorpion (CC) In Stereo,none
+15,POPSD,Scorpion (CC) In Stereo,none
+17,POPSD,Scorpion (CC) In Stereo,none
+19,POPSD,Criminal Minds (CC) In Stereo,none
+21,POPSD,Criminal Minds (CC) In Stereo,none
+23,POPSD,Criminal Minds (CC) In Stereo,none
+25,POPSD,Criminal Minds (CC) In Stereo,none
+27,POPSD,Criminal Minds (CC) In Stereo,none
+29,POPSD,Criminal Minds (CC) In Stereo,none
+31,POPSD,Criminal Minds (CC) In Stereo,none
+33,POPSD,Criminal Minds (CC) In Stereo,none
+35,POPSD,NCIS: New Orleans (CC) In Stereo,none
+37,POPSD,NCIS: New Orleans (CC) In Stereo,none
+39,POPSD,NCIS: New Orleans (CC) In Stereo,none
+41,POPSD,NCIS: New Orleans (CC) In Stereo,none
+43,POPSD,NCIS: New Orleans (CC) In Stereo,none
+45,POPSD,48 Hours (TV-PG) (CC) In Stereo,none
+47,POPSD,48 Hours (CC) In Stereo,none

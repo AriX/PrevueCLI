@@ -44,7 +44,7 @@ public struct Listings {
     struct Program: Codable, UVSGDocumentable, Equatable {
         var timeslot: Timeslot
         var sourceIdentifier: SourceIdentifier // Channel source
-        var programName: SpecialCharacterString
+        var programName: String
         var flags: Attributes
         
         struct Attributes: BinaryCodableOptionSet {

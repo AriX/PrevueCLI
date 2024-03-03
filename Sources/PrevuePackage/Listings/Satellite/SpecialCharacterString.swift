@@ -138,6 +138,16 @@ extension SpecialCharacterString: Codable, LosslessStringConvertible, Expressibl
             }
         }.joined()
     }
+    var descriptionConvertingSpecialCharactersToStrings: String {
+        return components.compactMap { (component) -> String? in
+            switch component {
+            case .string(let string):
+                return string
+            case .specialCharacter(let specialCharacter):
+                return specialCharacter.asString
+            }
+        }.joined()
+    }
     init(_ description: String) {
         self.init(with: description)
     }

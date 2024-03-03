@@ -11,14 +11,13 @@ import Foundation
 struct ListingsCommand: MetaCommand {
     let listingsDirectoryPath: String
     let forAtari: Bool
-    let omitSpecialCharacters: Bool?
     
     var commands: [DataCommand] {
         let listingsDirectory = URL(fileURLWithPath: listingsDirectoryPath)
         
         var listings: Listings
         do {
-            listings = try Listings(directory: listingsDirectory, startDay: Date(), forAtari: forAtari, omitSpecialCharacters: omitSpecialCharacters ?? false)
+            listings = try Listings(directory: listingsDirectory, startDay: Date(), forAtari: forAtari)
         } catch {
             print("Error loading listings from CSVListings: \(error)")
             return []

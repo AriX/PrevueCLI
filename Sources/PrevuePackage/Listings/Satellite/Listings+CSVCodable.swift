@@ -10,11 +10,11 @@ import Foundation
 import CSV
 
 public extension Listings {
-    init(channelsCSVFile: URL, programsCSVFile: URL, startDay: Date = Date(), forAtari: Bool = false, omitSpecialCharacters: Bool = false) throws {
-        try self.init(channelsCSVFile: channelsCSVFile, programsCSVFiles: [programsCSVFile], startDay: startDay, forAtari: forAtari, omitSpecialCharacters: omitSpecialCharacters)
+    init(channelsCSVFile: URL, programsCSVFile: URL, startDay: Date = Date(), forAtari: Bool = false) throws {
+        try self.init(channelsCSVFile: channelsCSVFile, programsCSVFiles: [programsCSVFile], startDay: startDay, forAtari: forAtari)
     }
     
-    init(channelsCSVFile: URL, programsCSVFiles: [URL], startDay: Date = Date(), forAtari: Bool = false, omitSpecialCharacters: Bool = false) throws {
+    init(channelsCSVFile: URL, programsCSVFiles: [URL], startDay: Date = Date(), forAtari: Bool = false) throws {
         channels = try Channel.load(from: channelsCSVFile)
         
         if forAtari {
@@ -26,10 +26,6 @@ public extension Listings {
         for programsCSVFile in programsCSVFiles {
             var loadedPrograms = try Program.load(from: programsCSVFile)
             
-            if forAtari || omitSpecialCharacters {
-                loadedPrograms.stripSpecialCharacters()
-            }
-            
             let julianDay = JulianDay(from: day)
             days.append((julianDay, loadedPrograms))
             
@@ -37,7 +33,7 @@ public extension Listings {
         }
     }
     
-    init(directory: URL, startDay: Date = Date(), forAtari: Bool = false, omitSpecialCharacters: Bool = false) throws {
+    init(directory: URL, startDay: Date = Date(), forAtari: Bool = false) throws {
         let channelsFileURL = directory.appendingPathComponent("channels.csv", isDirectory: false)
         let programsFileURLs = stride(from: 0, to: 7, by: 1).compactMap { (index) -> URL? in
             let suffix = (index > 0 ? String(index + 1) : "")
@@ -47,7 +43,7 @@ public extension Listings {
             return programsFileURL
         }
         
-        try self.init(channelsCSVFile: channelsFileURL, programsCSVFiles: programsFileURLs, startDay: startDay, forAtari: forAtari, omitSpecialCharacters: omitSpecialCharacters)
+        try self.init(channelsCSVFile: channelsFileURL, programsCSVFiles: programsFileURLs, startDay: startDay, forAtari: forAtari)
     }
     
     func write(channelsCSVFile: URL, programsCSVFiles: [URL]) throws {
