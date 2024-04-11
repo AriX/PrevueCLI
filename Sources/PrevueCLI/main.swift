@@ -114,6 +114,8 @@ destination.openConnection()
 // For Atari Sio2pc adapter
 //let destination = SerialPortDataDestination(path: "/dev/cu.Repleo-PL2303-00001014", baudRate: 2400)
 //destination.setRTS(false)
+ 
+// For PC Prevue: socat -d -d TCP-LISTEN:5541,fork UNIX:/tmp/serial2
 
 extension Data {
     struct HexEncodingOptions: OptionSet {
