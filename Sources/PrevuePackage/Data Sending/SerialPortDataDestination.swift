@@ -216,4 +216,10 @@ extension SerialPortDataDestination: FileDescriptorSerialInterface {
 }
 #endif
 
+extension SerialPortDataDestination: CustomStringConvertible {
+    var description: String {
+        "SerialPortDataDestination(path: \(path), baudRate: \(baudRate), supportsRTSBitBanging: \(supportsRTSBitBanging), handle: \(String(describing: handle))"
+    }
+}
+
 #endif
