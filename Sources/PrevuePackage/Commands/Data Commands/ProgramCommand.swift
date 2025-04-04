@@ -12,6 +12,8 @@ struct ProgramCommand: DataCommand, Equatable {
     let program: Listings.Program
 }
 
+// We are getting LErrs from these. Need to start truncating if they're too long. Figure out what the limit is. Debug with DEBUG_DATA_ERRS flag.
+
 extension ProgramCommand: BinaryCodable {
     static let endOfStringMarker: Byte = 0x12
     

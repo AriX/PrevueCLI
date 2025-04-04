@@ -1,6 +1,6 @@
 ## Data Destinations: define where to send data
 destinations:
-- TCPDataDestination: {host: "127.0.0.1", port: 5541}
+- TCPDataDestination: {host: "127.0.0.1", port: 5542}
 
 # Serial port data destination is currently supported on Mac and Windows only:
 # - SerialPortDataDestination: {path: "/dev/cu.usbserial", baudRate: 2400}
@@ -14,27 +14,30 @@ commands:
 - ConfigurationCommand: {timeslotsBack: 1, timeslotsForward: 4, scrollSpeed: 3, maxAdCount: 36, maxAdLines: 6, crawlOrIgnoreNationalAds: false, unknownAdSetting: 0x0101, timezone: 7, observesDaylightSavingsTime: true, cont: true, keyboardActive: false, unknown2: false, unknown3: false, unknown4: true, unknown5: 0x41, grph: 0x4E, videoInsertion: 0x4E, unknown6: 0x00}
 
 # Send New Look configuration (for 7.8.3, remove the "clockCmd" argument; you can change 'grid' to 'scroll' to get the list format)
-- NewLookConfigurationCommand: {displayFormat: grid, textAdFlag: satellite, clockCmd: 2}
+#- NewLookConfigurationCommand: {displayFormat: grid, textAdFlag: satellite}
 
 # Send the current time
 - CurrentClockCommand: {}
-- CurrentDSTCommand: {}
+#- CurrentDSTCommand: {}
 
 # Send a title
-- TitleCommand: {alignment: "center", title: "Electronic Program Guide"}
+#- TitleCommand: {alignment: "center", title: "Electronic Program Guide"}
 
 # Reset local ads
-- LocalAdCommand: {reset: true}
+#- LocalAdCommand: {reset: true}
 # One-line ad
-- LocalAdCommand: {adNumber: 1, content: [{text: "        BEFORE YOU VIEW, PREVUE!"}]}
+#- LocalAdCommand: {adNumber: 1, content: [{text: "        BEFORE YOU VIEW, PREVUE!"}]}
 # Two-line centered ad
-- LocalAdCommand: {adNumber: 2, content: [{text: "PREVUE GUIDE", alignment: center}, {text: "WE ARE WHAT'S ON", alignment: center}]}
+#- LocalAdCommand: {adNumber: 2, content: [{text: "PREVUE GUIDE", alignment: center}, {text: "WE ARE WHAT'S ON", alignment: center}]}
 # Multi-line ad with custom text alignments
-- LocalAdCommand: {adNumber: 3, content: [{text: "LEFT-ALIGNED AD LINE", alignment: left}, {text: "CENTER-ALIGNED AD LINE", alignment: center}, {text: "RIGHT-ALIGNED AD LINE", alignment: right}]}
+#- LocalAdCommand: {adNumber: 3, content: [{text: "LEFT-ALIGNED AD LINE", alignment: left}, {text: "CENTER-ALIGNED AD LINE", alignment: center}, {text: "RIGHT-ALIGNED AD LINE", alignment: right}]}
 # Ad with timeslot constraints (e.g. only shown at night, timeslots 24-48)
-- LocalAdCommand: {adNumber: 4, content: [{text: "TARGET YOUR AUDIENCE WITH CABLE", alignment: center}, {text: "TELEVISION. CALL COMCAST NOW AT", alignment: center}, {text: "215-639-2330", alignment: center}], timePeriod: {beginning: 24, ending: 48}}
+#- LocalAdCommand: {adNumber: 4, content: [{text: "TARGET YOUR AUDIENCE WITH CABLE", alignment: center}, {text: "TELEVISION. CALL COMCAST NOW AT", alignment: center}, {text: "215-639-2330", alignment: center}], timePeriod: {beginning: 24, ending: 48}}
 # Color text ad
-- ColorLocalAdCommand: {adNumber: 5, content: [{text: "Always think "}, {text: "Prevue ", color: {background: grey, foreground: yellow}}, {text: "first!", color: {background: lightBlue, foreground: red}}]}
+#- ColorLocalAdCommand: {adNumber: 5, content: [{text: "Always think "}, {text: "Prevue ", color: {background: grey, foreground: yellow}}, {text: "first!", color: {background: lightBlue, foreground: red}}]}
+
+- WeatherIDCommand: {displayCount: 1, weatherID: "TUL", cityString: "Tulsa"}
+- WeatherCommand: {displayLength: 60, colorID: 1, icon: "sun", weatherID: "TUL", weatherText: "It's nice, go outside!"}
 
 # Send sample listings data from the included .csv files
 - ListingsCommand: {listingsDirectoryPath: "Sample Listings", forAtari: false}

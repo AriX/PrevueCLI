@@ -38,5 +38,13 @@ public struct XMLTV {
     var sourceInfoName: String?
     var generatorInfoName: String?
     var channels: [String: Channel]
-    var numberOfDaysIncluded: Int
+    var earliestProgramDate: Date?
+    var latestProgramDate: Date?
+}
+
+extension XMLTV {
+    var numberOfDaysIncluded: Int {
+        guard let earliestProgramDate, let latestProgramDate else { return 0 }
+        return Calendar.current.numberOfDaysInlcudedBetween(earliestProgramDate, and: latestProgramDate)
+    }
 }

@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Consider adding tests for this
+
 public extension XMLTV {
     enum ParserType {
         case openSourceParser
@@ -63,12 +65,12 @@ class XMLTVParser: NodeParser {
     }
     
     override func didParseElement() {
-        let numberOfDaysIncluded = Calendar.current.numberOfDaysInlcudedBetween(programsParser.minDate, and: programsParser.maxDate)
         result = XMLTV(sourceInfoURL: attributes["source-info-url"],
                        sourceInfoName: attributes["source-info-name"],
                        generatorInfoName: attributes["generator-info-name"],
                        channels: channelsParser.channels,
-                       numberOfDaysIncluded: numberOfDaysIncluded)
+                       earliestProgramDate: channelsParser.earliestProgramDate,
+                       latestProgramDate: channelsParser.latestProgramDate)
     }
         
     let channelsParser: ChannelsParser
@@ -79,6 +81,8 @@ class XMLTVParser: NodeParser {
     
     class ChannelsParser: NodeParser {
         var channels: [String: XMLTV.Channel] = [:]
+        var earliestProgramDate: Date?
+        var latestProgramDate: Date?
         
         let maxChannelNumber: Int
         let displayNamesParser = StringParser(tagName: "display-name")
@@ -201,6 +205,9 @@ class XMLTVParser: NodeParser {
             super.init(tagName: "programme")
         }
         
+        // Under-documented issue - we fail with a cannotWriteStream error if you pass an XMLTV file that doesn't have listings for today's date
+        // Should fix with nicer error strings and --date argument for allowing older dated files to pass through
+        
         override func didParseElement() {
             guard let channelIdentifier = attributes["channel"],
                 channelsParser.channels[channelIdentifier] != nil,
@@ -226,6 +233,14 @@ class XMLTVParser: NodeParser {
             
             let program = XMLTV.Channel.Program(startDate: startDate, endDate: endDate, title: title, subtitle: subtitle, description: description, categories: categoriesParser.strings, actors: creditsParser.actors, year: yearParser.strings.first, duration: duration, stereo: audioDetailsParser.stereo, closedCaptioned: closedCaptionsParser.closedCaptions, ratings: ratingsParser.ratings)
             channelsParser.channels[channelIdentifier]?.programs += [program]
+            
+            if (channelsParser.earliestProgramDate ?? .distantFuture) > startDate {
+                channelsParser.earliestProgramDate = startDate
+            }
+            
+            if (channelsParser.latestProgramDate ?? .distantPast) < startDate {
+                channelsParser.latestProgramDate = startDate
+            }
         }
         
         let channelsParser: ChannelsParser

@@ -19,7 +19,11 @@ import Foundation
 
 public extension XMLTV {
     var listings: Listings {
-        let date = Calendar.current.startOfListingsDay(for: .currentTulsaDate) //find earliest date?
+        var date = Calendar.current.startOfListingsDay(for: .currentTulsaDate)
+        if let earliestProgramDate, let latestProgramDate,
+           date < earliestProgramDate || date > latestProgramDate {
+            date = Calendar.current.startOfListingsDay(for: earliestProgramDate)
+        }
         
         var channels: [Listings.Channel] = []
         var days: [Listings.ProgramsDay] = stride(from: 0, to: numberOfDaysIncluded, by: 1).map { dayIndex in
@@ -53,7 +57,7 @@ extension XMLTV.Channel {
             let channelNumber = channelNumber,
             let callLetters = callLetters else { return nil }
         
-        return Listings.Channel(sourceIdentifier: sourceIdentifier, channelNumber: String(channelNumber), timeslotMask: nil, callLetters: callLetters, flags: .none)
+        return Listings.Channel(sourceIdentifier: sourceIdentifier, channelNumber: String(channelNumber), timeslotMask: nil, callLetters: callLetters, flags: .ditto)
     }
     
     func listingsPrograms(from startDate: Date, to endDate: Date) -> [Listings.Program] {

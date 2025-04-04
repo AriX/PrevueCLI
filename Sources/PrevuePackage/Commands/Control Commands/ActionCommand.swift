@@ -25,6 +25,8 @@ enum ActionCommandValue {
     case localAdOrHalfScreenNationalAd // ^L3
 }
 
+// suspecting that "quarter screen trigger" means "change the existing panel to the next text", can't be used outside of actively showing a preview
+
 struct ActionCommand: ControlCommand {
     let value: ActionCommandValue
     var commandMode: ControlCommandMode {

@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Something is wrong here - PC Prevue gets set to the wrong time each time we send a ClockCommand
+
 struct DSTBoundary: BinaryCodableStruct, Equatable {
     let year: Int
     let dayOfYear: Int
